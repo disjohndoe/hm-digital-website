@@ -312,6 +312,11 @@ export const hr = {
     desc: 'Skeniranje i OCR pretvaraju papirnu arhivu u pretražive, uredno organizirane datoteke. Po potrebi integriramo arhivu u vaš ERP, DMS ili internu aplikaciju.',
     cta: 'Zatražite ponudu za digitalizaciju',
     cta2: 'Pogledaj cijene'
+  },
+  success: {
+    title: 'Hvala Vam!',
+    message: 'Hvala Vam na kontaktu, Vaša poruka je zaprimljena. Javiti ćemo Vam se u najkraćem mogućem roku!',
+    backToHome: 'Natrag na naslovnicu'
   }
 } as const;
 

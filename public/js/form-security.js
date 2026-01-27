@@ -1,6 +1,7 @@
 /**
- * Form Security - Bot Protection
+ * Form Security - Bot Protection & AJAX Submission
  * Implements honeypot and timestamp validation for forms
+ * Submits forms via AJAX and redirects on success
  */
 
 // Enable debug mode - set to true to see logs in browser console
@@ -8,6 +9,89 @@ const DEBUG_MODE = false;
 
 // Minimum time (in seconds) a human would take to fill a form
 const MIN_SUBMIT_TIME = 7;
+
+/**
+ * Get the success page URL based on current locale
+ * @returns {string} - The success page URL
+ */
+function getSuccessUrl() {
+  const path = window.location.pathname;
+  // English pages start with /en/
+  if (path.startsWith('/en/')) {
+    return '/en/success';
+  }
+  // Croatian (default)
+  return '/uspjeh';
+}
+
+/**
+ * Submit form via AJAX and handle redirect
+ * @param {HTMLFormElement} form - The form element to submit
+ */
+async function submitFormAjax(form) {
+  const formData = new FormData(form);
+  const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+
+  // Disable submit button and show loading state
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    const originalText = submitBtn.textContent || submitBtn.value;
+    submitBtn.textContent = 'Šalje se...';
+    submitBtn.value = 'Šalje se...';
+  }
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      // Success - redirect to success page
+      window.location.href = getSuccessUrl();
+    } else {
+      // Error - show message
+      showErrorMessage(form, 'Došlo je do greške. Molimo pokušajte ponovno.');
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        submitBtn.value = originalText;
+      }
+    }
+  } catch (error) {
+    if (DEBUG_MODE) console.error('[Form Submission] Error:', error);
+    showErrorMessage(form, 'Došlo je do greške. Molimo pokušajte ponovno.');
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+      submitBtn.value = originalText;
+    }
+  }
+}
+
+/**
+ * Show error message on form
+ * @param {HTMLFormElement} form - The form element
+ * @param {string} message - Error message to display
+ */
+function showErrorMessage(form, message) {
+  // Remove existing error messages
+  const existingError = form.querySelector('.form-error-message');
+  if (existingError) {
+    existingError.remove();
+  }
+
+  // Create error element
+  const error = document.createElement('div');
+  error.className = 'form-error-message bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4';
+  error.textContent = message;
+
+  // Insert at the top of the form
+  form.insertBefore(error, form.firstChild);
+}
 
 /**
  * Initialize security for a form
@@ -21,12 +105,17 @@ function initFormSecurity(form) {
     timestampInput.value = timestamp.toString();
   }
 
-  // Intercept submission for validation
+  // Intercept submission for validation and AJAX
   form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
     if (!validateForm(form, timestamp)) {
-      e.preventDefault();
       return false;
     }
+
+    // Submit via AJAX
+    submitFormAjax(form);
+    return false;
   });
 }
 

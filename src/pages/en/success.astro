@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../i18n/ui';
+import Button from '../../components/ui/Button.astro';
+
+const locale = 'en';
+const t = getTranslations(locale);
+---
+
+<Layout
+  title="Success - HM-DIGITAL | Your message has been received"
+  description="Thank you for contacting us. Your message has been received and we will get back to you as soon as possible."
+  canonical="/en/success"
+>
+  <!-- Success Hero -->
+  <section class="bg-gradient-to-br from-slate-50 to-white py-24 lg:py-32">
+    <div class="container-custom text-center">
+      <!-- Success Icon -->
+      <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8">
+        <svg class="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+        {t.success.title}
+      </h1>
+
+      <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+        {t.success.message}
+      </p>
+
+      <Button href="/en/" variant="primary" size="lg">
+        {t.success.backToHome}
+      </Button>
+    </div>
+  </section>
+</Layout>

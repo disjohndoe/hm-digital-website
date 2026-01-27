@@ -312,5 +312,10 @@ export const en = {
     desc: 'Scanning and OCR turn paper archives into searchable, well-organized files. If needed, we integrate the archive into your ERP, DMS, or internal system.',
     cta: 'Request a digitization quote',
     cta2: 'See our prices'
+  },
+  success: {
+    title: 'Thank You!',
+    message: 'Thank you for contacting us. Your message has been received and we will get back to you as soon as possible!',
+    backToHome: 'Back to home'
   }
 } as const;
