@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/sections/Hero.astro';
+import ValueProp from '../../components/sections/ValueProp.astro';
+import ServicesOverview from '../../components/sections/ServicesOverview.astro';
+import ProjectCard from '../../components/sections/ProjectCard.astro';
+import Button from '../../components/ui/Button.astro';
+import { getTranslations, getLocaleFromPath, getPathForLocale } from '../../i18n/ui';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+---
+
+<Layout
+  title="HM-DIGITAL - Software Development Croatia | Web Apps, ERP, Webshops, Automation"
+  description="Professional software development for the Croatian market. We build web applications, webshops, ERP systems, fiscalization and automation. 10+ years experience. Get a quote!"
+  canonical="/en/"
+>
+  <Hero />
+
+  <!-- Value Proposition -->
+  <ValueProp />
+
+  <!-- Services Preview -->
+  <ServicesOverview />
+
+  <!-- Secondary Offer: Document Digitization -->
+  <section class="py-12 lg:py-16 bg-gradient-to-r from-amber-50 to-orange-50 border-y border-amber-200">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-xl sm:text-2xl font-semibold text-slate-900 mb-3">
+          {t.secondaryOffer.title}
+        </h3>
+        <p class="text-slate-600 mb-6">
+          {t.secondaryOffer.desc}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href={getPathForLocale('/kontakt', locale)} variant="primary" size="md">
+            {t.secondaryOffer.cta}
+          </Button>
+          <Button href={getPathForLocale('/cjenik', locale)} variant="outline" size="md">
+            {t.secondaryOffer.cta2}
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="py-16 lg:py-24 bg-slate-50">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          {t.projects.featuredTitle}
+        </h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+          {t.projects.featuredSubtitle}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <ProjectCard
+          title={t.projects.digitalniUred.title}
+          description={t.projects.digitalniUred.description}
+          tech={t.projects.digitalniUred.tech.split(', ')}
+          href={getPathForLocale('/projekti', locale)}
+        />
+
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 flex flex-col justify-center items-center text-center">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">
+            {t.projects.moreProjects}
+          </h3>
+          <p class="text-slate-600 mb-6">
+            {t.projects.moreProjectsDesc}
+          </p>
+          <a
+            href="https://softwarebymatt.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+          >
+            {t.projects.visitSite} &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-primary-600">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        {t.projects.cta.title}
+      </h2>
+      <p class="text-lg text-primary-100 max-w-2xl mx-auto mb-8">
+        {t.projects.cta.description}
+      </p>
+      <Button href={getPathForLocale('/kontakt', locale)} variant="secondary" size="lg">
+        {t.projects.cta.button}
+      </Button>
+    </div>
+  </section>
+</Layout>

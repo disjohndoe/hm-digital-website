@@ -1,0 +1,29 @@
+---
+import { getLocaleFromPath, getAlternateLocale, toLocaleUrl } from '../../i18n/ui';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const currentLocale = getLocaleFromPath(currentPath);
+const alternateLocale = getAlternateLocale(currentLocale);
+const currentUrl = Astro.url;
+const alternateUrl = toLocaleUrl(currentUrl, alternateLocale);
+const currentLabel = currentLocale === 'hr' ? 'HR' : 'EN';
+const alternateLabel = alternateLocale === 'hr' ? 'HR' : 'EN';
+---
+
+<div class="flex items-center gap-2">
+  <a
+    href={alternateUrl}
+    class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors px-3 py-2 rounded-lg hover:bg-slate-100"
+    aria-label={`Switch to ${alternateLabel === 'HR' ? 'Croatian' : 'English'}`}
+  >
+    {alternateLabel}
+  </a>
+  <span class="text-slate-300">|</span>
+  <span class="text-sm font-semibold text-primary-600 px-3 py-2">
+    {currentLabel}
+  </span>
+</div>

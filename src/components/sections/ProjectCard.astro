@@ -1,0 +1,35 @@
+---
+import Card from '../ui/Card.astro';
+import Button from '../ui/Button.astro';
+import { getTranslations } from '../../i18n/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  tech: string[];
+  href?: string;
+  locale?: 'hr' | 'en';
+}
+
+const { title, description, tech, href, locale = 'hr' } = Astro.props;
+const t = getTranslations(locale);
+---
+
+<Card padding="lg" class="h-full flex flex-col">
+  <div class="flex-1">
+    <h3 class="text-xl font-semibold text-slate-900 mb-3">{title}</h3>
+    <p class="text-slate-600 mb-4">{description}</p>
+  </div>
+  <div class="flex flex-wrap gap-2 mb-4">
+    {tech.map(t => (
+      <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+        {t}
+      </span>
+    ))}
+  </div>
+  {href && (
+    <Button href={href} variant="outline" size="sm" class="w-full sm:w-auto">
+      {t.projects.learnMore}
+    </Button>
+  )}
+</Card>

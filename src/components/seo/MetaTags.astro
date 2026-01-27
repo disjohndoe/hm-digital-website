@@ -1,0 +1,56 @@
+---
+import { getRouteKeyFromPathname, routes } from '../../i18n/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  locale: string;
+  type?: 'website' | 'article';
+  canonical?: string;
+}
+
+const {
+  title,
+  description,
+  image = '/og-image.jpg',
+  locale,
+  type = 'website',
+  canonical
+} = Astro.props;
+
+const siteUrl = 'https://hmdigital.hr';
+const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
+const imageUrl = `${siteUrl}${image}`;
+const alternateLocale = locale === 'hr' ? 'en' : 'hr';
+
+// Get the alternate URL using the route map
+const routeKey = getRouteKeyFromPathname(canonical || '/');
+const alternatePath = routes[routeKey][alternateLocale as keyof typeof routes[typeof routeKey]];
+const alternateUrl = `${siteUrl}${alternatePath}`;
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={fullUrl} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={fullUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content={locale === 'hr' ? 'hr_HR' : 'en_US'} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={fullUrl} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={imageUrl} />
+
+<!-- hreflang tags -->
+<link rel="alternate" hreflang={alternateLocale === 'hr' ? 'hr-HR' : 'en'} href={alternateUrl} />
+<link rel="alternate" hreflang="x-default" href={`${siteUrl}${routes['/'].hr}`} />

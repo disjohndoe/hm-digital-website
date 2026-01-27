@@ -1,0 +1,129 @@
+---
+interface Props {
+  type?: 'organization' | 'website' | 'article' | 'localbusiness' | 'service' | 'faq';
+  data?: Record<string, unknown>;
+  locale?: string;
+}
+
+const { type = 'organization', data = {}, locale = 'hr' } = Astro.props;
+
+const siteUrl = 'https://hmdigital.hr';
+
+const descriptions = {
+  hr: 'Profesionalni softverski razvoj za hrvatsko tržište - web aplikacije, webshopovi, ERP sustavi, automatizacija i digitalizacija dokumenata',
+  en: 'Professional software development for the Croatian market - web applications, webshops, ERP systems, automation and document digitization'
+};
+
+const baseOrganization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'HM-DIGITAL',
+  alternateName: 'HM Digital',
+  description: descriptions[locale as keyof typeof descriptions],
+  url: siteUrl,
+  logo: `${siteUrl}/logo.svg`,
+  email: 'info@hm-digital.hr',
+  telephone: '+385-97-120-800',
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'HR',
+    addressRegion: 'Brod-Posavina',
+    addressLocality: 'Nova Gradiška'
+  },
+  areaServed: {
+    '@type': 'Country',
+    name: 'Croatia'
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'sales',
+    email: 'info@hmdigital.hr',
+    availableLanguage: ['Croatian', 'English']
+  },
+  sameAs: [
+    'https://www.linkedin.com/company/hm-digital'
+  ],
+  knowsAbout: [
+    'Software Development',
+    'Web Applications',
+    'ERP Systems',
+    'API Development',
+    'Business Automation',
+    'Document Digitization',
+    'OCR',
+    'Fiskalizacija 2.0',
+    'Python',
+    'React',
+    'Django',
+    'FastAPI'
+  ],
+  ...data
+};
+
+const localBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'HM-DIGITAL',
+  description: descriptions[locale as keyof typeof descriptions],
+  url: siteUrl,
+  logo: `${siteUrl}/logo.svg`,
+  email: 'info@hm-digital.hr',
+  telephone: '+385-97-120-800',
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'HR',
+    addressRegion: 'Brod-Posavina',
+    addressLocality: 'Nova Gradiška'
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '45.1559',
+    longitude: '17.3817'
+  },
+  areaServed: {
+    '@type': 'GeoCircle',
+    geoMidpoint: {
+      '@type': 'GeoCoordinates',
+      latitude: '45.1559',
+      longitude: '17.3817'
+    },
+    geoRadius: '100000'
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '17:00'
+  },
+  priceRange: 'EUR',
+  ...data
+};
+
+const structuredData = type === 'organization' ? baseOrganization
+  : type === 'localbusiness' ? localBusiness
+  : type === 'service' ? {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Software Development Services',
+    description: descriptions[locale as keyof typeof descriptions],
+    provider: baseOrganization,
+    areaServed: baseOrganization.areaServed,
+    ...data
+  }
+  : type === 'faq' ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: (data.faq as[]) || [],
+    ...data
+  }
+  : {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    url: `${siteUrl}/`,
+    name: 'HM-DIGITAL',
+    description: descriptions[locale as keyof typeof descriptions],
+    ...data
+  };
+---
+
+<script set:html={JSON.stringify(structuredData)} type="application/ld+json" />

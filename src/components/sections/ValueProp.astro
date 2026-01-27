@@ -1,0 +1,107 @@
+---
+import { getTranslations, getLocaleFromPath } from '../../i18n/ui';
+import Button from '../ui/Button.astro';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+const paddingClass = locale === 'hr' ? 'py-8 lg:py-10' : 'py-16 lg:py-20';
+---
+
+<section class={paddingClass + " bg-white relative overflow-hidden"}>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-100/50 via-transparent to-transparent opacity-60"></div>
+  <div class="container-custom relative">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
+        {t.valueProp.tagline}
+      </h2>
+      <p class="text-lg text-slate-600">
+        {t.valueProp.reliability}
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto mb-12">
+      <div class="bg-gradient-to-br from-primary-50 to-indigo-50 rounded-2xl p-8 border border-primary-100/50 text-center">
+        <h3 class="text-xl font-semibold text-slate-900 mb-3 flex flex-col md:flex-row items-center justify-center gap-3">
+          <div class="p-2 bg-primary-100 rounded-lg">
+            <svg class="w-5 h-5 text-primary-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          {t.valueProp.automation}
+        </h3>
+        <p class="text-slate-600 leading-relaxed">
+          {t.valueProp.automationDesc}
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100/50">
+      <h4 class="text-lg font-semibold text-slate-900 mb-6">
+        {t.valueProp.services.title}
+      </h4>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3 group hover:bg-white rounded-lg p-3 -mx-3 transition-colors cursor-default">
+          <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+          <span class="text-slate-700">{t.valueProp.services.items.webApps}</span>
+        </li>
+        <li class="flex items-start gap-3 group hover:bg-white rounded-lg p-3 -mx-3 transition-colors cursor-default">
+          <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+          <span class="text-slate-700">{t.valueProp.services.items.backend}</span>
+        </li>
+        <li class="flex items-start gap-3 group hover:bg-white rounded-lg p-3 -mx-3 transition-colors cursor-default">
+          <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+          <span class="text-slate-700">{t.valueProp.services.items.ux}</span>
+        </li>
+        <li class="flex items-start gap-3 group hover:bg-white rounded-lg p-3 -mx-3 transition-colors cursor-default">
+          <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+          <span class="text-slate-700">{t.valueProp.services.items.integrations}</span>
+        </li>
+        <li class="flex items-start gap-3 group hover:bg-white rounded-lg p-3 -mx-3 transition-colors cursor-default">
+          <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+          <span class="text-slate-700">{t.valueProp.services.items.automation}</span>
+        </li>
+        <li class="flex items-start gap-3 group hover:bg-white rounded-lg p-3 -mx-3 transition-colors cursor-default">
+          <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+          <span class="text-slate-700">{t.valueProp.services.items.analytics}</span>
+        </li>
+      </ul>
+
+      <div class="mt-8 pt-6 border-t border-slate-200 text-center">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-2">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-100 flex-shrink-0">
+            <svg class="w-5 h-5 text-primary-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <span class="text-lg font-semibold text-slate-900">{t.valueProp.cta}</span>
+        </div>
+        <p class="text-slate-600 mb-6">
+          {t.valueProp.ctaDesc}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href={locale === 'en' ? '/en/free-assessment' : '/besplatna-procjena'} variant="primary" size="lg">
+            {t.hero.cta}
+          </Button>
+          <Button href={locale === 'en' ? '/en/contact' : '/kontakt'} variant="outline" size="lg">
+            {t.nav.contact}
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

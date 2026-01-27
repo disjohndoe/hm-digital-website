@@ -1,0 +1,92 @@
+---
+import { getTranslations, getLocaleFromPath } from '../../i18n/ui';
+import Card from '../ui/Card.astro';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+---
+
+<section class="py-16 bg-slate-50">
+  <div class="container-custom">
+    <Card padding="xl">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">{t.freeAssessment.title}</h2>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6" data-form-security>
+          <!-- Honeypot field - hidden from humans, visible to bots -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <label for="_honey">Don't fill this out if you're human:</label>
+            <input type="text" id="_honey_quote" name="_honey" tabindex="-1" autocomplete="off" />
+          </div>
+          <!-- Timestamp for submission time validation -->
+          <input type="hidden" name="_form_timestamp" value="" />
+
+          <div>
+            <label for="name" class="block text-sm font-medium text-slate-700 mb-2">
+              {t.freeAssessment.form.name}
+            </label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">
+              {t.freeAssessment.form.email}
+            </label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="projectType" class="block text-sm font-medium text-slate-700 mb-2">
+              {t.freeAssessment.form.projectType}
+            </label>
+            <select id="projectType" name="projectType" required
+              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+              <option value="">{t.freeAssessment.form.projectType}</option>
+              <option value="website">{t.freeAssessment.form.projectTypes.website}</option>
+              <option value="webshop">{t.freeAssessment.form.projectTypes.webshop}</option>
+              <option value="webapp">{t.freeAssessment.form.projectTypes.webapp}</option>
+              <option value="erp">{t.freeAssessment.form.projectTypes.erp}</option>
+              <option value="integration">{t.freeAssessment.form.projectTypes.integration}</option>
+              <option value="automation">{t.freeAssessment.form.projectTypes.automation}</option>
+              <option value="ai">{t.freeAssessment.form.projectTypes.ai}</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="currentSituation" class="block text-sm font-medium text-slate-700 mb-2">
+              {t.freeAssessment.form.currentSituation}
+            </label>
+            <textarea id="currentSituation" name="currentSituation" rows="3"
+              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
+          </div>
+
+          <div>
+            <label for="features" class="block text-sm font-medium text-slate-700 mb-2">
+              {t.freeAssessment.form.features}
+            </label>
+            <textarea id="features" name="features" rows="3"
+              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
+          </div>
+
+          <div>
+            <label for="integrations" class="block text-sm font-medium text-slate-700 mb-2">
+              {t.freeAssessment.form.integrations}
+            </label>
+            <textarea id="integrations" name="integrations" rows="2"
+              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+            {t.freeAssessment.form.submit}
+          </button>
+        </form>
+      </div>
+    </Card>
+  </div>
+</section>
+
+<script is:inline src="/js/form-security.js"></script>

@@ -1,0 +1,316 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import { getTranslations } from '../i18n/ui';
+
+const locale = 'hr';
+const t = getTranslations(locale);
+---
+
+<Layout
+  title="Usluge - HM-DIGITAL | Softverski razvoj, ERP, Webshop, Automatizacija, Digitalizacija"
+  description="Softverski razvoj i digitalizacija: backend/API razvoj, SaaS platforme, webshopovi, ERP sustavi, Fiskalizacija 2.0, automatizacija i digitalizacija dokumenata. Python i Rust ekspertiza."
+  canonical="/usluge"
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 to-white py-16 lg:py-24">
+    <div class="container-custom">
+      <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+        {t.services.title}
+      </h1>
+      <p class="text-xl text-slate-600 max-w-3xl">
+        {t.services.subtitle}
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Detail -->
+  <section class="pt-0 pb-16 lg:pt-0 lg:pb-24">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Backend Development -->
+        <div class="lg:col-span-1">
+          <Card padding="lg" class="h-full">
+            <div class="flex items-start gap-4 mb-6 min-h-[130px]">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">{t.services.backend.title}</h2>
+                <p class="text-slate-600 mb-4">{t.services.backend.desc}</p>
+              </div>
+            </div>
+
+            <h3 class="font-semibold text-slate-900 mb-3">Što nudimo:</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                RESTful i GraphQL API razvoj
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Mikroservis arhitektura
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Baza podataka dizajn i optimizacija
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Integracija s third-party servisima
+              </li>
+            </ul>
+          </Card>
+        </div>
+
+        <!-- SaaS Development -->
+        <div class="lg:col-span-1">
+          <Card padding="lg" class="h-full">
+            <div class="flex items-start gap-4 mb-6 min-h-[130px]">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">{t.services.saas.title}</h2>
+                <p class="text-slate-600">{t.services.saas.desc}</p>
+              </div>
+            </div>
+
+            <h3 class="font-semibold text-slate-900 mb-3">Od ideje do produkta:</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Produkt dizajn
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                MVP razvoj
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Skaliranje
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Održavanje
+              </li>
+            </ul>
+          </Card>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="mt-8">
+        <Card padding="lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900 mb-2">{t.services.web.title}</h2>
+              <p class="text-slate-600 mb-4">{t.services.web.desc}</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Web Trgovine</h3>
+              <p class="text-sm text-slate-600">Custom e-commerce rješenja</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">ERP Sustavi</h3>
+              <p class="text-sm text-slate-600">Poslovni sustavi po mjeri</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Fiskalizacija 2.0</h3>
+              <p class="text-sm text-slate-600">Potpuna integracija s poreznim sustavom</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">e-Računi</h3>
+              <p class="text-sm text-slate-600">Automatizacija izdavanja računa</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <!-- Automation & Integrations -->
+      <div class="mt-8">
+        <Card padding="lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900 mb-2">{t.services.automation.title}</h2>
+              <p class="text-slate-600 mb-4">{t.services.automation.desc}</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">API Integracije</h3>
+              <p class="text-sm text-slate-600">Povezivanje sustava</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Automatizacija</h3>
+              <p class="text-sm text-slate-600">Automatizacija poslovnih procesa</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Sinkronizacija</h3>
+              <p class="text-sm text-slate-600">Sinkronizacija podataka u realnom vremenu</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Custom Botovi</h3>
+              <p class="text-sm text-slate-600">Automatizirani izvršitelji zadataka</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <!-- Consulting -->
+      <div class="mt-8">
+        <Card padding="lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900 mb-2">{t.services.consulting.title}</h2>
+              <p class="text-slate-600 mb-4">{t.services.consulting.desc}</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Arhitektura</h3>
+              <p class="text-sm text-slate-600">Dizajn skalabilnih i sigurnih arhitektura</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Optimizacija</h3>
+              <p class="text-sm text-slate-600">Poboljšanje performanci postojećih sustava</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Transformacija</h3>
+              <p class="text-sm text-slate-600">Digitalna transformacija poslovnih procesa</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <!-- Digitization (Optional) -->
+      <div class="mt-8">
+        <Card padding="lg" class="border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-white">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-slate-900 mb-1">{t.services.digitization.title}</h2>
+              <p class="text-slate-600">{t.services.digitization.desc}</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Skeniranje</h3>
+              <p class="text-sm text-slate-600">Papir u digitalni format</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">OCR</h3>
+              <p class="text-sm text-slate-600">Pretraživi PDF/A dokumenti</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Organizacija</h3>
+              <p class="text-sm text-slate-600">Struktura po vašim potrebama</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Integracija</h3>
+              <p class="text-sm text-slate-600">ERP/DMS povezivanje</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Ne-destruktivno skeniranje</h3>
+              <p class="text-sm text-slate-600">Vrijedni i krhki dokumenti, rijetke knjige</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <!-- Analytics -->
+      <div class="mt-8">
+        <Card padding="lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900 mb-2">{t.services.analytics.title}</h2>
+              <p class="text-slate-600 mb-4">{t.services.analytics.desc}</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Google Analytics 4</h3>
+              <p class="text-sm text-slate-600">Potpuna GA4 implementacija</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Google Tag Manager</h3>
+              <p class="text-sm text-slate-600">Centralizirano upravljanje tagovima</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">Meta Pixel & Google Ads</h3>
+              <p class="text-sm text-slate-600">Praćenje konverzija i ROI</p>
+            </div>
+            <div class="text-center">
+              <h3 class="font-semibold text-slate-900 mb-2">E-commerce tracking</h3>
+              <p class="text-sm text-slate-600">Praćenje prodajnog lijevka</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-24 bg-primary-600">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">
+        {t.services.cta}
+      </h2>
+      <a href="/kontakt" class="inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 bg-slate-800 text-white hover:bg-slate-900 focus:ring-slate-500 px-8 py-4 text-lg">
+        Kontaktirajte nas
+      </a>
+    </div>
+  </section>
+</Layout>

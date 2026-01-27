@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTranslations } from '../i18n/ui';
+import QuoteRequestForm from '../components/sections/QuoteRequestForm.astro';
+
+const locale = 'hr';
+const t = getTranslations(locale);
+---
+
+<Layout
+  title={`${t.freeAssessment.title} - HM-DIGITAL | Besplatna procjena softverskog projekta`}
+  description="Zatražite besplatnu procjenu softverskog projekta. Opišite svoje potrebe i dobijte pravu procjenu za web aplikaciju, webshop, ERP ili automatizaciju."
+  canonical="/besplatna-procjena"
+>
+
+  <section class="pt-16 lg:pt-24 pb-0">
+    <div class="container-custom">
+      <div class="text-center mb-16 max-w-3xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+          {t.freeAssessment.title}
+        </h1>
+        <p class="text-xl text-slate-600">
+          {t.freeAssessment.subtitle}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <QuoteRequestForm />
+</Layout>

@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../i18n/ui';
+import Card from '../../components/ui/Card.astro';
+
+const locale = 'en';
+const t = getTranslations(locale);
+---
+
+<Layout
+  title={`${t.industries.title} - HM-DIGITAL | Software Solutions for Various Industries`}
+  description="We deliver software solutions for e-commerce, manufacturing, service businesses, medical sector, fintech and construction. Experience across diverse industries."
+  canonical="/en/industries"
+>
+
+  <section class="py-16 lg:py-24">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+          {t.industries.title}
+        </h1>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+          {t.industries.subtitle}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Card padding="xl">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.industries.ecommerce.title}</h3>
+          <p class="text-slate-600">{t.industries.ecommerce.desc}</p>
+        </Card>
+
+        <Card padding="xl">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.industries.manufacturing.title}</h3>
+          <p class="text-slate-600">{t.industries.manufacturing.desc}</p>
+        </Card>
+
+        <Card padding="xl">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.industries.services.title}</h3>
+          <p class="text-slate-600">{t.industries.services.desc}</p>
+        </Card>
+
+        <Card padding="xl">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.industries.medical.title}</h3>
+          <p class="text-slate-600">{t.industries.medical.desc}</p>
+        </Card>
+
+        <Card padding="xl">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.industries.fintech.title}</h3>
+          <p class="text-slate-600">{t.industries.fintech.desc}</p>
+        </Card>
+
+        <Card padding="xl">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.industries.construction.title}</h3>
+          <p class="text-slate-600">{t.industries.construction.desc}</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+</Layout>

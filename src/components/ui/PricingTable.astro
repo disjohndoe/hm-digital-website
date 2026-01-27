@@ -1,0 +1,48 @@
+---
+import { getTranslations, getLocaleFromPath } from '../../i18n/ui';
+import Card from '../ui/Card.astro';
+import Button from '../ui/Button.astro';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+---
+
+<section class="py-16 lg:py-24 bg-slate-50">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        {t.pricing.title}
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        {t.pricing.subtitle}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <!-- Startup -->
+      <Card padding="xl" class="h-full flex flex-col">
+        <h3 class="text-xl font-semibold text-slate-900 mb-2">{t.pricing.startup.name}</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-4">{t.pricing.startup.price}</p>
+        <p class="text-slate-600 mb-6">{t.pricing.startup.desc}</p>
+        <Button href={locale === 'hr' ? '/kontakt' : '/en/contact'} variant="outline" fullWidth class="mt-auto">{t.pricing.contactUs}</Button>
+      </Card>
+
+      <!-- SMB -->
+      <Card padding="xl" class="h-full flex flex-col">
+        <h3 class="text-xl font-semibold text-slate-900 mb-2">{t.pricing.smb.name}</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-4">{t.pricing.smb.price}</p>
+        <p class="text-slate-600 mb-6">{t.pricing.smb.desc}</p>
+        <Button href={locale === 'hr' ? '/kontakt' : '/en/contact'} variant="outline" fullWidth class="mt-auto">{t.pricing.contactUs}</Button>
+      </Card>
+
+      <!-- Enterprise -->
+      <Card padding="xl" class="h-full flex flex-col">
+        <h3 class="text-xl font-semibold text-slate-900 mb-2">{t.pricing.enterprise.name}</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-4">{t.pricing.enterprise.price}</p>
+        <p class="text-slate-600 mb-6">{t.pricing.enterprise.desc}</p>
+        <Button href={locale === 'hr' ? '/kontakt' : '/en/contact'} variant="outline" fullWidth class="mt-auto">{t.pricing.contactUs}</Button>
+      </Card>
+    </div>
+  </div>
+</section>

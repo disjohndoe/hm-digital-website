@@ -1,0 +1,397 @@
+---
+import { getTranslations } from '../../i18n/ui';
+import Button from '../ui/Button.astro';
+import { getLocaleFromPath } from '../../i18n/ui';
+import { Image } from 'astro:assets';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+---
+
+<section class="relative pt-20 pb-10 lg:pb-16">
+  <div class="container-custom text-center">
+    <!-- Banner Image with Text Overlay -->
+    <div class="mb-12 rounded-2xl overflow-hidden shadow-lg relative">
+      <Image
+        src="/hm-digital-banner.webp"
+        alt="HM-Digital - Profesionalni softverski razvoj i SaaS rješenja"
+        width={1920}
+        height={600}
+        widths={[360, 640, 768, 1024, 1280, 1920]}
+        sizes="(max-width: 640px) 360px, (max-width: 768px) 640px, (max-width: 1024px) 768px, 1024px"
+        loading="eager"
+        class="w-full h-auto"
+      />
+      <!-- Dark overlay for text readability -->
+      <div class="absolute inset-0 bg-black/40"></div>
+      <!-- Text Overlay -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center px-4">
+        <h1 class="brand text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-gradient-hero mb-6 matrix-target" data-text="HM DIGITAL">
+          HM DIGITAL
+        </h1>
+        <p class="tagline opacity-0" data-text="Modern software solutions built for the future">
+          <span class="text-lg sm:text-xl lg:text-2xl text-white font-medium"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6 text-center">
+        <span class="text-gradient">{t.hero.title}</span>
+      </h2>
+      <p class="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+        {t.hero.subtitle}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button
+          href="/kontakt"
+          variant="primary"
+          size="lg"
+        >
+          {t.hero.cta}
+        </Button>
+        <Button
+          href={locale === 'hr' ? '/projekti' : '/en/projects'}
+          variant="outline"
+          size="lg"
+        >
+          {t.hero.viewProjects}
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const matrixChars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%^&*';
+
+  function matrixDecode(element, targetLength) {
+    return new Promise((resolve) => {
+      const originalText = element.getAttribute('data-text');
+      let iterations = 0;
+
+      const interval = setInterval(() => {
+        element.innerText = originalText
+          .split('')
+          .map((letter, index) => {
+            if (letter === ' ') return ' ';
+            if (index < targetLength && index < iterations / 3) {
+              return originalText[index];
+            }
+            return matrixChars[Math.floor(Math.random() * matrixChars.length)];
+          })
+          .join('');
+
+        if (iterations >= targetLength * 3 + 20) {
+          clearInterval(interval);
+          resolve();
+        }
+        iterations++;
+      }, 60);
+    });
+  }
+
+  function matrixScramble(element) {
+    return new Promise((resolve) => {
+      const originalText = element.getAttribute('data-text');
+      let iterations = 0;
+
+      const interval = setInterval(() => {
+        element.innerText = originalText
+          .split('')
+          .map((letter) => {
+            if (letter === ' ') return ' ';
+            return matrixChars[Math.floor(Math.random() * matrixChars.length)];
+          })
+          .join('');
+
+        iterations++;
+        if (iterations > 15) {
+          clearInterval(interval);
+          resolve();
+        }
+      }, 40);
+    });
+  }
+
+  async function runMatrixEffect(element) {
+    // First reveal: "HM" (2 chars)
+    await matrixDecode(element, 2);
+
+    // Pause briefly
+    await new Promise(r => setTimeout(r, 300));
+
+    // Scramble everything
+    await matrixScramble(element);
+
+    // Pause briefly
+    await new Promise(r => setTimeout(r, 200));
+
+    // Full reveal: "HM DIGITAL"
+    await matrixDecode(element, 11);
+
+    // Final cleanup
+    element.innerText = element.getAttribute('data-text');
+
+    // Now show and animate the tagline word by word
+    const tagline = document.querySelector('.tagline');
+    if (tagline) {
+      const text = tagline.getAttribute('data-text');
+      const words = text.split(' ');
+      const span = tagline.querySelector('span');
+
+      tagline.classList.remove('opacity-0');
+
+      let cumulativeDelay = 0;
+      let maxFinishTime = 0;
+
+      // Create word elements with glitch effect
+      words.forEach((word, i) => {
+        const wordSpan = document.createElement('span');
+        wordSpan.textContent = word;
+        wordSpan.className = 'tagline-word';
+        wordSpan.style.opacity = '0';
+        span.appendChild(wordSpan);
+
+        // First word appears instantly and stabilizes quickly, others have random delay
+        const randomDelay = i === 0 ? 0 : 200 + Math.random() * 400;
+        cumulativeDelay += randomDelay;
+
+        // First word glitches briefly (80-150ms), others 0.4-0.8 seconds
+        const glitchDuration = i === 0 ? 80 + Math.random() * 70 : 400 + Math.random() * 400;
+        const finishTime = cumulativeDelay + glitchDuration;
+        maxFinishTime = Math.max(maxFinishTime, finishTime);
+
+        // Word appears and starts glitching
+        setTimeout(() => {
+          wordSpan.style.opacity = '1';
+        }, cumulativeDelay);
+
+        // Word stops glitching after appearing + glitch duration
+        setTimeout(() => {
+          wordSpan.classList.add('glitch-done');
+        }, cumulativeDelay + glitchDuration);
+
+        if (i < words.length - 1) {
+          const space = document.createTextNode(' ');
+          span.appendChild(space);
+        }
+      });
+
+      // After all words finish, start syntax scan on HM DIGITAL
+      setTimeout(() => {
+        runSyntaxScan();
+      }, maxFinishTime + 300);
+    }
+  }
+
+  function runSyntaxScan() {
+    const brandElement = document.querySelector('.brand');
+    if (!brandElement) return;
+
+    const text = brandElement.textContent;
+    const letters = text.split('');
+    brandElement.innerHTML = '';
+
+    // Create span for each letter
+    letters.forEach((letter, i) => {
+      const span = document.createElement('span');
+      span.textContent = letter === ' ' ? '\u00A0' : letter;
+      span.className = 'syntax-letter';
+      brandElement.appendChild(span);
+    });
+
+    // Add scan line
+    const scanLine = document.createElement('span');
+    scanLine.className = 'syntax-scan-line';
+    brandElement.appendChild(scanLine);
+
+    // Animate scan line
+    scanLine.style.animation = 'syntax-scan 1.5s ease-in-out forwards';
+
+    // Color each letter as scan passes
+    const letterSpans = brandElement.querySelectorAll('.syntax-letter');
+    const totalWidth = brandElement.offsetWidth;
+    const scanDuration = 1500; // matches CSS animation
+
+    letterSpans.forEach((span, i) => {
+      const letterOffset = span.offsetLeft;
+      const triggerTime = (letterOffset / totalWidth) * scanDuration;
+
+      setTimeout(() => {
+        span.style.color = getSyntaxColor(i, letters[i]);
+        span.style.textShadow = '0 0 10px currentColor';
+      }, triggerTime);
+    });
+
+    // Remove scan line after animation, keep the glow
+    setTimeout(() => {
+      scanLine.remove();
+    }, scanDuration + 200);
+
+    // Replace HM with logo after scan completes
+    setTimeout(() => {
+      replaceHMWithLogo(brandElement);
+    }, scanDuration + 50);
+  }
+
+  function replaceHMWithLogo(brandElement) {
+    const letterSpans = brandElement.querySelectorAll('.syntax-letter');
+    if (letterSpans.length < 2) return;
+
+    // Get the first letter span for sizing reference
+    const firstSpan = letterSpans[0];
+    const fontSize = window.getComputedStyle(firstSpan).fontSize;
+    const numericFontSize = parseFloat(fontSize);
+
+    // Calculate logo height (approximately 1.2x the font size for visual match)
+    const logoHeight = numericFontSize * 1.2;
+
+    // Create logo container
+    const logoContainer = document.createElement('span');
+    logoContainer.className = 'syntax-logo-container';
+    logoContainer.style.display = 'inline-flex';
+    logoContainer.style.alignItems = 'center';
+    logoContainer.style.verticalAlign = 'middle';
+    logoContainer.style.marginRight = '0.1em';
+
+    // Create logo image
+    const logoImg = document.createElement('img');
+    logoImg.src = '/logo.svg';
+    logoImg.alt = 'HM';
+    logoImg.className = 'syntax-logo';
+    logoImg.style.height = `${logoHeight}px`;
+    logoImg.style.width = 'auto';
+    logoImg.style.filter = 'drop-shadow(0 0 10px #00ff00)';
+
+    logoContainer.appendChild(logoImg);
+
+    // Replace first 2 spans (H and M) with logo
+    firstSpan.parentNode.insertBefore(logoContainer, firstSpan);
+    letterSpans[0].remove();
+    letterSpans[1].remove();
+  }
+
+  function getSyntaxColor(index, letter) {
+    // Terminal colors - HM in green, DIGITAL in white
+    const colors = {
+      hm: '#00ff00',       // terminal green (HM)
+      digital: '#ffffff',  // terminal white (DIGITAL)
+    };
+
+    if (index < 2) return colors.hm; // H, M
+    return colors.digital; // D, I, G, I, T, A, L
+  }
+
+  // Start Matrix effect immediately
+  const target = document.querySelector('.matrix-target');
+  if (target) {
+    runMatrixEffect(target);
+  }
+</script>
+
+<style>
+  .tagline {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .tagline > span {
+    display: inline-block;
+  }
+
+  :global(.tagline-word) {
+    display: inline-block;
+    animation: word-glitch 0.4s infinite steps(2) alternate;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+
+  /* Each word stabilizes (stops glitching) when glitch-done is added */
+  :global(.tagline-word.glitch-done) {
+    animation: none !important;
+  }
+
+  /* Syntax scan animation */
+  .brand {
+    position: relative;
+  }
+
+  :global(.syntax-letter) {
+    transition: color 0.1s, text-shadow 0.1s;
+  }
+
+  :global(.syntax-logo-container) {
+    animation: logo-appear 0.3s ease-out forwards;
+  }
+
+  :global(.syntax-logo) {
+    transition: filter 0.3s ease-out;
+  }
+
+  @keyframes logo-appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+      filter: brightness(2);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      filter: brightness(1);
+    }
+  }
+
+  :global(.syntax-scan-line) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #61afef, transparent);
+    box-shadow: 0 0 15px #61afef, 0 0 30px #61afef;
+    animation: syntax-scan 1.5s ease-in-out forwards;
+  }
+
+  @keyframes syntax-scan {
+    0% {
+      left: 0;
+      opacity: 1;
+    }
+    100% {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes word-glitch {
+    0% {
+      transform: skew(0deg) translateX(0);
+      text-shadow: 3px 0 #ff00ff, -3px 0 #00ffff;
+    }
+    20% {
+      transform: skew(-3deg) translateX(-3px);
+      text-shadow: -3px 0 #ff00ff, 3px 0 #00ffff;
+    }
+    40% {
+      transform: skew(3deg) translateX(3px);
+      text-shadow: 3px 0 #ff00ff, -3px 0 #00ffff;
+    }
+    60% {
+      transform: skew(-2deg) translateX(-2px);
+      text-shadow: -3px 0 #ff00ff, 3px 0 #00ffff;
+    }
+    80% {
+      transform: skew(2deg) translateX(2px);
+      text-shadow: 3px 0 #ff00ff, -3px 0 #00ffff;
+    }
+    100% {
+      transform: skew(-1deg) translateX(-1px);
+      text-shadow: -3px 0 #ff00ff, 3px 0 #00ffff;
+    }
+  }
+</style>

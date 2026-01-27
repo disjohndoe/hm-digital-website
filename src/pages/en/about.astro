@@ -1,0 +1,168 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/ui/Card.astro';
+import Button from '../../components/ui/Button.astro';
+import { getTranslations, getLocaleFromPath } from '../../i18n/ui';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+---
+
+<Layout
+  title="About - HM-DIGITAL"
+  description="HM-DIGITAL - Over 10 years of experience in software development."
+  canonical="/en/about"
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 to-white py-5 lg:py-7">
+    <div class="container-custom">
+      <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+        {t.about.title}
+      </h1>
+      <p class="text-xl text-slate-600 max-w-3xl">
+        {t.about.subtitle}
+      </p>
+    </div>
+  </section>
+
+  <!-- Who we are -->
+  <section class="py-5 lg:py-7 bg-white">
+    <div class="container-custom">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">{t.about.whoWeAreTitle}</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          {t.about.whoWeAreDesc}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="py-5 lg:py-7">
+    <div class="container-custom">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">{t.about.experience}</h2>
+        <div class="flex flex-col items-start gap-2 mb-6">
+          <span class="text-5xl font-bold text-primary-600">{t.about.experienceYears}</span>
+          <span class="text-5xl font-bold text-primary-600">{t.about.projectsCount}</span>
+        </div>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          {t.about.experienceDesc}
+        </p>
+        <p class="text-base text-slate-500 leading-relaxed mt-4 italic">
+          {t.about.digitizationAddon}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="py-10 lg:py-14 bg-slate-50">
+    <div class="container-custom">
+      <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">
+        {t.about.techStack}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Backend -->
+        <Card padding="lg">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4 flex items-center gap-3">
+            <span class="text-2xl">⚙️</span>
+            {t.about.techBackend}
+          </h3>
+          <p class="text-slate-600 whitespace-pre-line leading-relaxed">
+            {t.about.techBackendDesc}
+          </p>
+        </Card>
+
+        <!-- Frontend -->
+        <Card padding="lg">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4 flex items-center gap-3">
+            <span class="text-2xl">🎨</span>
+            {t.about.techFrontend}
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            {t.about.techFrontendDesc}
+          </p>
+        </Card>
+
+        <!-- Databases -->
+        <Card padding="lg">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4 flex items-center gap-3">
+            <span class="text-2xl">🗄️</span>
+            {t.about.techDatabases}
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            {t.about.techDatabasesDesc}
+          </p>
+        </Card>
+
+        <!-- Tools -->
+        <Card padding="lg">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4 flex items-center gap-3">
+            <span class="text-2xl">🛠️</span>
+            {t.about.techTools}
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            {t.about.techToolsDesc}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-10 lg:py-14">
+    <div class="container-custom">
+      <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">
+        {t.about.values}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Card padding="lg" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.about.qualityTitle}</h3>
+          <p class="text-slate-600">{t.about.qualityDesc}</p>
+        </Card>
+
+        <Card padding="lg" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.about.innovationTitle}</h3>
+          <p class="text-slate-600">{t.about.innovationDesc}</p>
+        </Card>
+
+        <Card padding="lg" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.about.partnershipTitle}</h3>
+          <p class="text-slate-600">{t.about.partnershipDesc}</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-10 lg:py-14 bg-primary-600">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">
+        Want to know more?
+      </h2>
+      <p class="text-lg text-primary-100 max-w-2xl mx-auto mb-8">
+        Contact us and learn how we can help your business.
+      </p>
+      <Button href="/en/contact" variant="secondary" size="lg">
+        {t.nav.contact}
+      </Button>
+    </div>
+  </section>
+</Layout>

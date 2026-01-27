@@ -1,0 +1,51 @@
+---
+import '../styles/global.css';
+import MetaTags from '../components/seo/MetaTags.astro';
+import StructuredData from '../components/seo/StructuredData.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import { getLocaleFromPath } from '../i18n/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  canonical?: string;
+}
+
+const {
+  title,
+  description,
+  image,
+  type = 'website',
+  canonical = Astro.url.pathname
+} = Astro.props;
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const lang = locale === 'hr' ? 'hr' : 'en';
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <MetaTags
+      title={title}
+      description={description}
+      image={image}
+      locale={locale}
+      type={type}
+      canonical={canonical}
+    />
+    <StructuredData type="organization" locale={locale} />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Header currentPath={Astro.url.pathname} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

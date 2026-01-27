@@ -1,0 +1,124 @@
+---
+import { getLocaleFromPath, getPathForLocale, getTranslations } from '../../i18n/ui';
+import Button from '../ui/Button.astro';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-slate-900 text-white">
+  <div class="container-custom py-12 lg:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+      <!-- Brand -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2">
+          <img src="/logo.svg" alt="HM-DIGITAL logo" class="w-10 h-10" />
+          <span class="text-xl font-bold">DIGITAL</span>
+        </div>
+        <p class="text-slate-400 text-sm">
+          {t.footer.tagline}
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-4">{locale === 'hr' ? 'Linkovi' : 'Links'}</h3>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href={getPathForLocale('/', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.home}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/o-nama', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.about}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/usluge', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.services}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/industrije', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.industries}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- More Links -->
+      <div>
+        <h3 class="font-semibold mb-4">{locale === 'hr' ? 'Ostale stranice' : 'Other pages'}</h3>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href={getPathForLocale('/cjenik', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.pricing}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/projekti', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.projects}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/besplatna-procjena', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.nav.freeAssessment}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/kontakt', locale)}
+              class="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium"
+            >
+              {t.footer.digitizationLink}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold mb-4">{t.nav.contact}</h3>
+        <ul class="space-y-2">
+          <li class="text-slate-400 text-sm">
+            <a href={`mailto:${t.contact.email}`} class="hover:text-white transition-colors">
+              {t.contact.email}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-12 pt-8 border-t border-slate-800 flex justify-center items-center gap-4">
+      <p class="text-slate-400 text-sm">
+        &copy; {currentYear} HM-DIGITAL. {t.footer.rights}.
+      </p>
+    </div>
+  </div>
+</footer>

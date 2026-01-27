@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProjectCard from '../../components/sections/ProjectCard.astro';
+import { getTranslations } from '../../i18n/ui';
+
+const locale = 'en';
+const t = getTranslations(locale);
+---
+
+<Layout
+  title="Projects - HM-DIGITAL | Our Portfolio and Successful Implementations"
+  description="View our completed projects: Digital Office platform, web applications, webshops and ERP systems. Examples of successful implementations for the Croatian market."
+  canonical="/en/projects"
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 to-white pt-16 lg:pt-24 pb-0">
+    <div class="container-custom">
+      <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+        {t.projects.title}
+      </h1>
+      <p class="text-xl text-slate-600 max-w-3xl">
+        {t.projects.subtitle}
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-16 lg:py-24">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Digitalni Ured -->
+        <ProjectCard
+          title="Digitalni Ured"
+          description="A platform for business process digitalization. The system enables companies to easily manage documentation, electronically sign documents, and integrate with existing business systems. Focus on security, reliability, and ease of use."
+          tech={['Python', 'FastAPI', 'PostgreSQL', 'Next.js', 'Tailwind.css', 'Whisper (OpenAI)', 'Docker', 'Redis']}
+          href="https://digitalni-ured.hr"
+          locale="en"
+        />
+
+        <!-- External Link -->
+        <a
+          href="https://softwarebymatt.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-white rounded-xl shadow-sm border border-slate-200 p-8 hover:shadow-md transition-shadow flex flex-col h-full"
+        >
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-slate-900 mb-1.5 group-hover:text-primary-600 transition-colors flex items-center gap-2">
+              More Projects
+              <svg class="w-5 h-5 text-slate-400 group-hover:text-primary-600 transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </h3>
+            <p class="text-slate-600 mb-1">
+              Check out our other projects at softwarebymatt.com. A collection of our other projects.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              HTML/CSS
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              JavaScript
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              React.js
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              Redux
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              Node.js
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              Python
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              WordPress
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              Bootstrap
+            </span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">
+              REST APIs
+            </span>
+          </div>
+          <div class="h-10"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-24 bg-slate-50">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+        Have a Project Idea?
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+        Contact us and let's bring your vision to life together.
+      </p>
+      <a
+        href="/en/contact"
+        class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+      >
+        Start a Project
+      </a>
+    </div>
+  </section>
+</Layout>

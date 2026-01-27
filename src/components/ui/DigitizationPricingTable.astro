@@ -1,0 +1,79 @@
+---
+import { getTranslations, getLocaleFromPath } from '../../i18n/ui';
+
+const currentPath = Astro.url.pathname;
+const locale = getLocaleFromPath(currentPath);
+const t = getTranslations(locale);
+
+const services = [
+  'bulkScanning',
+  'smallBatch',
+  'bookNonDestructive',
+  'ocr',
+  'indexing',
+  'archiveOrganization',
+  'onSiteScanning',
+  'dmsSetup',
+  'cloudHosting',
+  'basicTraining',
+  'advancedTraining',
+  'recordsConsulting'
+] as const;
+---
+
+<section class="py-16 lg:py-24 bg-white">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        {t.digitizationPricing.title}
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        {t.digitizationPricing.subtitle}
+      </p>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse bg-white rounded-lg shadow-sm">
+        <thead>
+          <tr class="bg-slate-100 border-b-2 border-slate-200">
+            <th class="text-left p-4 font-semibold text-slate-900">
+              {t.digitizationPricing.headers.service}
+            </th>
+            <th class="text-left p-4 font-semibold text-slate-900 hidden sm:table-cell">
+              {t.digitizationPricing.headers.unit}
+            </th>
+            <th class="text-left p-4 font-semibold text-slate-900">
+              {t.digitizationPricing.headers.price}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {services.map((serviceKey) => (
+            <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+              <td class="p-4">
+                <div class="font-medium text-slate-900">
+                  {t.digitizationPricing[serviceKey].service}
+                </div>
+                <div class="text-sm text-slate-500 mt-1">
+                  {t.digitizationPricing[serviceKey].note}
+                </div>
+              </td>
+              <td class="p-4 text-slate-600 hidden sm:table-cell">
+                {t.digitizationPricing[serviceKey].unit}
+              </td>
+              <td class="p-4">
+                <span class="font-semibold text-primary-600">
+                  {t.digitizationPricing[serviceKey].price}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-slate-500 mt-6 text-center">
+      * {t.digitizationPricing.disclaimer}
+    </p>
+  </div>
+</section>

@@ -1,0 +1,156 @@
+---
+import { getLocaleFromPath, getPathForLocale, getTranslations } from '../../i18n/ui';
+import LanguageSwitcher from '../ui/LanguageSwitcher.astro';
+import Button from '../ui/Button.astro';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const locale = getLocaleFromPath(currentPath);
+const homePath = getPathForLocale('/', locale);
+const t = getTranslations(locale);
+
+const navItems = [
+  { key: 'home', href: getPathForLocale('/', locale) },
+  { key: 'about', href: getPathForLocale('/o-nama', locale) },
+  { key: 'services', href: getPathForLocale('/usluge', locale) },
+  { key: 'industries', href: getPathForLocale('/industrije', locale) },
+  { key: 'pricing', href: getPathForLocale('/cjenik', locale) },
+  { key: 'projects', href: getPathForLocale('/projekti', locale) },
+  { key: 'freeAssessment', href: getPathForLocale('/besplatna-procjena', locale) },
+  { key: 'contact', href: getPathForLocale('/kontakt', locale) }
+];
+
+function isActive(href: string, current: string): boolean {
+  const normalizedCurrent = current.replace(/^\/en/, '') || '/';
+  const normalizedHref = href.replace(/^\/en/, '') || '/';
+  return normalizedCurrent === normalizedHref || normalizedCurrent.startsWith(normalizedHref + '/');
+}
+---
+
+<script>
+  const menuIcon = document.getElementById('menu-icon') as HTMLElement;
+  const closeIcon = document.getElementById('close-icon') as HTMLElement;
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const isHidden = menu?.classList.contains('hidden');
+
+    if (isHidden) {
+      menu?.classList.remove('hidden');
+      menuIcon?.classList.add('hidden');
+      closeIcon?.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    } else {
+      menu?.classList.add('hidden');
+      menuIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+  }
+
+  function closeMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu?.classList.add('hidden');
+    menuIcon?.classList.remove('hidden');
+    closeIcon?.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('mobile-menu');
+    const hamburger = document.getElementById('hamburger-button');
+    if (menu && !menu.contains(e.target) && !hamburger?.contains(e.target) && !menu.classList.contains('hidden')) {
+      closeMenu();
+    }
+  });
+
+  // Expose functions globally for onclick attributes
+  (window as any).toggleMenu = toggleMenu;
+  (window as any).closeMenu = closeMenu;
+</script>
+
+<header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-700">
+  <div class="container-custom">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a href={homePath} class="flex items-center gap-2 z-50 relative">
+        <img src="/logo.svg" alt="HM-DIGITAL logo" class="w-10 h-10" />
+        <span class="text-xl font-bold text-white">DIGITAL</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class={`text-base font-medium transition-colors ${
+              isActive(item.href, currentPath)
+                ? 'text-primary-200'
+                : 'text-white hover:text-primary-200'
+            }`}
+          >
+            {t.nav[item.key as keyof typeof t.nav]}
+          </a>
+        ))}
+      </nav>
+
+      <!-- Desktop Right side -->
+      <div class="hidden md:flex items-center">
+        <LanguageSwitcher currentPath={currentPath} />
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button
+        id="hamburger-button"
+        onclick="toggleMenu()"
+        class="md:hidden p-2 text-white hover:text-primary-200 transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 absolute w-full">
+    <nav class="container-custom py-4">
+      <ul class="flex flex-col gap-2">
+        {navItems.map(item => (
+          <li>
+            <a
+              href={item.href}
+              onclick="closeMenu()"
+              class={`block py-3 px-4 rounded-lg text-sm font-medium transition-colors ${
+                isActive(item.href, currentPath)
+                  ? 'bg-primary-900/30 text-primary-200'
+                  : 'text-white hover:bg-slate-700'
+              }`}
+            >
+              {t.nav[item.key as keyof typeof t.nav]}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-4 pt-4 border-t border-slate-700 flex items-center justify-between gap-4">
+        <LanguageSwitcher currentPath={currentPath} />
+        <Button
+          href={getPathForLocale('/kontakt', locale)}
+          variant="primary"
+          size="sm"
+          onclick="closeMenu()"
+        >
+          {t.nav.contact}
+        </Button>
+      </div>
+    </nav>
+  </div>
+</header>
