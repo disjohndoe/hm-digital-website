@@ -10,7 +10,7 @@ export const en = {
     contact: 'Contact'
   },
   hero: {
-    title: 'Custom Application Development - Web, Webshops, Mobile Apps, ERP & Automation',
+    title: 'Custom Application Development - Web, Webshops, Mobile Apps, ERP, Automation & Digitization',
     subtitle:
       'We specialize in crafting applications that not only look great but also grab attention and boost your company\'s visibility.',
     cta: 'Request a free quote',
@@ -132,6 +132,8 @@ export const en = {
       submit: 'Send inquiry'
     },
     email: 'info@hmdigital.hr',
+    phone: '(+385) 097 7120 800',
+    address: 'Mašić 58, 35428 Dragalić, Croatia',
     social: 'Follow us'
   },
   pricing: {

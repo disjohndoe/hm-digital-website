@@ -110,6 +110,14 @@ const currentYear = new Date().getFullYear();
               {t.contact.email}
             </a>
           </li>
+          <li class="text-slate-400 text-sm">
+            <a href={`tel:${t.contact.phone.replace(/[^0-9+]/g, '')}`} class="hover:text-white transition-colors">
+              {t.contact.phone}
+            </a>
+          </li>
+          <li class="text-slate-400 text-sm">
+            {t.contact.address}
+          </li>
         </ul>
       </div>
     </div>

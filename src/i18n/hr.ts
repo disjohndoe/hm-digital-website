@@ -10,7 +10,7 @@ export const hr = {
     contact: 'Kontakt'
   },
   hero: {
-    title: 'Razvoj aplikacija po mjeri - web, webshop, mobilne aplikacije, ERP sustava i automatizacija',
+    title: 'Razvoj aplikacija po mjeri - web, webshop, mobilne aplikacije, ERP sustava, automatizacija i digitalizacija',
     subtitle:
       'Specijalizirani smo za izradu aplikacija koje ne samo da izgledaju odlično, već ističu vašu tvrtku i povećavaju vidljivost na tržištu.',
     cta: 'Zatražite besplatnu procjenu',
@@ -132,6 +132,8 @@ export const hr = {
       submit: 'Pošalji upit'
     },
     email: 'info@hmdigital.hr',
+    phone: '(+385) 097 7120 800',
+    address: 'Mašić 58, 35428 Dragalić, Hrvatska',
     social: 'Pratite nas'
   },
   pricing: {
