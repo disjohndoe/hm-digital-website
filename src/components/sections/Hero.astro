@@ -1,5 +1,5 @@
 ---
-import { getTranslations } from '../../i18n/ui';
+import { getTranslations, getPathForLocale } from '../../i18n/ui';
 import Button from '../ui/Button.astro';
 import { getLocaleFromPath } from '../../i18n/ui';
 import { Image } from 'astro:assets';
@@ -45,14 +45,14 @@ const t = getTranslations(locale);
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button
-          href="/kontakt"
+          href={getPathForLocale('/besplatna-procjena', locale)}
           variant="primary"
           size="lg"
         >
           {t.hero.cta}
         </Button>
         <Button
-          href={locale === 'hr' ? '/projekti' : '/en/projects'}
+          href={getPathForLocale('/projekti', locale)}
           variant="outline"
           size="lg"
         >
