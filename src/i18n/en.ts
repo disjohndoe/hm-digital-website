@@ -12,7 +12,7 @@ export const en = {
   hero: {
     title: 'Custom Application Development - Web, Webshops, Mobile Apps, ERP & Automation',
     subtitle:
-      'We build solutions that stand out and deliver results. We specialize in crafting applications that not only look great but also grab attention and boost your company\'s visibility.',
+      'We specialize in crafting applications that not only look great but also grab attention and boost your company\'s visibility.',
     cta: 'Request a free quote',
     viewProjects: 'View projects'
   },
