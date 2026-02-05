@@ -9,7 +9,13 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://hmdigital.hr',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      entryLimit: 10000,
+    })
+  ],
   i18n: {
     defaultLocale: 'hr',
     locales: ['hr', 'en'],
