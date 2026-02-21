@@ -12,6 +12,7 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   canonical?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -19,7 +20,8 @@ const {
   description,
   image,
   type = 'website',
-  canonical = Astro.url.pathname
+  canonical = Astro.url.pathname,
+  noindex = false
 } = Astro.props;
 
 const locale = getLocaleFromPath(Astro.url.pathname);
@@ -38,8 +40,10 @@ const lang = locale === 'hr' ? 'hr' : 'en';
       locale={locale}
       type={type}
       canonical={canonical}
+      noindex={noindex}
     />
     <StructuredData type="organization" locale={locale} />
+    <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col">
     <Header currentPath={Astro.url.pathname} />

@@ -13,10 +13,31 @@ const t = getTranslations(locale);
 ---
 
 <Layout
-  title="HM-DIGITAL - Software Development | Web Apps, ERP, E-commerce, Automation & Digitization"
+  title="HM Digital - Software Development | Web Apps, ERP, E-commerce, Automation & Digitization"
   description="Professional software development services. We build web applications, e-commerce platforms, ERP systems, and automation solutions. 10+ years of experience. Get a free quote!"
   canonical="/en/"
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://hmdigital.hr/en/",
+    "name": "HM Digital",
+    "description": "Professional software development for the Croatian market - web applications, webshops, ERP systems, automation and document digitization",
+    "publisher": {
+      "@type": "Organization",
+      "name": "HM Digital",
+      "url": "https://hmdigital.hr",
+      "logo": "https://hmdigital.hr/logo.svg"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://hmdigital.hr/en/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  })} />
   <Hero />
 
   <!-- Value Proposition -->

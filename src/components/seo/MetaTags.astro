@@ -8,6 +8,7 @@ interface Props {
   locale: string;
   type?: 'website' | 'article';
   canonical?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -16,8 +17,13 @@ const {
   image = '/hm-digital-logo-veliki-social.png',
   locale,
   type = 'website',
-  canonical
+  canonical,
+  noindex = false
 } = Astro.props;
+
+const keywords = locale === 'hr'
+  ? 'hm digital, HM Digital, HM-DIGITAL, hmdigital, softverski razvoj, web aplikacije, ERP sustavi, automatizacija, digitalizacija, Hrvatska'
+  : 'hm digital, HM Digital, HM-DIGITAL, hmdigital, software development, web applications, ERP systems, automation, digitization, Croatia';
 
 const siteUrl = 'https://hmdigital.hr';
 const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
@@ -34,6 +40,8 @@ const alternateUrl = `${siteUrl}${alternatePath}`;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
 <link rel="canonical" href={fullUrl} />
 
 <!-- Open Graph / Facebook -->

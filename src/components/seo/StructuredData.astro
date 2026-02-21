@@ -17,12 +17,12 @@ const descriptions = {
 const baseOrganization = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'HM-DIGITAL',
-  alternateName: 'HM Digital',
+  name: 'HM Digital',
+  alternateName: ['HM-DIGITAL', 'HM DIGITAL', 'hmdigital', 'hm digital'],
   description: descriptions[locale as keyof typeof descriptions],
   url: siteUrl,
   logo: `${siteUrl}/logo.svg`,
-  email: 'info@hm-digital.hr',
+  email: 'info@hmdigital.hr',
   telephone: '+385-97-120-800',
   address: {
     '@type': 'PostalAddress',
@@ -63,11 +63,11 @@ const baseOrganization = {
 const localBusiness = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'HM-DIGITAL',
+  name: 'HM Digital',
   description: descriptions[locale as keyof typeof descriptions],
   url: siteUrl,
   logo: `${siteUrl}/logo.svg`,
-  email: 'info@hm-digital.hr',
+  email: 'info@hmdigital.hr',
   telephone: '+385-97-120-800',
   address: {
     '@type': 'PostalAddress',
@@ -120,8 +120,14 @@ const structuredData = type === 'organization' ? baseOrganization
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     url: `${siteUrl}/`,
-    name: 'HM-DIGITAL',
+    name: 'HM Digital',
     description: descriptions[locale as keyof typeof descriptions],
+    publisher: {
+      '@type': 'Organization',
+      name: 'HM Digital',
+      url: siteUrl,
+      logo: `${siteUrl}/logo.svg`
+    },
     ...data
   };
 ---

@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /uspjeh
+Disallow: /en/success
 
 Sitemap: https://hmdigital.hr/sitemap-index.xml
