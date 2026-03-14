@@ -1,9 +1,9 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Card from '../../components/ui/Card.astro';
-import Button from '../../components/ui/Button.astro';
-import ProjectCard from '../../components/sections/ProjectCard.astro';
-import { getTranslations, getPathForLocale } from '../../i18n/ui';
+import Layout from '../../../layouts/Layout.astro';
+import Card from '../../../components/ui/Card.astro';
+import Button from '../../../components/ui/Button.astro';
+import ProjectCard from '../../../components/sections/ProjectCard.astro';
+import { getTranslations, getPathForLocale } from '../../../i18n/ui';
 
 const locale = 'en';
 const t = getTranslations(locale);
@@ -13,7 +13,7 @@ const s = t.salesPage;
 <Layout
   title={s.meta.title}
   description={s.meta.description}
-  canonical="/en/for-you"
+  canonical="/en/for-you/consultants"
   noindex={true}
 >
   <!-- Hero -->
