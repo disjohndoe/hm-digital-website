@@ -1,0 +1,69 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { ocrResultText } from '../../../data/demo-digital-office';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const p = t.demoDigitalOffice.accounting.invoicePreview;
+---
+
+<dialog id="invoice-preview-modal" class="rounded-2xl shadow-2xl backdrop:bg-black/50 p-0 max-w-2xl w-full">
+  <div class="p-6">
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-xl font-bold text-slate-900">{p.title}</h3>
+      <button
+        type="button"
+        id="invoice-modal-close"
+        class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 transition-colors text-slate-500"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Invoice content -->
+    <div class="bg-slate-50 rounded-lg p-6 font-mono text-sm text-slate-700 whitespace-pre-wrap leading-relaxed max-h-96 overflow-y-auto">
+      {ocrResultText}
+    </div>
+
+    <div class="mt-4 flex justify-end">
+      <button
+        type="button"
+        id="invoice-modal-close-btn"
+        class="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-300 transition-colors"
+      >
+        {p.close}
+      </button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  function initInvoiceModal() {
+    const modal = document.getElementById('invoice-preview-modal') as HTMLDialogElement | null;
+    if (!modal) return;
+
+    const close1 = document.getElementById('invoice-modal-close');
+    const close2 = document.getElementById('invoice-modal-close-btn');
+
+    [close1, close2].forEach(btn => {
+      btn?.addEventListener('click', () => modal.close());
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+
+    // Listen for custom open event
+    document.addEventListener('open-invoice-preview', () => {
+      modal.showModal();
+    });
+  }
+
+  initInvoiceModal();
+  document.addEventListener('astro:after-swap', initInvoiceModal);
+</script>

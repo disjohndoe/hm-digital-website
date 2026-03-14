@@ -1,0 +1,25 @@
+---
+import type { Translations } from '../../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const d = t.demoDigitalOffice.dashboard;
+---
+
+<div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 h-full">
+  <h3 class="text-lg font-semibold text-slate-900 mb-4">{d.cashFlowTitle}</h3>
+  <div class="relative h-64">
+    <canvas id="do-chart-cashflow"></canvas>
+  </div>
+</div>
+
+<script define:vars={{ months: d.cashFlowMonths, receiptsLabel: d.cashFlowReceipts, expensesLabel: d.cashFlowExpenses }}>
+  window.__doCashFlowLabels = {
+    months: months.split(','),
+    receiptsLabel,
+    expensesLabel
+  };
+</script>

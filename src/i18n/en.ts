@@ -315,6 +315,405 @@ export const en = {
     cta: 'Request a digitization quote',
     cta2: 'See our prices'
   },
+  salesPage: {
+    meta: {
+      title: 'IT Partner for EU-Funded Project Implementation | HM Digital',
+      description: 'Looking for a reliable IT partner to implement EU-funded projects? HM Digital builds custom software, DMS/OCR systems, integrations, and technical documentation.'
+    },
+    hero: {
+      tagline: 'Your IT partner for EU project implementation',
+      title: 'Reliable technical delivery after EU funding approval',
+      subtitle: 'We build custom software, DMS systems, and integrations that meet EU tender requirements — from technical specification to production.',
+      ctaAssessment: 'Free project assessment',
+      ctaServices: 'View services'
+    },
+    whyUs: {
+      title: 'Why consultants choose us',
+      subtitle: 'We understand the specifics of EU projects and the requirements you need to meet',
+      items: {
+        experience: {
+          title: '10+ years of experience',
+          desc: 'Extensive experience building complex systems for Croatian and international businesses.'
+        },
+        delivery: {
+          title: 'Delivery to specification',
+          desc: 'We develop according to tender documentation — features, deadlines, and reporting per EU fund rules.'
+        },
+        technology: {
+          title: 'Proven technologies',
+          desc: 'Python, Django, FastAPI, React, PostgreSQL — a modern stack ensuring scalability and long-term maintainability.'
+        },
+        transparency: {
+          title: 'Transparent communication',
+          desc: 'Regular progress reports, clear documentation, and availability for audits and inspections.'
+        }
+      }
+    },
+    services: {
+      title: 'Services for EU projects',
+      subtitle: 'Everything you need for technical implementation — from custom apps to documentation',
+      items: {
+        customSoftware: {
+          title: 'Custom software',
+          desc: 'Web applications, business systems, and platforms built to tender specification requirements.'
+        },
+        dmsOcr: {
+          title: 'DMS & OCR systems',
+          desc: 'Document management systems with OCR recognition — archive digitization, searchable PDFs, and automatic classification.'
+        },
+        integrations: {
+          title: 'System integrations',
+          desc: 'Connect with existing ERP, CRM, and DMS systems, API integrations, and automated data exchange.'
+        },
+        erpCrm: {
+          title: 'ERP & CRM solutions',
+          desc: 'Custom ERP/CRM systems or integration with existing solutions for business and client management.'
+        },
+        documentation: {
+          title: 'Technical documentation',
+          desc: 'Technical specifications, user manuals, and project documentation per EU tender requirements.'
+        },
+        consulting: {
+          title: 'IT consulting',
+          desc: 'Help defining the technical part of tenders — architecture, cost estimation, delivery plan, and timeline.'
+        }
+      }
+    },
+    projects: {
+      title: 'Reference projects',
+      subtitle: 'Examples of successfully delivered solutions',
+      viewAll: 'View all projects',
+      items: {
+        project1: {
+          title: 'Digital Office — automation platform',
+          description: 'Internally developed platform for document management, process automation, and reporting. Includes OCR, searchable archive, and integration with existing systems.',
+          tech: 'Python, FastAPI, PostgreSQL, React, OCR'
+        },
+        project2: {
+          title: 'Manufacturing ERP system',
+          description: 'Custom system for production tracking, inventory management, work orders, and reporting — built to client-specific requirements.',
+          tech: 'Python, Django, PostgreSQL, React, REST API'
+        }
+      }
+    },
+    stats: {
+      title: 'By the numbers',
+      subtitle: 'The experience behind our solutions',
+      items: {
+        years: { value: '10+', label: 'years of experience' },
+        projects: { value: '50+', label: 'delivered projects' },
+        industries: { value: '6+', label: 'industries' }
+      }
+    },
+    cta: {
+      title: "Let's discuss your EU project",
+      subtitle: 'Reach out for a free assessment and technical consultation — no strings attached.',
+      button: 'Request a free assessment',
+      secondaryButton: 'Contact us'
+    }
+  },
+  demoDigitalOffice: {
+    meta: {
+      title: 'Digital Office — Demo | HM Digital',
+      description: 'Interactive demo of accounting, AI/OCR processing, and business automation platform for Croatian SMEs.'
+    },
+    hero: {
+      badge: 'Interactive demo',
+      title: 'Digital Office',
+      subtitle: 'Complete platform for accounting, AI document processing, and business process automation. Try out the key features.',
+      cta: 'Request a demo for your company'
+    },
+    tabs: {
+      dashboard: 'Dashboard',
+      accounting: 'Accounting',
+      aiOcr: 'AI & OCR',
+      automation: 'Automation'
+    },
+    dashboard: {
+      kpi1: { label: 'Total revenue', value: '847,320 EUR', trend: '+12.3%', icon: 'chart' },
+      kpi2: { label: 'VAT liability', value: '42,150 EUR', trend: '+5.1%', icon: 'clipboard' },
+      kpi3: { label: 'Active clients', value: '156', trend: '+8', icon: 'users' },
+      kpi4: { label: 'Docs processed', value: '12,847', trend: '+320', icon: 'box' },
+      notificationsTitle: 'Notifications',
+      n1Title: 'Overdue invoice',
+      n1Desc: 'FAK-2026-0140 — Adriatic Cargo d.o.o. — 6,750.00 EUR',
+      n2Title: 'VAT deadline approaching',
+      n2Desc: 'VAT form submission due: March 20, 2026',
+      n3Title: 'Payment received',
+      n3Desc: 'TechnoServis d.o.o. — 4,550.00 EUR received',
+      n4Title: 'New document classified',
+      n4Desc: 'AI automatically categorized contract (confidence: 98.2%)',
+      n5Title: 'Payroll reminder',
+      n5Desc: 'Reminder: payroll deadline is March 31',
+      cashFlowTitle: 'Cash Flow',
+      cashFlowReceipts: 'Receipts',
+      cashFlowExpenses: 'Expenses',
+      cashFlowMonths: 'Oct,Nov,Dec,Jan,Feb,Mar',
+      revenueTrendTitle: 'Revenue Trend (12 mo.)',
+      revenueTrendMonths: 'Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Jan,Feb,Mar',
+      expenseBreakdownTitle: 'Expense Breakdown',
+      expenseCategories: {
+        wages: 'Wages',
+        rent: 'Rent',
+        materials: 'Materials',
+        marketing: 'Marketing',
+        other: 'Other'
+      },
+      quickActionsTitle: 'Quick Actions',
+      quickAction1: 'New Invoice',
+      quickAction2: 'Add Client',
+      quickAction3: 'Upload Document',
+      quickAction4: 'Generate Report',
+      toastMessage: 'Demo action — in production this would open the actual feature',
+      calendarTitle: 'Calendar — March 2026',
+      calendarDeadlines: {
+        vatDeadline: 'VAT form deadline',
+        taxDeadline: 'Tax filing',
+        payrollDeadline: 'Payroll due'
+      }
+    },
+    accounting: {
+      financialTitle: 'Financial Overview',
+      revenue: { label: 'Revenue', value: '847,320 EUR' },
+      expenses: { label: 'Expenses', value: '612,480 EUR' },
+      receivables: { label: 'Receivables', value: '124,650 EUR' },
+      payables: { label: 'Payables', value: '89,200 EUR' },
+      vatTitle: 'VAT Analysis',
+      vatColumns: {
+        rate: 'Rate',
+        base: 'Tax Base',
+        vat: 'VAT',
+        total: 'Total'
+      },
+      vatTotal: 'Total',
+      generateVat: 'Generate VAT form',
+      finaCompliant: 'FINA compliant',
+      invoiceTitle: 'Invoice Table',
+      invoiceColumns: {
+        number: 'Invoice #',
+        client: 'Client',
+        amount: 'Amount',
+        vat: 'VAT',
+        date: 'Date',
+        status: 'Status'
+      },
+      invoiceStatuses: {
+        paid: 'Paid',
+        sent: 'Sent',
+        overdue: 'Overdue',
+        draft: 'Draft'
+      },
+      viewInvoice: 'View',
+      invoicePreview: {
+        title: 'Invoice Preview',
+        close: 'Close',
+        issuer: 'Issuer',
+        buyer: 'Buyer',
+        issueDate: 'Issue date',
+        dueDate: 'Due date',
+        items: 'Items',
+        subtotal: 'Subtotal',
+        vatLabel: 'VAT',
+        total: 'TOTAL DUE',
+        ibanLabel: 'IBAN',
+        referenceLabel: 'Reference'
+      }
+    },
+    aiOcr: {
+      uploadTitle: 'Upload & Processing',
+      dragDropText: 'Drag a file here or',
+      browseButton: 'Browse files',
+      supportedFormats: 'Supported formats: PDF, JPG, PNG, TIFF',
+      pipelineTitle: 'Processing Pipeline',
+      pipelineSteps: {
+        step1: 'Upload',
+        step2: 'OCR',
+        step3: 'AI Analysis',
+        step4: 'Extraction',
+        step5: 'Classification',
+        step6: 'Validation'
+      },
+      resultsTitle: 'Extracted Data',
+      fields: {
+        invoiceNumber: 'Invoice Number',
+        issuer: 'Issuer',
+        oib: 'Tax ID (OIB)',
+        issueDate: 'Issue Date',
+        dueDate: 'Due Date',
+        totalAmount: 'Total Amount',
+        vatAmount: 'VAT Amount',
+        iban: 'IBAN'
+      },
+      confidence: 'Confidence',
+      chatTitle: 'AI Assistant',
+      chatPoweredBy: 'Powered by AI',
+      chatPlaceholder: 'Ask a question about the document...',
+      chatSend: 'Send',
+      chatTyping: 'AI is typing...',
+      chatMessages: {
+        q1: 'What is the total amount on this invoice?',
+        a1: 'The total amount on invoice FAK-2026-0142 is 4,550.00 EUR (base: 3,640.00 EUR + VAT 25%: 910.00 EUR). Payment due by April 12, 2026.',
+        q2: 'Verify all the data is correct.',
+        a2: 'All data verified: Issuer Tax ID (12345678901) and buyer Tax ID (98765432109) are valid, IBAN format is correct, amounts match. No discrepancies found.'
+      },
+      chatCanned: {
+        canned1: 'Analyzing expense structure for Q1 2026 — expenses show a 3.2% increase compared to the previous quarter, mainly due to rising material costs.',
+        canned2: 'Based on your invoices, I recommend optimizing payment terms — 4 suppliers offer early payment discounts (2% / 10 days).'
+      },
+      classificationTitle: 'Document Classification',
+      classificationTypes: {
+        invoice: 'Invoice',
+        contract: 'Contract',
+        report: 'Report',
+        quote: 'Quote',
+        purchaseOrder: 'Purchase Order',
+        letter: 'Letter'
+      },
+      classificationAccuracy: 'Accuracy'
+    },
+    automation: {
+      title: 'Workflow Automation',
+      subtitle: 'Complete automated pipeline for document processing — from reception to archiving',
+      steps: {
+        step1: { title: 'Reception', desc: 'Document arrives via email, upload, or scanning', time: '~0.5s' },
+        step2: { title: 'OCR Processing', desc: 'Automatic text and structure recognition', time: '~1.2s' },
+        step3: { title: 'AI Classification', desc: 'Categorization by type, urgency, and department', time: '~0.8s' },
+        step4: { title: 'Extraction', desc: 'Key data and metadata extraction', time: '~0.6s' },
+        step5: { title: 'Validation', desc: 'Data verification and database cross-check', time: '~0.4s' },
+        step6: { title: 'Booking', desc: 'Automatic entry into accounting system', time: '~0.3s' },
+        step7: { title: 'Archiving', desc: 'Indexing, storage, and distribution', time: '~0.2s' }
+      },
+      processingTitle: 'Currently Processing',
+      processingDoc: 'Processing',
+      processingElapsed: 'Elapsed time',
+      processingQueue: 'In queue',
+      processingDocs: ['Faktura-2026-0143.pdf', 'Ugovor-Logistika.pdf', 'Izvjestaj-Q1.pdf', 'Dopis-Banka.pdf'],
+      completionTitle: 'Processing complete!',
+      completionTime: 'Total processing time',
+      completionDoc: 'Document',
+      completionClassified: 'Classified as: Invoice (99.2%)',
+      completionBooked: 'Booked to accounting system',
+      restart: 'Restart',
+      trustTitle: 'Platform Reliability',
+      trustUsers: 'Users',
+      trustDocs: 'Documents processed',
+      trustUptime: 'Uptime',
+      trustAccuracy: 'AI Accuracy'
+    }
+  },
+  demoErp: {
+    meta: {
+      title: 'Manufacturing ERP — Demo | HM Digital',
+      description: 'Interactive demo of the ERP system for production management, inventory tracking, work orders, and reporting.'
+    },
+    hero: {
+      badge: 'Interactive demo',
+      title: 'Manufacturing ERP',
+      subtitle: 'A system for production management, inventory tracking, work orders, and real-time reporting.',
+      cta: 'Request a demo for your company',
+      secondaryCta: 'Explore features',
+      stat1: { value: '150+', label: 'Clients' },
+      stat2: { value: '99.9%', label: 'Uptime' },
+      stat3: { value: '3x', label: 'Faster' }
+    },
+    features: {
+      f1: { title: 'Smart Dashboard', description: 'Real-time KPIs with trends and analytics' },
+      f2: { title: 'Inventory Management', description: 'Stock tracking with automatic alerts' },
+      f3: { title: 'Work Orders', description: 'Kanban management with drag & drop interface' },
+      f4: { title: 'Advanced Reports', description: 'Analytics and data export in multiple formats' }
+    },
+    tabs: {
+      dashboard: 'Dashboard',
+      inventory: 'Inventory',
+      workOrders: 'Work Orders',
+      reports: 'Reports'
+    },
+    dashboard: {
+      kpi1: { label: 'Produced today', value: '1,284' },
+      kpi2: { label: 'Capacity utilization', value: '87%' },
+      kpi3: { label: 'Open work orders', value: '23' },
+      kpi4: { label: 'Quality rate', value: '98.1%' },
+      kpi5: { label: 'On-time delivery', value: '95%' },
+      kpi6: { label: 'Equipment downtime', value: '2.4h' },
+      chartProductionByDay: 'Production by day',
+      chartEfficiency: 'Efficiency trend (%)',
+      days: 'Mon,Tue,Wed,Thu,Fri,Sat,Sun',
+      activityTitle: 'Activity',
+      activities: {
+        a1: 'Line 3 — batch #4821 completed',
+        a2: 'WO-1004 — deadline expires today',
+        a3: 'Bolt M8x30 — stock below minimum',
+        a4: 'QC check — batch #4820 approved',
+        a5: 'Preventive maintenance — Machine M-07'
+      },
+      orderStatusTitle: 'Order Status'
+    },
+    inventory: {
+      searchPlaceholder: 'Search inventory...',
+      columns: {
+        name: 'Name',
+        sku: 'SKU',
+        quantity: 'Quantity',
+        location: 'Location',
+        status: 'Status'
+      },
+      statuses: {
+        inStock: 'In Stock',
+        low: 'Low Stock',
+        outOfStock: 'Out of Stock',
+        ordered: 'Ordered'
+      },
+      sortLabel: 'Sort by',
+      summaryTotal: 'Total Items',
+      summaryLow: 'Low Stock',
+      summaryOut: 'Out of Stock',
+      summaryValue: 'Total Value',
+      pagination: 'Showing'
+    },
+    workOrders: {
+      columns: {
+        pending: 'Pending',
+        inProgress: 'In Progress',
+        completed: 'Completed'
+      },
+      cardFields: {
+        product: 'Product',
+        quantity: 'Quantity',
+        deadline: 'Deadline',
+        priority: 'Priority'
+      },
+      priorities: {
+        high: 'High',
+        medium: 'Medium',
+        low: 'Low'
+      },
+      moveLabel: 'Move',
+      summaryTotal: 'Total Orders',
+      summaryOnTime: 'On Time',
+      summaryOverdue: 'Overdue'
+    },
+    reports: {
+      title: 'Reports & Analytics',
+      dateRanges: {
+        week: '7 days',
+        month: '30 days',
+        quarter: '90 days'
+      },
+      chartProduction: 'Production by category',
+      chartQuality: 'Quality rate (%)',
+      chartCosts: 'Production costs',
+      summaryProduction: 'Total Production',
+      summaryQuality: 'Avg. Quality',
+      summaryCosts: 'Total Costs',
+      exportPdf: 'Export PDF',
+      exportCsv: 'Export CSV'
+    },
+    ctaSection: {
+      title: 'Want a system like this for your company?',
+      subtitle: 'Contact us for a free assessment and discover how we can digitalize your business.',
+      cta: 'Free Assessment'
+    }
+  },
   success: {
     title: 'Thank You!',
     message: 'Thank you for contacting us. Your message has been received and we will get back to you as soon as possible!',

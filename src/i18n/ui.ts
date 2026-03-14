@@ -13,6 +13,9 @@ export const routes = {
   "/cjenik": { hr: "/cjenik", en: "/en/pricing" },
   "/industrije": { hr: "/industrije", en: "/en/industries" },
   "/besplatna-procjena": { hr: "/besplatna-procjena", en: "/en/free-assessment" },
+  "/za-vas": { hr: "/za-vas", en: "/en/for-you" },
+  "/demo/digitalni-ured": { hr: "/demo/digitalni-ured", en: "/en/demo/digital-office" },
+  "/demo/erp": { hr: "/demo/erp", en: "/en/demo/erp" },
 } as const;
 
 export type RouteKey = keyof typeof routes;

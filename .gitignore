@@ -1,5 +1,6 @@
 # build output
 dist/
+build/
 # generated types
 .astro/
 
@@ -11,14 +12,74 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
+lerna-debug.log*
 
 # environment variables
 .env
-.env.production
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# macOS-specific files
+# OS-specific files
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
 
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# IDEs and editors
 # jetbrains setting folder
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# testing
+coverage/
+.nyc_output/
+*.lcov
+
+# misc
+*.log
+*.pid
+*.seed
+*.pid.lock
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vite/
+.turbo/
+*.bat
+
+# locks (optional - uncomment if using package-lock.json)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# tools folder
+tools/

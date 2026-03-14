@@ -1,0 +1,148 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { ocrFields } from '../../../data/demo-digital-office';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const o = t.demoDigitalOffice.aiOcr;
+
+const pipelineSteps = [
+  o.pipelineSteps.step1,
+  o.pipelineSteps.step2,
+  o.pipelineSteps.step3,
+  o.pipelineSteps.step4,
+  o.pipelineSteps.step5,
+  o.pipelineSteps.step6,
+];
+
+const confidenceColor = (c: number) => {
+  if (c >= 99) return 'text-green-600 bg-green-100';
+  if (c >= 97) return 'text-blue-600 bg-blue-100';
+  return 'text-amber-600 bg-amber-100';
+};
+---
+
+<div>
+  <!-- Drop Zone -->
+  <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+    <h3 class="text-lg font-semibold text-slate-900 mb-4">{o.uploadTitle}</h3>
+    <div
+      id="ocr-drop-zone"
+      class="border-2 border-dashed border-slate-300 rounded-xl p-8 text-center hover:border-primary-400 hover:bg-primary-50/50 transition-all cursor-pointer"
+    >
+      <svg class="w-12 h-12 text-slate-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+      </svg>
+      <p class="text-slate-600 mb-2">{o.dragDropText}</p>
+      <button type="button" class="text-primary-600 font-medium hover:text-primary-700">{o.browseButton}</button>
+      <p class="text-xs text-slate-400 mt-2">{o.supportedFormats}</p>
+    </div>
+  </div>
+
+  <!-- Pipeline Stepper (vertical) -->
+  <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+    <h3 class="text-lg font-semibold text-slate-900 mb-4">{o.pipelineTitle}</h3>
+    <div class="space-y-1">
+      {pipelineSteps.map((step, i) => (
+        <div class="flex items-center gap-3 ocr-pipeline-step" data-step={i}>
+          <div class="flex flex-col items-center">
+            <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center text-sm font-bold shrink-0 transition-all duration-500 ocr-step-circle">
+              {i + 1}
+            </div>
+            {i < pipelineSteps.length - 1 && (
+              <div class="w-0.5 h-6 bg-slate-200 ocr-step-line transition-all duration-500" />
+            )}
+          </div>
+          <span class="text-sm text-slate-600 ocr-step-label transition-all duration-300">{step}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Structured Results -->
+  <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6" id="ocr-results-panel">
+    <h3 class="text-lg font-semibold text-slate-900 mb-4">{o.resultsTitle}</h3>
+    <div class="space-y-3">
+      {ocrFields.map(field => {
+        const fieldLabel = (o.fields as any)[field.fieldKey] as string;
+        return (
+          <div class="flex items-center justify-between py-2 border-b border-slate-100 last:border-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-xs text-slate-500">{fieldLabel}</p>
+              <p class="text-sm font-medium text-slate-900 truncate">{field.value}</p>
+            </div>
+            <span class:list={['px-2 py-0.5 text-xs font-medium rounded-full shrink-0 ml-3', confidenceColor(field.confidence)]}>
+              {field.confidence}%
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+<script>
+  function initOcrProcessor() {
+    const dropZone = document.getElementById('ocr-drop-zone');
+    if (!dropZone) return;
+
+    let running = false;
+
+    dropZone.addEventListener('click', () => {
+      if (running) return;
+      running = true;
+
+      const steps = document.querySelectorAll('.ocr-pipeline-step');
+      let i = 0;
+
+      function activateStep() {
+        if (i >= steps.length) {
+          running = false;
+          return;
+        }
+
+        const step = steps[i];
+        const circle = step?.querySelector('.ocr-step-circle');
+        const line = step?.querySelector('.ocr-step-line');
+        const label = step?.querySelector('.ocr-step-label');
+
+        if (circle) {
+          circle.classList.remove('bg-slate-100', 'text-slate-400');
+          circle.classList.add('bg-primary-600', 'text-white');
+        }
+        if (line) {
+          line.classList.remove('bg-slate-200');
+          line.classList.add('bg-primary-400');
+        }
+        if (label) {
+          label.classList.add('text-primary-700', 'font-medium');
+          label.classList.remove('text-slate-600');
+        }
+
+        i++;
+        setTimeout(activateStep, 600);
+      }
+
+      // Reset all steps first
+      steps.forEach(s => {
+        const c = s.querySelector('.ocr-step-circle');
+        const l = s.querySelector('.ocr-step-line');
+        const lb = s.querySelector('.ocr-step-label');
+        c?.classList.remove('bg-primary-600', 'text-white');
+        c?.classList.add('bg-slate-100', 'text-slate-400');
+        l?.classList.remove('bg-primary-400');
+        l?.classList.add('bg-slate-200');
+        lb?.classList.remove('text-primary-700', 'font-medium');
+        lb?.classList.add('text-slate-600');
+      });
+
+      activateStep();
+    });
+  }
+
+  initOcrProcessor();
+  document.addEventListener('astro:after-swap', initOcrProcessor);
+</script>

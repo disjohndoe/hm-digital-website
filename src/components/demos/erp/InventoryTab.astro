@@ -1,0 +1,169 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { inventory } from '../../../data/demo-erp';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const d = t.demoErp.inventory;
+
+const statusColors: Record<string, string> = {
+  inStock: 'bg-green-100 text-green-700',
+  low: 'bg-yellow-100 text-yellow-700',
+  outOfStock: 'bg-red-100 text-red-700',
+  ordered: 'bg-blue-100 text-blue-700',
+};
+
+const statusDots: Record<string, string> = {
+  inStock: 'bg-green-500',
+  low: 'bg-yellow-500',
+  outOfStock: 'bg-red-500',
+  ordered: 'bg-blue-500',
+};
+
+const rowHighlight: Record<string, string> = {
+  low: 'bg-amber-50/50',
+  outOfStock: 'bg-red-50/30',
+};
+
+const totalItems = inventory.length;
+const lowStock = inventory.filter(i => i.status === 'low').length;
+const outOfStock = inventory.filter(i => i.status === 'outOfStock').length;
+const totalValue = inventory.reduce((sum, i) => sum + i.quantity * i.unitPrice, 0);
+---
+
+<div class="demo-tab-panel hidden" data-panel="inventory">
+  <!-- Summary Stats -->
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-primary-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{d.summaryTotal}</p>
+      <p class="text-xl font-bold text-slate-900">{totalItems}</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-amber-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{d.summaryLow}</p>
+      <p class="text-xl font-bold text-amber-600">{lowStock}</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-red-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{d.summaryOut}</p>
+      <p class="text-xl font-bold text-red-600">{outOfStock}</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-green-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{d.summaryValue}</p>
+      <p class="text-xl font-bold text-slate-900">&euro;{totalValue.toLocaleString('de-DE', { minimumFractionDigits: 2 })}</p>
+    </div>
+  </div>
+
+  <!-- Search & Sort -->
+  <div class="flex flex-col sm:flex-row gap-4 mb-6">
+    <div class="flex-1">
+      <input
+        type="text"
+        id="inv-search"
+        placeholder={d.searchPlaceholder}
+        class="w-full px-4 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none"
+      />
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-sm text-slate-600">{d.sortLabel}:</span>
+      <select
+        id="inv-sort"
+        class="px-4 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none bg-white"
+      >
+        <option value="name">{d.columns.name}</option>
+        <option value="quantity">{d.columns.quantity}</option>
+        <option value="status">{d.columns.status}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-slate-50 border-b border-slate-200">
+            <th class="text-left px-4 py-3 font-semibold text-slate-600">{d.columns.name}</th>
+            <th class="text-left px-4 py-3 font-semibold text-slate-600">{d.columns.sku}</th>
+            <th class="text-left px-4 py-3 font-semibold text-slate-600">{d.columns.quantity}</th>
+            <th class="text-left px-4 py-3 font-semibold text-slate-600">{d.columns.location}</th>
+            <th class="text-left px-4 py-3 font-semibold text-slate-600">{d.columns.status}</th>
+          </tr>
+        </thead>
+        <tbody id="inv-table-body">
+          {inventory.map((item, idx) => (
+            <tr
+              class:list={[
+                'inv-row border-b border-slate-100 hover:bg-primary-50/50 transition-colors',
+                rowHighlight[item.status] || (idx % 2 === 1 ? 'bg-slate-50/50' : '')
+              ]}
+              data-name={item.name.toLowerCase()}
+              data-qty={item.quantity}
+              data-status={item.status}
+            >
+              <td class="px-4 py-3 font-medium text-slate-900">{item.name}</td>
+              <td class="px-4 py-3 text-slate-600 font-mono text-xs">{item.sku}</td>
+              <td class="px-4 py-3 text-slate-600">{item.quantity.toLocaleString()}</td>
+              <td class="px-4 py-3 text-slate-600">{item.location}</td>
+              <td class="px-4 py-3">
+                <span class={`inline-flex items-center gap-1.5 px-2.5 py-0.5 text-xs font-medium rounded-full ${statusColors[item.status]}`}>
+                  <span class={`w-1.5 h-1.5 rounded-full ${statusDots[item.status]}`}></span>
+                  {d.statuses[item.status]}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <!-- Pagination bar -->
+    <div class="flex items-center justify-between px-4 py-3 border-t border-slate-200 bg-slate-50/50">
+      <p class="text-sm text-slate-500">{d.pagination} <span class="font-medium text-slate-700">15</span> / <span class="font-medium text-slate-700">15</span></p>
+      <div class="flex gap-1">
+        <button type="button" class="px-3 py-1 text-sm rounded border border-slate-300 bg-white text-slate-400 cursor-default">&laquo;</button>
+        <button type="button" class="px-3 py-1 text-sm rounded bg-primary-600 text-white font-medium">1</button>
+        <button type="button" class="px-3 py-1 text-sm rounded border border-slate-300 bg-white text-slate-400 cursor-default">&raquo;</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initInventory() {
+    const search = document.getElementById('inv-search') as HTMLInputElement;
+    const sort = document.getElementById('inv-sort') as HTMLSelectElement;
+    const tbody = document.getElementById('inv-table-body');
+    if (!search || !sort || !tbody) return;
+
+    function applyFilter() {
+      const q = search.value.toLowerCase();
+      const rows = Array.from(tbody!.querySelectorAll<HTMLTableRowElement>('.inv-row'));
+
+      // Filter
+      rows.forEach(row => {
+        const match = !q || (row.dataset.name?.includes(q) ?? false);
+        row.style.display = match ? '' : 'none';
+      });
+
+      // Sort
+      const sortBy = sort.value;
+      const statusOrder: Record<string, number> = { outOfStock: 0, low: 1, ordered: 2, inStock: 3 };
+
+      rows.sort((a, b) => {
+        if (sortBy === 'name') return (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '');
+        if (sortBy === 'quantity') return Number(a.dataset.qty) - Number(b.dataset.qty);
+        if (sortBy === 'status') return (statusOrder[a.dataset.status ?? ''] ?? 0) - (statusOrder[b.dataset.status ?? ''] ?? 0);
+        return 0;
+      });
+
+      rows.forEach(row => tbody!.appendChild(row));
+    }
+
+    search.addEventListener('input', applyFilter);
+    sort.addEventListener('change', applyFilter);
+  }
+
+  initInventory();
+  document.addEventListener('astro:after-swap', initInventory);
+</script>

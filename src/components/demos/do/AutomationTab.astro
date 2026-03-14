@@ -1,0 +1,325 @@
+---
+import ProcessingIndicator from './ProcessingIndicator.astro';
+import TrustBar from './TrustBar.astro';
+import type { Translations } from '../../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const a = t.demoDigitalOffice.automation;
+
+const steps = [
+  a.steps.step1,
+  a.steps.step2,
+  a.steps.step3,
+  a.steps.step4,
+  a.steps.step5,
+  a.steps.step6,
+  a.steps.step7,
+];
+
+const stepIcons = [
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />',
+];
+---
+
+<div class="demo-tab-panel hidden" data-panel="automation" data-restart-label={a.restart}>
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold text-slate-900 mb-2">{a.title}</h2>
+    <p class="text-slate-600 mb-10">{a.subtitle}</p>
+
+    <!-- Section A: 7-Step Pipeline -->
+    <!-- Desktop: horizontal timeline -->
+    <div class="hidden lg:block mb-10">
+      <div class="flex items-start">
+        {steps.map((step, i) => (
+          <div class="flex items-start flex-1">
+            <div class="flex flex-col items-center text-center auto-step" data-step-index={i}>
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center text-slate-500 font-bold text-lg transition-all duration-500 auto-step-circle relative">
+                <span class="absolute -top-5 text-[10px] font-medium text-slate-400">{i + 1}</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <Fragment set:html={stepIcons[i]} />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-slate-900 mt-3 text-sm">{step.title}</h3>
+              <p class="text-xs text-slate-500 mt-1 max-w-[120px]">{step.desc}</p>
+              <span class="text-[10px] text-slate-400 mt-1 font-mono">{step.time}</span>
+            </div>
+            {i < steps.length - 1 && (
+              <div class="flex-1 mt-6 px-1">
+                <div class="h-0.5 bg-slate-200 w-full auto-step-connector transition-all duration-500" />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Mobile: vertical timeline -->
+    <div class="lg:hidden mb-10">
+      <div class="space-y-2">
+        {steps.map((step, i) => (
+          <div class="flex items-start gap-4 auto-step" data-step-index={i}>
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center text-slate-500 shrink-0 transition-all duration-500 auto-step-circle">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <Fragment set:html={stepIcons[i]} />
+                </svg>
+              </div>
+              {i < steps.length - 1 && (
+                <div class="w-0.5 h-8 bg-slate-200 auto-step-connector transition-all duration-500" />
+              )}
+            </div>
+            <div class="pb-4">
+              <h3 class="font-semibold text-slate-900 text-sm">{step.title}</h3>
+              <p class="text-xs text-slate-500 mt-0.5">{step.desc}</p>
+              <span class="text-[10px] text-slate-400 font-mono">{step.time}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Completion card (hidden by default) -->
+    <div id="auto-completion" class="hidden mb-10 mx-auto max-w-lg overflow-hidden rounded-xl border border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 shadow-lg transition-all duration-500 opacity-0 translate-y-4">
+      <div class="p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-green-800">{a.completionTitle}</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <div class="bg-white/70 rounded-lg p-3">
+            <span class="text-slate-500 text-xs">{a.completionTime}</span>
+            <p class="font-semibold text-slate-900 mt-0.5" id="auto-completion-time">4.0s</p>
+          </div>
+          <div class="bg-white/70 rounded-lg p-3">
+            <span class="text-slate-500 text-xs">{a.completionDoc}</span>
+            <p class="font-semibold text-slate-900 mt-0.5">Faktura-2026-0142.pdf</p>
+          </div>
+          <div class="bg-white/70 rounded-lg p-3">
+            <span class="text-slate-500 text-xs flex items-center gap-1">
+              <svg class="w-3.5 h-3.5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+              </svg>
+              AI
+            </span>
+            <p class="font-semibold text-slate-900 mt-0.5">{a.completionClassified}</p>
+          </div>
+          <div class="bg-white/70 rounded-lg p-3">
+            <span class="text-slate-500 text-xs flex items-center gap-1">
+              <svg class="w-3.5 h-3.5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Status
+            </span>
+            <p class="font-semibold text-slate-900 mt-0.5">{a.completionBooked}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Play button -->
+    <div class="text-center mb-10">
+      <button
+        type="button"
+        id="auto-play-btn"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors"
+      >
+        <svg id="auto-play-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span id="auto-play-text">Start</span>
+      </button>
+    </div>
+
+    <!-- Section B: Processing Indicator -->
+    <div class="mb-10">
+      <ProcessingIndicator t={t} />
+    </div>
+
+    <!-- Section C: Trust Stats Bar -->
+    <TrustBar t={t} />
+  </div>
+</div>
+
+<script>
+  function initAutomation() {
+    const allSteps = document.querySelectorAll<HTMLElement>('.auto-step');
+    const playBtn = document.getElementById('auto-play-btn');
+    const playText = document.getElementById('auto-play-text');
+    const playIcon = document.getElementById('auto-play-icon');
+    const completionCard = document.getElementById('auto-completion');
+    const completionTime = document.getElementById('auto-completion-time');
+    if (!allSteps.length || !playBtn) return;
+
+    const panel = playBtn.closest('[data-panel="automation"]');
+    const restartLabel = panel?.getAttribute('data-restart-label') || 'Restart';
+
+    let running = false;
+    let completed = false;
+    let timeoutId: number | undefined;
+    let startTime = 0;
+
+    const playIconPath = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />';
+    const restartIconPath = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />';
+
+    function resetSteps() {
+      allSteps.forEach(s => {
+        const circle = s.querySelector('.auto-step-circle');
+        if (circle) {
+          circle.classList.remove(
+            'from-primary-500', 'to-primary-600', 'shadow-lg', 'shadow-primary-200',
+            'from-green-500', 'to-green-600', 'text-white'
+          );
+          circle.classList.add('from-slate-100', 'to-slate-200', 'text-slate-500');
+        }
+      });
+      document.querySelectorAll('.auto-step-connector').forEach(c => {
+        c.classList.remove('bg-primary-400', 'bg-green-400');
+        c.classList.add('bg-slate-200');
+      });
+    }
+
+    function markCompleted(index: number) {
+      const stepsAtIndex = document.querySelectorAll<HTMLElement>(`.auto-step[data-step-index="${index}"]`);
+      stepsAtIndex.forEach(step => {
+        const circle = step.querySelector('.auto-step-circle');
+        if (circle) {
+          circle.classList.remove('from-slate-100', 'to-slate-200', 'text-slate-500', 'from-primary-500', 'to-primary-600', 'shadow-lg', 'shadow-primary-200');
+          circle.classList.add('from-green-500', 'to-green-600', 'text-white');
+        }
+      });
+    }
+
+    function highlightStep(index: number) {
+      // Mark all previous steps as completed (green)
+      for (let i = 0; i < index; i++) {
+        markCompleted(i);
+      }
+      // Highlight current step as active (primary/blue)
+      const stepsAtIndex = document.querySelectorAll<HTMLElement>(`.auto-step[data-step-index="${index}"]`);
+      stepsAtIndex.forEach(step => {
+        const circle = step.querySelector('.auto-step-circle');
+        if (circle) {
+          circle.classList.remove('from-slate-100', 'to-slate-200', 'text-slate-500');
+          circle.classList.add('from-primary-500', 'to-primary-600', 'text-white', 'shadow-lg', 'shadow-primary-200');
+        }
+      });
+      // Highlight connectors up to current step
+      const connectors = document.querySelectorAll('.auto-step-connector');
+      connectors.forEach((c, i) => {
+        const connectorIndex = Math.floor(i / 2);
+        if (connectorIndex < index) {
+          c.classList.remove('bg-slate-200');
+          c.classList.add('bg-green-400');
+        }
+      });
+    }
+
+    function showCompletion() {
+      // Mark all steps as completed (green)
+      const totalSteps = 7;
+      for (let i = 0; i < totalSteps; i++) {
+        markCompleted(i);
+      }
+      // Mark all connectors green
+      document.querySelectorAll('.auto-step-connector').forEach(c => {
+        c.classList.remove('bg-slate-200', 'bg-primary-400');
+        c.classList.add('bg-green-400');
+      });
+
+      // Calculate elapsed time
+      const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+      if (completionTime) completionTime.textContent = elapsed + 's';
+
+      // Show completion card with slide-in animation
+      if (completionCard) {
+        completionCard.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            completionCard.classList.remove('opacity-0', 'translate-y-4');
+          });
+        });
+      }
+
+      // Stop processing indicator
+      const _pi = (window as any).__processingIndicator;
+      if (_pi) _pi.stop();
+
+      // Update button to restart
+      if (playText) playText.textContent = restartLabel;
+      if (playIcon) playIcon.innerHTML = restartIconPath;
+      completed = true;
+      running = false;
+    }
+
+    function hideCompletion() {
+      if (completionCard) {
+        completionCard.classList.add('opacity-0', 'translate-y-4');
+        setTimeout(() => completionCard.classList.add('hidden'), 500);
+      }
+    }
+
+    function animate(index = 0) {
+      if (!running) return;
+      const totalSteps = 7;
+      if (index >= totalSteps) {
+        showCompletion();
+        return;
+      }
+      highlightStep(index);
+      timeoutId = window.setTimeout(() => animate(index + 1), 1200);
+    }
+
+    const pi = () => (window as any).__processingIndicator as { start: () => void; stop: () => void } | undefined;
+
+    playBtn.addEventListener('click', () => {
+      if (running) {
+        // Stop mid-animation
+        running = false;
+        if (timeoutId) clearTimeout(timeoutId);
+        resetSteps();
+        if (playText) playText.textContent = 'Start';
+        if (playIcon) playIcon.innerHTML = playIconPath;
+        completed = false;
+        pi()?.stop();
+      } else if (completed) {
+        // Restart after completion
+        completed = false;
+        hideCompletion();
+        resetSteps();
+        setTimeout(() => {
+          running = true;
+          startTime = Date.now();
+          if (playText) playText.textContent = 'Stop';
+          if (playIcon) playIcon.innerHTML = playIconPath;
+          pi()?.start();
+          animate(0);
+        }, 600);
+      } else {
+        // Start fresh
+        running = true;
+        startTime = Date.now();
+        if (playText) playText.textContent = 'Stop';
+        pi()?.start();
+        animate(0);
+      }
+    });
+  }
+
+  initAutomation();
+  document.addEventListener('astro:after-swap', initAutomation);
+</script>

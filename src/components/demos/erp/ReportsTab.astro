@@ -1,0 +1,247 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { reportsData } from '../../../data/demo-erp';
+import type { Locale } from '../../../i18n/ui';
+
+interface Props {
+  t: Translations;
+  locale: Locale;
+}
+
+const { t, locale } = Astro.props;
+const r = t.demoErp.reports;
+const langIdx = locale === 'hr' ? 0 : 1;
+const weekSummary = reportsData.week.summary;
+---
+
+<div class="demo-tab-panel hidden" data-panel="reports">
+  <!-- Header row -->
+  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4">
+    <h2 class="text-2xl font-bold text-slate-900">{r.title}</h2>
+    <div class="flex items-center gap-3">
+      <!-- Export Buttons -->
+      <button type="button" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium border border-slate-300 rounded-lg bg-white text-slate-600 hover:bg-slate-50 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+        {r.exportPdf}
+      </button>
+      <button type="button" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium border border-slate-300 rounded-lg bg-white text-slate-600 hover:bg-slate-50 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        {r.exportCsv}
+      </button>
+    </div>
+  </div>
+
+  <!-- Summary Metric Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-primary-500 p-4" id="report-summary-production">
+      <p class="text-xs text-slate-500 mb-1">{r.summaryProduction}</p>
+      <p class="text-xl font-bold text-slate-900">{weekSummary.production.toLocaleString()}</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-green-500 p-4" id="report-summary-quality">
+      <p class="text-xs text-slate-500 mb-1">{r.summaryQuality}</p>
+      <p class="text-xl font-bold text-green-600">{weekSummary.quality}%</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-amber-500 p-4" id="report-summary-costs">
+      <p class="text-xs text-slate-500 mb-1">{r.summaryCosts}</p>
+      <p class="text-xl font-bold text-slate-900">&euro;{weekSummary.costs.toLocaleString()}</p>
+    </div>
+  </div>
+
+  <!-- Date Range Segmented Control -->
+  <div class="flex justify-center sm:justify-start mb-8">
+    <div class="bg-slate-100 rounded-lg p-1 inline-flex gap-1" id="report-range-btns">
+      <button type="button" class="report-range-btn px-4 py-2 text-sm font-medium rounded-md bg-white shadow-sm text-primary-600" data-range="week">{r.dateRanges.week}</button>
+      <button type="button" class="report-range-btn px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-800" data-range="month">{r.dateRanges.month}</button>
+      <button type="button" class="report-range-btn px-4 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-800" data-range="quarter">{r.dateRanges.quarter}</button>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 border-t-4 border-t-primary-500 p-6">
+      <h3 class="text-lg font-semibold text-slate-900 mb-4">{r.chartProduction}</h3>
+      <div class="relative h-56">
+        <canvas id="report-chart-production"></canvas>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 border-t-4 border-t-green-500 p-6">
+      <h3 class="text-lg font-semibold text-slate-900 mb-4">{r.chartQuality}</h3>
+      <div class="relative h-56">
+        <canvas id="report-chart-quality"></canvas>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 border-t-4 border-t-amber-500 p-6">
+      <h3 class="text-lg font-semibold text-slate-900 mb-4">{r.chartCosts}</h3>
+      <div class="relative h-56">
+        <canvas id="report-chart-costs"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ reportsData: JSON.stringify(reportsData), langIdx }}>
+  window.__reportsData = JSON.parse(reportsData);
+  window.__reportsLangIdx = langIdx;
+</script>
+
+<script>
+  import { Chart, registerables } from 'chart.js';
+  Chart.register(...registerables);
+
+  let charts: Chart[] = [];
+  let initialized = false;
+
+  function updateSummary(range: string) {
+    const data = (window as any).__reportsData;
+    const summary = data[range].summary;
+
+    const prodEl = document.querySelector('#report-summary-production p:last-child');
+    const qualEl = document.querySelector('#report-summary-quality p:last-child');
+    const costEl = document.querySelector('#report-summary-costs p:last-child');
+
+    if (prodEl) prodEl.textContent = summary.production.toLocaleString();
+    if (qualEl) qualEl.textContent = summary.quality + '%';
+    if (costEl) costEl.textContent = '\u20AC' + summary.costs.toLocaleString();
+  }
+
+  function initReportCharts(range = 'week') {
+    const data = (window as any).__reportsData;
+    const langIdx = (window as any).__reportsLangIdx ?? 0;
+    const rangeData = data[range];
+    const labels = rangeData.labels[langIdx].split(',');
+
+    // Destroy existing charts
+    charts.forEach(c => c.destroy());
+    charts = [];
+
+    const canvas1 = document.getElementById('report-chart-production') as HTMLCanvasElement;
+    const canvas2 = document.getElementById('report-chart-quality') as HTMLCanvasElement;
+    const canvas3 = document.getElementById('report-chart-costs') as HTMLCanvasElement;
+    if (!canvas1 || !canvas2 || !canvas3) return;
+
+    const tooltipConfig = {
+      backgroundColor: '#1e293b',
+      titleColor: '#f8fafc',
+      bodyColor: '#f8fafc',
+      padding: 12,
+      cornerRadius: 8,
+      displayColors: false,
+    };
+
+    // Production bar chart with gradient
+    const ctx1 = canvas1.getContext('2d')!;
+    const gradient1 = ctx1.createLinearGradient(0, 0, 0, 224);
+    gradient1.addColorStop(0, 'rgba(37, 99, 235, 0.8)');
+    gradient1.addColorStop(1, 'rgba(37, 99, 235, 0.4)');
+
+    charts.push(new Chart(canvas1, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{ label: '', data: rangeData.production, backgroundColor: gradient1, borderRadius: 8 }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipConfig },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { color: '#94a3b8' } },
+          x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    }));
+
+    // Quality line chart with gradient fill
+    const ctx2 = canvas2.getContext('2d')!;
+    const gradient2 = ctx2.createLinearGradient(0, 0, 0, 224);
+    gradient2.addColorStop(0, 'rgba(5, 150, 105, 0.2)');
+    gradient2.addColorStop(1, 'rgba(5, 150, 105, 0.02)');
+
+    charts.push(new Chart(canvas2, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: '',
+          data: rangeData.quality,
+          borderColor: '#059669',
+          backgroundColor: gradient2,
+          fill: true,
+          tension: 0.4,
+          borderWidth: 3,
+          pointRadius: 5,
+          pointBackgroundColor: '#059669',
+          pointBorderColor: '#ffffff',
+          pointBorderWidth: 2,
+          pointHoverRadius: 7,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipConfig },
+        scales: {
+          y: { min: 95, max: 100, grid: { color: '#f1f5f9' }, ticks: { color: '#94a3b8' } },
+          x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    }));
+
+    // Costs bar chart with gradient
+    const ctx3 = canvas3.getContext('2d')!;
+    const gradient3 = ctx3.createLinearGradient(0, 0, 0, 224);
+    gradient3.addColorStop(0, 'rgba(217, 119, 6, 0.8)');
+    gradient3.addColorStop(1, 'rgba(217, 119, 6, 0.4)');
+
+    charts.push(new Chart(canvas3, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{ label: '', data: rangeData.costs, backgroundColor: gradient3, borderRadius: 8 }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: tooltipConfig },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { color: '#94a3b8' } },
+          x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    }));
+
+    updateSummary(range);
+    initialized = true;
+  }
+
+  function initReportRangeButtons() {
+    const btns = document.querySelectorAll<HTMLButtonElement>('.report-range-btn');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => {
+          b.classList.remove('bg-white', 'shadow-sm', 'text-primary-600');
+          b.classList.add('text-slate-600');
+        });
+        btn.classList.remove('text-slate-600');
+        btn.classList.add('bg-white', 'shadow-sm', 'text-primary-600');
+        initReportCharts(btn.dataset.range ?? 'week');
+      });
+    });
+  }
+
+  // Lazy init: only when reports tab becomes visible
+  function onTabVisible() {
+    const panel = document.querySelector('[data-panel="reports"]');
+    if (panel && !panel.classList.contains('hidden') && !initialized) {
+      initReportCharts('week');
+    }
+  }
+
+  initReportRangeButtons();
+  document.addEventListener('tab-visible', () => requestAnimationFrame(onTabVisible));
+  document.addEventListener('astro:after-swap', () => {
+    initialized = false;
+    charts = [];
+    initReportRangeButtons();
+  });
+</script>

@@ -1,0 +1,79 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { calendarDeadlines } from '../../../data/demo-digital-office';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const d = t.demoDigitalOffice.dashboard;
+
+// March 2026: starts on Sunday (0), 31 days
+const firstDay = 0; // Sunday
+const totalDays = 31;
+const today = 14;
+
+// Build calendar grid (weeks)
+const blanks = Array.from({ length: firstDay }, () => null);
+const days = Array.from({ length: totalDays }, (_, i) => i + 1);
+const cells = [...blanks, ...days];
+// Pad to complete weeks
+while (cells.length % 7 !== 0) cells.push(null);
+
+const deadlineDays = new Map(calendarDeadlines.map(dl => [dl.day, dl]));
+
+const deadlineColorMap: Record<string, string> = {
+  red: 'bg-red-500',
+  amber: 'bg-amber-500',
+  blue: 'bg-blue-500',
+};
+---
+
+<div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+  <h3 class="text-lg font-semibold text-slate-900 mb-4">{d.calendarTitle}</h3>
+
+  <!-- Day headers -->
+  <div class="grid grid-cols-7 gap-1 mb-2">
+    {['N', 'P', 'U', 'S', 'Č', 'P', 'S'].map(day => (
+      <div class="text-center text-xs font-medium text-slate-400 py-1">{day}</div>
+    ))}
+  </div>
+
+  <!-- Calendar grid -->
+  <div class="grid grid-cols-7 gap-1">
+    {cells.map(cell => {
+      if (cell === null) return <div class="h-9" />;
+      const dl = deadlineDays.get(cell);
+      const isToday = cell === today;
+      return (
+        <div class:list={[
+          'relative h-9 flex items-center justify-center rounded-lg text-sm',
+          isToday ? 'bg-primary-600 text-white font-bold' : 'text-slate-700 hover:bg-slate-100',
+          dl ? 'font-semibold' : ''
+        ]}>
+          {cell}
+          {dl && (
+            <span class:list={[
+              'absolute bottom-0.5 w-1.5 h-1.5 rounded-full',
+              deadlineColorMap[dl.color]
+            ]} />
+          )}
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- Deadline legend -->
+  <div class="mt-4 space-y-1.5">
+    {calendarDeadlines.map(dl => {
+      const labelVal = (d.calendarDeadlines as any)[dl.labelKey] as string;
+      return (
+        <div class="flex items-center gap-2 text-xs text-slate-600">
+          <span class:list={['w-2 h-2 rounded-full shrink-0', deadlineColorMap[dl.color]]} />
+          <span>{dl.day}. — {labelVal}</span>
+        </div>
+      );
+    })}
+  </div>
+</div>

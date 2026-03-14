@@ -1,0 +1,77 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { invoices } from '../../../data/demo-digital-office';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const a = t.demoDigitalOffice.accounting;
+
+const statusColors: Record<string, string> = {
+  paid: 'bg-green-100 text-green-700',
+  sent: 'bg-blue-100 text-blue-700',
+  overdue: 'bg-red-100 text-red-700',
+  draft: 'bg-slate-100 text-slate-600',
+};
+
+const formatEur = (n: number) => n.toLocaleString('de-DE', { minimumFractionDigits: 2 }) + ' EUR';
+---
+
+<div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+  <h3 class="text-lg font-semibold text-slate-900 mb-4">{a.invoiceTitle}</h3>
+
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="border-b border-slate-200">
+          <th class="text-left py-3 px-2 font-medium text-slate-500">{a.invoiceColumns.number}</th>
+          <th class="text-left py-3 px-2 font-medium text-slate-500">{a.invoiceColumns.client}</th>
+          <th class="text-right py-3 px-2 font-medium text-slate-500">{a.invoiceColumns.amount}</th>
+          <th class="text-right py-3 px-2 font-medium text-slate-500">{a.invoiceColumns.vat}</th>
+          <th class="text-left py-3 px-2 font-medium text-slate-500">{a.invoiceColumns.date}</th>
+          <th class="text-left py-3 px-2 font-medium text-slate-500">{a.invoiceColumns.status}</th>
+          <th class="text-right py-3 px-2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {invoices.map(inv => (
+          <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+            <td class="py-3 px-2 font-mono text-xs font-medium text-slate-900">{inv.number}</td>
+            <td class="py-3 px-2 text-slate-700 max-w-[200px] truncate">{inv.client}</td>
+            <td class="py-3 px-2 text-right font-medium text-slate-900">{formatEur(inv.amount)}</td>
+            <td class="py-3 px-2 text-right text-slate-600">{formatEur(inv.vat)}</td>
+            <td class="py-3 px-2 text-slate-600">{inv.date}</td>
+            <td class="py-3 px-2">
+              <span class:list={['px-2.5 py-0.5 text-xs font-medium rounded-full', statusColors[inv.status]]}>
+                {(a.invoiceStatuses as any)[inv.status]}
+              </span>
+            </td>
+            <td class="py-3 px-2 text-right">
+              <button
+                type="button"
+                class="invoice-view-btn text-xs text-primary-600 hover:text-primary-700 font-medium"
+              >
+                {a.viewInvoice}
+              </button>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  function initInvoiceTable() {
+    document.querySelectorAll<HTMLButtonElement>('.invoice-view-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.dispatchEvent(new CustomEvent('open-invoice-preview'));
+      });
+    });
+  }
+
+  initInvoiceTable();
+  document.addEventListener('astro:after-swap', initInvoiceTable);
+</script>

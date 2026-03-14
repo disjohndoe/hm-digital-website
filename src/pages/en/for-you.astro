@@ -1,0 +1,221 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/ui/Card.astro';
+import Button from '../../components/ui/Button.astro';
+import ProjectCard from '../../components/sections/ProjectCard.astro';
+import { getTranslations, getPathForLocale } from '../../i18n/ui';
+
+const locale = 'en';
+const t = getTranslations(locale);
+const s = t.salesPage;
+---
+
+<Layout
+  title={s.meta.title}
+  description={s.meta.description}
+  canonical="/en/for-you"
+  noindex={true}
+>
+  <!-- Hero -->
+  <section class="py-20 lg:py-32 bg-gradient-to-br from-slate-900 to-primary-900">
+    <div class="container-custom text-center">
+      <p class="text-primary-300 font-medium text-sm uppercase tracking-wider mb-4">
+        {s.hero.tagline}
+      </p>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto">
+        {s.hero.title}
+      </h1>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-10">
+        {s.hero.subtitle}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href={getPathForLocale('/besplatna-procjena', locale)} variant="primary" size="lg">
+          {s.hero.ctaAssessment}
+        </Button>
+        <Button href={getPathForLocale('/usluge', locale)} variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
+          {s.hero.ctaServices}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          {s.whyUs.title}
+        </h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+          {s.whyUs.subtitle}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <Card padding="lg" class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.whyUs.items.experience.title}</h3>
+          <p class="text-slate-600 text-sm">{s.whyUs.items.experience.desc}</p>
+        </Card>
+        <Card padding="lg" class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.whyUs.items.delivery.title}</h3>
+          <p class="text-slate-600 text-sm">{s.whyUs.items.delivery.desc}</p>
+        </Card>
+        <Card padding="lg" class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.whyUs.items.technology.title}</h3>
+          <p class="text-slate-600 text-sm">{s.whyUs.items.technology.desc}</p>
+        </Card>
+        <Card padding="lg" class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.whyUs.items.transparency.title}</h3>
+          <p class="text-slate-600 text-sm">{s.whyUs.items.transparency.desc}</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 lg:py-24 bg-slate-50">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          {s.services.title}
+        </h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+          {s.services.subtitle}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.services.items.customSoftware.title}</h3>
+          <p class="text-slate-600 text-sm">{s.services.items.customSoftware.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.services.items.dmsOcr.title}</h3>
+          <p class="text-slate-600 text-sm">{s.services.items.dmsOcr.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.services.items.integrations.title}</h3>
+          <p class="text-slate-600 text-sm">{s.services.items.integrations.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.services.items.erpCrm.title}</h3>
+          <p class="text-slate-600 text-sm">{s.services.items.erpCrm.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.services.items.documentation.title}</h3>
+          <p class="text-slate-600 text-sm">{s.services.items.documentation.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{s.services.items.consulting.title}</h3>
+          <p class="text-slate-600 text-sm">{s.services.items.consulting.desc}</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          {s.projects.title}
+        </h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+          {s.projects.subtitle}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <ProjectCard
+          title={s.projects.items.project1.title}
+          description={s.projects.items.project1.description}
+          tech={s.projects.items.project1.tech.split(', ')}
+          href={getPathForLocale('/demo/digitalni-ured', locale)}
+          locale={locale}
+        />
+        <ProjectCard
+          title={s.projects.items.project2.title}
+          description={s.projects.items.project2.description}
+          tech={s.projects.items.project2.tech.split(', ')}
+          href={getPathForLocale('/demo/erp', locale)}
+          locale={locale}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-16 lg:py-24 bg-slate-900">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+          {s.stats.title}
+        </h2>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+          {s.stats.subtitle}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+        <div>
+          <p class="text-5xl lg:text-6xl font-bold text-primary-400 mb-2">{s.stats.items.years.value}</p>
+          <p class="text-slate-400 text-lg">{s.stats.items.years.label}</p>
+        </div>
+        <div>
+          <p class="text-5xl lg:text-6xl font-bold text-primary-400 mb-2">{s.stats.items.projects.value}</p>
+          <p class="text-slate-400 text-lg">{s.stats.items.projects.label}</p>
+        </div>
+        <div>
+          <p class="text-5xl lg:text-6xl font-bold text-primary-400 mb-2">{s.stats.items.industries.value}</p>
+          <p class="text-slate-400 text-lg">{s.stats.items.industries.label}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-24 bg-primary-600">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        {s.cta.title}
+      </h2>
+      <p class="text-lg text-primary-100 max-w-2xl mx-auto mb-8">
+        {s.cta.subtitle}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href={getPathForLocale('/besplatna-procjena', locale)} variant="secondary" size="lg">
+          {s.cta.button}
+        </Button>
+        <Button href={getPathForLocale('/kontakt', locale)} variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
+          {s.cta.secondaryButton}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

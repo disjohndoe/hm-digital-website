@@ -1,0 +1,54 @@
+---
+import VatAnalysis from './VatAnalysis.astro';
+import InvoiceTable from './InvoiceTable.astro';
+import InvoicePreviewModal from './InvoicePreviewModal.astro';
+import type { Translations } from '../../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const a = t.demoDigitalOffice.accounting;
+
+const financials = [
+  { ...a.revenue, color: 'green' },
+  { ...a.expenses, color: 'red' },
+  { ...a.receivables, color: 'amber' },
+  { ...a.payables, color: 'slate' },
+];
+
+const colorMap: Record<string, { bg: string; text: string; border: string }> = {
+  green: { bg: 'bg-green-50', text: 'text-green-700', border: 'border-green-200' },
+  red: { bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200' },
+  amber: { bg: 'bg-amber-50', text: 'text-amber-700', border: 'border-amber-200' },
+  slate: { bg: 'bg-slate-50', text: 'text-slate-700', border: 'border-slate-200' },
+};
+---
+
+<div class="demo-tab-panel hidden" data-panel="accounting">
+  <!-- Section A: Financial Overview -->
+  <div class="mb-8">
+    <h2 class="text-xl font-bold text-slate-900 mb-4">{a.financialTitle}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {financials.map(f => {
+        const c = colorMap[f.color];
+        return (
+          <div class:list={['rounded-xl border p-5', c.bg, c.border]}>
+            <p class="text-sm text-slate-500 mb-1">{f.label}</p>
+            <p class:list={['text-2xl font-bold', c.text]}>{f.value}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+
+  <!-- Section B: VAT Analysis -->
+  <div class="mb-8">
+    <VatAnalysis t={t} />
+  </div>
+
+  <!-- Section C: Invoice Table -->
+  <InvoiceTable t={t} />
+  <InvoicePreviewModal t={t} />
+</div>

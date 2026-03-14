@@ -1,0 +1,253 @@
+---
+import Button from '../ui/Button.astro';
+import { getPathForLocale, type Locale } from '../../i18n/ui';
+
+interface Tab {
+  id: string;
+  label: string;
+}
+
+interface Feature {
+  title: string;
+  description: string;
+}
+
+interface Stat {
+  value: string;
+  label: string;
+}
+
+interface CtaSection {
+  title: string;
+  subtitle: string;
+  cta: string;
+}
+
+interface Props {
+  badge: string;
+  title: string;
+  subtitle: string;
+  cta: string;
+  secondaryCta?: string;
+  stats?: Stat[];
+  features?: Feature[];
+  ctaSection?: CtaSection;
+  tabs: Tab[];
+  locale: Locale;
+}
+
+const { badge, title, subtitle, cta, secondaryCta, stats, features, ctaSection, tabs, locale } = Astro.props;
+
+const tabIcons: Record<string, string> = {
+  dashboard: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />',
+  inventory: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />',
+  workOrders: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />',
+  reports: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />',
+};
+
+const featureIcons = [
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />',
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />',
+];
+---
+
+<!-- Hero -->
+<section class="relative py-16 lg:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 overflow-hidden">
+  <!-- Decorative blurred circles -->
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-400/10 rounded-full blur-3xl"></div>
+
+  <div class="container-custom relative z-10">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+      <!-- Left: Text -->
+      <div class="text-center lg:text-left">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary-500/20 text-primary-300 text-sm font-medium rounded-full mb-6">
+          <span class="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
+          {badge}
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+          {title}
+        </h1>
+        <p class="text-lg text-slate-300 max-w-xl mb-8">
+          {subtitle}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
+          <Button href={getPathForLocale('/besplatna-procjena', locale)} variant="primary" size="lg">
+            {cta}
+          </Button>
+          {secondaryCta && (
+            <a href="#demo-tabs" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg border-2 border-white/20 text-white hover:bg-white/10 transition-all hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+              {secondaryCta}
+            </a>
+          )}
+        </div>
+        {stats && stats.length > 0 && (
+          <div class="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
+            {stats.map((stat, i) => (
+              <>
+                {i > 0 && <div class="w-px h-10 bg-white/20"></div>}
+                <div class="text-center">
+                  <p class="text-2xl sm:text-3xl font-bold text-white">{stat.value}</p>
+                  <p class="text-sm text-slate-400">{stat.label}</p>
+                </div>
+              </>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <!-- Right: Floating dashboard mockup (lg only) -->
+      <div class="hidden lg:block">
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 shadow-2xl">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            <div class="flex-1 h-4 bg-white/10 rounded ml-2"></div>
+          </div>
+          <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-white/10 rounded-lg p-3">
+              <div class="h-2 w-12 bg-primary-400/50 rounded mb-2"></div>
+              <div class="h-5 w-16 bg-white/20 rounded"></div>
+            </div>
+            <div class="bg-white/10 rounded-lg p-3">
+              <div class="h-2 w-10 bg-green-400/50 rounded mb-2"></div>
+              <div class="h-5 w-14 bg-white/20 rounded"></div>
+            </div>
+            <div class="bg-white/10 rounded-lg p-3">
+              <div class="h-2 w-14 bg-amber-400/50 rounded mb-2"></div>
+              <div class="h-5 w-12 bg-white/20 rounded"></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-white/10 rounded-lg p-4">
+              <div class="h-2 w-20 bg-white/15 rounded mb-3"></div>
+              <div class="flex items-end gap-1.5 h-20">
+                <div class="w-full bg-primary-400/40 rounded-t" style="height: 60%"></div>
+                <div class="w-full bg-primary-400/40 rounded-t" style="height: 80%"></div>
+                <div class="w-full bg-primary-400/40 rounded-t" style="height: 50%"></div>
+                <div class="w-full bg-primary-400/40 rounded-t" style="height: 90%"></div>
+                <div class="w-full bg-primary-400/40 rounded-t" style="height: 70%"></div>
+              </div>
+            </div>
+            <div class="bg-white/10 rounded-lg p-4">
+              <div class="h-2 w-16 bg-white/15 rounded mb-3"></div>
+              <div class="h-20 flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full border-4 border-green-400/50 border-t-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlights -->
+{features && features.length > 0 && (
+  <section class="bg-white border-b border-slate-100 py-12">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {features.map((f, i) => (
+          <div class="text-center sm:text-left">
+            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 mx-auto sm:mx-0">
+              <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <Fragment set:html={featureIcons[i] || featureIcons[0]} />
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-slate-900 mb-1">{f.title}</h3>
+            <p class="text-sm text-slate-500">{f.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- Tab Bar -->
+<section class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30" id="demo-tabs">
+  <div class="container-custom">
+    <nav class="flex gap-1 overflow-x-auto -mb-px" id="demo-tab-nav">
+      {tabs.map((tab, i) => (
+        <button
+          type="button"
+          class:list={[
+            'demo-tab-btn whitespace-nowrap px-5 py-4 text-sm font-medium border-b-3 transition-colors inline-flex items-center gap-2',
+            i === 0
+              ? 'border-primary-600 text-primary-600'
+              : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'
+          ]}
+          data-tab={tab.id}
+        >
+          {tabIcons[tab.id] && (
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <Fragment set:html={tabIcons[tab.id]} />
+            </svg>
+          )}
+          {tab.label}
+        </button>
+      ))}
+    </nav>
+  </div>
+</section>
+
+<!-- Tab Panels -->
+<section class="py-8 lg:py-12 bg-slate-50 min-h-[600px]">
+  <div class="container-custom">
+    <slot />
+  </div>
+</section>
+
+<!-- Bottom CTA -->
+{ctaSection && (
+  <section class="bg-gradient-to-r from-primary-600 to-primary-700 py-16">
+    <div class="container-custom text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">{ctaSection.title}</h2>
+      <p class="text-primary-100 text-lg max-w-2xl mx-auto mb-8">{ctaSection.subtitle}</p>
+      <a
+        href={getPathForLocale('/besplatna-procjena', locale)}
+        class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg bg-white text-primary-700 hover:bg-primary-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+      >
+        {ctaSection.cta}
+      </a>
+    </div>
+  </section>
+)}
+
+<script>
+  function initTabs() {
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.demo-tab-btn');
+    const panels = document.querySelectorAll<HTMLElement>('.demo-tab-panel');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.dataset.tab;
+
+        // Update buttons
+        buttons.forEach(b => {
+          b.classList.remove('border-primary-600', 'text-primary-600');
+          b.classList.add('border-transparent', 'text-slate-500');
+        });
+        btn.classList.remove('border-transparent', 'text-slate-500');
+        btn.classList.add('border-primary-600', 'text-primary-600');
+
+        // Update panels
+        panels.forEach(p => {
+          if (p.dataset.panel === tabId) {
+            p.classList.remove('hidden');
+            // Dispatch event for lazy chart init
+            p.dispatchEvent(new CustomEvent('tab-visible', { bubbles: true }));
+          } else {
+            p.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
+  // Run on initial load and on Astro page transitions
+  initTabs();
+  document.addEventListener('astro:after-swap', initTabs);
+</script>

@@ -14,7 +14,10 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       entryLimit: 10000,
-      filter: (page) => !page.includes('/uspjeh') && !page.includes('/en/success'),
+      filter: (page) =>
+        !page.includes('/uspjeh') && !page.includes('/en/success') &&
+        !page.includes('/za-vas') && !page.includes('/en/for-you') &&
+        !page.includes('/demo/'),
     })
   ],
   i18n: {

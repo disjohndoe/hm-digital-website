@@ -315,6 +315,405 @@ export const hr = {
     cta: 'Zatražite ponudu za digitalizaciju',
     cta2: 'Pogledaj cijene'
   },
+  salesPage: {
+    meta: {
+      title: 'IT partner za provedbu EU projekata | HM Digital',
+      description: 'Tražite pouzdanog IT partnera za provedbu EU-financiranih projekata? HM Digital razvija software po mjeri, DMS/OCR sustave, integracije i tehničku dokumentaciju.'
+    },
+    hero: {
+      tagline: 'Vaš IT partner za provedbu EU projekata',
+      title: 'Pouzdana tehnička provedba nakon odobrenja EU sredstava',
+      subtitle: 'Razvijamo softverska rješenja, DMS sustave i integracije koje zadovoljavaju zahtjeve EU natječaja — od tehničke specifikacije do produkcije.',
+      ctaAssessment: 'Besplatna procjena projekta',
+      ctaServices: 'Pogledajte usluge'
+    },
+    whyUs: {
+      title: 'Zašto nas savjetnici biraju',
+      subtitle: 'Razumijemo specifičnosti EU projekata i zahtjeve koje morate ispuniti',
+      items: {
+        experience: {
+          title: '10+ godina iskustva',
+          desc: 'Dugogodišnje iskustvo u razvoju kompleksnih sustava za hrvatska i međunarodna poduzeća.'
+        },
+        delivery: {
+          title: 'Isporuka po specifikaciji',
+          desc: 'Razvijamo prema tehničkoj dokumentaciji natječaja — funkcionalnosti, rokovi i izvještavanje po pravilima EU fondova.'
+        },
+        technology: {
+          title: 'Provjerene tehnologije',
+          desc: 'Python, Django, FastAPI, React, PostgreSQL — moderni stack koji osigurava skalabilnost i dugoročno održavanje.'
+        },
+        transparency: {
+          title: 'Transparentna komunikacija',
+          desc: 'Redoviti izvještaji o napretku, jasna dokumentacija i dostupnost za revizije i kontrole.'
+        }
+      }
+    },
+    services: {
+      title: 'Usluge za EU projekte',
+      subtitle: 'Sve što trebate za tehničku provedbu — od aplikacija po mjeri do dokumentacije',
+      items: {
+        customSoftware: {
+          title: 'Softver po mjeri',
+          desc: 'Web aplikacije, poslovni sustavi i platforme razvijene prema specifikacijama iz natječajne dokumentacije.'
+        },
+        dmsOcr: {
+          title: 'DMS i OCR sustavi',
+          desc: 'Sustavi za upravljanje dokumentima s OCR prepoznavanjem — digitalizacija arhive, pretraživi PDF-ovi i automatska klasifikacija.'
+        },
+        integrations: {
+          title: 'Integracije sustava',
+          desc: 'Povezivanje s postojećim ERP, CRM i DMS sustavima, API integracije i automatizacija razmjene podataka.'
+        },
+        erpCrm: {
+          title: 'ERP i CRM rješenja',
+          desc: 'Prilagođeni ERP/CRM sustavi ili integracija s postojećim rješenjima za upravljanje poslovanjem i klijentima.'
+        },
+        documentation: {
+          title: 'Tehnička dokumentacija',
+          desc: 'Izrada tehničke specifikacije, korisničkih uputa i projektne dokumentacije prema zahtjevima EU natječaja.'
+        },
+        consulting: {
+          title: 'IT savjetovanje',
+          desc: 'Pomoć pri definiranju tehničkog dijela natječaja — arhitektura, procjena troškova, plan isporuke i timeline.'
+        }
+      }
+    },
+    projects: {
+      title: 'Referentni projekti',
+      subtitle: 'Primjeri uspješno isporučenih rješenja',
+      viewAll: 'Pogledajte sve projekte',
+      items: {
+        project1: {
+          title: 'Digitalni ured — platforma za automatizaciju',
+          description: 'Interno razvijena platforma za upravljanje dokumentima, automatizaciju procesa i izvještavanje. Uključuje OCR, pretraživi arhiv i integraciju s postojećim sustavima.',
+          tech: 'Python, FastAPI, PostgreSQL, React, OCR'
+        },
+        project2: {
+          title: 'ERP sustav za proizvodnju',
+          description: 'Prilagođeni sustav za praćenje proizvodnje, upravljanje zalihama, radne naloge i izvještavanje — razvijen prema specifičnim zahtjevima klijenta.',
+          tech: 'Python, Django, PostgreSQL, React, REST API'
+        }
+      }
+    },
+    stats: {
+      title: 'U brojkama',
+      subtitle: 'Iskustvo koje stoji iza naših rješenja',
+      items: {
+        years: { value: '10+', label: 'godina iskustva' },
+        projects: { value: '50+', label: 'isporučenih projekata' },
+        industries: { value: '6+', label: 'industrija' }
+      }
+    },
+    cta: {
+      title: 'Razgovarajmo o vašem EU projektu',
+      subtitle: 'Javite nam se za besplatnu procjenu i tehničku konzultaciju — bez obaveza.',
+      button: 'Zatražite besplatnu procjenu',
+      secondaryButton: 'Kontaktirajte nas'
+    }
+  },
+  demoDigitalOffice: {
+    meta: {
+      title: 'Digitalni ured — Demo | HM Digital',
+      description: 'Interaktivni demo platforme za računovodstvo, AI/OCR obradu i automatizaciju poslovnih procesa za hrvatske tvrtke.'
+    },
+    hero: {
+      badge: 'Interaktivni demo',
+      title: 'Digitalni ured',
+      subtitle: 'Cjelovita platforma za računovodstvo, AI obradu dokumenata i automatizaciju poslovnih procesa. Isprobajte ključne funkcionalnosti.',
+      cta: 'Zatražite demo za svoju tvrtku'
+    },
+    tabs: {
+      dashboard: 'Nadzorna ploča',
+      accounting: 'Računovodstvo',
+      aiOcr: 'AI i OCR',
+      automation: 'Automatizacija'
+    },
+    dashboard: {
+      kpi1: { label: 'Ukupni promet', value: '847.320 EUR', trend: '+12,3%', icon: 'chart' },
+      kpi2: { label: 'PDV obveza', value: '42.150 EUR', trend: '+5,1%', icon: 'clipboard' },
+      kpi3: { label: 'Aktivni klijenti', value: '156', trend: '+8', icon: 'users' },
+      kpi4: { label: 'Obrada dokumenata', value: '12.847', trend: '+320', icon: 'box' },
+      notificationsTitle: 'Obavijesti',
+      n1Title: 'Dospjela faktura',
+      n1Desc: 'FAK-2026-0140 — Adriatic Cargo d.o.o. — 6.750,00 EUR',
+      n2Title: 'PDV rok se približava',
+      n2Desc: 'Rok za predaju PDV obrasca: 20. ožujka 2026.',
+      n3Title: 'Plaćanje primljeno',
+      n3Desc: 'TechnoServis d.o.o. — 4.550,00 EUR zaprimljeno',
+      n4Title: 'Novi dokument klasificiran',
+      n4Desc: 'AI je automatski kategorizirao ugovor (pouzdanost: 98,2%)',
+      n5Title: 'Obračun plaća',
+      n5Desc: 'Podsjetnik: rok za isplatu plaća je 31. ožujka',
+      cashFlowTitle: 'Novčani tok',
+      cashFlowReceipts: 'Primici',
+      cashFlowExpenses: 'Izdaci',
+      cashFlowMonths: 'Lis,Stu,Pro,Sij,Velj,Ožu',
+      revenueTrendTitle: 'Trend prihoda (12 mj.)',
+      revenueTrendMonths: 'Tra,Svi,Lip,Srp,Kol,Ruj,Lis,Stu,Pro,Sij,Velj,Ožu',
+      expenseBreakdownTitle: 'Struktura troškova',
+      expenseCategories: {
+        wages: 'Plaće',
+        rent: 'Najam',
+        materials: 'Materijali',
+        marketing: 'Marketing',
+        other: 'Ostalo'
+      },
+      quickActionsTitle: 'Brze akcije',
+      quickAction1: 'Nova faktura',
+      quickAction2: 'Dodaj klijenta',
+      quickAction3: 'Upload dokumenta',
+      quickAction4: 'Generiraj izvještaj',
+      toastMessage: 'Demo akcija — u produkciji bi se otvorila prava funkcionalnost',
+      calendarTitle: 'Kalendar — Ožujak 2026',
+      calendarDeadlines: {
+        vatDeadline: 'Rok za PDV obrazac',
+        taxDeadline: 'Porezna prijava',
+        payrollDeadline: 'Isplata plaća'
+      }
+    },
+    accounting: {
+      financialTitle: 'Financijski pregled',
+      revenue: { label: 'Prihodi', value: '847.320 EUR' },
+      expenses: { label: 'Rashodi', value: '612.480 EUR' },
+      receivables: { label: 'Potraživanja', value: '124.650 EUR' },
+      payables: { label: 'Obveze', value: '89.200 EUR' },
+      vatTitle: 'PDV analiza',
+      vatColumns: {
+        rate: 'Stopa',
+        base: 'Osnovica',
+        vat: 'PDV',
+        total: 'Ukupno'
+      },
+      vatTotal: 'Ukupno',
+      generateVat: 'Generiraj PDV obrazac',
+      finaCompliant: 'FINA kompatibilan',
+      invoiceTitle: 'Tablica faktura',
+      invoiceColumns: {
+        number: 'Br. fakture',
+        client: 'Klijent',
+        amount: 'Iznos',
+        vat: 'PDV',
+        date: 'Datum',
+        status: 'Status'
+      },
+      invoiceStatuses: {
+        paid: 'Plaćeno',
+        sent: 'Poslano',
+        overdue: 'Nepodmireno',
+        draft: 'Nacrt'
+      },
+      viewInvoice: 'Pregledaj',
+      invoicePreview: {
+        title: 'Pregled fakture',
+        close: 'Zatvori',
+        issuer: 'Izdavatelj',
+        buyer: 'Kupac',
+        issueDate: 'Datum izdavanja',
+        dueDate: 'Datum dospijeća',
+        items: 'Stavke',
+        subtotal: 'Ukupno bez PDV-a',
+        vatLabel: 'PDV',
+        total: 'UKUPNO ZA PLAĆANJE',
+        ibanLabel: 'IBAN',
+        referenceLabel: 'Poziv na broj'
+      }
+    },
+    aiOcr: {
+      uploadTitle: 'Upload i obrada',
+      dragDropText: 'Povucite datoteku ovdje ili',
+      browseButton: 'Odaberite datoteku',
+      supportedFormats: 'Podržani formati: PDF, JPG, PNG, TIFF',
+      pipelineTitle: 'Proces obrade',
+      pipelineSteps: {
+        step1: 'Upload',
+        step2: 'OCR',
+        step3: 'AI analiza',
+        step4: 'Ekstrakcija',
+        step5: 'Klasifikacija',
+        step6: 'Validacija'
+      },
+      resultsTitle: 'Ekstrahirani podaci',
+      fields: {
+        invoiceNumber: 'Broj fakture',
+        issuer: 'Izdavatelj',
+        oib: 'OIB',
+        issueDate: 'Datum izdavanja',
+        dueDate: 'Datum dospijeća',
+        totalAmount: 'Ukupan iznos',
+        vatAmount: 'PDV iznos',
+        iban: 'IBAN'
+      },
+      confidence: 'Pouzdanost',
+      chatTitle: 'AI asistent',
+      chatPoweredBy: 'Pokreće AI',
+      chatPlaceholder: 'Postavite pitanje o dokumentu...',
+      chatSend: 'Pošalji',
+      chatTyping: 'AI piše...',
+      chatMessages: {
+        q1: 'Koji je ukupan iznos na ovoj fakturi?',
+        a1: 'Ukupan iznos na fakturi FAK-2026-0142 je 4.550,00 EUR (osnovica: 3.640,00 EUR + PDV 25%: 910,00 EUR). Rok plaćanja je 12.04.2026.',
+        q2: 'Provjeri jesu li svi podaci ispravni.',
+        a2: 'Svi podaci su verificirani: OIB izdavatelja (12345678901) i kupca (98765432109) su valjani, IBAN format je ispravan, iznosi se podudaraju. Nije pronađena nijedna nepodudarnost.'
+      },
+      chatCanned: {
+        canned1: 'Analiziram strukturu troškova za Q1 2026. — rashodi pokazuju rast od 3,2% u odnosu na prethodni kvartal, uglavnom zbog povećanja troškova materijala.',
+        canned2: 'Na temelju vaših faktura, preporučujem optimizaciju rokova plaćanja — 4 dobavljača nude popust za rano plaćanje (2% / 10 dana).'
+      },
+      classificationTitle: 'Klasifikacija dokumenata',
+      classificationTypes: {
+        invoice: 'Faktura',
+        contract: 'Ugovor',
+        report: 'Izvještaj',
+        quote: 'Ponuda',
+        purchaseOrder: 'Narudžbenica',
+        letter: 'Dopis'
+      },
+      classificationAccuracy: 'Točnost'
+    },
+    automation: {
+      title: 'Automatizacija radnog tijeka',
+      subtitle: 'Cjelovit automatizirani pipeline za obradu dokumenata — od zaprimanja do arhiviranja',
+      steps: {
+        step1: { title: 'Zaprimanje', desc: 'Dokument stiže putem emaila, uploada ili skeniranja', time: '~0.5s' },
+        step2: { title: 'OCR obrada', desc: 'Automatsko prepoznavanje teksta i strukture', time: '~1.2s' },
+        step3: { title: 'AI klasifikacija', desc: 'Kategorizacija prema tipu, hitnosti i odjelu', time: '~0.8s' },
+        step4: { title: 'Ekstrakcija', desc: 'Izvlačenje ključnih podataka i metapodataka', time: '~0.6s' },
+        step5: { title: 'Validacija', desc: 'Provjera podataka i usporedba s bazom', time: '~0.4s' },
+        step6: { title: 'Knjiženje', desc: 'Automatsko knjiženje u računovodstveni sustav', time: '~0.3s' },
+        step7: { title: 'Arhiviranje', desc: 'Indeksiranje, pohrana i distribucija', time: '~0.2s' }
+      },
+      processingTitle: 'Obrada u tijeku',
+      processingDoc: 'Obrađuje se',
+      processingElapsed: 'Proteklo vrijeme',
+      processingQueue: 'U redu čekanja',
+      processingDocs: ['Faktura-2026-0143.pdf', 'Ugovor-Logistika.pdf', 'Izvjestaj-Q1.pdf', 'Dopis-Banka.pdf'],
+      completionTitle: 'Obrada završena!',
+      completionTime: 'Ukupno vrijeme obrade',
+      completionDoc: 'Dokument',
+      completionClassified: 'Klasificirano kao: Faktura (99,2%)',
+      completionBooked: 'Proknjiženo u računovodstveni sustav',
+      restart: 'Ponovi',
+      trustTitle: 'Pouzdanost platforme',
+      trustUsers: 'Korisnika',
+      trustDocs: 'Obrađenih dokumenata',
+      trustUptime: 'Dostupnost',
+      trustAccuracy: 'AI točnost'
+    }
+  },
+  demoErp: {
+    meta: {
+      title: 'ERP za proizvodnju — Demo | HM Digital',
+      description: 'Interaktivni demo ERP sustava za upravljanje proizvodnjom, zalihama, radnim nalozima i izvještavanjem.'
+    },
+    hero: {
+      badge: 'Interaktivni demo',
+      title: 'ERP za proizvodnju',
+      subtitle: 'Sustav za upravljanje proizvodnjom, praćenje zaliha, radne naloge i izvještavanje u realnom vremenu.',
+      cta: 'Zatražite demo za svoju tvrtku',
+      secondaryCta: 'Pogledajte mogućnosti',
+      stat1: { value: '150+', label: 'Klijenata' },
+      stat2: { value: '99.9%', label: 'Uptime' },
+      stat3: { value: '3x', label: 'Brže' }
+    },
+    features: {
+      f1: { title: 'Pametna nadzorna ploča', description: 'KPI-evi u realnom vremenu s trendovima i analitikom' },
+      f2: { title: 'Upravljanje zalihama', description: 'Praćenje zaliha s automatskim upozorenjima' },
+      f3: { title: 'Radni nalozi', description: 'Kanban upravljanje s drag & drop sučeljem' },
+      f4: { title: 'Napredni izvještaji', description: 'Analitika i izvoz podataka u više formata' }
+    },
+    tabs: {
+      dashboard: 'Nadzorna ploča',
+      inventory: 'Zalihe',
+      workOrders: 'Radni nalozi',
+      reports: 'Izvještaji'
+    },
+    dashboard: {
+      kpi1: { label: 'Proizvedeno danas', value: '1.284' },
+      kpi2: { label: 'Iskorištenost kapaciteta', value: '87%' },
+      kpi3: { label: 'Otvoreni radni nalozi', value: '23' },
+      kpi4: { label: 'Stopa kvalitete', value: '98,1%' },
+      kpi5: { label: 'Isporuka na vrijeme', value: '95%' },
+      kpi6: { label: 'Zastoj opreme', value: '2,4h' },
+      chartProductionByDay: 'Proizvodnja po danu',
+      chartEfficiency: 'Trend učinkovitosti (%)',
+      days: 'Pon,Uto,Sri,Čet,Pet,Sub,Ned',
+      activityTitle: 'Aktivnosti',
+      activities: {
+        a1: 'Linija 3 — serija #4821 završena',
+        a2: 'RN-1004 — rok istječe danas',
+        a3: 'Vijak M8x30 — zaliha ispod minimuma',
+        a4: 'QC provjera — serija #4820 odobrena',
+        a5: 'Preventivno održavanje — Stroj M-07'
+      },
+      orderStatusTitle: 'Status naloga'
+    },
+    inventory: {
+      searchPlaceholder: 'Pretraži zalihe...',
+      columns: {
+        name: 'Naziv',
+        sku: 'Šifra',
+        quantity: 'Količina',
+        location: 'Lokacija',
+        status: 'Status'
+      },
+      statuses: {
+        inStock: 'Na zalihi',
+        low: 'Niska zaliha',
+        outOfStock: 'Nema na zalihi',
+        ordered: 'Naručeno'
+      },
+      sortLabel: 'Sortiraj po',
+      summaryTotal: 'Ukupno stavki',
+      summaryLow: 'Niska zaliha',
+      summaryOut: 'Nema na zalihi',
+      summaryValue: 'Ukupna vrijednost',
+      pagination: 'Prikazano'
+    },
+    workOrders: {
+      columns: {
+        pending: 'Na čekanju',
+        inProgress: 'U tijeku',
+        completed: 'Završeno'
+      },
+      cardFields: {
+        product: 'Proizvod',
+        quantity: 'Količina',
+        deadline: 'Rok',
+        priority: 'Prioritet'
+      },
+      priorities: {
+        high: 'Visoki',
+        medium: 'Srednji',
+        low: 'Niski'
+      },
+      moveLabel: 'Premjesti',
+      summaryTotal: 'Ukupno naloga',
+      summaryOnTime: 'Na vrijeme',
+      summaryOverdue: 'Zakašnjeli'
+    },
+    reports: {
+      title: 'Izvještaji i analitika',
+      dateRanges: {
+        week: '7 dana',
+        month: '30 dana',
+        quarter: '90 dana'
+      },
+      chartProduction: 'Proizvodnja po kategoriji',
+      chartQuality: 'Stopa kvalitete (%)',
+      chartCosts: 'Troškovi proizvodnje',
+      summaryProduction: 'Ukupna proizvodnja',
+      summaryQuality: 'Prosj. kvaliteta',
+      summaryCosts: 'Ukupni troškovi',
+      exportPdf: 'Izvezi PDF',
+      exportCsv: 'Izvezi CSV'
+    },
+    ctaSection: {
+      title: 'Želite ovakav sustav za svoju tvrtku?',
+      subtitle: 'Javite nam se za besplatnu procjenu i saznajte kako možemo digitalizirati vaše poslovanje.',
+      cta: 'Besplatna procjena'
+    }
+  },
   success: {
     title: 'Hvala Vam!',
     message: 'Hvala Vam na kontaktu, Vaša poruka je zaprimljena. Javiti ćemo Vam se u najkraćem mogućem roku!',

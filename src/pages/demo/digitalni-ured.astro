@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DemoTabLayout from '../../components/demos/DemoTabLayout.astro';
+import DemoToast from '../../components/demos/DemoToast.astro';
+import DashboardTab from '../../components/demos/do/DashboardTab.astro';
+import AccountingTab from '../../components/demos/do/AccountingTab.astro';
+import AiOcrTab from '../../components/demos/do/AiOcrTab.astro';
+import AutomationTab from '../../components/demos/do/AutomationTab.astro';
+import { getTranslations } from '../../i18n/ui';
+
+const locale = 'hr';
+const t = getTranslations(locale);
+const d = t.demoDigitalOffice;
+
+const tabs = [
+  { id: 'dashboard', label: d.tabs.dashboard },
+  { id: 'accounting', label: d.tabs.accounting },
+  { id: 'ai-ocr', label: d.tabs.aiOcr },
+  { id: 'automation', label: d.tabs.automation },
+];
+---
+
+<Layout
+  title={d.meta.title}
+  description={d.meta.description}
+  canonical="/demo/digitalni-ured"
+  noindex={true}
+>
+  <DemoTabLayout
+    badge={d.hero.badge}
+    title={d.hero.title}
+    subtitle={d.hero.subtitle}
+    cta={d.hero.cta}
+    tabs={tabs}
+    locale={locale}
+  >
+    <DashboardTab t={t} />
+    <AccountingTab t={t} />
+    <AiOcrTab t={t} />
+    <AutomationTab t={t} />
+  </DemoTabLayout>
+  <DemoToast />
+</Layout>

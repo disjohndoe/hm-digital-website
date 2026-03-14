@@ -1,0 +1,86 @@
+---
+import type { Translations } from '../../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const a = t.demoDigitalOffice.automation;
+---
+
+<div id="processing-indicator" class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hidden opacity-0 transition-all duration-500">
+  <h3 class="text-lg font-semibold text-slate-900 mb-4">{a.processingTitle}</h3>
+
+  <div class="flex justify-center">
+    <!-- Current document -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center shrink-0">
+        <svg id="processing-spinner" class="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+        </svg>
+      </div>
+      <div class="min-w-0">
+        <p class="text-xs text-slate-500">{a.processingDoc}</p>
+        <p class="text-sm font-medium text-slate-900 truncate" id="processing-doc-name">{a.processingDocs[0]}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ docs: JSON.stringify(a.processingDocs) }}>
+  window.__processingDocs = JSON.parse(docs);
+</script>
+
+<script>
+  function initProcessingIndicator() {
+    const indicator = document.getElementById('processing-indicator');
+    const docName = document.getElementById('processing-doc-name');
+    const spinner = document.getElementById('processing-spinner');
+    if (!docName || !indicator) return;
+
+    const docs: string[] = (window as any).__processingDocs || [];
+    let docIndex = 0;
+    let intervalId: number | undefined;
+
+    function start() {
+      docIndex = 0;
+      docName.textContent = docs[0] || '';
+      indicator.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          indicator.classList.remove('opacity-0');
+          indicator.classList.add('opacity-100');
+        });
+      });
+      spinner?.classList.add('animate-spin');
+
+      if (intervalId) clearInterval(intervalId);
+      let seconds = 0;
+      intervalId = window.setInterval(() => {
+        seconds++;
+        if (seconds % 4 === 0 && docs.length > 0) {
+          docIndex = (docIndex + 1) % docs.length;
+          docName.textContent = docs[docIndex];
+        }
+      }, 1000);
+    }
+
+    function stop() {
+      if (intervalId) { clearInterval(intervalId); intervalId = undefined; }
+      indicator.classList.remove('opacity-100');
+      indicator.classList.add('opacity-0');
+      spinner?.classList.remove('animate-spin');
+      setTimeout(() => indicator.classList.add('hidden'), 500);
+      docIndex = 0;
+      docName.textContent = docs[0] || '';
+    }
+
+    // Expose globally for AutomationTab to control
+    (window as any).__processingIndicator = { start, stop };
+  }
+
+  initProcessingIndicator();
+  document.addEventListener('astro:after-swap', initProcessingIndicator);
+</script>

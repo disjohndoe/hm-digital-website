@@ -1,0 +1,23 @@
+---
+import OcrProcessor from './OcrProcessor.astro';
+import AiChatWidget from './AiChatWidget.astro';
+import DocClassificationGrid from './DocClassificationGrid.astro';
+import type { Translations } from '../../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+---
+
+<div class="demo-tab-panel hidden" data-panel="ai-ocr">
+  <!-- Two columns: Upload/Processing + AI Chat -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+    <OcrProcessor t={t} />
+    <AiChatWidget t={t} />
+  </div>
+
+  <!-- Bottom: Classification Grid -->
+  <DocClassificationGrid t={t} />
+</div>

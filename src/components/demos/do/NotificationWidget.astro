@@ -1,0 +1,38 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { notifications } from '../../../data/demo-digital-office';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const d = t.demoDigitalOffice.dashboard;
+
+const priorityColors: Record<string, string> = {
+  red: 'bg-red-500',
+  amber: 'bg-amber-500',
+  green: 'bg-green-500',
+  blue: 'bg-blue-500',
+};
+---
+
+<div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 h-full">
+  <h3 class="text-lg font-semibold text-slate-900 mb-4">{d.notificationsTitle}</h3>
+  <div class="space-y-3">
+    {notifications.map((n) => {
+      const titleVal = (d as any)[n.titleKey] as string;
+      const descVal = (d as any)[n.descKey] as string;
+      return (
+        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+          <div class={`w-2.5 h-2.5 rounded-full mt-1.5 shrink-0 ${priorityColors[n.priority]}`} />
+          <div class="min-w-0 flex-1">
+            <p class="text-sm font-medium text-slate-900">{titleVal}</p>
+            <p class="text-xs text-slate-500 truncate">{descVal}</p>
+          </div>
+          <span class="text-xs text-slate-400 shrink-0">{n.time}</span>
+        </div>
+      );
+    })}
+  </div>
+</div>

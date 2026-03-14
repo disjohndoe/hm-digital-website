@@ -1,0 +1,254 @@
+---
+import type { Translations } from '../../../i18n/ui';
+import { workOrders } from '../../../data/demo-erp';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const w = t.demoErp.workOrders;
+
+const columns = ['pending', 'inProgress', 'completed'] as const;
+const columnHeaders = { pending: w.columns.pending, inProgress: w.columns.inProgress, completed: w.columns.completed };
+const columnColors = { pending: 'bg-yellow-50 border-yellow-200', inProgress: 'bg-blue-50 border-blue-200', completed: 'bg-green-50 border-green-200' };
+const headerColors = { pending: 'text-yellow-700', inProgress: 'text-blue-700', completed: 'text-green-700' };
+const headerLineColors = { pending: 'bg-yellow-400', inProgress: 'bg-blue-400', completed: 'bg-green-400' };
+const priorityColors: Record<string, string> = { high: 'bg-red-100 text-red-700', medium: 'bg-yellow-100 text-yellow-700', low: 'bg-slate-100 text-slate-600' };
+const priorityBorderColors: Record<string, string> = { high: 'border-l-red-400', medium: 'border-l-amber-400', low: 'border-l-slate-300' };
+const progressBarColors: Record<string, string> = { high: 'bg-red-500', medium: 'bg-amber-500', low: 'bg-slate-400' };
+
+const totalOrders = workOrders.length;
+const today = '2026-03-14';
+const onTimeOrders = workOrders.filter(o => o.status === 'completed' || o.deadline >= today).length;
+const overdueOrders = workOrders.filter(o => o.status !== 'completed' && o.deadline < today).length;
+
+const avatarColors: Record<string, string> = {
+  'M': 'bg-blue-500',
+  'A': 'bg-purple-500',
+  'I': 'bg-green-500',
+  'P': 'bg-amber-500',
+  'L': 'bg-red-500',
+};
+---
+
+<div class="demo-tab-panel hidden" data-panel="workOrders">
+  <!-- Summary Stats -->
+  <div class="grid grid-cols-3 gap-4 mb-6">
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-primary-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{w.summaryTotal}</p>
+      <p class="text-xl font-bold text-slate-900">{totalOrders}</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-green-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{w.summaryOnTime}</p>
+      <p class="text-xl font-bold text-green-600">{onTimeOrders}</p>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 border-l-4 border-l-red-500 p-4">
+      <p class="text-xs text-slate-500 mb-1">{w.summaryOverdue}</p>
+      <p class="text-xl font-bold text-red-600">{overdueOrders}</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    {columns.map(col => (
+      <div>
+        <div class="flex items-center justify-between mb-2 px-1">
+          <h3 class={`font-semibold ${headerColors[col]}`}>{columnHeaders[col]}</h3>
+          <span class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
+            {workOrders.filter(o => o.status === col).length}
+          </span>
+        </div>
+        <div class={`h-1 rounded-full mb-3 ${headerLineColors[col]}`}></div>
+        <div
+          class={`kanban-column rounded-xl border-2 ${columnColors[col]} p-3 min-h-[300px] space-y-3`}
+          data-column={col}
+        >
+          {workOrders.filter(o => o.status === col).map(order => {
+            const isOverdue = order.status !== 'completed' && order.deadline < today;
+            const initial = order.assignee[0];
+            return (
+              <div
+                class={`kanban-card bg-white rounded-lg shadow-sm border border-slate-200 border-l-4 ${priorityBorderColors[order.priority]} p-4 cursor-grab active:cursor-grabbing hover:shadow-md transition-shadow`}
+                draggable="true"
+                data-order-id={order.id}
+                data-status={order.status}
+              >
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-semibold text-sm text-slate-900">{order.title}</span>
+                  <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${priorityColors[order.priority]}`}>
+                    {w.priorities[order.priority]}
+                  </span>
+                </div>
+                <div class="text-xs text-slate-500 space-y-1">
+                  <p><span class="font-medium">{w.cardFields.product}:</span> {order.product}</p>
+                  <p><span class="font-medium">{w.cardFields.quantity}:</span> {order.quantity}</p>
+                  <p>
+                    <span class="font-medium">{w.cardFields.deadline}:</span>{' '}
+                    <span class={isOverdue ? 'text-red-600 font-semibold' : ''}>{order.deadline}</span>
+                  </p>
+                </div>
+                {/* Assignee */}
+                <div class="flex items-center gap-2 mt-3">
+                  <div class={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold ${avatarColors[initial] || 'bg-slate-500'}`}>
+                    {initial}
+                  </div>
+                  <span class="text-xs text-slate-500">{order.assignee}</span>
+                </div>
+                {/* Progress bar */}
+                <div class="mt-3">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs text-slate-400">{order.progress}%</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                    <div
+                      class={`h-full rounded-full ${progressBarColors[order.priority]}`}
+                      style={`width: ${order.progress}%`}
+                    ></div>
+                  </div>
+                </div>
+                {/* Mobile move buttons */}
+                <div class="kanban-mobile-btns flex gap-2 mt-3 lg:hidden">
+                  {col !== 'pending' && (
+                    <button
+                      type="button"
+                      class="kanban-move-btn text-xs px-2 py-1 bg-slate-100 text-slate-600 rounded hover:bg-slate-200"
+                      data-direction="left"
+                    >
+                      &larr; {w.moveLabel}
+                    </button>
+                  )}
+                  {col !== 'completed' && (
+                    <button
+                      type="button"
+                      class="kanban-move-btn text-xs px-2 py-1 bg-slate-100 text-slate-600 rounded hover:bg-slate-200"
+                      data-direction="right"
+                    >
+                      {w.moveLabel} &rarr;
+                    </button>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  function initKanban() {
+    const columnOrder = ['pending', 'inProgress', 'completed'];
+
+    // Desktop: HTML5 Drag and Drop
+    const cards = document.querySelectorAll<HTMLElement>('.kanban-card');
+    const cols = document.querySelectorAll<HTMLElement>('.kanban-column');
+
+    let draggedCard: HTMLElement | null = null;
+
+    cards.forEach(card => {
+      card.addEventListener('dragstart', (e) => {
+        draggedCard = card;
+        card.classList.add('opacity-50');
+        (e as DragEvent).dataTransfer!.effectAllowed = 'move';
+      });
+      card.addEventListener('dragend', () => {
+        card.classList.remove('opacity-50');
+        draggedCard = null;
+        cols.forEach(c => c.classList.remove('ring-2', 'ring-primary-400'));
+      });
+    });
+
+    cols.forEach(col => {
+      col.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        (e as DragEvent).dataTransfer!.dropEffect = 'move';
+        col.classList.add('ring-2', 'ring-primary-400');
+      });
+      col.addEventListener('dragleave', () => {
+        col.classList.remove('ring-2', 'ring-primary-400');
+      });
+      col.addEventListener('drop', (e) => {
+        e.preventDefault();
+        col.classList.remove('ring-2', 'ring-primary-400');
+        if (draggedCard) {
+          col.appendChild(draggedCard);
+          updateMobileButtons(draggedCard, col.dataset.column ?? '');
+          updateColumnCounts();
+        }
+      });
+    });
+
+    // Mobile: tap-to-move buttons
+    document.querySelectorAll<HTMLButtonElement>('.kanban-move-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.kanban-card') as HTMLElement;
+        const currentCol = card.closest('.kanban-column') as HTMLElement;
+        const currentStatus = currentCol.dataset.column ?? '';
+        const currentIdx = columnOrder.indexOf(currentStatus);
+        const direction = btn.dataset.direction;
+        const targetIdx = direction === 'left' ? currentIdx - 1 : currentIdx + 1;
+
+        if (targetIdx >= 0 && targetIdx < columnOrder.length) {
+          const targetCol = document.querySelector(`.kanban-column[data-column="${columnOrder[targetIdx]}"]`);
+          if (targetCol) {
+            targetCol.appendChild(card);
+            updateMobileButtons(card, columnOrder[targetIdx]);
+            updateColumnCounts();
+          }
+        }
+      });
+    });
+
+    function updateMobileButtons(card: HTMLElement, newStatus: string) {
+      const btnContainer = card.querySelector('.kanban-mobile-btns');
+      if (!btnContainer) return;
+      const btns = btnContainer.querySelectorAll<HTMLButtonElement>('.kanban-move-btn');
+      btns.forEach(b => b.remove());
+
+      if (newStatus !== 'pending') {
+        const leftBtn = document.createElement('button');
+        leftBtn.type = 'button';
+        leftBtn.className = 'kanban-move-btn text-xs px-2 py-1 bg-slate-100 text-slate-600 rounded hover:bg-slate-200';
+        leftBtn.dataset.direction = 'left';
+        leftBtn.innerHTML = '&larr; Move';
+        leftBtn.addEventListener('click', () => moveCard(card, 'left'));
+        btnContainer.appendChild(leftBtn);
+      }
+      if (newStatus !== 'completed') {
+        const rightBtn = document.createElement('button');
+        rightBtn.type = 'button';
+        rightBtn.className = 'kanban-move-btn text-xs px-2 py-1 bg-slate-100 text-slate-600 rounded hover:bg-slate-200';
+        rightBtn.dataset.direction = 'right';
+        rightBtn.innerHTML = 'Move &rarr;';
+        rightBtn.addEventListener('click', () => moveCard(card, 'right'));
+        btnContainer.appendChild(rightBtn);
+      }
+    }
+
+    function moveCard(card: HTMLElement, direction: string) {
+      const currentCol = card.closest('.kanban-column') as HTMLElement;
+      const currentIdx = columnOrder.indexOf(currentCol.dataset.column ?? '');
+      const targetIdx = direction === 'left' ? currentIdx - 1 : currentIdx + 1;
+      if (targetIdx >= 0 && targetIdx < columnOrder.length) {
+        const targetCol = document.querySelector(`.kanban-column[data-column="${columnOrder[targetIdx]}"]`);
+        if (targetCol) {
+          targetCol.appendChild(card);
+          updateMobileButtons(card, columnOrder[targetIdx]);
+          updateColumnCounts();
+        }
+      }
+    }
+
+    function updateColumnCounts() {
+      cols.forEach(col => {
+        const count = col.querySelectorAll('.kanban-card').length;
+        const header = col.closest('div')?.querySelector('.rounded-full');
+        if (header) header.textContent = String(count);
+      });
+    }
+  }
+
+  initKanban();
+  document.addEventListener('astro:after-swap', initKanban);
+</script>

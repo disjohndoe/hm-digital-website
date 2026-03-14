@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DemoTabLayout from '../../components/demos/DemoTabLayout.astro';
+import DashboardTab from '../../components/demos/erp/DashboardTab.astro';
+import InventoryTab from '../../components/demos/erp/InventoryTab.astro';
+import WorkOrdersTab from '../../components/demos/erp/WorkOrdersTab.astro';
+import ReportsTab from '../../components/demos/erp/ReportsTab.astro';
+import { getTranslations } from '../../i18n/ui';
+
+const locale = 'hr';
+const t = getTranslations(locale);
+const d = t.demoErp;
+
+const tabs = [
+  { id: 'dashboard', label: d.tabs.dashboard },
+  { id: 'inventory', label: d.tabs.inventory },
+  { id: 'workOrders', label: d.tabs.workOrders },
+  { id: 'reports', label: d.tabs.reports },
+];
+
+const stats = [d.hero.stat1, d.hero.stat2, d.hero.stat3];
+const features = [d.features.f1, d.features.f2, d.features.f3, d.features.f4];
+---
+
+<Layout
+  title={d.meta.title}
+  description={d.meta.description}
+  canonical="/demo/erp"
+  noindex={true}
+>
+  <DemoTabLayout
+    badge={d.hero.badge}
+    title={d.hero.title}
+    subtitle={d.hero.subtitle}
+    cta={d.hero.cta}
+    secondaryCta={d.hero.secondaryCta}
+    stats={stats}
+    features={features}
+    ctaSection={d.ctaSection}
+    tabs={tabs}
+    locale={locale}
+  >
+    <DashboardTab t={t} />
+    <InventoryTab t={t} />
+    <WorkOrdersTab t={t} />
+    <ReportsTab t={t} locale={locale} />
+  </DemoTabLayout>
+</Layout>

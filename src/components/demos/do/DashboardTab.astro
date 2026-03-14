@@ -1,0 +1,207 @@
+---
+import DemoKpiCard from '../DemoKpiCard.astro';
+import NotificationWidget from './NotificationWidget.astro';
+import CashFlowChart from './CashFlowChart.astro';
+import CalendarWidget from './CalendarWidget.astro';
+import QuickActions from './QuickActions.astro';
+import type { Translations } from '../../../i18n/ui';
+import { expenseCategories } from '../../../data/demo-digital-office';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const d = t.demoDigitalOffice.dashboard;
+
+const kpis = [
+  { label: d.kpi1.label, value: d.kpi1.value, icon: d.kpi1.icon, color: 'primary' as const, trend: 'up' as const, trendValue: d.kpi1.trend },
+  { label: d.kpi2.label, value: d.kpi2.value, icon: d.kpi2.icon, color: 'amber' as const, trend: 'up' as const, trendValue: d.kpi2.trend },
+  { label: d.kpi3.label, value: d.kpi3.value, icon: d.kpi3.icon, color: 'green' as const, trend: 'up' as const, trendValue: d.kpi3.trend },
+  { label: d.kpi4.label, value: d.kpi4.value, icon: d.kpi4.icon, color: 'primary' as const, trend: 'up' as const, trendValue: d.kpi4.trend },
+];
+
+// Build expense category labels from translations
+const expenseCatLabels = expenseCategories.map(c => (d.expenseCategories as any)[c.labelKey] as string);
+---
+
+<div class="demo-tab-panel" data-panel="dashboard">
+  <!-- Section A: KPI Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    {kpis.map(kpi => (
+      <DemoKpiCard
+        label={kpi.label}
+        value={kpi.value}
+        icon={kpi.icon}
+        color={kpi.color}
+        trend={kpi.trend}
+        trendValue={kpi.trendValue}
+      />
+    ))}
+  </div>
+
+  <!-- Section B: Notifications + Cash Flow -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+    <NotificationWidget t={t} />
+    <CashFlowChart t={t} />
+  </div>
+
+  <!-- Section C: Revenue Trend + Expense Breakdown -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+      <h3 class="text-lg font-semibold text-slate-900 mb-4">{d.revenueTrendTitle}</h3>
+      <div class="relative h-64">
+        <canvas id="do-chart-revenue"></canvas>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+      <h3 class="text-lg font-semibold text-slate-900 mb-4">{d.expenseBreakdownTitle}</h3>
+      <div class="relative h-64">
+        <canvas id="do-chart-expenses"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section D: Quick Actions -->
+  <div class="mb-8">
+    <QuickActions t={t} />
+  </div>
+
+  <!-- Section E: Calendar -->
+  <div class="max-w-md">
+    <CalendarWidget t={t} />
+  </div>
+</div>
+
+<script define:vars={{
+  revenueMonths: d.revenueTrendMonths,
+  expenseCatLabelsStr: expenseCatLabels.join(',')
+}}>
+  window.__doChartLabels = {
+    revenueMonths: revenueMonths.split(','),
+    expenseCatLabels: expenseCatLabelsStr.split(',')
+  };
+</script>
+
+<script>
+  import { Chart, registerables } from 'chart.js';
+  Chart.register(...registerables);
+
+  let chartsInitialized = false;
+
+  function initDoCharts() {
+    if (chartsInitialized) return;
+
+    const canvasCashFlow = document.getElementById('do-chart-cashflow') as HTMLCanvasElement;
+    const canvasRevenue = document.getElementById('do-chart-revenue') as HTMLCanvasElement;
+    const canvasExpenses = document.getElementById('do-chart-expenses') as HTMLCanvasElement;
+
+    // Need at least revenue + expenses canvases to init
+    if (!canvasRevenue || !canvasExpenses || canvasRevenue.offsetParent === null) return;
+
+    chartsInitialized = true;
+    const labels = (window as any).__doChartLabels || {};
+    const cfLabels = (window as any).__doCashFlowLabels || {};
+
+    // Cash Flow dual-line chart
+    if (canvasCashFlow) {
+      new Chart(canvasCashFlow, {
+        type: 'line',
+        data: {
+          labels: cfLabels.months || [],
+          datasets: [
+            {
+              label: cfLabels.receiptsLabel || 'Receipts',
+              data: [72400, 68900, 81200, 76500, 89300, 84700],
+              borderColor: '#059669',
+              backgroundColor: 'rgba(5, 150, 105, 0.1)',
+              fill: true,
+              tension: 0.3,
+              pointRadius: 4,
+              pointBackgroundColor: '#059669',
+            },
+            {
+              label: cfLabels.expensesLabel || 'Expenses',
+              data: [58200, 61400, 54800, 63100, 57600, 62300],
+              borderColor: '#dc2626',
+              backgroundColor: 'rgba(220, 38, 38, 0.1)',
+              fill: true,
+              tension: 0.3,
+              pointRadius: 4,
+              pointBackgroundColor: '#dc2626',
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { usePointStyle: true, padding: 16 }
+            }
+          },
+          scales: {
+            y: { beginAtZero: false, grid: { color: '#f1f5f9' } },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+    }
+
+    // Revenue trend line chart (12 months)
+    new Chart(canvasRevenue, {
+      type: 'line',
+      data: {
+        labels: labels.revenueMonths || [],
+        datasets: [{
+          label: '',
+          data: [52300, 58100, 61400, 57800, 63200, 68900, 72100, 75600, 71200, 78400, 82100, 84700],
+          borderColor: '#2563eb',
+          backgroundColor: 'rgba(37, 99, 235, 0.1)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 4,
+          pointBackgroundColor: '#2563eb',
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: false, grid: { color: '#f1f5f9' } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    // Expense breakdown doughnut
+    new Chart(canvasExpenses, {
+      type: 'doughnut',
+      data: {
+        labels: labels.expenseCatLabels || [],
+        datasets: [{
+          data: [38, 22, 18, 12, 10],
+          backgroundColor: ['#2563eb', '#7c3aed', '#059669', '#d97706', '#64748b'],
+          borderWidth: 0,
+          hoverOffset: 8,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'right',
+            labels: { usePointStyle: true, padding: 12, font: { size: 12 } }
+          }
+        }
+      }
+    });
+  }
+
+  // Init immediately (default visible tab) and on tab switch
+  requestAnimationFrame(initDoCharts);
+  document.addEventListener('tab-visible', () => requestAnimationFrame(initDoCharts));
+</script>
