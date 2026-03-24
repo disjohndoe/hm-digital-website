@@ -721,8 +721,8 @@ export const hr = {
   },
   medicalLanding: {
     meta: {
-      title: 'Medicinski softver za ordinacije — CEZIH G9 cloud | HM Digital',
-      description: 'Jedini cloud medicinski softver s CEZIH G9 certifikatom. Obavezan od 1.5.2026. — kazne do €13.200. Za ordinacije i poliklinike. Zatražite demo.'
+      title: 'CEZIH Cloud Softver za Ordinacije i Poliklinike | HM Digital',
+      description: 'Cloud medicinski softver s CEZIH G9 certifikatom. e-Nalaz, e-Recept, e-Uputnica iz clouda. Za ordinacije i poliklinike u Hrvatskoj. Zatražite demo.'
     },
     urgencyBar: {
       before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
@@ -731,16 +731,16 @@ export const hr = {
     hero: {
       badge: 'CEZIH G9 · CLOUD · ZDRAVSTVO',
       title: 'Jedini cloud softver s CEZIH G9 certifikatom',
-      subtitle: 'Vaša ordinacija zaslužuje bolje od softvera iz 2005. Mi nudimo sustav za modernu ordinaciju — bez straha od inspekcije',
+      subtitle: 'Vaša ordinacija zaslužuje bolje od softvera iz 2005. Nudimo cloud sustav s CEZIH G9 integracijom — moderan, jednostavan i u skladu sa zakonom.',
       ctaCompare: 'Usporedite nas s vašim softverom',
       ctaTrial: 'Zatražite demo — pokažemo vam uživo',
       ctaFeatures: 'Pogledajte što sve dobivate'
     },
     problem: {
-      title: 'Rok je 1. svibnja 2026. Što ako niste spremni?',
+      title: 'CEZIH integracija do svibnja 2026. — što trebate znati',
       subtitle: 'Zakon NN 14/2019 ne predviđa odgode. Kazna po prekršaju: do €13.200 za pravnu osobu (čl. 36). Sankcije se primjenjuju i na nositelje ordinacija osobno. A većina ordinacija još nema rješenje.',
       deadline: {
-        title: 'Kazne su konkretne, rok je fiksan',
+        title: 'Zakonski okvir i rokovi',
         desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu — a sankcije se primjenjuju i osobno na nositelje ordinacija.'
       },
       legacy: {
@@ -748,7 +748,7 @@ export const hr = {
         desc: 'DrDent, WinActa, Medicus.Net — svi imaju CEZIH, ali i sučelja koja izgledaju kao Windows XP. Nema clouda, nema mobitela, nema modernog iskustva. Zašto biste plaćali €100/mj za softver koji vas usporava?'
       },
       cloudNoCezih: {
-        title: 'Cloud alternative? Ilegalne od svibnja.',
+        title: 'Cloud platforme bez CEZIH certifikacije',
         desc: 'Moderne platforme poput Anolla ili Dentify nude lijep dizajn — ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
       }
     },
@@ -927,11 +927,11 @@ export const hr = {
       title: 'Pitanja koja čujemo svaki dan',
       items: [
         {
-          q: 'Što je CEZIH i zašto me se tiče?',
+          q: 'Što je CEZIH i kako funkcionira?',
           a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH do svibnja 2026. Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
         },
         {
-          q: 'Koliko me košta ako ne napravim ništa?',
+          q: 'Koji su zakonski zahtjevi za CEZIH integraciju?',
           a: 'Zakon NN 14/2019 (čl. 36) propisuje kazne do €13.200 za pravnu osobu, a sankcije se primjenjuju i osobno na nositelje ordinacija. Uz to, korištenje vanjskih platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3). Cijena neaktivnosti je puno veća od cijene rješenja.'
         },
         {
@@ -969,7 +969,7 @@ export const hr = {
       ]
     },
     cta: {
-      title: 'Rok je za nekoliko tjedana. Počnite danas.',
+      title: 'Isprobajte CEZIH cloud sustav — bez obveze',
       subtitle: 'Pokažemo vam sustav uživo — bez obveze, bez poziva prodaje.',
       form: {
         name: 'Ime i prezime',

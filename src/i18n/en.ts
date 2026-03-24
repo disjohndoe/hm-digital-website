@@ -721,8 +721,8 @@ export const en = {
   },
   medicalLanding: {
     meta: {
-      title: 'Medical Software for Practices — CEZIH G9 Cloud | HM Digital',
-      description: 'Cloud medical software with CEZIH G9 integration for Croatian practices. Mandatory from May 2026 — fines up to €13,200. Request a free demo.'
+      title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
+      description: 'Cloud medical software with CEZIH G9 certification. e-Findings, e-Prescriptions, e-Referrals from the cloud. For Croatian practices and polyclinics. Request a demo.'
     },
     urgencyBar: {
       before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
@@ -731,16 +731,16 @@ export const en = {
     hero: {
       badge: 'CEZIH G9 · Cloud · Healthcare',
       title: 'The only cloud software with CEZIH G9 certification',
-      subtitle: 'Your practice deserves better than 2005 software. We offer a system for the modern practice — no compliance anxiety',
+      subtitle: 'Your practice deserves better than 2005 software. A modern cloud system with full CEZIH G9 integration — simple, fast, and fully compliant.',
       ctaCompare: 'Compare us to your current software',
       ctaTrial: 'Try for free',
       ctaFeatures: 'See what you get'
     },
     problem: {
-      title: 'From May 1, 2026 CEZIH is mandatory',
+      title: 'CEZIH integration by May 2026 — what you need to know',
       subtitle: 'Law on Data and Information in Healthcare (NN 14/2019, Art. 28) — fines up to €13,200 per violation',
       deadline: {
-        title: 'The deadline is approaching',
+        title: 'Legal framework and timeline',
         desc: 'Law NN 14/2019 mandates CEZIH integration. Regulation NN 150/2024 specifies technical requirements. Fines: up to €13,200 per violation for legal entities (Art. 35), up to €4,000 for responsible persons (Art. 37).'
       },
       legacy: {
@@ -748,7 +748,7 @@ export const en = {
         desc: 'Certified vendors in Croatia use outdated desktop interfaces. No cloud access, no modern UX, no mobile support.'
       },
       cloudNoCezih: {
-        title: 'Cloud alternatives lack CEZIH',
+        title: 'Cloud platforms without CEZIH certification',
         desc: 'Modern cloud platforms offer good UX but have no CEZIH integration or certification path. After May 1, 2026 they\'re not an option for healthcare institutions.'
       }
     },
@@ -941,11 +941,11 @@ export const en = {
       title: 'Frequently asked questions',
       items: [
         {
-          q: 'What is CEZIH and why is it mandatory?',
+          q: 'What is CEZIH and how does it work?',
           a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The deadline is May 1, 2026.'
         },
         {
-          q: 'What is the legal framework and what are the penalties?',
+          q: 'What are the legal requirements for CEZIH integration?',
           a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The Ministry of Health confirmed the deadline of May 1, 2026 for all private healthcare institutions.'
         },
         {
