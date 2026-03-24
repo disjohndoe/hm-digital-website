@@ -83,3 +83,11 @@ coverage/
 
 # tools folder
 tools/
+
+# project docs (not needed in production)
+CLAUDE.md
+README.md
+
+# build-generated sitemaps (astro/sitemap generates to dist/)
+public/sitemap-*.xml
+public/sitemap-index.xml
