@@ -718,5 +718,283 @@ export const en = {
     title: 'Thank You!',
     message: 'Thank you for contacting us. Your message has been received and we will get back to you as soon as possible!',
     backToHome: 'Back to home'
+  },
+  medicalLanding: {
+    meta: {
+      title: 'Medical Software for Practices — CEZIH G9 Cloud | HM Digital',
+      description: 'Cloud medical software with CEZIH G9 integration for Croatian practices. Mandatory from May 2026 — fines up to €13,200. Request a free demo.'
+    },
+    urgencyBar: {
+      before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
+      after: 'CEZIH is now mandatory — fines up to €13,200 per violation (Art. 35-37)'
+    },
+    hero: {
+      badge: 'CEZIH G9 · Cloud · Healthcare',
+      title: 'The only cloud software with CEZIH G9 certification',
+      subtitle: 'Your practice deserves better than 2005 software. We offer a system for the modern practice — no compliance anxiety',
+      ctaCompare: 'Compare us to your current software',
+      ctaTrial: 'Try for free',
+      ctaFeatures: 'See what you get'
+    },
+    problem: {
+      title: 'From May 1, 2026 CEZIH is mandatory',
+      subtitle: 'Law on Data and Information in Healthcare (NN 14/2019, Art. 28) — fines up to €13,200 per violation',
+      deadline: {
+        title: 'The deadline is approaching',
+        desc: 'Law NN 14/2019 mandates CEZIH integration. Regulation NN 150/2024 specifies technical requirements. Fines: up to €13,200 per violation for legal entities (Art. 35), up to €4,000 for responsible persons (Art. 37).'
+      },
+      legacy: {
+        title: 'Existing solutions don\'t fit',
+        desc: 'Certified vendors in Croatia use outdated desktop interfaces. No cloud access, no modern UX, no mobile support.'
+      },
+      cloudNoCezih: {
+        title: 'Cloud alternatives lack CEZIH',
+        desc: 'Modern cloud platforms offer good UX but have no CEZIH integration or certification path. After May 1, 2026 they\'re not an option for healthcare institutions.'
+      }
+    },
+    solution: {
+      title: 'Everything you need — in one place',
+      cloudUx: {
+        title: 'Modern cloud UX',
+        desc: 'Access the system from any device — computer, tablet or phone. Set up the card reader once on one workstation, then work from wherever you need. Automatic updates and backups.'
+      },
+      cezihG9: {
+        title: 'CEZIH G9 integration',
+        desc: 'Full CEZIH integration: e-Findings, e-Referrals, e-Prescriptions, eScheduling and insurance verification. AKD smart card authentication via local agent.'
+      },
+      dental: {
+        title: 'Tailored to your specialty',
+        desc: 'Configure the system to your specialty\'s needs — general medicine, dentistry, physical therapy, dermatology and more. Flexible templates for every practice type.'
+      }
+    },
+    features: {
+      title: 'Key features',
+      patients: {
+        title: 'Patient records',
+        desc: 'Complete records with personal data, medical history, diagnoses and visit history. GDPR compliant.'
+      },
+      scheduling: {
+        title: 'Scheduling & calendar',
+        desc: 'Interactive calendar with drag-and-drop scheduling and per-office availability overview.'
+      },
+      dentalChart: {
+        title: 'Medical records',
+        desc: 'Structured per-patient record with diagnoses, treatments, findings and complete treatment history.'
+      },
+      cezihModules: {
+        title: 'e-Findings, e-Referrals, e-Prescriptions',
+        desc: 'CEZIH modules integrated into workflow: generate findings, referrals and prescriptions without leaving the system.'
+      },
+      smartCard: {
+        title: 'AKD smart card authentication',
+        desc: 'Local agent reads the AKD card and manages the VPN tunnel to CEZIH. Secure PKI authentication without compromise.'
+      },
+      cloudAccess: {
+        title: 'Access from any device',
+        desc: 'Records, scheduling and documentation — access from any device, 24/7. Set up the card reader once in your office, and CEZIH integration runs automatically in the background while you work from your phone, tablet or laptop.'
+      }
+    },
+    comparison: {
+      title: 'Comparison with alternatives',
+      headers: {
+        feature: 'Feature',
+        legacy: 'Legacy vendors',
+        cloudAlt: 'Cloud alternatives',
+        hmDigital: 'HM Digital'
+      },
+      rows: {
+        cloudAccess: 'Cloud access',
+        modernUx: 'Modern UX',
+        cezihG9: 'CEZIH G9',
+        dental: 'Specialty adaptation',
+        smartCard: 'AKD smart card',
+        priceFrom: 'Price from'
+      },
+      legacy: {
+        cloudAccess: false,
+        modernUx: false,
+        cezihG9: true,
+        dental: true,
+        smartCard: true,
+        priceFrom: '~€100/mo'
+      },
+      cloudAlt: {
+        cloudAccess: true,
+        modernUx: true,
+        cezihG9: false,
+        dental: false,
+        smartCard: false,
+        priceFrom: '~€50/mo'
+      },
+      hmDigital: {
+        cloudAccess: true,
+        modernUx: true,
+        cezihG9: true,
+        dental: true,
+        smartCard: true,
+        priceFrom: '€79/mo'
+      }
+    },
+    pricing: {
+      title: 'Transparent pricing',
+      subtitle: 'No hidden costs. No long-term contracts. Cancel anytime.',
+      perMonth: '/mo',
+      features: 'Included',
+      recommended: 'Recommended',
+      onboardingLabel: 'Onboarding',
+      onboardingDetails: "What's included?",
+      ctaTrial: 'Start free',
+      ctaContact: 'Contact us',
+      free: {
+        name: 'Free',
+        price: '€0',
+        desc: '14 days, no obligation',
+        users: '1 user',
+        featureList: [
+          'Patient records',
+          'Scheduling & calendar',
+          'Medical records',
+          'Cloud access'
+        ]
+      },
+      solo: {
+        name: 'Solo',
+        price: '€79',
+        desc: 'For individual practices',
+        users: '1 user',
+        onboarding: '€290',
+        onboardingOriginal: '€490',
+        cta: 'Request a demo',
+        ctaHint: 'Ideal for individual practices',
+        featureList: [
+          'Patient records',
+          'Scheduling & calendar',
+          'Medical records',
+          'CEZIH G9 integration',
+          'e-Findings, e-Referrals, e-Prescriptions',
+          'AKD smart card support',
+          'Cloud access',
+          'Email support'
+        ]
+      },
+      poliklinika: {
+        name: 'Polyclinic',
+        price: '€199',
+        desc: 'For polyclinics with multiple offices',
+        users: '2-5 users',
+        onboarding: '€1,490',
+        highlighted: true,
+        cta: 'Get started',
+        ctaHint: 'We respond within 24h',
+        featureList: [
+          'Everything in Solo',
+          'Multi-user management',
+          'Advanced reporting',
+          'Priority support',
+          'Data migration'
+        ]
+      },
+      poliklinikaPro: {
+        name: 'Polyclinic+',
+        price: 'Custom',
+        desc: 'For large polyclinics',
+        users: '5-15+ users',
+        cta: 'Contact us',
+        ctaHint: 'Custom quote for your team',
+        featureList: [
+          'Everything in Polyclinic',
+          'Dedicated account manager',
+          'API access',
+          'Custom integrations',
+          'SLA guarantee 99.9%*'
+        ],
+        slaNote: '* SLA depends on CEZIH system availability'
+      },
+      onboardingPackage: {
+        title: 'Professional onboarding — turnkey setup',
+        subtitle: 'Complete online setup included in onboarding price. You focus on patients — we set up the system.',
+        badge: 'Included in onboarding',
+        items: [
+          { title: 'System setup', desc: 'Configuration of practice, user accounts, workflows and code lists — all via video call and remote access' },
+          { title: 'Data migration', desc: 'Transfer patients, histories and documentation from your old system — no data loss' },
+          { title: 'Staff training', desc: 'Video training for each user — recordings available for later review' },
+          { title: 'CEZIH activation', desc: 'Remote installation of local agent, AKD smart card test, VPN configuration — all the way to first successful finding' },
+          { title: '30-day premium support', desc: 'Priority phone and email support for the first 30 days after launch' }
+        ],
+        onSite: {
+          title: 'Want us to come in person?',
+          desc: 'On-site implementation — setup, training and CEZIH activation face to face.',
+          zones: [
+            { name: 'Slavonia & surroundings', price: '€190' },
+            { name: 'Zagreb & central HR', price: '€350' },
+            { name: 'Dalmatia & Istria', price: '€490' }
+          ],
+          note: 'One-time fee per visit. Includes travel costs, per diem and hands-on on-site implementation.'
+        }
+      }
+    },
+    stats: {
+      clinics: { value: '2,171', label: 'practices in Croatia' },
+      deadline: { value: 'May 1, 2026', label: 'legal CEZIH deadline' }
+    },
+    faq: {
+      title: 'Frequently asked questions',
+      items: [
+        {
+          q: 'What is CEZIH and why is it mandatory?',
+          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The deadline is May 1, 2026.'
+        },
+        {
+          q: 'What is the legal framework and what are the penalties?',
+          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The Ministry of Health confirmed the deadline of May 1, 2026 for all private healthcare institutions.'
+        },
+        {
+          q: 'Do I need an AKD card?',
+          a: 'Yes. The AKD (Employee Authentication Card) is mandatory for CEZIH access. Our local agent reads the smart card from your computer and securely communicates with CEZIH through a VPN tunnel.'
+        },
+        {
+          q: 'How does the local agent work?',
+          a: 'The local agent is a small desktop application installed on the computer with the smart card reader. It reads the AKD card, establishes a VPN connection and forwards SOAP requests to CEZIH. Your cloud system communicates with the agent — no complex network configuration needed.'
+        },
+        {
+          q: 'Which specialties is the system designed for?',
+          a: 'The system is designed for all private healthcare institutions: general medicine, dentistry, physical therapy, dermatology, gynecology, ophthalmology and other specialties. Templates and workflows adapt to your practice type.'
+        },
+        {
+          q: 'Can I migrate data from my existing system?',
+          a: 'Yes. We support migration from most existing systems. The process includes data analysis, mapping and test migration before going to production.'
+        },
+        {
+          q: 'How long does setup take?',
+          a: 'Basic setup takes 1-2 business days. With data migration and staff training, complete onboarding typically takes 5-10 business days depending on institution size.'
+        },
+        {
+          q: 'Is the system GDPR compliant?',
+          a: 'Absolutely. The system is designed with GDPR from the ground up: data encryption, access control, audit trails, right to erasure and data export. Data is stored in EU data centers.'
+        },
+        {
+          q: 'What happens after the free trial?',
+          a: 'After 14 days you can choose a paid plan or simply stop using the system — no obligations. Your data remains available for export for 30 days after trial expiration.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Try free for 14 days',
+      subtitle: 'No credit card. No obligation. Get started in 5 minutes.',
+      form: {
+        name: 'Full name',
+        namePlaceholder: 'Dr. Jane Smith',
+        email: 'Email',
+        emailPlaceholder: 'jane@clinic.com',
+        clinic: 'Institution name',
+        clinicPlaceholder: 'Polyclinic / Practice Smith',
+        phone: 'Phone (optional)',
+        phonePlaceholder: '+385 1 234 5678',
+        submit: 'Start free trial'
+      },
+      directContact: 'Or contact us directly',
+      email: 'medical@hmdigital.hr',
+      phone: '+385 95 905 5550'
+    }
   }
 } as const;

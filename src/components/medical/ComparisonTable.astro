@@ -1,0 +1,82 @@
+---
+import type { Translations } from '../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const c = t.medicalLanding.comparison;
+
+const rowKeys = ['cloudAccess', 'modernUx', 'cezihG9', 'dental', 'smartCard', 'priceFrom'] as const;
+---
+
+<section class="py-16 lg:py-24 bg-white">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        {c.title}
+      </h2>
+    </div>
+    <div class="max-w-4xl mx-auto overflow-x-auto">
+      <table class="w-full border-collapse text-sm sm:text-base">
+        <thead>
+          <tr>
+            <th class="text-left p-3 sm:p-4 font-semibold text-slate-700 bg-slate-50 rounded-tl-lg">
+              {c.headers.feature}
+            </th>
+            <th class="text-center p-3 sm:p-4 font-semibold text-slate-700 bg-slate-50">
+              {c.headers.legacy}
+            </th>
+            <th class="text-center p-3 sm:p-4 font-semibold text-slate-700 bg-slate-50">
+              {c.headers.cloudAlt}
+            </th>
+            <th class="text-center p-3 sm:p-4 font-semibold text-slate-900 bg-primary-50 border-2 border-b-0 border-primary-500 rounded-tr-lg">
+              {c.headers.hmDigital}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rowKeys.map((key, i) => {
+            const isLast = i === rowKeys.length - 1;
+            const isPrice = key === 'priceFrom';
+            return (
+              <tr class={i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}>
+                <td class={`p-3 sm:p-4 font-medium text-slate-700 ${isLast ? 'rounded-bl-lg' : ''}`}>
+                  {c.rows[key]}
+                </td>
+                <td class="p-3 sm:p-4 text-center">
+                  {isPrice ? (
+                    <span class="text-slate-600 font-medium">{c.legacy[key]}</span>
+                  ) : c.legacy[key] ? (
+                    <span class="text-green-600 text-lg font-bold">&#10003;</span>
+                  ) : (
+                    <span class="text-red-500 text-lg font-bold">&#10007;</span>
+                  )}
+                </td>
+                <td class="p-3 sm:p-4 text-center">
+                  {isPrice ? (
+                    <span class="text-slate-600 font-medium">{c.cloudAlt[key]}</span>
+                  ) : c.cloudAlt[key] ? (
+                    <span class="text-green-600 text-lg font-bold">&#10003;</span>
+                  ) : (
+                    <span class="text-red-500 text-lg font-bold">&#10007;</span>
+                  )}
+                </td>
+                <td class={`p-3 sm:p-4 text-center bg-primary-50 border-l-2 border-r-2 border-primary-500 ${isLast ? 'border-b-2 rounded-br-lg' : ''}`}>
+                  {isPrice ? (
+                    <span class="text-primary-700 font-bold">{c.hmDigital[key]}</span>
+                  ) : c.hmDigital[key] ? (
+                    <span class="text-green-600 text-lg font-bold">&#10003;</span>
+                  ) : (
+                    <span class="text-red-500 text-lg font-bold">&#10007;</span>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

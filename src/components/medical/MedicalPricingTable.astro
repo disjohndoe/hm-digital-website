@@ -1,0 +1,142 @@
+---
+import Card from '../ui/Card.astro';
+import Button from '../ui/Button.astro';
+import type { Translations } from '../../i18n/ui';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const p = t.medicalLanding.pricing;
+
+const tiers = [
+  { key: 'solo' as const, tier: p.solo, highlighted: false },
+  { key: 'poliklinika' as const, tier: p.poliklinika, highlighted: true },
+  { key: 'poliklinikaPro' as const, tier: p.poliklinikaPro, highlighted: false },
+];
+---
+
+<section class="py-16 lg:py-24 bg-slate-50" id="cijene">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        {p.title}
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        {p.subtitle}
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {tiers.map(({ key, tier, highlighted }) => (
+        <Card
+          padding="lg"
+          class={`h-full flex flex-col ${highlighted ? 'ring-2 ring-primary-500 relative' : ''}`}
+        >
+          {highlighted && (
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              {p.recommended}
+            </div>
+          )}
+          <h3 class="text-xl font-semibold text-slate-900 mb-1">{tier.name}</h3>
+          <p class="text-slate-500 text-sm mb-4">{tier.desc}</p>
+          <div class="mb-4">
+            <span class={`text-4xl font-bold text-primary-600 ${key === 'poliklinikaPro' ? 'text-2xl' : ''}`}>{tier.price}</span>
+            {key !== 'poliklinikaPro' && <span class="text-slate-500">{p.perMonth}</span>}
+          </div>
+          <p class="text-sm text-slate-600 mb-1">{tier.users}</p>
+          {'onboarding' in tier && (
+            <p class="text-sm text-slate-600 mb-4">
+              {p.onboardingLabel}: <span class="font-semibold">{tier.onboarding}</span>
+              {'onboardingOriginal' in tier && (
+                <span class="ml-1 line-through text-slate-400">{tier.onboardingOriginal}</span>
+              )}
+              <a href="#onboarding-paket" class="ml-1 text-primary-600 hover:text-primary-700 text-xs font-medium underline underline-offset-2">{p.onboardingDetails}</a>
+            </p>
+          )}
+          {!('onboarding' in tier) && <div class="mb-4" />}
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">{p.features}</p>
+          <ul class="space-y-2 mb-6 flex-1">
+            {tier.featureList.map((feature: string) => (
+              <li class="flex items-start gap-2 text-sm text-slate-600">
+                <svg class="w-4 h-4 text-primary-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                {feature}
+              </li>
+            ))}
+          </ul>
+          {'slaNote' in tier && (
+            <p class="text-xs text-slate-400 mb-4 -mt-4">{tier.slaNote}</p>
+          )}
+          <div class="mt-auto">
+            <Button
+              href="#demo-form"
+              variant={highlighted ? 'primary' : 'outline'}
+              fullWidth
+            >
+              {tier.cta}
+            </Button>
+            {'ctaHint' in tier && (
+              <p class="text-xs text-slate-400 text-center mt-2">{tier.ctaHint}</p>
+            )}
+          </div>
+        </Card>
+      ))}
+    </div>
+
+    <!-- Onboarding Package Breakdown -->
+    <div class="mt-16 max-w-4xl mx-auto" id="onboarding-paket">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-slate-900 mb-2">
+          {p.onboardingPackage.title}
+        </h3>
+        <p class="text-slate-600 max-w-2xl mx-auto">
+          {p.onboardingPackage.subtitle}
+        </p>
+      </div>
+
+      <!-- Online items (included) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {p.onboardingPackage.items.map((item) => (
+          <div class="flex items-start gap-3 bg-white rounded-lg p-4 border border-slate-200">
+            <div class="w-8 h-8 bg-primary-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900 text-sm">{item.title}</p>
+              <p class="text-slate-500 text-xs mt-0.5">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- On-site upsell -->
+      <div class="mt-8 bg-white rounded-xl border border-slate-200 p-6 lg:p-8">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h4 class="text-lg font-semibold text-slate-900 mb-1">
+              {p.onboardingPackage.onSite.title}
+            </h4>
+            <p class="text-sm text-slate-600">
+              {p.onboardingPackage.onSite.desc}
+            </p>
+          </div>
+          <div class="flex gap-3 shrink-0">
+            {p.onboardingPackage.onSite.zones.map((zone) => (
+              <div class="text-center bg-slate-50 rounded-lg px-4 py-3 border border-slate-100">
+                <p class="text-xs text-slate-500 mb-0.5">{zone.name}</p>
+                <p class="text-lg font-bold text-slate-900">{zone.price}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mt-4">
+          {p.onboardingPackage.onSite.note}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

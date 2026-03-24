@@ -718,6 +718,274 @@ export const hr = {
     title: 'Hvala Vam!',
     message: 'Hvala Vam na kontaktu, Vaša poruka je zaprimljena. Javiti ćemo Vam se u najkraćem mogućem roku!',
     backToHome: 'Natrag na naslovnicu'
+  },
+  medicalLanding: {
+    meta: {
+      title: 'Medicinski softver za ordinacije — CEZIH G9 cloud | HM Digital',
+      description: 'Jedini cloud medicinski softver s CEZIH G9 certifikatom. Obavezan od 1.5.2026. — kazne do €13.200. Za ordinacije i poliklinike. Zatražite demo.'
+    },
+    urgencyBar: {
+      before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
+      after: 'CEZIH je sada obavezan — kazne do €13.200 po prekršaju (čl. 36)'
+    },
+    hero: {
+      badge: 'CEZIH G9 · CLOUD · ZDRAVSTVO',
+      title: 'Jedini cloud softver s CEZIH G9 certifikatom',
+      subtitle: 'Vaša ordinacija zaslužuje bolje od softvera iz 2005. Mi nudimo sustav za modernu ordinaciju — bez straha od inspekcije',
+      ctaCompare: 'Usporedite nas s vašim softverom',
+      ctaTrial: 'Zatražite demo — pokažemo vam uživo',
+      ctaFeatures: 'Pogledajte što sve dobivate'
+    },
+    problem: {
+      title: 'Rok je 1. svibnja 2026. Što ako niste spremni?',
+      subtitle: 'Zakon NN 14/2019 ne predviđa odgode. Kazna po prekršaju: do €13.200 za pravnu osobu (čl. 36). Sankcije se primjenjuju i na nositelje ordinacija osobno. A većina ordinacija još nema rješenje.',
+      deadline: {
+        title: 'Kazne su konkretne, rok je fiksan',
+        desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu — a sankcije se primjenjuju i osobno na nositelje ordinacija.'
+      },
+      legacy: {
+        title: 'Certificirani softveri rade — ali u 2005.',
+        desc: 'DrDent, WinActa, Medicus.Net — svi imaju CEZIH, ali i sučelja koja izgledaju kao Windows XP. Nema clouda, nema mobitela, nema modernog iskustva. Zašto biste plaćali €100/mj za softver koji vas usporava?'
+      },
+      cloudNoCezih: {
+        title: 'Cloud alternative? Ilegalne od svibnja.',
+        desc: 'Moderne platforme poput Anolla ili Dentify nude lijep dizajn — ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
+      }
+    },
+    solution: {
+      title: 'Jedino rješenje koje spaja oba svijeta',
+      cloudUx: {
+        title: 'Cloud koji radi za vas',
+        desc: 'Otvorite sustav s mobitela između dva pacijenta. Provjerite raspored od kuće. Jednom postavite čitač na jedno računalo u ordinaciji — a pristupajte sustavu odakle god trebate. Uvijek ažurno, uvijek sigurnosno kopirano.'
+      },
+      cezihG9: {
+        title: 'CEZIH — riješen, ne kompliciran',
+        desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja — sve iz istog sučelja. AKD smart card se čita kroz local agent na vašem računalu. Bez ručnog prebacivanja između sustava.'
+      },
+      dental: {
+        title: 'Napravljen za vašu specijalnost',
+        desc: 'Bilo da ste stomatolog, fizijatar, dermatolog ili internist — predlošci, radni tokovi i šifrarnici prilagođeni su vašoj djelatnosti. Ne prilagođavate se vi softveru, softver se prilagođava vama.'
+      }
+    },
+    features: {
+      title: 'Sve što vam treba u svakodnevnom radu',
+      patients: {
+        title: 'Evidencija pacijenata',
+        desc: 'Osobni podaci, anamneza, dijagnoze, povijest posjeta — sve na jednom mjestu. GDPR usklađeno od temelja: enkripcija, kontrola pristupa, revizijski tragovi.'
+      },
+      scheduling: {
+        title: 'Naručivanje i kalendar',
+        desc: 'Pregled slobodnih termina, brzo zakazivanje i organizacija rasporeda za cijeli tim — sve na jednom mjestu.'
+      },
+      dentalChart: {
+        title: 'Medicinski karton',
+        desc: 'Strukturirani zapisi po pacijentu: dijagnoze, terapije, nalaze, laboratorij. Kompletna povijest liječenja dostupna u dva klika.'
+      },
+      cezihModules: {
+        title: 'e-Nalaz, e-Uputnica, e-Recept',
+        desc: 'Generirajte CEZIH dokumente direktno iz pregleda — bez prebacivanja na drugi sustav. Nalaz, uputnica ili recept gotov je za 30 sekundi.'
+      },
+      smartCard: {
+        title: 'AKD smart card — bez muke',
+        desc: 'Local agent na vašem računalu čita AKD iskaznicu i uspostavlja sigurnu VPN vezu. Vi samo kliknete "pošalji" — tehnički detalji su naš posao.'
+      },
+      cloudAccess: {
+        title: 'Radite odakle god trebate',
+        desc: 'Kartoni, raspored i dokumentacija — pristup s bilo kojeg uređaja, 24/7. Jednom postavite čitač kartica u ordinaciji, a CEZIH integracija radi automatski u pozadini dok vi radite s mobitela, tableta ili laptopa.'
+      }
+    },
+    comparison: {
+      title: 'Usporedba s alternativama',
+      headers: {
+        feature: 'Funkcionalnost',
+        legacy: 'Legacy vendori',
+        cloudAlt: 'Cloud alternative',
+        hmDigital: 'HM Digital'
+      },
+      rows: {
+        cloudAccess: 'Cloud pristup',
+        modernUx: 'Moderni UX',
+        cezihG9: 'CEZIH G9',
+        dental: 'Prilagodba specijalizaciji',
+        smartCard: 'AKD smart card',
+        priceFrom: 'Cijena od'
+      },
+      legacy: {
+        cloudAccess: false,
+        modernUx: false,
+        cezihG9: true,
+        dental: true,
+        smartCard: true,
+        priceFrom: '~€100/mj'
+      },
+      cloudAlt: {
+        cloudAccess: true,
+        modernUx: true,
+        cezihG9: false,
+        dental: false,
+        smartCard: false,
+        priceFrom: '~€50/mj'
+      },
+      hmDigital: {
+        cloudAccess: true,
+        modernUx: true,
+        cezihG9: true,
+        dental: true,
+        smartCard: true,
+        priceFrom: '€79/mj'
+      }
+    },
+    pricing: {
+      title: 'Cijene bez iznenađenja',
+      subtitle: 'Bez dugoročnih ugovora. Otkažite bilo kad. Transparentno od prvog dana.',
+      perMonth: '/mj',
+      features: 'Uključeno',
+      recommended: 'Preporučeno',
+      onboardingLabel: 'Onboarding',
+      onboardingDetails: 'Što dobivam?',
+      solo: {
+        name: 'Solo',
+        price: '€79',
+        desc: 'Za samostalne ordinacije',
+        users: '1 korisnik',
+        onboarding: '€290',
+        onboardingOriginal: '€490',
+        cta: 'Zatražite demo',
+        ctaHint: 'Idealno za pojedinačne ordinacije',
+        featureList: [
+          'Evidencija pacijenata',
+          'Naručivanje i kalendar',
+          'Medicinski karton',
+          'CEZIH G9 integracija',
+          'e-Nalaz, e-Uputnica, e-Recept',
+          'AKD smart card podrška',
+          'Cloud pristup',
+          'Email podrška'
+        ]
+      },
+      poliklinika: {
+        name: 'Poliklinika',
+        price: '€199',
+        desc: 'Za poliklinike s više ordinacija',
+        users: '2-5 korisnika',
+        onboarding: '€1.490',
+        highlighted: true,
+        cta: 'Započnite odmah',
+        ctaHint: 'Odgovaramo unutar 24h',
+        featureList: [
+          'Sve iz Solo paketa',
+          'Višekorisničko upravljanje',
+          'Napredni izvještaji',
+          'Prioritetna podrška',
+          'Migracija podataka'
+        ]
+      },
+      poliklinikaPro: {
+        name: 'Poliklinika+',
+        price: 'Po dogovoru',
+        desc: 'Za velike poliklinike',
+        users: '5-15+ korisnika',
+        cta: 'Kontaktirajte nas',
+        ctaHint: 'Prilagođena ponuda za vaš tim',
+        featureList: [
+          'Sve iz Poliklinika paketa',
+          'Dedicirani account manager',
+          'API pristup',
+          'Custom integracije',
+          'SLA garancija 99.9%*'
+        ],
+        slaNote: '* SLA ovisi o dostupnosti CEZIH sustava'
+      },
+      onboardingPackage: {
+        title: 'Profesionalna implementacija — ključ u ruke',
+        subtitle: 'Kompletna online implementacija uključena u onboarding cijenu. Vi radite svoj posao — mi postavljamo sustav.',
+        badge: 'Uključeno u onboarding',
+        items: [
+          { title: 'Postavljanje sustava', desc: 'Konfiguracija ordinacije, korisničkih računa, radnih tokova i šifrarnika — sve kroz video poziv i remote pristup' },
+          { title: 'Migracija podataka', desc: 'Prijenos pacijenata, anamneza i dokumentacije iz starog sustava — bez gubitka podataka' },
+          { title: 'Obuka osoblja', desc: 'Video obuka za svakog korisnika — snimke dostupne za kasniji pregled' },
+          { title: 'CEZIH aktivacija', desc: 'Remote instalacija local agenta, AKD smart card test, VPN konfiguracija — sve do prvog uspješnog nalaza' },
+          { title: '30 dana premium podrška', desc: 'Prioritetna podrška telefonom i emailom prvih 30 dana nakon pokretanja' }
+        ],
+        onSite: {
+          title: 'Želite da dođemo osobno?',
+          desc: 'Implementacija na lokaciji — postavljanje, obuka i CEZIH aktivacija licem u lice.',
+          zones: [
+            { name: 'Slavonija i okolica', price: '€190' },
+            { name: 'Zagreb i središnja HR', price: '€350' },
+            { name: 'Dalmacija i Istra', price: '€490' }
+          ],
+          note: 'Jednokratna naknada po posjetu. Uključuje putne troškove, dnevnicu i hands-on implementaciju na lokaciji.'
+        }
+      }
+    },
+    stats: {
+      clinics: { value: '2.171', label: 'ordinacija u RH' },
+      deadline: { value: '1.5.2026.', label: 'zakonski rok za CEZIH' }
+    },
+    faq: {
+      title: 'Pitanja koja čujemo svaki dan',
+      items: [
+        {
+          q: 'Što je CEZIH i zašto me se tiče?',
+          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH do svibnja 2026. Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
+        },
+        {
+          q: 'Koliko me košta ako ne napravim ništa?',
+          a: 'Zakon NN 14/2019 (čl. 36) propisuje kazne do €13.200 za pravnu osobu, a sankcije se primjenjuju i osobno na nositelje ordinacija. Uz to, korištenje vanjskih platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3). Cijena neaktivnosti je puno veća od cijene rješenja.'
+        },
+        {
+          q: 'Trebam li AKD iskaznicu?',
+          a: 'Da, AKD (Autentikacijska Kartica Djelatnika) je obavezna za CEZIH pristup. Ako je nemate, pomažemo vam u procesu nabave. Naš local agent čita karticu s vašeg računala i sve radi automatski — samo je umetnite i radite.'
+        },
+        {
+          q: 'Što je local agent i moram li ga sam instalirati?',
+          a: 'Local agent je mala aplikacija na vašem računalu koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta. Sve ostalo radi u cloudu. Nema složene konfiguracije — agent se sam poveže s vašim računom.'
+        },
+        {
+          q: 'Imam već softver (DrDent, WinActa...) — zašto bih mijenjao?',
+          a: 'Ako ste zadovoljni s postojećim rješenjem i ono radi CEZIH — ne morate mijenjati. Ali ako želite pristupiti kartoteci s mobitela, imati moderan kalendar, raditi bez servera i bez IT podrške — razlika je kao između fax-a i emaila. Zatražite demo i sami procijenite.'
+        },
+        {
+          q: 'Za koje specijalnosti je sustav prilagođen?',
+          a: 'Stomatologija, opća medicina, fizikalna terapija, dermatologija, ginekologija, oftalmologija i druge. Predlošci, šifrarnici i radni tokovi prilagođeni su specifičnostima svake djelatnosti. Ako vaše specijalnosti nema na popisu — javite nam se, prilagodba traje 5-7 radnih dana.'
+        },
+        {
+          q: 'Mogu li prebaciti podatke iz starog sustava?',
+          a: 'Da — podržavamo migraciju iz većine hrvatskih medicinskih sustava. Proces: analiza vaših podataka → testna migracija → vaša provjera → puštanje u produkciju. Vaši pacijenti, anamneze i povijest liječenja se prenose bez gubitka.'
+        },
+        {
+          q: 'Koliko traje dok počnem raditi?',
+          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana. Dovoljno brzo da stignete prije roka 1. svibnja.'
+        },
+        {
+          q: 'Jesu li podaci sigurni?',
+          a: 'GDPR usklađenost od temelja: enkripcija u mirovanju i prijenosu, kontrola pristupa po ulogama, kompletni revizijski tragovi, pravo na brisanje i izvoz. Podaci u EU data centrima. Sigurnosne kopije svaka 4 sata.'
+        },
+        {
+          q: 'Što ako želim otkazati?',
+          a: 'Otkažete bilo kad — bez dugoročnih ugovora, bez penala, bez poziva "zašto odlazite". Vaši podaci ostaju dostupni za izvoz 30 dana nakon otkazivanja.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Rok je za nekoliko tjedana. Počnite danas.',
+      subtitle: 'Pokažemo vam sustav uživo — bez obveze, bez poziva prodaje.',
+      form: {
+        name: 'Ime i prezime',
+        namePlaceholder: 'dr. Ana Kovačević',
+        email: 'Email',
+        emailPlaceholder: 'ana@ordinacija.hr',
+        clinic: 'Naziv ustanove',
+        clinicPlaceholder: 'Poliklinika / Ordinacija Kovačević',
+        phone: 'Telefon (neobavezno)',
+        phonePlaceholder: '+385 1 234 5678',
+        submit: 'Zatražite demo'
+      },
+      directContact: 'Ili nas kontaktirajte direktno',
+      email: 'medical@hmdigital.hr',
+      phone: '+385 97 7120 800'
+    }
   }
 } as const;
 
