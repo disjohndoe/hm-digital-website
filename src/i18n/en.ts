@@ -733,7 +733,7 @@ export const en = {
       title: 'The only cloud software with CEZIH G9 certification',
       subtitle: 'Your practice deserves better than 2005 software. A modern cloud system with full CEZIH G9 integration — simple, fast, and fully compliant.',
       ctaCompare: 'Compare us to your current software',
-      ctaTrial: 'Try for free',
+      ctaTrial: 'Try 14 days free',
       ctaFeatures: 'See what you get'
     },
     problem: {
@@ -837,7 +837,7 @@ export const en = {
     },
     pricing: {
       title: 'Transparent pricing',
-      subtitle: 'No hidden costs. No long-term contracts. Cancel anytime.',
+      subtitle: 'Start with 14 days free. No long-term contracts. Cancel anytime.',
       perMonth: '/mo',
       features: 'Included',
       recommended: 'Recommended',

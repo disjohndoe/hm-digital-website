@@ -733,7 +733,7 @@ export const hr = {
       title: 'Jedini cloud softver s CEZIH G9 certifikatom',
       subtitle: 'Vaša ordinacija zaslužuje bolje od softvera iz 2005. Nudimo cloud sustav s CEZIH G9 integracijom — moderan, jednostavan i u skladu sa zakonom.',
       ctaCompare: 'Usporedite nas s vašim softverom',
-      ctaTrial: 'Zatražite demo — pokažemo vam uživo',
+      ctaTrial: 'Isprobajte 14 dana besplatno',
       ctaFeatures: 'Pogledajte što sve dobivate'
     },
     problem: {
@@ -837,7 +837,7 @@ export const hr = {
     },
     pricing: {
       title: 'Cijene bez iznenađenja',
-      subtitle: 'Bez dugoročnih ugovora. Otkažite bilo kad. Transparentno od prvog dana.',
+      subtitle: 'Počnite s 14 dana besplatno. Bez dugoročnih ugovora. Otkažite bilo kad.',
       perMonth: '/mj',
       features: 'Uključeno',
       recommended: 'Preporučeno',
@@ -965,14 +965,18 @@ export const hr = {
           a: 'GDPR usklađenost od temelja: enkripcija u mirovanju i prijenosu, kontrola pristupa po ulogama, kompletni revizijski tragovi, pravo na brisanje i izvoz. Podaci u EU data centrima. Sigurnosne kopije svaka 4 sata.'
         },
         {
+          q: 'Imate li besplatni probni period?',
+          a: 'Da — 14 dana besplatnog korištenja bez kartice i bez obveze. Nakon isteka možete odabrati plaćeni plan ili jednostavno prestati koristiti sustav. Vaši podaci ostaju dostupni za izvoz 30 dana.'
+        },
+        {
           q: 'Što ako želim otkazati?',
           a: 'Otkažete bilo kad — bez dugoročnih ugovora, bez penala, bez poziva "zašto odlazite". Vaši podaci ostaju dostupni za izvoz 30 dana nakon otkazivanja.'
         }
       ]
     },
     cta: {
-      title: 'Isprobajte CEZIH cloud sustav — bez obveze',
-      subtitle: 'Pokažemo vam sustav uživo — bez obveze, bez poziva prodaje.',
+      title: 'Isprobajte 14 dana besplatno',
+      subtitle: 'Bez kartice, bez obveze. Započnite za 5 minuta.',
       form: {
         name: 'Ime i prezime',
         namePlaceholder: 'dr. Ana Kovačević',
@@ -982,7 +986,7 @@ export const hr = {
         clinicPlaceholder: 'Poliklinika / Ordinacija Kovačević',
         phone: 'Telefon (neobavezno)',
         phonePlaceholder: '+385 1 234 5678',
-        submit: 'Zatražite demo'
+        submit: 'Pokrenite besplatni probni period'
       },
       directContact: 'Ili nas kontaktirajte direktno',
       email: 'medical@hmdigital.hr',
