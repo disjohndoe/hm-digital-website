@@ -832,7 +832,7 @@ export const hr = {
         cezihG9: true,
         dental: true,
         smartCard: true,
-        priceFrom: '€79/mj'
+        priceFrom: '€49/mj'
       }
     },
     pricing: {
@@ -845,9 +845,11 @@ export const hr = {
       onboardingDetails: 'Što dobivam?',
       solo: {
         name: 'Solo',
-        price: '€79',
+        price: '€49',
+        priceOriginal: '€79',
         desc: 'Za samostalne ordinacije',
         users: '1-2 korisnika',
+        promo: 'PROMO do 1. svibnja',
         onboarding: '€290',
         onboardingOriginal: '€490',
         cta: 'Zatražite demo',

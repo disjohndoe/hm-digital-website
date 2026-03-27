@@ -38,10 +38,18 @@ const tiers = [
               {p.recommended}
             </div>
           )}
+          {'promo' in tier && (
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+              {tier.promo}
+            </div>
+          )}
           <h3 class="text-xl font-semibold text-slate-900 mb-1">{tier.name}</h3>
           <p class="text-slate-500 text-sm mb-4">{tier.desc}</p>
           <div class="mb-4">
             <span class={`text-4xl font-bold text-primary-600 ${key === 'poliklinikaPro' ? 'text-2xl' : ''}`}>{tier.price}</span>
+            {'priceOriginal' in tier && (
+              <span class="ml-2 text-lg line-through text-slate-400">{tier.priceOriginal}</span>
+            )}
             {key !== 'poliklinikaPro' && <span class="text-slate-500">{p.perMonth}</span>}
           </div>
           <p class="text-sm text-slate-600 mb-1">{tier.users}</p>

@@ -832,7 +832,7 @@ export const en = {
         cezihG9: true,
         dental: true,
         smartCard: true,
-        priceFrom: '€79/mo'
+        priceFrom: '€49/mo'
       }
     },
     pricing: {
@@ -859,9 +859,11 @@ export const en = {
       },
       solo: {
         name: 'Solo',
-        price: '€79',
+        price: '€49',
+        priceOriginal: '€79',
         desc: 'For individual practices',
         users: '1-2 users',
+        promo: 'PROMO until May 1st',
         onboarding: '€290',
         onboardingOriginal: '€490',
         cta: 'Request a demo',
