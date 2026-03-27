@@ -940,7 +940,7 @@ export const en = {
       deadline: { value: 'May 1, 2026', label: 'legal CEZIH deadline' }
     },
     faq: {
-      title: 'Frequently asked questions',
+      title: 'Frequently asked questions about CEZIH software',
       items: [
         {
           q: 'What is CEZIH and how does it work?',

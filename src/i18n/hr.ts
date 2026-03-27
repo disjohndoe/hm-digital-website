@@ -926,7 +926,7 @@ export const hr = {
       deadline: { value: '1.5.2026.', label: 'zakonski rok za CEZIH' }
     },
     faq: {
-      title: 'Pitanja koja čujemo svaki dan',
+      title: 'Česta pitanja o CEZIH softveru',
       items: [
         {
           q: 'Što je CEZIH i kako funkcionira?',
