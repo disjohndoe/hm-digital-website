@@ -4,6 +4,7 @@ import MetaTags from '../components/seo/MetaTags.astro';
 import StructuredData from '../components/seo/StructuredData.astro';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
+import CookieConsent from '../components/ui/CookieConsent.astro';
 import { getLocaleFromPath } from '../i18n/ui';
 
 interface Props {
@@ -51,5 +52,6 @@ const lang = locale === 'hr' ? 'hr' : 'en';
       <slot />
     </main>
     <Footer />
+    <CookieConsent locale={locale} />
   </body>
 </html>

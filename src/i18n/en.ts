@@ -998,5 +998,27 @@ export const en = {
       email: 'medical@hmdigital.hr',
       phone: '+385 95 905 5550'
     }
+  },
+  consent: {
+    banner: {
+      title: 'We value your privacy',
+      description: 'We use cookies to analyze website traffic. Necessary cookies do not require your consent, while analytics cookies need your permission.',
+      accept: 'Accept all',
+      settings: 'Settings'
+    },
+    modal: {
+      title: 'Cookie Settings',
+      necessary: {
+        title: 'Necessary cookies',
+        description: 'Required for the website to function properly. Cannot be disabled.'
+      },
+      analytics: {
+        title: 'Analytics cookies',
+        description: 'Help us understand how visitors use the website so we can improve it.'
+      },
+      accept: 'Accept all',
+      decline: 'Decline',
+      save: 'Save settings'
+    }
   }
 } as const;

@@ -992,6 +992,28 @@ export const hr = {
       email: 'medical@hmdigital.hr',
       phone: '+385 97 7120 800'
     }
+  },
+  consent: {
+    banner: {
+      title: 'Poštujemo vašu privatnost',
+      description: 'Koristimo kolačiće za analizu prometa na web stranici. Nužni kolačići ne zahtijevaju vašu suglasnost, dok za analitičke kolačiće trebamo vašu dozvolu.',
+      accept: 'Prihvati sve',
+      settings: 'Postavke'
+    },
+    modal: {
+      title: 'Postavke kolačića',
+      necessary: {
+        title: 'Nužni kolačići',
+        description: 'Potrebni za osnovno funkcioniranje web stranice. Ne mogu se isključiti.'
+      },
+      analytics: {
+        title: 'Analitički kolačići',
+        description: 'Pomažu nam razumjeti kako posjetitelji koriste web stranicu, kako bismo je mogli poboljšati.'
+      },
+      accept: 'Prihvati sve',
+      decline: 'Odbaci',
+      save: 'Spremi postavke'
+    }
   }
 } as const;
 

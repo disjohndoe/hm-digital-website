@@ -1,0 +1,223 @@
+---
+import { getTranslations } from '../../i18n/ui';
+import type { Locale } from '../../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale).consent;
+---
+
+<!-- Floating settings button (shown after initial consent) -->
+<button
+  id="cookie-settings-btn"
+  class="fixed bottom-4 left-4 z-40 hidden rounded-full bg-white p-3 shadow-lg border border-slate-200 text-slate-500 hover:text-primary-600 transition-colors cursor-pointer"
+  aria-label={t.modal.title}
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
+</button>
+
+<!-- Cookie banner -->
+<div
+  id="cookie-banner"
+  class="fixed inset-x-0 bottom-0 z-50 hidden p-4 sm:p-6"
+>
+  <div class="mx-auto max-w-4xl rounded-xl bg-white p-6 shadow-xl border border-slate-200">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold text-dark-900">{t.banner.title}</h3>
+        <p class="mt-1 text-sm text-slate-600">{t.banner.description}</p>
+      </div>
+      <div class="flex shrink-0 gap-3">
+        <button
+          id="cookie-settings-open"
+          class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
+        >
+          {t.banner.settings}
+        </button>
+        <button
+          id="cookie-accept"
+          class="rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-white hover:bg-primary-700 transition-colors cursor-pointer"
+        >
+          {t.banner.accept}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Settings modal -->
+<div
+  id="cookie-modal"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4"
+>
+  <div class="w-full max-w-lg rounded-xl bg-white p-6 shadow-xl">
+    <h3 class="text-lg font-semibold text-dark-900">{t.modal.title}</h3>
+
+    <div class="mt-4 space-y-4">
+      <!-- Necessary cookies -->
+      <div class="flex items-start gap-3">
+        <div class="flex-1">
+          <p class="font-medium text-dark-900">{t.modal.necessary.title}</p>
+          <p class="text-sm text-slate-600">{t.modal.necessary.description}</p>
+        </div>
+        <div class="flex items-center">
+          <span class="text-xs font-medium text-primary-600 uppercase tracking-wide">{locale === 'hr' ? 'Uvijek aktivni' : 'Always active'}</span>
+        </div>
+      </div>
+
+      <hr class="border-slate-200" />
+
+      <!-- Analytics cookies -->
+      <div class="flex items-start gap-3">
+        <div class="flex-1">
+          <p class="font-medium text-dark-900">{t.modal.analytics.title}</p>
+          <p class="text-sm text-slate-600">{t.modal.analytics.description}</p>
+        </div>
+        <label class="relative inline-flex cursor-pointer items-center">
+          <input type="checkbox" id="analytics-toggle" class="peer sr-only" />
+          <div class="h-6 w-11 rounded-full bg-slate-300 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all peer-checked:bg-primary-600 peer-checked:after:translate-x-full"></div>
+        </label>
+      </div>
+    </div>
+
+    <div class="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-end">
+      <button
+        id="cookie-decline"
+        class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
+      >
+        {t.modal.decline}
+      </button>
+      <button
+        id="cookie-save"
+        class="rounded-lg border border-primary-600 px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 transition-colors cursor-pointer"
+      >
+        {t.modal.save}
+      </button>
+      <button
+        id="cookie-accept-all"
+        class="rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-white hover:bg-primary-700 transition-colors cursor-pointer"
+      >
+        {t.modal.accept}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ locale }}>
+  const STORAGE_KEY = 'cookie_consent';
+  const banner = document.getElementById('cookie-banner');
+  const modal = document.getElementById('cookie-modal');
+  const settingsBtn = document.getElementById('cookie-settings-btn');
+  const analyticsToggle = document.getElementById('analytics-toggle');
+
+  function getConsent() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function saveConsent(analytics) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      analytics,
+      timestamp: Date.now()
+    }));
+    if (analytics) {
+      loadAnalytics();
+    }
+    window.dispatchEvent(new CustomEvent('consentUpdate', { detail: { analytics } }));
+  }
+
+  function showBanner() {
+    banner.classList.remove('hidden');
+    settingsBtn.classList.add('hidden');
+  }
+
+  function hideBanner() {
+    banner.classList.add('hidden');
+    settingsBtn.classList.remove('hidden');
+  }
+
+  function showModal() {
+    const consent = getConsent();
+    analyticsToggle.checked = consent ? consent.analytics : false;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function hideModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function loadAnalytics() {
+    if (document.getElementById('ga-script')) return;
+    // Replace 'G-XXXXXXXXXX' with your actual GA4 Measurement ID
+    const script = document.createElement('script');
+    script.id = 'ga-script';
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    };
+  }
+
+  // Event listeners
+  document.getElementById('cookie-accept').addEventListener('click', () => {
+    saveConsent(true);
+    hideBanner();
+  });
+
+  document.getElementById('cookie-settings-open').addEventListener('click', () => {
+    showModal();
+  });
+
+  settingsBtn.addEventListener('click', () => {
+    showModal();
+  });
+
+  document.getElementById('cookie-accept-all').addEventListener('click', () => {
+    saveConsent(true);
+    hideModal();
+    hideBanner();
+  });
+
+  document.getElementById('cookie-decline').addEventListener('click', () => {
+    saveConsent(false);
+    hideModal();
+    hideBanner();
+  });
+
+  document.getElementById('cookie-save').addEventListener('click', () => {
+    saveConsent(analyticsToggle.checked);
+    hideModal();
+    hideBanner();
+  });
+
+  // Close modal on backdrop click
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) hideModal();
+  });
+
+  // Init
+  const consent = getConsent();
+  if (consent) {
+    settingsBtn.classList.remove('hidden');
+    if (consent.analytics) loadAnalytics();
+  } else {
+    showBanner();
+  }
+</script>
