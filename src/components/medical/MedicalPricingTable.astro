@@ -52,17 +52,7 @@ const tiers = [
             )}
             {key !== 'poliklinikaPro' && <span class="text-slate-500">{p.perMonth}</span>}
           </div>
-          <p class="text-sm text-slate-600 mb-1">{tier.users}</p>
-          {'onboarding' in tier && (
-            <p class="text-sm text-slate-600 mb-4">
-              {p.onboardingLabel}: <span class="font-semibold">{tier.onboarding}</span>
-              {'onboardingOriginal' in tier && (
-                <span class="ml-1 line-through text-slate-400">{tier.onboardingOriginal}</span>
-              )}
-              <a href="#onboarding-paket" class="ml-1 text-primary-600 hover:text-primary-700 text-xs font-medium underline underline-offset-2">{p.onboardingDetails}</a>
-            </p>
-          )}
-          {!('onboarding' in tier) && <div class="mb-4" />}
+          <p class="text-sm text-slate-600 mb-4">{tier.users}</p>
           <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">{p.features}</p>
           <ul class="space-y-2 mb-6 flex-1">
             {tier.featureList.map((feature: string) => (

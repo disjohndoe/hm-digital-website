@@ -865,6 +865,7 @@ export const hr = {
           'CEZIH G9 integracija',
           'e-Nalaz, e-Uputnica, e-Recept',
           'AKD smart card podrška',
+          'Onboarding uključen',
           'Cloud pristup',
           'Email podrška'
         ]
@@ -883,6 +884,7 @@ export const hr = {
           'Višekorisničko upravljanje',
           'Napredni izvještaji',
           'Prioritetna podrška',
+          'Onboarding uključen',
           'Migracija podataka'
         ]
       },

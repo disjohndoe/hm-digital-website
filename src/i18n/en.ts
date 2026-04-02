@@ -879,6 +879,7 @@ export const en = {
           'CEZIH G9 integration',
           'e-Findings, e-Referrals, e-Prescriptions',
           'AKD smart card support',
+          'Onboarding included',
           'Cloud access',
           'Email support'
         ]
@@ -897,6 +898,7 @@ export const en = {
           'Multi-user management',
           'Advanced reporting',
           'Priority support',
+          'Onboarding included',
           'Data migration'
         ]
       },
