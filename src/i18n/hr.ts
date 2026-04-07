@@ -721,8 +721,8 @@ export const hr = {
   },
   medicalLanding: {
     meta: {
-      title: 'CEZIH Cloud Softver za Privatne Ordinacije | HM Digital',
-      description: 'Cloud medicinski softver s CEZIH certifikacijom za privatne prakse. e-Nalaz, e-Recept, e-Uputnica iz clouda. Za ordinacije i poliklinike u Hrvatskoj. Zatražite demo.'
+      title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud | HM Digital',
+      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. e-Nalaz, e-Recept, e-Uputnica — bez servera, od €49/mj. Certificiran, mobilan, spreman za zakonski rok. Zatražite besplatni demo.'
     },
     urgencyBar: {
       before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
@@ -730,7 +730,8 @@ export const hr = {
     },
     hero: {
       badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
-      title: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
+      title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud Medicinski Program',
+      tagline: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
       subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez stresa oko roka. Sve što privatna ordinacija treba za CEZIH — i ništa što ne treba.',
       ctaCompare: 'Usporedite nas s alternativama',
       ctaTrial: 'Zatražite besplatni demo',
@@ -773,7 +774,7 @@ export const hr = {
       }
     },
     features: {
-      title: 'Sve što vam treba u svakodnevnom radu',
+      title: 'Sve što vaša ordinacija treba — na jednom mjestu',
       patients: {
         title: 'Evidencija pacijenata',
         desc: 'Osobni podaci, anamneza, dijagnoze, povijest posjeta — sve na jednom mjestu. GDPR usklađeno od temelja: enkripcija, kontrola pristupa, revizijski tragovi.'
@@ -800,7 +801,7 @@ export const hr = {
       }
     },
     comparison: {
-      title: 'Usporedba s alternativama',
+      title: 'Kako se HM Digital uspoređuje s alternativama',
       headers: {
         feature: 'Funkcionalnost',
         legacy: 'Desktop sustavi',
@@ -845,7 +846,7 @@ export const hr = {
       }
     },
     pricing: {
-      title: 'Cijene bez iznenađenja',
+      title: 'Transparentne cijene — bez skrivenih troškova',
       subtitle: 'Počnite s 14 dana besplatno. Bez dugoročnih ugovora. Otkažite bilo kad.',
       perMonth: '/mj',
       features: 'Uključeno',
@@ -937,8 +938,20 @@ export const hr = {
       deadline: { value: '1.5.2026.', label: 'zakonski rok za CEZIH' }
     },
     faq: {
-      title: 'Česta pitanja o CEZIH softveru',
+      title: 'Česta pitanja o CEZIH integraciji',
       items: [
+        {
+          q: 'Kako odabrati pravi medicinski softver s CEZIH integracijom?',
+          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. Za privatne ordinacije s 1-5 liječnika, ključni kriteriji su: cloud pristup s mobitela, CEZIH certifikacija, jednostavnost korištenja i pristupačna cijena. HM Digital je cloud medicinski program s punom CEZIH integracijom — od €49/mj, bez potrebe za serverom ili informatičarom.'
+        },
+        {
+          q: 'Koliko košta CEZIH softver za ordinacije?',
+          a: 'Cijena CEZIH softvera varira značajno: desktop sustavi koštaju oko €100/mj plus troškovi servera i IT podrške. Enterprise cloud rješenja su još skuplja. HM Digital nudi cloud CEZIH softver od €49/mj za solo ordinacije (1-2 korisnika) i €199/mj za poliklinike (3-5 korisnika). Onboarding i CEZIH aktivacija uključeni su u cijenu. Besplatni demo dostupan bez obveze.'
+        },
+        {
+          q: 'Postoji li CEZIH softver za stomatologe?',
+          a: 'Da — HM Digital podržava stomatološke ordinacije s predlošcima, šifrarnicima i radnim tokovima prilagođenima stomatološkoj praksi. Sustav uključuje punu CEZIH integraciju (e-Nalaz, e-Uputnica, e-Recept), evidenciju pacijenata i naručivanje. Isto vrijedi za opću medicinu, fizikalnu terapiju, dermatologiju i druge specijalnosti.'
+        },
         {
           q: 'Što je CEZIH i kako funkcionira?',
           a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH do svibnja 2026. Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'

@@ -13,14 +13,14 @@ const m = t.medicalLanding;
 <Layout
   title={m.meta.title}
   description={m.meta.description}
-  canonical="/medicinski-softver"
+  canonical="/medicinski-softver/"
   noindex={false}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "HM Digital Medicinski Softver",
+      "name": "HM Digital — CEZIH Softver za Ordinacije i Poliklinike",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web",
       "description": m.hero.subtitle,
@@ -80,10 +80,10 @@ const m = t.medicalLanding;
     })} />
   </Fragment>
 
-  <!-- 1. Urgency Bar -->
+  <!-- 1. Urgency Bar — server-rendered fallback for SEO, JS-enhanced with countdown -->
   <div id="urgency-bar" class="bg-red-600 text-white text-sm text-center py-2 font-medium">
     <div class="container-custom">
-      <span id="urgency-text"></span>
+      <span id="urgency-text">{m.urgencyBar.before.replace('{days}', '')}</span>
     </div>
   </div>
 
@@ -98,7 +98,7 @@ const m = t.medicalLanding;
       if (days > 0) {
         el.textContent = 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: ' + days + ' dana · Kazne do €13.200';
       } else {
-        el.textContent = 'CEZIH je sada obavezan — kazne do €13.200 po prekršaju (čl. 35-37)';
+        el.textContent = 'CEZIH je sada obavezan — kazne do €13.200, i osobno za nositelje ordinacija';
       }
     })();
   </script>
@@ -106,9 +106,10 @@ const m = t.medicalLanding;
   <!-- 2. Hero -->
   <section class="py-20 lg:py-32 bg-gradient-to-br from-slate-900 to-primary-900">
     <div class="container-custom text-center">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto">
-        {m.hero.title}
-      </h1>
+      <h1 class="sr-only">{m.hero.title}</h1>
+      <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto" role="doc-subtitle">
+        {m.hero.tagline}
+      </p>
       <p class="text-lg sm:text-xl leading-relaxed text-slate-300 max-w-3xl mx-auto mb-10">
         {m.hero.subtitle}
       </p>

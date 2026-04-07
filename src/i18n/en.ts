@@ -722,7 +722,7 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
-      description: 'Cloud medical software with CEZIH certification for private practices. e-Findings, e-Prescriptions, e-Referrals from the cloud. For Croatian practices and polyclinics. Request a demo.'
+      description: 'Cloud CEZIH software for private practices and polyclinics. e-Findings, e-Prescriptions, e-Referrals from the cloud. Medical software with CEZIH certification. From €49/mo. Request a demo.'
     },
     urgencyBar: {
       before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
@@ -730,7 +730,8 @@ export const en = {
     },
     hero: {
       badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
-      title: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
+      title: 'Cloud CEZIH Software for Practices and Polyclinics',
+      tagline: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
       subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no deadline stress. Everything a private practice needs for CEZIH — and nothing it doesn\'t.',
       ctaCompare: 'Compare us to alternatives',
       ctaTrial: 'Request a free demo',
@@ -773,7 +774,7 @@ export const en = {
       }
     },
     features: {
-      title: 'Key features',
+      title: 'CEZIH Software Features for Private Practices',
       patients: {
         title: 'Patient records',
         desc: 'Complete records with personal data, medical history, diagnoses and visit history. GDPR compliant.'
@@ -800,7 +801,7 @@ export const en = {
       }
     },
     comparison: {
-      title: 'Comparison with alternatives',
+      title: 'CEZIH Software Comparison — Cloud vs Desktop',
       headers: {
         feature: 'Feature',
         legacy: 'Desktop systems',
@@ -845,7 +846,7 @@ export const en = {
       }
     },
     pricing: {
-      title: 'Transparent pricing',
+      title: 'CEZIH Software Pricing for Practices',
       subtitle: 'Start with 14 days free. No long-term contracts. Cancel anytime.',
       perMonth: '/mo',
       features: 'Included',
@@ -953,6 +954,18 @@ export const en = {
     faq: {
       title: 'Frequently asked questions about CEZIH software',
       items: [
+        {
+          q: 'Which CEZIH software is best for private practices?',
+          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, CEZIH certification, ease of use, and affordable pricing. HM Digital is a cloud CEZIH software built specifically for private practices — from €49/mo, with full CEZIH integration and no need for a server or IT support.'
+        },
+        {
+          q: 'How much does CEZIH software cost?',
+          a: 'CEZIH software pricing varies widely: desktop systems cost around €100/mo plus server and IT support costs. Enterprise cloud solutions are even more expensive. HM Digital offers cloud CEZIH software from €49/mo for solo practices (1-2 users) and €199/mo for polyclinics (3-5 users). Onboarding and CEZIH activation are included. Free demo available with no obligation.'
+        },
+        {
+          q: 'Is there CEZIH software for dentists?',
+          a: 'Yes — HM Digital supports dental practices with templates, code lists, and workflows tailored to dental practice. The system includes full CEZIH integration (e-Findings, e-Referrals, e-Prescriptions), patient records and scheduling. The same applies to general medicine, physical therapy, dermatology and other specialties.'
+        },
         {
           q: 'What is CEZIH and how does it work?',
           a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The deadline is May 1, 2026.'
