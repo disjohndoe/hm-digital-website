@@ -726,31 +726,36 @@ export const hr = {
     },
     urgencyBar: {
       before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
-      after: 'CEZIH je sada obavezan — kazne do €13.200 po prekršaju (čl. 36)'
+      after: 'CEZIH je sada obavezan — kazne do €13.200, i osobno za nositelje ordinacija'
     },
     hero: {
       badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
-      title: 'Među prvima s novom CEZIH certifikacijom za privatne prakse — u cloudu',
-      subtitle: 'Vaša ordinacija zaslužuje bolje od enterprise softvera za bolnice. Moderan cloud sustav s novom CEZIH certifikacijom — napravljen za male i srednje privatne ordinacije.',
-      ctaCompare: 'Usporedite nas s vašim softverom',
-      ctaTrial: 'Isprobajte 14 dana besplatno',
+      title: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
+      subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez stresa oko roka. Sve što privatna ordinacija treba za CEZIH — i ništa što ne treba.',
+      ctaCompare: 'Usporedite nas s alternativama',
+      ctaTrial: 'Zatražite besplatni demo',
       ctaFeatures: 'Pogledajte što sve dobivate'
     },
     problem: {
-      title: 'CEZIH integracija do svibnja 2026. — što trebate znati',
-      subtitle: 'Zakon NN 14/2019 ne predviđa odgode. Kazna po prekršaju: do €13.200 za pravnu osobu (čl. 36). Sankcije se primjenjuju i na nositelje ordinacija osobno. A većina ordinacija još nema rješenje.',
+      title: 'Tri razloga zašto vaša ordinacija još uvijek nije u skladu sa zakonom',
+      subtitle: 'Ne zato što niste pokušali — nego zato što tržište nije imalo što vam ponuditi. Do sad.',
       deadline: {
         title: 'Zakonski okvir i rokovi',
         desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu — a sankcije se primjenjuju i osobno na nositelje ordinacija.'
       },
       legacy: {
-        title: 'Postojeća rješenja nisu napravljena za vas',
-        desc: 'DrDent i WinActa nemaju cloud ni mobilni pristup. Medicus.Net jest u cloudu — ali je enterprise sustav za bolnice, sa složenim sučeljem i cijenom koja to reflektira. Nijedno rješenje nije dizajnirano za male privatne ordinacije koje trebaju jednostavnost i pristupačnu cijenu.'
+        title: 'Vaš softver radi — ali radi protiv vas',
+        desc: 'Većina certificiranih sustava vas veže za jedno računalo u ordinaciji. Ne možete provjeriti karton od kuće, ne možete pogledati raspored s mobitela, a za svako ažuriranje trebate informatičara. Jedini cloud vendor na tržištu građen je za bolnice s IT odjelom, ne za ordinaciju s 2 zaposlena. Vi trebate nešto između — a toga do sad nije bilo.'
       },
       cloudNoCezih: {
         title: 'Cloud platforme bez CEZIH certifikacije',
-        desc: 'Moderne platforme poput Anolla ili Dentify nude lijep dizajn — ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
+        desc: 'Neke moderne cloud platforme nude lijep dizajn — ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
       }
+    },
+    bridge: {
+      title: 'Niste postali liječnik da biste rješavali IT probleme.',
+      desc: 'Većina vaših kolega je u istoj situaciji: rok se približava, a ponuda na tržištu je ili preskupa, ili zastarjela, ili nezakonita. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
+      costOfInaction: 'Kazna od €13.200 = 22 godine korištenja našeg softvera po €49/mj.'
     },
     solution: {
       title: 'Cloud, CEZIH i cijena — konačno usklađeni',
@@ -798,8 +803,8 @@ export const hr = {
       title: 'Usporedba s alternativama',
       headers: {
         feature: 'Funkcionalnost',
-        legacy: 'Desktop vendori (DrDent, WinActa...)',
-        cloudAlt: 'Cloud alternative bez CEZIH-a',
+        legacy: 'Desktop sustavi',
+        cloudAlt: 'Cloud bez CEZIH-a',
         hmDigital: 'HM Digital'
       },
       rows: {
@@ -808,6 +813,7 @@ export const hr = {
         cezihG9: 'CEZIH certifikacija',
         dental: 'Prilagodba specijalizaciji',
         smartCard: 'AKD smart card',
+        noContract: 'Bez dugoročnog ugovora',
         priceFrom: 'Cijena od'
       },
       legacy: {
@@ -816,6 +822,7 @@ export const hr = {
         cezihG9: true,
         dental: true,
         smartCard: true,
+        noContract: false,
         priceFrom: '~€100/mj'
       },
       cloudAlt: {
@@ -824,6 +831,7 @@ export const hr = {
         cezihG9: false,
         dental: false,
         smartCard: false,
+        noContract: true,
         priceFrom: '~€50/mj'
       },
       hmDigital: {
@@ -832,6 +840,7 @@ export const hr = {
         cezihG9: true,
         dental: true,
         smartCard: true,
+        noContract: true,
         priceFrom: '€49/mj'
       }
     },
@@ -947,8 +956,8 @@ export const hr = {
           a: 'Local agent je mala aplikacija na vašem računalu koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta. Sve ostalo radi u cloudu. Nema složene konfiguracije — agent se sam poveže s vašim računom.'
         },
         {
-          q: 'Imam već softver (DrDent, WinActa...) — zašto bih mijenjao?',
-          a: 'Ako ste zadovoljni s postojećim rješenjem i ono radi CEZIH — ne morate mijenjati. Ali ako želite pristupiti kartoteci s mobitela, imati moderan kalendar, raditi bez servera i bez IT podrške — razlika je kao između fax-a i emaila. Zatražite demo i sami procijenite.'
+          q: 'Imam već softver — zašto bih mijenjao?',
+          a: 'Ako vaš sustav već ima CEZIH certifikaciju, cloud pristup i mobilni rad — ostanite gdje jeste. Ali ako još uvijek morate biti u ordinaciji da vidite karton pacijenta, ako ažuriranja ovise o informatičaru, ako ne možete poslati e-Nalaz bez prebacivanja između dva sustava — pitajte se: koliko vas to košta u vremenu svaki tjedan? Zatražite demo i vidjet ćete razliku u 15 minuta.'
         },
         {
           q: 'Za koje specijalnosti je sustav prilagođen?',
@@ -977,8 +986,8 @@ export const hr = {
       ]
     },
     cta: {
-      title: 'Isprobajte 14 dana besplatno',
-      subtitle: 'Bez kartice, bez obveze. Započnite za 5 minuta.',
+      title: 'Zatražite demo — besplatno i bez obveze',
+      subtitle: 'Pokazat ćemo vam sustav uživo. 15 minuta, bez prodajnog pritiska.',
       form: {
         name: 'Ime i prezime',
         namePlaceholder: 'dr. Ana Kovačević',
@@ -988,7 +997,7 @@ export const hr = {
         clinicPlaceholder: 'Poliklinika / Ordinacija Kovačević',
         phone: 'Telefon (neobavezno)',
         phonePlaceholder: '+385 1 234 5678',
-        submit: 'Pokrenite besplatni probni period'
+        submit: 'Zatražite demo'
       },
       directContact: 'Ili nas kontaktirajte direktno',
       email: 'medical@hmdigital.hr',

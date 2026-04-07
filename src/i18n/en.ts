@@ -726,31 +726,36 @@ export const en = {
     },
     urgencyBar: {
       before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
-      after: 'CEZIH is now mandatory — fines up to €13,200 per violation (Art. 35-37)'
+      after: 'CEZIH is now mandatory — fines up to €13,200, including personal liability for practice owners'
     },
     hero: {
       badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
-      title: 'Among the first with the new CEZIH certification for private practices — in the cloud',
-      subtitle: 'Your practice deserves better than enterprise hospital software. A modern cloud system with the new CEZIH certification — built for small and mid-size private clinics.',
-      ctaCompare: 'Compare us to your current software',
-      ctaTrial: 'Try 14 days free',
+      title: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
+      subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no deadline stress. Everything a private practice needs for CEZIH — and nothing it doesn\'t.',
+      ctaCompare: 'Compare us to alternatives',
+      ctaTrial: 'Request a free demo',
       ctaFeatures: 'See what you get'
     },
     problem: {
-      title: 'CEZIH integration by May 2026 — what you need to know',
-      subtitle: 'Law on Data and Information in Healthcare (NN 14/2019, Art. 28) — fines up to €13,200 per violation',
+      title: 'Three reasons your practice still isn\'t compliant',
+      subtitle: 'Not because you haven\'t tried — but because the market had nothing to offer you. Until now.',
       deadline: {
         title: 'Legal framework and timeline',
         desc: 'Law NN 14/2019 mandates CEZIH integration. Regulation NN 150/2024 specifies technical requirements. Fines: up to €13,200 per violation for legal entities (Art. 35), up to €4,000 for responsible persons (Art. 37).'
       },
       legacy: {
-        title: 'Existing solutions aren\'t built for you',
-        desc: 'DrDent and WinActa lack cloud and mobile access. Medicus.Net offers cloud — but it\'s an enterprise system built for hospitals, with complex interfaces and pricing to match. None are designed for small private practices that need simplicity and an affordable price.'
+        title: 'Your current software works — but it works against you',
+        desc: 'Most certified systems tie you to a single computer in your office. You can\'t check a patient record from home, can\'t view tomorrow\'s schedule from your phone, and every update needs an IT person. The only cloud vendor on the market is built for hospitals with IT departments, not for a practice with 2 staff. You need something in between — and until now, it didn\'t exist.'
       },
       cloudNoCezih: {
         title: 'Cloud platforms without CEZIH certification',
-        desc: 'Modern cloud platforms offer good UX but have no CEZIH integration or certification path. After May 1, 2026 they\'re not an option for healthcare institutions.'
+        desc: 'Some modern cloud platforms offer great design — but no CEZIH certification. Using non-CEZIH platforms for health data exchange is a direct violation of the law (Art. 28, para. 3).'
       }
+    },
+    bridge: {
+      title: 'You didn\'t become a doctor to deal with IT problems.',
+      desc: 'Most of your colleagues are in the same situation: the deadline is approaching, and the available options are either too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
+      costOfInaction: 'A €13,200 fine = 22 years of our software at €49/mo.'
     },
     solution: {
       title: 'Everything you need — in one place',
@@ -798,8 +803,8 @@ export const en = {
       title: 'Comparison with alternatives',
       headers: {
         feature: 'Feature',
-        legacy: 'Desktop vendors (DrDent, WinActa...)',
-        cloudAlt: 'Cloud alternatives without CEZIH',
+        legacy: 'Desktop systems',
+        cloudAlt: 'Cloud without CEZIH',
         hmDigital: 'HM Digital'
       },
       rows: {
@@ -808,6 +813,7 @@ export const en = {
         cezihG9: 'CEZIH certification',
         dental: 'Specialty adaptation',
         smartCard: 'AKD smart card',
+        noContract: 'No long-term contract',
         priceFrom: 'Price from'
       },
       legacy: {
@@ -816,6 +822,7 @@ export const en = {
         cezihG9: true,
         dental: true,
         smartCard: true,
+        noContract: false,
         priceFrom: '~€100/mo'
       },
       cloudAlt: {
@@ -824,6 +831,7 @@ export const en = {
         cezihG9: false,
         dental: false,
         smartCard: false,
+        noContract: true,
         priceFrom: '~€50/mo'
       },
       hmDigital: {
@@ -832,6 +840,7 @@ export const en = {
         cezihG9: true,
         dental: true,
         smartCard: true,
+        noContract: true,
         priceFrom: '€49/mo'
       }
     },
@@ -983,8 +992,8 @@ export const en = {
       ]
     },
     cta: {
-      title: 'Try free for 14 days',
-      subtitle: 'No credit card. No obligation. Get started in 5 minutes.',
+      title: 'Request a demo — free, no obligation',
+      subtitle: 'We\'ll show you the system live. 15 minutes, no sales pressure.',
       form: {
         name: 'Full name',
         namePlaceholder: 'Dr. Jane Smith',
@@ -994,7 +1003,7 @@ export const en = {
         clinicPlaceholder: 'Polyclinic / Practice Smith',
         phone: 'Phone (optional)',
         phonePlaceholder: '+385 1 234 5678',
-        submit: 'Start free trial'
+        submit: 'Request a demo'
       },
       directContact: 'Or contact us directly',
       email: 'medical@hmdigital.hr',
