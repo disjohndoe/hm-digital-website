@@ -984,7 +984,7 @@ export const en = {
         },
         {
           q: 'Which specialties is the system designed for?',
-          a: 'The system is designed for all private healthcare institutions: general medicine, dentistry, physical therapy, dermatology, gynecology, ophthalmology and other specialties. Templates and workflows adapt to your practice type.'
+          a: 'All of them. One system for every private healthcare institution — from dentistry to physical therapy, dermatology, gynecology, ophthalmology, and general medicine. Each practice customizes its own procedure catalog, record types, and appointment settings. No specialty restrictions.'
         },
         {
           q: 'Can I migrate data from my existing system?',

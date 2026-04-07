@@ -973,8 +973,8 @@ export const hr = {
           a: 'Ako vaš sustav već ima CEZIH certifikaciju, cloud pristup i mobilni rad — ostanite gdje jeste. Ali ako još uvijek morate biti u ordinaciji da vidite karton pacijenta, ako ažuriranja ovise o informatičaru, ako ne možete poslati e-Nalaz bez prebacivanja između dva sustava — pitajte se: koliko vas to košta u vremenu svaki tjedan? Zatražite demo i vidjet ćete razliku u 15 minuta.'
         },
         {
-          q: 'Za koje specijalnosti je sustav prilagođen?',
-          a: 'Stomatologija, opća medicina, fizikalna terapija, dermatologija, ginekologija, oftalmologija i druge. Predlošci, šifrarnici i radni tokovi prilagođeni su specifičnostima svake djelatnosti. Ako vaše specijalnosti nema na popisu — javite nam se, prilagodba traje 5-7 radnih dana.'
+          q: 'Za koje specijalnosti je sustav namijenjen?',
+          a: 'Za sve. Jedan sustav za sve privatne zdravstvene ustanove — od stomatologije do fizikalne terapije, dermatologije, ginekologije, oftalmologije i opće medicine. Svaka ordinacija sama prilagođava katalog postupaka, vrste nalaza i termine svojoj djelatnosti. Nema ograničenja po specijalnosti.'
         },
         {
           q: 'Mogu li prebaciti podatke iz starog sustava?',
