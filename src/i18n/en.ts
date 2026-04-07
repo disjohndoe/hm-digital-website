@@ -736,10 +736,6 @@ export const en = {
       ctaTrial: 'Try 14 days free',
       ctaFeatures: 'See what you get'
     },
-    video: {
-      title: 'See how it works',
-      subtitle: 'A quick walkthrough — from login to CEZIH integration'
-    },
     problem: {
       title: 'CEZIH integration by May 2026 — what you need to know',
       subtitle: 'Law on Data and Information in Healthcare (NN 14/2019, Art. 28) — fines up to €13,200 per violation',

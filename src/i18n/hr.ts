@@ -736,10 +736,6 @@ export const hr = {
       ctaTrial: 'Isprobajte 14 dana besplatno',
       ctaFeatures: 'Pogledajte što sve dobivate'
     },
-    video: {
-      title: 'Pogledajte kako radi',
-      subtitle: 'Kratki pregled sustava — od prijave do CEZIH integracije'
-    },
     problem: {
       title: 'CEZIH integracija do svibnja 2026. — što trebate znati',
       subtitle: 'Zakon NN 14/2019 ne predviđa odgode. Kazna po prekršaju: do €13.200 za pravnu osobu (čl. 36). Sankcije se primjenjuju i na nositelje ordinacija osobno. A većina ordinacija još nema rješenje.',
