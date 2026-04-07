@@ -98,6 +98,14 @@ const currentYear = new Date().getFullYear();
               {t.footer.digitizationLink}
             </a>
           </li>
+          <li>
+            <a
+              href={getPathForLocale('/medicinski-softver', locale)}
+              class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
+            >
+              {locale === 'hr' ? 'CEZIH softver za ordinacije i poliklinike' : 'CEZIH Software for Practices and Polyclinics'}
+            </a>
+          </li>
         </ul>
       </div>
 
