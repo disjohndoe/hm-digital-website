@@ -721,17 +721,17 @@ export const hr = {
   },
   medicalLanding: {
     meta: {
-      title: 'CEZIH Cloud Softver za Ordinacije i Poliklinike | HM Digital',
-      description: 'Cloud medicinski softver s CEZIH G9 certifikatom. e-Nalaz, e-Recept, e-Uputnica iz clouda. Za ordinacije i poliklinike u Hrvatskoj. Zatražite demo.'
+      title: 'CEZIH Cloud Softver za Privatne Ordinacije | HM Digital',
+      description: 'Cloud medicinski softver s CEZIH certifikacijom za privatne prakse. e-Nalaz, e-Recept, e-Uputnica iz clouda. Za ordinacije i poliklinike u Hrvatskoj. Zatražite demo.'
     },
     urgencyBar: {
       before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
       after: 'CEZIH je sada obavezan — kazne do €13.200 po prekršaju (čl. 36)'
     },
     hero: {
-      badge: 'CEZIH G9 · CLOUD · ZDRAVSTVO',
-      title: 'Jedini cloud softver s CEZIH G9 certifikatom',
-      subtitle: 'Vaša ordinacija zaslužuje bolje od softvera iz 2005. Nudimo cloud sustav s CEZIH G9 integracijom — moderan, jednostavan i u skladu sa zakonom.',
+      badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
+      title: 'Među prvima s novom CEZIH certifikacijom za privatne prakse — u cloudu',
+      subtitle: 'Vaša ordinacija zaslužuje bolje od enterprise softvera za bolnice. Moderan cloud sustav s novom CEZIH certifikacijom — napravljen za male i srednje privatne ordinacije.',
       ctaCompare: 'Usporedite nas s vašim softverom',
       ctaTrial: 'Isprobajte 14 dana besplatno',
       ctaFeatures: 'Pogledajte što sve dobivate'
@@ -744,8 +744,8 @@ export const hr = {
         desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu — a sankcije se primjenjuju i osobno na nositelje ordinacija.'
       },
       legacy: {
-        title: 'Certificirani softveri rade — ali u 2005.',
-        desc: 'DrDent, WinActa, Medicus.Net — svi imaju CEZIH, ali i sučelja koja izgledaju kao Windows XP. Nema clouda, nema mobitela, nema modernog iskustva. Zašto biste plaćali €100/mj za softver koji vas usporava?'
+        title: 'Postojeća rješenja nisu napravljena za vas',
+        desc: 'DrDent i WinActa nemaju cloud ni mobilni pristup. Medicus.Net jest u cloudu — ali je enterprise sustav za bolnice, sa složenim sučeljem i cijenom koja to reflektira. Nijedno rješenje nije dizajnirano za male privatne ordinacije koje trebaju jednostavnost i pristupačnu cijenu.'
       },
       cloudNoCezih: {
         title: 'Cloud platforme bez CEZIH certifikacije',
@@ -753,7 +753,7 @@ export const hr = {
       }
     },
     solution: {
-      title: 'Jedino rješenje koje spaja oba svijeta',
+      title: 'Cloud, CEZIH i cijena — konačno usklađeni',
       cloudUx: {
         title: 'Cloud koji radi za vas',
         desc: 'Otvorite sustav s mobitela između dva pacijenta. Provjerite raspored od kuće. Jednom postavite čitač na jedno računalo u ordinaciji — a pristupajte sustavu odakle god trebate. Uvijek ažurno, uvijek sigurnosno kopirano.'
@@ -798,14 +798,14 @@ export const hr = {
       title: 'Usporedba s alternativama',
       headers: {
         feature: 'Funkcionalnost',
-        legacy: 'Legacy vendori',
-        cloudAlt: 'Cloud alternative',
+        legacy: 'Desktop vendori (DrDent, WinActa...)',
+        cloudAlt: 'Cloud alternative bez CEZIH-a',
         hmDigital: 'HM Digital'
       },
       rows: {
         cloudAccess: 'Cloud pristup',
         modernUx: 'Moderni UX',
-        cezihG9: 'CEZIH G9',
+        cezihG9: 'CEZIH certifikacija',
         dental: 'Prilagodba specijalizaciji',
         smartCard: 'AKD smart card',
         priceFrom: 'Cijena od'
@@ -858,7 +858,7 @@ export const hr = {
           'Evidencija pacijenata',
           'Naručivanje i kalendar',
           'Medicinski karton',
-          'CEZIH G9 integracija',
+          'CEZIH integracija',
           'e-Nalaz, e-Uputnica, e-Recept',
           'AKD smart card podrška',
           'Onboarding uključen',

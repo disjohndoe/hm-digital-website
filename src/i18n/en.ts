@@ -722,16 +722,16 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
-      description: 'Cloud medical software with CEZIH G9 certification. e-Findings, e-Prescriptions, e-Referrals from the cloud. For Croatian practices and polyclinics. Request a demo.'
+      description: 'Cloud medical software with CEZIH certification for private practices. e-Findings, e-Prescriptions, e-Referrals from the cloud. For Croatian practices and polyclinics. Request a demo.'
     },
     urgencyBar: {
       before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
       after: 'CEZIH is now mandatory — fines up to €13,200 per violation (Art. 35-37)'
     },
     hero: {
-      badge: 'CEZIH G9 · Cloud · Healthcare',
-      title: 'The only cloud software with CEZIH G9 certification',
-      subtitle: 'Your practice deserves better than 2005 software. A modern cloud system with full CEZIH G9 integration — simple, fast, and fully compliant.',
+      badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
+      title: 'Among the first with the new CEZIH certification for private practices — in the cloud',
+      subtitle: 'Your practice deserves better than enterprise hospital software. A modern cloud system with the new CEZIH certification — built for small and mid-size private clinics.',
       ctaCompare: 'Compare us to your current software',
       ctaTrial: 'Try 14 days free',
       ctaFeatures: 'See what you get'
@@ -744,8 +744,8 @@ export const en = {
         desc: 'Law NN 14/2019 mandates CEZIH integration. Regulation NN 150/2024 specifies technical requirements. Fines: up to €13,200 per violation for legal entities (Art. 35), up to €4,000 for responsible persons (Art. 37).'
       },
       legacy: {
-        title: 'Existing solutions don\'t fit',
-        desc: 'Certified vendors in Croatia use outdated desktop interfaces. No cloud access, no modern UX, no mobile support.'
+        title: 'Existing solutions aren\'t built for you',
+        desc: 'DrDent and WinActa lack cloud and mobile access. Medicus.Net offers cloud — but it\'s an enterprise system built for hospitals, with complex interfaces and pricing to match. None are designed for small private practices that need simplicity and an affordable price.'
       },
       cloudNoCezih: {
         title: 'Cloud platforms without CEZIH certification',
@@ -759,7 +759,7 @@ export const en = {
         desc: 'Access the system from any device — computer, tablet or phone. Set up the card reader once on one workstation, then work from wherever you need. Automatic updates and backups.'
       },
       cezihG9: {
-        title: 'CEZIH G9 integration',
+        title: 'Full CEZIH integration',
         desc: 'Full CEZIH integration: e-Findings, e-Referrals, e-Prescriptions, eScheduling and insurance verification. AKD smart card authentication via local agent.'
       },
       dental: {
@@ -798,14 +798,14 @@ export const en = {
       title: 'Comparison with alternatives',
       headers: {
         feature: 'Feature',
-        legacy: 'Legacy vendors',
-        cloudAlt: 'Cloud alternatives',
+        legacy: 'Desktop vendors (DrDent, WinActa...)',
+        cloudAlt: 'Cloud alternatives without CEZIH',
         hmDigital: 'HM Digital'
       },
       rows: {
         cloudAccess: 'Cloud access',
         modernUx: 'Modern UX',
-        cezihG9: 'CEZIH G9',
+        cezihG9: 'CEZIH certification',
         dental: 'Specialty adaptation',
         smartCard: 'AKD smart card',
         priceFrom: 'Price from'
@@ -872,7 +872,7 @@ export const en = {
           'Patient records',
           'Scheduling & calendar',
           'Medical records',
-          'CEZIH G9 integration',
+          'CEZIH integration',
           'e-Findings, e-Referrals, e-Prescriptions',
           'AKD smart card support',
           'Onboarding included',
