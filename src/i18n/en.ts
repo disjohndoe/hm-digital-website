@@ -976,7 +976,7 @@ export const en = {
         },
         {
           q: 'Do I need an AKD card?',
-          a: 'Yes. The AKD (Employee Authentication Card) is mandatory for CEZIH access — you cannot connect without it. For signing documents (e-Findings, e-Prescriptions, e-Referrals), you can use the same AKD card with a USB reader or a Certilia mobile certificate on your phone. Our local agent reads the card from your computer and handles everything automatically.'
+          a: 'Yes. The AKD card is mandatory for CEZIH access — you cannot connect without it. For signing documents (e-Findings, e-Prescriptions, e-Referrals), you can use the same AKD card with a USB reader or a Certilia mobile certificate on your phone. Our local agent reads the card from your computer and handles everything automatically.'
         },
         {
           q: 'How does the local agent work?',

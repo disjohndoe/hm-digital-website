@@ -962,7 +962,7 @@ export const hr = {
         },
         {
           q: 'Trebam li AKD iskaznicu?',
-          a: 'Da, AKD (Autentikacijska Kartica Djelatnika) je obavezna za pristup CEZIH-u — bez nje se nije moguće spojiti. Za potpisivanje dokumenata (e-Nalaz, e-Recept, e-Uputnica) možete koristiti istu AKD karticu s USB čitačem ili Certilia mobilni certifikat na mobitelu. Naš local agent čita karticu s vašeg računala i sve radi automatski.'
+          a: 'Da, AKD kartica je obavezna za pristup CEZIH-u — bez nje se nije moguće spojiti. Za potpisivanje dokumenata (e-Nalaz, e-Recept, e-Uputnica) možete koristiti istu AKD karticu s USB čitačem ili Certilia mobilni certifikat na mobitelu. Naš local agent čita karticu s vašeg računala i sve radi automatski.'
         },
         {
           q: 'Što je local agent i moram li ga sam instalirati?',
