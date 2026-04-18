@@ -766,7 +766,7 @@ export const hr = {
       },
       cezihG9: {
         title: 'CEZIH — riješen, ne kompliciran',
-        desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja — sve iz istog sučelja. AKD smart card se čita kroz local agent na vašem računalu. Bez ručnog prebacivanja između sustava.'
+        desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja — sve iz istog sučelja. AKD kartica za pristup, a za potpisivanje koristite karticu ili Certilia mobilni certifikat. Bez ručnog prebacivanja između sustava.'
       },
       dental: {
         title: 'Napravljen za vašu specijalnost',
@@ -792,8 +792,8 @@ export const hr = {
         desc: 'Generirajte CEZIH dokumente direktno iz pregleda — bez prebacivanja na drugi sustav. Nalaz, uputnica ili recept gotov je za 30 sekundi.'
       },
       smartCard: {
-        title: 'AKD smart card — bez muke',
-        desc: 'Local agent na vašem računalu čita AKD iskaznicu i uspostavlja sigurnu VPN vezu. Vi samo kliknete "pošalji" — tehnički detalji su naš posao.'
+        title: 'AKD kartica + Certilia potpisivanje',
+        desc: 'AKD kartica za pristup CEZIH-u, a za potpisivanje dokumenata birate: kartica s USB čitačem ili Certilia mobilni certifikat. Vi kliknete "pošalji" — tehnički detalji su naš posao.'
       },
       cloudAccess: {
         title: 'Radite odakle god trebate',
@@ -813,7 +813,7 @@ export const hr = {
         modernUx: 'Moderni UX',
         cezihG9: 'CEZIH certifikacija',
         dental: 'Prilagodba specijalizaciji',
-        smartCard: 'AKD smart card',
+        smartCard: 'AKD + Certilia',
         noContract: 'Bez dugoročnog ugovora',
         priceFrom: 'Cijena od'
       },
@@ -870,7 +870,7 @@ export const hr = {
           'Medicinski karton',
           'CEZIH integracija',
           'e-Nalaz, e-Uputnica, e-Recept',
-          'AKD smart card podrška',
+          'AKD + Certilia podrška',
           'Onboarding uključen',
           'Cloud pristup',
           'Email podrška'
@@ -918,7 +918,7 @@ export const hr = {
           { title: 'Postavljanje sustava', desc: 'Konfiguracija ordinacije, korisničkih računa, radnih tokova i šifrarnika — sve kroz video poziv i remote pristup' },
           { title: 'Migracija podataka', desc: 'Prijenos pacijenata, anamneza i dokumentacije iz starog sustava — bez gubitka podataka' },
           { title: 'Obuka osoblja', desc: 'Video obuka za svakog korisnika — snimke dostupne za kasniji pregled' },
-          { title: 'CEZIH aktivacija', desc: 'Remote instalacija local agenta, AKD smart card test, VPN konfiguracija — sve do prvog uspješnog nalaza' },
+          { title: 'CEZIH aktivacija', desc: 'Remote instalacija local agenta, AKD kartica test, postavljanje Certilia certifikata za potpisivanje, VPN konfiguracija — sve do prvog uspješnog nalaza' },
           { title: '30 dana premium podrška', desc: 'Prioritetna podrška telefonom i emailom prvih 30 dana nakon pokretanja' }
         ],
         onSite: {
@@ -962,11 +962,15 @@ export const hr = {
         },
         {
           q: 'Trebam li AKD iskaznicu?',
-          a: 'Da, AKD (Autentikacijska Kartica Djelatnika) je obavezna za CEZIH pristup. Ako je nemate, pomažemo vam u procesu nabave. Naš local agent čita karticu s vašeg računala i sve radi automatski — samo je umetnite i radite.'
+          a: 'Da, AKD (Autentikacijska Kartica Djelatnika) je obavezna za pristup CEZIH-u — bez nje se nije moguće spojiti. Za potpisivanje dokumenata (e-Nalaz, e-Recept, e-Uputnica) možete koristiti istu AKD karticu s USB čitačem ili Certilia mobilni certifikat na mobitelu. Naš local agent čita karticu s vašeg računala i sve radi automatski.'
         },
         {
           q: 'Što je local agent i moram li ga sam instalirati?',
           a: 'Local agent je mala aplikacija na vašem računalu koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta. Sve ostalo radi u cloudu. Nema složene konfiguracije — agent se sam poveže s vašim računom.'
+        },
+        {
+          q: 'Što trebam pripremiti za početak?',
+          a: 'Četiri stvari: (1) šifru ustanove — dobivate je od HZZO-a, imaju je sve registrirane ustanove, (2) šifru zdravstvenog djelatnika — 7-znamenkasti broj od HZJZ-a, (3) MBO liječnika — 9-znamenkasti broj koji svaki liječnik zna, i (4) AKD karticu s USB čitačem za CEZIH pristup. Za potpisivanje možete koristiti istu karticu ili Certilia mobilni certifikat. Pomažemo vam s cijelim procesom aktivacije.'
         },
         {
           q: 'Imam već softver — zašto bih mijenjao?',

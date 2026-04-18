@@ -766,7 +766,7 @@ export const en = {
       },
       cezihG9: {
         title: 'Full CEZIH integration',
-        desc: 'Full CEZIH integration: e-Findings, e-Referrals, e-Prescriptions, eScheduling and insurance verification. AKD smart card authentication via local agent.'
+        desc: 'Full CEZIH integration: e-Findings, e-Referrals, e-Prescriptions, eScheduling and insurance verification. AKD card for access, with card or Certilia mobile certificate for document signing.'
       },
       dental: {
         title: 'Tailored to your specialty',
@@ -792,8 +792,8 @@ export const en = {
         desc: 'CEZIH modules integrated into workflow: generate findings, referrals and prescriptions without leaving the system.'
       },
       smartCard: {
-        title: 'AKD smart card authentication',
-        desc: 'Local agent reads the AKD card and manages the VPN tunnel to CEZIH. Secure PKI authentication without compromise.'
+        title: 'AKD card + Certilia signing',
+        desc: 'AKD card for CEZIH access, with your choice for document signing: card with USB reader or Certilia mobile certificate. Secure PKI authentication without compromise.'
       },
       cloudAccess: {
         title: 'Access from any device',
@@ -813,7 +813,7 @@ export const en = {
         modernUx: 'Modern UX',
         cezihG9: 'CEZIH certification',
         dental: 'Specialty adaptation',
-        smartCard: 'AKD smart card',
+        smartCard: 'AKD + Certilia',
         noContract: 'No long-term contract',
         priceFrom: 'Price from'
       },
@@ -884,7 +884,7 @@ export const en = {
           'Medical records',
           'CEZIH integration',
           'e-Findings, e-Referrals, e-Prescriptions',
-          'AKD smart card support',
+          'AKD + Certilia support',
           'Onboarding included',
           'Cloud access',
           'Email support'
@@ -932,7 +932,7 @@ export const en = {
           { title: 'System setup', desc: 'Configuration of practice, user accounts, workflows and code lists — all via video call and remote access' },
           { title: 'Data migration', desc: 'Transfer patients, histories and documentation from your old system — no data loss' },
           { title: 'Staff training', desc: 'Video training for each user — recordings available for later review' },
-          { title: 'CEZIH activation', desc: 'Remote installation of local agent, AKD smart card test, VPN configuration — all the way to first successful finding' },
+          { title: 'CEZIH activation', desc: 'Remote installation of local agent, AKD card test, Certilia certificate setup for signing, VPN configuration — all the way to first successful finding' },
           { title: '30-day premium support', desc: 'Priority phone and email support for the first 30 days after launch' }
         ],
         onSite: {
@@ -976,11 +976,15 @@ export const en = {
         },
         {
           q: 'Do I need an AKD card?',
-          a: 'Yes. The AKD (Employee Authentication Card) is mandatory for CEZIH access. Our local agent reads the smart card from your computer and securely communicates with CEZIH through a VPN tunnel.'
+          a: 'Yes. The AKD (Employee Authentication Card) is mandatory for CEZIH access — you cannot connect without it. For signing documents (e-Findings, e-Prescriptions, e-Referrals), you can use the same AKD card with a USB reader or a Certilia mobile certificate on your phone. Our local agent reads the card from your computer and handles everything automatically.'
         },
         {
           q: 'How does the local agent work?',
           a: 'The local agent is a small desktop application installed on the computer with the smart card reader. It reads the AKD card, establishes a VPN connection and forwards SOAP requests to CEZIH. Your cloud system communicates with the agent — no complex network configuration needed.'
+        },
+        {
+          q: 'What do I need to prepare before getting started?',
+          a: 'Four things: (1) your institution code — issued by HZZO, all registered institutions have one, (2) healthcare worker code — a 7-digit number from HZJZ, (3) physician MBO number — a 9-digit number every doctor knows, and (4) an AKD card with a USB reader for CEZIH access. For document signing, you can use the same card or a Certilia mobile certificate. We help you through the entire activation process.'
         },
         {
           q: 'Which specialties is the system designed for?',
