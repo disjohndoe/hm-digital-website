@@ -1,0 +1,442 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'Pravila privatnosti — HM Digital Medical';
+const description = 'Pravila privatnosti za cloud sustav HM Digital Medical — obrada osobnih i zdravstvenih podataka, GDPR, AZOP, podizvršitelji obrade.';
+const lastUpdated = '24.04.2026.';
+const version = '2026-04-24';
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical="/medical/pravila-privatnosti/"
+  noindex={true}
+>
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="container-custom max-w-4xl">
+      <div class="mb-8 text-sm text-slate-500">
+        <p>Verzija: <span class="font-mono">{version}</span></p>
+        <p>Datum zadnje izmjene: {lastUpdated}</p>
+        <p>Datum stupanja na snagu: {lastUpdated}</p>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Pravila privatnosti</h1>
+
+      <p class="text-slate-700 mb-8 leading-relaxed">
+        Ova Pravila privatnosti (dalje: <strong>„Pravila"</strong>) opisuju način na koji
+        <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong> (dalje: <strong>„HM Digital"</strong>
+        ili <strong>„Pružatelj"</strong>) prikuplja, obrađuje, čuva i štiti osobne podatke u okviru pružanja
+        cloud sustava <em>HM Digital Medical</em> (dalje: <strong>„Usluga"</strong>), sukladno Uredbi (EU) 2016/679
+        (<strong>GDPR</strong>), Zakonu o provedbi Opće uredbe o zaštiti podataka (NN 42/2018), Zakonu o podacima
+        i informacijama u zdravstvu (<strong>ZPIZ</strong>, NN 14/2019) i drugim mjerodavnim propisima
+        Republike Hrvatske.
+      </p>
+
+      <div class="space-y-8 text-slate-700 leading-relaxed">
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">1. Voditelj obrade i kontakt</h2>
+          <p class="mb-2">Voditelj obrade osobnih podataka za podatke iz čl. 2.2 ovih Pravila (podaci o Korisniku i Krajnjim korisnicima, tehnički podaci) je:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Naziv: <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong></li>
+            <li>Vlasnik: Hrvoje Matošević</li>
+            <li>Sjedište: Mašić 58, 35400 Mašić, Republika Hrvatska</li>
+            <li>OIB: 15881939647</li>
+            <li>MBS: 99053861</li>
+            <li>Kontakt za pitanja privatnosti i ostvarivanje prava: <a href="mailto:medical@hmdigital.hr" class="text-primary-600 hover:underline">medical@hmdigital.hr</a></li>
+            <li>Telefon: 097/7120-800</li>
+          </ul>
+          <p class="mt-3">
+            HM Digital trenutno nema zakonsku obvezu imenovanja službenika za zaštitu podataka (DPO) u smislu
+            čl. 37. GDPR-a, budući da njegova temeljna djelatnost ne uključuje opsežan i sustavan nadzor
+            ispitanika niti opsežnu obradu posebnih kategorija podataka u ulozi voditelja obrade. Ipak,
+            vlasnik obrta osobno je dostupan kao središnja kontakt točka za sva pitanja vezana uz ovu Politiku.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">2. Uloge: izvršitelj obrade i voditelj obrade</h2>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">2.1. Podaci o pacijentima — HM Digital je izvršitelj obrade</h3>
+          <p class="bg-primary-50 border-l-4 border-primary-500 p-4">
+            U odnosu na <strong>osobne i zdravstvene podatke pacijenata</strong> koje Korisnik (klinika/ordinacija)
+            unosi u Uslugu, <strong>voditelj obrade je Korisnik</strong> (u smislu čl. 4. t. 7. GDPR-a),
+            a <strong>HM Digital djeluje kao izvršitelj obrade (processor)</strong> u smislu čl. 28. GDPR-a.
+            Pravna osnova obrade podataka pacijenata nalazi se na strani Korisnika (najčešće čl. 6(1)(b), 6(1)(c)
+            i 9(2)(h) GDPR-a — pružanje zdravstvene skrbi). HM Digital takve podatke obrađuje isključivo prema
+            dokumentiranim uputama Korisnika i u svrhu pružanja Usluge, u skladu s Uvjetima korištenja (koji
+            sadrže i odredbe ugovora o obradi — vidjeti Uvjete korištenja, čl. 15).
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">2.2. Podaci o Korisniku, Krajnjim korisnicima, tehnički podaci — HM Digital je voditelj obrade</h3>
+          <p>
+            U odnosu na <strong>podatke o Korisniku</strong> (naziv ustanove, OIB, adresa, kontakti),
+            <strong>Krajnjim korisnicima</strong> (liječnici, sestre, administrativno osoblje — ime, e-mail,
+            OIB, MBO liječnika, HZJZ šifra, AKD certifikat), podatke o <strong>pretplati i naplati</strong>
+            te <strong>tehničke i sigurnosne podatke</strong> (IP adresa, revizijski zapisi), HM Digital
+            djeluje kao <strong>voditelj obrade</strong>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">3. Kategorije osobnih podataka koje obrađujemo</h2>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">3.1. Podaci o pacijentima (obrada u ulozi izvršitelja)</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Identifikacijski podaci:</strong> ime, prezime, datum rođenja, spol, OIB, MBO (matični broj osiguranika), broj putovnice i EHIC (za strance), broj iskaznice zdravstveno osiguranog, jedinstveni identifikator pacijenta (PMIR).</li>
+            <li><strong>Kontakt podaci:</strong> adresa, grad, poštanski broj, telefon, mobitel, e-mail.</li>
+            <li><strong>Zdravstveni podaci (posebna kategorija — čl. 9. GDPR-a):</strong> povijest bolesti, anamneza, dijagnoze (MKB-10), nalazi, bilješke iz pregleda, planovi terapije, izdani recepti, izvršeni postupci, zubni karton, fotografije (prije/poslije), priložena dokumentacija (PDF nalaza, snimke), alergije, upozorenja vezana uz sigurnost pregleda, CEZIH slučajevi i posjete.</li>
+            <li><strong>Financijski podaci (u ograničenom opsegu):</strong> predračuni i računi prema pacijentu, iznosi, vrste postupaka.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">3.2. Podaci o Krajnjim korisnicima (obrada u ulozi voditelja)</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>e-mail, ime, prezime, titula, telefon, uloga (admin, liječnik, sestra),</li>
+            <li>OIB i serijski broj certifikata očitani s AKD pametne kartice (za autentikaciju prema CEZIH-u),</li>
+            <li>MBO liječnika (9 znamenki HZZO-ovog matičnog broja),</li>
+            <li>HZJZ šifra djelatnika (7 znamenki),</li>
+            <li>izbor metode potpisivanja (pametna kartica ili Certilia mobilna aplikacija),</li>
+            <li>zaporka (pohranjena kao ireverzibilan hash), status računa, vrijeme zadnje prijave, brojač neuspjelih prijava.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">3.3. Podaci o Korisniku (ustanovi)</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>naziv klinike/ordinacije, OIB, šifra ustanove (HZZO), adresa, grad, županija, e-mail, telefon,</li>
+            <li>plan pretplate, status (aktivan/pokusni), datum isteka pokusnog razdoblja,</li>
+            <li>računi, uplate, korespondencija.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">3.4. Tehnički i sigurnosni podaci</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>IP adresa, tip preglednika, operativni sustav (sigurnosni log),</li>
+            <li>revizijski zapisi (audit log) — tko je i kada pristupio, izmijenio, izvezao ili obrisao pojedini zapis, s odgovarajućim kontekstom,</li>
+            <li>sigurnosni kolačić (JWT access token u HttpOnly cookie-ju) i pripadajući refresh token (hash pohranjen u bazi),</li>
+            <li>pokazatelji integracije s lokalnim agentom (Local Agent) i statusi VPN / AKD čitača.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">4. Svrhe i pravne osnove obrade</h2>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-slate-200 mt-2">
+              <thead class="bg-slate-50">
+                <tr>
+                  <th class="text-left p-3 border-b border-slate-200">Svrha</th>
+                  <th class="text-left p-3 border-b border-slate-200">Pravna osnova (GDPR)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Pružanje Usluge Korisniku (registracija, prijava, korištenje aplikacije)</td>
+                  <td class="p-3 align-top">čl. 6(1)(b) — izvršenje ugovora</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Naplata pretplate, izdavanje računa, vođenje poslovne evidencije</td>
+                  <td class="p-3 align-top">čl. 6(1)(b) — izvršenje ugovora; čl. 6(1)(c) — zakonska obveza (Zakon o računovodstvu, Opći porezni zakon, Zakon o PDV-u)</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Slanje tehničkih i pravnih obavijesti Korisniku (nadogradnje, izmjene Uvjeta, prestanak promotivne cijene, sigurnosni incidenti)</td>
+                  <td class="p-3 align-top">čl. 6(1)(b) — izvršenje ugovora; čl. 6(1)(c) — zakonska obveza</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Sigurnost Usluge, sprječavanje zloupotrebe, revizijski zapisi</td>
+                  <td class="p-3 align-top">čl. 6(1)(f) — legitimni interes Pružatelja i Korisnika</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Slanje podataka u CEZIH (e-nalazi, e-recepti, posjete, slučajevi) u ime Korisnika</td>
+                  <td class="p-3 align-top">čl. 6(1)(c) — zakonska obveza Korisnika (ZPIZ i pripadajući propisi); čl. 9(2)(h) — pružanje zdravstvene skrbi</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Obrada zdravstvenih podataka pacijenata u ulozi izvršitelja obrade (prema uputi Korisnika)</td>
+                  <td class="p-3 align-top">čl. 9(2)(h) — pružanje zdravstvene skrbi; čl. 28 — ugovor o obradi (pravna osnova je na strani Korisnika)</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Poboljšanje Usluge (anonimizirana statistika korištenja, analiza grešaka)</td>
+                  <td class="p-3 align-top">čl. 6(1)(f) — legitimni interes</td>
+                </tr>
+                <tr>
+                  <td class="p-3 align-top">Marketinška komunikacija prema postojećim Korisnicima (najava novih funkcionalnosti)</td>
+                  <td class="p-3 align-top">čl. 6(1)(f) — legitimni interes; pravo na prigovor zajamčeno</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mt-3">
+            HM Digital <strong>ne koristi</strong> osobne podatke pacijenata za marketinške svrhe, niti za
+            automatizirano donošenje odluka koje bi pacijente podvrgle obradi iz čl. 22. GDPR-a.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">5. Primatelji i podizvršitelji obrade (subprocessors)</h2>
+          <p class="mb-2">
+            Za pružanje Usluge HM Digital angažira sljedeće podizvršitelje obrade. Svaki je obvezan ugovorom
+            o obradi u skladu s čl. 28. GDPR-a ili odgovarajućim zakonskim okvirom:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-slate-200 mt-2">
+              <thead class="bg-slate-50">
+                <tr>
+                  <th class="text-left p-3 border-b border-slate-200">Podizvršitelj</th>
+                  <th class="text-left p-3 border-b border-slate-200">Svrha</th>
+                  <th class="text-left p-3 border-b border-slate-200">Lokacija</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top"><strong>Hetzner Online GmbH</strong></td>
+                  <td class="p-3 align-top">Cloud infrastruktura (hosting aplikacije, PostgreSQL baza, sigurnosne kopije)</td>
+                  <td class="p-3 align-top">Nürnberg, Njemačka (EU)</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top"><strong>AKD d.o.o. (Certilia)</strong></td>
+                  <td class="p-3 align-top">Usluga udaljenog elektroničkog potpisivanja (za Korisnike koji koriste Certilia metodu)</td>
+                  <td class="p-3 align-top">Republika Hrvatska (EU)</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top"><strong>CEZIH / HZZO / HZJZ / Ministarstvo zdravstva RH</strong></td>
+                  <td class="p-3 align-top">Obveznik primanja elektroničkih zdravstvenih podataka prema ZPIZ-u (e-nalazi, e-recepti, posjete, slučajevi). CEZIH je samostalan voditelj obrade za podatke koje zaprima.</td>
+                  <td class="p-3 align-top">Republika Hrvatska (EU)</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top"><strong>GitHub, Inc.</strong></td>
+                  <td class="p-3 align-top">Distribucija lokalnog agenta (instalacijska datoteka i digitalni potpis ažuriranja). Ne prenose se zdravstveni podaci.</td>
+                  <td class="p-3 align-top">SAD — prijenos na temelju EU-US Data Privacy Framework i Standardnih ugovornih klauzula (SCC)</td>
+                </tr>
+                <tr>
+                  <td class="p-3 align-top"><strong>Pružatelj platnih / fakturnih usluga</strong> (prema potrebi)</td>
+                  <td class="p-3 align-top">Naplata pretplate, izdavanje računa</td>
+                  <td class="p-3 align-top">Republika Hrvatska / EU</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-3">
+            Ažurirani popis podizvršitelja uvijek je dostupan u ovim Pravilima. <strong>Dodavanje novog
+            podizvršitelja obrade</strong> najavljuje se Korisniku najmanje <strong>30 dana prije</strong>
+            početka obrade, kroz obavijest unutar aplikacije i/ili e-mailom. Korisnik može opravdano prigovoriti
+            u tom roku; u slučaju opravdanog prigovora stranke pokušavaju pronaći prihvatljivo rješenje, a ako
+            se ne postigne, Korisnik ima pravo raskinuti ugovor bez naknade.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">6. Prijenos podataka izvan EU/EGP-a</h2>
+          <p>
+            Svi osobni i zdravstveni podaci Korisnika i pacijenata pohranjuju se na poslužiteljima unutar
+            <strong>Europske unije (Njemačka, Nürnberg)</strong>. Iznimke:
+          </p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>
+              <strong>GitHub (SAD)</strong> — koristi se za distribuciju instalacijske datoteke lokalnog
+              agenta i digitalnih potpisa za ažuriranje. <em>Zdravstveni podaci se ne prenose u SAD.</em>
+              Prijenos se temelji na <strong>EU-US Data Privacy Framework</strong> (odluka Komisije
+              (EU) 2023/1795) i/ili <strong>Standardnim ugovornim klauzulama</strong> (SCC).
+            </li>
+            <li>
+              Ako Korisnik u budućnosti samostalno odabere integracije trećih strana koje bi mogle prenositi
+              podatke izvan EU/EGP-a (npr. marketinške, SMS ili WhatsApp integracije), takve integracije
+              aktiviraju se uz izričitu suglasnost Korisnika i pripadajuće ugovorne mehanizme.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">7. Razdoblja zadržavanja (retencija)</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-slate-200 mt-2">
+              <thead class="bg-slate-50">
+                <tr>
+                  <th class="text-left p-3 border-b border-slate-200">Kategorija podataka</th>
+                  <th class="text-left p-3 border-b border-slate-200">Rok zadržavanja</th>
+                  <th class="text-left p-3 border-b border-slate-200">Pravna osnova roka</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Zdravstvena dokumentacija pacijenata (nalazi, bilješke, dijagnoze)</td>
+                  <td class="p-3 align-top"><strong>najmanje 10 godina</strong> od zadnjeg upisa, u skladu sa zakonskom obvezom Korisnika (odredbe za određene kategorije mogu zahtijevati duže razdoblje)</td>
+                  <td class="p-3 align-top">Zakon o zdravstvenoj zaštiti; ZPIZ; sektorski propisi po djelatnostima</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Računi, predračuni, fiskalni zapisi</td>
+                  <td class="p-3 align-top"><strong>11 godina</strong> nakon isteka godine na koju se odnose</td>
+                  <td class="p-3 align-top">Zakon o računovodstvu; Opći porezni zakon</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Revizijski zapisi (audit log)</td>
+                  <td class="p-3 align-top"><strong>5 godina</strong> od događaja</td>
+                  <td class="p-3 align-top">Legitimni interes sigurnosti i dokazivanja; propisi o ZPIZ-u i obveznim evidencijama</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Podaci o Korisniku i Krajnjim korisnicima (računi za prijavu)</td>
+                  <td class="p-3 align-top">Do raskida ugovora + 30 dana razdoblje izvoza, zatim brisanje osim onoga što se čuva po drugim osnovama (računi, audit log, zakonska retencija zdravstvene dokumentacije)</td>
+                  <td class="p-3 align-top">Izvršenje ugovora; zakonska obveza</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="p-3 align-top">Sigurnosne kopije (backup)</td>
+                  <td class="p-3 align-top">Rotacija prema politici sigurnosnih kopija; starija izdanja se brišu po redoslijedu starosti; cjelokupni skup enkriptiran GPG AES256</td>
+                  <td class="p-3 align-top">Legitimni interes sigurnosti i kontinuiteta</td>
+                </tr>
+                <tr>
+                  <td class="p-3 align-top">Marketinška komunikacija Pružatelja prema Korisnicima</td>
+                  <td class="p-3 align-top">Do prigovora Korisnika / odjave</td>
+                  <td class="p-3 align-top">Legitimni interes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-3">
+            Nakon isteka razdoblja zadržavanja podaci se brišu ili anonimiziraju. Ako isti podatak ima više
+            osnova zadržavanja (npr. zdravstvena dokumentacija i računi), primjenjuje se najduži zakonom
+            propisani rok.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">8. Prava ispitanika (GDPR čl. 15–22)</h2>
+          <p class="mb-2">
+            Svaki ispitanik (pacijent, Krajnji korisnik) ima sljedeća prava u odnosu na svoje osobne podatke:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Pravo na pristup</strong> — zatražiti potvrdu obrađuju li se podaci i kopiju tih podataka (čl. 15).</li>
+            <li><strong>Pravo na ispravak</strong> — tražiti ispravak netočnih i dopunu nepotpunih podataka (čl. 16).</li>
+            <li><strong>Pravo na brisanje („pravo na zaborav")</strong> — kada nije nužno za ispunjenje zakonske obveze ili drugih osnova iz GDPR-a (čl. 17).</li>
+            <li><strong>Pravo na ograničenje obrade</strong> — u slučajevima iz čl. 18.</li>
+            <li><strong>Pravo na prenosivost</strong> — preuzimanje podataka u strojno čitljivom obliku (JSON / ZIP) (čl. 20).</li>
+            <li><strong>Pravo na prigovor</strong> — posebno u odnosu na obradu temeljem legitimnog interesa ili za marketinške svrhe (čl. 21).</li>
+            <li><strong>Pravo na opoziv privole</strong> — u onim ograničenim slučajevima kada je obrada temeljena na privoli; opoziv ne utječe na zakonitost obrade do trenutka opoziva (čl. 7(3)).</li>
+            <li><strong>Pravo na podnošenje pritužbe nadzornom tijelu</strong> — vidjeti čl. 11. ovih Pravila.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">8.1. Pacijenti: prava ostvaruju prema Korisniku (klinici)</h3>
+          <p>
+            Budući da je za podatke o pacijentima voditelj obrade Korisnik (klinika/ordinacija), pacijenti
+            svoja prava ostvaruju izravno prema Korisniku, koristeći kontakt podatke objavljene u ordinaciji
+            ili na njezinoj web stranici. HM Digital kao izvršitelj obrade pruža Korisniku potrebne tehničke
+            alate (izvoz podataka, brisanje zapisa) radi ostvarivanja tih prava u razumnim rokovima.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">8.2. Krajnji korisnici i Korisnici: prava ostvaruju prema HM Digital</h3>
+          <p>
+            Za podatke za koje je HM Digital voditelj obrade (vidjeti čl. 2.2) zahtjev se može poslati na
+            <a href="mailto:medical@hmdigital.hr" class="text-primary-600 hover:underline">medical@hmdigital.hr</a>.
+            HM Digital će odgovoriti u <strong>roku od 30 dana</strong> od zaprimanja zahtjeva
+            (uz mogućnost produženja za dodatna dva mjeseca u slučaju složenih zahtjeva, o čemu će ispitanik
+            biti obaviješten u početnom roku). Radi provjere identiteta može se zatražiti dodatni dokaz.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">9. Sigurnosne mjere</h2>
+          <p class="mb-2">
+            HM Digital primjenjuje odgovarajuće tehničke i organizacijske mjere zaštite u skladu s čl. 32.
+            GDPR-a, uzimajući u obzir najnovija tehnološka dostignuća, troškove i prirodu obrade. Mjere
+            uključuju (ali nisu ograničene na):
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>šifriranje prometa (TLS/HTTPS) putem obrnutog proxyja s automatski obnavljanim certifikatima,</li>
+            <li>šifriranje sigurnosnih kopija (GPG, algoritam AES-256),</li>
+            <li>autentikacija putem hashiranih zaporki (industrijski standardi hash funkcija), JWT tokena u HttpOnly kolačićima, ograničenje broja neuspjelih prijava,</li>
+            <li>uloge i dozvole (admin, liječnik, sestra) s načelom najmanjih ovlasti,</li>
+            <li>multi-tenant izolacija (svaki Korisnik ima logički odvojene podatke; pristup ograničen korisničkim i tenant kontekstom),</li>
+            <li>potpis i mTLS za komunikaciju s CEZIH-om (pametna kartica ili Certilia),</li>
+            <li>revizijski zapisi osjetljivih radnji (preuzimanja PDF-a, izvozi podataka, brisanja zapisa),</li>
+            <li>ograničenje učestalosti zahtjeva (rate limiting) na osjetljivim rutama (prijava, registracija, obnova tokena),</li>
+            <li>redoviti nadzor logova i upozorenja na sigurnosne incidente,</li>
+            <li>planovi kontinuiteta i oporavka (dnevne enkriptirane sigurnosne kopije).</li>
+          </ul>
+          <p class="mt-3">
+            U slučaju <strong>povrede osobnih podataka</strong> koja može dovesti do rizika za prava i slobode
+            ispitanika, HM Digital će obavijestiti AZOP u roku od <strong>72 sata</strong> od saznanja o povredi
+            (čl. 33. GDPR-a), a Korisniku (kao voditelju obrade) povredu prijaviti bez nepotrebnog odgađanja,
+            u skladu s čl. 33(2) GDPR-a.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">10. Kolačići</h2>
+          <p>
+            U okviru aplikacije koriste se isključivo <strong>tehnički nužni kolačići</strong> za rad sustava:
+          </p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>access token kolačić (JWT, HttpOnly, Secure, SameSite=Lax) — održavanje sesije prijavljenog korisnika,</li>
+            <li>refresh token kolačić (HttpOnly, Secure, ograničen na putanju /api/auth) — obnova sesije bez ponovne prijave.</li>
+          </ul>
+          <p class="mt-3">
+            <strong>Ne koristimo</strong> marketinške kolačiće, kolačiće za praćenje (tracking), analitičke
+            kolačiće trećih strana ili oglašivačke kolačiće u okviru aplikacije. Marketinška web stranica
+            <a href="https://hmdigital.hr" class="text-primary-600 hover:underline">hmdigital.hr</a> ima
+            zaseban i vidljiv obrazac pristanka za kolačiće, gdje se prije izvršenja traži izričit pristanak
+            za sve kolačiće koji nisu strogo nužni.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">11. Žalba nadzornom tijelu (AZOP)</h2>
+          <p>
+            Svaki ispitanik ima pravo podnijeti pritužbu nadležnom nadzornom tijelu u Republici Hrvatskoj:
+          </p>
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 mt-2">
+            <p><strong>Agencija za zaštitu osobnih podataka (AZOP)</strong></p>
+            <p>Selska cesta 136, 10000 Zagreb, Hrvatska</p>
+            <p>Tel: +385 (0)1 4609-000</p>
+            <p>E-mail: <a href="mailto:azop@azop.hr" class="text-primary-600 hover:underline">azop@azop.hr</a></p>
+            <p>Web: <a href="https://azop.hr" class="text-primary-600 hover:underline">azop.hr</a></p>
+          </div>
+          <p class="mt-3">
+            Prije podnošenja pritužbe AZOP-u ispitanike se potiče da pokušaju pitanje riješiti izravnim
+            kontaktom s Voditeljem obrade (HM Digital za podatke iz čl. 2.2; Korisnik/klinika za podatke
+            pacijenata).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">12. Automatizirano donošenje odluka i profiliranje</h2>
+          <p>
+            HM Digital <strong>ne donosi</strong> odluke koje proizvode pravne učinke prema ispitanicima ili
+            na njih značajno utječu isključivo temeljem automatizirane obrade (čl. 22. GDPR-a). Usluga
+            može prikazivati preporuke, upozorenja i provjere (npr. interakcije lijekova, upozorenja na
+            alergije) koje predstavljaju pomoć zdravstvenom radniku, ali konačnu odluku u svakom pojedinom
+            slučaju donosi ovlašteni zdravstveni radnik.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">13. Djeca</h2>
+          <p>
+            Usluga se isključivo obraća poslovnim subjektima (ordinacije, poliklinike) i njihovim djelatnicima;
+            nije namijenjena fizičkim osobama mlađim od 16 godina. Podaci maloljetnih pacijenata obrađuju se
+            u okviru pružanja zdravstvene skrbi pod odgovornošću Korisnika kao voditelja obrade i roditelja
+            ili zakonskih zastupnika djeteta u skladu s mjerodavnim propisima.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">14. Izmjene Pravila privatnosti</h2>
+          <p>
+            HM Digital zadržava pravo izmjene ovih Pravila radi usklađivanja s izmjenama propisa, sudskom praksom
+            AZOP-a i Europskog odbora za zaštitu podataka, novim funkcionalnostima Usluge ili novim
+            podizvršiteljima obrade.
+          </p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>O <strong>materijalnim izmjenama</strong> obavijest će biti dostavljena Korisniku e-mailom i/ili porukom u aplikaciji najmanje <strong>30 dana prije</strong> stupanja izmjena na snagu.</li>
+            <li>Manje izmjene (tipografske ispravke, pojašnjenja, ažuriranje kontakata) stupaju na snagu objavom nove verzije.</li>
+            <li>Aktualna verzija uvijek je dostupna na <a href="/medical/pravila-privatnosti/" class="text-primary-600 hover:underline">hmdigital.hr/medical/pravila-privatnosti</a>.</li>
+          </ul>
+        </section>
+
+        <section class="pt-6 border-t border-slate-200">
+          <p class="text-sm text-slate-500">
+            Za pitanja vezana uz ovu Politiku privatnosti ili za ostvarivanje prava iz GDPR-a obratite se na
+            <a href="mailto:medical@hmdigital.hr" class="text-primary-600 hover:underline">medical@hmdigital.hr</a>.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</Layout>

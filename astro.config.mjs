@@ -17,7 +17,9 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/uspjeh') && !page.includes('/en/success') &&
         !page.includes('/za-vas') && !page.includes('/en/for-you') &&
-        !page.includes('/demo/'),
+        !page.includes('/demo/') &&
+        !page.includes('/medical/pravila-privatnosti') &&
+        !page.includes('/medical/uvjeti-koristenja'),
     })
   ],
   i18n: {

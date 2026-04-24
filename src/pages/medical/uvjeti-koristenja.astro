@@ -1,0 +1,471 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'Uvjeti korištenja — HM Digital Medical';
+const description = 'Uvjeti korištenja cloud sustava HM Digital Medical za privatne ordinacije i poliklinike u Republici Hrvatskoj.';
+const lastUpdated = '24.04.2026.';
+const version = '2026-04-24';
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical="/medical/uvjeti-koristenja/"
+  noindex={true}
+>
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="container-custom max-w-4xl">
+      <div class="mb-8 text-sm text-slate-500">
+        <p>Verzija: <span class="font-mono">{version}</span></p>
+        <p>Datum zadnje izmjene: {lastUpdated}</p>
+        <p>Datum stupanja na snagu: {lastUpdated}</p>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Uvjeti korištenja</h1>
+
+      <p class="text-slate-700 mb-8 leading-relaxed">
+        Ovi Uvjeti korištenja (dalje: <strong>„Uvjeti"</strong>) uređuju odnos između pružatelja usluge
+        <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong>, vl. Hrvoje Matošević (dalje: <strong>„Pružatelj"</strong>)
+        i pravnih ili fizičkih osoba koje se registriraju za korištenje cloud sustava
+        <em>HM Digital Medical</em> (dalje: <strong>„Usluga"</strong>). Korištenjem Usluge Korisnik potvrđuje
+        da je u cijelosti pročitao, razumio i prihvatio ove Uvjete, kao i
+        <a href="/medical/pravila-privatnosti/" class="text-primary-600 hover:underline">Pravila privatnosti</a>.
+      </p>
+
+      <div class="space-y-8 text-slate-700 leading-relaxed">
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">1. Pružatelj usluge</h2>
+          <p class="mb-2">Pružatelj Usluge je:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Naziv: <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong></li>
+            <li>Vlasnik: Hrvoje Matošević</li>
+            <li>Sjedište: Mašić 58, 35400 Mašić, Republika Hrvatska</li>
+            <li>OIB: 15881939647</li>
+            <li>MBS: 99053861</li>
+            <li>Datum osnivanja: 01.07.2025.</li>
+            <li>Kontakt (uključujući pravne obavijesti i pitanja vezana uz zaštitu podataka): <a href="mailto:medical@hmdigital.hr" class="text-primary-600 hover:underline">medical@hmdigital.hr</a></li>
+            <li>Telefon: 097/7120-800</li>
+            <li>Web: <a href="https://hmdigital.hr" class="text-primary-600 hover:underline">hmdigital.hr</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">2. Definicije</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Usluga</strong> — cloud aplikacija HM Digital Medical za upravljanje pacijentima, terminima, medicinskom dokumentacijom te integracija s CEZIH sustavom, dostupna putem mrežnog preglednika na domeni <em>app.hmdigital.hr</em>, uključujući lokalnu komponentu (Local Agent) za čitanje AKD kartice i VPN pristup CEZIH-u.</li>
+            <li><strong>Korisnik</strong> — pravna osoba, obrt ili druga samostalna djelatnost (najčešće privatna zdravstvena ustanova — ordinacija, poliklinika, dom zdravlja) koja je sklopila ugovor o korištenju Usluge s Pružateljem.</li>
+            <li><strong>Krajnji korisnik</strong> — fizička osoba kojoj je Korisnik dodijelio korisnički račun unutar svog Tenanta (npr. liječnik, medicinska sestra, administrativno osoblje).</li>
+            <li><strong>Tenant</strong> — tehnički izolirana instanca podataka Korisnika unutar Usluge.</li>
+            <li><strong>Plan</strong> — odabrani pretplatnički paket Usluge (Solo, Poliklinika, Poliklinika+) s definiranim ograničenjima broja Krajnjih korisnika i opsegom funkcionalnosti.</li>
+            <li><strong>Pokusno razdoblje</strong> — besplatno razdoblje korištenja Usluge u trajanju od 14 dana od registracije.</li>
+            <li><strong>CEZIH</strong> — Centralni zdravstveni informacijski sustav Republike Hrvatske (pružatelj: Hrvatski zavod za zdravstveno osiguranje / Hrvatski zavod za javno zdravstvo / Ministarstvo zdravstva RH).</li>
+            <li><strong>Certilia</strong> — usluga udaljenog potpisivanja putem mobilne aplikacije koju pruža AKD d.o.o.</li>
+            <li><strong>Zakon o podacima u zdravstvu</strong> — Zakon o podacima i informacijama u zdravstvu (NN 14/2019, s pripadajućim izmjenama; dalje: <em>ZPIZ</em>).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">3. Prihvat Uvjeta</h2>
+          <p class="mb-2">
+            Korištenjem Usluge — uključujući registraciju novog računa, prijavu (login) postojećeg računa,
+            označavanje potvrdnog okvira prilikom registracije ili prijave, ili bilo kakvu drugu uporabu Usluge —
+            Korisnik i svaki Krajnji korisnik potvrđuju da:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>su punoljetni i poslovno sposobni,</li>
+            <li>imaju ovlast zastupati Korisnika (ako je Korisnik pravna osoba ili obrt),</li>
+            <li>su pročitali, razumjeli i prihvatili ove Uvjete u cijelosti,</li>
+            <li>su pročitali, razumjeli i prihvatili Pravila privatnosti.</li>
+          </ul>
+          <p class="mt-3">
+            Ako Korisnik ne prihvaća bilo koju odredbu ovih Uvjeta, dužan je odmah prestati s korištenjem Usluge.
+            Nastavkom korištenja nakon izmjena Uvjeta (vidjeti čl. 14) Korisnik prihvaća nove Uvjete.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">4. Opis Usluge</h2>
+          <p class="mb-3">
+            Usluga je programski alat koji Korisniku omogućuje vođenje administrativne i medicinske evidencije
+            pacijenata, zakazivanje termina, slanje nalaza i recepata u CEZIH, te komunikaciju s CEZIH-ovim
+            modulima (IHE MHD, PDQm, SVCM, mCSD, PMIR, QEDm) putem FHIR R4 protokola.
+          </p>
+          <p class="mb-3 bg-amber-50 border-l-4 border-amber-500 p-4">
+            <strong>Važno — Usluga nije medicinski uređaj.</strong> Usluga nije medicinski proizvod u smislu
+            Uredbe (EU) 2017/745 (MDR) niti zamjenjuje medicinsku prosudbu, dijagnozu ili terapijsku odluku
+            zdravstvenog radnika. Sve medicinske odluke donosi isključivo ovlašteni zdravstveni radnik Korisnika
+            na temelju svog stručnog znanja, savjesti i propisa kojima je regulirana njegova djelatnost.
+            Pružatelj ne snosi odgovornost za kliničke posljedice takvih odluka, niti za točnost, potpunost
+            ili pravovremenost podataka koje je Korisnik ili Krajnji korisnik unio u sustav.
+          </p>
+          <p>
+            Usluga je dizajnirana i održavana kao alat za elektroničku razmjenu zdravstvenih podataka u skladu
+            sa ZPIZ-om i tehničkim specifikacijama CEZIH-a. Pružatelj ulaže razumne napore da Usluga ispunjava
+            tehničke uvjete za ispunjavanje obveza Korisnika prema CEZIH-u, ali ne jamči da će svaka pojedina
+            CEZIH transakcija biti uspješna jer to ovisi i o infrastrukturi i politikama treće strane (CEZIH/HZZO).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">5. Pokusno razdoblje</h2>
+          <p class="mb-2">
+            Registracijom novog računa Korisnik dobiva pravo besplatnog korištenja Usluge u trajanju od
+            <strong>14 dana</strong> od datuma registracije.
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Tijekom Pokusnog razdoblja Korisnik ima pristup funkcionalnostima odabranog plana, osim ako je drukčije navedeno.</li>
+            <li>Istekom Pokusnog razdoblja, ako Korisnik nije prešao na plaćeni plan, pristup Usluzi se blokira.</li>
+            <li>Podaci Korisnika čuvaju se <strong>30 dana</strong> nakon isteka Pokusnog razdoblja kako bi Korisnik imao mogućnost nastavka korištenja uplatom ili preuzimanja svojih podataka, nakon čega se mogu brisati u skladu s politikom zadržavanja (vidjeti čl. 13).</li>
+            <li>Pružatelj zadržava pravo ukinuti ili ograničiti Pokusno razdoblje u slučaju zloupotrebe, stvaranja više probnih računa istog subjekta, automatskog generiranja računa ili drugog ponašanja koje nije u skladu s ovim Uvjetima.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">6. Planovi, cijene i plaćanje</h2>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.1. Važeći cjenik</h3>
+          <p>
+            Aktualne cijene Usluge, opis Planova i njihovih ograničenja objavljeni su na stranici
+            <a href="https://hmdigital.hr/medicinski-softver/" class="text-primary-600 hover:underline">hmdigital.hr/medicinski-softver</a>
+            ili u pisanoj ponudi koju Pružatelj dostavlja Korisniku. Sve cijene izražene su u EUR i, osim ako
+            je izrijekom drukčije navedeno, ne sadrže PDV. PDV se obračunava u skladu s važećim propisima.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.2. Promotivne cijene</h3>
+          <p class="mb-2 bg-primary-50 border-l-4 border-primary-500 p-4">
+            Pružatelj povremeno nudi promotivne (snižene) cijene vezane uz određeno vremensko razdoblje,
+            određenu kampanju ili određeni Plan (primjerice: Solo plan po cijeni od 49 EUR/mj do 01.05.2026.).
+            Promotivne cijene su <strong>vremenski ograničene</strong> i istekom promotivnog razdoblja Plan
+            Korisnika automatski prelazi na redovnu cijenu objavljenu u važećem cjeniku, bez potrebe za
+            dodatnom suglasnošću Korisnika i bez prethodne posebne obavijesti osim opće objave na web stranici
+            Pružatelja i/ili e-maila prije isteka promotivnog razdoblja. Prihvatom ovih Uvjeta Korisnik izričito
+            prihvaća automatski prijelaz na redovnu cijenu po isteku promotivnog razdoblja.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.3. Pravo Pružatelja na promjenu cijena</h3>
+          <p class="mb-2 bg-primary-50 border-l-4 border-primary-500 p-4">
+            Pružatelj <strong>zadržava pravo jednostrane promjene cijena</strong> Usluge (mjesečnih ili godišnjih
+            pretplata, jednokratnih naknada za onboarding, dodatnih modula) iz tržišnih i poslovnih razloga,
+            uz prethodnu obavijest Korisniku putem elektroničke pošte i/ili obavijesti unutar aplikacije,
+            <strong>najmanje 30 dana prije stupanja na snagu nove cijene</strong>.
+          </p>
+          <p class="mb-2">Razlozi za promjenu cijena uključuju (ali nisu ograničeni na):</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>inflaciju i promjenu potrošačkih cijena u Republici Hrvatskoj ili Europskoj uniji,</li>
+            <li>promjenu troškova infrastrukture (hosting, energija, pohrana, mreža),</li>
+            <li>promjenu troškova ili uvjeta integracije s CEZIH-om, HZZO-om, HZJZ-om ili drugim državnim sustavima,</li>
+            <li>promjenu troškova certificiranja, revizija, sigurnosnih mjera ili pravne usklađenosti,</li>
+            <li>promjenu troškova podizvođača i subprocesora (uključujući pružatelja usluge udaljenog potpisivanja, pružatelja smart-card certifikata, pružatelja platnih usluga),</li>
+            <li>tečajne razlike,</li>
+            <li>regulatorne promjene (zakonodavne ili podzakonske) koje utječu na cijenu, opseg ili način pružanja Usluge,</li>
+            <li>značajno proširenje funkcionalnosti ili obujma Usluge,</li>
+            <li>tržišne razloge uključujući promjenu konkurentskog okruženja.</li>
+          </ul>
+          <p class="mt-2">
+            Ako Korisnik ne prihvaća novu cijenu, ima pravo raskinuti ugovor bez naknade najkasnije do dana
+            stupanja nove cijene na snagu, dostavom pisane obavijesti (e-mail dostatan) Pružatelju. Ako Korisnik
+            ne dostavi takvu obavijest i nastavi koristiti Uslugu nakon stupanja nove cijene na snagu,
+            smatra se da je prihvatio novu cijenu.
+          </p>
+          <p class="mt-2">
+            Navedeno pravo Pružatelja na jednostranu promjenu cijene predstavlja bitni sastavni dio ugovornog
+            odnosa s Korisnikom i Korisnik ga prihvaća prihvatom ovih Uvjeta.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.4. Onboarding (jednokratne naknade)</h3>
+          <p>
+            Opcionalne usluge uvođenja u sustav (tzv. <em>onboarding</em>), migracije podataka, edukacije i
+            konfiguracije naplaćuju se jednokratno prema dogovorenoj ponudi. Jednokratne naknade nisu povratne
+            nakon pružanja usluge, osim u slučaju da Pružatelj nije izvršio ugovorenu uslugu.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.5. Izdavanje računa i plaćanje</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Pretplata se naplaćuje unaprijed, na mjesečnoj ili godišnjoj osnovi, prema odabiru Korisnika.</li>
+            <li>Pružatelj izdaje račun elektronički ili u pisanom obliku, u skladu s propisima RH.</li>
+            <li>Rok plaćanja naznačen je na računu (standardno 8–15 dana od izdavanja), osim ako je drukčije dogovoreno u pisanom obliku.</li>
+            <li>Korisnik je dužan podmiriti sve javne davatelje (PDV i slično) u skladu s mjerodavnim propisima.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.6. Kašnjenje u plaćanju</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Kašnjenjem u plaćanju dužem od <strong>15 dana</strong> od datuma dospijeća Pružatelj ima pravo, uz prethodnu opomenu, <strong>privremeno obustaviti pristup Usluzi</strong> (čitanje i/ili pisanje) do uplate.</li>
+            <li>Na iznose u kašnjenju obračunavaju se zakonske zatezne kamate.</li>
+            <li>Kašnjenjem dužim od <strong>60 dana</strong> Pružatelj ima pravo jednostrano raskinuti ugovor i pristupiti postupku zadržavanja i brisanja podataka u skladu s čl. 13. ovih Uvjeta i važećim propisima o čuvanju zdravstvene dokumentacije.</li>
+            <li>Obustava pristupa zbog neplaćanja ne oslobađa Korisnika obveze plaćanja dospjelih iznosa.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">6.7. Nepovratnost uplata</h3>
+          <p>
+            Uplate pretplate su <strong>nepovratne</strong>, osim ako mjerodavni zakon izrijekom drukčije ne
+            propisuje. Djelomični neiskorišteni period pretplate (npr. ako Korisnik raskine u sredini obračunskog
+            razdoblja) ne refundira se.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">7. Obveze i izjave Korisnika</h2>
+          <p class="mb-2">Korisnik se obvezuje i jamči Pružatelju da će:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>prilikom registracije dati istinite, točne i potpune podatke te ih ažurirati u slučaju promjene,</li>
+            <li>koristiti Uslugu isključivo u zakonite svrhe i u skladu s ovim Uvjetima, propisima Republike Hrvatske i pravom Europske unije,</li>
+            <li>poštivati sve propise iz područja zaštite zdravstvenih podataka, uključujući Opću uredbu o zaštiti podataka (GDPR), ZPIZ, Zakon o zdravstvenoj zaštiti, Zakon o liječništvu, Zakon o medicinsko-biokemijskoj djelatnosti, Zakon o dentalnoj medicini te druge sektorske propise,</li>
+            <li>u odnosu na podatke o pacijentima koje unosi u Uslugu djelovati kao <strong>voditelj obrade (controller)</strong> u smislu GDPR-a i snositi punu odgovornost za postojanje pravne osnove, svrhu obrade, informiranje ispitanika i ispunjavanje zahtjeva pacijenata za ostvarivanje prava iz GDPR-a,</li>
+            <li>čuvati vjerodajnice za prijavu, PIN AKD kartice i pristup Certilia aplikaciji kao stroge povjerljive podatke i ne dijeliti ih s trećim osobama,</li>
+            <li>osigurati da svaki Krajnji korisnik posjeduje vlastiti korisnički račun (zabranjeno je dijeljenje računa),</li>
+            <li>poduzeti razumne sigurnosne mjere (zaključavanje računala, ograničavanje fizičkog pristupa, antivirusne mjere),</li>
+            <li>odmah obavijestiti Pružatelja o sumnji na neovlašten pristup ili povredu sigurnosti podataka u Tenantu Korisnika,</li>
+            <li>odgovarati za sve radnje i propuste svojih Krajnjih korisnika kao i za vlastite.</li>
+          </ul>
+          <p class="mt-3"><strong>Zabranjeno je osobito:</strong></p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>reverse engineering, dekompiliranje, rastavljanje, pokušaj izvlačenja izvornog koda ili poslovne logike Usluge,</li>
+            <li>neovlašteno penetracijsko testiranje, sigurnosno ispitivanje ili skeniranje bez prethodne pisane suglasnosti Pružatelja,</li>
+            <li>automatizirano scrapiranje, kopiranje ili indeksiranje sadržaja,</li>
+            <li>preprodaja, sublicenciranje ili iznajmljivanje Usluge trećima bez pisane suglasnosti Pružatelja,</li>
+            <li>unošenje zlonamjernog koda, virusa, pokušaj preopterećenja ili onemogućavanja Usluge (DoS),</li>
+            <li>korištenje Usluge za nezakonite, prijevarne ili diskriminatorne svrhe.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">8. Intelektualno vlasništvo</h2>
+          <p class="mb-2">
+            Sva autorska prava, prava intelektualnog vlasništva, zaštićeni znakovi, dizajn, izvorni kod, baze
+            podataka (struktura), logotipi, brand i know-how vezani uz Uslugu isključivo su vlasništvo
+            Pružatelja, odnosno njegovih davatelja licencije.
+          </p>
+          <p class="mb-2">
+            Prihvatom ovih Uvjeta Pružatelj Korisniku daje <strong>ograničenu, neprenosivu, neisključivu i opozivu
+            licenciju</strong> za korištenje Usluge tijekom trajanja ugovora, isključivo za interne poslovne
+            potrebe Korisnika (vođenje zdravstvene evidencije i CEZIH komunikacije).
+          </p>
+          <p class="mb-2">
+            <strong>Podaci o pacijentima i medicinski podaci</strong> koje je Korisnik unio u Uslugu ostaju
+            u vlasništvu Korisnika (odnosno, u skladu s GDPR-om, prava ostvaruju ispitanici — pacijenti).
+            Pružatelj obrađuje te podatke isključivo u ulozi izvršitelja obrade (processor) prema uputi
+            Korisnika i u skladu s Pravilima privatnosti.
+          </p>
+          <p>
+            Povratne informacije, prijedlozi i komentari koje Korisnik ili Krajnji korisnik dobrovoljno dostavi
+            Pružatelju Pružatelj može koristiti bez ograničenja za unapređenje Usluge, bez obveze plaćanja
+            naknade ili priznanja autorstva.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">9. Dostupnost Usluge i održavanje</h2>
+          <p class="mb-2">
+            Pružatelj ulaže razumne napore da osigura dostupnost Usluge na razini od <strong>99,5% mjesečno</strong>,
+            mjereno godišnjim prosjekom, isključujući iz izračuna dostupnosti:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>planirano održavanje (najavljeno najmanje 24 sata unaprijed),</li>
+            <li>hitno sigurnosno održavanje,</li>
+            <li>prekide uzrokovane radom ili nedostupnošću CEZIH-a, HZZO-a, HZJZ-a ili drugih državnih sustava,</li>
+            <li>prekide uzrokovane Certilia uslugom udaljenog potpisivanja ili AKD infrastrukturom,</li>
+            <li>prekide kod pružatelja infrastrukture (hosting, DNS, CDN, internet operater),</li>
+            <li>slučajeve više sile (čl. 12).</li>
+          </ul>
+          <p class="mt-2">
+            Ako ugovorom između stranaka nije izrijekom ugovoreno drukčije (npr. SLA s kreditima),
+            <strong>Pružatelj ne daje financijsku kompenzaciju</strong> zbog prekida ili smanjene dostupnosti
+            Usluge. Korisnik prihvaća da je cilj od 99,5% najbolji napor (<em>best-effort</em>) i ne predstavlja
+            ugovornu garanciju koja stvara pravo na naknadu.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">10. Ograničenje odgovornosti</h2>
+          <p class="mb-2 bg-amber-50 border-l-4 border-amber-500 p-4">
+            Odredbe ovog članka primjenjuju se u najvećem opsegu dopuštenom mjerodavnim pravom Republike
+            Hrvatske, uključujući Zakon o obveznim odnosima (ZOO) i GDPR. Ograničenja ne isključuju odgovornost
+            za namjeru, krajnju nepažnju ili drugu odgovornost koja se prema prisilnim propisima ne može
+            isključiti.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">10.1. Isključenje odgovornosti</h3>
+          <p>Pružatelj <strong>ne odgovara</strong> za:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>medicinske odluke, dijagnoze, propuste ili stručne greške zdravstvenih radnika Korisnika — za navedeno isključivo odgovara Korisnik, odnosno njegov zdravstveni radnik u skladu s propisima o zdravstvenoj djelatnosti,</li>
+            <li>točnost, potpunost i pravovremenost podataka koje je Korisnik ili Krajnji korisnik unio u Uslugu,</li>
+            <li>posljedice odluka koje su Korisnik ili treće osobe donijele na temelju podataka ili prikaza u Usluzi,</li>
+            <li>nedostupnost, pogreške ili odbijanja CEZIH-a, HZZO-a, HZJZ-a, Certilia ili drugih treće strane,</li>
+            <li>prekide uslijed nedostupnosti pružatelja infrastrukture (hosting, VPN, DNS, internet),</li>
+            <li>gubitak podataka uzrokovan radnjama ili propustima Korisnika (npr. brisanje od strane vlastitog osoblja, neovlašteni pristup uz pomoć vjerodajnica Korisnika),</li>
+            <li>propuštenu korist, gubitak dobiti, gubitak prihoda, gubitak ugleda, gubitak poslovnih prilika, gubitak podataka (osim onog koji je nastao krajnjom nepažnjom ili namjerom Pružatelja),</li>
+            <li>neizravnu, slučajnu, posljedičnu ili posebnu štetu,</li>
+            <li>štetu koja je nastala zbog Korisnikovog kršenja propisa ili Uvjeta.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">10.2. Ukupno ograničenje odgovornosti</h3>
+          <p>
+            Ukupna odgovornost Pružatelja prema Korisniku, iz bilo koje pravne osnove (ugovorne, izvanugovorne,
+            na temelju povrede, GDPR-a ili bilo koje druge), po svim događajima koji se odnose na isti ugovor,
+            <strong>ograničena je na zbroj naknada koje je Korisnik platio Pružatelju za Uslugu u 12 mjeseci
+            koji neposredno prethode događaju koji je izazvao štetu</strong>.
+          </p>
+          <p class="mt-2">
+            Navedeno ograničenje predstavlja bitan element odnosa cijene i rizika pružene Usluge. Stranke
+            izrijekom potvrđuju da je ono razumno i poslovno prihvatljivo, uzimajući u obzir da je Usluga
+            pružena po cijenama koje uzimaju u obzir ovakvo ograničenje odgovornosti.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">10.3. Rok za podnošenje zahtjeva</h3>
+          <p>
+            Svaki zahtjev za naknadu štete Korisnik mora podnijeti Pružatelju u pisanom obliku najkasnije
+            u roku od <strong>12 mjeseci</strong> od trenutka kada je saznao ili morao saznati za štetu i
+            počinitelja, pod prijetnjom gubitka prava, osim ako mjerodavni propisi ne predviđaju duži prekluzivni rok.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">11. Naknada štete (indemnification) od strane Korisnika</h2>
+          <p>
+            Korisnik se obvezuje <strong>obeštetiti i braniti Pružatelja</strong> (uključujući vlasnika obrta,
+            zaposlenike i suradnike Pružatelja) od svih zahtjeva, postupaka, presuda, kazni, troškova, izdataka
+            (uključujući razumne odvjetničke troškove) i štete koje proizlaze iz ili su u vezi s:
+          </p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>Korisnikovim kršenjem ovih Uvjeta, propisa Republike Hrvatske ili prava Europske unije,</li>
+            <li>Korisnikovom povredom GDPR-a ili drugog propisa o zaštiti podataka, uključujući neovlaštenu obradu, propuštenu suglasnost ispitanika ili propuštenu obavijest o povredi,</li>
+            <li>Korisnikovom medicinskom ili drugom stručnom odgovornošću (prema pacijentima ili trećima),</li>
+            <li>zahtjevima trećih osoba (uključujući pacijenata, njihovih zastupnika, ostalih zdravstvenih subjekata, državnih tijela) uzrokovanim ponašanjem Korisnika ili njegovih Krajnjih korisnika,</li>
+            <li>netočnim ili nezakonitim podacima koje je Korisnik unio u Uslugu.</li>
+          </ul>
+          <p class="mt-2">
+            Pružatelj će Korisnika bez odgađanja obavijestiti o zahtjevu treće strane za koji traži obeštećenje
+            i omogućiti Korisniku sudjelovanje u obrani zahtjeva.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">12. Viša sila</h2>
+          <p class="mb-2">
+            Niti jedna stranka ne odgovara za neispunjenje ili zakašnjenje u ispunjenju obveza ako je ono
+            uzrokovano okolnostima više sile (<em>force majeure</em>) na koje ta stranka nije mogla utjecati.
+            U više sile osobito se ubrajaju:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>prekidi ili nedostupnost CEZIH-a, HZZO-a, HZJZ-a, ili bilo kojeg drugog državnog sustava,</li>
+            <li>zakonodavne ili podzakonske izmjene, propisi izvršne vlasti, odluke sudskih ili upravnih tijela koje utječu na pružanje Usluge,</li>
+            <li>kibernetički napadi na infrastrukturu Pružatelja ili njegovih subprocesora, DDoS napadi, <em>ransomware</em>, <em>supply chain</em> napadi,</li>
+            <li>ratovi, terorizam, nemiri, štrajkovi izvan kontrole stranke,</li>
+            <li>epidemije i pandemije, prirodne katastrofe, požari, poplave, potresi,</li>
+            <li>prekidi opskrbe električnom energijom, internetom, telekomunikacijskim mrežama,</li>
+            <li>prekidi kod pružatelja hosting usluga (Hetzner), DNS, CDN.</li>
+          </ul>
+          <p class="mt-2">
+            Stranka pogođena višom silom obavijestit će drugu stranku bez odgađanja. Ako viša sila traje duže
+            od <strong>30 dana</strong>, svaka stranka ima pravo raskinuti ugovor bez odgovornosti za štetu.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">13. Trajanje i raskid ugovora</h2>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">13.1. Trajanje</h3>
+          <p>
+            Ugovor o korištenju Usluge sklapa se na <strong>neodređeno vrijeme</strong>, uz mogućnost raskida
+            kako je navedeno u ovom članku.
+          </p>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">13.2. Redoviti raskid</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Korisnik može raskinuti ugovor u bilo kojem trenutku dostavom pisane obavijesti (e-mail na medical@hmdigital.hr dostatan) uz otkazni rok od <strong>30 dana</strong>.</li>
+            <li>Pružatelj može raskinuti ugovor s otkaznim rokom od <strong>60 dana</strong> uz pisanu obavijest, bez obveze navođenja razloga.</li>
+            <li>Već plaćena pretplata ne vraća se (vidjeti čl. 6.7), osim ako je mjerodavnim propisom izrijekom drukčije propisano.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">13.3. Izvanredni raskid od strane Pružatelja</h3>
+          <p>Pružatelj može raskinuti ugovor s trenutnim učinkom u sljedećim slučajevima:</p>
+          <ul class="list-disc pl-6 space-y-1 mt-2">
+            <li>kašnjenje u plaćanju duže od 60 dana (čl. 6.6),</li>
+            <li>materijalna povreda Uvjeta od strane Korisnika (npr. zabranjeno ponašanje iz čl. 7), koja nije otklonjena u roku od 14 dana od pisane opomene,</li>
+            <li>osnovana sumnja na zloupotrebu, prijevaru, nezakonitu uporabu Usluge ili kršenje GDPR-a,</li>
+            <li>zahtjev ili nalog nadležnog tijela (pravosudnog, regulatornog, nadzornog),</li>
+            <li>insolventnost, prestanak djelatnosti, likvidacija ili stečaj Korisnika.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-slate-900 mt-4 mb-2">13.4. Postupanje s podacima nakon raskida</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Po raskidu ugovora, Pružatelj Korisniku osigurava razdoblje od <strong>30 dana</strong> za izvoz svojih podataka (pravo prenosivosti prema GDPR-u čl. 20), osim u slučajevima izvanrednog raskida zbog ozbiljne povrede.</li>
+            <li>Nakon isteka navedenog razdoblja, podaci Korisnika se trajno brišu ili anonimiziraju, osim onih za koje Pružatelj ima zakonsku ili ugovornu obvezu zadržavanja (računovodstvena dokumentacija, revizijski zapisi, podaci potrebni radi obrane od pravnih zahtjeva).</li>
+            <li>Zdravstveni podaci za koje postoji zakonska obveza čuvanja (npr. do 10 godina prema Zakonu o zdravstvenoj zaštiti i ZPIZ-u) mogu se zadržati u enkriptiranom arhivskom obliku za razdoblje propisano zakonom, pri čemu se obrada svodi isključivo na ispunjavanje zakonskih obveza.</li>
+            <li>Pružatelj je dužan osigurati primjerenu sigurnosnu razinu za podatke i nakon raskida, sve do njihova konačnog brisanja.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">14. Izmjene Uvjeta</h2>
+          <p class="mb-2">
+            Pružatelj zadržava pravo izmjena ovih Uvjeta u bilo kojem trenutku, osobito radi usklađivanja s
+            izmjenama propisa, izmjenama Usluge, sudskom praksom ili poslovnom potrebom.
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>O <strong>materijalnim izmjenama</strong> (koje značajno mijenjaju prava i obveze) Pružatelj obavještava Korisnika putem elektroničke pošte i/ili obavijesti unutar aplikacije najmanje <strong>30 dana prije stupanja izmjena na snagu</strong>.</li>
+            <li>Ne-materijalne izmjene (pravopis, pojašnjenja, tehnički izrazi, ažuriranja kontakata) stupaju na snagu objavom nove verzije na web stranici Pružatelja.</li>
+            <li>Ako Korisnik ne prihvaća izmjene, ima pravo raskinuti ugovor bez naknade do dana stupanja izmjena na snagu. Nastavak korištenja Usluge nakon stupanja izmjena na snagu smatra se prihvatom novih Uvjeta.</li>
+            <li>Pružatelj prilikom prijave (login) može od Korisnika i Krajnjih korisnika zatražiti ponovno potvrđivanje prihvaćanja izmijenjenih Uvjeta (primjerice kroz potvrdni okvir u aplikaciji).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">15. Obrada osobnih podataka — Ugovor o obradi</h2>
+          <p class="mb-2">
+            U dijelu u kojem Pružatelj obrađuje osobne podatke u ime Korisnika (prvenstveno podatke o pacijentima
+            i njihovim zdravstvenim stanjima), Pružatelj djeluje kao <strong>izvršitelj obrade (processor)</strong>
+            u smislu čl. 28. GDPR-a, a Korisnik kao <strong>voditelj obrade (controller)</strong>.
+          </p>
+          <p class="mb-2">
+            Prihvatom ovih Uvjeta stranke sklapaju i <strong>ugovor o obradi osobnih podataka</strong> kojim
+            Pružatelj potvrđuje:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>da će osobne podatke obrađivati isključivo prema dokumentiranim uputama Korisnika i u svrhu pružanja Usluge,</li>
+            <li>da će osobe ovlaštene za obradu biti obvezane obvezom povjerljivosti,</li>
+            <li>da će poduzeti odgovarajuće tehničke i organizacijske mjere zaštite (šifriranje u prijenosu, šifrirane sigurnosne kopije, ograničenje pristupa, revizijski zapisi, višeslojna autentikacija), kako je detaljnije opisano u Pravilima privatnosti,</li>
+            <li>da za angažiranje <strong>podizvršitelja obrade (subprocessors)</strong> traži ovlaštenje Korisnika — popis trenutnih podizvršitelja nalazi se u Pravilima privatnosti, a svako dodavanje novog podizvršitelja najavljuje se Korisniku najmanje 30 dana prije, pri čemu Korisnik može opravdano prigovoriti,</li>
+            <li>da će pomagati Korisniku u ispunjavanju zahtjeva ispitanika (pristup, ispravak, brisanje, prenosivost, prigovor) tehničkim sredstvima koja Usluga omogućuje,</li>
+            <li>da će bez nepotrebnog odgađanja obavijestiti Korisnika o povredi osobnih podataka koju je utvrdio,</li>
+            <li>da će po završetku pružanja Usluge brisati ili vraćati osobne podatke Korisniku u skladu s čl. 13.4.</li>
+          </ul>
+          <p class="mt-2">
+            Korisnik jamči da je prije unošenja osobnih podataka u Uslugu osigurao pravnu osnovu obrade (čl. 6. i, gdje je primjenjivo, čl. 9. GDPR-a) te da je ispitanicima pružio sve propisane informacije.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">16. Mjerodavno pravo i rješavanje sporova</h2>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Na ove Uvjete i ugovor o korištenju Usluge isključivo se primjenjuje <strong>pravo Republike Hrvatske</strong>, uz isključenje pravila o sukobu zakona.</li>
+            <li>Stranke će sve sporove nastojati riješiti sporazumno. Prije pokretanja sudskog postupka stranka će pisanim putem obavijestiti drugu stranku o prirodi spora i zahtjevu, uz rok od najmanje <strong>30 dana</strong> za mirno rješenje.</li>
+            <li>Za sve sporove koji se ne mogu riješiti sporazumno ugovara se <strong>isključiva mjesna nadležnost stvarno nadležnog suda u Zagrebu</strong>.</li>
+            <li>Potrošač (ako bi primjena Uvjeta na određeni odnos potpala pod propise o zaštiti potrošača) zadržava sva prava propisana prisilnim propisima, uključujući pravo na izbor nadležnog suda prema svom prebivalištu gdje to propis omogućuje.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">17. Ostale odredbe</h2>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Cjelovit sporazum.</strong> Ovi Uvjeti, Pravila privatnosti i pisana ponuda/ugovor (ako postoji) čine cjelovit sporazum između stranaka u odnosu na Uslugu i zamjenjuju sve prethodne usmene ili pisane dogovore.</li>
+            <li><strong>Odvojivost.</strong> Ako bilo koja odredba ovih Uvjeta postane nevaljana, ništava ili neprovediva, ostale odredbe ostaju na snazi. Nevaljana odredba zamijenit će se odredbom koja je najbliža gospodarskoj svrsi koju su stranke namjeravale postići.</li>
+            <li><strong>Bez odricanja.</strong> Propuštanje Pružatelja da zahtijeva provedbu bilo koje odredbe ne smatra se odricanjem od prava na njezinu kasniju provedbu.</li>
+            <li><strong>Prijenos ugovora.</strong> Korisnik ne može prenijeti prava i obveze iz ugovora na treću osobu bez pisane suglasnosti Pružatelja. Pružatelj može prenijeti ugovor na povezano društvo, pravnog sljednika (npr. u slučaju pretvorbe obrta u trgovačko društvo) ili kupca djelatnosti, uz prethodnu obavijest Korisniku.</li>
+            <li><strong>Obavijesti.</strong> Sve obavijesti vezane uz ugovor dostavljaju se na e-mail adresu registriranu u računu Korisnika, odnosno na e-mail Pružatelja iz čl. 1. Pravne obavijesti smatraju se dostavljenim na dan prijema e-maila kada je tehnički zabilježeno slanje.</li>
+            <li><strong>Jezik.</strong> Ugovorni jezik je hrvatski. U slučaju prijevoda na druge jezike, hrvatska verzija je mjerodavna.</li>
+          </ul>
+        </section>
+
+        <section class="pt-6 border-t border-slate-200">
+          <p class="text-sm text-slate-500">
+            Za sva pitanja vezana uz ove Uvjete obratite se na
+            <a href="mailto:medical@hmdigital.hr" class="text-primary-600 hover:underline">medical@hmdigital.hr</a>.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</Layout>

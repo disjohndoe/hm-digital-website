@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /uspjeh
 Disallow: /en/success
+Disallow: /medical/pravila-privatnosti
+Disallow: /medical/uvjeti-koristenja
 
 Sitemap: https://hmdigital.hr/sitemap-index.xml
