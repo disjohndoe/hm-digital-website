@@ -1,0 +1,385 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/ui/Card.astro';
+import Button from '../../components/ui/Button.astro';
+import { getTranslations } from '../../i18n/ui';
+
+const locale = 'en';
+const t = getTranslations(locale);
+const g = t.cezihGuide;
+
+const siteUrl = 'https://hmdigital.hr';
+const pageUrl = `${siteUrl}/en/cezih-guide/`;
+---
+
+<Layout
+  title={g.meta.title}
+  description={g.meta.description}
+  canonical="/en/cezih-guide/"
+  type="article"
+  noindex={false}
+>
+  <Fragment slot="head">
+    <meta property="article:published_time" content={g.meta.datePublished} />
+    <meta property="article:modified_time" content={g.meta.dateModified} />
+    <meta property="article:author" content="HM Digital" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": g.hero.title,
+      "description": g.meta.description,
+      "datePublished": g.meta.datePublished,
+      "dateModified": g.meta.dateModified,
+      "inLanguage": "en",
+      "author": { "@type": "Organization", "name": "HM Digital", "url": siteUrl },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HM Digital",
+        "url": siteUrl,
+        "logo": { "@type": "ImageObject", "url": `${siteUrl}/hm-digital-logo-veliki-social.png` }
+      },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
+      "image": `${siteUrl}/hm-digital-logo-veliki-social.png`,
+      "about": ["CEZIH", "medical software", "private practices Croatia", "ePrescription", "eReferral", "eFinding"]
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": g.faq.items.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": { "@type": "Answer", "text": item.a }
+      }))
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": g.breadcrumb.home, "item": `${siteUrl}/en/` },
+        { "@type": "ListItem", "position": 2, "name": g.breadcrumb.current, "item": pageUrl }
+      ]
+    })} />
+  </Fragment>
+
+  <!-- Hero -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-slate-900 to-primary-900">
+    <div class="container-custom max-w-4xl">
+      <p class="text-xs sm:text-sm font-semibold tracking-wider text-primary-300 uppercase mb-4">
+        {g.hero.eyebrow}
+      </p>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+        {g.hero.title}
+      </h1>
+      <p class="text-lg sm:text-xl leading-relaxed text-slate-300 mb-8">
+        {g.hero.lead}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <Button href="#fast-track" variant="primary" size="lg">
+          {g.hero.ctaPrimary}
+        </Button>
+        <Button href="#faq" variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
+          {g.hero.ctaSecondary}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TL;DR -->
+  <section class="py-12 lg:py-16 bg-amber-50 border-b border-amber-200">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.tldr.title}</h2>
+      <ul class="space-y-3">
+        {g.tldr.points.map((p) => (
+          <li class="flex gap-3 text-slate-700 leading-relaxed">
+            <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>{p}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- After Deadline -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.afterDeadline.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">{g.afterDeadline.body}</p>
+      <p class="text-slate-700 leading-relaxed mb-8">{g.afterDeadline.bodyExtra}</p>
+      <h3 class="text-xl font-semibold text-slate-900 mb-4">{g.afterDeadline.whoTitle}</h3>
+      <ul class="space-y-2">
+        {g.afterDeadline.whoItems.map((item) => (
+          <li class="flex gap-3 text-slate-700">
+            <svg class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Penalties -->
+  <section class="py-16 lg:py-20 bg-slate-50">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.penalties.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-6">
+        {g.penalties.intro}
+        {' '}<a href="https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html" target="_blank" rel="external noopener" class="text-primary-700 underline hover:text-primary-800">Read the law (Croatian)</a>.
+      </p>
+      <Card padding="lg" class="bg-red-50 border-red-200 mb-8">
+        <div class="text-3xl sm:text-4xl font-bold text-red-700 mb-2">{g.penalties.fineAmount}</div>
+        <p class="text-slate-700 text-sm">{g.penalties.fineNote}</p>
+      </Card>
+      <h3 class="text-xl font-semibold text-slate-900 mb-4">{g.penalties.consequencesTitle}</h3>
+      <ul class="space-y-2 mb-8">
+        {g.penalties.consequences.map((item) => (
+          <li class="flex gap-3 text-slate-700">
+            <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="text-slate-700 leading-relaxed bg-white border-l-4 border-primary-500 p-4 italic">
+        {g.penalties.callout}
+      </p>
+    </div>
+  </section>
+
+  <!-- Exchange Required -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.exchangeRequired.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-8">
+        {g.exchangeRequired.intro}
+        {' '}Detailed technical guidance is published in the <a href="https://www.cezih.hr/G2/Sto_sve_treba.pdf" target="_blank" rel="external noopener" class="text-primary-700 underline hover:text-primary-800">official CEZIH onboarding PDF</a>.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+        {g.exchangeRequired.items.map((item) => (
+          <Card padding="lg">
+            <h3 class="text-lg font-semibold text-slate-900 mb-3">{item.title}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+          </Card>
+        ))}
+      </div>
+      <h3 class="text-xl font-semibold text-slate-900 mb-3">{g.exchangeRequired.whyTitle}</h3>
+      <p class="text-slate-700 leading-relaxed">{g.exchangeRequired.why}</p>
+    </div>
+  </section>
+
+  <!-- Definition -->
+  <section class="py-16 lg:py-20 bg-slate-50">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.definition.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">{g.definition.body1}</p>
+      <p class="text-slate-700 leading-relaxed mb-6">{g.definition.body2}</p>
+      <p>
+        <a href={g.definition.sourceLinkUrl} target="_blank" rel="external noopener" class="inline-flex items-center gap-2 text-primary-700 font-medium hover:text-primary-800">
+          {g.definition.sourceLinkText}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Modules -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.modules.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-8">{g.modules.intro}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        {g.modules.items.map((item) => (
+          <Card padding="lg">
+            <h3 class="text-lg font-semibold text-primary-700 mb-3">{item.title}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Access requirements + signing modes -->
+  <section class="py-16 lg:py-20 bg-slate-50">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.certilia.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-8">{g.certilia.intro}</p>
+
+      <Card padding="lg" class="mb-10 bg-white border-2 border-amber-200">
+        <h3 class="text-lg font-semibold text-slate-900 mb-4">{g.certilia.accessTitle}</h3>
+        <ul class="space-y-2">
+          {g.certilia.accessItems.map((item) => (
+            <li class="flex gap-3 text-slate-700 text-sm">
+              <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </Card>
+
+      <h3 class="text-xl font-semibold text-slate-900 mb-4">{g.certilia.signingTitle}</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+        <Card padding="lg">
+          <h4 class="text-lg font-semibold text-slate-900 mb-3">{g.certilia.cardTitle}</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">{g.certilia.cardDesc}</p>
+        </Card>
+        <Card padding="lg">
+          <h4 class="text-lg font-semibold text-slate-900 mb-3">{g.certilia.certiliaTitle}</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">{g.certilia.certiliaDesc}</p>
+        </Card>
+      </div>
+      <p class="text-slate-700 text-sm bg-primary-50 border-l-4 border-primary-500 p-4 mb-10">
+        {g.certilia.bothModesNote}
+      </p>
+
+      <h3 class="text-xl font-semibold text-slate-900 mb-4">{g.certilia.tipTitle}</h3>
+      <ul class="space-y-2">
+        {g.certilia.tipItems.map((item) => (
+          <li class="flex gap-3 text-slate-700">
+            <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Cloud vs Local -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.cloudVsLocal.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-8">{g.cloudVsLocal.intro}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+        <Card padding="lg" class="border-2 border-primary-200">
+          <h3 class="text-lg font-semibold text-primary-700 mb-4">{g.cloudVsLocal.cloudTitle}</h3>
+          <ul class="space-y-2">
+            {g.cloudVsLocal.cloudPros.map((item) => (
+              <li class="flex gap-2 text-sm text-slate-700">
+                <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+        <Card padding="lg">
+          <h3 class="text-lg font-semibold text-slate-700 mb-4">{g.cloudVsLocal.localTitle}</h3>
+          <ul class="space-y-2">
+            {g.cloudVsLocal.localCons.map((item) => (
+              <li class="flex gap-2 text-sm text-slate-600">
+                <svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </div>
+      <p class="text-slate-700 leading-relaxed bg-primary-50 border-l-4 border-primary-500 p-4">
+        {g.cloudVsLocal.callout} See our <a href="/en/medical-software" class="text-primary-700 font-semibold underline hover:text-primary-800">cloud CEZIH software</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Fast Track -->
+  <section class="py-16 lg:py-20 bg-slate-50" id="fast-track">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.fastTrack.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-10">{g.fastTrack.intro}</p>
+      <ol class="space-y-6">
+        {g.fastTrack.steps.map((step) => (
+          <li class="flex gap-5">
+            <div class="shrink-0 w-10 h-10 rounded-full bg-primary-600 text-white font-bold flex items-center justify-center">
+              {step.n}
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">{step.title}</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <div class="mt-10 text-center">
+        <Button href={g.fastTrack.ctaHref} variant="primary" size="lg">
+          {g.fastTrack.cta}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Criteria -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.criteria.title}</h2>
+      <p class="text-slate-700 leading-relaxed mb-10">
+        {g.criteria.intro}
+        {' '}Check the list of certified solutions on the <a href="https://www.cezih.hr/" target="_blank" rel="external noopener" class="text-primary-700 underline hover:text-primary-800">official CEZIH website</a>.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {g.criteria.items.map((item) => (
+          <Card padding="lg">
+            <div class="flex gap-4">
+              <div class="shrink-0 w-8 h-8 rounded-full bg-primary-100 text-primary-700 font-bold text-sm flex items-center justify-center">
+                {item.n}
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-slate-900 mb-1">{item.title}</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 lg:py-24 bg-slate-50" id="faq">
+    <div class="container-custom max-w-3xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">{g.faq.title}</h2>
+      <div class="space-y-3">
+        {g.faq.items.map((item) => (
+          <details class="group border border-slate-200 rounded-lg bg-white">
+            <summary class="flex items-center justify-between cursor-pointer p-4 sm:p-5 font-medium text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
+              {item.q}
+              <svg class="w-5 h-5 text-slate-400 shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-4 sm:px-5 pb-4 sm:pb-5 text-slate-600 text-sm leading-relaxed">
+              {item.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-24 bg-primary-600">
+    <div class="container-custom max-w-3xl text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">{g.cta.title}</h2>
+      <p class="text-lg text-primary-100 leading-relaxed mb-8">{g.cta.body}</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href={g.cta.ctaPrimaryHref} variant="primary" size="lg" class="!bg-white !text-primary-700 hover:!bg-primary-50">
+          {g.cta.ctaPrimary}
+        </Button>
+        <Button href={g.cta.ctaSecondaryHref} variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
+          {g.cta.ctaSecondary}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="py-12 lg:py-16 bg-white border-t border-slate-200">
+    <div class="container-custom max-w-3xl">
+      <h2 class="text-lg font-semibold text-slate-900 mb-4">{g.sources.title}</h2>
+      <p class="text-xs text-slate-500 mb-4 italic">{g.sources.disclaimer}</p>
+      <ul class="space-y-2 text-sm">
+        {g.sources.items.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="external noopener" class="text-primary-700 hover:text-primary-800 underline">
+              {s.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>

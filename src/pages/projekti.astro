@@ -43,9 +43,14 @@ const t = getTranslations(locale);
             <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">TypeScript</span>
             <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">PostgreSQL</span>
           </div>
-          <Button href="/medicinski-softver" variant="outline" size="sm" class="w-full sm:w-auto">
-            {t.projects.learnMore}
-          </Button>
+          <div class="flex flex-col sm:flex-row gap-2">
+            <Button href="/medicinski-softver" variant="primary" size="sm" class="w-full sm:w-auto">
+              {t.projects.learnMore}
+            </Button>
+            <Button href="/cezih-vodic" variant="outline" size="sm" class="w-full sm:w-auto">
+              CEZIH vodič
+            </Button>
+          </div>
         </div>
 
         <!-- Digitalni Ured -->

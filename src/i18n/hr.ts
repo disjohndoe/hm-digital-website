@@ -1042,6 +1042,294 @@ export const hr = {
       decline: 'Odbaci',
       save: 'Spremi postavke'
     }
+  },
+  cezihGuide: {
+    meta: {
+      title: 'CEZIH za privatne ordinacije: što napraviti nakon roka 1.5.2026 (vodič)',
+      description: 'Rok za priključenje na CEZIH istekao je 1. svibnja 2026. Saznajte što sad: kazne do €13.200, što se točno mora razmjenjivati, i kako se najbrže uskladiti — vodič za privatne ordinacije, poliklinike i bolnice.',
+      datePublished: '2026-05-10',
+      dateModified: '2026-05-10'
+    },
+    breadcrumb: {
+      home: 'Naslovnica',
+      current: 'CEZIH vodič'
+    },
+    hero: {
+      eyebrow: 'Ažurirano · svibanj 2026 · Post-rok izdanje',
+      title: 'CEZIH za privatne ordinacije: što napraviti nakon roka 1.5.2026',
+      lead: 'Rok za priključenje privatnih zdravstvenih ustanova na Centralni zdravstveni informacijski sustav (CEZIH) istekao je 1. svibnja 2026. Ovaj vodič objašnjava što obveza zapravo znači, koje kazne prijete neusklađenima, i koji je najbrži put do usklađenosti za ordinacije koje još nisu spojene.',
+      ctaPrimary: 'Najbrži put do usklađenosti',
+      ctaSecondary: 'Pročitajte FAQ'
+    },
+    tldr: {
+      title: 'U 60 sekundi',
+      points: [
+        'Rok za razmjenu podataka s CEZIH-om istekao je početkom svibnja 2026. — i za neugovorne pružatelje, i za ugovorne pružatelje (za usluge koje pružaju privatno).',
+        'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) — i osobno za nositelje ordinacija.',
+        'Razmjenjuju se ambulantni izvještaji, specijalistički nalazi i otpusna pisma.',
+        'Najbrži put do usklađenosti = cloud rješenje. Bez instalacije, bez servera, bez čekanja na informatičara.',
+        'Prvi koraci ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet) i kvalificirani certifikat (Certilia/AKD) — ova dva idu paralelno.'
+      ]
+    },
+    afterDeadline: {
+      title: 'Što se promijenilo početkom svibnja 2026.',
+      body: 'Prema službenoj obavijesti CEZIH-a (12.03.2026), svi pružatelji zdravstvene zaštite koji nisu u ugovornom odnosu s HZZO-om bili su upućeni započeti razmjenu putem CEZIH-a najkasnije do početka svibnja 2026. Istovremeno, pružatelji koji jesu u ugovornom odnosu s HZZO-om i već razmjenjuju podatke putem CEZIH-a bili su upućeni započeti razmjenu i za usluge koje pružaju privatno — u istom roku.',
+      bodyExtra: 'To znači da ustanove koje još nisu uspostavile sigurnu razmjenu podataka više nisu u "fazi pripreme" — od svibnja 2026. nalaze se u prekršajnom riziku. Napomena: certifikacija programskih rješenja za ovu namjenu (osobito za neugovorne pružatelje) bila je u tijeku u ožujku 2026. — preporučujemo provjeru aktualnog popisa ovjerenih rješenja na cezih.hr prije odabira softvera.',
+      whoTitle: 'Koga obveza obuhvaća',
+      whoItems: [
+        'Neugovorni pružatelji (privatne ordinacije, poliklinike i bolnice bez ugovora s HZZO-om) — moraju započeti razmjenu putem CEZIH-a',
+        'Ugovorni pružatelji (oni koji već koriste CEZIH za HZZO usluge) — moraju započeti razmjenu i za usluge koje pružaju privatno',
+        'Sve specijalnosti — obiteljska medicina, stomatologija, specijalisti, dijagnostika, privatne bolnice',
+        'Sve veličine ustanova — od solo ordinacije do poliklinike s više lokacija'
+      ]
+    },
+    penalties: {
+      title: 'Kazne i pravne posljedice neusklađenosti',
+      intro: 'Pravna osnova obveze je Zakon o podacima i informacijama u zdravstvu (NN 14/2019). Članak 28. propisuje obvezu uključivanja u CEZIH; članak 36. propisuje kazne za nepostupanje.',
+      fineAmount: 'do €13.200 po utvrđenom prekršaju',
+      fineNote: 'Sankcije se primjenjuju i osobno na nositelje ordinacija — ne samo na pravnu osobu.',
+      consequencesTitle: 'Praktične posljedice za ordinaciju',
+      consequences: [
+        'Novčana kazna u prekršajnom postupku',
+        'Rizik od dodatnih nadzora HZZO-a (kontrole obavljanja zdravstvene zaštite)',
+        'Mogući problemi pri obnavljanju ugovora s HZZO-om',
+        'Reputacijski rizik prema pacijentima koji očekuju moderan, povezan zdravstveni sustav'
+      ],
+      callout: 'Računica: jedna kazna od €13.200 jednaka je 22 godinama korištenja modernog cloud CEZIH softvera po €49 mjesečno. Tehnička usklađenost je redovito jeftinija od neusklađenosti.'
+    },
+    exchangeRequired: {
+      title: 'Što se točno mora razmjenjivati s CEZIH-om',
+      intro: 'Prema Zakonu i provedbenim aktima, privatne zdravstvene ustanove dužne su putem CEZIH-a dijeliti tri ključne kategorije dokumenata:',
+      items: [
+        {
+          title: 'Ambulantni izvještaji',
+          desc: 'Izvještaji nakon obavljenih ambulantnih pregleda u privatnim zdravstvenim ustanovama, sa zaključcima i preporukama.'
+        },
+        {
+          title: 'Specijalistički nalazi',
+          desc: 'Nalazi specijalista, dijagnostičkih pretraga i drugih medicinskih postupaka u standardiziranom formatu.'
+        },
+        {
+          title: 'Otpusna pisma',
+          desc: 'Otpusna pisma nakon hospitalizacije ili dnevne bolničke skrbi u privatnim bolnicama.'
+        }
+      ],
+      whyTitle: 'Zašto je razmjena propisana',
+      why: 'Cilj je da se svi nalazi i terapije pacijenta nalaze na jednom mjestu — što smanjuje rizik od grešaka, dupliranja terapija ili pretraga, a ključno je u hitnim situacijama kad pacijenta zbrinjava liječnik koji nije njegov primarni.'
+    },
+    definition: {
+      title: 'Što je CEZIH (i tko ga vodi)',
+      body1: 'CEZIH (Centralni zdravstveni informacijski sustav Republike Hrvatske) je središnji informatički sustav koji povezuje pružatelje zdravstvene zaštite, HZZO i ostale dionike u zdravstvu. Sustavom upravlja Hrvatski zavod za zdravstveno osiguranje (HZZO), a regulatorni okvir donosi Ministarstvo zdravstva.',
+      body2: 'Kroz CEZIH se izdaju i razmjenjuju eRecepti, eUputnice, eNalazi, kao i druga zdravstvena dokumentacija. Sustav je u javnom zdravstvu u funkciji više od desetljeća — prema istraživanju Black Book Research (2026), godišnje se kroz CEZIH izdaje preko 15 milijuna eUputnica i preko 60 milijuna recepata i nalaza.',
+      sourceLinkText: 'Službena stranica CEZIH-a',
+      sourceLinkUrl: 'https://www.cezih.hr/'
+    },
+    modules: {
+      title: 'CEZIH moduli za privatnike: eRecept, eUputnica, eNalaz',
+      intro: 'Privatna ordinacija najčešće koristi tri osnovna modula CEZIH-a. Moderan medicinski softver integrira ih u jedno sučelje — bez prebacivanja između portala.',
+      items: [
+        {
+          title: 'eRecept',
+          desc: 'Elektroničko izdavanje recepata izravno iz medicinskog softvera. Pacijent recept podiže u bilo kojoj ljekarni preko OIB-a ili e-iskaznice — bez papirnatog primjerka.'
+        },
+        {
+          title: 'eUputnica',
+          desc: 'Elektroničko upućivanje na specijalističke preglede, dijagnostiku ili hospitalizaciju. Uputnica se šalje u CEZIH i odmah je vidljiva primatelju.'
+        },
+        {
+          title: 'eNalaz',
+          desc: 'Slanje nalaza pretraga i specijalističkih pregleda u CEZIH, gdje su odmah dostupni pacijentu i drugim liječnicima koji ga zbrinjavaju (uz odgovarajuća dopuštenja).'
+        }
+      ]
+    },
+    certilia: {
+      title: 'Kako se prijaviti i potpisivati: AKD kartica + Certilia',
+      intro: 'Pristup CEZIH razmjeni podataka HZZO i dalje zahtijeva strogi tehnički sklop: Windows računalo, AKD pametnu karticu s čitačem, VPN i lokalni agent dobavljača softvera. Drugim riječima, najmanje jedno računalo u ordinaciji mora ispunjavati sve te uvjete da bi se uspostavila veza prema CEZIH-u.',
+      accessTitle: 'Što sve treba za pristup CEZIH-u',
+      accessItems: [
+        'Windows računalo (najmanje jedno u ordinaciji)',
+        'AKD pametna kartica + čitač spojen na to računalo',
+        'VPN pristup prema HZZO mreži',
+        'Lokalni agent dobavljača softvera (komponenta koja posreduje između softvera i CEZIH protokola)'
+      ],
+      signingTitle: 'Dva načina potpisivanja jednom kad je veza uspostavljena',
+      cardTitle: 'AKD pametna kartica',
+      cardDesc: 'Klasično potpisivanje karticom u čitaču. Svaka CEZIH akcija (eRecept, eUputnica, eNalaz) potpisuje se izravno karticom.',
+      certiliaTitle: 'Certilia (mobilni udaljeni potpis)',
+      certiliaDesc: 'Nakon što je veza uspostavljena na uredskom računalu (kartica + čitač + VPN + agent rade), CEZIH akcije možete potpisivati putem Certilia mobilne aplikacije — bez fizičkog dodirivanja kartice za svaki potpis. Korisno kad ste u drugom dijelu ordinacije, na drugoj lokaciji ili kod kuće.',
+      bothModesNote: 'Naš softver podržava oba načina rada: potpisivanje karticom i Certilia mobilni udaljeni potpis. Birate što vam odgovara po situaciji.',
+      tipTitle: 'Najčešći problemi pri prijavi',
+      tipItems: [
+        'Sustav ne prepoznaje karticu — najčešći uzrok je zastarjela srednja aplikacija (middleware) ili nepravilno spojen čitač.',
+        'VPN nije aktivan — bez VPN-a nema pristupa, neovisno o kartici.',
+        'Lokalni agent ne radi — provjerite je li servis pokrenut na uredskom računalu.',
+        'Istek certifikata — kvalificirani certifikati vrijede ograničeno, treba ih obnoviti prije isteka.',
+        'Pogrešan PIN — više neispravnih unosa može blokirati karticu.'
+      ]
+    },
+    cloudVsLocal: {
+      title: 'Cloud vs. lokalno: što stvarno znači "cloud" u CEZIH kontekstu',
+      intro: 'CEZIH razmjena podataka tehnički još uvijek zahtijeva uredsko Windows računalo s karticom, čitačem, VPN-om i lokalnim agentom dobavljača — bez obzira na to je li softver "u oblaku" ili "lokalan". Razlika između cloud i klasičnog rješenja nije u tome zaobilazi li se taj sklop, nego gdje žive vaši podaci, kako se aplikacija ažurira i kako pristupate sustavu izvan glavnog uredskog računala.',
+      cloudTitle: 'Cloud — bez vlastitog servera, bržu usklađenost',
+      cloudPros: [
+        'Bez vlastitog servera u ordinaciji — aplikacija i podaci su u oblaku dobavljača',
+        'Automatska ažuriranja (CEZIH protokoli se mijenjaju, cloud se ažurira centralno)',
+        'Nakon što je uredsko računalo s čitačem i VPN-om aktivno, dodatne uređaje (laptop, mobitel) možete koristiti za pregled i unos između pacijenata',
+        'Sigurnosne kopije i kontrola pristupa uključene u uslugu',
+        'Niži ulazni trošak (mjesečna pretplata umjesto licence + servera)'
+      ],
+      localTitle: 'Lokalno (legacy) — vlastiti server, sporije ažuriranje',
+      localCons: [
+        'Vlastiti server u ordinaciji + održavanje',
+        'Trebate informatičara za ažuriranja i sigurnosne kopije',
+        'Vezani ste za jedno radno računalo — bez praktičnog pristupa drugima',
+        'Veći inicijalni trošak (licence, server, instalacija)'
+      ],
+      callout: 'Važna napomena: i cloud i lokalna rješenja zahtijevaju jedno Windows računalo u ordinaciji s karticom, čitačem, VPN-om i agentom — to je HZZO uvjet, ne ograničenje softvera. Cloud uklanja vlastiti server i otvara dodatne uređaje za rad nakon što je veza uspostavljena.'
+    },
+    fastTrack: {
+      title: 'Najbrži put do usklađenosti za nepripremljene ordinacije',
+      intro: 'Ako vaša ordinacija još nije priključena, ovo je redoslijed koraka koji u praksi traje 1–2 tjedna — uz uvjet da se administrativni dio ne odgađa. Najsporiji su koraci 1 i 2 (administracija prema HZZO-u i izdavanje kvalificiranog certifikata), pa krenite s njima paralelno.',
+      steps: [
+        {
+          n: '1',
+          title: 'Ishodite šifru zdravstvene ustanove od HZZO-a',
+          desc: 'Šifra zdravstvene ustanove je preduvjet za spajanje na CEZIH za neugovorne pružatelje. Ispunite tiskanicu "Dodjela šifre neugovorni", ovjerite je (digitalnim) potpisom i pečatom ovlaštene osobe te dostavite zahtjev — uz obavezno priloženo rješenje Ministarstva zdravstva — elektroničkom poštom na sifriranje.neugovorni@hzzo.hr.'
+        },
+        {
+          n: '2',
+          title: 'Ishodite Certilia / AKD pristupne podatke',
+          desc: 'Ako ih već nemate, pokrenite postupak izdavanja kvalificiranog elektroničkog certifikata kod AKD-a ili Certilie. Ovo je često najsporiji administrativni korak — pokrenite ga paralelno s korakom 1.'
+        },
+        {
+          n: '3',
+          title: 'Odaberite CEZIH-ovjereno (ili u procesu certifikacije) rješenje',
+          desc: 'Provjerite popis ovjerenih programskih rješenja na cezih.hr — taj se popis aktivno proširuje za neugovorne pružatelje. Cloud rješenja imaju prednost jer eliminiraju instalaciju i lokalni server.'
+        },
+        {
+          n: '4',
+          title: 'Onboarding i konfiguracija softvera',
+          desc: 'Dobavljač konfigurira ordinaciju, korisnike, šifrarnike i predloške. Kod cloud rješenja ovaj korak traje 1–2 dana.'
+        },
+        {
+          n: '5',
+          title: 'Testna i produkcijska razmjena + edukacija',
+          desc: 'Verifikacija da eRecept, eUputnica i eNalaz ispravno odlaze u CEZIH; prelazak na produkcijsku razmjenu i kratka obuka tima (1–2 sata).'
+        }
+      ],
+      cta: 'Trebate hitnu usklađenost? Pogledajte naš cloud CEZIH softver',
+      ctaHref: '/medicinski-softver'
+    },
+    criteria: {
+      title: 'Kako odabrati CEZIH softver: 7 kriterija (post-rok izdanje)',
+      intro: 'Ako birate softver pod pritiskom roka, ovi kriteriji štite vas i od kazne i od loše dugoročne odluke.',
+      items: [
+        {
+          n: '1',
+          title: 'CEZIH ovjera (ili u procesu certifikacije)',
+          desc: 'Softver mora biti na službenom popisu CEZIH-ovjerenih rješenja na cezih.hr. Popis se aktivno proširuje za neugovorne pružatelje (kako navodi cezih.hr u ožujku 2026.) — provjerite najnoviji status.'
+        },
+        {
+          n: '2',
+          title: 'Cloud (bez servera u ordinaciji)',
+          desc: 'Bez instalacije, bez fizičkog servera, bez ovisnosti o lokalnom računalu. Ažuriranja idu automatski.'
+        },
+        {
+          n: '3',
+          title: 'Brzina onboardinga',
+          desc: 'Pitajte izričito: "Koliko traje od potpisa do produkcije?" Cilj — dani, ne tjedni.'
+        },
+        {
+          n: '4',
+          title: 'Specijalizacija za vaš tip ordinacije',
+          desc: 'Stomatologija, obiteljska medicina, fizijatrija — predlošci i radni tokovi trebaju biti prilagođeni vašoj struci.'
+        },
+        {
+          n: '5',
+          title: 'Cijena prilagođena ordinaciji (ne bolnici)',
+          desc: 'Pretplate od ~€49–€199 mjesečno trebale bi biti dovoljne za solo ordinaciju ili manju polikliniku. Bolnički sustavi nisu adekvatni.'
+        },
+        {
+          n: '6',
+          title: 'Bez dugoročnog vezanja',
+          desc: 'Mjesečno otkazivo, bez dugogodišnjih ugovora. Sloboda promjene ako rješenje ne odgovara.'
+        },
+        {
+          n: '7',
+          title: 'Podrška na hrvatskom',
+          desc: 'Telefonska i email podrška na hrvatskom jeziku, s razumijevanjem CEZIH-a i hrvatskog regulatornog okvira.'
+        }
+      ]
+    },
+    faq: {
+      title: 'Najčešća pitanja',
+      items: [
+        {
+          q: 'Što ako moja ordinacija još nije priključena na CEZIH?',
+          a: 'Niste sami — značajan dio privatnih ordinacija je u istoj situaciji. Najbrži put do usklađenosti je odabir cloud CEZIH-ovjerenog softvera koji ne zahtijeva instalaciju ili server u ordinaciji. Prije svega ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet za spajanje) i kvalificirani certifikat za potpisivanje. Onboarding samog softvera kod modernih cloud rješenja traje nekoliko dana.'
+        },
+        {
+          q: 'Trebam li posebnu šifru od HZZO-a prije spajanja na CEZIH?',
+          a: 'Da. Prema obavijesti CEZIH-a (12.03.2026), neugovorni pružatelji zdravstvene zaštite (oni bez ugovora s HZZO-om) moraju ishoditi šifru zdravstvene ustanove od HZZO-a kao preduvjet za spajanje na CEZIH. Zahtjev se podnosi tiskanicom "Dodjela šifre neugovorni", ovjerenom digitalnim potpisom i/ili pečatom, na adresu sifriranje.neugovorni@hzzo.hr — uz obavezno priloženo rješenje Ministarstva zdravstva.'
+        },
+        {
+          q: 'Hoće li me HZZO inspekcija sigurno kazniti?',
+          a: 'Nadzor i prekršajni postupci se ne pokreću automatski, ali pravna osnova postoji od 1. svibnja 2026. Što duže ostanete neusklađeni, veća je vjerojatnost nadzora — osobito ako pacijenti ili druge ustanove prijave nedostatak razmjene podataka.'
+        },
+        {
+          q: 'Kolika je točno kazna?',
+          a: 'Prema članku 36. Zakona o podacima i informacijama u zdravstvu (NN 14/2019), kazne idu do €13.200 po utvrđenom prekršaju za pravnu osobu. Sankcije se primjenjuju i osobno na nositelja ordinacije.'
+        },
+        {
+          q: 'Mogu li nastaviti raditi privatno bez CEZIH-a ako nemam ugovor s HZZO-om?',
+          a: 'Ne. Obveza priključenja na CEZIH ne ovisi o tome imate li ugovor s HZZO-om. Razmjena ambulantnih izvještaja, specijalističkih nalaza i otpusnih pisama propisana je za sve pružatelje zdravstvene zaštite.'
+        },
+        {
+          q: 'Što ako koristim stari softver koji nema CEZIH integraciju?',
+          a: 'Stari softver bez CEZIH integracije ne ispunjava zakonsku obvezu — bez obzira što vam dosad nije stvarao probleme. Prelazak na CEZIH-ovjereno rješenje je nužan. Cloud rješenja olakšavaju migraciju jer ne trebate novu opremu u ordinaciji.'
+        },
+        {
+          q: 'Koliko traje cijeli proces priključenja?',
+          a: 'Kod cloud CEZIH-ovjerenog softvera, od potpisa ugovora do produkcijske razmjene može proteći samo nekoliko radnih dana — ako već imate Certilia / AKD certifikat. Ako certifikat tek ishodite, dodajte 1–2 tjedna na taj korak.'
+        },
+        {
+          q: 'Što je razlika između CEZIH-ovjerenog i CEZIH-kompatibilnog softvera?',
+          a: '"Ovjeren" znači da je rješenje prošlo službenu provjeru spremnosti i nalazi se na popisu odobrenih programskih rješenja na cezih.hr. "Kompatibilan" je marketinški pojam bez pravne težine. Za zakonsku usklađenost potreban je ovjeren softver.'
+        },
+        {
+          q: 'Trebam li čitač pametnih kartica i VPN?',
+          a: 'Da. HZZO za CEZIH razmjenu podataka traži najmanje jedno Windows računalo u ordinaciji s AKD karticom, čitačem, VPN-om i lokalnim agentom dobavljača softvera. Certilia (mobilni udaljeni potpis) ne zaobilazi taj uvjet — ona dolazi do izražaja tek kad je veza uspostavljena: nakon toga sve CEZIH akcije možete potpisivati putem Certilia mobilne aplikacije, bez fizičkog korištenja kartice za svaki potpis. Naš softver podržava oba načina potpisivanja (kartica + Certilia mobilni).'
+        },
+        {
+          q: 'Što se sve šalje u CEZIH? Hoće li moji podaci biti dostupni svima?',
+          a: 'U CEZIH se šalju ambulantni izvještaji, specijalistički nalazi i otpusna pisma. Pristup je strogo reguliran — drugi liječnici vide samo dokumente za pacijente koje aktivno zbrinjavaju, a sustav vodi revizijske tragove svakog pristupa.'
+        },
+        {
+          q: 'Mogu li otkazati cloud softver ako se predomislim?',
+          a: 'Kod kvalitetnih cloud rješenja — da, na mjesečnoj razini i bez kazni. Tražite izričito "bez dugoročnog vezanja" prije potpisa. Vaši podaci moraju ostati izvozivi (export u standardiziranom formatu) za prelazak na drugog dobavljača.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Sljedeći korak: usklađenost u danima, ne tjednima',
+      body: 'Ako tražite najbrži put do CEZIH usklađenosti — bez instalacije, bez servera, bez čekanja informatičara — pogledajte naš cloud CEZIH softver. Specijaliziran je za privatne ordinacije i poliklinike, s onboardingom koji traje dane, ne tjedne.',
+      ctaPrimary: 'Pogledajte cloud CEZIH softver',
+      ctaPrimaryHref: '/medicinski-softver',
+      ctaSecondary: 'Zatražite besplatnu konzultaciju',
+      ctaSecondaryHref: '/kontakt'
+    },
+    sources: {
+      title: 'Izvori i dodatna literatura',
+      disclaimer: 'Sadržaj je informativni i ne predstavlja pravni savjet. Za konkretne pravne procjene konzultirajte odvjetnika ili nadležno tijelo.',
+      items: [
+        { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
+        { label: 'Službena stranica CEZIH-a — obavijesti, koncept sustava i upute', url: 'https://www.cezih.hr/' },
+        { label: 'Obavijest privatnim pružateljima zdravstvene zaštite + Spajanje neugovornih pružatelja na CEZIH (cezih.hr, 12.03.2026)', url: 'https://www.cezih.hr/' },
+        { label: 'Što sve treba za spajanje na CEZIH (službeni PDF)', url: 'https://www.cezih.hr/G2/Sto_sve_treba.pdf' },
+        { label: 'Glas Slavonije, 20.01.2026 — "I privatnici do svibnja moraju ući u CEZIH, prijete kazne i do 13.200 eura"', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Novi list — "Privatne bolnice i ordinacije morale su do 1. siječnja se spojiti u CEZIH"', url: 'https://www.novilist.hr/novosti/hrvatska/privatne-bolnice-i-ordinacije-morale-su-do-1-sijecnja-se-spojiti-u-cezih-sto-to-znaci-za-vase-podatke/' }
+      ]
+    }
   }
 } as const;
 

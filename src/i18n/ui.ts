@@ -17,6 +17,7 @@ export const routes = {
   "/demo/digitalni-ured": { hr: "/demo/digitalni-ured", en: "/en/demo/digital-office" },
   "/demo/erp": { hr: "/demo/erp", en: "/en/demo/erp" },
   "/medicinski-softver": { hr: "/medicinski-softver", en: "/en/medical-software" },
+  "/cezih-vodic": { hr: "/cezih-vodic", en: "/en/cezih-guide" },
 } as const;
 
 export type RouteKey = keyof typeof routes;
