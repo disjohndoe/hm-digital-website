@@ -1296,7 +1296,7 @@ export const hr = {
       outlineHref: '/medicinski-softver'
     },
     criteria: {
-      title: 'Kako odabrati CEZIH softver: 7 kriterija (post-rok izdanje)',
+      title: 'Kako odabrati CEZIH softver: 7 kriterija',
       intro: 'Ako birate softver pod pritiskom roka, ovi kriteriji štite vas i od kazne i od loše dugoročne odluke.',
       items: [
         {

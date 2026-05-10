@@ -1302,7 +1302,7 @@ export const en = {
       outlineHref: '/en/medical-software'
     },
     criteria: {
-      title: 'How to choose CEZIH software: 7 criteria (post-deadline edition)',
+      title: 'How to choose CEZIH software: 7 criteria',
       intro: 'If you are choosing under deadline pressure, these criteria protect you both from fines and from a poor long-term decision.',
       items: [
         {
