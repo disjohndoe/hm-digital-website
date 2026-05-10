@@ -1057,9 +1057,48 @@ export const hr = {
     hero: {
       eyebrow: 'Ažurirano · svibanj 2026 · Post-rok izdanje',
       title: 'CEZIH za privatne ordinacije: što napraviti nakon roka 1.5.2026',
+      subheadline: 'Vodič za privatne ordinacije, poliklinike i privatne bolnice koje kasne s priključenjem na CEZIH nakon 1.5.2026.',
+      promise: 'Cilj: 14 dana od "nismo ni krenuli" do produkcijske razmjene nalaza u CEZIH-u.',
       lead: 'Rok za priključenje privatnih zdravstvenih ustanova na Centralni zdravstveni informacijski sustav (CEZIH) istekao je 1. svibnja 2026. Ovaj vodič objašnjava što obveza zapravo znači, koje kazne prijete neusklađenima, i koji je najbrži put do usklađenosti za ordinacije koje još nisu spojene.',
       ctaPrimary: 'Najbrži put do usklađenosti',
       ctaSecondary: 'Pročitajte FAQ'
+    },
+    toc: {
+      title: 'Sadržaj',
+      items: [
+        { label: 'U 60 sekundi', href: '#tldr' },
+        { label: 'Vaša situacija', href: '#scenarios' },
+        { label: 'Što se promijenilo 1.5.2026', href: '#after-deadline' },
+        { label: 'Kazne za neusklađenost', href: '#penalties' },
+        { label: 'Što se razmjenjuje', href: '#exchange-required' },
+        { label: 'Pristup i potpisivanje', href: '#certilia' },
+        { label: 'Cloud vs lokalno (usporedba)', href: '#cloud-vs-local' },
+        { label: 'Najbrži put do usklađenosti', href: '#fast-track' },
+        { label: 'Kako odabrati softver', href: '#criteria' },
+        { label: 'FAQ', href: '#faq' }
+      ]
+    },
+    scenarios: {
+      title: 'Ako ste u jednoj od ovih situacija, ovaj vodič je za vas',
+      intro: 'Vodič je pisan za 4 tipične situacije. Ako se prepoznajete, sljedeći koraci su konkretni.',
+      items: [
+        {
+          title: 'Otvaram novu privatnu ordinaciju',
+          desc: 'Krenite paralelno: rješenje Ministarstva zdravstva → šifra HZZO-a → kvalificirani certifikat → odabir CEZIH-ovjerenog softvera. Cloud rješenje skraćuje tehnički dio na dane.'
+        },
+        {
+          title: 'Imam stari softver bez CEZIH integracije',
+          desc: 'Stari softver bez CEZIH-a ne ispunjava zakonsku obvezu. Trebate prelazak na ovjereno rješenje — najbrže preko cloud opcije koja ne traži novu opremu u ordinaciji.'
+        },
+        {
+          title: 'Neugovorni privatnik bez šifre HZZO-a',
+          desc: 'Šifra zdravstvene ustanove (tiskanica "Dodjela šifre neugovorni") je preduvjet. Pokrenite zahtjev odmah — pošaljite ga na sifriranje.neugovorni@hzzo.hr s rješenjem Ministarstva zdravstva.'
+        },
+        {
+          title: 'Poliklinika ili ordinacija na više lokacija',
+          desc: 'Trebate jedan softver koji podržava više lokacija i jedan certifikat po potpisniku. Cloud rješenje omogućuje rad i potpisivanje s bilo koje lokacije nakon uspostavljene veze.'
+        }
+      ]
     },
     tldr: {
       title: 'U 60 sekundi',
@@ -1084,9 +1123,10 @@ export const hr = {
       ]
     },
     penalties: {
-      title: 'Kazne i pravne posljedice neusklađenosti',
+      title: 'Kazne za neusklađenost s CEZIH-om',
       intro: 'Pravna osnova obveze je Zakon o podacima i informacijama u zdravstvu (NN 14/2019). Članak 28. propisuje obvezu uključivanja u CEZIH; članak 36. propisuje kazne za nepostupanje.',
       fineAmount: 'do €13.200 po utvrđenom prekršaju',
+      fineCitation: 'prema čl. 36 Zakona o podacima i informacijama u zdravstvu (NN 14/2019)',
       fineNote: 'Sankcije se primjenjuju i osobno na nositelje ordinacija — ne samo na pravnu osobu.',
       consequencesTitle: 'Praktične posljedice za ordinaciju',
       consequences: [
@@ -1115,7 +1155,16 @@ export const hr = {
         }
       ],
       whyTitle: 'Zašto je razmjena propisana',
-      why: 'Cilj je da se svi nalazi i terapije pacijenta nalaze na jednom mjestu — što smanjuje rizik od grešaka, dupliranja terapija ili pretraga, a ključno je u hitnim situacijama kad pacijenta zbrinjava liječnik koji nije njegov primarni.'
+      why: 'Cilj je da se svi nalazi i terapije pacijenta nalaze na jednom mjestu — što smanjuje rizik od grešaka, dupliranja terapija ili pretraga, a ključno je u hitnim situacijama kad pacijenta zbrinjava liječnik koji nije njegov primarni.',
+      table: {
+        title: 'Konkretni primjeri po vrsti dokumenta',
+        headers: { type: 'Vrsta dokumenta', examples: 'Konkretni primjeri' },
+        rows: [
+          { type: 'Ambulantni izvještaji', examples: 'Izvještaj nakon pregleda obiteljskog liječnika; izvještaj sistematskog pregleda; nalaz GP-a nakon prve obrade' },
+          { type: 'Specijalistički nalazi', examples: 'MR/CT/UZV nalazi; nalaz krvne pretrage; specijalistički pregled (kardiolog, dermatolog, ortoped, oftalmolog…)' },
+          { type: 'Otpusna pisma', examples: 'Otpusno pismo nakon hospitalizacije; nalaz dnevne bolnice nakon zahvata' }
+        ]
+      }
     },
     definition: {
       title: 'Što je CEZIH (i tko ga vodi)',
@@ -1168,7 +1217,7 @@ export const hr = {
       ]
     },
     cloudVsLocal: {
-      title: 'Cloud vs. lokalno: što stvarno znači "cloud" u CEZIH kontekstu',
+      title: 'Kako se spojiti na CEZIH bez vlastitog servera (cloud vs lokalno)',
       intro: 'CEZIH razmjena podataka tehnički još uvijek zahtijeva uredsko Windows računalo s karticom, čitačem, VPN-om i lokalnim agentom dobavljača — bez obzira na to je li softver "u oblaku" ili "lokalan". Razlika između cloud i klasičnog rješenja nije u tome zaobilazi li se taj sklop, nego gdje žive vaši podaci, kako se aplikacija ažurira i kako pristupate sustavu izvan glavnog uredskog računala.',
       cloudTitle: 'Cloud — bez vlastitog servera, bržu usklađenost',
       cloudPros: [
@@ -1187,38 +1236,64 @@ export const hr = {
       ],
       callout: 'Važna napomena: i cloud i lokalna rješenja zahtijevaju jedno Windows računalo u ordinaciji s karticom, čitačem, VPN-om i agentom — to je HZZO uvjet, ne ograničenje softvera. Cloud uklanja vlastiti server i otvara dodatne uređaje za rad nakon što je veza uspostavljena.'
     },
+    comparison: {
+      title: 'Stari softver bez CEZIH-a vs CEZIH-ovjeren cloud',
+      intro: 'Brzi vizualni pregled — što dobivate prelaskom sa zastarjelog softvera bez CEZIH integracije na ovjereno cloud rješenje.',
+      headers: { feature: 'Što dobivate', legacy: 'Stari softver bez CEZIH-a', cloud: 'CEZIH-ovjeren cloud softver' },
+      rows: [
+        { feature: 'Zakonska CEZIH usklađenost', legacy: false, cloud: true },
+        { feature: 'Bez vlastitog servera u ordinaciji', legacy: false, cloud: true },
+        { feature: 'Automatska ažuriranja CEZIH protokola', legacy: false, cloud: true },
+        { feature: 'Onboarding u danima (ne tjednima)', legacy: false, cloud: true },
+        { feature: 'Rad i potpisivanje s drugog uređaja (laptop / mobitel) između pacijenata', legacy: false, cloud: true },
+        { feature: 'Eliminira rizik kazni do €13.200', legacy: false, cloud: true }
+      ]
+    },
     fastTrack: {
       title: 'Najbrži put do usklađenosti za nepripremljene ordinacije',
       intro: 'Ako vaša ordinacija još nije priključena, ovo je redoslijed koraka koji u praksi traje 1–2 tjedna — uz uvjet da se administrativni dio ne odgađa. Najsporiji su koraci 1 i 2 (administracija prema HZZO-u i izdavanje kvalificiranog certifikata), pa krenite s njima paralelno.',
       steps: [
         {
           n: '1',
+          phase: 'Tjedan 1',
           title: 'Ishodite šifru zdravstvene ustanove od HZZO-a',
           desc: 'Šifra zdravstvene ustanove je preduvjet za spajanje na CEZIH za neugovorne pružatelje. Ispunite tiskanicu "Dodjela šifre neugovorni", ovjerite je (digitalnim) potpisom i pečatom ovlaštene osobe te dostavite zahtjev — uz obavezno priloženo rješenje Ministarstva zdravstva — elektroničkom poštom na sifriranje.neugovorni@hzzo.hr.'
         },
         {
           n: '2',
+          phase: 'Tjedan 1',
           title: 'Ishodite Certilia / AKD pristupne podatke',
           desc: 'Ako ih već nemate, pokrenite postupak izdavanja kvalificiranog elektroničkog certifikata kod AKD-a ili Certilie. Ovo je često najsporiji administrativni korak — pokrenite ga paralelno s korakom 1.'
         },
         {
           n: '3',
+          phase: 'Tjedan 1',
           title: 'Odaberite CEZIH-ovjereno (ili u procesu certifikacije) rješenje',
           desc: 'Provjerite popis ovjerenih programskih rješenja na cezih.hr — taj se popis aktivno proširuje za neugovorne pružatelje. Cloud rješenja imaju prednost jer eliminiraju instalaciju i lokalni server.'
         },
         {
           n: '4',
+          phase: 'Tjedan 2',
           title: 'Onboarding i konfiguracija softvera',
           desc: 'Dobavljač konfigurira ordinaciju, korisnike, šifrarnike i predloške. Kod cloud rješenja ovaj korak traje 1–2 dana.'
         },
         {
           n: '5',
+          phase: 'Tjedan 2',
           title: 'Testna i produkcijska razmjena + edukacija',
           desc: 'Verifikacija da eRecept, eUputnica i eNalaz ispravno odlaze u CEZIH; prelazak na produkcijsku razmjenu i kratka obuka tima (1–2 sata).'
         }
       ],
       cta: 'Trebate hitnu usklađenost? Pogledajte naš cloud CEZIH softver',
       ctaHref: '/medicinski-softver'
+    },
+    midCta: {
+      title: 'Trebate da za vas odradimo tehnički dio?',
+      desc: 'VPN, certifikati, AKD kartica, CEZIH modul — preuzmemo cijeli proces. Cloud onboarding traje dane, ne tjedne.',
+      primaryLabel: 'Zatražite besplatnu konzultaciju',
+      primaryHref: '/kontakt',
+      outlineLabel: 'Pogledajte cloud CEZIH softver',
+      outlineHref: '/medicinski-softver'
     },
     criteria: {
       title: 'Kako odabrati CEZIH softver: 7 kriterija (post-rok izdanje)',
@@ -1259,6 +1334,14 @@ export const hr = {
           title: 'Podrška na hrvatskom',
           desc: 'Telefonska i email podrška na hrvatskom jeziku, s razumijevanjem CEZIH-a i hrvatskog regulatornog okvira.'
         }
+      ],
+      questionsTitle: 'Pitanja koja postavite dobavljaču prije potpisa',
+      questions: [
+        'Koliko traje od potpisa ugovora do produkcijske razmjene s CEZIH-om?',
+        'Kako se migriraju postojeći podaci iz mog trenutnog softvera?',
+        'Koja je razina podrške i SLA — telefon, email, vrijeme odgovora?',
+        'Postoji li ugovorna vezanost ili izlazna klauzula? Mjesečno otkazivo?',
+        'Mogu li svoje podatke izvesti u standardiziranom formatu ako jednom otkažem?'
       ]
     },
     faq: {
@@ -1307,6 +1390,18 @@ export const hr = {
         {
           q: 'Mogu li otkazati cloud softver ako se predomislim?',
           a: 'Kod kvalitetnih cloud rješenja — da, na mjesečnoj razini i bez kazni. Tražite izričito "bez dugoročnog vezanja" prije potpisa. Vaši podaci moraju ostati izvozivi (export u standardiziranom formatu) za prelazak na drugog dobavljača.'
+        },
+        {
+          q: 'Radim samo privatno, nemam ugovor s HZZO-om — moram li u CEZIH?',
+          a: 'Da. Prema obavijesti CEZIH-a (12.03.2026), CEZIH obveza vrijedi i za neugovorne pružatelje zdravstvene zaštite — one koji rade isključivo privatno, bez ugovora s HZZO-om. Prvi korak za vas je ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet — putem tiskanice "Dodjela šifre neugovorni" i emaila sifriranje.neugovorni@hzzo.hr, uz priloženo rješenje Ministarstva zdravstva). Tek nakon dodjele šifre možete započeti tehničko spajanje na CEZIH.'
+        },
+        {
+          q: 'Imam ordinacije na dvije lokacije — trebam li dva sustava ili više certifikata?',
+          a: 'Trebate jedan softver koji podržava više lokacija (cloud rješenja to rade prirodno) i jedan kvalificirani certifikat po osobi koja potpisuje. Tehnički, na svakoj lokaciji gdje se odvija razmjena prema CEZIH-u potrebno je najmanje jedno Windows računalo s AKD karticom, čitačem, VPN-om i lokalnim agentom. Certilia mobilni potpis omogućuje da nakon uspostavljene veze potpisujete s bilo koje lokacije.'
+        },
+        {
+          q: 'Što ako inspektor stigne dok sam već potpisao ugovor s dobavljačem, ali još nisam u produkciji?',
+          a: 'Dokumentirajte sve — ugovor s dobavljačem, popunjene tiskanice prema HZZO-u, status izdavanja certifikata, planirani datum produkcije. Iako pokrenuti proces ne uklanja sam prekršaj, u prekršajnim postupcima se ocjenjuje i stupanj nemara i poduzete radnje za usklađivanje. Što više dokaza imate o tome da je proces aktivno u tijeku, to je vjerojatnije blaže postupanje. Najsigurnija strategija je ipak izbjeći inspekciju ubrzanjem produkcije — kod cloud rješenja to su dani, ne tjedni.'
         }
       ]
     },
