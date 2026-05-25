@@ -722,7 +722,7 @@ export const hr = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud | HM Digital',
-      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. e-Nalaz, e-Recept, e-Uputnica — bez servera, od €49/mj. Certificiran, mobilan, spreman za zakonski rok. Zatražite besplatni demo.'
+      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. Rok 1.5.2026 je prošao — kazne do €13.200. e-Nalaz, e-Recept, e-Uputnica iz cloud-a, od €49/mj. Najbrži put do usklađenosti.'
     },
     urgencyBar: {
       before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
@@ -732,7 +732,7 @@ export const hr = {
       badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
       title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud Medicinski Program',
       tagline: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
-      subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez stresa oko roka. Sve što privatna ordinacija treba za CEZIH — i ništa što ne treba.',
+      subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez kompromisa. Sve što privatna ordinacija treba za CEZIH — i ništa što ne treba.',
       ctaCompare: 'Usporedite nas s alternativama',
       ctaTrial: 'Zatražite besplatni demo',
       ctaFeatures: 'Pogledajte što sve dobivate'
@@ -755,8 +755,9 @@ export const hr = {
     },
     bridge: {
       title: 'Niste postali liječnik da biste rješavali IT probleme.',
-      desc: 'Većina vaših kolega je u istoj situaciji: rok se približava, a ponuda na tržištu je ili preskupa, ili zastarjela, ili nezakonita. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
-      costOfInaction: 'Kazna od €13.200 = 22 godine korištenja našeg softvera po €49/mj.'
+      desc: 'Rok je prošao 1.5.2026, a kazne do €13.200 (čl. 35–37 Zakona NN 14/2019) se sada primjenjuju. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
+      costOfInaction: 'Kazna od €13.200 = 22 godine korištenja našeg softvera po €49/mj.',
+      guideLink: 'Niste još uspjeli pokrenuti CEZIH? Pročitajte vodič: što napraviti nakon roka 1.5.2026 →'
     },
     solution: {
       title: 'Cloud, CEZIH i cijena — konačno usklađeni',
@@ -859,9 +860,7 @@ export const hr = {
         priceOriginal: '€79',
         desc: 'Za samostalne ordinacije',
         users: '1-2 korisnika',
-        promo: 'PROMO do 1. svibnja',
-        onboarding: '€290',
-        onboardingOriginal: '€490',
+        promo: 'Cijena dobrodošlice',
         cta: 'Zatražite demo',
         ctaHint: 'Idealno za pojedinačne ordinacije',
         featureList: [
@@ -881,7 +880,6 @@ export const hr = {
         price: '€199',
         desc: 'Za poliklinike s više ordinacija',
         users: '3-5 korisnika',
-        onboarding: '€1.490',
         highlighted: true,
         cta: 'Započnite odmah',
         ctaHint: 'Odgovaramo unutar 24h',
@@ -925,17 +923,17 @@ export const hr = {
           title: 'Želite da dođemo osobno?',
           desc: 'Implementacija na lokaciji — postavljanje, obuka i CEZIH aktivacija licem u lice.',
           zones: [
-            { name: 'Slavonija i okolica', price: '€190' },
-            { name: 'Zagreb i središnja HR', price: '€350' },
-            { name: 'Dalmacija i Istra', price: '€490' }
+            { name: 'Slavonija i okolica', price: 'Po dogovoru' },
+            { name: 'Zagreb i središnja HR', price: 'Po dogovoru' },
+            { name: 'Dalmacija i Istra', price: 'Po dogovoru' }
           ],
-          note: 'Jednokratna naknada po posjetu. Uključuje putne troškove, dnevnicu i hands-on implementaciju na lokaciji.'
+          note: 'Cijena po dogovoru — ovisno o lokaciji, veličini ordinacije i opsegu implementacije. Uključuje putne troškove, dnevnicu i hands-on implementaciju na lokaciji.'
         }
       }
     },
     stats: {
       clinics: { value: '2.171', label: 'ordinacija u RH' },
-      deadline: { value: '1.5.2026.', label: 'zakonski rok za CEZIH' }
+      deadline: { value: '€13.200', label: 'maksimalna kazna po prekršaju' }
     },
     faq: {
       title: 'Česta pitanja o CEZIH integraciji',
@@ -954,7 +952,7 @@ export const hr = {
         },
         {
           q: 'Što je CEZIH i kako funkcionira?',
-          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH do svibnja 2026. Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
+          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH — rok je istekao 1.5.2026. Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
         },
         {
           q: 'Koji su zakonski zahtjevi za CEZIH integraciju?',
@@ -986,7 +984,7 @@ export const hr = {
         },
         {
           q: 'Koliko traje dok počnem raditi?',
-          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana. Dovoljno brzo da stignete prije roka 1. svibnja.'
+          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana — što je trenutno najbrži put do usklađenosti nakon roka.'
         },
         {
           q: 'Jesu li podaci sigurni?',

@@ -722,7 +722,7 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
-      description: 'Cloud CEZIH software for private practices and polyclinics. e-Findings, e-Prescriptions, e-Referrals from the cloud. Medical software with CEZIH certification. From €49/mo. Request a demo.'
+      description: 'Cloud CEZIH software for private practices and polyclinics. The 1 May 2026 deadline has passed — fines up to €13,200 now apply. e-Findings, e-Prescriptions, e-Referrals from the cloud, from €49/mo. The fastest path to compliance.'
     },
     urgencyBar: {
       before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
@@ -732,7 +732,7 @@ export const en = {
       badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
       title: 'Cloud CEZIH Software for Practices and Polyclinics',
       tagline: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
-      subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no deadline stress. Everything a private practice needs for CEZIH — and nothing it doesn\'t.',
+      subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no compromise. Everything a private practice needs for CEZIH — and nothing it doesn\'t.',
       ctaCompare: 'Compare us to alternatives',
       ctaTrial: 'Request a free demo',
       ctaFeatures: 'See what you get'
@@ -755,8 +755,9 @@ export const en = {
     },
     bridge: {
       title: 'You didn\'t become a doctor to deal with IT problems.',
-      desc: 'Most of your colleagues are in the same situation: the deadline is approaching, and the available options are either too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
-      costOfInaction: 'A €13,200 fine = 22 years of our software at €49/mo.'
+      desc: 'The deadline passed on 1 May 2026, and fines up to €13,200 (Art. 35–37, Law NN 14/2019) now apply. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
+      costOfInaction: 'A €13,200 fine = 22 years of our software at €49/mo.',
+      guideLink: 'Haven\'t started with CEZIH yet? Read the guide: what to do after the 1 May 2026 deadline →'
     },
     solution: {
       title: 'Everything you need — in one place',
@@ -873,9 +874,7 @@ export const en = {
         priceOriginal: '€79',
         desc: 'For individual practices',
         users: '1-2 users',
-        promo: 'PROMO until May 1st',
-        onboarding: '€290',
-        onboardingOriginal: '€490',
+        promo: 'Welcome pricing',
         cta: 'Request a demo',
         ctaHint: 'Ideal for individual practices',
         featureList: [
@@ -895,7 +894,6 @@ export const en = {
         price: '€199',
         desc: 'For polyclinics with multiple offices',
         users: '3-5 users',
-        onboarding: '€1,490',
         highlighted: true,
         cta: 'Get started',
         ctaHint: 'We respond within 24h',
@@ -939,17 +937,17 @@ export const en = {
           title: 'Want us to come in person?',
           desc: 'On-site implementation — setup, training and CEZIH activation face to face.',
           zones: [
-            { name: 'Slavonia & surroundings', price: '€190' },
-            { name: 'Zagreb & central HR', price: '€350' },
-            { name: 'Dalmatia & Istria', price: '€490' }
+            { name: 'Slavonia & surroundings', price: 'Custom quote' },
+            { name: 'Zagreb & central HR', price: 'Custom quote' },
+            { name: 'Dalmatia & Istria', price: 'Custom quote' }
           ],
-          note: 'One-time fee per visit. Includes travel costs, per diem and hands-on on-site implementation.'
+          note: 'Custom quote — depending on location, practice size and scope of implementation. Includes travel costs, per diem and hands-on on-site implementation.'
         }
       }
     },
     stats: {
       clinics: { value: '2,171', label: 'practices in Croatia' },
-      deadline: { value: 'May 1, 2026', label: 'legal CEZIH deadline' }
+      deadline: { value: '€13,200', label: 'max fine per violation' }
     },
     faq: {
       title: 'Frequently asked questions about CEZIH software',
@@ -968,11 +966,11 @@ export const en = {
         },
         {
           q: 'What is CEZIH and how does it work?',
-          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The deadline is May 1, 2026.'
+          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The deadline passed on 1 May 2026; fines now apply.'
         },
         {
           q: 'What are the legal requirements for CEZIH integration?',
-          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The Ministry of Health confirmed the deadline of May 1, 2026 for all private healthcare institutions.'
+          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The Ministry of Health set 1 May 2026 as the deadline for all private healthcare institutions — that deadline has now passed and the penalty regime is active.'
         },
         {
           q: 'Do I need an AKD card?',
