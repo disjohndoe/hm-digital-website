@@ -1,5 +1,5 @@
 ---
-import { getTranslations } from '../../i18n/ui';
+import { getPathForLocale, getTranslations } from '../../i18n/ui';
 import type { Locale } from '../../i18n/ui';
 
 interface Props {
@@ -8,6 +8,8 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = getTranslations(locale).consent;
+const privacyPath = getPathForLocale('/pravila-privatnosti', locale);
+const cookiePath = getPathForLocale('/kolacici', locale);
 ---
 
 <!-- Floating settings button (shown after initial consent) -->
@@ -32,6 +34,11 @@ const t = getTranslations(locale).consent;
       <div class="flex-1">
         <h3 class="text-lg font-semibold text-dark-900">{t.banner.title}</h3>
         <p class="mt-1 text-sm text-slate-600">{t.banner.description}</p>
+        <p class="mt-2 text-sm">
+          <a href={privacyPath} class="text-primary-600 hover:underline">{t.banner.privacyLink}</a>
+          <span class="text-slate-400 mx-1" aria-hidden="true">&middot;</span>
+          <a href={cookiePath} class="text-primary-600 hover:underline">{t.banner.cookieLink}</a>
+        </p>
       </div>
       <div class="flex shrink-0 gap-3">
         <button

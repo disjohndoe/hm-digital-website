@@ -23,9 +23,9 @@ const currentYear = new Date().getFullYear();
         </p>
       </div>
 
-      <!-- Quick Links -->
+      <!-- Company -->
       <div>
-        <h3 class="font-semibold mb-4">{locale === 'hr' ? 'Linkovi' : 'Links'}</h3>
+        <h3 class="font-semibold mb-4">{t.footer.company}</h3>
         <ul class="space-y-2">
           <li>
             <a
@@ -59,13 +59,6 @@ const currentYear = new Date().getFullYear();
               {t.nav.industries}
             </a>
           </li>
-        </ul>
-      </div>
-
-      <!-- More Links -->
-      <div>
-        <h3 class="font-semibold mb-4">{locale === 'hr' ? 'Ostale stranice' : 'Other pages'}</h3>
-        <ul class="space-y-2">
           <li>
             <a
               href={getPathForLocale('/cjenik', locale)}
@@ -74,6 +67,13 @@ const currentYear = new Date().getFullYear();
               {t.nav.pricing}
             </a>
           </li>
+        </ul>
+      </div>
+
+      <!-- Solutions -->
+      <div>
+        <h3 class="font-semibold mb-4">{t.footer.solutions}</h3>
+        <ul class="space-y-2">
           <li>
             <a
               href={getPathForLocale('/projekti', locale)}
@@ -103,7 +103,15 @@ const currentYear = new Date().getFullYear();
               href={getPathForLocale('/medicinski-softver', locale)}
               class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
             >
-              {locale === 'hr' ? 'CEZIH softver za ordinacije i poliklinike' : 'CEZIH Software for Practices and Polyclinics'}
+              {t.footer.medicalLink}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getPathForLocale('/cezih-vodic', locale)}
+              class="text-slate-400 hover:text-white transition-colors text-sm"
+            >
+              {t.footer.cezihGuide}
             </a>
           </li>
         </ul>
@@ -131,10 +139,26 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <!-- Bottom bar -->
-    <div class="mt-12 pt-8 border-t border-slate-800 flex justify-center items-center gap-4">
+    <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
       <p class="text-slate-400 text-sm">
         &copy; {currentYear} HM Digital. {t.footer.rights}.
       </p>
+      <span class="hidden sm:inline text-slate-600 text-sm" aria-hidden="true">&middot;</span>
+      <div class="flex items-center gap-4">
+        <a
+          href={getPathForLocale('/pravila-privatnosti', locale)}
+          class="text-slate-400 hover:text-white transition-colors text-sm"
+        >
+          {t.footer.privacyPolicy}
+        </a>
+        <span class="text-slate-600 text-sm" aria-hidden="true">&middot;</span>
+        <a
+          href={getPathForLocale('/kolacici', locale)}
+          class="text-slate-400 hover:text-white transition-colors text-sm"
+        >
+          {t.footer.cookiePolicy}
+        </a>
+      </div>
     </div>
   </div>
 </footer>

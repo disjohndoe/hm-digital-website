@@ -306,7 +306,13 @@ export const en = {
   },
   footer: {
     tagline: 'Custom software development, automation and digitalization',
+    company: 'Company',
+    solutions: 'Solutions',
     digitizationLink: 'Document digitization',
+    medicalLink: 'CEZIH Software for Practices and Polyclinics',
+    cezihGuide: 'CEZIH Guide',
+    privacyPolicy: 'Privacy Policy',
+    cookiePolicy: 'Cookie Policy',
     rights: 'All rights reserved'
   },
   secondaryOffer: {
@@ -1030,7 +1036,9 @@ export const en = {
       title: 'We value your privacy',
       description: 'We use cookies to analyze website traffic. Necessary cookies do not require your consent, while analytics cookies need your permission.',
       accept: 'Accept all',
-      settings: 'Settings'
+      settings: 'Settings',
+      privacyLink: 'Privacy Policy',
+      cookieLink: 'Cookie Policy'
     },
     modal: {
       title: 'Cookie Settings',

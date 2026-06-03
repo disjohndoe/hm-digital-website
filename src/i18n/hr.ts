@@ -306,7 +306,13 @@ export const hr = {
   },
   footer: {
     tagline: 'Razvoj softvera po mjeri, automatizacija i digitalizacija',
+    company: 'Tvrtka',
+    solutions: 'Rješenja',
     digitizationLink: 'Digitalizacija dokumenata',
+    medicalLink: 'CEZIH softver za ordinacije i poliklinike',
+    cezihGuide: 'CEZIH vodič',
+    privacyPolicy: 'Pravila privatnosti',
+    cookiePolicy: 'Kolačići',
     rights: 'Sva prava pridržana'
   },
   secondaryOffer: {
@@ -1024,7 +1030,9 @@ export const hr = {
       title: 'Poštujemo vašu privatnost',
       description: 'Koristimo kolačiće za analizu prometa na web stranici. Nužni kolačići ne zahtijevaju vašu suglasnost, dok za analitičke kolačiće trebamo vašu dozvolu.',
       accept: 'Prihvati sve',
-      settings: 'Postavke'
+      settings: 'Postavke',
+      privacyLink: 'Pravila privatnosti',
+      cookieLink: 'Politika kolačića'
     },
     modal: {
       title: 'Postavke kolačića',
