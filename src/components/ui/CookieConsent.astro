@@ -93,6 +93,12 @@ const cookiePath = getPathForLocale('/kolacici', locale);
       </div>
     </div>
 
+    <p class="mt-4 text-sm">
+      <a href={privacyPath} class="text-primary-600 hover:underline">{t.banner.privacyLink}</a>
+      <span class="text-slate-400 mx-1" aria-hidden="true">&middot;</span>
+      <a href={cookiePath} class="text-primary-600 hover:underline">{t.banner.cookieLink}</a>
+    </p>
+
     <div class="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-end">
       <button
         id="cookie-decline"
