@@ -1,0 +1,174 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getPathForLocale } from '../../i18n/ui';
+
+const title = 'Privacy Policy — HM Digital';
+const description = 'Privacy policy of the hmdigital.hr website — what personal data we collect, for what purposes, who the recipients are, and your rights under the GDPR.';
+const lastUpdated = '3 June 2026';
+const version = '2026-06-03';
+const cookiePath = getPathForLocale('/kolacici', 'en');
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical="/en/privacy-policy/"
+>
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="container-custom max-w-4xl">
+      <div class="mb-8 text-sm text-slate-500">
+        <p>Version: <span class="font-mono">{version}</span></p>
+        <p>Last updated: {lastUpdated}</p>
+        <p>Effective date: {lastUpdated}</p>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Privacy Policy</h1>
+
+      <p class="text-slate-700 mb-8 leading-relaxed">
+        This Privacy Policy (the <strong>"Policy"</strong>) describes how
+        <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong> (<strong>"HM Digital"</strong>,
+        <strong>"we"</strong>) collects, processes and protects the personal data of visitors to the
+        <strong>hmdigital.hr</strong> website (the <strong>"Website"</strong>), in accordance with Regulation
+        (EU) 2016/679 (<strong>GDPR</strong>) and the Croatian Act on the Implementation of the GDPR (NN 42/2018).
+        This Policy applies only to the Website; the <em>HM Digital Medical</em> cloud system is governed by a
+        separate privacy policy available to users of that system.
+      </p>
+
+      <div class="space-y-8 text-slate-700 leading-relaxed">
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">1. Data controller and contact</h2>
+          <p class="mb-2">The controller of personal data collected through the Website is:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Name: <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong> (sole proprietorship)</li>
+            <li>Owner: Hrvoje Matošević</li>
+            <li>Registered office: Mašić 58, 35428 Dragalić, Republic of Croatia</li>
+            <li>OIB (tax ID): 15881939647</li>
+            <li>MBS: 99053861</li>
+            <li>Privacy contact and exercise of rights: <a href="mailto:info@hmdigital.hr" class="text-primary-600 hover:underline">info@hmdigital.hr</a></li>
+            <li>Phone: +385 97 7120 800</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">2. What data we collect</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              <strong>Contact form data</strong> — when you send us an inquiry via the contact form or the
+              free assessment form, we collect the data you enter yourself: name, e-mail address and the
+              contents of your message (including any details you voluntarily provide in the project description).
+            </li>
+            <li>
+              <strong>Technical data</strong> — when you visit the Website, the server hosting it automatically
+              records standard technical data (IP address, browser type, date and time of access) for security
+              and technical operation purposes.
+            </li>
+            <li>
+              <strong>Analytics data</strong> — only with your consent, Google Analytics 4 collects data about
+              how the Website is used (pages visited, visit duration, approximate location, device type).
+              Details are described in our <a href={cookiePath} class="text-primary-600 hover:underline">Cookie Policy</a>.
+            </li>
+          </ul>
+          <p class="mt-3">
+            We do not collect special categories of personal data (Art. 9 GDPR) or data about children, and we
+            ask you not to enter such data into the forms.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">3. Purposes and legal bases of processing</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              <strong>Responding to inquiries and preparing quotes</strong> — legal basis: steps prior to
+              entering into a contract at the data subject's request (Art. 6(1)(b) GDPR).
+            </li>
+            <li>
+              <strong>Security and technical operation of the Website</strong> — legal basis: legitimate
+              interest (Art. 6(1)(f) GDPR).
+            </li>
+            <li>
+              <strong>Website usage analytics (Google Analytics)</strong> — legal basis: consent
+              (Art. 6(1)(a) GDPR). You may withdraw your consent at any time without consequence.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">4. Recipients and processors</h2>
+          <p class="mb-2">We use the following service providers to operate the Website:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              <strong>GitHub, Inc.</strong> (USA) — Website hosting (GitHub Pages); processes technical access data.
+            </li>
+            <li>
+              <strong>Formspree, Inc.</strong> (USA) — processing and delivery of messages submitted via the contact forms.
+            </li>
+            <li>
+              <strong>Google Ireland Ltd. / Google LLC</strong> (Ireland/USA) — Google Analytics 4, only with your consent.
+            </li>
+          </ul>
+          <p class="mt-3">
+            We do not sell your personal data or share it with third parties for marketing purposes.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">5. Data transfers outside the EU/EEA</h2>
+          <p>
+            The above US-based service providers (GitHub, Formspree, Google LLC) are certified under the
+            <strong>EU-U.S. Data Privacy Framework</strong>, or the transfer is based on the European
+            Commission's Standard Contractual Clauses (Art. 46 GDPR), ensuring an adequate level of data protection.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">6. Retention periods</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Form inquiries</strong> — kept for a maximum of 2 years from the last communication, unless the inquiry results in a business engagement (in which case statutory retention periods for business records apply).</li>
+            <li><strong>Server logs</strong> — according to the hosting provider's policies, as a rule short-term.</li>
+            <li><strong>Analytics data</strong> — according to Google Analytics settings; cookie lifetimes are described in the <a href={cookiePath} class="text-primary-600 hover:underline">Cookie Policy</a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">7. Your rights</h2>
+          <p class="mb-2">Under the GDPR, you have the right to:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>access your personal data (Art. 15),</li>
+            <li>rectification of inaccurate data (Art. 16),</li>
+            <li>erasure ("right to be forgotten", Art. 17),</li>
+            <li>restriction of processing (Art. 18),</li>
+            <li>data portability (Art. 20),</li>
+            <li>object to processing based on legitimate interest (Art. 21),</li>
+            <li>withdraw consent at any time, without affecting the lawfulness of processing prior to withdrawal (Art. 7(3)).</li>
+          </ul>
+          <p class="mt-3">
+            To exercise your rights, contact us at <a href="mailto:info@hmdigital.hr" class="text-primary-600 hover:underline">info@hmdigital.hr</a>.
+            We respond to requests without undue delay and at the latest within one month. If you believe your
+            data is being processed unlawfully, you have the right to lodge a complaint with the supervisory
+            authority — the <strong>Croatian Personal Data Protection Agency (AZOP)</strong>, Selska cesta 136,
+            10000 Zagreb, <a href="https://azop.hr" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">azop.hr</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">8. Cookies</h2>
+          <p>
+            Detailed information about the cookies and similar technologies used by the Website, including how
+            to manage your consent, is available in our separate
+            <a href={cookiePath} class="text-primary-600 hover:underline">Cookie Policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">9. Changes to this Policy</h2>
+          <p>
+            We may amend this Policy from time to time. The current version, with its last-updated date, is
+            always published on this page. Significant changes will be clearly highlighted on the Website.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</Layout>

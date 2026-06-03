@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getPathForLocale } from '../../i18n/ui';
+
+const title = 'Cookie Policy — HM Digital';
+const description = 'Cookie policy of the hmdigital.hr website — which cookies we use, for what purposes, and how you can manage your consent.';
+const lastUpdated = '3 June 2026';
+const version = '2026-06-03';
+const privacyPath = getPathForLocale('/pravila-privatnosti', 'en');
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical="/en/cookie-policy/"
+>
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="container-custom max-w-4xl">
+      <div class="mb-8 text-sm text-slate-500">
+        <p>Version: <span class="font-mono">{version}</span></p>
+        <p>Last updated: {lastUpdated}</p>
+        <p>Effective date: {lastUpdated}</p>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Cookie Policy</h1>
+
+      <p class="text-slate-700 mb-8 leading-relaxed">
+        This Cookie Policy describes which cookies and similar technologies (e.g. browser local storage) are
+        used by the <strong>hmdigital.hr</strong> website (the <strong>"Website"</strong>), operated by
+        <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong>. For more about how we process
+        personal data, see our <a href={privacyPath} class="text-primary-600 hover:underline">Privacy Policy</a>.
+      </p>
+
+      <div class="space-y-8 text-slate-700 leading-relaxed">
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">1. What are cookies?</h2>
+          <p>
+            Cookies are small text files that a website stores on your device through your browser. Similar
+            technologies, such as local storage (<em>localStorage</em>), allow data to be stored directly in
+            the browser. In this Policy we refer to all of these technologies collectively as "cookies".
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">2. How we use cookies</h2>
+          <p class="mb-3">
+            On your first visit to the Website, a cookie notice is shown where you choose which categories of
+            cookies you accept. <strong>Analytics cookies are loaded only after your explicit consent</strong> —
+            without consent, the Website does not set any tracking cookies.
+          </p>
+
+          <h3 class="font-semibold text-slate-900 mb-2">Necessary cookies and storage</h3>
+          <p class="mb-3">Required for the basic functioning of the Website and do not require consent:</p>
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm border border-slate-200">
+              <thead>
+                <tr class="bg-slate-50 text-left">
+                  <th class="p-3 border-b border-slate-200 font-semibold">Name</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Type</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Purpose</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 border-b border-slate-200 font-mono">cookie_consent</td>
+                  <td class="p-3 border-b border-slate-200">localStorage</td>
+                  <td class="p-3 border-b border-slate-200">Remembers your cookie consent choice</td>
+                  <td class="p-3 border-b border-slate-200">Until deleted from the browser</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="font-semibold text-slate-900 mb-2">Analytics cookies (only with consent)</h3>
+          <p class="mb-3">
+            With your consent, we use <strong>Google Analytics 4</strong> (Google Ireland Ltd. / Google LLC),
+            measurement ID <span class="font-mono">G-PR4THFLXQL</span>, to understand how the Website is used
+            (pages visited, visit duration, device type, approximate location):
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-slate-200">
+              <thead>
+                <tr class="bg-slate-50 text-left">
+                  <th class="p-3 border-b border-slate-200 font-semibold">Name</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Type</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Purpose</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 border-b border-slate-200 font-mono">_ga</td>
+                  <td class="p-3 border-b border-slate-200">Cookie</td>
+                  <td class="p-3 border-b border-slate-200">Distinguishes visitors (Google Analytics)</td>
+                  <td class="p-3 border-b border-slate-200">2 years</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border-b border-slate-200 font-mono">_ga_*</td>
+                  <td class="p-3 border-b border-slate-200">Cookie</td>
+                  <td class="p-3 border-b border-slate-200">Maintains session state (Google Analytics)</td>
+                  <td class="p-3 border-b border-slate-200">2 years</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">3. Managing your consent</h2>
+          <p class="mb-3">You can change or withdraw your consent at any time:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              by clicking the <strong>floating cookie settings icon</strong> (gear) in the bottom-left corner of
+              the Website, where you can enable or disable analytics cookies;
+            </li>
+            <li>
+              by deleting cookies and site data in your browser settings — the cookie notice will then be shown
+              again on your next visit.
+            </li>
+          </ul>
+          <p class="mt-3">
+            Withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal.
+            Declining analytics cookies does not limit your use of the Website in any way.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">4. More information</h2>
+          <p>
+            To learn more about how Google processes data, see
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">policies.google.com/privacy</a>.
+            Information about how we process personal data, your rights, and the controller's contact details
+            is available in our <a href={privacyPath} class="text-primary-600 hover:underline">Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">5. Changes to this Policy</h2>
+          <p>
+            We may amend this Policy from time to time, for example if we introduce new tools or cookies. The
+            current version, with its last-updated date, is always published on this page.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</Layout>

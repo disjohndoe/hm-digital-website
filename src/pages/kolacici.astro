@@ -1,0 +1,151 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getPathForLocale } from '../i18n/ui';
+
+const title = 'Politika kolačića — HM Digital';
+const description = 'Politika kolačića web stranice hmdigital.hr — koje kolačiće koristimo, u koje svrhe i kako možete upravljati svojom privolom.';
+const lastUpdated = '03.06.2026.';
+const version = '2026-06-03';
+const privacyPath = getPathForLocale('/pravila-privatnosti', 'hr');
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical="/kolacici/"
+>
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="container-custom max-w-4xl">
+      <div class="mb-8 text-sm text-slate-500">
+        <p>Verzija: <span class="font-mono">{version}</span></p>
+        <p>Datum zadnje izmjene: {lastUpdated}</p>
+        <p>Datum stupanja na snagu: {lastUpdated}</p>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Politika kolačića</h1>
+
+      <p class="text-slate-700 mb-8 leading-relaxed">
+        Ova Politika kolačića opisuje koje kolačiće i slične tehnologije (npr. lokalnu pohranu preglednika)
+        koristi web stranica <strong>hmdigital.hr</strong> (dalje: <strong>„Web stranica"</strong>), kojom
+        upravlja <strong>HM DIGITAL, obrt za programiranje i digitalne usluge</strong>. Više o obradi osobnih
+        podataka pročitajte u našim <a href={privacyPath} class="text-primary-600 hover:underline">Pravilima privatnosti</a>.
+      </p>
+
+      <div class="space-y-8 text-slate-700 leading-relaxed">
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">1. Što su kolačići?</h2>
+          <p>
+            Kolačići (engl. <em>cookies</em>) male su tekstualne datoteke koje web stranica sprema na vaš
+            uređaj putem preglednika. Slične tehnologije, poput lokalne pohrane (<em>localStorage</em>),
+            omogućuju spremanje podataka izravno u pregledniku. U ovoj Politici sve te tehnologije zajednički
+            nazivamo „kolačićima".
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">2. Kako koristimo kolačiće</h2>
+          <p class="mb-3">
+            Pri prvom posjetu Web stranici prikazuje se obavijest o kolačićima putem koje birate koje
+            kategorije kolačića prihvaćate. <strong>Analitički kolačići učitavaju se isključivo nakon vaše
+            izričite privole</strong> — bez privole Web stranica ne postavlja nikakve kolačiće za praćenje.
+          </p>
+
+          <h3 class="font-semibold text-slate-900 mb-2">Nužni kolačići i pohrana</h3>
+          <p class="mb-3">Potrebni za osnovno funkcioniranje Web stranice i ne zahtijevaju privolu:</p>
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm border border-slate-200">
+              <thead>
+                <tr class="bg-slate-50 text-left">
+                  <th class="p-3 border-b border-slate-200 font-semibold">Naziv</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Vrsta</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Svrha</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Trajanje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 border-b border-slate-200 font-mono">cookie_consent</td>
+                  <td class="p-3 border-b border-slate-200">localStorage</td>
+                  <td class="p-3 border-b border-slate-200">Pamti vaš odabir privole za kolačiće</td>
+                  <td class="p-3 border-b border-slate-200">Do brisanja iz preglednika</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="font-semibold text-slate-900 mb-2">Analitički kolačići (samo uz privolu)</h3>
+          <p class="mb-3">
+            Uz vašu privolu koristimo <strong>Google Analytics 4</strong> (Google Ireland Ltd. / Google LLC),
+            mjerni ID <span class="font-mono">G-PR4THFLXQL</span>, za razumijevanje načina korištenja Web
+            stranice (posjećene stranice, trajanje posjeta, vrsta uređaja, približna lokacija):
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-slate-200">
+              <thead>
+                <tr class="bg-slate-50 text-left">
+                  <th class="p-3 border-b border-slate-200 font-semibold">Naziv</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Vrsta</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Svrha</th>
+                  <th class="p-3 border-b border-slate-200 font-semibold">Trajanje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 border-b border-slate-200 font-mono">_ga</td>
+                  <td class="p-3 border-b border-slate-200">Kolačić</td>
+                  <td class="p-3 border-b border-slate-200">Razlikovanje posjetitelja (Google Analytics)</td>
+                  <td class="p-3 border-b border-slate-200">2 godine</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border-b border-slate-200 font-mono">_ga_*</td>
+                  <td class="p-3 border-b border-slate-200">Kolačić</td>
+                  <td class="p-3 border-b border-slate-200">Održavanje stanja sesije (Google Analytics)</td>
+                  <td class="p-3 border-b border-slate-200">2 godine</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">3. Upravljanje privolom</h2>
+          <p class="mb-3">Svoju privolu možete u svakom trenutku izmijeniti ili povući:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              klikom na <strong>plutajuću ikonu postavki kolačića</strong> (zupčanik) u donjem lijevom kutu
+              Web stranice, gdje možete uključiti ili isključiti analitičke kolačiće;
+            </li>
+            <li>
+              brisanjem kolačića i podataka stranice u postavkama svog preglednika — nakon toga će se obavijest
+              o kolačićima ponovno prikazati pri sljedećem posjetu.
+            </li>
+          </ul>
+          <p class="mt-3">
+            Povlačenje privole ne utječe na zakonitost obrade prije povlačenja. Odbijanje analitičkih kolačića
+            ni na koji način ne ograničava korištenje Web stranice.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">4. Više informacija</h2>
+          <p>
+            Više o tome kako Google obrađuje podatke pročitajte na
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">policies.google.com/privacy</a>.
+            Informacije o obradi osobnih podataka, vašim pravima i kontaktu voditelja obrade dostupne su u našim
+            <a href={privacyPath} class="text-primary-600 hover:underline">Pravilima privatnosti</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-slate-900 mb-3">5. Izmjene Politike</h2>
+          <p>
+            Ovu Politiku možemo povremeno izmijeniti, primjerice ako uvedemo nove alate ili kolačiće. Važeća
+            verzija s datumom zadnje izmjene uvijek je objavljena na ovoj stranici.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</Layout>
