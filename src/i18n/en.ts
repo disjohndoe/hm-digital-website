@@ -725,6 +725,136 @@ export const en = {
     message: 'Thank you for contacting us. Your message has been received and we will get back to you as soon as possible!',
     backToHome: 'Back to home'
   },
+  accountingLanding: {
+    meta: {
+      title: 'Računovođe — Accounting Software for Croatian Firms | HM Digital',
+      description: 'Stop chasing clients for invoices. Clients snap a photo on their phone, the app reads it for you, you just review and confirm. Works with Synesis, PANTHEON, Minimax, Luceed and SAP.'
+    },
+    hero: {
+      badge: 'ACCOUNTING FIRMS · CROATIA · EUR',
+      tagline: 'Stop chasing clients for invoices.',
+      subtitle: 'Your clients photograph invoices on their phone, the app reads them for you, and you just review and confirm. Six hours of typing a day becomes two — and the data lands straight in the program you already use.',
+      ctaPrimary: 'Request a 10-minute demo',
+      ctaSecondary: 'How does it work?',
+      trustRow: 'GDPR · FINA e-invoices · EU hosting · OIB validation'
+    },
+    problem: {
+      title: 'Does this Monday sound familiar?',
+      subtitle: "You didn't become an accountant to type up other people's invoices. Yet most of the day goes to exactly that.",
+      card1: {
+        title: 'You chase clients constantly',
+        desc: 'Emails, Viber, calls — for the third time this month you are asking the same client for invoices that should already be with you. A lost PDF in a text, a blurry photo on WhatsApp, an invoice "I\'ll send later".'
+      },
+      card2: {
+        title: 'You type the same data for hours',
+        desc: 'OIB, amount, date, VAT rate — from paper or email into your ERP. Slow, tedious, error-prone. One wrong digit and the tax return is incorrect.'
+      },
+      card3: {
+        title: 'Invoices are scattered everywhere',
+        desc: 'Mail, email, Viber, paper archive, the desk. Nobody knows whether everything has arrived, yet the tax office asks for all of it.'
+      }
+    },
+    pillars: {
+      title: 'Three things you will never have to do again',
+      subtitle: 'The whole idea in one sentence: your clients photograph, the app reads, you confirm.',
+      card1: {
+        title: 'Clients send them themselves',
+        desc: 'A free mobile app for your clients. They snap the invoice in a second, and an automatic reminder makes sure it arrives on time. No more chasing — no emails, no Viber, no "I\'ll send it later".'
+      },
+      card2: {
+        title: 'No typing',
+        desc: 'The app reads the OIB, amount, date and line items for you. You just review and confirm. Six hours of work a day becomes two.'
+      },
+      card3: {
+        title: 'Works with your program',
+        desc: 'Synesis, PANTHEON, Minimax, Luceed or SAP — you don\'t change the program you already use. OIB validation, VAT rates 25/13/5/0 %, FINA e-invoices and GDPR are built in from the start.'
+      }
+    },
+    howItWorks: {
+      title: 'How it looks in practice',
+      step1: { title: 'Client photographs the invoice', desc: 'A free app on their phone. One photo and the invoice is with you — no email, no attachments.' },
+      step2: { title: 'You review and confirm', desc: 'The app has already read the OIB, amount and line items. You just review, correct if needed, and confirm.' },
+      step3: { title: 'Export to your program', desc: 'One click and the data is in Synesis, PANTHEON, Minimax, Luceed or SAP — in a format your program already understands.' }
+    },
+    beforeAfter: {
+      title: 'Ana, an accountant with 40 clients',
+      beforeLabel: 'Before',
+      afterLabel: 'Now',
+      before: [
+        '7:30 — 14 emails and 3 Vibers with invoices (and without them)',
+        '8:00–14:00 — typing OIBs and amounts into the ERP',
+        'Chasing the invoice that vanished in a text',
+        'Catching the wrong VAT rate after everything was already entered',
+        '16:00 — heading home. Same again tomorrow.'
+      ],
+      after: [
+        '7:30 — you open the app, every invoice already there, read',
+        '8:00 — you review the suggested data and confirm',
+        'Automatic reminders chase clients instead of you',
+        'By 10:00 — the Synesis export is done',
+        'The rest of the day for advisory work and coffee with clients'
+      ]
+    },
+    erp: {
+      title: 'It already works with the program you use',
+      subtitle: 'One-click export, in a format your program understands. For anything else — CSV and XML.',
+      items: ['Synesis', 'PANTHEON', 'Minimax', 'Luceed', 'SAP'],
+      fallback: '+ CSV and XML for any other program'
+    },
+    pricing: {
+      title: 'A clear price, no surprises',
+      perClient: '10 EUR per month per active client',
+      minimum: 'Minimum 50 EUR per month per office',
+      note: 'You only pay for clients who actually send invoices. No hidden costs, no long-term contract.',
+      roi: '10 EUR per client is less than 15 minutes of your work.'
+    },
+    faq: {
+      title: 'Frequently asked questions',
+      items: [
+        { q: 'Do I have to switch the program I already use?', a: 'No. The app exports data to Synesis, PANTHEON, Minimax, Luceed or SAP. For anything else, the export is in CSV or XML. You stay in the program you know.' },
+        { q: 'What if my client doesn\'t have a smartphone?', a: 'No problem. The client can also send the invoice by email, or bring a paper invoice that you photograph. The mobile app is just the fastest path — it isn\'t required.' },
+        { q: 'Is my clients\' OIB protected?', a: 'Yes. All data is held on servers in the European Union, encrypted, with FINA and ZKI compliance. GDPR articles 15, 17 and 21 are built into the system — including the right to access, erasure and data portability.' },
+        { q: 'How long does setup take for my office?', a: 'Usually one working day. We\'ll show you in a 10-minute demo exactly what it looks like for your office and your program — no obligation.' }
+      ]
+    },
+    cta: {
+      title: 'Request a 10-minute demo',
+      subtitle: "We'll show you how your office can stop typing up invoices. No obligation, no pressure.",
+      form: {
+        office: 'Office name',
+        officePlaceholder: 'e.g. Ana Accounting Ltd.',
+        name: 'Your name',
+        namePlaceholder: 'First and last name',
+        email: 'Email',
+        emailPlaceholder: 'name@office.hr',
+        phone: 'Phone (optional)',
+        phonePlaceholder: '+385 ...',
+        erp: 'Which program do you use today?',
+        erpOptions: {
+          synesis: 'Synesis',
+          pantheon: 'PANTHEON',
+          minimax: 'Minimax',
+          luceed: 'Luceed',
+          sap: 'SAP',
+          other: 'Another program',
+          none: 'Not using one yet'
+        },
+        message: 'Message (optional)',
+        messagePlaceholder: 'Tell us a bit about your office...',
+        consent: 'I agree to the processing of personal data for the purpose of contact (GDPR).',
+        consentLink: 'Privacy Policy',
+        submit: 'Send request',
+        submitting: 'Sending...',
+        successTitle: 'Thank you! We received your request.',
+        successDesc: 'We will get back to you within 24 hours to arrange the demo.',
+        error: 'Sending failed. Please try again or email us directly.'
+      },
+      directContact: 'Or reach us directly:',
+      email: 'info@hmdigital.hr',
+      phone: '+385 97 7120 800'
+    }
+  },
+
   medicalLanding: {
     meta: {
       title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',

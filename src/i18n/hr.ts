@@ -725,6 +725,136 @@ export const hr = {
     message: 'Hvala Vam na kontaktu, Vaša poruka je zaprimljena. Javiti ćemo Vam se u najkraćem mogućem roku!',
     backToHome: 'Natrag na naslovnicu'
   },
+  accountingLanding: {
+    meta: {
+      title: 'Računovođe — Računovodstveni softver za hrvatske urede | HM Digital',
+      description: 'Prestanite ganjati klijente za račune. Klijenti slikaju mobitelom, aplikacija čita umjesto vas, a vi samo pregledate i potvrdite. Radi uz Synesis, PANTHEON, Minimax, Luceed i SAP.'
+    },
+    hero: {
+      badge: 'RAČUNOVODSTVENI UREDI · HRVATSKA · EUR',
+      tagline: 'Prestanite ganjati klijente za račune.',
+      subtitle: 'Vaši klijenti slikaju račune mobitelom, aplikacija ih čita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva — a podaci završavaju ravno u programu koji već koristite.',
+      ctaPrimary: 'Zatražite prezentaciju od 10 minuta',
+      ctaSecondary: 'Kako to radi?',
+      trustRow: 'GDPR · FINA e-računi · EU hosting · OIB validacija'
+    },
+    problem: {
+      title: 'Poznat vam je ovaj ponedjeljak?',
+      subtitle: 'Niste postali računovođa da biste tipkali tuđe račune. Ipak, većina dana ode na to.',
+      card1: {
+        title: 'Stalno ganjate klijente',
+        desc: 'Mailovi, Viber, pozivi — treći put ovaj mjesec molite istog klijenta za račune koji su već trebali biti tu. Izgubljen PDF u SMS-u, mutna fotografija na WhatsAppu, račun koji „pošaljem kasnije".'
+      },
+      card2: {
+        title: 'Sate tipkate iste podatke',
+        desc: 'OIB, iznos, datum, PDV stopa — iz papira ili e-maila u ERP. Polako, dosadno, podložno pogrešci. Jedna kriva znamenka i porezni je obrazac netočan.'
+      },
+      card3: {
+        title: 'Računi su raspršeni posvuda',
+        desc: 'Pošta, e-mail, Viber, papirnata arhiva, radni stol. Nitko ne zna je li sve stiglo, a porezna provjera pita za sve.'
+      }
+    },
+    pillars: {
+      title: 'Tri stvari koje više nećete morati raditi',
+      subtitle: 'Cijela ideja u jednoj rečenici: vaši klijenti slikaju, aplikacija čita, vi potvrđujete.',
+      card1: {
+        title: 'Klijenti šalju sami',
+        desc: 'Slobodna mobilna aplikacija za vaše klijente. Slikaju račun u sekundi, a automatski podsjetnik pazi da stigne na vrijeme. Više nema ganjanja — ni mailova, ni Vibera, ni „pošaljem kasnije".'
+      },
+      card2: {
+        title: 'Bez tipkanja',
+        desc: 'Aplikacija pročita OIB, iznos, datum i stavke računa umjesto vas. Vi samo pregledate i potvrdite. Šest sati rada dnevno postaje dva.'
+      },
+      card3: {
+        title: 'Radi uz vaš program',
+        desc: 'Synesis, PANTHEON, Minimax, Luceed ili SAP — ne mijenjate program koji već koristite. OIB validacija, PDV stope 25/13/5/0 %, FINA e-računi i GDPR ugrađeni su od početka.'
+      }
+    },
+    howItWorks: {
+      title: 'Kako to izgleda u praksi',
+      step1: { title: 'Klijent slika račun', desc: 'Besplatna aplikacija na mobitelu. Jedna fotografija i račun je kod vas — bez e-maila, bez privitaka.' },
+      step2: { title: 'Pregledate i potvrdite', desc: 'Aplikacija je već pročitala OIB, iznos i stavke. Vi samo pregledate, po potrebi ispravite i potvrdite.' },
+      step3: { title: 'Izvoz u vaš program', desc: 'Jedan klik i podaci su u Synesis, PANTHEON, Minimax, Luceed ili SAP — u formatu koji vaš program već poznaje.' }
+    },
+    beforeAfter: {
+      title: 'Ana, računovođa s 40 klijenata',
+      beforeLabel: 'Prije',
+      afterLabel: 'Sada',
+      before: [
+        '7:30 — 14 mailova i 3 Vibera s računima (i bez njih)',
+        '8:00–14:00 — tipkanje OIB-ova i iznosa u ERP',
+        'Ponovno traženje računa koji je nestalo u SMS-u',
+        'Otkrivanje krive PDV stope nakon što je sve već upisano',
+        '16:00 — ide se kući. Sutra isto.'
+      ],
+      after: [
+        '7:30 — otvorite aplikaciju, svi računi već tu, pročitani',
+        '8:00 — pregledate predložene podatke, potvrdite',
+        'Automatski podsjetnici ganjaju klijente umjesto vas',
+        'Do 10:00 — izvoz u Synesis gotov',
+        'Ostatak dana za savjetodavni rad i kavu s klijentima'
+      ]
+    },
+    erp: {
+      title: 'Već radi s programom koji koristite',
+      subtitle: 'Izvoz jednim klikom, u formatu koji vaš program razumije. Za sve ostalo — CSV i XML.',
+      items: ['Synesis', 'PANTHEON', 'Minimax', 'Luceed', 'SAP'],
+      fallback: '+ CSV i XML za bilo koji drugi program'
+    },
+    pricing: {
+      title: 'Jasna cijena, bez iznenađenja',
+      perClient: '10 EUR mjesečno po aktivnom klijentu',
+      minimum: 'Minimum 50 EUR mjesečno po uredu',
+      note: 'Plaćate samo za klijente koji stvarno šalju račune. Bez skrivenih troškova, bez dugoročnog ugovora.',
+      roi: '10 EUR po klijentu je manje od 15 minuta vašeg rada.'
+    },
+    faq: {
+      title: 'Česta pitanja',
+      items: [
+        { q: 'Moram li mijenjati program koji već koristim?', a: 'Ne. Aplikacija izvozi podatke u Synesis, PANTHEON, Minimax, Luceed ili SAP. Za sve ostalo izvoz je u CSV ili XML formatu. Ostajete u programu koji poznajete.' },
+        { q: 'Što ako moj klijent nema pametni telefon?', a: 'Nije problem. Račun može poslati i e-mailom, ili donijeti papirnati račun koji vi fotografirate. Mobilna aplikacija je samo najbrži put, nije obavezna.' },
+        { q: 'Je li OIB mojih klijenata zaštićen?', a: 'Da. Svi podaci nalaze se na poslužiteljima u Europskoj uniji, šifrirani, s usklađenošću prema FINA i ZKI. GDPR članci 15, 17 i 21 ugrađeni su u sustav — uključujući pravo na pristup, brisanje i prijenos podataka.' },
+        { q: 'Koliko traje ugradnja za moj ured?', a: 'Obično jedan radni dan. Pokažemo vam na prezentaciji od 10 minuta kako točno to izgleda za vaš ured i vaš program — bez obveze.' }
+      ]
+    },
+    cta: {
+      title: 'Zatražite prezentaciju od 10 minuta',
+      subtitle: 'Pokažemo vam kako vaš ured može prestati tipkati račune. Bez obveze, bez pritiska.',
+      form: {
+        office: 'Naziv ureda',
+        officePlaceholder: 'npr. Ana Računovodstvo d.o.o.',
+        name: 'Vaše ime',
+        namePlaceholder: 'Ime i prezime',
+        email: 'E-mail',
+        emailPlaceholder: 'ime@ured.hr',
+        phone: 'Telefon (neobavezno)',
+        phonePlaceholder: '+385 ...',
+        erp: 'Koji program danas koristite?',
+        erpOptions: {
+          synesis: 'Synesis',
+          pantheon: 'PANTHEON',
+          minimax: 'Minimax',
+          luceed: 'Luceed',
+          sap: 'SAP',
+          other: 'Drugi program',
+          none: 'Još ne koristim'
+        },
+        message: 'Poruka (neobavezno)',
+        messagePlaceholder: 'Recite nam nešto o svom uredu...',
+        consent: 'Slažem se s obradom osobnih podataka u svrhu kontakta (GDPR).',
+        consentLink: 'Politiku privatnosti',
+        submit: 'Pošalji zahtjev',
+        submitting: 'Slanje...',
+        successTitle: 'Hvala! Zaprimili smo vaš zahtjev.',
+        successDesc: 'Javit ćemo se u roku od 24 sata radi dogovora o prezentaciji.',
+        error: 'Slanje nije uspjelo. Pokušajte ponovno ili pošaljite mail izravno.'
+      },
+      directContact: 'Ili nas kontaktirajte izravno:',
+      email: 'info@hmdigital.hr',
+      phone: '+385 97 7120 800'
+    }
+  },
+
   medicalLanding: {
     meta: {
       title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud | HM Digital',

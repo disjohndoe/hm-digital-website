@@ -1,0 +1,371 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import { getTranslations } from '../i18n/ui';
+
+const locale = 'hr';
+const t = getTranslations(locale);
+const m = t.accountingLanding;
+
+// Formspree demo-request form (shared with the medicinski-softver "request demo"
+// page). The _subject + _source hidden fields keep Računovođe leads attributed.
+// Swap for a dedicated form ID later if you want them fully separated.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgokrggg';
+const SUCCESS_URL = 'https://hmdigital.hr/uspjeh';
+---
+
+<Layout
+  title={m.meta.title}
+  description={m.meta.description}
+  canonical="/racunovodski-softver/"
+  noindex={false}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Računovođe — Računovodstveni softver za hrvatske urede",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": m.hero.subtitle,
+      "url": "https://hmdigital.hr/racunovodski-softver",
+      "inLanguage": "hr",
+      "offers": {
+        "@type": "Offer",
+        "name": m.pricing.perClient,
+        "price": "10",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "unitText": "MONTH", "referenceQuantity": { "@type": "QuantitativeValue", "value": 1 } },
+        "description": `${m.pricing.perClient}. ${m.pricing.minimum}.`
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "HM Digital",
+        "url": "https://hmdigital.hr"
+      },
+      "featureList": [
+        m.pillars.card1.title,
+        m.pillars.card2.title,
+        m.pillars.card3.title
+      ]
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": m.faq.items.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": { "@type": "Answer", "text": item.a }
+      }))
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Naslovnica", "item": "https://hmdigital.hr/" },
+        { "@type": "ListItem", "position": 2, "name": "Računovodski softver", "item": "https://hmdigital.hr/racunovodski-softver" }
+      ]
+    })} />
+  </Fragment>
+
+  <!-- 1. Hero -->
+  <section class="py-20 lg:py-32 bg-gradient-to-br from-slate-900 to-primary-900">
+    <div class="container-custom text-center">
+      <p class="inline-block text-xs font-semibold tracking-wider text-primary-300 uppercase mb-6 px-3 py-1 rounded-full bg-primary-900/50 border border-primary-700/50">
+        {m.hero.badge}
+      </p>
+      <h1 class="sr-only">{m.meta.title}</h1>
+      <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto" role="doc-subtitle">
+        {m.hero.tagline}
+      </p>
+      <p class="text-lg sm:text-xl leading-relaxed text-slate-300 max-w-3xl mx-auto mb-10">
+        {m.hero.subtitle}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="#demo-form" variant="primary" size="lg">
+          {m.hero.ctaPrimary}
+        </Button>
+        <Button href="#kako-radi" variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
+          {m.hero.ctaSecondary}
+        </Button>
+      </div>
+      <p class="mt-10 text-sm text-slate-400">{m.hero.trustRow}</p>
+    </div>
+  </section>
+
+  <!-- 2. Problem -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.problem.title}</h2>
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">{m.problem.subtitle}</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.problem.card1.title}</h3>
+          <p class="text-slate-600 text-sm">{m.problem.card1.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.problem.card2.title}</h3>
+          <p class="text-slate-600 text-sm">{m.problem.card2.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.problem.card3.title}</h3>
+          <p class="text-slate-600 text-sm">{m.problem.card3.desc}</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Pillars -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white" id="prednosti">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.pillars.title}</h2>
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">{m.pillars.subtitle}</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <Card padding="lg">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.pillars.card1.title}</h3>
+          <p class="text-slate-600 text-sm">{m.pillars.card1.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.pillars.card2.title}</h3>
+          <p class="text-slate-600 text-sm">{m.pillars.card2.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.pillars.card3.title}</h3>
+          <p class="text-slate-600 text-sm">{m.pillars.card3.desc}</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. How it works -->
+  <section class="py-16 lg:py-24 bg-white" id="kako-radi">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.howItWorks.title}</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.howItWorks.step1.title}</h3>
+          <p class="text-slate-600 text-sm">{m.howItWorks.step1.desc}</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.howItWorks.step2.title}</h3>
+          <p class="text-slate-600 text-sm">{m.howItWorks.step2.desc}</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.howItWorks.step3.title}</h3>
+          <p class="text-slate-600 text-sm">{m.howItWorks.step3.desc}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Before / After -->
+  <section class="py-16 lg:py-24 bg-slate-50">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.beforeAfter.title}</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <Card padding="lg" class="border-red-200">
+          <h3 class="text-lg font-semibold text-red-700 mb-4">{m.beforeAfter.beforeLabel}</h3>
+          <ul class="space-y-3">
+            {m.beforeAfter.before.map((item) => (
+              <li class="flex items-start text-sm text-slate-600">
+                <svg class="w-5 h-5 text-red-400 mr-3 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+        <Card padding="lg" class="border-green-200">
+          <h3 class="text-lg font-semibold text-green-700 mb-4">{m.beforeAfter.afterLabel}</h3>
+          <ul class="space-y-3">
+            {m.beforeAfter.after.map((item) => (
+              <li class="flex items-start text-sm text-slate-600">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ERP strip -->
+  <section class="py-14 lg:py-16 bg-white">
+    <div class="container-custom text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">{m.erp.title}</h2>
+      <p class="text-slate-600 max-w-2xl mx-auto mb-8">{m.erp.subtitle}</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+        {m.erp.items.map((name) => (
+          <span class="text-lg font-bold text-slate-700">{name}</span>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-500">{m.erp.fallback}</p>
+    </div>
+  </section>
+
+  <!-- 7. Pricing snapshot -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white">
+    <div class="container-custom">
+      <Card padding="xl" class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{m.pricing.title}</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-primary-600 mb-2">{m.pricing.perClient}</p>
+        <p class="text-slate-600 mb-6">{m.pricing.minimum}</p>
+        <p class="text-slate-600 text-sm mb-2">{m.pricing.note}</p>
+        <p class="text-primary-700 text-sm font-medium">{m.pricing.roi}</p>
+        <div class="mt-8">
+          <Button href="#demo-form" variant="primary" size="lg">{m.hero.ctaPrimary}</Button>
+        </div>
+      </Card>
+    </div>
+  </section>
+
+  <!-- 8. FAQ -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.faq.title}</h2>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-3">
+        {m.faq.items.map((item) => (
+          <details class="group border border-slate-200 rounded-lg">
+            <summary class="flex items-center justify-between cursor-pointer p-4 sm:p-5 font-medium text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
+              {item.q}
+              <svg class="w-5 h-5 text-slate-400 shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-4 sm:px-5 pb-4 sm:pb-5 text-slate-600 text-sm leading-relaxed">
+              {item.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CTA + Lead form -->
+  <section class="py-16 lg:py-24 bg-primary-600" id="demo-form">
+    <div class="container-custom">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">{m.cta.title}</h2>
+        <p class="text-lg text-primary-100 max-w-2xl mx-auto">{m.cta.subtitle}</p>
+      </div>
+      <div class="max-w-lg mx-auto">
+        <form
+          action={FORMSPREE_ENDPOINT}
+          method="POST"
+          class="bg-white rounded-xl shadow-lg p-6 lg:p-8"
+          data-form-security
+        >
+          <!-- Honeypot -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <label for="_honey_acc">Do not fill:</label>
+            <input type="text" id="_honey_acc" name="_honey" tabindex="-1" autocomplete="off" />
+          </div>
+          <input type="hidden" name="_form_timestamp" value="" />
+          <input type="hidden" name="_subject" value="Računovođe — Zahtjev za prezentaciju" />
+          <input type="hidden" name="_source" value="racunovodski-softver" />
+          <input type="hidden" name="_next" value={SUCCESS_URL} />
+
+          <div class="space-y-5">
+            <div>
+              <label for="acc-office" class="block text-sm font-medium text-slate-700 mb-2">{m.cta.form.office}</label>
+              <input type="text" id="acc-office" name="office" required
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors placeholder:text-slate-400"
+                placeholder={m.cta.form.officePlaceholder} />
+            </div>
+            <div>
+              <label for="acc-name" class="block text-sm font-medium text-slate-700 mb-2">{m.cta.form.name}</label>
+              <input type="text" id="acc-name" name="name" required
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors placeholder:text-slate-400"
+                placeholder={m.cta.form.namePlaceholder} />
+            </div>
+            <div>
+              <label for="acc-email" class="block text-sm font-medium text-slate-700 mb-2">{m.cta.form.email}</label>
+              <input type="email" id="acc-email" name="email" required
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors placeholder:text-slate-400"
+                placeholder={m.cta.form.emailPlaceholder} />
+            </div>
+            <div>
+              <label for="acc-phone" class="block text-sm font-medium text-slate-700 mb-2">{m.cta.form.phone}</label>
+              <input type="tel" id="acc-phone" name="phone"
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors placeholder:text-slate-400"
+                placeholder={m.cta.form.phonePlaceholder} />
+            </div>
+            <div>
+              <label for="acc-erp" class="block text-sm font-medium text-slate-700 mb-2">{m.cta.form.erp}</label>
+              <select id="acc-erp" name="erp" required
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors bg-white">
+                <option value="">{m.cta.form.erp}</option>
+                <option value="synesis">{m.cta.form.erpOptions.synesis}</option>
+                <option value="pantheon">{m.cta.form.erpOptions.pantheon}</option>
+                <option value="minimax">{m.cta.form.erpOptions.minimax}</option>
+                <option value="luceed">{m.cta.form.erpOptions.luceed}</option>
+                <option value="sap">{m.cta.form.erpOptions.sap}</option>
+                <option value="other">{m.cta.form.erpOptions.other}</option>
+                <option value="none">{m.cta.form.erpOptions.none}</option>
+              </select>
+            </div>
+            <div>
+              <label for="acc-message" class="block text-sm font-medium text-slate-700 mb-2">{m.cta.form.message}</label>
+              <textarea id="acc-message" name="message" rows="3"
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors placeholder:text-slate-400"
+                placeholder={m.cta.form.messagePlaceholder}></textarea>
+            </div>
+            <div class="flex items-start">
+              <input type="checkbox" id="acc-consent" name="consent" required
+                class="mt-1 mr-3 w-5 h-5 rounded border-slate-300 text-primary-600 focus:ring-primary-500" />
+              <label for="acc-consent" class="text-sm text-slate-600">
+                {m.cta.form.consent}
+                <a href="/pravila-privatnosti/" class="text-primary-700 font-medium underline hover:text-primary-800" target="_blank" rel="noopener">{m.cta.form.consentLink}</a>.
+              </label>
+            </div>
+            <Button type="submit" variant="primary" size="lg" fullWidth>
+              {m.cta.form.submit}
+            </Button>
+          </div>
+        </form>
+
+        <div class="mt-8 text-center">
+          <p class="text-primary-100 mb-2">{m.cta.directContact}</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={`mailto:${m.cta.email}`} class="text-white font-semibold hover:text-primary-200 transition-colors">{m.cta.email}</a>
+            <a href={`tel:${m.cta.phone.replace(/\s/g, '')}`} class="text-white font-semibold hover:text-primary-200 transition-colors">{m.cta.phone}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline src="/js/form-security.js"></script>
+</Layout>
