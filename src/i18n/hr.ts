@@ -727,7 +727,7 @@ export const hr = {
   },
   accountingLanding: {
     meta: {
-      title: 'Računovođe — Računovodstveni softver za hrvatske urede | HM Digital',
+      title: 'Računovođe — Računovodstveni program za hrvatske urede | HM Digital',
       description: 'Prestanite ganjati klijente za račune. Klijenti slikaju mobitelom, aplikacija čita umjesto vas, a vi samo pregledate i potvrdite. Radi uz Synesis, PANTHEON, Minimax, Luceed i SAP.'
     },
     hero: {
