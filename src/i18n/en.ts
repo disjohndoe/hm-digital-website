@@ -858,7 +858,7 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
-      description: 'Cloud CEZIH software for private practices and polyclinics. The 1 May 2026 deadline has passed — fines up to €13,200 now apply. e-Findings, e-Prescriptions, e-Referrals from the cloud, from €49/mo. The fastest path to compliance.'
+      description: 'Cloud CEZIH software for private practices and polyclinics. The 1 May 2026 deadline has passed — fines up to €13,200 now apply. e-Findings, e-Prescriptions, e-Referrals from the cloud, from €79/mo. The fastest path to compliance.'
     },
     urgencyBar: {
       before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
@@ -892,7 +892,7 @@ export const en = {
     bridge: {
       title: 'You didn\'t become a doctor to deal with IT problems.',
       desc: 'The deadline passed on 1 May 2026, and fines up to €13,200 (Art. 35–37, Law NN 14/2019) now apply. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
-      costOfInaction: 'A €13,200 fine = 22 years of our software at €49/mo.',
+      costOfInaction: 'A €13,200 fine = 14 years of our software at €79/mo.',
       guideLink: 'Haven\'t started with CEZIH yet? Read the guide: what to do after the 1 May 2026 deadline →'
     },
     solution: {
@@ -979,7 +979,7 @@ export const en = {
         dental: true,
         smartCard: true,
         noContract: true,
-        priceFrom: '€49/mo'
+        priceFrom: '€79/mo'
       }
     },
     pricing: {
@@ -1006,11 +1006,9 @@ export const en = {
       },
       solo: {
         name: 'Solo',
-        price: '€49',
-        priceOriginal: '€79',
+        price: '€79',
         desc: 'For individual practices',
         users: '1-2 users',
-        promo: 'Welcome pricing',
         cta: 'Request a demo',
         ctaHint: 'Ideal for individual practices',
         featureList: [
@@ -1090,11 +1088,11 @@ export const en = {
       items: [
         {
           q: 'Which CEZIH software is best for private practices?',
-          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, CEZIH certification, ease of use, and affordable pricing. HM Digital is a cloud CEZIH software built specifically for private practices — from €49/mo, with full CEZIH integration and no need for a server or IT support.'
+          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, CEZIH certification, ease of use, and affordable pricing. HM Digital is a cloud CEZIH software built specifically for private practices — from €79/mo, with full CEZIH integration and no need for a server or IT support.'
         },
         {
           q: 'How much does CEZIH software cost?',
-          a: 'CEZIH software pricing varies widely: desktop systems cost around €100/mo plus server and IT support costs. Enterprise cloud solutions are even more expensive. HM Digital offers cloud CEZIH software from €49/mo for solo practices (1-2 users) and €199/mo for polyclinics (3-5 users). Onboarding and CEZIH activation are included. Free demo available with no obligation.'
+          a: 'CEZIH software pricing varies widely: desktop systems cost around €100/mo plus server and IT support costs. Enterprise cloud solutions are even more expensive. HM Digital offers cloud CEZIH software from €79/mo for solo practices (1-2 users) and €199/mo for polyclinics (3-5 users). Onboarding and CEZIH activation are included. Free demo available with no obligation.'
         },
         {
           q: 'Is there CEZIH software for dentists?',
@@ -1277,7 +1275,7 @@ export const en = {
         'Possible difficulties when renewing HZZO contracts',
         'Reputational risk with patients who expect a modern, connected healthcare system'
       ],
-      callout: 'Math: a single €13,200 fine equals 22 years of using a modern cloud CEZIH solution at €49/month. Technical compliance is consistently cheaper than non-compliance.'
+      callout: 'Math: a single €13,200 fine equals 14 years of using a modern cloud CEZIH solution at €79/month. Technical compliance is consistently cheaper than non-compliance.'
     },
     exchangeRequired: {
       title: 'What exactly must be exchanged with CEZIH',
@@ -1464,7 +1462,7 @@ export const en = {
         {
           n: '5',
           title: 'Pricing fit for a practice (not a hospital)',
-          desc: 'Subscriptions of ~€49–€199 per month should be enough for a solo practice or smaller polyclinic. Hospital systems are not appropriate.'
+          desc: 'Subscriptions of ~€79–€199 per month should be enough for a solo practice or smaller polyclinic. Hospital systems are not appropriate.'
         },
         {
           n: '6',

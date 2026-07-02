@@ -858,7 +858,7 @@ export const hr = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud | HM Digital',
-      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. Rok 1.5.2026 je prošao — kazne do €13.200. e-Nalaz, e-Recept, e-Uputnica iz cloud-a, od €49/mj. Najbrži put do usklađenosti.'
+      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. Rok 1.5.2026 je prošao — kazne do €13.200. e-Nalaz, e-Recept, e-Uputnica iz cloud-a, od €79/mj. Najbrži put do usklađenosti.'
     },
     urgencyBar: {
       before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
@@ -892,7 +892,7 @@ export const hr = {
     bridge: {
       title: 'Niste postali liječnik da biste rješavali IT probleme.',
       desc: 'Rok je prošao 1.5.2026, a kazne do €13.200 (čl. 35–37 Zakona NN 14/2019) se sada primjenjuju. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
-      costOfInaction: 'Kazna od €13.200 = 22 godine korištenja našeg softvera po €49/mj.',
+      costOfInaction: 'Kazna od €13.200 = 14 godina korištenja našeg softvera po €79/mj.',
       guideLink: 'Niste još uspjeli pokrenuti CEZIH? Pročitajte vodič: što napraviti nakon roka 1.5.2026 →'
     },
     solution: {
@@ -979,7 +979,7 @@ export const hr = {
         dental: true,
         smartCard: true,
         noContract: true,
-        priceFrom: '€49/mj'
+        priceFrom: '€79/mj'
       }
     },
     pricing: {
@@ -992,11 +992,9 @@ export const hr = {
       onboardingDetails: 'Što dobivam?',
       solo: {
         name: 'Solo',
-        price: '€49',
-        priceOriginal: '€79',
+        price: '€79',
         desc: 'Za samostalne ordinacije',
         users: '1-2 korisnika',
-        promo: 'Cijena dobrodošlice',
         cta: 'Zatražite demo',
         ctaHint: 'Idealno za pojedinačne ordinacije',
         featureList: [
@@ -1076,11 +1074,11 @@ export const hr = {
       items: [
         {
           q: 'Kako odabrati pravi medicinski softver s CEZIH integracijom?',
-          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. Za privatne ordinacije s 1-5 liječnika, ključni kriteriji su: cloud pristup s mobitela, CEZIH certifikacija, jednostavnost korištenja i pristupačna cijena. HM Digital je cloud medicinski program s punom CEZIH integracijom — od €49/mj, bez potrebe za serverom ili informatičarom.'
+          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. Za privatne ordinacije s 1-5 liječnika, ključni kriteriji su: cloud pristup s mobitela, CEZIH certifikacija, jednostavnost korištenja i pristupačna cijena. HM Digital je cloud medicinski program s punom CEZIH integracijom — od €79/mj, bez potrebe za serverom ili informatičarom.'
         },
         {
           q: 'Koliko košta CEZIH softver za ordinacije?',
-          a: 'Cijena CEZIH softvera varira značajno: desktop sustavi koštaju oko €100/mj plus troškovi servera i IT podrške. Enterprise cloud rješenja su još skuplja. HM Digital nudi cloud CEZIH softver od €49/mj za solo ordinacije (1-2 korisnika) i €199/mj za poliklinike (3-5 korisnika). Onboarding i CEZIH aktivacija uključeni su u cijenu. Besplatni demo dostupan bez obveze.'
+          a: 'Cijena CEZIH softvera varira značajno: desktop sustavi koštaju oko €100/mj plus troškovi servera i IT podrške. Enterprise cloud rješenja su još skuplja. HM Digital nudi cloud CEZIH softver od €79/mj za solo ordinacije (1-2 korisnika) i €199/mj za poliklinike (3-5 korisnika). Onboarding i CEZIH aktivacija uključeni su u cijenu. Besplatni demo dostupan bez obveze.'
         },
         {
           q: 'Postoji li CEZIH softver za stomatologe?',
@@ -1271,7 +1269,7 @@ export const hr = {
         'Mogući problemi pri obnavljanju ugovora s HZZO-om',
         'Reputacijski rizik prema pacijentima koji očekuju moderan, povezan zdravstveni sustav'
       ],
-      callout: 'Računica: jedna kazna od €13.200 jednaka je 22 godinama korištenja modernog cloud CEZIH softvera po €49 mjesečno. Tehnička usklađenost je redovito jeftinija od neusklađenosti.'
+      callout: 'Računica: jedna kazna od €13.200 jednaka je 14 godinama korištenja modernog cloud CEZIH softvera po €79 mjesečno. Tehnička usklađenost je redovito jeftinija od neusklađenosti.'
     },
     exchangeRequired: {
       title: 'Što se točno mora razmjenjivati s CEZIH-om',
@@ -1458,7 +1456,7 @@ export const hr = {
         {
           n: '5',
           title: 'Cijena prilagođena ordinaciji (ne bolnici)',
-          desc: 'Pretplate od ~€49–€199 mjesečno trebale bi biti dovoljne za solo ordinaciju ili manju polikliniku. Bolnički sustavi nisu adekvatni.'
+          desc: 'Pretplate od ~€79–€199 mjesečno trebale bi biti dovoljne za solo ordinaciju ili manju polikliniku. Bolnički sustavi nisu adekvatni.'
         },
         {
           n: '6',
