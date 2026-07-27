@@ -1276,7 +1276,7 @@ export const en = {
         'Fines up to €13,200 per breach, under the Health Data and Information Act (NN 14/2019, Articles 28 and 36) — and personal liability for practice owners — apply after the deadline passes.',
         'Required exchange: ambulatory exam reports, specialist findings, hospital discharge letters.',
         'Fastest path to compliance: a cloud solution. No installation, no server, no waiting on IT.',
-        'First steps if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite) and a qualified certificate (Certilia/AKD) — run these two in parallel.'
+        'First step if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite). Signing in CEZIH uses your AKD/HZZO card — Certilia (mobile remote signing) is an optional add-on, not required.'
       ]
     },
     afterDeadline: {
@@ -1423,7 +1423,7 @@ export const en = {
     },
     fastTrack: {
       title: 'The fastest compliance path for unprepared practices',
-      intro: 'If your practice is not yet connected, here is the order of steps that, in practice, takes 1–2 weeks — assuming the administrative work is not delayed. Steps 1 and 2 (HZZO administration and qualified certificate issuance) are the slowest, so run them in parallel.',
+      intro: 'If your practice is not yet connected, here is the order of steps that, in practice, takes 1–2 weeks — assuming the administrative work is not delayed. Step 1 (HZZO administration) is the slowest, so start it immediately.',
       steps: [
         {
           n: '1',
@@ -1434,8 +1434,8 @@ export const en = {
         {
           n: '2',
           phase: 'Week 1',
-          title: 'Obtain Certilia / AKD credentials',
-          desc: 'If you do not yet have them, start the qualified electronic certificate issuance process with AKD or Certilia. This is often the slowest administrative step — run it in parallel with step 1.'
+          title: 'Prepare your AKD card for access and signing (Certilia optional)',
+          desc: 'Access to CEZIH and signing of documents uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) — that is the default method. Certilia (mobile remote signing) is an optional add-on if you want to sign from your phone without the physical card; it is not required for compliance.'
         },
         {
           n: '3',
@@ -1669,10 +1669,10 @@ export const en = {
     },
     stoSad: {
       title: 'What to do now',
-      intro: 'If your practice is not yet connected, you have time — but do not wait until the last moment. The administrative steps (the HZZO code and the qualified certificate) are the slowest, so run them in parallel:',
+      intro: 'If your practice is not yet connected, you have time — but do not wait until the last moment. The slowest step is administrative (the HZZO code), so start it now. Signing in CEZIH uses your AKD card — Certilia is optional:',
       steps: [
         { n: '1', title: 'Obtain a healthcare institution code from HZZO', desc: 'For non-contracted providers this is a prerequisite. "Dodjela šifre neugovorni" form + the Ministry of Health decision → sifriranje.neugovorni@hzzo.hr.' },
-        { n: '2', title: 'Obtain a qualified certificate (Certilia/AKD)', desc: 'Required for electronic signing in CEZIH. From 1 Jul 2026 you also need the new healthcare-worker ID card for access.' },
+        { n: '2', title: 'Prepare your AKD card for signing (Certilia optional)', desc: 'Signing in CEZIH uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card). Certilia (mobile remote signing) is an optional add-on for signing from your phone — not required.' },
         { n: '3', title: 'Choose a CEZIH-certified software solution', desc: 'Check the list of certified solutions on cezih.hr. Cloud solutions cut onboarding to days.' }
       ],
       ctaText: 'For a detailed walkthrough of the entire process (modules, fines, how to choose software, FAQ):',
@@ -1703,7 +1703,7 @@ export const en = {
         },
         {
           q: 'Can I wait until the end of 2026 to start preparing?',
-          a: 'Technically yes, but it is not wise. The slowest steps are administrative (the HZZO code and the qualified certificate), and if everyone starts at the last minute, bottlenecks will appear. Start preparing now.'
+          a: 'Technically yes, but it is not wise. The slowest step is administrative (the HZZO code), and if everyone starts at the last minute, bottlenecks will appear. Signing itself uses your AKD card, which requires no separate process. Start preparing now.'
         },
         {
           q: 'Do the fines of up to €13,200 still apply?',

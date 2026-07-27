@@ -1262,7 +1262,7 @@ export const hr = {
         'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) — i osobno za nositelje ordinacija — primjenjuju se nakon isteka roka.',
         'Razmjenjuju se ambulantni izvještaji, specijalistički nalazi i otpusna pisma.',
         'Najbrži put do usklađenosti = cloud rješenje. Bez instalacije, bez servera, bez čekanja na informatičara.',
-        'Prvi koraci ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet) i kvalificirani certifikat (Certilia/AKD) — ova dva idu paralelno.'
+        'Prvi korak ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet). Za potpisivanje u CEZIH-u koristi se vaša AKD/HZZO kartica — Certilia (mobilni udaljeni potpis) je opcionalan dodatak, nije obvezan.'
       ]
     },
     afterDeadline: {
@@ -1409,7 +1409,7 @@ export const hr = {
     },
     fastTrack: {
       title: 'Najbrži put do usklađenosti za nepripremljene ordinacije',
-      intro: 'Ako vaša ordinacija još nije priključena, ovo je redoslijed koraka koji u praksi traje 1–2 tjedna — uz uvjet da se administrativni dio ne odgađa. Najsporiji su koraci 1 i 2 (administracija prema HZZO-u i izdavanje kvalificiranog certifikata), pa krenite s njima paralelno.',
+      intro: 'Ako vaša ordinacija još nije priključena, ovo je redoslijed koraka koji u praksi traje 1–2 tjedna — uz uvjet da se administrativni dio ne odgađa. Najsporiji je korak 1 (administracija prema HZZO-u), pa ga pokrenite odmah.',
       steps: [
         {
           n: '1',
@@ -1420,8 +1420,8 @@ export const hr = {
         {
           n: '2',
           phase: 'Tjedan 1',
-          title: 'Ishodite Certilia / AKD pristupne podatke',
-          desc: 'Ako ih već nemate, pokrenite postupak izdavanja kvalificiranog elektroničkog certifikata kod AKD-a ili Certilie. Ovo je često najsporiji administrativni korak — pokrenite ga paralelno s korakom 1.'
+          title: 'Pripremite AKD karticu za pristup i potpis (Certilia opcionalno)',
+          desc: 'Za pristup CEZIH-u i potpisivanje dokumenata koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — to je zadani način. Certilia (mobilni udaljeni potpis) je opcionalan dodatak ako želite potpisivati s mobitela bez fizičke kartice; nije obvezan za usklađenost.'
         },
         {
           n: '3',
@@ -1655,10 +1655,10 @@ export const hr = {
     },
     stoSad: {
       title: 'Što sad napraviti?',
-      intro: 'Ako vaša ordinacija još nije priključena, imate vremena — ali nemojte čekati zadnji tren. Najsporiji su administrativni koraci (šifra HZZO i kvalificirani certifikat), pa ih pokrenite paralelno:',
+      intro: 'Ako vaša ordinacija još nije priključena, imate vremena — ali nemojte čekati zadnji tren. Najsporiji je administrativni korak (šifra HZZO-a), pa ga pokrenite odmah. Za potpisivanje u CEZIH-u koristi se vaša AKD kartica — Certilia je opcionalna:',
       steps: [
         { n: '1', title: 'Ishodite šifru zdravstvene ustanove od HZZO-a', desc: 'Za neugovorne pružatelje ovo je preduvjet. Tiskanica "Dodjela šifre neugovorni" + rješenje Ministarstva zdravstva → sifriranje.neugovorni@hzzo.hr.' },
-        { n: '2', title: 'Pribavite kvalificirani certifikat (Certilia/AKD)', desc: 'Potreban za elektroničko potpisivanje u CEZIH-u. Od 1.7.2026. za pristup trebate i novu iskaznicu ovlaštenog zdravstvenog radnika.' },
+        { n: '2', title: 'Pripremite AKD karticu za potpis (Certilia opcionalno)', desc: 'Za potpisivanje u CEZIH-u koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika). Certilia (mobilni udaljeni potpis) je opcionalan dodatak za potpisivanje s mobitela — nije obvezan.' },
         { n: '3', title: 'Odaberite CEZIH-ovjereno softversko rješenje', desc: 'Provjerite popis ovjerenih rješenja na cezih.hr. Cloud rješenja skraćuju onboarding na dane.' }
       ],
       ctaText: 'Za detaljan vodič kroz cijeli proces (moduli, kazne, kako odabrati softver, FAQ):',
@@ -1689,7 +1689,7 @@ export const hr = {
         },
         {
           q: 'Mogu li čekati do kraja 2026. s pripremama?',
-          a: 'Tehnički možete, ali nije pametno. Najsporiji su administrativni koraci (šifra HZZO-a i kvalificirani certifikat), a ako svi krenu u zadnji tren, pojavit će se gužve. Pokrenite pripreme sada.'
+          a: 'Tehnički možete, ali nije pametno. Najsporiji je administrativni korak (šifra HZZO-a), a ako svi krenu u zadnji tren, pojavit će se gužve. Za samo potpisivanje koristi se vaša AKD kartica, što ne zahtijeva poseban postupak. Pokrenite pripreme sada.'
         },
         {
           q: 'Vrijede li i dalje kazne do €13.200?',
