@@ -1447,7 +1447,7 @@ export const hr = {
     },
     midCta: {
       title: 'Trebate da za vas odradimo tehnički dio?',
-      desc: 'VPN, certifikati, AKD kartica, CEZIH modul — preuzmemo cijeli proces. Cloud onboarding traje dane, ne tjedne.',
+      desc: 'VPN, certifikati, AKD kartica, CEZIH modul — preuzmemo cijeli proces. Cloud onboarding traje danima, ne tjednima.',
       primaryLabel: 'Zatražite besplatnu konzultaciju',
       primaryHref: '/kontakt',
       outlineLabel: 'Pogledajte cloud CEZIH softver',
@@ -1565,7 +1565,7 @@ export const hr = {
     },
     cta: {
       title: 'Sljedeći korak: usklađenost u danima, ne tjednima',
-      body: 'Ako tražite najbrži put do CEZIH usklađenosti — bez instalacije, bez servera, bez čekanja informatičara — pogledajte naš cloud CEZIH softver. Specijaliziran je za privatne ordinacije i poliklinike, s onboardingom koji traje dane, ne tjedne.',
+      body: 'Ako tražite najbrži put do CEZIH usklađenosti — bez instalacije, bez servera, bez čekanja informatičara — pogledajte naš cloud CEZIH softver. Specijaliziran je za privatne ordinacije i poliklinike, s onboardingom koji traje danima, ne tjednima.',
       ctaPrimary: 'Pogledajte cloud CEZIH softver',
       ctaPrimaryHref: '/medicinski-softver',
       ctaSecondary: 'Zatražite besplatnu konzultaciju',
