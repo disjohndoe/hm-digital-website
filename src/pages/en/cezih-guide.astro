@@ -67,6 +67,10 @@ const pageUrl = `${siteUrl}/en/cezih-guide/`;
       <p class="text-xs sm:text-sm font-semibold tracking-wider text-primary-300 uppercase mb-4">
         {g.hero.eyebrow}
       </p>
+      <a href={g.hero.certLink} target="_blank" rel="external noopener" class="inline-flex items-center gap-2 px-3 py-1.5 mb-4 rounded-full bg-green-500/15 border border-green-400/40 text-green-200 text-xs sm:text-sm font-semibold hover:bg-green-500/25 transition-colors">
+        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        {g.hero.certBadge}
+      </a>
       <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
         {g.hero.title}
       </h1>
@@ -152,7 +156,13 @@ const pageUrl = `${siteUrl}/en/cezih-guide/`;
     <div class="container-custom max-w-4xl">
       <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">{g.afterDeadline.title}</h2>
       <p class="text-slate-700 leading-relaxed mb-4">{g.afterDeadline.body}</p>
-      <p class="text-slate-700 leading-relaxed mb-8">{g.afterDeadline.bodyExtra}</p>
+      <p class="text-slate-700 leading-relaxed mb-4">{g.afterDeadline.bodyExtra}</p>
+      <p class="text-slate-700 leading-relaxed mb-8">
+        {g.afterDeadline.crossLinkText}{' '}
+        <a href={g.afterDeadline.crossLinkHref} class="text-primary-700 underline hover:text-primary-800 font-medium">
+          {g.afterDeadline.crossLinkLabel}
+        </a>
+      </p>
       <h3 class="text-xl font-semibold text-slate-900 mb-4">{g.afterDeadline.whoTitle}</h3>
       <ul class="space-y-2">
         {g.afterDeadline.whoItems.map((item) => (

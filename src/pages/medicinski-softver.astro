@@ -14,6 +14,7 @@ const m = t.medicalLanding;
   title={m.meta.title}
   description={m.meta.description}
   canonical="/medicinski-softver/"
+  type="product"
   noindex={false}
 >
   <Fragment slot="head">
@@ -89,16 +90,16 @@ const m = t.medicalLanding;
 
   <script is:inline>
     (function() {
-      var deadline = new Date('2026-05-01T00:00:00+02:00');
+      var deadline = new Date('2027-01-01T00:00:00+01:00');
       var now = new Date();
       var diff = deadline.getTime() - now.getTime();
       var days = Math.ceil(diff / (1000 * 60 * 60 * 24));
       var el = document.getElementById('urgency-text');
       if (!el) return;
       if (days > 0) {
-        el.textContent = 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: ' + days + ' dana · Kazne do €13.200';
+        el.textContent = 'Zakon NN 14/2019, čl. 28 — do krajnjeg roka za CEZIH ostalo: ' + days + ' dana · Kazne do €13.200';
       } else {
-        el.textContent = 'CEZIH je sada obavezan — kazne do €13.200, i osobno za nositelje ordinacija';
+        el.textContent = 'CEZIH je obavezan — krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija';
       }
     })();
   </script>
@@ -106,8 +107,15 @@ const m = t.medicalLanding;
   <!-- 2. Hero -->
   <section class="py-20 lg:py-32 bg-gradient-to-br from-slate-900 to-primary-900">
     <div class="container-custom text-center">
-      <h1 class="sr-only">{m.hero.title}</h1>
-      <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto" role="doc-subtitle">
+      <a href={m.hero.certBadgeLink} target="_blank" rel="external noopener" class="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-green-500/15 border border-green-400/40 text-green-200 text-sm font-semibold hover:bg-green-500/25 transition-colors">
+        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        {m.hero.certBadge}
+        <svg class="w-3.5 h-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 max-w-4xl mx-auto leading-tight">
+        {m.hero.title}
+      </h1>
+      <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto bg-gradient-to-r from-primary-300 to-primary-100 bg-clip-text text-transparent">
         {m.hero.tagline}
       </p>
       <p class="text-lg sm:text-xl leading-relaxed text-slate-300 max-w-3xl mx-auto mb-10">
@@ -120,6 +128,39 @@ const m = t.medicalLanding;
         <Button href="#usporedba" variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
           {m.hero.ctaCompare}
         </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2b. Certification trust section -->
+  <section id="certifikacija" class="py-12 lg:py-16 bg-gradient-to-br from-green-50 to-primary-50 border-y border-green-200">
+    <div class="container-custom max-w-5xl">
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="shrink-0 w-16 h-16 rounded-2xl bg-green-600 flex items-center justify-center shadow-lg">
+          <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="flex-1">
+          <p class="inline-block px-3 py-1 bg-green-100 text-green-800 text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+            {m.cert.badge}
+          </p>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 leading-tight">{m.cert.title}</h2>
+          <p class="text-slate-700 leading-relaxed mb-6">{m.cert.body}</p>
+
+          <h3 class="text-base font-semibold text-slate-900 mb-3">{m.cert.pointsTitle}</h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
+            {m.cert.points.map((point) => (
+              <li class="flex gap-2.5 text-slate-700 text-sm leading-relaxed">
+                <svg class="w-5 h-5 text-green-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+
+          <a href={m.cert.verifyUrl} target="_blank" rel="external noopener" class="inline-flex items-center gap-2 text-primary-700 font-semibold hover:text-primary-800">
+            {m.cert.verifyLabel}
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -173,9 +214,12 @@ const m = t.medicalLanding;
       <p class="text-primary-300 font-semibold text-sm">
         {m.bridge.costOfInaction}
       </p>
-      <p class="mt-6">
+      <p class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="/cezih-vodic/" class="inline-block text-primary-200 underline underline-offset-4 hover:text-white text-sm font-medium">
           {m.bridge.guideLink}
+        </a>
+        <a href="/cezih-rok-za-privatne-ordinacije/" class="inline-block text-primary-200 underline underline-offset-4 hover:text-white text-sm font-medium">
+          {m.bridge.deadlineLink}
         </a>
       </p>
     </div>
@@ -201,8 +245,8 @@ const m = t.medicalLanding;
           <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
           </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.solution.cezihG9.title}</h3>
-          <p class="text-slate-600 text-sm">{m.solution.cezihG9.desc}</p>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.solution.cezihG500.title}</h3>
+          <p class="text-slate-600 text-sm">{m.solution.cezihG500.desc}</p>
         </Card>
         <Card padding="lg" class="text-center">
           <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -349,6 +393,11 @@ const m = t.medicalLanding;
         <div>
           <div class="text-3xl sm:text-4xl font-bold text-white">{m.stats.clinics.value}</div>
           <div class="text-sm text-slate-400 mt-1">{m.stats.clinics.label}</div>
+        </div>
+        <div class="hidden sm:block w-px h-12 bg-slate-700"></div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-bold text-green-400">{m.stats.cert.value}</div>
+          <div class="text-sm text-slate-400 mt-1">{m.stats.cert.label}</div>
         </div>
         <div class="hidden sm:block w-px h-12 bg-slate-700"></div>
         <div>

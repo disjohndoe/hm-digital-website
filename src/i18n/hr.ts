@@ -311,6 +311,7 @@ export const hr = {
     digitizationLink: 'Digitalizacija dokumenata',
     medicalLink: 'CEZIH softver za ordinacije i poliklinike',
     cezihGuide: 'CEZIH vodič',
+    cezihDeadline: 'CEZIH rok 2027 — provjera',
     privacyPolicy: 'Pravila privatnosti',
     cookiePolicy: 'Kolačići',
     rights: 'Sva prava pridržana'
@@ -858,20 +859,36 @@ export const hr = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud | HM Digital',
-      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. Rok 1.5.2026 je prošao — kazne do €13.200. e-Nalaz, e-Recept, e-Uputnica iz cloud-a, od €79/mj. Najbrži put do usklađenosti.'
+      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. Rok 1.1.2027., kazne do €13.200. e-Nalaz, e-Recept, e-Uputnica, od €79/mj. Zatražite demo!'
     },
     urgencyBar: {
-      before: 'Zakon NN 14/2019, čl. 28 — do obaveznog CEZIH-a ostalo: {days} dana · Kazne do €13.200',
-      after: 'CEZIH je sada obavezan — kazne do €13.200, i osobno za nositelje ordinacija'
+      before: 'Zakon NN 14/2019, čl. 28 — krajnji rok za CEZIH: 1. siječnja 2027. · Kazne do €13.200',
+      after: 'CEZIH je obavezan — krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija'
     },
     hero: {
       badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
+      certBadge: 'Službeno certificirano od strane HZZO-a',
+      certBadgeLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud Medicinski Program',
       tagline: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
       subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez kompromisa. Sve što privatna ordinacija treba za CEZIH — i ništa što ne treba.',
       ctaCompare: 'Usporedite nas s alternativama',
       ctaTrial: 'Zatražite besplatni demo',
       ctaFeatures: 'Pogledajte što sve dobivate'
+    },
+    cert: {
+      badge: 'Službeno certificirani proizvođač CEZIH aplikacija',
+      title: 'HM Digital nalazi se na službenom CEZIH popisu certificiranih proizvođača',
+      body: 'Naš softver za privatne ordinacije i poliklinike službeno je certificiran i nalazi se na popisu proizvođača CEZIH aplikacija koji vode HZZO i Ministarstvo zdravstva — u kategoriji Programska rješenja za privatne/ ustanove (G500). To znači da je rješenje prošlo službenu provjeru spremnosti i ispunjava tehničke preduvjete za razmjenu podataka s CEZIH-om.',
+      verifyLabel: 'Provjerite nas na službenom CEZIH popisu →',
+      verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
+      pointsTitle: 'Što to znači za vašu ordinaciju',
+      points: [
+        'Nije samo "CEZIH-kompatibilno" — rješenje je službeno certificirano, s pravnom težinom.',
+        'Ispunjava zakonsku obvezu iz Zakona o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28).',
+        'Prošlo je službenu tehničku provjeru prema CEZIH standardima — ne improvizacija.',
+        'Možete neovisno provjeriti naš status na službenoj CEZIH stranici.'
+      ]
     },
     problem: {
       title: 'Tri razloga zašto vaša ordinacija još uvijek nije u skladu sa zakonom',
@@ -891,9 +908,10 @@ export const hr = {
     },
     bridge: {
       title: 'Niste postali liječnik da biste rješavali IT probleme.',
-      desc: 'Rok je prošao 1.5.2026, a kazne do €13.200 (čl. 35–37 Zakona NN 14/2019) se sada primjenjuju. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
+      desc: 'Krajnji rok za povezivanje na CEZIH je 1. siječnja 2027. (produljen), a kazne do €13.200 (čl. 35–37 Zakona NN 14/2019) primjenjuju se nakon roka. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
       costOfInaction: 'Kazna od €13.200 = 14 godina korištenja našeg softvera po €79/mj.',
-      guideLink: 'Niste još uspjeli pokrenuti CEZIH? Pročitajte vodič: što napraviti nakon roka 1.5.2026 →'
+      guideLink: 'Spremate se za CEZIH? Pročitajte vodič: rok produljen na 1. siječnja 2027. →',
+      deadlineLink: 'Potvrđen novi rok? Provjerite činjenice o CEZIH roku 1. siječnja 2027. →'
     },
     solution: {
       title: 'Cloud, CEZIH i cijena — konačno usklađeni',
@@ -901,7 +919,7 @@ export const hr = {
         title: 'Cloud koji radi za vas',
         desc: 'Otvorite sustav s mobitela između dva pacijenta. Provjerite raspored od kuće. Jednom postavite čitač na jedno računalo u ordinaciji — a pristupajte sustavu odakle god trebate. Uvijek ažurno, uvijek sigurnosno kopirano.'
       },
-      cezihG9: {
+      cezihG500: {
         title: 'CEZIH — riješen, ne kompliciran',
         desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja — sve iz istog sučelja. AKD kartica za pristup, a za potpisivanje koristite karticu ili Certilia mobilni certifikat. Bez ručnog prebacivanja između sustava.'
       },
@@ -948,7 +966,7 @@ export const hr = {
       rows: {
         cloudAccess: 'Cloud pristup',
         modernUx: 'Moderni UX',
-        cezihG9: 'CEZIH certifikacija',
+        cezihG500: 'CEZIH certifikacija',
         dental: 'Prilagodba specijalizaciji',
         smartCard: 'AKD + Certilia',
         noContract: 'Bez dugoročnog ugovora',
@@ -957,7 +975,7 @@ export const hr = {
       legacy: {
         cloudAccess: false,
         modernUx: false,
-        cezihG9: true,
+        cezihG500: true,
         dental: true,
         smartCard: true,
         noContract: false,
@@ -966,7 +984,7 @@ export const hr = {
       cloudAlt: {
         cloudAccess: true,
         modernUx: true,
-        cezihG9: false,
+        cezihG500: false,
         dental: false,
         smartCard: false,
         noContract: true,
@@ -975,7 +993,7 @@ export const hr = {
       hmDigital: {
         cloudAccess: true,
         modernUx: true,
-        cezihG9: true,
+        cezihG500: true,
         dental: true,
         smartCard: true,
         noContract: true,
@@ -1067,6 +1085,7 @@ export const hr = {
     },
     stats: {
       clinics: { value: '2.171', label: 'ordinacija u RH' },
+      cert: { value: 'Certificirano', label: 'na službenom CEZIH popisu (G500)' },
       deadline: { value: '€13.200', label: 'maksimalna kazna po prekršaju' }
     },
     faq: {
@@ -1074,7 +1093,7 @@ export const hr = {
       items: [
         {
           q: 'Kako odabrati pravi medicinski softver s CEZIH integracijom?',
-          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. Za privatne ordinacije s 1-5 liječnika, ključni kriteriji su: cloud pristup s mobitela, CEZIH certifikacija, jednostavnost korištenja i pristupačna cijena. HM Digital je cloud medicinski program s punom CEZIH integracijom — od €79/mj, bez potrebe za serverom ili informatičarom.'
+          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. HM Digital je jedan od tih službeno certificiranih vendora — nalazimo se na službenom CEZIH popisu proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500). Za privatne ordinacije s 1-5 liječnika ključni kriteriji su: cloud pristup s mobitela, službena CEZIH certifikacija (ne samo "kompatibilnost"), jednostavnost korištenja i pristupačna cijena. HM Digital ispunjava sve: cloud medicinski program s punom CEZIH integracijom — od €79/mj, bez potrebe za serverom ili informatičarom.'
         },
         {
           q: 'Koliko košta CEZIH softver za ordinacije?',
@@ -1086,7 +1105,7 @@ export const hr = {
         },
         {
           q: 'Što je CEZIH i kako funkcionira?',
-          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH — rok je istekao 1.5.2026. Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
+          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH — krajnji rok za povezivanje privatnih ustanova je 1. siječnja 2027. (produljen). Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
         },
         {
           q: 'Koji su zakonski zahtjevi za CEZIH integraciju?',
@@ -1118,7 +1137,7 @@ export const hr = {
         },
         {
           q: 'Koliko traje dok počnem raditi?',
-          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana — što je trenutno najbrži put do usklađenosti nakon roka.'
+          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana — što je trenutno najbrži put do usklađenosti prije roka 1. siječnja 2027.'
         },
         {
           q: 'Jesu li podaci sigurni?',
@@ -1179,21 +1198,23 @@ export const hr = {
   },
   cezihGuide: {
     meta: {
-      title: 'CEZIH za privatne ordinacije: što napraviti nakon roka 1.5.2026 (vodič)',
-      description: 'Rok za priključenje na CEZIH istekao je 1. svibnja 2026. Saznajte što sad: kazne do €13.200, što se točno mora razmjenjivati, i kako se najbrže uskladiti — vodič za privatne ordinacije, poliklinike i bolnice.',
+      title: 'CEZIH za privatne ordinacije: rok 1. siječnja 2027 (vodič)',
+      description: 'CEZIH rok za privatne ordinacije produljen je na 1.1.2027. Kazne do €13.200, što se razmjenjuje i kako se uskladiti. Vodič za ordinacije i poliklinike.',
       datePublished: '2026-05-10',
-      dateModified: '2026-05-10'
+      dateModified: '2026-07-27'
     },
     breadcrumb: {
       home: 'Naslovnica',
       current: 'CEZIH vodič'
     },
     hero: {
-      eyebrow: 'Ažurirano · svibanj 2026 · Post-rok izdanje',
-      title: 'CEZIH za privatne ordinacije: što napraviti nakon roka 1.5.2026',
-      subheadline: 'Vodič za privatne ordinacije, poliklinike i privatne bolnice koje kasne s priključenjem na CEZIH nakon 1.5.2026.',
+      eyebrow: 'Ažurirano · srpanj 2026 · Rok produljen',
+      title: 'CEZIH za privatne ordinacije: rok produljen na 1. siječnja 2027',
+      subheadline: 'Vodič za privatne ordinacije, poliklinike i privatne bolnice koje se pripremaju za povezivanje na CEZIH do novog roka, 1. siječnja 2027.',
+      certBadge: 'HM Digital — službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
+      certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'Cilj: 14 dana od "nismo ni krenuli" do produkcijske razmjene nalaza u CEZIH-u.',
-      lead: 'Rok za priključenje privatnih zdravstvenih ustanova na Centralni zdravstveni informacijski sustav (CEZIH) istekao je 1. svibnja 2026. Ovaj vodič objašnjava što obveza zapravo znači, koje kazne prijete neusklađenima, i koji je najbrži put do usklađenosti za ordinacije koje još nisu spojene.',
+      lead: 'Rok za povezivanje privatnih zdravstvenih ustanova na Centralni zdravstveni informacijski sustav (CEZIH) produljen je na 1. siječnja 2027. — obveza nije ukinuta, samo je krajnji rok pomaknut. Ovaj vodič objašnjava što obveza zapravo znači, koje kazne primjenjuju za one koji se ne usklade na vrijeme, i koji je najbrži put do usklađenosti.',
       ctaPrimary: 'Najbrži put do usklađenosti',
       ctaSecondary: 'Pročitajte FAQ'
     },
@@ -1202,7 +1223,7 @@ export const hr = {
       items: [
         { label: 'U 60 sekundi', href: '#tldr' },
         { label: 'Vaša situacija', href: '#scenarios' },
-        { label: 'Što se promijenilo 1.5.2026', href: '#after-deadline' },
+        { label: 'Rok produljen na 1.1.2027', href: '#after-deadline' },
         { label: 'Kazne za neusklađenost', href: '#penalties' },
         { label: 'Što se razmjenjuje', href: '#exchange-required' },
         { label: 'Pristup i potpisivanje', href: '#certilia' },
@@ -1237,17 +1258,20 @@ export const hr = {
     tldr: {
       title: 'U 60 sekundi',
       points: [
-        'Rok za razmjenu podataka s CEZIH-om istekao je početkom svibnja 2026. — i za neugovorne pružatelje, i za ugovorne pružatelje (za usluge koje pružaju privatno).',
-        'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) — i osobno za nositelje ordinacija.',
+        'Rok za povezivanje na CEZIH produljen je na 1. siječnja 2027. — i za neugovorne pružatelje, i za ugovorne pružatelje (za usluge koje pružaju privatno). Obveza nije ukinuta.',
+        'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) — i osobno za nositelje ordinacija — primjenjuju se nakon isteka roka.',
         'Razmjenjuju se ambulantni izvještaji, specijalistički nalazi i otpusna pisma.',
         'Najbrži put do usklađenosti = cloud rješenje. Bez instalacije, bez servera, bez čekanja na informatičara.',
         'Prvi koraci ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet) i kvalificirani certifikat (Certilia/AKD) — ova dva idu paralelno.'
       ]
     },
     afterDeadline: {
-      title: 'Što se promijenilo početkom svibnja 2026.',
-      body: 'Prema službenoj obavijesti CEZIH-a (12.03.2026), svi pružatelji zdravstvene zaštite koji nisu u ugovornom odnosu s HZZO-om bili su upućeni započeti razmjenu putem CEZIH-a najkasnije do početka svibnja 2026. Istovremeno, pružatelji koji jesu u ugovornom odnosu s HZZO-om i već razmjenjuju podatke putem CEZIH-a bili su upućeni započeti razmjenu i za usluge koje pružaju privatno — u istom roku.',
-      bodyExtra: 'To znači da ustanove koje još nisu uspostavile sigurnu razmjenu podataka više nisu u "fazi pripreme" — od svibnja 2026. nalaze se u prekršajnom riziku. Napomena: certifikacija programskih rješenja za ovu namjenu (osobito za neugovorne pružatelje) bila je u tijeku u ožujku 2026. — preporučujemo provjeru aktualnog popisa ovjerenih rješenja na cezih.hr prije odabira softvera.',
+      title: 'Rok produljen na 1. siječnja 2027. — obveza ostaje.',
+      body: 'Prvotni operativni rok za povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH bio je prvih mjeseci 2026. godine (prema obavijestima CEZIH-a i izvještavanju medija iz siječnja 2026., spominjao se rok "do svibnja"). Budući da je taj rok većini privatnih ordinacija bio prekratak, krajnji rok za potpuno povezivanje svih privatnih pružatelja — kako ugovornih s HZZO-om, tako i neugovornih — produljen je na 1. siječnja 2027. godine. Tako izričito navodi Hrvatska liječnička komora (HLK), a potvrđuju ga i izvještaji iz srpnja 2026. ("većini je to bio prekratak rok pa je produljen do 1. siječnja 2027").',
+      bodyExtra: 'Važno: ovo nije ukidanje obveze. Pravna osnova (Zakon o podacima i informacijama u zdravstvu, NN 14/2019) i dalje vrijedi, a kazne do €13.200 ostaju u primjeni za ustanove koje se do novog roka ne usklade. Napomena: popis ovjerenih programskih rješenja na cezih.hr aktivno se proširuje — provjerite najnoviji status prije odabira softvera.',
+      crossLinkText: 'Detaljnu provjeru pomaka roka, popis izvora i napomenu o tome kako HLK i mediji objašnjavaju rok pogledajte na našoj posebnoj stranici:',
+      crossLinkHref: '/cezih-rok-za-privatne-ordinacije/',
+      crossLinkLabel: 'CEZIH rok za privatne ordinacije — potvrda i izvori',
       whoTitle: 'Koga obveza obuhvaća',
       whoItems: [
         'Neugovorni pružatelji (privatne ordinacije, poliklinike i bolnice bez ugovora s HZZO-om) — moraju započeti razmjenu putem CEZIH-a',
@@ -1327,11 +1351,11 @@ export const hr = {
     },
     certilia: {
       title: 'Kako se prijaviti i potpisivati: AKD kartica + Certilia',
-      intro: 'Pristup CEZIH razmjeni podataka HZZO i dalje zahtijeva strogi tehnički sklop: Windows računalo, AKD pametnu karticu s čitačem, VPN i lokalni agent dobavljača softvera. Drugim riječima, najmanje jedno računalo u ordinaciji mora ispunjavati sve te uvjete da bi se uspostavila veza prema CEZIH-u.',
+      intro: 'Pristup CEZIH razmjeni podataka HZZO i dalje zahtijeva strogi tehnički sklop: Windows računalo, kvalificirani certifikat (AKD pametna kartica ili nova iskaznica ovlaštenog zdravstvenog radnika), VPN i lokalni agent dobavljača softvera. Najmanje jedno računalo u ordinaciji mora ispunjavati sve te uvjete da bi se uspostavila veza prema CEZIH-u.',
       accessTitle: 'Što sve treba za pristup CEZIH-u',
       accessItems: [
         'Windows računalo (najmanje jedno u ordinaciji)',
-        'AKD pametna kartica + čitač spojen na to računalo',
+        'Kvalificirani certifikat — AKD pametna kartica ili nova iskaznica ovlaštenog zdravstvenog radnika (od 1. srpnja 2026. stare HZZO pametne kartice više ne vrijede za pristup CEZIH-u) + čitač',
         'VPN pristup prema HZZO mreži',
         'Lokalni agent dobavljača softvera (komponenta koja posreduje između softvera i CEZIH protokola)'
       ],
@@ -1436,7 +1460,7 @@ export const hr = {
         {
           n: '1',
           title: 'CEZIH ovjera (ili u procesu certifikacije)',
-          desc: 'Softver mora biti na službenom popisu CEZIH-ovjerenih rješenja na cezih.hr. Popis se aktivno proširuje za neugovorne pružatelje (kako navodi cezih.hr u ožujku 2026.) — provjerite najnoviji status.'
+          desc: 'Softver mora biti na službenom popisu CEZIH-ovjerenih rješenja na cezih.hr. HM Digital se nalazi na tom popisu (kategorija Programska rješenja za privatne/ ustanove, G500). Popis se aktivno proširuje za neugovorne pružatelje — provjerite najnoviji status prije potpisivanja.'
         },
         {
           n: '2',
@@ -1487,11 +1511,11 @@ export const hr = {
         },
         {
           q: 'Trebam li posebnu šifru od HZZO-a prije spajanja na CEZIH?',
-          a: 'Da. Prema obavijesti CEZIH-a (12.03.2026), neugovorni pružatelji zdravstvene zaštite (oni bez ugovora s HZZO-om) moraju ishoditi šifru zdravstvene ustanove od HZZO-a kao preduvjet za spajanje na CEZIH. Zahtjev se podnosi tiskanicom "Dodjela šifre neugovorni", ovjerenom digitalnim potpisom i/ili pečatom, na adresu sifriranje.neugovorni@hzzo.hr — uz obavezno priloženo rješenje Ministarstva zdravstva.'
+          a: 'Da. Prema objašnjenjima CEZIH-a i HZZO-a, neugovorni pružatelji zdravstvene zaštite (oni bez ugovora s HZZO-om) moraju ishoditi šifru zdravstvene ustanove od HZZO-a kao preduvjet za spajanje na CEZIH. Zahtjev se podnosi tiskanicom "Dodjela šifre neugovorni", ovjerenom digitalnim potpisom i/ili pečatom, na adresu sifriranje.neugovorni@hzzo.hr — uz obavezno priloženo rješenje Ministarstva zdravstva.'
         },
         {
           q: 'Hoće li me HZZO inspekcija sigurno kazniti?',
-          a: 'Nadzor i prekršajni postupci se ne pokreću automatski, ali pravna osnova postoji od 1. svibnja 2026. Što duže ostanete neusklađeni, veća je vjerojatnost nadzora — osobito ako pacijenti ili druge ustanove prijave nedostatak razmjene podataka.'
+          a: 'Nadzor i prekršajni postupci se ne pokreću automatski, ali pravna osnova za kazne postoji i primjenjuje se nakon isteka (produljenog) roka od 1. siječnja 2027. Što duže ostanete neusklađeni nakon roka, veća je vjerojatnost nadzora — osobito ako pacijenti ili druge ustanove prijave nedostatak razmjene podataka.'
         },
         {
           q: 'Kolika je točno kazna?',
@@ -1511,7 +1535,7 @@ export const hr = {
         },
         {
           q: 'Što je razlika između CEZIH-ovjerenog i CEZIH-kompatibilnog softvera?',
-          a: '"Ovjeren" znači da je rješenje prošlo službenu provjeru spremnosti i nalazi se na popisu odobrenih programskih rješenja na cezih.hr. "Kompatibilan" je marketinški pojam bez pravne težine. Za zakonsku usklađenost potreban je ovjeren softver.'
+          a: '"Ovjeren" znači da je rješenje prošlo službenu provjeru spremnosti i nalazi se na popisu odobrenih programskih rješenja na cezih.hr. "Kompatibilan" je marketinški pojam bez pravne težine. Za zakonsku usklađenost potreban je ovjeren softver. HM Digital se nalazi na službenom CEZIH popisu certificiranih proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500) — možete nas neovisno provjeriti na cezih.hr.'
         },
         {
           q: 'Trebam li čitač pametnih kartica i VPN?',
@@ -1527,7 +1551,7 @@ export const hr = {
         },
         {
           q: 'Radim samo privatno, nemam ugovor s HZZO-om — moram li u CEZIH?',
-          a: 'Da. Prema obavijesti CEZIH-a (12.03.2026), CEZIH obveza vrijedi i za neugovorne pružatelje zdravstvene zaštite — one koji rade isključivo privatno, bez ugovora s HZZO-om. Prvi korak za vas je ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet — putem tiskanice "Dodjela šifre neugovorni" i emaila sifriranje.neugovorni@hzzo.hr, uz priloženo rješenje Ministarstva zdravstva). Tek nakon dodjele šifre možete započeti tehničko spajanje na CEZIH.'
+          a: 'Da. Prema objašnjenjima CEZIH-a i HZZO-a, CEZIH obveza vrijedi i za neugovorne pružatelje zdravstvene zaštite — one koji rade isključivo privatno, bez ugovora s HZZO-om. Prvi korak za vas je ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet — putem tiskanice "Dodjela šifre neugovorni" i emaila sifriranje.neugovorni@hzzo.hr, uz priloženo rješenje Ministarstva zdravstva). Tek nakon dodjele šifre možete započeti tehničko spajanje na CEZIH.'
         },
         {
           q: 'Imam ordinacije na dvije lokacije — trebam li dva sustava ili više certifikata?',
@@ -1551,12 +1575,148 @@ export const hr = {
       title: 'Izvori i dodatna literatura',
       disclaimer: 'Sadržaj je informativni i ne predstavlja pravni savjet. Za konkretne pravne procjene konzultirajte odvjetnika ili nadležno tijelo.',
       items: [
+        { label: 'Hrvatska liječnička komora — "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH" (krajnji rok 1. siječnja 2027.)', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, srpanj 2026 — "...bio prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14.07.2026 — "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO — od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom (HZZO pametne kartice istekle 30.6.2026.)', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH — službeni popis certificiranih proizvođača aplikacija (HM Digital, kategorija G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
         { label: 'Službena stranica CEZIH-a — obavijesti, koncept sustava i upute', url: 'https://www.cezih.hr/' },
-        { label: 'Obavijest privatnim pružateljima zdravstvene zaštite + Spajanje neugovornih pružatelja na CEZIH (cezih.hr, 12.03.2026)', url: 'https://www.cezih.hr/' },
         { label: 'Što sve treba za spajanje na CEZIH (službeni PDF)', url: 'https://www.cezih.hr/G2/Sto_sve_treba.pdf' },
-        { label: 'Glas Slavonije, 20.01.2026 — "I privatnici do svibnja moraju ući u CEZIH, prijete kazne i do 13.200 eura"', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
-        { label: 'Novi list — "Privatne bolnice i ordinacije morale su do 1. siječnja se spojiti u CEZIH"', url: 'https://www.novilist.hr/novosti/hrvatska/privatne-bolnice-i-ordinacije-morale-su-do-1-sijecnja-se-spojiti-u-cezih-sto-to-znaci-za-vase-podatke/' }
+        { label: 'Glas Slavonije, 20.01.2026 — povijesni kontekst prvotnog roka ("...do svibnja moraju ući u CEZIH")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. — povijesni kontekst najave širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
+      ]
+    }
+  },
+  cezihDeadline: {
+    meta: {
+      title: 'CEZIH rok za privatne ordinacije: potvrđeno 1. siječnja 2027.',
+      description: 'Je li rok za spajanje privatnih ustanova na CEZIH pomaknut? Da — krajnji rok je 1.1.2027. Provjera s izvorima (HLK, Večernji) i 1.7.2026. iskaznica.',
+      datePublished: '2026-07-27',
+      dateModified: '2026-07-27'
+    },
+    breadcrumb: {
+      home: 'Naslovnica',
+      current: 'CEZIH rok za privatne ordinacije'
+    },
+    hero: {
+      eyebrow: 'Srpanj 2026 · Provjera informacija',
+      title: 'CEZIH rok za privatne ordinacije: potvrđeno 1. siječnja 2027.',
+      subheadline: 'Da, rok je produljen — obveza nije ukinuta. Sve ključne činjenice i izvore na jednom mjestu, bez nagađanja.',
+      certBadge: 'HM Digital — službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
+      certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
+      promise: 'Kratko, provjerljivo pojašnjenje: koliki je rok, koga obuhvaća i što ne treba miješati s njim.',
+      lead: 'Krajnji rok za spajanje svih privatnih pružatelja zdravstvene zaštite na CEZIH — i ugovornih i neugovornih s HZZO-om — jest 1. siječnja 2027. To izričito navodi Hrvatska liječnička komora (HLK), a potvrđuju ga i izvještaji iz srpnja 2026.',
+      ctaPrimary: 'Što sad napraviti?',
+      ctaSecondary: 'Pročitajte izvore'
+    },
+    kljucno: {
+      title: 'Ključno u jednoj rečenici',
+      lead: 'Rok je produljen, ne ukinut.',
+      points: [
+        { label: 'Novi krajnji rok', value: '1. siječnja 2027.' },
+        { label: 'Koga obuhvaća', value: 'Svi privatni pružatelji — ugovorni i neugovorni s HZZO-om' },
+        { label: 'Obveza', value: 'Nije ukinuta — Zakon o podacima i informacijama u zdravstvu (NN 14/2019) i dalje vrijedi' },
+        { label: 'Kazne', value: 'Do €13.200 po prekršaju (čl. 36) ostaju u primjeni nakon roka' }
+      ],
+      note: 'Odvojeno: od 1. srpnja 2026. pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika (stare HZZO pametne kartice istekle su 30. lipnja 2026.). To je promjena načina prijave, NE pomak roka za povezivanje — više o tome niže.'
+    },
+    pomakRoka: {
+      title: 'Je li rok zaista pomaknut?',
+      answer: 'Da. Prvotni operativni rok za povezivanje privatnih pružatelja bio je u prvim mjesecima 2026. godine — u izvještavanju medija iz siječnja 2026. spominjao se rok "do svibnja". Budući da je većini privatnih ordinacija taj rok bio prekratak, krajnji rok za potpuno povezivanje produljen je na 1. siječnja 2027. godine.',
+      timelineTitle: 'Kako se rok kretao',
+      timeline: [
+        { date: 'lipanj 2025.', text: 'Ministarstvo zdravstva najavljuje uključivanje privatnih ustanova u CEZIH (tadašnji plan: "do kraja godine").' },
+        { date: 'siječanj 2026.', text: 'Mediji navode operativni rok "do svibnja" uz kazne do €13.200 — obveza postaje aktualna.' },
+        { date: 'svibanj 2026.', text: 'Prvotni rok iskorišten za započinjanje spajanja i razmjene, ali mnogim privatnicima prekratak za potpunu usklađenost.' },
+        { date: 'srpanj 2026.', text: 'Krajnji rok za povezivanje svih privatnih pružatelja potvrđen kao 1. siječnja 2027. (HLK, Večernji, zdravljeija).' }
+      ],
+      caveatTitle: 'Napomena o izvoru',
+      caveat: 'HLK 1. siječnja 2027. navodi kao rok uz pozivanje na "tumačenje Ministarstva zdravstva", bez objavljenog broja Pravilnika koji taj datum izričito propisuje. Stupanj obveze ne ovisi o toj napomeni — pravna osnova (NN 14/2019) je jasna — ali prije donošenja konkretnih odluka preporučujemo provjeru na službenim stranicama CEZIH-a i Ministarstva zdravstva.'
+    },
+    tkoObuhvacen: {
+      title: 'Koga točno obveza obuhvaća',
+      items: [
+        'Neugovorni privatnici (ordinacije, poliklinike, privatne bolnice bez ugovora s HZZO-om) — moraju se povezati na CEZIH.',
+        'Ugovorni privatnici (već koriste CEZIH za HZZO usluge) — moraju započeti razmjenu i za usluge koje pružaju privatno.',
+        'Sve specijalnosti: obiteljska medicina, stomatologija, specijalisti, dijagnostika, privatne bolnice.',
+        'Sve veličine — od solo ordinacije do poliklinike s više lokacija.',
+        'Prvi korak za neugovorne: ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet).'
+      ]
+    },
+    pametnaKartica: {
+      title: 'Pazite: 1. srpnja 2026. NIJE rok za povezivanje',
+      body: 'Česta je zabuna pomiješati dvije različite stvari:',
+      items: [
+        { term: 'Rok za povezivanje', desc: '1. siječnja 2027. — krajnji rok da privatna ustanova uspostavi sigurnu razmjenu podataka s CEZIH-om putem svog programskog rješenja.' },
+        { term: 'Rok za novu iskaznicu', desc: '1. srpnja 2026. — od tog dana pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika; stare HZZO pametne kartice istekle su 30. lipnja 2026. Ovo je promjena načina prijave, ne pomak roka za spajanje.' }
+      ],
+      sourceNote: 'Izvor: HZZO — od 1. srpnja 2026. ulaz u CEZIH samo s novom iskaznicom ovlaštenog zdravstvenog radnika.'
+    },
+    stoSad: {
+      title: 'Što sad napraviti?',
+      intro: 'Ako vaša ordinacija još nije priključena, imate vremena — ali nemojte čekati zadnji tren. Najsporiji su administrativni koraci (šifra HZZO i kvalificirani certifikat), pa ih pokrenite paralelno:',
+      steps: [
+        { n: '1', title: 'Ishodite šifru zdravstvene ustanove od HZZO-a', desc: 'Za neugovorne pružatelje ovo je preduvjet. Tiskanica "Dodjela šifre neugovorni" + rješenje Ministarstva zdravstva → sifriranje.neugovorni@hzzo.hr.' },
+        { n: '2', title: 'Pribavite kvalificirani certifikat (Certilia/AKD)', desc: 'Potreban za elektroničko potpisivanje u CEZIH-u. Od 1.7.2026. za pristup trebate i novu iskaznicu ovlaštenog zdravstvenog radnika.' },
+        { n: '3', title: 'Odaberite CEZIH-ovjereno softversko rješenje', desc: 'Provjerite popis ovjerenih rješenja na cezih.hr. Cloud rješenja skraćuju onboarding na dane.' }
+      ],
+      ctaText: 'Za detaljan vodič kroz cijeli proces (moduli, kazne, kako odabrati softver, FAQ):',
+      ctaLabel: 'Pročitajte cjeloviti CEZIH vodič →',
+      ctaHref: '/cezih-vodic/',
+      productText: 'Tražite softver koji je već spreman za CEZIH?',
+      productLabel: 'Pogledajte naš cloud CEZIH softver',
+      productHref: '/medicinski-softver'
+    },
+    faq: {
+      title: 'Najčešća pitanja o roku',
+      items: [
+        {
+          q: 'Je li CEZIH obveza za privatnike ukinuta?',
+          a: 'Ne. Obveza povezivanja na CEZIH nije ukinuta — produljen je samo krajnji rok, na 1. siječnja 2027. Pravna osnova (Zakon o podacima i informacijama u zdravstvu, NN 14/2019) i dalje vrijedi.'
+        },
+        {
+          q: 'Je li rok zaista pomaknut na 1. siječnja 2027.?',
+          a: 'Da. Krajnji rok za spajanje svih privatnih pružatelja (ugovornih i neugovornih) jest 1. siječnja 2027., kako izričito navodi Hrvatska liječnička komora, a potvrđuju izvještaji iz srpnja 2026. ("prekratak rok pa je produljen").'
+        },
+        {
+          q: 'Čuo/la sam da je rok bio 1. lipnja 2026. — je li to točno?',
+          a: 'Ne baš. Stvarni prvotni operativni rok bio je "početkom svibnja 2026." (svibanj, ne lipanj), prema izvještavanju medija iz siječnja 2026. i obavijestima CEZIH-a. Taj je rok naknadno produljen na 1. siječnja 2027.'
+        },
+        {
+          q: 'Što znači 1. srpanj 2026.?',
+          a: 'To je rok za promjenu načina prijave u CEZIH: od tog dana pristup je moguć isključivo novom iskaznicom ovlaštenog zdravstvenog radnika, a stare HZZO pametne kartice više ne vrijede (istekle 30. lipnja 2026.). To NIJE rok za povezivanje ustanove.'
+        },
+        {
+          q: 'Mogu li čekati do kraja 2026. s pripremama?',
+          a: 'Tehnički možete, ali nije pametno. Najsporiji su administrativni koraci (šifra HZZO-a i kvalificirani certifikat), a ako svi krenu u zadnji tren, pojavit će se gužve. Pokrenite pripreme sada.'
+        },
+        {
+          q: 'Vrijede li i dalje kazne do €13.200?',
+          a: 'Da. Kazne do €13.200 po prekršaju (čl. 36 Zakona o podacima i informacijama u zdravstvu, NN 14/2019) ostaju u primjeni za ustanove koje se do roka 1. siječnja 2027. ne usklade.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Spremni za povezivanje na CEZIH?',
+      body: 'Cjeloviti vodič kroz obvezu, kazne, module i odabir softvera — ili izravno naš cloud CEZIH softver za privatne ordinacije.',
+      primaryLabel: 'Cjeloviti CEZIH vodič',
+      primaryHref: '/cezih-vodic/',
+      secondaryLabel: 'Cloud CEZIH softver',
+      secondaryHref: '/medicinski-softver'
+    },
+    sources: {
+      title: 'Izvori',
+      disclaimer: 'Ova stranica provjerava javno dostupne tvrdnje o roku za CEZIH. Sadržaj je informativan i ne predstavlja pravni savjet. Za pravno obvezujuće informacije konzultirajte nadležna tijela.',
+      items: [
+        { label: 'Hrvatska liječnička komora — "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, srpanj 2026 — "...prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14.07.2026 — "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO — od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH — službeni popis certificiranih proizvođača aplikacija (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Glas Slavonije, 20.01.2026. — povijesni kontekst prvotnog roka ("do svibnja")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. — najava širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
+        { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' }
       ]
     }
   }

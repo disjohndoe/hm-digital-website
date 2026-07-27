@@ -19,6 +19,7 @@ export const routes = {
   "/medicinski-softver": { hr: "/medicinski-softver", en: "/en/medical-software" },
   "/racunovodstveni-program": { hr: "/racunovodstveni-program", en: "/en/accounting-software" },
   "/cezih-vodic": { hr: "/cezih-vodic", en: "/en/cezih-guide" },
+  "/cezih-rok-za-privatne-ordinacije": { hr: "/cezih-rok-za-privatne-ordinacije", en: "/en/cezih-deadline-private-practices" },
   "/pravila-privatnosti": { hr: "/pravila-privatnosti", en: "/en/privacy-policy" },
   "/kolacici": { hr: "/kolacici", en: "/en/cookie-policy" },
 } as const;

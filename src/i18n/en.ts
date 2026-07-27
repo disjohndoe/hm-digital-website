@@ -311,6 +311,7 @@ export const en = {
     digitizationLink: 'Document digitization',
     medicalLink: 'CEZIH Software for Practices and Polyclinics',
     cezihGuide: 'CEZIH Guide',
+    cezihDeadline: 'CEZIH 2027 Deadline — Fact Check',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
     rights: 'All rights reserved'
@@ -858,20 +859,36 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
-      description: 'Cloud CEZIH software for private practices and polyclinics. The 1 May 2026 deadline has passed — fines up to €13,200 now apply. e-Findings, e-Prescriptions, e-Referrals from the cloud, from €79/mo. The fastest path to compliance.'
+      description: 'Cloud CEZIH software for practices and polyclinics. Deadline 1 Jan 2027, fines up to €13,200. e-Findings, e-Prescriptions, e-Referrals, from €79/mo.'
     },
     urgencyBar: {
-      before: 'Law NN 14/2019, Art. 28 — mandatory CEZIH in: {days} days · Fines up to €13,200',
-      after: 'CEZIH is now mandatory — fines up to €13,200, including personal liability for practice owners'
+      before: 'Law NN 14/2019, Art. 28 — final CEZIH deadline: 1 January 2027 · Fines up to €13,200',
+      after: 'CEZIH is mandatory — final deadline 1 January 2027, fines up to €13,200, including personal liability for practice owners'
     },
     hero: {
       badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
+      certBadge: 'Officially certified by HZZO',
+      certBadgeLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       title: 'Cloud CEZIH Software for Practices and Polyclinics',
       tagline: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
       subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no compromise. Everything a private practice needs for CEZIH — and nothing it doesn\'t.',
       ctaCompare: 'Compare us to alternatives',
       ctaTrial: 'Request a free demo',
       ctaFeatures: 'See what you get'
+    },
+    cert: {
+      badge: 'Officially certified CEZIH application manufacturer',
+      title: 'HM Digital is on the official CEZIH list of certified manufacturers',
+      body: 'Our software for private practices and polyclinics is officially certified and appears on the CEZIH list of application manufacturers maintained by HZZO and the Ministry of Health — in the category Software solutions for private/institutions (G500). This means the solution has passed an official readiness review and meets the technical prerequisites for data exchange with CEZIH.',
+      verifyLabel: 'Verify us on the official CEZIH list →',
+      verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
+      pointsTitle: 'What this means for your practice',
+      points: [
+        'It is not merely "CEZIH-compatible" — the solution is officially certified, with legal weight.',
+        'It satisfies the legal obligation under the Health Data and Information Act (NN 14/2019, Art. 28).',
+        'It passed an official technical review against CEZIH standards — not an improvisation.',
+        'You can independently verify our status on the official CEZIH website.'
+      ]
     },
     problem: {
       title: 'Three reasons your practice still isn\'t compliant',
@@ -891,9 +908,10 @@ export const en = {
     },
     bridge: {
       title: 'You didn\'t become a doctor to deal with IT problems.',
-      desc: 'The deadline passed on 1 May 2026, and fines up to €13,200 (Art. 35–37, Law NN 14/2019) now apply. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
-      costOfInaction: 'A €13,200 fine = 14 years of our software at €79/mo.',
-      guideLink: 'Haven\'t started with CEZIH yet? Read the guide: what to do after the 1 May 2026 deadline →'
+      desc: 'The final deadline to connect to CEZIH is 1 January 2027 (extended), and fines up to €13,200 (Art. 35–37, Law NN 14/2019) apply after the deadline. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
+      costOfInaction: 'A single €13,200 fine = 14 years of our software at €79/mo.',
+      guideLink: 'Preparing for CEZIH? Read the guide: deadline extended to 1 January 2027 →',
+      deadlineLink: 'New deadline confirmed? Check the facts on the CEZIH 1 January 2027 deadline →'
     },
     solution: {
       title: 'Everything you need — in one place',
@@ -901,7 +919,7 @@ export const en = {
         title: 'Modern cloud UX',
         desc: 'Access the system from any device — computer, tablet or phone. Set up the card reader once on one workstation, then work from wherever you need. Automatic updates and backups.'
       },
-      cezihG9: {
+      cezihG500: {
         title: 'Full CEZIH integration',
         desc: 'Full CEZIH integration: e-Findings, e-Referrals, e-Prescriptions, eScheduling and insurance verification. AKD card for access, with card or Certilia mobile certificate for document signing.'
       },
@@ -948,7 +966,7 @@ export const en = {
       rows: {
         cloudAccess: 'Cloud access',
         modernUx: 'Modern UX',
-        cezihG9: 'CEZIH certification',
+        cezihG500: 'CEZIH certification',
         dental: 'Specialty adaptation',
         smartCard: 'AKD + Certilia',
         noContract: 'No long-term contract',
@@ -957,7 +975,7 @@ export const en = {
       legacy: {
         cloudAccess: false,
         modernUx: false,
-        cezihG9: true,
+        cezihG500: true,
         dental: true,
         smartCard: true,
         noContract: false,
@@ -966,7 +984,7 @@ export const en = {
       cloudAlt: {
         cloudAccess: true,
         modernUx: true,
-        cezihG9: false,
+        cezihG500: false,
         dental: false,
         smartCard: false,
         noContract: true,
@@ -975,7 +993,7 @@ export const en = {
       hmDigital: {
         cloudAccess: true,
         modernUx: true,
-        cezihG9: true,
+        cezihG500: true,
         dental: true,
         smartCard: true,
         noContract: true,
@@ -1081,6 +1099,7 @@ export const en = {
     },
     stats: {
       clinics: { value: '2,171', label: 'practices in Croatia' },
+      cert: { value: 'Certified', label: 'on the official CEZIH list (G500)' },
       deadline: { value: '€13,200', label: 'max fine per violation' }
     },
     faq: {
@@ -1088,7 +1107,7 @@ export const en = {
       items: [
         {
           q: 'Which CEZIH software is best for private practices?',
-          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, CEZIH certification, ease of use, and affordable pricing. HM Digital is a cloud CEZIH software built specifically for private practices — from €79/mo, with full CEZIH integration and no need for a server or IT support.'
+          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. HM Digital is one of those officially certified vendors — we appear on the official CEZIH list of application manufacturers (category Software solutions for private/institutions, G500). For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, official CEZIH certification (not just "compatibility"), ease of use, and affordable pricing. HM Digital meets all of them: a cloud CEZIH software built specifically for private practices — from €79/mo, with full CEZIH integration and no need for a server or IT support.'
         },
         {
           q: 'How much does CEZIH software cost?',
@@ -1100,11 +1119,11 @@ export const en = {
         },
         {
           q: 'What is CEZIH and how does it work?',
-          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The deadline passed on 1 May 2026; fines now apply.'
+          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The final deadline for private institutions to connect is 1 January 2027 (extended); fines apply after that date.'
         },
         {
           q: 'What are the legal requirements for CEZIH integration?',
-          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The Ministry of Health set 1 May 2026 as the deadline for all private healthcare institutions — that deadline has now passed and the penalty regime is active.'
+          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The final deadline for all private healthcare institutions to connect is 1 January 2027 (extended) — after that date the penalty regime is fully active.'
         },
         {
           q: 'Do I need an AKD card?',
@@ -1117,6 +1136,10 @@ export const en = {
         {
           q: 'What do I need to prepare before getting started?',
           a: 'Four things: (1) your institution code — issued by HZZO, all registered institutions have one, (2) healthcare worker code — a 7-digit number from HZJZ, (3) physician MBO number — a 9-digit number every doctor knows, and (4) an AKD card with a USB reader for CEZIH access. For document signing, you can use the same card or a Certilia mobile certificate. We help you through the entire activation process.'
+        },
+        {
+          q: 'I already have software — why would I switch?',
+          a: 'If your current system already has CEZIH certification, cloud access, and mobile work — stay where you are. But if you still have to be in the practice to see a patient record, if updates depend on an IT person, or if you cannot send an e-Finding without switching between two systems — ask yourself: how much does that costs you in time every week? Request a demo and you will see the difference in 15 minutes.'
         },
         {
           q: 'Which specialties is the system designed for?',
@@ -1137,6 +1160,10 @@ export const en = {
         {
           q: 'What happens after the free trial?',
           a: 'After 14 days you can choose a paid plan or simply stop using the system — no obligations. Your data remains available for export for 30 days after trial expiration.'
+        },
+        {
+          q: 'Can I cancel anytime?',
+          a: 'Yes — cancel anytime. No long-term contracts, no penalties, no "why are you leaving" calls. Your data remains available for export for 30 days after cancellation.'
         }
       ]
     },
@@ -1156,7 +1183,7 @@ export const en = {
       },
       directContact: 'Or contact us directly',
       email: 'medical@hmdigital.hr',
-      phone: '+385 95 905 5550'
+      phone: '+385 97 7120 800'
     }
   },
   consent: {
@@ -1185,21 +1212,23 @@ export const en = {
   },
   cezihGuide: {
     meta: {
-      title: 'CEZIH for Private Practices in Croatia: What To Do After the May 2026 Deadline',
-      description: 'The deadline for private healthcare institutions to join CEZIH passed on 1 May 2026. What now: fines up to €13,200, what data must be exchanged, and the fastest path to compliance — a guide for private practices, polyclinics, and hospitals.',
+      title: 'CEZIH for Private Practices in Croatia: 2027 Deadline Guide',
+      description: 'CEZIH deadline for private practices extended to 1 Jan 2027. Fines up to €13,200, what data must be exchanged, and the fastest path to compliance.',
       datePublished: '2026-05-10',
-      dateModified: '2026-05-10'
+      dateModified: '2026-07-27'
     },
     breadcrumb: {
       home: 'Home',
       current: 'CEZIH Guide'
     },
     hero: {
-      eyebrow: 'Updated · May 2026 · Post-deadline edition',
-      title: 'CEZIH for Private Practices in Croatia: What To Do After the May 2026 Deadline',
-      subheadline: 'A guide for private practices, polyclinics, and private hospitals that are late connecting to CEZIH after 1 May 2026.',
+      eyebrow: 'Updated · July 2026 · Deadline extended',
+      title: 'CEZIH for Private Practices in Croatia: Deadline Extended to 1 January 2027',
+      subheadline: 'A guide for private practices, polyclinics, and private hospitals preparing to connect to CEZIH by the new deadline, 1 January 2027.',
+      certBadge: 'HM Digital — officially certified CEZIH application manufacturer (HZZO)',
+      certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'Goal: 14 days from "we haven\'t even started" to production data exchange with CEZIH.',
-      lead: 'The deadline for private healthcare institutions to begin data exchange with the Central Health Information System (CEZIH) passed on 1 May 2026. This guide explains what the obligation actually means, what penalties apply to non-compliant practices, and the fastest path to compliance for clinics that are not yet connected.',
+      lead: 'The deadline for private healthcare institutions to connect to the Central Health Information System (CEZIH) has been extended to 1 January 2027. — the obligation has not been abolished, only the final deadline has moved. This guide explains what the obligation actually means, what penalties apply to those who do not comply in time, and the fastest path to compliance.',
       ctaPrimary: 'Fastest path to compliance',
       ctaSecondary: 'Read the FAQ'
     },
@@ -1208,7 +1237,7 @@ export const en = {
       items: [
         { label: 'In 60 seconds', href: '#tldr' },
         { label: 'Your situation', href: '#scenarios' },
-        { label: 'What changed in May 2026', href: '#after-deadline' },
+        { label: 'Deadline extended to 1 Jan 2027', href: '#after-deadline' },
         { label: 'Non-compliance penalties', href: '#penalties' },
         { label: 'What gets exchanged', href: '#exchange-required' },
         { label: 'Access and signing', href: '#certilia' },
@@ -1243,17 +1272,20 @@ export const en = {
     tldr: {
       title: 'In 60 seconds',
       points: [
-        'The deadline to begin data exchange with CEZIH expired in early May 2026 — for both non-contractual providers and contractual providers (for the services they deliver privately).',
-        'Fines up to €13,200 per breach, under the Health Data and Information Act (NN 14/2019, Articles 28 and 36) — and personal liability for practice owners.',
+        'The deadline to connect to CEZIH has been extended to 1 January 2027 — for both non-contractual providers and contractual providers (for the services they deliver privately). The obligation has not been abolished.',
+        'Fines up to €13,200 per breach, under the Health Data and Information Act (NN 14/2019, Articles 28 and 36) — and personal liability for practice owners — apply after the deadline passes.',
         'Required exchange: ambulatory exam reports, specialist findings, hospital discharge letters.',
         'Fastest path to compliance: a cloud solution. No installation, no server, no waiting on IT.',
         'First steps if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite) and a qualified certificate (Certilia/AKD) — run these two in parallel.'
       ]
     },
     afterDeadline: {
-      title: 'What changed in early May 2026',
-      body: 'Per the official CEZIH notice (12 March 2026), all healthcare providers without an HZZO contract were required to begin data exchange via CEZIH by the start of May 2026 at the latest. At the same time, providers that already exchange data via CEZIH for their HZZO-contract services were required to begin exchange for the services they deliver privately — within the same deadline.',
-      bodyExtra: 'Practices that have not yet established secure data exchange are no longer in the "preparation phase" — as of May 2026 they are exposed to misdemeanor proceedings. Note: certification of software solutions for this purpose (especially for non-contractual providers) was still in progress as of March 2026 — we recommend checking the current list of certified solutions on cezih.hr before choosing software.',
+      title: 'Deadline extended to 1 January 2027 — the obligation remains.',
+      body: 'The original operational deadline for private healthcare providers to connect to CEZIH fell in the first months of 2026 (CEZIH notices and January 2026 press coverage cited a "by May" deadline). Because that window was too short for most private practices, the final deadline for full connection of all private providers — both HZZO-contracted and non-contracted — has been extended to 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting ("the deadline was too short for most, so it was extended to 1 January 2027").',
+      bodyExtra: 'Important: this is not an abolition of the obligation. The legal basis (Health Data and Information Act, NN 14/2019) remains in force, and fines of up to €13,200 continue to apply to institutions that do not comply by the new deadline. Note: the list of certified software solutions on cezih.hr is actively being expanded — verify the latest status before choosing software.',
+      crossLinkText: 'For a detailed verification of the deadline change, the source list, and a note on how HLK and the press explain the deadline, see our dedicated page:',
+      crossLinkHref: '/en/cezih-deadline-private-practices/',
+      crossLinkLabel: 'CEZIH deadline for private practices — confirmation and sources',
       whoTitle: 'Who is covered',
       whoItems: [
         'Non-contractual providers (private practices, polyclinics, and hospitals without an HZZO contract) — must begin CEZIH data exchange',
@@ -1333,11 +1365,11 @@ export const en = {
     },
     certilia: {
       title: 'Authentication and signing: AKD card + Certilia',
-      intro: 'HZZO still requires a strict technical setup for CEZIH data exchange: a Windows computer, an AKD smart card with a reader, VPN access, and the software vendor\'s local agent. In other words, at least one machine in the practice must satisfy all of these requirements to establish a CEZIH session.',
+      intro: 'HZZO still requires a strict technical setup for CEZIH data exchange: a Windows computer, a qualified certificate (an AKD smart card or the new official healthcare-worker ID card), VPN access, and the software vendor\'s local agent. At least one machine in the practice must satisfy all of these requirements to establish a CEZIH session.',
       accessTitle: 'What is required to access CEZIH',
       accessItems: [
         'A Windows computer (at least one in the practice)',
-        'An AKD smart card + a reader connected to that computer',
+        'A qualified certificate — an AKD smart card or the new official healthcare-worker ID card (from 1 July 2026 the old HZZO smart cards no longer grant access to CEZIH) + a reader',
         'VPN access into the HZZO network',
         'The software vendor\'s local agent (the component that bridges the application and CEZIH protocols)'
       ],
@@ -1442,7 +1474,7 @@ export const en = {
         {
           n: '1',
           title: 'CEZIH certification (or in-process)',
-          desc: 'The software must appear on the official list of CEZIH-certified solutions on cezih.hr. The list is actively being expanded for non-contractual providers (per cezih.hr in March 2026) — verify the latest status before signing.'
+          desc: 'The software must appear on the official list of CEZIH-certified solutions on cezih.hr. HM Digital is on that list (category Software solutions for private/institutions, G500). The list is actively being expanded for non-contractual providers — verify the latest status before signing.'
         },
         {
           n: '2',
@@ -1493,11 +1525,11 @@ export const en = {
         },
         {
           q: 'Do I need a special code from HZZO before connecting to CEZIH?',
-          a: 'Yes. Per the CEZIH notice (12 March 2026), non-contractual healthcare providers (those without an HZZO contract) must obtain a healthcare institution code (šifra zdravstvene ustanove) from HZZO as a prerequisite for CEZIH connection. The request is filed via the "Dodjela šifre neugovorni" form, signed (digitally) and stamped, and submitted to sifriranje.neugovorni@hzzo.hr — with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached.'
+          a: 'Yes. Per CEZIH and HZZO guidance, non-contractual healthcare providers (those without an HZZO contract) must obtain a healthcare institution code (šifra zdravstvene ustanove) from HZZO as a prerequisite for CEZIH connection. The request is filed via the "Dodjela šifre neugovorni" form, signed (digitally) and stamped, and submitted to sifriranje.neugovorni@hzzo.hr — with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached.'
         },
         {
           q: 'Will HZZO inspectors definitely fine me?',
-          a: 'Inspections and misdemeanor proceedings are not triggered automatically, but a legal basis has existed since 1 May 2026. The longer you remain non-compliant, the higher the probability of an inspection — especially if patients or other institutions report the absence of data exchange.'
+          a: 'Inspections and misdemeanor proceedings are not triggered automatically, but the legal basis for fines exists and applies after the (extended) 1 January 2027 deadline passes. The longer you remain non-compliant after the deadline, the higher the probability of an inspection — especially if patients or other institutions report the absence of data exchange.'
         },
         {
           q: 'How large is the fine, exactly?',
@@ -1517,7 +1549,7 @@ export const en = {
         },
         {
           q: 'What is the difference between CEZIH-certified and CEZIH-compatible software?',
-          a: '"Certified" means the solution has passed an official readiness review and appears on the list of approved software solutions on cezih.hr. "Compatible" is a marketing term with no legal weight. Legal compliance requires certified software.'
+          a: '"Certified" means the solution has passed an official readiness review and appears on the list of approved software solutions on cezih.hr. "Compatible" is a marketing term with no legal weight. Legal compliance requires certified software. HM Digital appears on the official CEZIH list of certified application manufacturers (category Software solutions for private/institutions, G500) — you can verify us independently on cezih.hr.'
         },
         {
           q: 'Do I need a smart card reader and VPN?',
@@ -1533,7 +1565,7 @@ export const en = {
         },
         {
           q: 'I work only privately and have no HZZO contract — do I have to join CEZIH?',
-          a: 'Yes. Per the CEZIH notice (12 March 2026), the CEZIH obligation also covers non-contractual healthcare providers — those who work exclusively privately, without an HZZO contract. The first step for you is obtaining a healthcare institution code (šifra zdravstvene ustanove) from HZZO — a prerequisite, filed via the "Dodjela šifre neugovorni" form and emailed to sifriranje.neugovorni@hzzo.hr, with the Ministry of Health decision attached. Only after the code is issued can you start the technical CEZIH connection.'
+          a: 'Yes. Per CEZIH and HZZO guidance, the CEZIH obligation also covers non-contractual healthcare providers — those who work exclusively privately, without an HZZO contract. The first step for you is obtaining a healthcare institution code (šifra zdravstvene ustanove) from HZZO — a prerequisite, filed via the "Dodjela šifre neugovorni" form and emailed to sifriranje.neugovorni@hzzo.hr, with the Ministry of Health decision attached. Only after the code is issued can you start the technical CEZIH connection.'
         },
         {
           q: 'I have practices on two locations — do I need two systems or multiple certificates?',
@@ -1557,12 +1589,148 @@ export const en = {
       title: 'Sources and further reading',
       disclaimer: 'This content is informational and does not constitute legal advice. For specific legal assessments, consult a qualified attorney or the relevant authority.',
       items: [
+        { label: 'Croatian Medical Chamber (HLK) — "Connecting private healthcare providers to CEZIH" (final deadline 1 January 2027)', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, July 2026 — "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14 Jul 2026 — "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO — from 1 July 2026 CEZIH access only via the new ID card (old HZZO smart cards expired 30 Jun 2026)', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH — official list of certified application manufacturers (HM Digital, category G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
         { label: 'Official CEZIH website — notices, system concept, and instructions', url: 'https://www.cezih.hr/' },
-        { label: 'CEZIH official notice to private healthcare providers + Connecting non-contractual providers (cezih.hr, 12 March 2026)', url: 'https://www.cezih.hr/' },
         { label: 'What is required to connect to CEZIH (official PDF, Croatian)', url: 'https://www.cezih.hr/G2/Sto_sve_treba.pdf' },
-        { label: 'Glas Slavonije, 20 Jan 2026 — "Private practices must join CEZIH by May, fines up to €13,200"', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
-        { label: 'Novi list — "Private hospitals and practices were required to connect to CEZIH by 1 January"', url: 'https://www.novilist.hr/novosti/hrvatska/privatne-bolnice-i-ordinacije-morale-su-do-1-sijecnja-se-spojiti-u-cezih-sto-to-znaci-za-vase-podatke/' }
+        { label: 'Glas Slavonije, 20 Jan 2026 — historical context of the original deadline ("...must join CEZIH by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Government of Croatia / Ministry of Health, June 2025 — historical context of the CEZIH private-sector expansion announcement', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
+      ]
+    }
+  },
+  cezihDeadline: {
+    meta: {
+      title: 'CEZIH Deadline for Private Practices: Confirmed 1 Jan 2027',
+      description: 'Has the deadline to connect to CEZIH moved? Yes — the final deadline is 1 Jan 2027. Source-checked fact (HLK, Večernji) plus the 1 Jul 2026 ID-card note.',
+      datePublished: '2026-07-27',
+      dateModified: '2026-07-27'
+    },
+    breadcrumb: {
+      home: 'Home',
+      current: 'CEZIH deadline for private practices'
+    },
+    hero: {
+      eyebrow: 'July 2026 · Fact check',
+      title: 'CEZIH Deadline for Private Practices: Confirmed — 1 January 2027',
+      subheadline: 'Yes, the deadline has been extended — the obligation has not been abolished. All key facts and sources in one place, no guessing.',
+      certBadge: 'HM Digital — officially certified CEZIH application manufacturer (HZZO)',
+      certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
+      promise: 'A short, verifiable clarification: what the deadline is, who it covers, and what not to confuse it with.',
+      lead: 'The final deadline for all private healthcare providers to connect to CEZIH — both HZZO-contracted and non-contracted — is 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting.',
+      ctaPrimary: 'What to do now',
+      ctaSecondary: 'See the sources'
+    },
+    kljucno: {
+      title: 'The key point in one line',
+      lead: 'The deadline has been extended, not abolished.',
+      points: [
+        { label: 'New final deadline', value: '1 January 2027' },
+        { label: 'Who it covers', value: 'All private providers — both HZZO-contracted and non-contracted' },
+        { label: 'The obligation', value: 'Has not been abolished — the Health Data and Information Act (NN 14/2019) remains in force' },
+        { label: 'Fines', value: 'Up to €13,200 per breach (Art. 36) continue to apply after the deadline' }
+      ],
+      note: 'Separately: from 1 July 2026, CEZIH access is possible only with the new official healthcare-worker ID card (old HZZO smart cards expired 30 June 2026). That is an authentication change, NOT a shift of the connection deadline — more on that below.'
+    },
+    pomakRoka: {
+      title: 'Has the deadline really been moved?',
+      answer: 'Yes. The original operational deadline for private providers to connect fell in the first months of 2026 — January 2026 press coverage cited a "by May" deadline. Because that window was too short for most private practices, the final deadline for full connection was extended to 1 January 2027.',
+      timelineTitle: 'How the deadline moved',
+      timeline: [
+        { date: 'June 2025', text: 'The Ministry of Health announces the inclusion of private institutions in CEZIH (the plan then: "by the end of the year").' },
+        { date: 'January 2026', text: 'Press cites an operational "by May" deadline with fines up to €13,200 — the obligation becomes active.' },
+        { date: 'May 2026', text: 'The original deadline is used to start connecting and exchanging, but proves too short for many private providers to fully comply.' },
+        { date: 'July 2026', text: 'The final deadline for all private providers to connect is confirmed as 1 January 2027 (HLK, Večernji, zdravljeija).' }
+      ],
+      caveatTitle: 'A note on the source',
+      caveat: 'HLK states 1 January 2027 as the deadline, citing "the Ministry of Health\'s interpretation," without publishing a specific Rulebook (Pravilnik) number that prescribes the date. The obligation itself does not depend on that caveat — the legal basis (NN 14/2019) is clear — but before making concrete decisions we recommend verifying on the official CEZIH and Ministry of Health websites.'
+    },
+    tkoObuhvacen: {
+      title: 'Who exactly the obligation covers',
+      items: [
+        'Non-contracted private providers (practices, polyclinics, private hospitals without an HZZO contract) — must connect to CEZIH.',
+        'Contracted private providers (already using CEZIH for HZZO services) — must also begin exchange for services they deliver privately.',
+        'All specialties: family medicine, dentistry, specialists, diagnostics, private hospitals.',
+        'All sizes — from solo practices to multi-location polyclinics.',
+        'First step for non-contracted providers: obtaining a healthcare institution code from HZZO (a prerequisite).'
+      ]
+    },
+    pametnaKartica: {
+      title: 'Careful: 1 July 2026 is NOT the connection deadline',
+      body: 'A common mistake is to confuse two different things:',
+      items: [
+        { term: 'Connection deadline', desc: '1 January 2027 — the final deadline for a private institution to establish secure data exchange with CEZIH via its software solution.' },
+        { term: 'New ID card deadline', desc: '1 July 2026 — from that day, CEZIH access is possible only with the new official healthcare-worker ID card; old HZZO smart cards expired 30 June 2026. This is an authentication change, not a shift of the connection deadline.' }
+      ],
+      sourceNote: 'Source: HZZO — from 1 July 2026, CEZIH access is only possible with the new healthcare-worker ID card.'
+    },
+    stoSad: {
+      title: 'What to do now',
+      intro: 'If your practice is not yet connected, you have time — but do not wait until the last moment. The administrative steps (the HZZO code and the qualified certificate) are the slowest, so run them in parallel:',
+      steps: [
+        { n: '1', title: 'Obtain a healthcare institution code from HZZO', desc: 'For non-contracted providers this is a prerequisite. "Dodjela šifre neugovorni" form + the Ministry of Health decision → sifriranje.neugovorni@hzzo.hr.' },
+        { n: '2', title: 'Obtain a qualified certificate (Certilia/AKD)', desc: 'Required for electronic signing in CEZIH. From 1 Jul 2026 you also need the new healthcare-worker ID card for access.' },
+        { n: '3', title: 'Choose a CEZIH-certified software solution', desc: 'Check the list of certified solutions on cezih.hr. Cloud solutions cut onboarding to days.' }
+      ],
+      ctaText: 'For a detailed walkthrough of the entire process (modules, fines, how to choose software, FAQ):',
+      ctaLabel: 'Read the full CEZIH guide →',
+      ctaHref: '/en/cezih-guide/',
+      productText: 'Looking for software that is already CEZIH-ready?',
+      productLabel: 'See our cloud CEZIH software',
+      productHref: '/en/medical-software'
+    },
+    faq: {
+      title: 'Frequently asked questions about the deadline',
+      items: [
+        {
+          q: 'Has the CEZIH obligation for private providers been abolished?',
+          a: 'No. The obligation to connect to CEZIH has not been abolished — only the final deadline has been extended, to 1 January 2027. The legal basis (Health Data and Information Act, NN 14/2019) remains in force.'
+        },
+        {
+          q: 'Has the deadline really moved to 1 January 2027?',
+          a: 'Yes. The final deadline for all private providers (contracted and non-contracted) to connect is 1 January 2027, as stated explicitly by the Croatian Medical Chamber and confirmed by July 2026 reporting ("the deadline was too short, so it was extended").'
+        },
+        {
+          q: 'I heard the deadline was 1 June 2026 — is that accurate?',
+          a: 'Not quite. The actual original operational deadline was "early May 2026" (May, not June), per January 2026 press coverage and CEZIH notices. That deadline was subsequently extended to 1 January 2027.'
+        },
+        {
+          q: 'What does 1 July 2026 mean?',
+          a: 'It is the deadline for changing how you log in to CEZIH: from that day, access is possible only with the new official healthcare-worker ID card, and old HZZO smart cards no longer work (they expired 30 June 2026). It is NOT the deadline for an institution to connect.'
+        },
+        {
+          q: 'Can I wait until the end of 2026 to start preparing?',
+          a: 'Technically yes, but it is not wise. The slowest steps are administrative (the HZZO code and the qualified certificate), and if everyone starts at the last minute, bottlenecks will appear. Start preparing now.'
+        },
+        {
+          q: 'Do the fines of up to €13,200 still apply?',
+          a: 'Yes. Fines of up to €13,200 per breach (Art. 36 of the Health Data and Information Act, NN 14/2019) remain in force for institutions that do not comply by the 1 January 2027 deadline.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Ready to connect to CEZIH?',
+      body: 'The full guide to the obligation, fines, modules, and software selection — or directly our cloud CEZIH software for private practices.',
+      primaryLabel: 'Full CEZIH guide',
+      primaryHref: '/en/cezih-guide/',
+      secondaryLabel: 'Cloud CEZIH software',
+      secondaryHref: '/en/medical-software'
+    },
+    sources: {
+      title: 'Sources',
+      disclaimer: 'This page fact-checks publicly available claims about the CEZIH deadline. The content is informational and does not constitute legal advice. For legally binding information, consult the relevant authorities.',
+      items: [
+        { label: 'Croatian Medical Chamber (HLK) — "Connecting private healthcare providers to CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, July 2026 — "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14 Jul 2026 — "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO — from 1 July 2026, CEZIH access only via the new ID card', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH — official list of certified application manufacturers (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Glas Slavonije, 20 Jan 2026 — historical context of the original deadline ("by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Government of Croatia / Ministry of Health, June 2025 — announcement of CEZIH expansion to the private sector', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
+        { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' }
       ]
     }
   }
