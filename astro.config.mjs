@@ -20,6 +20,11 @@ export default defineConfig({
         !page.includes('/demo/') &&
         !page.includes('/medical/pravila-privatnosti') &&
         !page.includes('/medical/uvjeti-koristenja'),
+      serialize(item) {
+        // Stamp every URL with the build time so Google has a crawl-prioritization signal
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
     })
   ],
   i18n: {

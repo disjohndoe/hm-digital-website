@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/ui/Card.astro';
 import Button from '../../components/ui/Button.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 import { getTranslations, getLocaleFromPath } from '../../i18n/ui';
 
 const currentPath = Astro.url.pathname;
@@ -12,8 +13,9 @@ const t = getTranslations(locale);
 <Layout
   title="About - HM Digital | Software Development Team"
   description="Meet HM Digital - an experienced software development team with 10+ years in the industry. We specialize in Python, Django, FastAPI, React and ERP systems. Serving clients worldwide."
-  canonical="/en/about"
+  canonical="/en/about/"
 >
+  <Breadcrumbs slot="head" currentLabel={t.nav.about} />
   <!-- Hero -->
   <section class="bg-gradient-to-br from-slate-50 to-white py-5 lg:py-7">
     <div class="container-custom">

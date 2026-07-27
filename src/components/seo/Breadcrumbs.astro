@@ -1,0 +1,39 @@
+---
+// Reusable BreadcrumbList structured data.
+// Drop into a page's <head> via: <Breadcrumbs slot="head" currentLabel="..." />
+// Locale is auto-detected from the URL; the canonical (current page URL with
+// trailing slash) is passed via the `canonical` prop to match MetaTags output.
+import { getLocaleFromPath, getRouteKeyFromPathname } from '../../i18n/ui';
+
+interface Props {
+  currentLabel: string;
+  canonical?: string;
+}
+
+const { currentLabel, canonical = Astro.url.pathname } = Astro.props;
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const t = locale === 'hr'
+  ? (await import('../../i18n/hr')).hr
+  : (await import('../../i18n/en')).en;
+
+const siteUrl = 'https://hmdigital.hr';
+
+// Trailing-slash normalization to match build.format 'directory'
+const withTrailingSlash = (p: string) => (p === '/' || p.endsWith('/') ? p : `${p}/`);
+const currentUrl = `${siteUrl}${withTrailingSlash(canonical)}`;
+
+// Home URL per locale
+const homeUrl = locale === 'hr' ? `${siteUrl}/` : `${siteUrl}/en/`;
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: t.nav.home, item: homeUrl },
+    { '@type': 'ListItem', position: 2, name: currentLabel, item: currentUrl }
+  ]
+};
+---
+
+<script set:html={JSON.stringify(breadcrumb)} type="application/ld+json" />

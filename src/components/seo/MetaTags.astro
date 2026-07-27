@@ -6,7 +6,7 @@ interface Props {
   description: string;
   image?: string;
   locale: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'product';
   canonical?: string;
   noindex?: boolean;
 }
@@ -30,10 +30,17 @@ const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
 const imageUrl = `${siteUrl}${image}`;
 const alternateLocale = locale === 'hr' ? 'en' : 'hr';
 
+// Normalize a path to match build.format 'directory' (trailing slash on non-root paths)
+const withTrailingSlash = (p: string) => (p === '/' || p.endsWith('/') ? p : `${p}/`);
+
 // Get the alternate URL using the route map
 const routeKey = getRouteKeyFromPathname(canonical || '/');
-const alternatePath = routes[routeKey][alternateLocale as keyof typeof routes[typeof routeKey]];
+const alternatePath = withTrailingSlash(routes[routeKey][alternateLocale as keyof typeof routes[typeof routeKey]]);
 const alternateUrl = `${siteUrl}${alternatePath}`;
+
+// x-default: the default-locale (HR) URL of THIS page (never the homepage unless on homepage)
+const defaultLocalePath = withTrailingSlash(routes[routeKey].hr);
+const defaultLocaleUrl = `${siteUrl}${defaultLocalePath}`;
 ---
 
 <!-- Primary Meta Tags -->
@@ -50,16 +57,20 @@ const alternateUrl = `${siteUrl}${alternatePath}`;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={title} />
+<meta property="og:site_name" content="HM Digital" />
 <meta property="og:locale" content={locale === 'hr' ? 'hr_HR' : 'en_US'} />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={fullUrl} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={imageUrl} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={fullUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
 
 <!-- hreflang tags -->
 <link rel="alternate" hreflang={locale === 'hr' ? 'hr-HR' : 'en'} href={fullUrl} />
 <link rel="alternate" hreflang={alternateLocale === 'hr' ? 'hr-HR' : 'en'} href={alternateUrl} />
-<link rel="alternate" hreflang="x-default" href={`${siteUrl}${routes['/'].hr}`} />
+<link rel="alternate" hreflang="x-default" href={defaultLocaleUrl} />

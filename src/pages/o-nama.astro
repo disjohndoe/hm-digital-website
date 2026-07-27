@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/ui/Card.astro';
 import Button from '../components/ui/Button.astro';
+import Breadcrumbs from '../components/seo/Breadcrumbs.astro';
 import { getTranslations, getLocaleFromPath } from '../i18n/ui';
 
 const currentPath = Astro.url.pathname;
@@ -12,8 +13,9 @@ const t = getTranslations(locale);
 <Layout
   title={locale === 'hr' ? 'O nama - HM Digital | Naš tim i iskustvo' : 'About - HM Digital | Our Team and Expertise'}
   description={locale === 'hr' ? 'Upoznajte HM Digital - tim s 10+ godina iskustva u softverskom razvoju. Specijalizirani smo za Python, Django, FastAPI, React i ERP sustave. Radimo za hrvatsko i inozemno tržište.' : 'Meet HM Digital - a team with 10+ years of software development experience. We specialize in Python, Django, FastAPI, React and ERP systems. Serving Croatian and international markets.'}
-  canonical={locale === 'hr' ? '/o-nama' : '/en/about'}
+  canonical={locale === 'hr' ? '/o-nama/' : '/en/about/'}
 >
+  <Breadcrumbs slot="head" currentLabel={t.nav.about} />
   <!-- Hero -->
   <section class="bg-gradient-to-br from-slate-50 to-white py-5 lg:py-7">
     <div class="container-custom">

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { getTranslations } from '../i18n/ui';
 import PricingTable from '../components/ui/PricingTable.astro';
 import DigitizationPricingTable from '../components/ui/DigitizationPricingTable.astro';
+import Breadcrumbs from '../components/seo/Breadcrumbs.astro';
 
 const locale = 'hr';
 const t = getTranslations(locale);
@@ -11,8 +12,9 @@ const t = getTranslations(locale);
 <Layout
   title={`${t.pricing.title} - HM Digital | Softverski razvoj i digitalizacija`}
   description="Transparentne cijene softverskog razvoja i digitalizacije dokumenata. Od startup MVP-a do kompleksnih SaaS platformi. Besplatna procjena projekta."
-  canonical="/cjenik"
+  canonical="/cjenik/"
 >
+  <Breadcrumbs slot="head" currentLabel={t.pricing.title} />
   <PricingTable />
   <DigitizationPricingTable />
 </Layout>

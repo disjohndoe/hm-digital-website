@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /uspjeh
 Disallow: /en/success
+Disallow: /za-vas
+Disallow: /en/for-you
+Disallow: /demo/
 Disallow: /medical/pravila-privatnosti
 Disallow: /medical/uvjeti-koristenja
 

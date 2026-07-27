@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ContactForm from '../../components/sections/ContactForm.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 import { getTranslations } from '../../i18n/ui';
 
 const locale = 'en';
@@ -10,8 +11,9 @@ const t = getTranslations(locale);
 <Layout
   title="Contact - HM Digital | Start Your Software Project"
   description="Contact HM Digital for expert software development services. We build web applications, e-commerce platforms, ERP systems and automation solutions. Response within 24 hours."
-  canonical="/en/contact"
+  canonical="/en/contact/"
 >
+  <Breadcrumbs slot="head" currentLabel={t.contact.title} />
   <!-- Hero -->
   <section class="bg-gradient-to-br from-slate-50 to-white py-16 lg:py-24">
     <div class="container-custom text-center">

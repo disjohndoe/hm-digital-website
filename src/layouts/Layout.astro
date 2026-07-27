@@ -11,7 +11,7 @@ interface Props {
   title: string;
   description: string;
   image?: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'product';
   canonical?: string;
   noindex?: boolean;
 }
@@ -33,7 +33,9 @@ const lang = locale === 'hr' ? 'hr' : 'en';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/hm-digital.png" />
     <MetaTags
       title={title}
       description={description}
@@ -43,7 +45,7 @@ const lang = locale === 'hr' ? 'hr' : 'en';
       canonical={canonical}
       noindex={noindex}
     />
-    <StructuredData type="organization" locale={locale} />
+    <StructuredData type="localbusiness" locale={locale} />
     <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col">

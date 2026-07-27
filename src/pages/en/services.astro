@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/ui/Card.astro';
 import Button from '../../components/ui/Button.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 import { getTranslations } from '../../i18n/ui';
 
 const locale = 'en';
@@ -11,8 +12,9 @@ const t = getTranslations(locale);
 <Layout
   title="Services - HM Digital | Software Development, ERP, E-commerce, Automation, Digitization"
   description="Software development and digitization: backend/API development, SaaS platforms, e-commerce solutions, ERP systems, business automation, and document digitization. Python and Rust expertise."
-  canonical="/en/services"
+  canonical="/en/services/"
 >
+  <Breadcrumbs slot="head" currentLabel={t.services.title} />
   <!-- Hero -->
   <section class="bg-gradient-to-br from-slate-50 to-white py-16 lg:py-24">
     <div class="container-custom">

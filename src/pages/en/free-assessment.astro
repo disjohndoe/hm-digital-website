@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getTranslations } from '../../i18n/ui';
 import QuoteRequestForm from '../../components/sections/QuoteRequestForm.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 
 const locale = 'en';
 const t = getTranslations(locale);
@@ -10,9 +11,10 @@ const t = getTranslations(locale);
 <Layout
   title={`${t.freeAssessment.title} - HM Digital | Free Software Project Assessment`}
   description="Request a free assessment for your software project. Describe your needs and get a tailored quote for web apps, e-commerce platforms, ERP systems, or automation solutions."
-  canonical="/en/free-assessment"
+  canonical="/en/free-assessment/"
 >
 
+  <Breadcrumbs slot="head" currentLabel={t.freeAssessment.title} />
   <section class="pt-16 lg:pt-24 pb-0">
     <div class="container-custom">
       <div class="text-center mb-16 max-w-3xl mx-auto">
