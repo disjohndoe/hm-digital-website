@@ -1262,7 +1262,7 @@ export const hr = {
         'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) — i osobno za nositelje ordinacija — primjenjuju se nakon isteka roka.',
         'Razmjenjuju se ambulantni izvještaji, specijalistički nalazi i otpusna pisma.',
         'Najbrži put do usklađenosti = cloud rješenje. Bez instalacije, bez servera, bez čekanja na informatičara.',
-        'Prvi korak ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet). Za potpisivanje u CEZIH-u koristi se vaša AKD/HZZO kartica — Certilia (mobilni udaljeni potpis) je opcionalan dodatak, nije obvezan.'
+        'Prvi korak ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet). Za potpisivanje u CEZIH-u koristi se vaša AKD/HZZO kartica — ona je obavezna (mora biti u čitaču na uredskom računalu). Certilia je opcionalan dodatak za udaljeni rad s drugog uređaja nakon što je kartica aktivna, ali ne zamjenjuje karticu.'
       ]
     },
     afterDeadline: {
@@ -1421,7 +1421,7 @@ export const hr = {
           n: '2',
           phase: 'Tjedan 1',
           title: 'Pripremite AKD karticu za pristup i potpis (Certilia opcionalno)',
-          desc: 'Za pristup CEZIH-u i potpisivanje dokumenata koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — to je zadani način. Certilia (mobilni udaljeni potpis) je opcionalan dodatak ako želite potpisivati s mobitela bez fizičke kartice; nije obvezan za usklađenost.'
+          desc: 'Za pristup CEZIH-u i potpisivanje dokumenata koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — kartica je obavezna i mora biti u čitaču na uredskom računalu. Certilia je opcionalan dodatak koji omogućuje udaljeni rad i potpisivanje s drugog uređaja (mobitel, laptop) nakon što je kartica već aktivna; nije obvezna, ali ne zamjenjuje karticu.'
         },
         {
           n: '3',
@@ -1658,7 +1658,7 @@ export const hr = {
       intro: 'Ako vaša ordinacija još nije priključena, imate vremena — ali nemojte čekati zadnji tren. Najsporiji je administrativni korak (šifra HZZO-a), pa ga pokrenite odmah. Za potpisivanje u CEZIH-u koristi se vaša AKD kartica — Certilia je opcionalna:',
       steps: [
         { n: '1', title: 'Ishodite šifru zdravstvene ustanove od HZZO-a', desc: 'Za neugovorne pružatelje ovo je preduvjet. Tiskanica "Dodjela šifre neugovorni" + rješenje Ministarstva zdravstva → sifriranje.neugovorni@hzzo.hr.' },
-        { n: '2', title: 'Pripremite AKD karticu za potpis (Certilia opcionalno)', desc: 'Za potpisivanje u CEZIH-u koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika). Certilia (mobilni udaljeni potpis) je opcionalan dodatak za potpisivanje s mobitela — nije obvezan.' },
+        { n: '2', title: 'Pripremite AKD karticu za pristup i potpis (Certilia opcionalno)', desc: 'Za pristup CEZIH-u i potpisivanje koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — obavezna je i mora biti u čitaču na uredskom računalu. Certilia je opcionalan dodatak za udaljeni rad s drugog uređaja nakon što je kartica aktivna; ne zamjenjuje karticu.' },
         { n: '3', title: 'Odaberite CEZIH-ovjereno softversko rješenje', desc: 'Provjerite popis ovjerenih rješenja na cezih.hr. Cloud rješenja skraćuju onboarding na dane.' }
       ],
       ctaText: 'Za detaljan vodič kroz cijeli proces (moduli, kazne, kako odabrati softver, FAQ):',
