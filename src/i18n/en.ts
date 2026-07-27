@@ -1253,7 +1253,7 @@ export const en = {
       items: [
         {
           title: 'Opening a new private practice',
-          desc: 'Run these in parallel: Ministry of Health decision → HZZO institution code → qualified certificate → choosing CEZIH-certified software. A cloud solution shortens the technical part to days.'
+          desc: 'Run these in parallel: Ministry of Health decision → HZZO institution code → AKD card (qualified certificate, mandatory) → choosing CEZIH-certified software. A cloud solution shortens the technical part to days.'
         },
         {
           title: 'I have legacy software without CEZIH integration',
@@ -1521,7 +1521,7 @@ export const en = {
       items: [
         {
           q: 'What if my practice is not yet connected to CEZIH?',
-          a: 'You are not alone — a significant share of private practices is in the same position. The fastest path to compliance is a CEZIH-certified cloud solution that requires no installation or on-premise server. Before that, obtain a healthcare institution code from HZZO (a prerequisite for connection) and a qualified signing certificate. Software onboarding with modern cloud solutions takes a few days.'
+          a: 'You are not alone — a significant share of private practices is in the same position. The fastest path to compliance is a CEZIH-certified cloud solution that requires no installation or on-premise server. Before that, obtain a healthcare institution code from HZZO (a prerequisite for connection). Signing in CEZIH uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) — the card is mandatory and must be in the reader on the office computer. Software onboarding with modern cloud solutions takes a few days.'
         },
         {
           q: 'Do I need a special code from HZZO before connecting to CEZIH?',

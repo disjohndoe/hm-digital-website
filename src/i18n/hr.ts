@@ -1239,7 +1239,7 @@ export const hr = {
       items: [
         {
           title: 'Otvaram novu privatnu ordinaciju',
-          desc: 'Krenite paralelno: rješenje Ministarstva zdravstva → šifra HZZO-a → kvalificirani certifikat → odabir CEZIH-ovjerenog softvera. Cloud rješenje skraćuje tehnički dio na dane.'
+          desc: 'Krenite paralelno: rješenje Ministarstva zdravstva → šifra HZZO-a → AKD kartica (kvalificirani certifikat, obavezna) → odabir CEZIH-ovjerenog softvera. Cloud rješenje skraćuje tehnički dio na dane.'
         },
         {
           title: 'Imam stari softver bez CEZIH integracije',
@@ -1507,7 +1507,7 @@ export const hr = {
       items: [
         {
           q: 'Što ako moja ordinacija još nije priključena na CEZIH?',
-          a: 'Niste sami — značajan dio privatnih ordinacija je u istoj situaciji. Najbrži put do usklađenosti je odabir cloud CEZIH-ovjerenog softvera koji ne zahtijeva instalaciju ili server u ordinaciji. Prije svega ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet za spajanje) i kvalificirani certifikat za potpisivanje. Onboarding samog softvera kod modernih cloud rješenja traje nekoliko dana.'
+          a: 'Niste sami — značajan dio privatnih ordinacija je u istoj situaciji. Najbrži put do usklađenosti je odabir cloud CEZIH-ovjerenog softvera koji ne zahtijeva instalaciju ili server u ordinaciji. Prije svega ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet za spajanje). Za potpisivanje u CEZIH-u koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — kartica je obavezna i mora biti u čitaču na uredskom računalu. Onboarding samog softvera kod modernih cloud rješenja traje nekoliko dana.'
         },
         {
           q: 'Trebam li posebnu šifru od HZZO-a prije spajanja na CEZIH?',
