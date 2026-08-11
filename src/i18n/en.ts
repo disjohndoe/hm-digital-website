@@ -1596,7 +1596,7 @@ export const en = {
         { label: 'CEZIH — official list of certified application manufacturers (HM Digital, category G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
         { label: 'Official CEZIH website — notices, system concept, and instructions', url: 'https://www.cezih.hr/' },
-        { label: 'What is required to connect to CEZIH (official PDF, Croatian)', url: 'https://www.cezih.hr/aplikacije/sto_sve_treba.pdf' },
+        { label: 'What is required to connect to CEZIH (official PDF, Croatian)', url: 'http://www.cezih.hr/aplikacije/Sto_sve_treba.pdf' },
         { label: 'Glas Slavonije, 20 Jan 2026 — historical context of the original deadline ("...must join CEZIH by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
         { label: 'Government of Croatia / Ministry of Health, June 2025 — historical context of the CEZIH private-sector expansion announcement', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
       ]

@@ -1582,7 +1582,7 @@ export const hr = {
         { label: 'CEZIH — službeni popis certificiranih proizvođača aplikacija (HM Digital, kategorija G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
         { label: 'Službena stranica CEZIH-a — obavijesti, koncept sustava i upute', url: 'https://www.cezih.hr/' },
-        { label: 'Što sve treba za spajanje na CEZIH (službeni PDF)', url: 'https://www.cezih.hr/aplikacije/sto_sve_treba.pdf' },
+        { label: 'Što sve treba za spajanje na CEZIH (službeni PDF)', url: 'http://www.cezih.hr/aplikacije/Sto_sve_treba.pdf' },
         { label: 'Glas Slavonije, 20.01.2026 — povijesni kontekst prvotnog roka ("...do svibnja moraju ući u CEZIH")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
         { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. — povijesni kontekst najave širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
       ]
