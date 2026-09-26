@@ -132,7 +132,7 @@ export const en = {
       submit: 'Send inquiry'
     },
     email: 'info@hmdigital.hr',
-    phone: '(+385) 097 7120 800',
+    phone: '+385 97 7120 800',
     address: 'Mašić 58, 35428 Dragalić, Croatia',
     social: 'Follow us'
   },
@@ -785,7 +785,7 @@ export const en = {
       subtitle: 'The mobile app is the fastest route, but not the only one. Every client gets the channel that suits them - and all invoices land in one place.',
       items: [
         { title: 'Client snaps a photo', desc: 'The free app: a photo of the invoice in a second, data read immediately, no emails or attachments.' },
-        { title: 'Submission by email', desc: 'A client without a smartphone (or without an appetite for apps) sends the invoice by email - it lands in the same inbox as the photos, not in a separate folder everyone forgets.' },
+        { title: 'Submission by email', desc: 'A client without a smartphone (or without an appetite for apps) sends the invoice by email - you just download the attachment and upload it to the app, and from there everything works the same as with a photo.' },
         { title: 'You photograph for the client', desc: 'A paper invoice brought into the office takes you a few seconds to snap - same process, same automatic handling, same export.' }
       ],
       note: 'Digitizing paper invoices means your archive is no longer a shelf in the office: every invoice - paper or digital - ends up as a searchable record in the app, ready for export into your program.',
@@ -842,10 +842,10 @@ export const en = {
       manualHoursLabel: 'Hours of manual entry per month',
       manualCostLabel: 'Cost of manual entry (EUR/mo)',
       kontoCostLabel: 'With KontoMatrix (EUR/mo)',
-      reviewNote: 'With KontoMatrix invoices are reviewed and confirmed, roughly 1 minute per invoice, and that time is included in this figure.',
       savedLabel: 'Monthly saving (EUR/mo)',
-      hoursSavedLabel: 'Hours you stop spending on typing',
-      note: 'KontoMatrix costs 10 EUR per month per active client (50 EUR monthly minimum per office). The calculator is a rough estimate, not an offer.',
+      hoursSavedLabel: 'Work hours/month',
+      noSavingNote: 'At these settings manual entry is still cheaper - the saving grows with the number of invoices and minutes of entry.',
+      note: 'The calculator is a rough estimate, not an offer.',
       ctaLabel: 'Show me this in a demo'
     },
     pricing: {

@@ -316,30 +316,30 @@ const SUCCESS_URL = 'https://hmdigital.hr/en/success';
             <div>
               <div class="flex justify-between items-baseline mb-2">
                 <label for="calc-clients" class="text-sm font-medium text-slate-700">{m.calc.clientsLabel}</label>
-                <span id="calc-clients-val" class="text-sm font-bold text-primary-700">40</span>
+                <span id="calc-clients-val" class="text-sm font-bold text-primary-700">80</span>
               </div>
-              <input type="range" id="calc-clients" min="1" max="200" step="1" value="40" class="w-full accent-primary-600" />
+              <input type="range" id="calc-clients" min="1" max="200" step="1" value="80" class="w-full accent-primary-600" />
             </div>
             <div>
               <div class="flex justify-between items-baseline mb-2">
                 <label for="calc-invoices" class="text-sm font-medium text-slate-700">{m.calc.invoicesLabel}</label>
-                <span id="calc-invoices-val" class="text-sm font-bold text-primary-700">8</span>
+                <span id="calc-invoices-val" class="text-sm font-bold text-primary-700">10</span>
               </div>
-              <input type="range" id="calc-invoices" min="1" max="50" step="1" value="8" class="w-full accent-primary-600" />
+              <input type="range" id="calc-invoices" min="1" max="50" step="1" value="10" class="w-full accent-primary-600" />
             </div>
             <div>
               <div class="flex justify-between items-baseline mb-2">
                 <label for="calc-minutes" class="text-sm font-medium text-slate-700">{m.calc.minutesLabel}</label>
-                <span id="calc-minutes-val" class="text-sm font-bold text-primary-700">5</span>
+                <span id="calc-minutes-val" class="text-sm font-bold text-primary-700">6</span>
               </div>
-              <input type="range" id="calc-minutes" min="1" max="20" step="1" value="5" class="w-full accent-primary-600" />
+              <input type="range" id="calc-minutes" min="1" max="20" step="1" value="6" class="w-full accent-primary-600" />
             </div>
             <div>
               <div class="flex justify-between items-baseline mb-2">
                 <label for="calc-rate" class="text-sm font-medium text-slate-700">{m.calc.rateLabel}</label>
-                <span id="calc-rate-val" class="text-sm font-bold text-primary-700">15</span>
+                <span id="calc-rate-val" class="text-sm font-bold text-primary-700">18</span>
               </div>
-              <input type="range" id="calc-rate" min="5" max="60" step="1" value="15" class="w-full accent-primary-600" />
+              <input type="range" id="calc-rate" min="5" max="60" step="1" value="18" class="w-full accent-primary-600" />
             </div>
           </div>
         </Card>
@@ -360,12 +360,19 @@ const SUCCESS_URL = 'https://hmdigital.hr/en/success';
             </div>
           </dl>
           <div class="mt-6 p-4 rounded-lg bg-primary-50 border border-primary-200 text-center">
-            <p class="text-xs uppercase tracking-wider font-semibold text-primary-700 mb-1">{m.calc.savedLabel}</p>
-            <p id="calc-saved" class="text-3xl font-extrabold text-primary-700">0</p>
-            <p id="calc-hours-saved" class="text-sm text-slate-600 mt-1">0</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider font-semibold text-primary-700 mb-1">{m.calc.savedLabel}</p>
+                <p id="calc-saved" class="text-3xl font-extrabold text-primary-700">0</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider font-semibold text-primary-700 mb-1">{m.calc.hoursSavedLabel}</p>
+                <p id="calc-hours-saved" class="text-3xl font-extrabold text-primary-700">0</p>
+              </div>
+            </div>
+            <p id="calc-no-saving" class="hidden text-xs text-slate-600 mt-3 leading-relaxed" data-note={m.calc.noSavingNote}></p>
           </div>
-          <p class="text-xs text-slate-500 mt-4 leading-relaxed">{m.calc.reviewNote}</p>
-          <p class="text-xs text-slate-500 mt-2 leading-relaxed">{m.calc.note}</p>
+          <p class="text-xs text-slate-500 mt-4 leading-relaxed">{m.calc.note}</p>
           <div class="mt-6 text-center">
             <Button href="#demo-form" variant="primary">{m.calc.ctaLabel}</Button>
           </div>
@@ -556,7 +563,17 @@ const SUCCESS_URL = 'https://hmdigital.hr/en/success';
         out.manualCost.textContent = fmt(Math.round(manualCost), 0) + ' EUR';
         out.kontoCost.textContent = fmt(Math.round(kontoCost), 0) + ' EUR';
         out.saved.textContent = (saved > 0 ? fmt(Math.round(saved), 0) : '0') + ' EUR';
-        out.hoursSaved.textContent = hoursSaved > 0 ? fmt(hoursSaved, 1) : '0';
+        out.hoursSaved.textContent = hoursSaved > 0 ? fmt(hoursSaved, 1) + ' h' : '0 h';
+        var note = document.getElementById('calc-no-saving');
+        if (note) {
+          if (saved > 0) {
+            note.textContent = '';
+            note.classList.add('hidden');
+          } else {
+            note.textContent = note.getAttribute('data-note') || '';
+            note.classList.remove('hidden');
+          }
+        }
       }
 
       Object.keys(inputs).forEach(function (k) {

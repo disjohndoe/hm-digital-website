@@ -132,7 +132,7 @@ export const hr = {
       submit: 'Pošalji upit'
     },
     email: 'info@hmdigital.hr',
-    phone: '(+385) 097 7120 800',
+    phone: '+385 97 7120 800',
     address: 'Mašić 58, 35428 Dragalić, Hrvatska',
     social: 'Pratite nas'
   },
@@ -785,8 +785,8 @@ export const hr = {
       subtitle: 'Mobilna aplikacija je najbrži put, ali nije jedini. Svaki klijent ima kanal koji njemu odgovara - a svi računi završavaju na jednom mjestu.',
       items: [
         { title: 'Klijent slika račun mobitelom', desc: 'Besplatna aplikacija: fotografija računa u sekundi, podaci pročitani odmah, bez e-maila i privitaka.' },
-        { title: 'Predaja e-poštom', desc: 'Klijent bez pametnog telefona (ili bez volje za aplikacijom) šalje račun e-mailom - poruka stiže u isti prijamni spremnik kao i fotografije, ne u zasebnu mapu koja se zaboravi.' },
-        { title: 'Vi fotografirate za klijenta', desc: 'Papirnati račun donesen u ured slika vi u nekoliko sekundi - isti postupak, ista automatska obrada, isti izvoz.' }
+        { title: 'Predaja e-poštom', desc: 'Klijent bez pametnog telefona (ili bez volje za aplikacijom) šalje račun e-mailom - vi samo preuzmete privitak i učitate ga u aplikaciju, a dalje je sve isto kao kod fotografije.' },
+        { title: 'Vi fotografirate za klijenta', desc: 'Papirnati račun donesen u ured slikate vi u nekoliko sekundi - isti postupak, ista automatska obrada, isti izvoz.' }
       ],
       note: 'Digitalizacija papirnatih računa znači da arhiva više nije polica u uredu: svaki račun - papirnati ili digitalni - završava kao pretraživ zapis u aplikaciji, spreman za izvoz u vaš program.',
       guideTeaser: 'Više načina da ubrzate unos primljenih računa, bez zamjene programa:',
@@ -842,10 +842,10 @@ export const hr = {
       manualHoursLabel: 'Sati ručnog unosa mjesečno',
       manualCostLabel: 'Trošak ručnog unosa (EUR/mj)',
       kontoCostLabel: 'Uz KontoMatrix (EUR/mj)',
-      reviewNote: 'Uz KontoMatrix se računi pregledavaju i potvrđuju, okvirno 1 minuta po računu, pa je u tu stavku uključeno i to vrijeme.',
       savedLabel: 'Mjesečna ušteda (EUR/mj)',
-      hoursSavedLabel: 'Sati koje više ne provodite tipkajući',
-      note: 'KontoMatrix se naplaćuje 10 EUR mjesečno po aktivnom klijentu (mjesečni minimum 50 EUR po uredu). Kalkulator je okvirna procjena, ne ponuda.',
+      hoursSavedLabel: 'Radni sati mjesečno',
+      noSavingNote: 'Pri ovim postavkama ručni unos je još jeftiniji - ušteda raste s brojem računa i minutama ručnog unosa.',
+      note: 'Kalkulator je okvirna procjena, ne ponuda.',
       ctaLabel: 'Prikažite mi to na prezentaciji'
     },
     pricing: {
