@@ -1177,7 +1177,6 @@ export const en = {
       body2: 'Every plan includes CEZIH integration, e-Findings, plus a 14-day free trial (no card, no obligation). Before the trial ends, we assess together whether this is the right program for your practice.'
     },
     stats: {
-      clinics: { value: '2,171', label: 'practices in Croatia' },
       cert: { value: 'Certified', label: 'on the official CEZIH list (G500)' },
       deadline: { value: '1 Jan 2027', label: 'deadline to connect to CEZIH' }
     },

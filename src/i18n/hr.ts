@@ -1163,7 +1163,6 @@ export const hr = {
       body2: 'Svaki paket uključuje CEZIH integraciju, e-Nalaz te besplatan probni period od 14 dana (bez kartice i bez obveze). Prije isteka probnog perioda zajedno procjenjujemo je li ovo pravi program za vašu ordinaciju.'
     },
     stats: {
-      clinics: { value: '2.171', label: 'ordinacija u RH' },
       cert: { value: 'Certificirano', label: 'na službenom CEZIH popisu (G500)' },
       deadline: { value: '1.1.2027.', label: 'rok za povezivanje na CEZIH' }
     },
