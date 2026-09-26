@@ -22,6 +22,7 @@ export const routes = {
   "/kako-ubrzati-unos-primljenih-racuna": { hr: "/kako-ubrzati-unos-primljenih-racuna", en: "/en/how-to-speed-up-invoice-entry" },
   "/kako-odabrati-cezih-softver": { hr: "/kako-odabrati-cezih-softver", en: "/en/how-to-choose-cezih-software" },
   "/cezih-rok-za-privatne-ordinacije": { hr: "/cezih-rok-za-privatne-ordinacije", en: "/en/cezih-deadline-private-practices" },
+  "/fiskalizacija-e-racuni": { hr: "/fiskalizacija-e-racuni", en: "/en/fiscalization-e-invoices" },
   "/pravila-privatnosti": { hr: "/pravila-privatnosti", en: "/en/privacy-policy" },
   "/kolacici": { hr: "/kolacici", en: "/en/cookie-policy" },
 } as const;

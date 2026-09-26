@@ -738,7 +738,9 @@ export const hr = {
       subtitle: 'Vaši klijenti (ili vi za njih) slikaju račune mobitelom, aplikacija KontoMatrix ih pročita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva - a podaci završavaju ravno u računovodstvenom softveru koji već koristite.',
       ctaPrimary: 'Zatražite prezentaciju od 10 minuta',
       ctaSecondary: 'Kako to radi?',
-      trustRow: 'GDPR · FINA e-računi · EU hosting · OIB validacija'
+      trustRow: 'GDPR · FINA e-računi · EU hosting · OIB validacija',
+      guideNote: 'Više o samim propisima (rokovi, JIR, ZKI, kazne):',
+      guideLink: 'vodič Fiskalizacija 2.0 i e-Računi'
     },
     problem: {
       title: 'Poznat vam je ovaj ponedjeljak?',
@@ -2100,6 +2102,291 @@ export const hr = {
         { label: 'Hrvatska liječnička komora - povezivanje privatnih pružatelja na CEZIH', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
         { label: 'Novi list - rok produljen dvaput, do 1. siječnja 2027.', url: 'https://www.novilist.hr/novosti/hrvatska/nalazi-privatnika-od-1-sijecnja-u-cezih-u-podaci-pretraga-nedostupni-jos-pola-godine' },
         { label: 'HM Digital - CEZIH vodič (rokovi, kazne, postupak)', url: 'https://hmdigital.hr/cezih-vodic/' }
+      ]
+    }
+  },
+  fiskalizacijaGuide: {
+    meta: {
+      title: 'Fiskalizacija 2.0 i e-Računi: JIR, ZKI i QR kod objašnjeni | HM Digital',
+      description: 'Fiskalizacija 2.0 i e-Računi objašnjeni praktično: obveze od 1.1.2026. i 1.1.2027., JIR, ZKI i QR kod, priprema u 5 koraka i kazne. Vodič HM Digitala.',
+      datePublished: '2026-09-26',
+      dateModified: '2026-09-26',
+      authorName: 'Hrvoje Matošević',
+      dateModifiedDisplay: 'Ažurirano: 26. rujna 2026.'
+    },
+    breadcrumb: {
+      home: 'Početna',
+      current: 'Fiskalizacija 2.0 i e-Računi'
+    },
+    hero: {
+      eyebrow: 'PORESNE OBAVEZE · RUJAN 2026',
+      title: 'Fiskalizacija 2.0 i e-Računi: praktični vodič za obveznike',
+      subheadline: 'Što novi Zakon o fiskalizaciji (NN 89/2025) traži od poduzeća, obrtnika i trgovaca: rokovi, e-Računi, JIR, ZKI, QR kod i kazne - objašnjeno praktično i bez produktnog oglašavanja.',
+      promise: 'Bez produktnog oglašavanja - samo propisi, rokovi i praktične upute',
+      lead: 'Od 1. siječnja 2026. poslovanje u Hrvatskoj dijeli se na dva nova režima: svaki račun prema potrošaču - plaćen gotovinom, karticom ili virmanom - mora biti fiskaliziran i nositi QR kod, a poduzeća i obrtnici u sustavu PDV-a moraju međusobno razmjenjivati e-Račune. Od 1. siječnja 2027. obveza se proširuje i na one izvan sustava PDV-a. Na ovoj stranici objašnjavamo što to točno znači: JIR, ZKI, QR kod, rokove, pripremu i kazne - bez produktnog oglašavanja.',
+      ctaPrimary: 'Ključni datumi',
+      ctaSecondary: 'Pročitajte FAQ'
+    },
+    toc: {
+      title: 'Sadržaj',
+      items: [
+        { label: 'U 60 sekundi', href: '#tldr' },
+        { label: 'Što je Fiskalizacija 2.0', href: '#sto-je' },
+        { label: 'Ključni datumi', href: '#datumi' },
+        { label: 'JIR, ZKI i QR kod', href: '#kratice' },
+        { label: 'Računi prema potrošačima', href: '#b2c' },
+        { label: 'e-Računi između poduzeća', href: '#b2b' },
+        { label: 'Kako se pripremiti', href: '#priprema' },
+        { label: 'FiskAplikacija i MIKROeRAČUN', href: '#aplikacije' },
+        { label: 'Kazne', href: '#kazne' },
+        { label: 'FAQ', href: '#faq' }
+      ]
+    },
+    tldr: {
+      title: 'U 60 sekundi',
+      points: [
+        'Novi Zakon o fiskalizaciji (Narodne novine 89/2025) na snazi je od 1. rujna 2025. i zamjenjuje stari Zakon o fiskalizaciji u prometu gotovinom iz 2012.',
+        'Od 1. siječnja 2026. svi obveznici upisani u registar PDV-a moraju izdavati i primati e-Račune u međusobnom tuzemnom prometu (B2B).',
+        'Od istog datuma fiskalizacija obuhvaća sve račune prema potrošačima - bez obzira na način plaćanja (gotovina, kartica, transakcijski račun), a račun mora nositi QR kod.',
+        'Primatelj e-Računa mora provesti fiskalizaciju primljenog računa najkasnije 5 radnih dana od primitka.',
+        'Od 1. siječnja 2027. obveza izdavanja e-Računa proširuje se na obveznike izvan sustava PDV-a i proračunske korisnike.'
+      ]
+    },
+    stoJe: {
+      title: 'Što je Fiskalizacija 2.0 i što mijenja',
+      body: 'Fiskalizacija 2.0 je naziv projekta kojim se u Hrvatskoj uvodi novi Zakon o fiskalizaciji (Narodne novine br. 89/2025, na snazi od 1. rujna 2025.). Zakon zamjenjuje dotadašnji Zakon o fiskalizaciji u prometu gotovinom iz 2012. godine i širi fiskalizaciju s gotovinskog prometa na cjelokupno poslovanje:',
+      b2cCard: {
+        title: 'Računi u krajnjoj potrošnji (prema potrošačima)',
+        desc: 'Fiskalizacija se više ne veže uz gotovinu. Obveznik je mora provesti za račun "naplaćenog gotovinom, karticama, transakcijskim računom i na ostale načine" (članak 3. Zakona). Svaki takav račun mora nositi QR kod pomoću kojeg kupac može provjeriti je li račun prijavljen Poreznoj upravi.'
+      },
+      b2bCard: {
+        title: 'e-Računi između obveznika (B2B i prema državi)',
+        desc: 'Poduzeća i obrtnici u sustavu PDV-a od 1. siječnja 2026. moraju izdavati i primati elektroničke račune - e-Račune - u struktuiranom XML obliku, i to fiskalizirane.'
+      },
+      ukidanoTitle: 'Što je ukinuto, a što ostaje iz starog sustava',
+      ukidanoBody: 'Neke stare obveze su ukinute već 1. rujna 2025. - primjerice, dostava podataka o čeku kao načinu plaćanja i fiskalizacija pratećih dokumenata. Prijave poslovnih prostora iz starog sustava ostaju valjane (članak 75. Zakona) - ne treba ih ponovno podnositi.'
+    },
+    datumi: {
+      title: 'Ključni datumi - od 1. rujna 2025. do 1. siječnja 2027.',
+      items: [
+        {
+          date: '1. rujna 2025.',
+          title: 'Zakon stupa na snagu',
+          text: 'Novi Zakon o fiskalizaciji (NN 89/25) zamjenjuje zakon iz 2012.; glavnina odredaba o fiskalizaciji računa u krajnjoj potrošnji počinje se primjenjivati.'
+        },
+        {
+          date: '17. prosinca 2025.',
+          title: 'Pravilnik o fiskalizaciji računa u krajnjoj potrošnji (NN 153/25)',
+          text: 'Propisuje oblik JIR-a i ZKI-a te sadržaj i dimenzije QR koda; primjena od 1. siječnja 2026.'
+        },
+        {
+          date: '1. siječnja 2026.',
+          title: 'Počinju glavne obveze',
+          text: 'Svi PDV obveznici moraju izdavati i primati e-Račune; svi računi u krajnjoj potrošnji, bez obzira na način plaćanja, moraju biti fiskalizirani i nositi QR kod.'
+        },
+        {
+          date: '30. siječnja 2026.',
+          title: 'Pravilnik o e-Računu (NN 11/26)',
+          text: 'Detaljno uređuje tehničku razmjenu i fiskalizaciju e-Računa: XML format, način razmjene preko pristupnih točaka i uvjete za informacijske posrednike.'
+        },
+        {
+          date: '3. rujna 2026.',
+          title: 'Izmjene Pravilnika o krajnjoj potrošnji (NN 97/26)',
+          text: 'Objavljene su izmjene i dopune Pravilnika; prije bilo kakve tehničke provedbe provjerite najnoviju verziju na portalu Porezne uprave.'
+        },
+        {
+          date: '1. siječnja 2027.',
+          title: 'Obveza se proširuje',
+          text: 'e-Račune moraju izdavati i obveznici koji nisu upisani u registar PDV-a te proračunski korisnici; za njih Porezna uprava omogućuje besplatnu aplikaciju MIKROeRAČUN.'
+        }
+      ]
+    },
+    kratice: {
+      title: 'JIR, ZKI i QR kod - što znače kratica po kratica',
+      items: [
+        {
+          term: 'JIR',
+          full: 'Jedinstveni identifikator računa',
+          desc: 'Alfanumerički zapis koji generira Porezna uprava nakon što joj programsko rješenje prijavi (fiskalizira) račun (članak 2. Zakona). JIR je dokaz da je račun ušao u sustav i mora se ispisati na računu.'
+        },
+        {
+          term: 'ZKI',
+          full: 'Zaštitni kod izdavatelja',
+          desc: 'Alfanumerički zapis kojim se potvrđuje veza između obveznika fiskalizacije i izdanog računa (članak 2. Zakona). Koristi se kada račun u trenutku izdavanja nije moguće prijaviti (primjerice, bez internetskog spoja): na račun se stavlja ZKI, a račun se Poreznoj upravi prijavi naknadno, u propisanom roku.'
+        },
+        {
+          term: 'QR kod',
+          full: 'Dokaz fiskalizacije na samom računu',
+          desc: 'Dvodimenzionalni kod propisanog sadržaja i veličine (detalje uređuje Pravilnik NN 153/25). Sadrži adresu službene stranice Porezne uprave za provjeru računa te JIR ili ZKI i datum i vrijeme izdavanja računa. Kupac slikanjem koda mobitelom dolazi izravno na stranicu Porezne uprave i vidi je li njegov račun prijavljen.'
+        }
+      ],
+      provjeraTitle: 'Kako provjeriti račun',
+      provjeraBody: 'Provjeru možete obaviti i ručno na službenoj stranici Porezne uprave za provjeru fiskalnog računa (poveznica u izvorima na dnu stranice).'
+    },
+    b2c: {
+      title: 'Računi prema potrošačima (B2C): QR kod na svakom računu',
+      body1: 'Ako prodajete krajnjim potrošačima - u trgovini, ugostiteljstvu, obrtu ili ordinaciji - ključna promjena je da način plaćanja više nije bitan. Kartica, virman ili gotovina: svaki račun u krajnjoj potrošnji mora biti fiskaliziran i nositi QR kod (članak 3. Zakona).',
+      body2: 'Potrošaču se ne izdaje e-Račun - on i dalje prima "običan" račun, samo što taj račun sada mora imati QR kod pomoću kojeg sam može provjeriti je li prijavljen Poreznoj upravi. Zanimljivost koja pokazuje ozbiljnost sustava: i kupac odgovara - prekršaj je ne zadržati račun, s kaznom od 30 do 260 eura (članak 73. stavak 5. Zakona).'
+    },
+    b2b: {
+      title: 'e-Računi između poduzeća (B2B): tko mora, što i do kada',
+      tkoTitle: 'Tko',
+      tkoBody: 'Od 1. siječnja 2026. svi obveznici upisani u registar obveznika PDV-a sa sjedištem, prebivalištem ili boravištem u Republici Hrvatskoj. Od 1. siječnja 2027. i obveznici izvan sustava PDV-a te proračunski korisnici.',
+      stoTitle: 'Što',
+      stoBody: 'U međusobnom tuzemnom prometu računi se moraju izdavati i primati kao e-Računi - struktuirani XML dokumenti prema europskoj normi i hrvatskoj specifikaciji, u cijelosti bez papira i ručnog unosa. PDF ili slika računa nisu e-Račun i ne ispunjavaju obvezu iz Zakona.',
+      fiskTitle: 'Fiskalizacija - i izdavatelj i primatelj',
+      fiskBody: 'e-Račun fiskalizira izdavatelj u trenutku izdavanja. Primatelj zatim provodi fiskalizaciju primljenog računa sa svoje strane - takozvano obilježavanje - najkasnije 5 radnih dana od dana primitka. Odbijene e-Račune primatelj prijavljuje mjesečno, do 20. u mjesecu za prethodni mjesec. Na taj način Porezna uprava podatke izlaznog i ulaznog računa uspoređuje unakrsno.',
+      razmjenaTitle: 'Razmjena preko posrednika',
+      razmjenaBody: 'e-Računi se razmjenjuju elektronički, preko informacijskih posrednika koji održavaju pristupne točke (tehnička pravila: Pravilnik o e-Računu, NN 11/26). Popis ovjerenih informacijskih posrednika vodi Porezna uprava - među njima su banke, FINA i softverske kuće.'
+    },
+    priprema: {
+      title: 'Kako se pripremiti: 5 koraka po uputi Porezne uprave',
+      intro: 'Službena stranica Porezne uprave o e-Računu pripremu sažima u pet koraka:',
+      steps: [
+        {
+          title: 'Povežite svoje stavke roba i usluga s KPD 2025 klasifikacijom',
+          desc: 'Svaka stavka na e-Računu nosi šifru iz Klasifikacije proizvoda po djelatnostima; šifre se pretražuju kroz KLASUS.'
+        },
+        {
+          title: 'Odaberite informacijskog posrednika',
+          desc: 'Popis se popunjava od 1. rujna 2025. na portalu Porezne uprave i svaki posrednik na njemu mora imati potvrdu o sukladnosti.'
+        },
+        {
+          title: 'Potpišite ugovor s posrednikom',
+          desc: 'Ugovorom definirate usluge, cijenu i odgovornosti posrednika prije tehničke integracije.'
+        },
+        {
+          title: 'Dajte ovlaštenje posredniku u FiskAplikaciji',
+          desc: 'Odlučujete i tko će u vaše ime odrađivati fiskalizaciju razmijenjenih računa.'
+        },
+        {
+          title: 'Šaljite i primajte e-Račune kroz sustav posrednika',
+          desc: 'Integracija je posao vašeg programera ili dobavljača računovodstvenog programa.'
+        }
+      ]
+    },
+    aplikacije: {
+      title: 'FiskAplikacija i MIKROeRAČUN - dvije aplikacije Porezne uprave',
+      items: [
+        {
+          title: 'FiskAplikacija',
+          desc: 'Informacijski sustav Porezne uprave u kojem obveznik upravlja fiskalizacijom: daje ovlaštenja informacijskim posrednicima, prati svoje obveze i komunicira s Poreznom upravom. Nije alat za izdavanje računa - to rade vaš program ili posrednik.'
+        },
+        {
+          title: 'MIKROeRAČUN',
+          desc: 'Besplatna aplikacija Porezne uprave za najmanje obveznike. Tijekom 2026. njome obveznici izvan sustava PDV-a (korisnici ePorezne) mogu primati e-Račune od PDV obveznika, a od 1. siječnja 2027. i izdavati ih.'
+        }
+      ]
+    },
+    kazne: {
+      title: 'Kazne u Fiskalizaciji 2.0',
+      intro: 'Iznosi u ovom odjeljku su iz Zakona o fiskalizaciji (NN 89/25, članci 71-73).',
+      lawLinkLabel: 'Pročitajte Zakon na Narodnim novinama',
+      lawLinkUrl: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2025_06_89_1233.html',
+      heavyTitle: 'Najteži prekršaji (članak 71.)',
+      heavyNote: 'Među njima neizdavanje, neprimanje ili nefiskaliziranje e-Računa.',
+      heavyItems: [
+        'pravna osoba: 3.980 do 66.360 eura',
+        'odgovorna osoba: 660 do 6.630 eura',
+        'obrtnik: 3.980 do 39.810 eura'
+      ],
+      seriousTitle: 'Teži prekršaji (članak 72.)',
+      seriousNote: 'Među njima račun bez propisanih elemenata (uključujući QR kod i JIR) te nefiskaliziranje u propisanim rokovima.',
+      seriousItems: [
+        'pravna osoba: 2.650 do 66.360 eura',
+        'odgovorna osoba: 390 do 6.630 eura',
+        'obrtnik: 1.320 do 39.810 eura',
+        'za ponovljeni prekršaj raspon raste (npr. 3.500 do 80.000 eura za pravnu osobu)'
+      ],
+      lightTitle: 'Lakši prekršaji (članak 73.)',
+      lightNote: 'Primjerice propusti u postupku.',
+      lightItems: [
+        'pravna osoba: 1.320 do 26.540 eura',
+        'obrtnik: 660 do 13.270 eura',
+        'kupac koji ne zadrži račun: 30 do 260 eura'
+      ],
+      callout: 'Kazneni rasponi u Zakonu su veliki i inspekcija ih odmjerava po okolnostima pojedinog slučaja. Najsigurniji je pristup pripremiti se prije roka, a ne nakon prve inspekcije.'
+    },
+    faq: {
+      title: 'Često postavljana pitanja',
+      items: [
+        {
+          q: 'Je li Fiskalizacija 2.0 isto što i e-Račun?',
+          a: 'Ne. Fiskalizacija 2.0 je naziv projekta i novog Zakona o fiskalizaciji (NN 89/25), a pokriva dva režima: fiskalizaciju računa prema potrošačima (s QR kodom) i obvezu e-Računa u prometu između obveznika. e-Račun je samo jedan dio novog sustava.'
+        },
+        {
+          q: 'Moram li i dalje fiskalizirati gotovinske račune kao dosad?',
+          a: 'Da. Gotovinski računi i dalje se fiskaliziraju, a od 1. siječnja 2026. na svakom takvom računu mora biti i QR kod. Novost je da se ista obveza proširila i na naplatu karticom i na transakcijski račun.'
+        },
+        {
+          q: 'Treba li QR kod na računu plaćenom karticom ili virmanom?',
+          a: 'Da. Fiskalizacija računa u krajnjoj potrošnji od 1.1.2026. vrijedi bez obzira na način plaćanja (članak 3. Zakona).'
+        },
+        {
+          q: 'Mogu li poslovnom partneru poslati PDF račun?',
+          a: 'Ne kao e-Račun. e-Račun je struktuirani XML dokument prema europskoj normi; PDF ili slika računa obvezu ne ispunjavaju. Između PDV obveznika od 1.1.2026. treba razmjenjivati e-Račune.'
+        },
+        {
+          q: 'Kupac mi traži račun - trebam li mu izdati e-Račun?',
+          a: 'Ako je kupac krajnji potrošač, ne: njemu se izdaje račun u krajnjoj potrošnji s QR kodom. e-Račun se odnosi na promet između obveznika (B2B) i prema državi.'
+        },
+        {
+          q: 'Što ako u trenutku izdavanja računa nemam internetski spoj?',
+          a: 'Račun se izdaje s ZKI (zaštitnim kodom izdavatelja) umjesto JIR-a, a Poreznoj upravi se prijavljuje naknadno u propisanom roku. QR kod u tom slučaju sadrži ZKI.'
+        },
+        {
+          q: 'Tko fiskalizira e-Račun - izdavatelj ili primatelj?',
+          a: 'Oboje. Izdavatelj fiskalizira račun u trenutku izdavanja; primatelj provodi fiskalizaciju primljenog računa najkasnije 5 radnih dana od primitka. Porezna uprava zatim unakrsno uspoređuje podatke.'
+        },
+        {
+          q: 'Što je MIKROeRAČUN i tko ga može koristiti?',
+          a: 'Besplatna je aplikacija Porezne uprave za obveznike izvan sustava PDV-a koji koriste ePoreznu: tijekom 2026. za primanje e-Računa, a od 1.1.2027. i za izdavanje.'
+        },
+        {
+          q: 'Trebam li mijenjati računovodstveni program?',
+          a: 'Ovisi o programu koji koristite. Većina dobavljača je za Fiskalizaciju 2.0 pripremila ažuriranja ili modul za e-Račune - provjerite sa svojim dobavljačem i računovođom što je potrebno za vaš slučaj.'
+        },
+        {
+          q: 'Vrijede li prijave poslovnih prostora iz starog sustava?',
+          a: 'Da. Prijavljeni poslovni prostori, interni akti i obavijesti iz starog zakona ostaju valjani (članak 75. Zakona).'
+        },
+        {
+          q: 'Što je KPD 2025 klasifikacija?',
+          a: 'Klasifikacija proizvoda po djelatnostima - šifarnik koji se koristi za označavanje stavki na e-Računu. Stavke se povezuju s šesteroznamenkastim oznakama, a šifre se pretražuju kroz KLASUS.'
+        },
+        {
+          q: 'Kad obveza počinje za obrtnika koji nije u sustavu PDV-a?',
+          a: 'Obveza izdavanja e-Računa kreće 1. siječnja 2027.; do tada se e-Računi mogu primati besplatnom aplikacijom MIKROeRAČUN.'
+        },
+        {
+          q: 'Kao kupac, kako provjerim je li račun fiskaliziran?',
+          a: 'Slikajte QR kod s računa mobitelom - vodi vas izravno na stranicu Porezne uprave s odgovorom je li račun prijavljen. Ista provjera dostupna je i ručno, unosom JIR-a ili ZKI-a na službenoj stranici.'
+        },
+        {
+          q: 'Kolike su kazne ako se ne pridržavam Zakona?',
+          a: 'Ovisi o prekršaju: najteži (poput neizdavanja ili neprimanja e-Računa) za pravnu osobu idu do 66.360 eura, teži (račun bez QR koda ili JIR-a) do 66.360 eura uz donju granicu 2.650 eura, lakši od 1.320 eura naviše. Detaljni rasponi po vrsti obveznika navedeni su u odjeljku o kaznama.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Trebate pomoć oko pripreme?',
+      body: 'Ako niste sigurni što Fiskalizacija 2.0 znači za vaše poslovanje, javite nam se - rado ćemo vas uputiti na službene izvore Porezne uprave i razgovarati o tehničkoj strani pripreme. Ova stranica je informativnog sadržaja i cilj joj je odgovoriti na neka od najučestalijih pitanja u vezi zakona o fiskalizaciji.',
+      primaryLabel: 'Kontaktirajte nas',
+      primaryHref: '/kontakt',
+      secondaryLabel: 'Službeni izvori',
+      secondaryHref: '#izvori'
+    },
+    sources: {
+      title: 'Izvori',
+      disclaimer: 'Ovaj je članak informativnog karaktera i ne predstavlja pravni ni porezni savjet. Propisi i pravilnici u ovom području mijenjaju se - za obveze specifične za vaše poslovanje obratite se Poreznoj upravi ili svom računovođi, a aktualne propise provjerite na portalu Porezne uprave.',
+      items: [
+        { label: 'Zakon o fiskalizaciji, NN 89/2025', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2025_06_89_1233.html' },
+        { label: 'Pravilnik o fiskalizaciji računa u krajnjoj potrošnji, NN 153/25', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_153_2278.html' },
+        { label: 'Izmjene i dopune Pravilnika o krajnjoj potrošnji, NN 97/26 (3.9.2026.)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2026_09_97_1181.html' },
+        { label: 'Pravilnik o eRačunu, NN 11/2026', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2026_01_11_88.html' },
+        { label: 'Porezna uprava - Fiskalizacija 2.0 / eRačun', url: 'https://porezna.gov.hr/fiskalizacija/bezgotovinski-racuni' },
+        { label: 'Porezna uprava - provjera fiskalnog računa', url: 'https://porezna.gov.hr/fiskalizacija/gotovinski-racuni/provjeri-fiskalni-racun' },
+        { label: 'Porezna uprava - popis informacijskih posrednika', url: 'https://porezna-uprava.gov.hr/hr/popis-informacijskih-posrednika/8019' }
       ]
     }
   }

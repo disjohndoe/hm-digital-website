@@ -738,7 +738,9 @@ export const en = {
       subtitle: 'Your clients (or you for them) photograph invoices on their phone, the app KontoMatrix reads them for you, and you just review and confirm. Six hours of typing a day becomes two - and the data lands straight in the accounting software you already use.',
       ctaPrimary: 'Request a 10-minute demo',
       ctaSecondary: 'How does it work?',
-      trustRow: 'GDPR · FINA e-invoices · EU hosting · OIB validation'
+      trustRow: 'GDPR · FINA e-invoices · EU hosting · OIB validation',
+      guideNote: 'More about the rules themselves (deadlines, JIR, ZKI, fines):',
+      guideLink: 'Fiscalization 2.0 and e-Invoices guide'
     },
     problem: {
       title: 'Does this Monday sound familiar?',
@@ -2114,6 +2116,291 @@ export const en = {
         { label: 'Croatian Medical Chamber - connecting private providers to CEZIH', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
         { label: 'Novi list - deadline extended twice, to 1 January 2027 (Croatian)', url: 'https://www.novilist.hr/novosti/hrvatska/nalazi-privatnika-od-1-sijecnja-u-cezih-u-podaci-pretraga-nedostupni-jos-pola-godine' },
         { label: 'HM Digital - CEZIH guide (deadlines, fines, procedure)', url: 'https://hmdigital.hr/en/cezih-guide/' }
+      ]
+    }
+  },
+  fiskalizacijaGuide: {
+    meta: {
+      title: 'Fiscalization 2.0 and e-Invoices in Croatia Explained | HM Digital',
+      description: "Croatia's Fiscalization 2.0 and e-invoices explained: obligations from 1 Jan 2026 and 2027, JIR, ZKI, QR codes, preparation and fines. A guide by HM Digital.",
+      datePublished: '2026-09-26',
+      dateModified: '2026-09-26',
+      authorName: 'Hrvoje Matošević',
+      dateModifiedDisplay: 'Updated: 26 September 2026.'
+    },
+    breadcrumb: {
+      home: 'Home',
+      current: 'Fiscalization 2.0 and e-Invoices'
+    },
+    hero: {
+      eyebrow: 'TAX OBLIGATIONS · SEPTEMBER 2026',
+      title: 'Fiscalization 2.0 and e-Invoices in Croatia: a Practical Guide',
+      subheadline: 'What the new Fiscalization Act (NN 89/2025) requires from companies, tradespeople and shops: deadlines, e-invoices, JIR, ZKI, QR codes and fines - explained practically, with no product advertising.',
+      promise: 'No product advertising - only regulations, deadlines and practical instructions',
+      lead: 'From 1 January 2026, business in Croatia splits into two new regimes: every consumer invoice - paid in cash, by card or by bank transfer - must be fiscalized and carry a QR code, and companies and tradespeople in the VAT system must exchange e-invoices with each other. From 1 January 2027 the obligation extends to those outside the VAT system. On this page we explain what this means in practice: JIR, ZKI, QR codes, deadlines, preparation and fines - with no product advertising.',
+      ctaPrimary: 'Key dates',
+      ctaSecondary: 'Read the FAQ'
+    },
+    toc: {
+      title: 'Contents',
+      items: [
+        { label: 'In 60 seconds', href: '#tldr' },
+        { label: 'What is Fiscalization 2.0', href: '#sto-je' },
+        { label: 'Key dates', href: '#datumi' },
+        { label: 'JIR, ZKI and QR code', href: '#kratice' },
+        { label: 'Consumer invoices (B2C)', href: '#b2c' },
+        { label: 'e-Invoices between businesses', href: '#b2b' },
+        { label: 'How to prepare', href: '#priprema' },
+        { label: 'FiskAplikacija and MIKROeRAČUN', href: '#aplikacije' },
+        { label: 'Fines', href: '#kazne' },
+        { label: 'FAQ', href: '#faq' }
+      ]
+    },
+    tldr: {
+      title: 'In 60 seconds',
+      points: [
+        'The new Fiscalization Act (Narodne novine 89/2025) has been in force since 1 September 2025 and replaces the old 2012 Cash Fiscalization Act.',
+        'From 1 January 2026, everyone registered in the VAT register must issue and receive e-invoices in mutual domestic transactions (B2B).',
+        'From the same date, fiscalization covers all consumer invoices - regardless of the payment method (cash, card, transaction account) - and the invoice must carry a QR code.',
+        'The recipient of an e-invoice must fiscalize the received invoice at the latest 5 working days from receipt.',
+        'From 1 January 2027, the e-invoice issuing obligation extends to parties outside the VAT system and to budget users.'
+      ]
+    },
+    stoJe: {
+      title: 'What Fiscalization 2.0 is and what it changes',
+      body: 'Fiscalization 2.0 is the name of the project introducing the new Croatian Fiscalization Act (Narodne novine, the official gazette, no. 89/2025, in force since 1 September 2025). The Act replaces the earlier 2012 Cash Fiscalization Act and extends fiscalization from cash transactions to the entire business:',
+      b2cCard: {
+        title: 'Consumer invoices (towards consumers)',
+        desc: 'Fiscalization is no longer tied to cash. It must be carried out for an invoice "paid in cash, by cards, by transaction account and in other ways" (Article 3 of the Act). Every such invoice must carry a QR code that lets the buyer check whether the invoice has been reported to the Croatian Tax Administration (Porezna uprava).'
+      },
+      b2bCard: {
+        title: 'e-Invoices between obligated parties (B2B and towards the state)',
+        desc: 'From 1 January 2026, companies and tradespeople in the VAT system must issue and receive electronic invoices - e-invoices - in structured XML form, and fiscalized.'
+      },
+      ukidanoTitle: 'What was abolished and what remains from the old system',
+      ukidanoBody: 'Some old obligations were abolished as early as 1 September 2025 - for example, submitting data on a cheque as a payment method and the fiscalization of accompanying documents. Business premises registrations from the old system remain valid (Article 75 of the Act) - they do not need to be submitted again.'
+    },
+    datumi: {
+      title: 'Key dates - from 1 September 2025 to 1 January 2027',
+      items: [
+        {
+          date: '1 September 2025',
+          title: 'The Act enters into force',
+          text: 'The new Fiscalization Act (NN 89/25) replaces the 2012 act; most provisions on the fiscalization of consumer invoices start to apply.'
+        },
+        {
+          date: '17 December 2025',
+          title: 'Regulation on fiscalization of consumer invoices (NN 153/25)',
+          text: 'Prescribes the form of the JIR and ZKI and the content and dimensions of the QR code; application from 1 January 2026.'
+        },
+        {
+          date: '1 January 2026',
+          title: 'The main obligations begin',
+          text: 'All VAT parties must issue and receive e-invoices; all consumer invoices, regardless of the payment method, must be fiscalized and carry a QR code.'
+        },
+        {
+          date: '30 January 2026',
+          title: 'Regulation on e-Invoices (NN 11/26)',
+          text: 'Regulates the technical exchange and fiscalization of e-invoices in detail: the XML format, exchange through access points and the conditions for information intermediaries.'
+        },
+        {
+          date: '3 September 2026',
+          title: 'Amendments to the consumer invoices Regulation (NN 97/26)',
+          text: 'Amendments to the Regulation were published; before any technical implementation, check the latest version on the Tax Administration portal.'
+        },
+        {
+          date: '1 January 2027',
+          title: 'The obligation extends',
+          text: 'Parties not registered in the VAT register and budget users must also issue e-invoices; for them the Tax Administration provides the free MIKROeRAČUN application.'
+        }
+      ]
+    },
+    kratice: {
+      title: 'JIR, ZKI and the QR code - abbreviation by abbreviation',
+      items: [
+        {
+          term: 'JIR',
+          full: 'Unique invoice identifier',
+          desc: 'An alphanumeric code generated by the Tax Administration after a software solution reports (fiscalizes) the invoice to it (Article 2 of the Act). The JIR is proof that the invoice entered the system and must be printed on the invoice.'
+        },
+        {
+          term: 'ZKI',
+          full: 'Issuer protective code',
+          desc: 'An alphanumeric code confirming the link between the obligated party and the issued invoice (Article 2 of the Act). It is used when the invoice cannot be reported at the moment of issuing (for example, without an internet connection): the ZKI is placed on the invoice and the invoice is reported to the Tax Administration afterwards, within the prescribed deadline.'
+        },
+        {
+          term: 'QR code',
+          full: 'Proof of fiscalization on the invoice itself',
+          desc: 'A two-dimensional code of prescribed content and size (details governed by Regulation NN 153/25). It contains the address of the official Tax Administration page for invoice verification plus the JIR or ZKI and the date and time of issuing. By photographing the code with a phone, the buyer lands directly on the Tax Administration page and sees whether the invoice has been reported.'
+        }
+      ],
+      provjeraTitle: 'How to verify an invoice',
+      provjeraBody: 'You can also verify manually on the official Tax Administration page for verifying a fiscal invoice (link in the sources at the bottom of the page).'
+    },
+    b2c: {
+      title: 'Consumer invoices (B2C): a QR code on every invoice',
+      body1: 'If you sell to final consumers - in retail, hospitality, a craft or a practice - the key change is that the payment method no longer matters. Card, bank transfer or cash: every consumer invoice must be fiscalized and carry a QR code (Article 3 of the Act).',
+      body2: 'A consumer is not issued an e-invoice - they still receive an "ordinary" invoice, except it must now carry a QR code they can use to check whether it has been reported to the Tax Administration. A detail that shows how seriously the system is taken: even the buyer is liable - failing to keep the invoice is an offence, with a fine of 30 to 260 euros (Article 73 paragraph 5 of the Act).'
+    },
+    b2b: {
+      title: 'e-Invoices between businesses (B2B): who must, what and by when',
+      tkoTitle: 'Who',
+      tkoBody: 'From 1 January 2026, all parties registered in the VAT register with their seat, residence or habitual residence in the Republic of Croatia. From 1 January 2027, also parties outside the VAT system and budget users.',
+      stoTitle: 'What',
+      stoBody: 'In mutual domestic transactions, invoices must be issued and received as e-invoices - structured XML documents according to the European standard and the Croatian specification, entirely without paper and manual entry. A PDF or an image of an invoice is not an e-invoice and does not fulfil the obligation under the Act.',
+      fiskTitle: 'Fiscalization - both issuer and recipient',
+      fiskBody: 'The issuer fiscalizes the e-invoice at the moment of issuing. The recipient then fiscalizes the received invoice from their side - the so-called marking - at the latest 5 working days from receipt. The recipient reports rejected e-invoices monthly, by the 20th of the month for the previous month. This is how the Tax Administration cross-checks the data of outgoing and incoming invoices.',
+      razmjenaTitle: 'Exchange through intermediaries',
+      razmjenaBody: 'e-invoices are exchanged electronically through information intermediaries that maintain access points (technical rules: the e-Invoice Regulation, NN 11/26). The Tax Administration keeps the list of certified information intermediaries - it includes banks, FINA and software houses.'
+    },
+    priprema: {
+      title: 'How to prepare: 5 steps from the Tax Administration',
+      intro: 'The official Tax Administration page on e-invoices summarises preparation in five steps:',
+      steps: [
+        {
+          title: 'Connect your goods and services items to the KPD 2025 classification',
+          desc: 'Every item on an e-invoice carries a code from the Classification of Products by Activity; the codes are searched through KLASUS.'
+        },
+        {
+          title: 'Choose an information intermediary',
+          desc: 'The list has been filling up since 1 September 2025 on the Tax Administration portal and every intermediary on it must hold a conformity certificate.'
+        },
+        {
+          title: 'Sign a contract with the intermediary',
+          desc: 'The contract defines the services, price and responsibilities of the intermediary before technical integration.'
+        },
+        {
+          title: 'Grant the intermediary an authorization in FiskAplikacija',
+          desc: 'You also decide who will perform the fiscalization of exchanged invoices in your name.'
+        },
+        {
+          title: 'Send and receive e-invoices through the intermediary system',
+          desc: 'Integration is the job of your developer or your accounting software vendor.'
+        }
+      ]
+    },
+    aplikacije: {
+      title: 'FiskAplikacija and MIKROeRAČUN - two Tax Administration applications',
+      items: [
+        {
+          title: 'FiskAplikacija',
+          desc: 'The Tax Administration information system in which the obligated party manages fiscalization: grants authorizations to information intermediaries, tracks obligations and communicates with the Tax Administration. It is not a tool for issuing invoices - that is done by your software or the intermediary.'
+        },
+        {
+          title: 'MIKROeRAČUN',
+          desc: 'A free Tax Administration application for the smallest obligated parties. During 2026, parties outside the VAT system (ePorezna users) can use it to receive e-invoices from VAT parties, and from 1 January 2027 also to issue them.'
+        }
+      ]
+    },
+    kazne: {
+      title: 'Fines under Fiscalization 2.0',
+      intro: 'The amounts in this section are from the Fiscalization Act (NN 89/25, Articles 71-73).',
+      lawLinkLabel: 'Read the Act on Narodne novine (Croatian)',
+      lawLinkUrl: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2025_06_89_1233.html',
+      heavyTitle: 'Most serious offences (Article 71)',
+      heavyNote: 'These include not issuing, not receiving or not fiscalizing e-invoices.',
+      heavyItems: [
+        'legal entity: 3,980 to 66,360 euros',
+        'responsible person: 660 to 6,630 euros',
+        'craftsman: 3,980 to 39,810 euros'
+      ],
+      seriousTitle: 'More serious offences (Article 72)',
+      seriousNote: 'These include an invoice without the prescribed elements (including the QR code and JIR) and failing to fiscalize within the prescribed deadlines.',
+      seriousItems: [
+        'legal entity: 2,650 to 66,360 euros',
+        'responsible person: 390 to 6,630 euros',
+        'craftsman: 1,320 to 39,810 euros',
+        'for a repeated offence the range increases (e.g. 3,500 to 80,000 euros for a legal entity)'
+      ],
+      lightTitle: 'Minor offences (Article 73)',
+      lightNote: 'For example, procedural shortcomings.',
+      lightItems: [
+        'legal entity: 1,320 to 26,540 euros',
+        'craftsman: 660 to 13,270 euros',
+        'buyer who does not keep the invoice: 30 to 260 euros'
+      ],
+      callout: 'The fine ranges in the Act are wide and the inspectorate weighs them according to the circumstances of each case. The safest approach is to prepare before the deadline, not after the first inspection.'
+    },
+    faq: {
+      title: 'Frequently asked questions',
+      items: [
+        {
+          q: 'Is Fiscalization 2.0 the same thing as e-invoices?',
+          a: 'No. Fiscalization 2.0 is the name of the project and of the new Fiscalization Act (NN 89/25), and it covers two regimes: fiscalization of consumer invoices (with a QR code) and the e-invoice obligation in transactions between obligated parties. The e-invoice is only one part of the new system.'
+        },
+        {
+          q: 'Do I still have to fiscalize cash invoices as before?',
+          a: 'Yes. Cash invoices continue to be fiscalized, and from 1 January 2026 every such invoice must also carry a QR code. The news is that the same obligation has been extended to payment by card and by transaction account.'
+        },
+        {
+          q: 'Does an invoice paid by card or bank transfer need a QR code?',
+          a: 'Yes. Fiscalization of consumer invoices from 1 January 2026 applies regardless of the payment method (Article 3 of the Act).'
+        },
+        {
+          q: 'Can I send a business partner a PDF invoice?',
+          a: 'Not as an e-invoice. An e-invoice is a structured XML document according to the European standard; a PDF or an image of an invoice does not fulfil the obligation. Between VAT parties, e-invoices must be exchanged from 1 January 2026.'
+        },
+        {
+          q: 'A customer asks for an invoice - do I have to issue an e-invoice?',
+          a: 'If the customer is a final consumer, no: they are issued a consumer invoice with a QR code. The e-invoice concerns transactions between obligated parties (B2B) and towards the state.'
+        },
+        {
+          q: 'What if I have no internet connection at the moment of issuing an invoice?',
+          a: 'The invoice is issued with a ZKI (issuer protective code) instead of a JIR, and it is reported to the Tax Administration afterwards within the prescribed deadline. In that case the QR code contains the ZKI.'
+        },
+        {
+          q: 'Who fiscalizes an e-invoice - the issuer or the recipient?',
+          a: 'Both. The issuer fiscalizes the invoice at the moment of issuing; the recipient fiscalizes the received invoice at the latest 5 working days from receipt. The Tax Administration then cross-checks the data.'
+        },
+        {
+          q: 'What is MIKROeRAČUN and who can use it?',
+          a: 'It is a free Tax Administration application for parties outside the VAT system who use ePorezna: during 2026 for receiving e-invoices, and from 1 January 2027 also for issuing them.'
+        },
+        {
+          q: 'Do I need to change my accounting software?',
+          a: 'It depends on the software you use. Most vendors have prepared updates or an e-invoice module for Fiscalization 2.0 - check with your vendor and your accountant about what your case requires.'
+        },
+        {
+          q: 'Are business premises registrations from the old system still valid?',
+          a: 'Yes. Registered business premises, internal acts and notifications from the old act remain valid (Article 75 of the Act).'
+        },
+        {
+          q: 'What is the KPD 2025 classification?',
+          a: 'The Classification of Products by Activity - the code list used for marking items on an e-invoice. Items are linked to six-digit codes, and the codes are searched through KLASUS.'
+        },
+        {
+          q: 'When does the obligation start for a tradesman who is not in the VAT system?',
+          a: 'The obligation to issue e-invoices starts on 1 January 2027; until then, e-invoices can be received with the free MIKROeRAČUN application.'
+        },
+        {
+          q: 'As a buyer, how do I check whether an invoice has been fiscalized?',
+          a: 'Photograph the QR code on the invoice with your phone - it takes you directly to the Tax Administration page with the answer on whether the invoice has been reported. The same check is available manually, by entering the JIR or ZKI on the official page.'
+        },
+        {
+          q: 'How high are the fines if I do not comply with the Act?',
+          a: 'It depends on the offence: the most serious (such as not issuing or not receiving e-invoices) go up to 66,360 euros for a legal entity, more serious ones (an invoice without a QR code or JIR) up to 66,360 euros with a lower bound of 2,650 euros, and minor ones from 1,320 euros upwards. Detailed ranges by type of obligated party are listed in the fines section.'
+        }
+      ]
+    },
+    cta: {
+      title: 'Need help with preparation?',
+      body: 'If you are not sure what Fiscalization 2.0 means for your business, get in touch - we will gladly point you to the official Tax Administration sources and talk about the technical side of preparation. This page is informational; its aim is to answer some of the most common questions about the Fiscalization Act.',
+      primaryLabel: 'Contact us',
+      primaryHref: '/en/contact',
+      secondaryLabel: 'Official sources',
+      secondaryHref: '#izvori'
+    },
+    sources: {
+      title: 'Sources',
+      disclaimer: 'This article is informational and does not constitute legal or tax advice. Regulations in this area change - for obligations specific to your business contact the Tax Administration or your accountant, and check current regulations on the Tax Administration portal.',
+      items: [
+        { label: 'Fiscalization Act, NN 89/2025 (Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2025_06_89_1233.html' },
+        { label: 'Regulation on fiscalization of consumer invoices, NN 153/25 (Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_153_2278.html' },
+        { label: 'Amendments to the consumer invoices Regulation, NN 97/26 of 3 September 2026 (Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2026_09_97_1181.html' },
+        { label: 'Regulation on e-Invoices, NN 11/2026 (Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2026_01_11_88.html' },
+        { label: 'Croatian Tax Administration - Fiscalization 2.0 / eRačun page (Croatian)', url: 'https://porezna.gov.hr/fiskalizacija/bezgotovinski-racuni' },
+        { label: 'Croatian Tax Administration - fiscal invoice verification (Croatian)', url: 'https://porezna.gov.hr/fiskalizacija/gotovinski-racuni/provjeri-fiskalni-racun' },
+        { label: 'Croatian Tax Administration - list of information intermediaries (Croatian)', url: 'https://porezna-uprava.gov.hr/hr/popis-informacijskih-posrednika/8019' }
       ]
     }
   }
