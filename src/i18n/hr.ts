@@ -878,19 +878,18 @@ export const hr = {
   medicalLanding: {
     meta: {
       title: 'Program za Ordinacije i Poliklinike sa CEZIH Integracijom | HM Digital',
-      description: 'Cloud program za ordinacije i poliklinike sa CEZIH integracijom. e-Recept, e-Uputnica, e-Nalaz, MBO. Od 79 EUR/mj. Rok 1.1.2027. Besplatan probni period od 14 dana.'
+      description: 'Cloud program za ordinacije i poliklinike sa CEZIH integracijom. e-Nalaz, MBO. Od 79 EUR/mj. Rok 1.1.2027. Besplatan probni period od 14 dana.'
     },
     urgencyBar: {
-      before: 'Zakon NN 14/2019, čl. 28 - krajnji rok za CEZIH: 1. siječnja 2027. · Kazne do €13.200',
-      after: 'CEZIH je obavezan - krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija'
+      before: 'CEZIH povezivanje je zakonska obveza - rok za privatne ordinacije: 1. siječnja 2027.',
+      after: 'Do roka za povezivanje na CEZIH ostalo: {days} dana. Nakon roka primjenjuju se zakonom propisane novčane kazne.'
     },
     hero: {
       badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
-      certBadge: 'Službeno certificirano od strane HZZO-a',
+      certBadge: 'Službeno certificirano na CEZIH popisu (G500)',
       certBadgeLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       title: 'Medicinski softver za ordinacije i poliklinike - CEZIH integracija u cloudu',
-      tagline: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
-      subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez kompromisa. Sve što privatna ordinacija treba za CEZIH - i ništa što ne treba.',
+      subtitle: 'HM Medical je cloud medicinski softver za privatne ordinacije i poliklinike u Hrvatskoj s ovjerenom CEZIH integracijom: e-Nalaz iz jednog sučelja.',
       ctaCompare: 'Usporedite nas s alternativama',
       ctaTrial: 'Zatražite besplatni demo',
       ctaFeatures: 'Pogledajte što sve dobivate'
@@ -898,80 +897,100 @@ export const hr = {
     cert: {
       badge: 'Službeno certificirani proizvođač CEZIH aplikacija',
       title: 'HM Digital nalazi se na službenom CEZIH popisu certificiranih proizvođača',
-      body: 'Naš softver za privatne ordinacije i poliklinike službeno je certificiran i nalazi se na popisu proizvođača CEZIH aplikacija koji vode HZZO i Ministarstvo zdravstva - u kategoriji Programska rješenja za privatne/ ustanove (G500). To znači da je rješenje prošlo službenu provjeru spremnosti i ispunjava tehničke preduvjete za razmjenu podataka s CEZIH-om.',
+      body: 'HM Digital nalazi se na službenom popisu proizvođača CEZIH aplikacija, u kategoriji programskih rješenja za privatne ustanove (G500). To znači da je softver prošao službenu provjeru spremnosti i ispunjava tehničke preduvjete za razmjenu podataka s CEZIH-om.',
       verifyLabel: 'Provjerite nas na službenom CEZIH popisu',
       verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       pointsTitle: 'Što to znači za vašu ordinaciju',
       points: [
-        'Nije samo "CEZIH-kompatibilno" - rješenje je službeno certificirano, s pravnom težinom.',
+        'Rješenje je službeno ovjereno, ne samo "CEZIH-kompatibilno".',
         'Ispunjava zakonsku obvezu iz Zakona o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28).',
-        'Prošlo je službenu tehničku provjeru prema CEZIH standardima - ne improvizacija.',
-        'Možete neovisno provjeriti naš status na službenoj CEZIH stranici.'
+        'Status možete neovisno provjeriti na službenoj CEZIH stranici.'
       ]
     },
     problem: {
       title: 'Tri razloga zašto vaša ordinacija još uvijek nije u skladu sa zakonom',
-      subtitle: 'Ne zato što niste pokušali - nego zato što tržište nije imalo što vam ponuditi. Do sad.',
+      subtitle: 'Razlozi su najčešće tehnički ili administrativni - i rješavaju se u danima, ne mjesecima.',
       deadline: {
         title: 'Zakonski okvir i rokovi',
-        desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu - a sankcije se primjenjuju i osobno na nositelje ordinacija.'
+        desc: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Rok za privatne ordinacije odredilo je Ministarstvo zdravstva: 1. siječnja 2027. Nakon roka primjenjuju se novčane kazne za prekršaj.'
       },
       legacy: {
         title: 'Vaš softver radi - ali radi protiv vas',
-        desc: 'Većina certificiranih sustava vas veže za jedno računalo u ordinaciji. Ne možete provjeriti karton od kuće, ne možete pogledati raspored s mobitela, a za svako ažuriranje trebate informatičara. Jedini cloud vendor na tržištu građen je za bolnice s IT odjelom, ne za ordinaciju s 2 zaposlena. Vi trebate nešto između - a toga do sad nije bilo.'
+        desc: 'Većina certificiranih sustava vezuje vas za jedno računalo u ordinaciji, a za svako ažuriranje trebate informatičara. Karton ne možete pogledati ni od kuće, ni s mobitela između pacijenata.'
       },
       cloudNoCezih: {
         title: 'Cloud platforme bez CEZIH certifikacije',
-        desc: 'Neke moderne cloud platforme nude lijep dizajn - ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
+        desc: 'Neke cloud platforme izgledaju moderno, ali nemaju CEZIH ovjeru. Bez ovjere kroz njih nije moguća zakonski valjana razmjena podataka - provjerite službeni popis na cezih.hr.'
       }
     },
     bridge: {
       title: 'Niste postali liječnik da biste rješavali IT probleme.',
-      desc: 'Krajnji rok za povezivanje na CEZIH je 1. siječnja 2027. (produljen), a kazne do €13.200 (čl. 35-37 Zakona NN 14/2019) primjenjuju se nakon roka. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini - dok vi radite ono u čemu ste stručni.',
-      costOfInaction: 'Kazna od €13.200 = 14 godina korištenja našeg softvera po €79/mj.',
+      desc: 'Krajnji rok za povezivanje na CEZIH je 1. siječnja 2027. (rok Ministarstva zdravstva). Napravili smo sustav koji rješava CEZIH u pozadini - dok vi radite ono u čemu ste stručni.',
       guideLink: 'Spremate se za CEZIH? Pročitajte vodič: rok produljen na 1. siječnja 2027. →',
       deadlineLink: 'Potvrđen novi rok? Provjerite činjenice o CEZIH roku 1. siječnja 2027. →'
     },
-    solution: {
-      title: 'Cloud, CEZIH i cijena - konačno usklađeni',
-      cloudUx: {
-        title: 'Cloud koji radi za vas',
-        desc: 'Otvorite sustav s mobitela između dva pacijenta. Provjerite raspored od kuće. Jednom postavite čitač na jedno računalo u ordinaciji - a pristupajte sustavu odakle god trebate. Uvijek ažurno, uvijek sigurnosno kopirano.'
-      },
-      cezihG500: {
-        title: 'CEZIH - riješen, ne kompliciran',
-        desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja - sve iz istog sučelja. AKD kartica za pristup, a za potpisivanje koristite karticu ili Certilia mobilni certifikat. Bez ručnog prebacivanja između sustava.'
-      },
-      dental: {
-        title: 'Napravljen za vašu specijalnost',
-        desc: 'Bilo da ste stomatolog, fizijatar, dermatolog ili internist - program je agilan: ako dokumentaciju već izrađujete svojim postupkom, ne morate ga mijenjati. Izrađene dokumente jednostavno prikačite uz karton pacijenta u programu.'
-      }
+    disambiguation: {
+      title: 'CEZIH, iskaznica ili potvrda - što je što?',
+      rows: [
+        { term: 'CEZIH', desc: 'Centralni zdravstveni informacijski sustav RH. Putem njega izdajete e-Recepte, e-Uputnice i primate e-Nalaze.' },
+        { term: 'Iskaznica', desc: 'Iskaznica ovlaštenog zdravstvenog radnika: elektronička iskaznica kojom se liječnik prijavljuje u CEZIH. Od 1.7.2026. prijava ide preko novih iskaznica; stare HZZO pametne kartice više ne rade.' },
+        { term: 'Potvrda', desc: 'Potvrda o zdravstvenom osiguranju: dokument kojim pacijenti dokazuju osiguranje - s prijavom u CEZIH nema veze.' }
+      ],
+      caution: 'Iskaznicu nabavlja liječnik osobno preko svoje komore - softver je ne zamjenjuje i ne možemo je nabaviti umjesto vas. Sve ostalo postavljamo mi.'
+    },
+    howItWorks: {
+      title: 'Kako radi: od demo do prvog e-Nalaza',
+      steps: [
+        { n: '1', title: 'Zatražite demo', desc: 'U 15 minuta vidite sustav na vlastitom primjeru.' },
+        { n: '2', title: 'Mi postavimo sve', desc: 'Besplatno i daljinski: sustav, korisničke račune, lokalni agent i CEZIH integraciju.' },
+        { n: '3', title: 'Prijavite se svojom iskaznicom', desc: 'Pošaljite prvi e-Nalaz iz istog sučelja u kojem vodite kartone.' },
+        { n: '4', title: 'Prvih 30 dana', desc: 'Uz vas je prioritetna podrška dok se tim ne navikne na sustav.' }
+      ]
+    },
+    audiences: {
+      title: 'Za koga je HM Medical?',
+      intro: 'Za privatne ordinacije i poliklinike u Hrvatskoj, od solo prakse do tima od 15 korisnika.',
+      staffTitle: 'Za osoblje koje svaki dan radi u programu',
+      staff: [
+        'Postavimo sve umjesto vas, daljinski i besplatno: sustav, korisničke račune, CEZIH integraciju. Ordinacija radi bez prekida.',
+        'e-Nalaz u jednom sučelju, uključen u cijenu.'
+      ],
+      doctorTitle: 'Za liječnika koji potpisuje',
+      doctor: [
+        'Certificirani proizvođač na službenom CEZIH popisu (G500): provjerite nas na cezih.hr.',
+        'Kartoni s mobitela između pacijenata. Podaci u Europskoj uniji (Nürnberg, Njemačka), dnevna sigurnosna kopija.',
+        'Kad CEZIH bude nedostupan, dokumentirate lokalno - ništa se ne gubi. Nedostavljeni dokumenti ostaju vidljivo označeni i šalju se jednim klikom čim se sustav vrati.'
+      ]
     },
     features: {
       title: 'Sve što vaša ordinacija treba - na jednom mjestu',
       patients: {
         title: 'Evidencija pacijenata',
-        desc: 'Osobni podaci, anamneza, dijagnoze, povijest posjeta - sve na jednom mjestu. GDPR usklađeno od temelja: enkripcija, kontrola pristupa, revizijski tragovi.'
+        desc: 'Osobni podaci, anamneza, dijagnoze i povijest posjeta na jednom mjestu. GDPR usklađeno: enkripcija, kontrola pristupa i revizijski tragovi.'
       },
       scheduling: {
         title: 'Naručivanje i kalendar',
-        desc: 'Pregled slobodnih termina, brzo zakazivanje i organizacija rasporeda za cijeli tim - sve na jednom mjestu.'
+        desc: 'Pregled slobodnih termina, brzo zakazivanje i raspored za cijeli tim - bez papirnatog kalendara.'
       },
       dentalChart: {
         title: 'Medicinski karton',
-        desc: 'Strukturirani zapisi po pacijentu: dijagnoze, terapije, nalaze, laboratorij. Kompletna povijest liječenja dostupna u dva klika.'
+        desc: 'Strukturirani zapisi po pacijentu: dijagnoze, terapije, nalazi, laboratorij. Kompletna povijest liječenja u dva klika.'
       },
       cezihModules: {
-        title: 'e-Nalaz, e-Uputnica, e-Recept',
-        desc: 'Generirajte CEZIH dokumente direktno iz pregleda - bez prebacivanja na drugi sustav. Nalaz, uputnica ili recept gotov je za 30 sekundi.'
+        title: 'e-Nalaz',
+        desc: 'CEZIH dokumente generirate izravno iz pregleda, bez prebacivanja na drugi sustav. Nalaz je gotov za 30 sekundi, a e-Recept stiže sljedeće godine.'
       },
       smartCard: {
         title: 'AKD kartica + Certilia potpisivanje',
-        desc: 'AKD kartica za pristup CEZIH-u, a za potpisivanje dokumenata birate: kartica s USB čitačem ili Certilia mobilni certifikat. Vi kliknete "pošalji" - tehnički detalji su naš posao.'
+        desc: 'AKD kartica za pristup CEZIH-u; za potpisivanje birate karticu s čitačem ili Certilia mobilni certifikat. Tehničke detalje rješavamo mi.'
       },
       cloudAccess: {
         title: 'Radite odakle god trebate',
-        desc: 'Kartoni, raspored i dokumentacija - pristup s bilo kojeg uređaja, 24/7. Jednom postavite čitač kartica u ordinaciji, a CEZIH integracija radi automatski u pozadini dok vi radite s mobitela, tableta ili laptopa.'
+        desc: 'Kartoni, raspored i dokumentacija dostupni s bilo kojeg uređaja. Čitač kartica postavite jednom u ordinaciji - CEZIH integracija radi automatski u pozadini.'
+      },
+      dental: {
+        title: 'Napravljeno za vašu specijalnost',
+        desc: 'Stomatologija, fizijatrija, dermatologija ili neka druga specijalnost: svoj način izrade dokumentacije zadržavate, a gotove dokumente prikačite uz karton pacijenta.'
       }
     },
     comparison: {
@@ -1021,7 +1040,9 @@ export const hr = {
     },
     pricing: {
       title: 'Transparentne cijene - bez skrivenih troškova',
-      subtitle: 'Počnite s 14 dana besplatno. Bez dugoročnih ugovora. Otkažite bilo kad.',
+      subtitle: 'Počnite s 14 dana besplatno. Daljinska implementacija je besplatna i uključena u cijenu. Bez dugoročnih ugovora.',
+      cautionNote: 'Jedina stvar koju morate osigurati sami: vlastita iskaznica ovlaštenog zdravstvenog radnika za prijavu u CEZIH. Mi vodimo kroz ostalo.',
+      residencyNote: 'Podaci se čuvaju na poslužiteljima u Europskoj uniji (Nürnberg, Njemačka), uz dnevnu sigurnosnu kopiju.',
       perMonth: '/mj',
       features: 'Uključeno',
       recommended: 'Preporučeno',
@@ -1039,7 +1060,7 @@ export const hr = {
           'Naručivanje i kalendar',
           'Medicinski karton',
           'CEZIH integracija',
-          'e-Nalaz, e-Uputnica, e-Recept',
+          'e-Nalaz',
           'AKD + Certilia podrška',
           'Onboarding uključen',
           'Cloud pristup',
@@ -1081,8 +1102,8 @@ export const hr = {
       },
       onboardingPackage: {
         title: 'Profesionalna implementacija - ključ u ruke',
-        subtitle: 'Kompletna online implementacija uključena u onboarding cijenu. Vi radite svoj posao - mi postavljamo sustav.',
-        badge: 'Uključeno u onboarding',
+        subtitle: 'Postavljamo sve umjesto vas - besplatno i daljinski. Implementacija, migracija podataka, obuka i aktivacija CEZIH-a uključeni su u cijenu, bez skrivenih troškova.',
+        badge: 'Uključeno u cijenu',
         items: [
           { title: 'Postavljanje sustava', desc: 'Konfiguracija ordinacije, korisničkih računa, radnih tokova i šifrarnika - sve kroz video poziv i remote pristup' },
           { title: 'Migracija podataka', desc: 'Prijenos pacijenata, anamneza i dokumentacije iz starog sustava - bez gubitka podataka' },
@@ -1092,7 +1113,7 @@ export const hr = {
         ],
         onSite: {
           title: 'Želite da dođemo osobno?',
-          desc: 'Implementacija na lokaciji - postavljanje, obuka i CEZIH aktivacija licem u lice.',
+          desc: 'Želite li naš dolazak u ordinaciju, implementacija na lokaciji moguća je uz naknadu: putni troškovi i satnice po dogovoru.',
           zones: [
             { name: 'Slavonija i okolica', price: 'Po dogovoru' },
             { name: 'Zagreb i središnja HR', price: 'Po dogovoru' },
@@ -1104,85 +1125,93 @@ export const hr = {
     },
     cms: {
       title: 'CMS za poliklinike i ordinacije (Clinic Management System)',
-      body1: 'CMS za poliklinike i ordinacije (Clinic Management System) je softver za upravljanje cijelom ordinacijom ili poliklinikom na jednom mjestu: pacijentski karton i dokumenti, naručivanje i raspored, e-Recept, e-Uputnica i e-Nalaz, provjera osiguranja i poslovanje ordinacije. Umjesto posebnog programa za svaki posao i tablica oko njih, sve vodi jedan sustav.',
-      body2: 'HM Digital Medical je upravo to: CMS za poliklinike i ordinacije u cloudu, s ovjerenom CEZIH integracijom. Sve što ordinacija ili poliklinika svakodnevno radi - od prijema pacijenta do e-Nalaza i e-Uputnice - događa se u jednom sučelju, a podaci su dostupni sa svakog računala. Za poliklinike s više ordinacija isti CMS povezuje sve liječnike i upravu.'
+      body1: 'CMS za poliklinike i ordinacije (Clinic Management System) je softver za upravljanje cijelom ordinacijom ili poliklinikom na jednom mjestu: pacijentski karton i dokumenti, naručivanje i raspored, e-Nalaz, provjera osiguranja i poslovanje ordinacije. Umjesto posebnog programa za svaki posao i tablica oko njih, sve vodi jedan sustav.',
+      body2: 'HM Medical je upravo to: CMS za poliklinike i ordinacije u cloudu, s ovjerenom CEZIH integracijom. Sve što ordinacija ili poliklinika svakodnevno radi - od prijema pacijenta do e-Nalaza - događa se u jednom sučelju, a podaci su dostupni sa svakog računala. Za poliklinike s više ordinacija isti CMS povezuje sve liječnike i upravu.'
     },
     ordinacije: {
       title: 'Program za ordinacije - od solo prakse do tima',
-      body1: 'Tražite program za ordinacije koji ne morate instalirati ni održavati? HM Digital Medical je software za ordinacije i poliklinike koji radi u cloudu: prijava iz preglednika, sigurno pohranjeni podaci, bez servera u ordinaciji. Solo praksa kreće u paketu Solo (79 EUR/mj), a timovi i poliklinike u paketu Poliklinika (199 EUR/mj).',
-      body2: 'Svaki paket uključuje CEZIH integraciju, e-Recept, e-Uputnicu i e-Nalaz te besplatan probni period od 14 dana (bez kartice i bez obveze). Prije isteka probnog perioda zajedno procjenjujemo je li ovo pravi program za vašu ordinaciju.'
+      body1: 'Tražite program za ordinacije koji ne morate instalirati ni održavati? HM Medical je software za ordinacije i poliklinike koji radi u cloudu: prijava iz preglednika, sigurno pohranjeni podaci, bez servera u ordinaciji. Solo praksa kreće u paketu Solo (79 EUR/mj), a timovi i poliklinike u paketu Poliklinika (199 EUR/mj).',
+      body2: 'Svaki paket uključuje CEZIH integraciju, e-Nalaz te besplatan probni period od 14 dana (bez kartice i bez obveze). Prije isteka probnog perioda zajedno procjenjujemo je li ovo pravi program za vašu ordinaciju.'
     },
     stats: {
       clinics: { value: '2.171', label: 'ordinacija u RH' },
       cert: { value: 'Certificirano', label: 'na službenom CEZIH popisu (G500)' },
-      deadline: { value: '€13.200', label: 'maksimalna kazna po prekršaju' }
+      deadline: { value: '1.1.2027.', label: 'rok za povezivanje na CEZIH' }
     },
     faq: {
       title: 'Česta pitanja o CEZIH integraciji',
       items: [
         {
           q: 'Kako odabrati pravi medicinski softver s CEZIH integracijom?',
-          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. HM Digital je jedan od tih službeno certificiranih vendora - nalazimo se na službenom CEZIH popisu proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500). Za privatne ordinacije s 1-5 liječnika ključni kriteriji su: cloud pristup s mobitela, službena CEZIH certifikacija (ne samo "kompatibilnost"), jednostavnost korištenja i pristupačna cijena. HM Digital ispunjava sve: cloud medicinski program s punom CEZIH integracijom - od €79/mj, bez potrebe za serverom ili informatičarom.'
+          a: 'Softver mora biti na službenom CEZIH popisu proizvođača aplikacija (G500), ne samo "kompatibilan". Za ordinacije s 1-5 liječnika ključni su još cloud pristup s mobitela, jednostavnost i cijena. HM Digital ispunjava sve navedeno: cloud s punom CEZIH integracijom od €79/mj, bez servera i informatičara.'
         },
         {
           q: 'Koliko košta CEZIH softver za ordinacije?',
-          a: 'Cijena CEZIH softvera varira značajno: desktop sustavi koštaju oko €100/mj plus troškovi servera i IT podrške. Enterprise cloud rješenja su još skuplja. HM Digital nudi cloud CEZIH softver od €79/mj za solo ordinacije (1-2 korisnika) i €199/mj za poliklinike (3-5 korisnika). Onboarding i CEZIH aktivacija uključeni su u cijenu. Besplatni demo dostupan bez obveze.'
+          a: 'Desktop sustavi koštaju oko €100/mj uz troškove servera i IT podrške, a enterprise rješenja su još skuplja. HM Digital košta €79/mj za solo ordinacije i €199/mj za poliklinike, s onboardingom i CEZIH aktivacijom u cijeni. Besplatni demo dostupan je bez obveze.'
         },
         {
           q: 'Postoji li CEZIH softver za stomatologe?',
-          a: 'Da - HM Digital podržava stomatološke ordinacije. Sustav uključuje punu CEZIH integraciju (e-Nalaz, e-Uputnica, e-Recept), evidenciju pacijenata i naručivanje. Program je agilan: ako dokumentaciju izrađujete svojim postupkom, ne morate ga mijenjati - izrađene dokumente jednostavno prikačite u program. Isto vrijedi za opću medicinu, fizikalnu terapiju, dermatologiju i druge specijalnosti.'
+          a: 'Da. HM Digital podržava stomatološke ordinacije: puna CEZIH integracija, evidencija pacijenata i naručivanje. Ako dokumentaciju izrađujete svojim postupkom, program ga ne mijenja - dokumente jednostavno prikačite uz karton. Isto vrijedi za opću medicinu, fizikalnu terapiju i druge specijalnosti.'
         },
         {
           q: 'Što je CEZIH i kako funkcionira?',
-          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH - krajnji rok za povezivanje privatnih ustanova je 1. siječnja 2027. (produljen). Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
+          a: 'CEZIH (Centralni zdravstveni informacijski sustav RH) je nacionalni sustav za razmjenu recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje, a rok za privatne ordinacije odredilo je Ministarstvo zdravstva: 1. siječnja 2027. Ukratko: nije stvar izbora, nego zakona.'
         },
         {
           q: 'Koji su zakonski zahtjevi za CEZIH integraciju?',
-          a: 'Zakon NN 14/2019 (čl. 36) propisuje kazne do €13.200 za pravnu osobu, a sankcije se primjenjuju i osobno na nositelje ordinacija. Uz to, korištenje vanjskih platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3). Cijena neaktivnosti je puno veća od cijene rješenja.'
+          a: 'Zakon NN 14/2019 (čl. 28) obvezuje pružatelje zdravstvene zaštite na razmjenu podataka putem CEZIH-a, a nakon isteka roka (1. siječnja 2027.) primjenjuju se novčane kazne za prekršaj. Zato birajte samo softver s ovjerenom CEZIH integracijom.'
         },
         {
           q: 'Trebam li AKD iskaznicu?',
-          a: 'Da, AKD kartica je obavezna za pristup CEZIH-u - bez nje se nije moguće spojiti. Za potpisivanje dokumenata (e-Nalaz, e-Recept, e-Uputnica) možete koristiti istu AKD karticu s USB čitačem ili Certilia mobilni certifikat na mobitelu. Naš local agent čita karticu s vašeg računala i sve radi automatski.'
+          a: 'Da - AKD kartica (ili nova iskaznica ovlaštenog zdravstvenog radnika) obavezna je za pristup CEZIH-u. Za potpisivanje koristite karticu s USB čitačem ili Certilia mobilni certifikat. Naš local agent čita karticu i sve radi automatski.'
         },
         {
           q: 'Što je local agent i moram li ga sam instalirati?',
-          a: 'Local agent je mala aplikacija na vašem računalu koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta. Sve ostalo radi u cloudu. Nema složene konfiguracije - agent se sam poveže s vašim računom.'
+          a: 'Local agent je mala aplikacija koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta, a najčešće ga postavimo mi daljinski tijekom onboardinga. Sve ostalo radi u cloudu.'
         },
         {
           q: 'Što trebam pripremiti za početak?',
-          a: 'Četiri stvari: (1) šifru ustanove - dobivate je od HZZO-a, imaju je sve registrirane ustanove, (2) šifru zdravstvenog djelatnika - 7-znamenkasti broj od HZJZ-a, (3) MBO liječnika - 9-znamenkasti broj koji svaki liječnik zna, i (4) AKD karticu s USB čitačem za CEZIH pristup. Za potpisivanje možete koristiti istu karticu ili Certilia mobilni certifikat. Pomažemo vam s cijelim procesom aktivacije.'
+          a: 'Četiri stvari: šifru ustanove (od HZZO-a), šifru zdravstvenog djelatnika (7 znamenki od HZJZ-a), MBO liječnika (9 znamenki) i AKD karticu s USB čitačem. Za potpisivanje koristite istu karticu ili Certilia. Kroz cijelu aktivaciju vodimo vas mi.'
         },
         {
           q: 'Imam već softver - zašto bih mijenjao?',
-          a: 'Ako vaš sustav već ima CEZIH certifikaciju, cloud pristup i mobilni rad - ostanite gdje jeste. Ali ako još uvijek morate biti u ordinaciji da vidite karton pacijenta, ako ažuriranja ovise o informatičaru, ako ne možete poslati e-Nalaz bez prebacivanja između dva sustava - pitajte se: koliko vas to košta u vremenu svaki tjedan? Zatražite demo i vidjet ćete razliku u 15 minuta.'
+          a: 'Ako vaš sustav ima CEZIH certifikaciju, cloud pristup i mobilni rad, ostanite gdje jeste. Ako ste vezani za jedno računalo ili prebacujete sustave za svaki e-Nalaz, zatražite demo: razliku vidite u 15 minuta.'
         },
         {
           q: 'Za koje specijalnosti je sustav namijenjen?',
-          a: 'Za sve. Jedan sustav za sve privatne zdravstvene ustanove - od stomatologije do fizikalne terapije, dermatologije, ginekologije, oftalmologije i opće medicine. Program je agilan: svoj način izrade dokumentacije možete zadržati, a izrađene dokumente jednostavno prikačite u program. Nema ograničenja po specijalnosti.'
+          a: 'Za sve privatne zdravstvene ustanove: stomatologiju, opću medicinu, fizikalnu terapiju, dermatologiju, ginekologiju i druge. Svoj način izrade dokumentacije zadržavate, a gotove dokumente prikačite uz karton pacijenta.'
         },
         {
           q: 'Mogu li prebaciti podatke iz starog sustava?',
-          a: 'Da - podržavamo migraciju iz većine hrvatskih medicinskih sustava. Proces: analiza vaših podataka → testna migracija → vaša provjera → puštanje u produkciju. Vaši pacijenti, anamneze i povijest liječenja se prenose bez gubitka.'
+          a: 'Da - migriramo iz većine hrvatskih medicinskih sustava. Proces: analiza podataka, testna migracija, vaša provjera, produkcija. Pacijenti, anamneze i povijest liječenja prenose se bez gubitka.'
         },
         {
           q: 'Koliko traje dok počnem raditi?',
-          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana - što je trenutno najbrži put do usklađenosti prije roka 1. siječnja 2027.'
+          a: 'Registracija i prvi unos traju 5 minuta, osnovna konfiguracija 1-2 radna dana. S punom migracijom i obukom: 5-10 radnih dana. To je najbrži put do usklađenosti prije roka 1. siječnja 2027.'
         },
         {
           q: 'Jesu li podaci sigurni?',
-          a: 'GDPR usklađenost od temelja: enkripcija u mirovanju i prijenosu, kontrola pristupa po ulogama, kompletni revizijski tragovi, pravo na brisanje i izvoz. Podaci u EU data centrima. Sigurnosne kopije svaka 4 sata.'
+          a: 'GDPR usklađenost od temelja: enkripcija u mirovanju i prijenosu, kontrola pristupa po ulogama i potpuni revizijski tragovi. Podaci se čuvaju na poslužiteljima u Europskoj uniji (Nürnberg, Njemačka), uz dnevnu sigurnosnu kopiju.'
         },
         {
           q: 'Imate li besplatni probni period?',
-          a: 'Da - 14 dana besplatnog korištenja bez kartice i bez obveze. Nakon isteka možete odabrati plaćeni plan ili jednostavno prestati koristiti sustav. Vaši podaci ostaju dostupni za izvoz 30 dana.'
+          a: 'Da - 14 dana besplatno, bez kartice i bez obveze. Nakon toga odaberite plan ili prestanite koristiti sustav. Podaci ostaju dostupni za izvoz 30 dana.'
         },
         {
           q: 'Što ako želim otkazati?',
-          a: 'Otkažete bilo kad - bez dugoročnih ugovora, bez penala, bez poziva "zašto odlazite". Vaši podaci ostaju dostupni za izvoz 30 dana nakon otkazivanja.'
+          a: 'Otkažete bilo kad: bez dugoročnih ugovora i bez penala. Podaci ostaju dostupni za izvoz 30 dana nakon otkazivanja.'
         },
         {
-          q: 'Je li HM Digital Medical CMS za poliklinike i ordinacije?',
-          a: 'Da. HM Digital Medical je CMS (Clinic Management System) za poliklinike i ordinacije: pacijentski karton, naručivanje, dokumenti, e-Recept, e-Uputnica i e-Nalaz te CEZIH integracija - sve u jednom cloud sustavu, bez instalacije i lokalnog servera.'
+          q: 'Je li HM Medical CMS za poliklinike i ordinacije?',
+          a: 'Da. HM Medical je CMS (Clinic Management System): pacijentski karton, naručivanje, dokumenti i CEZIH e-usluge u jednom cloud sustavu, bez instalacije i lokalnog servera.'
+        },
+        {
+          q: 'Jesu li e-usluge uključene u cijenu?',
+          a: 'Da. Sve CEZIH e-usluge (e-Nalaz, MBO, provjera osiguranja, AKD kartica) uključene su u sve pakete - ništa se ne naplaćuje posebno.'
+        },
+        {
+          q: 'Morate li nešto sami postaviti?',
+          a: 'Ne. Mi daljinski i besplatno postavljamo sustav, migriramo podatke, obučimo osoblje i aktiviramo CEZIH. Jedino što trebate jest vlastita iskaznica za prijavu - softver je ne zamjenjuje.'
         }
       ]
     },

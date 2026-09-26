@@ -56,7 +56,8 @@ const m = t.medicalLanding;
         m.features.dentalChart.title,
         m.features.cezihModules.title,
         m.features.smartCard.title,
-        m.features.cloudAccess.title
+        m.features.cloudAccess.title,
+        m.features.dental.title
       ]
     })} />
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -97,9 +98,9 @@ const m = t.medicalLanding;
       var el = document.getElementById('urgency-text');
       if (!el) return;
       if (days > 0) {
-        el.textContent = 'Zakon NN 14/2019, čl. 28 - do krajnjeg roka za CEZIH ostalo: ' + days + ' dana · Kazne do €13.200';
+        el.textContent = 'Do roka za povezivanje na CEZIH ostalo: ' + days + ' dana. Nakon roka primjenjuju se zakonom propisane novčane kazne.';
       } else {
-        el.textContent = 'CEZIH je obavezan - krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija';
+        el.textContent = 'CEZIH povezivanje je zakonska obveza - rok za privatne ordinacije: 1. siječnja 2027.';
       }
     })();
   </script>
@@ -112,12 +113,9 @@ const m = t.medicalLanding;
         {m.hero.certBadge}
         <svg class="w-3.5 h-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
       </a>
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 max-w-4xl mx-auto leading-tight">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto leading-tight">
         {m.hero.title}
       </h1>
-      <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto bg-gradient-to-r from-primary-300 to-primary-100 bg-clip-text text-transparent">
-        {m.hero.tagline}
-      </p>
       <p class="text-lg sm:text-xl leading-relaxed text-slate-300 max-w-3xl mx-auto mb-10">
         {m.hero.subtitle}
       </p>
@@ -161,6 +159,22 @@ const m = t.medicalLanding;
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 2c. Disambiguation: CEZIH, iskaznica, potvrda -->
+  <section class="py-16 lg:py-24 bg-slate-50">
+    <div class="container-custom max-w-4xl">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-8 text-center">{m.disambiguation.title}</h2>
+      <div class="space-y-4">
+        {m.disambiguation.rows.map((row) => (
+          <div class="bg-white border border-slate-200 rounded-lg p-5">
+            <h3 class="text-lg font-semibold text-slate-900 mb-1">{row.term}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{row.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-700 bg-amber-50 border border-amber-200 rounded-lg p-4 leading-relaxed">{m.disambiguation.caution}</p>
     </div>
   </section>
 
@@ -210,9 +224,6 @@ const m = t.medicalLanding;
       <p class="text-lg text-slate-300 leading-relaxed mb-4">
         {m.bridge.desc}
       </p>
-      <p class="text-primary-300 font-semibold text-sm">
-        {m.bridge.costOfInaction}
-      </p>
       <p class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="/cezih-vodic/" class="inline-block text-primary-200 underline underline-offset-4 hover:text-white text-sm font-medium">
           {m.bridge.guideLink}
@@ -224,35 +235,61 @@ const m = t.medicalLanding;
     </div>
   </section>
 
-  <!-- 5. Solution Overview -->
+  <!-- 5. Kako radi: 4 koraka -->
   <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white">
     <div class="container-custom">
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-          {m.solution.title}
+          {m.howItWorks.title}
         </h2>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <Card padding="lg" class="text-center">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.solution.cloudUx.title}</h3>
-          <p class="text-slate-600 text-sm">{m.solution.cloudUx.desc}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {m.howItWorks.steps.map((step) => (
+          <Card padding="lg" class="text-center">
+            <div class="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              {step.n}
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">{step.title}</h3>
+            <p class="text-slate-600 text-sm">{step.desc}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 5b. Za osoblje i za liječnika -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          {m.audiences.title}
+        </h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+          {m.audiences.intro}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <Card padding="lg">
+          <h3 class="text-lg font-semibold text-slate-900 mb-4">{m.audiences.staffTitle}</h3>
+          <ul class="space-y-3">
+            {m.audiences.staff.map((line) => (
+              <li class="flex gap-2.5 text-slate-600 text-sm leading-relaxed">
+                <svg class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
         </Card>
-        <Card padding="lg" class="text-center">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.solution.cezihG500.title}</h3>
-          <p class="text-slate-600 text-sm">{m.solution.cezihG500.desc}</p>
-        </Card>
-        <Card padding="lg" class="text-center">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.solution.dental.title}</h3>
-          <p class="text-slate-600 text-sm">{m.solution.dental.desc}</p>
+        <Card padding="lg">
+          <h3 class="text-lg font-semibold text-slate-900 mb-4">{m.audiences.doctorTitle}</h3>
+          <ul class="space-y-3">
+            {m.audiences.doctor.map((line) => (
+              <li class="flex gap-2.5 text-slate-600 text-sm leading-relaxed">
+                <svg class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
         </Card>
       </div>
     </div>
@@ -308,6 +345,13 @@ const m = t.medicalLanding;
           </div>
           <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.features.cloudAccess.title}</h3>
           <p class="text-slate-600 text-sm">{m.features.cloudAccess.desc}</p>
+        </Card>
+        <Card padding="lg">
+          <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">{m.features.dental.title}</h3>
+          <p class="text-slate-600 text-sm">{m.features.dental.desc}</p>
         </Card>
       </div>
     </div>
@@ -395,6 +439,14 @@ const m = t.medicalLanding;
 
   <!-- 8. Pricing Table -->
   <MedicalPricingTable t={t} />
+
+  <!-- 8a. Pricing notes: iskaznica + data residency -->
+  <section class="bg-slate-50 pb-12">
+    <div class="container-custom max-w-3xl mx-auto text-center text-sm text-slate-600 space-y-2 px-4">
+      <p>{m.pricing.cautionNote}</p>
+      <p>{m.pricing.residencyNote}</p>
+    </div>
+  </section>
 
   <!-- 8b. Program za ordinacije -->
   <section class="py-16 lg:py-24 bg-white" id="program-za-ordinacije">

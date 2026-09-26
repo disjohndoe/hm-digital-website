@@ -878,19 +878,18 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Practice Management Software - Cloud | HM Digital',
-      description: 'Cloud practice management software with CEZIH integration. e-Prescriptions, e-Referrals, e-Findings. From 79 EUR/mo. Deadline 1 Jan 2027. 14-day free trial.'
+      description: 'Cloud practice management software with CEZIH integration. e-Findings. From 79 EUR/mo. Deadline 1 Jan 2027. 14-day free trial.'
     },
     urgencyBar: {
-      before: 'Law NN 14/2019, Art. 28 - final CEZIH deadline: 1 January 2027 · Fines up to €13,200',
-      after: 'CEZIH is mandatory - final deadline 1 January 2027, fines up to €13,200, including personal liability for practice owners'
+      before: 'Connecting to CEZIH is a legal obligation - deadline for private practices: 1 January 2027.',
+      after: 'Days left to connect to CEZIH: {days}. After the deadline, fines prescribed by law apply.'
     },
     hero: {
       badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
-      certBadge: 'Officially certified by HZZO',
+      certBadge: 'Officially certified on the CEZIH list (G500)',
       certBadgeLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       title: 'Medical software for practices and polyclinics - CEZIH integration in the cloud',
-      tagline: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
-      subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no compromise. Everything a private practice needs for CEZIH - and nothing it doesn\'t.',
+      subtitle: 'HM Medical is cloud medical software for private practices and polyclinics in Croatia with certified CEZIH integration: e-Findings from a single interface.',
       ctaCompare: 'Compare us to alternatives',
       ctaTrial: 'Request a free demo',
       ctaFeatures: 'See what you get'
@@ -898,80 +897,100 @@ export const en = {
     cert: {
       badge: 'Officially certified CEZIH application manufacturer',
       title: 'HM Digital is on the official CEZIH list of certified manufacturers',
-      body: 'Our software for private practices and polyclinics is officially certified and appears on the CEZIH list of application manufacturers maintained by HZZO and the Ministry of Health - in the category Software solutions for private/institutions (G500). This means the solution has passed an official readiness review and meets the technical prerequisites for data exchange with CEZIH.',
+      body: 'HM Digital appears on the official list of CEZIH application manufacturers, in the category of software solutions for private institutions (G500). This means the software has passed an official readiness review and meets the technical prerequisites for data exchange with CEZIH.',
       verifyLabel: 'Verify us on the official CEZIH list',
       verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       pointsTitle: 'What this means for your practice',
       points: [
-        'It is not merely "CEZIH-compatible" - the solution is officially certified, with legal weight.',
+        'The solution is officially certified, not merely "CEZIH-compatible".',
         'It satisfies the legal obligation under the Health Data and Information Act (NN 14/2019, Art. 28).',
-        'It passed an official technical review against CEZIH standards - not an improvisation.',
         'You can independently verify our status on the official CEZIH website.'
       ]
     },
     problem: {
       title: 'Three reasons your practice still isn\'t compliant',
-      subtitle: 'Not because you haven\'t tried - but because the market had nothing to offer you. Until now.',
+      subtitle: 'Usually the reason is technical or administrative - and it is solved in days, not months.',
       deadline: {
         title: 'Legal framework and timeline',
-        desc: 'Law NN 14/2019 mandates CEZIH integration. Regulation NN 150/2024 specifies technical requirements. Fines: up to €13,200 per violation for legal entities (Art. 35), up to €4,000 for responsible persons (Art. 37).'
+        desc: 'The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) obliges all healthcare providers to connect to CEZIH. The deadline for private practices was set by the Ministry of Health: 1 January 2027. After the deadline, fines for violations apply.'
       },
       legacy: {
         title: 'Your current software works - but it works against you',
-        desc: 'Most certified systems tie you to a single computer in your office. You can\'t check a patient record from home, can\'t view tomorrow\'s schedule from your phone, and every update needs an IT person. The only cloud vendor on the market is built for hospitals with IT departments, not for a practice with 2 staff. You need something in between - and until now, it didn\'t exist.'
+        desc: 'Most certified systems tie you to a single computer in your office, and every update needs an IT person. You cannot check a patient record from home or from your phone between patients.'
       },
       cloudNoCezih: {
         title: 'Cloud platforms without CEZIH certification',
-        desc: 'Some modern cloud platforms offer great design - but no CEZIH certification. Using non-CEZIH platforms for health data exchange is a direct violation of the law (Art. 28, para. 3).'
+        desc: 'Some cloud platforms look modern but have no CEZIH certification. Without certification, no legally valid data exchange is possible through them - check the official list at cezih.hr.'
       }
     },
     bridge: {
       title: 'You didn\'t become a doctor to deal with IT problems.',
-      desc: 'The final deadline to connect to CEZIH is 1 January 2027 (extended), and fines up to €13,200 (Art. 35-37, Law NN 14/2019) apply after the deadline. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background - while you do what you do best.',
-      costOfInaction: 'A single €13,200 fine = 14 years of our software at €79/mo.',
+      desc: 'The final deadline to connect to CEZIH is 1 January 2027 (as announced by the Ministry of Health). We built a system that handles CEZIH in the background - while you do what you do best.',
       guideLink: 'Preparing for CEZIH? Read the guide: deadline extended to 1 January 2027 →',
       deadlineLink: 'New deadline confirmed? Check the facts on the CEZIH 1 January 2027 deadline →'
     },
-    solution: {
-      title: 'Everything you need - in one place',
-      cloudUx: {
-        title: 'Modern cloud UX',
-        desc: 'Access the system from any device - computer, tablet or phone. Set up the card reader once on one workstation, then work from wherever you need. Automatic updates and backups.'
-      },
-      cezihG500: {
-        title: 'Full CEZIH integration',
-        desc: 'Full CEZIH integration: e-Findings, e-Referrals, e-Prescriptions, eScheduling and insurance verification. AKD card for access, with card or Certilia mobile certificate for document signing.'
-      },
-      dental: {
-        title: 'Tailored to your specialty',
-        desc: 'Whether you run a dental, general medicine, physical therapy, or dermatology practice - the program is agile: if you already create documentation in your own workflow, you do not have to change it. Simply attach the documents you create to the patient record in the program.'
-      }
+    disambiguation: {
+      title: 'CEZIH, ID card or insurance certificate - what is what?',
+      rows: [
+        { term: 'CEZIH', desc: 'The Central Health Information System of Croatia. Through it you issue e-Prescriptions and e-Referrals and receive e-Findings.' },
+        { term: 'ID card (iskaznica)', desc: 'The authorized health worker ID card: the electronic card a doctor uses to log into CEZIH. From 1 July 2026 login works with the new ID cards; old HZZO smart cards no longer work.' },
+        { term: 'Insurance certificate (potvrda)', desc: 'A document patients use to prove their insurance status - it has nothing to do with logging into CEZIH.' }
+      ],
+      caution: 'Doctors obtain the ID card personally through their chamber - software cannot replace it and we cannot obtain it for you. Everything else, we set up.'
+    },
+    howItWorks: {
+      title: 'How it works: from demo to your first e-Finding',
+      steps: [
+        { n: '1', title: 'Request a demo', desc: 'In 15 minutes you see the system on your own example.' },
+        { n: '2', title: 'We set everything up', desc: 'Remotely and free of charge: system, user accounts, local agent and CEZIH integration.' },
+        { n: '3', title: 'Sign in with your ID card', desc: 'Send your first e-Finding from the same interface where you keep patient records.' },
+        { n: '4', title: 'First 30 days', desc: 'Priority support is at your side while the team gets used to the system.' }
+      ]
+    },
+    audiences: {
+      title: 'Who is HM Medical for?',
+      intro: 'For private practices and polyclinics in Croatia, from a solo practice to a team of 15 users.',
+      staffTitle: 'For the staff who work in the system every day',
+      staff: [
+        'We set everything up for you, remotely and free of charge: system, user accounts, CEZIH integration. The practice keeps working without interruption.',
+        'e-Findings in one interface, included in the price.'
+      ],
+      doctorTitle: 'For the doctor who signs',
+      doctor: [
+        'Certified manufacturer on the official CEZIH list (G500): verify us at cezih.hr.',
+        'Patient records from your phone between patients. Data in the European Union (Nuremberg, Germany), daily backup.',
+        'When CEZIH is unavailable, you keep documenting locally - nothing is lost. Undelivered documents stay clearly marked and can be sent with one click once the system is back online.'
+      ]
     },
     features: {
       title: 'CEZIH Software Features for Private Practices',
       patients: {
         title: 'Patient records',
-        desc: 'Complete records with personal data, medical history, diagnoses and visit history. GDPR compliant.'
+        desc: 'Personal data, medical history, diagnoses and visit history in one place. GDPR compliant: encryption, access control and audit trails.'
       },
       scheduling: {
         title: 'Scheduling & calendar',
-        desc: 'Interactive calendar with drag-and-drop scheduling and per-office availability overview.'
+        desc: 'Free-slot overview, fast booking and a schedule for the whole team - no paper calendar.'
       },
       dentalChart: {
         title: 'Medical records',
-        desc: 'Structured per-patient record with diagnoses, treatments, findings and complete treatment history.'
+        desc: 'Structured per-patient record: diagnoses, treatments, findings, laboratory. Complete treatment history in two clicks.'
       },
       cezihModules: {
-        title: 'e-Findings, e-Referrals, e-Prescriptions',
-        desc: 'CEZIH modules integrated into workflow: generate findings, referrals and prescriptions without leaving the system.'
+        title: 'e-Finding',
+        desc: 'Generate CEZIH documents directly from the examination, without switching systems. The finding is ready in 30 seconds, and the e-Prescription arrives next year.'
       },
       smartCard: {
         title: 'AKD card + Certilia signing',
-        desc: 'AKD card for CEZIH access, with your choice for document signing: card with USB reader or Certilia mobile certificate. Secure PKI authentication without compromise.'
+        desc: 'AKD card for CEZIH access; for signing choose the card with a reader or the Certilia mobile certificate. We handle the technical details.'
       },
       cloudAccess: {
         title: 'Access from any device',
-        desc: 'Records, scheduling and documentation - access from any device, 24/7. Set up the card reader once in your office, and CEZIH integration runs automatically in the background while you work from your phone, tablet or laptop.'
+        desc: 'Records, scheduling and documentation available from any device. Set up the card reader once in your office - CEZIH integration runs automatically in the background.'
+      },
+      dental: {
+        title: 'Built for your specialty',
+        desc: 'Dentistry, physical therapy, dermatology or another specialty: keep your own documentation workflow and simply attach finished documents to the patient record.'
       }
     },
     comparison: {
@@ -1021,7 +1040,9 @@ export const en = {
     },
     pricing: {
       title: 'CEZIH Software Pricing for Practices',
-      subtitle: 'Start with 14 days free. No long-term contracts. Cancel anytime.',
+      subtitle: 'Start with 14 days free. Remote implementation is free and included in the price. No long-term contracts.',
+      cautionNote: 'The only thing you must arrange yourself: your own authorized health worker ID card for CEZIH login. We guide you through everything else.',
+      residencyNote: 'Data is stored on servers in the European Union (Nuremberg, Germany), with a daily backup.',
       perMonth: '/mo',
       features: 'Included',
       recommended: 'Recommended',
@@ -1053,7 +1074,7 @@ export const en = {
           'Scheduling & calendar',
           'Medical records',
           'CEZIH integration',
-          'e-Findings, e-Referrals, e-Prescriptions',
+          'e-Findings',
           'AKD + Certilia support',
           'Onboarding included',
           'Cloud access',
@@ -1095,8 +1116,8 @@ export const en = {
       },
       onboardingPackage: {
         title: 'Professional onboarding - turnkey setup',
-        subtitle: 'Complete online setup included in onboarding price. You focus on patients - we set up the system.',
-        badge: 'Included in onboarding',
+        subtitle: 'We set everything up for you - remotely and free of charge. Implementation, data migration, training and CEZIH activation are included in the price, with no hidden costs.',
+        badge: 'Included in the price',
         items: [
           { title: 'System setup', desc: 'Configuration of practice, user accounts, workflows and code lists - all via video call and remote access' },
           { title: 'Data migration', desc: 'Transfer patients, histories and documentation from your old system - no data loss' },
@@ -1106,7 +1127,7 @@ export const en = {
         ],
         onSite: {
           title: 'Want us to come in person?',
-          desc: 'On-site implementation - setup, training and CEZIH activation face to face.',
+          desc: 'If you want us to visit your practice, on-site implementation is available at a fee: travel costs and hourly rates by arrangement.',
           zones: [
             { name: 'Slavonia & surroundings', price: 'Custom quote' },
             { name: 'Zagreb & central HR', price: 'Custom quote' },
@@ -1118,85 +1139,93 @@ export const en = {
     },
     cms: {
       title: 'CMS for Polyclinics and Practices (Clinic Management System)',
-      body1: 'A CMS for polyclinics and practices (Clinic Management System) is software that runs the entire practice from one place: patient records and documents, scheduling, e-Prescriptions, e-Referrals and e-Findings, insurance checks and practice finances. Instead of a separate program for every task and spreadsheets around them, one system runs everything.',
-      body2: 'HM Digital Medical is exactly that: a cloud CMS for polyclinics and practices with certified CEZIH integration. Everything a practice does daily - from patient check-in to e-Findings and e-Referrals - happens in one interface, with data available from any computer. For polyclinics with multiple practices, the same CMS connects all doctors and management.'
+      body1: 'A CMS for polyclinics and practices (Clinic Management System) is software that runs the entire practice from one place: patient records and documents, scheduling, e-Findings, insurance checks and practice finances. Instead of a separate program for every task and spreadsheets around them, one system runs everything.',
+      body2: 'HM Medical is exactly that: a cloud CMS for polyclinics and practices with certified CEZIH integration. Everything a practice does daily - from patient check-in to e-Findings - happens in one interface, with data available from any computer. For polyclinics with multiple practices, the same CMS connects all doctors and management.'
     },
     ordinacije: {
       title: 'Practice software - from solo practice to a team',
-      body1: 'Looking for practice software you never have to install or maintain? HM Digital Medical is software for practices and polyclinics that runs in the cloud: sign in from a browser, data stored securely, no server in your practice. A solo practice starts in the Solo plan (79 EUR/mo), teams and polyclinics in the Poliklinika plan (199 EUR/mo).',
-      body2: 'Every plan includes CEZIH integration, e-Prescriptions, e-Referrals and e-Findings, plus a 14-day free trial (no card, no obligation). Before the trial ends, we assess together whether this is the right program for your practice.'
+      body1: 'Looking for practice software you never have to install or maintain? HM Medical is software for practices and polyclinics that runs in the cloud: sign in from a browser, data stored securely, no server in your practice. A solo practice starts in the Solo plan (79 EUR/mo), teams and polyclinics in the Poliklinika plan (199 EUR/mo).',
+      body2: 'Every plan includes CEZIH integration, e-Findings, plus a 14-day free trial (no card, no obligation). Before the trial ends, we assess together whether this is the right program for your practice.'
     },
     stats: {
       clinics: { value: '2,171', label: 'practices in Croatia' },
       cert: { value: 'Certified', label: 'on the official CEZIH list (G500)' },
-      deadline: { value: '€13,200', label: 'max fine per violation' }
+      deadline: { value: '1 Jan 2027', label: 'deadline to connect to CEZIH' }
     },
     faq: {
       title: 'Frequently asked questions about CEZIH software',
       items: [
         {
           q: 'Which CEZIH software is best for private practices?',
-          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. HM Digital is one of those officially certified vendors - we appear on the official CEZIH list of application manufacturers (category Software solutions for private/institutions, G500). For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, official CEZIH certification (not just "compatibility"), ease of use, and affordable pricing. HM Digital meets all of them: a cloud CEZIH software built specifically for private practices - from €79/mo, with full CEZIH integration and no need for a server or IT support.'
+          a: 'The software must be on the official CEZIH list of application manufacturers (G500), not merely "compatible". For practices with 1-5 doctors the other key criteria are: cloud access from mobile, ease of use and price. HM Digital meets all of them: a cloud system with full CEZIH integration from €79/mo, with no server or IT person.'
         },
         {
           q: 'How much does CEZIH software cost?',
-          a: 'CEZIH software pricing varies widely: desktop systems cost around €100/mo plus server and IT support costs. Enterprise cloud solutions are even more expensive. HM Digital offers cloud CEZIH software from €79/mo for solo practices (1-2 users) and €199/mo for polyclinics (3-5 users). Onboarding and CEZIH activation are included. Free demo available with no obligation.'
+          a: 'Desktop systems cost around €100/mo plus server and IT support costs; enterprise cloud solutions are even more expensive. HM Digital costs €79/mo for solo practices and €199/mo for polyclinics, with onboarding and CEZIH activation included. A free demo is available with no obligation.'
         },
         {
           q: 'Is there CEZIH software for dentists?',
-          a: 'Yes - HM Digital supports dental practices. The system includes full CEZIH integration (e-Findings, e-Referrals, e-Prescriptions), patient records and scheduling. The program is agile: if you create documentation in your own workflow, you keep it - you simply attach the created documents in the program. The same applies to general medicine, physical therapy, dermatology and other specialties.'
+          a: 'Yes. HM Digital supports dental practices: full CEZIH integration, patient records and scheduling. If you create documentation in your own workflow, the program does not change it - you simply attach the documents to the patient record. The same applies to general medicine, physical therapy and other specialties.'
         },
         {
           q: 'What is CEZIH and how does it work?',
-          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions - practices, polyclinics and hospitals - to connect. Regulation NN 150/2024 defines technical requirements. The final deadline for private institutions to connect is 1 January 2027 (extended); fines apply after that date.'
+          a: 'CEZIH (Central Health Information System of Croatia) is the national system for exchanging prescriptions, referrals and findings. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) obliges all healthcare providers to connect, and the deadline for private practices was set by the Ministry of Health: 1 January 2027. In short: it is not a choice, it is the law.'
         },
         {
           q: 'What are the legal requirements for CEZIH integration?',
-          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The final deadline for all private healthcare institutions to connect is 1 January 2027 (extended) - after that date the penalty regime is fully active.'
+          a: 'Law NN 14/2019 (Art. 28) obliges healthcare providers to exchange data through CEZIH, and after the deadline expires (1 January 2027) fines for violations apply. That is why you should only choose software with certified CEZIH integration.'
         },
         {
           q: 'Do I need an AKD card?',
-          a: 'Yes. The AKD card is mandatory for CEZIH access - you cannot connect without it. For signing documents (e-Findings, e-Prescriptions, e-Referrals), you can use the same AKD card with a USB reader or a Certilia mobile certificate on your phone. Our local agent reads the card from your computer and handles everything automatically.'
+          a: 'Yes - the AKD card (or the new authorized health worker ID card) is mandatory for CEZIH access. For signing documents you use the card with a USB reader or the Certilia mobile certificate. Our local agent reads the card and handles everything automatically.'
         },
         {
           q: 'How does the local agent work?',
-          a: 'The local agent is a small desktop application installed on the computer with the smart card reader. It reads the AKD card, establishes a VPN connection and forwards SOAP requests to CEZIH. Your cloud system communicates with the agent - no complex network configuration needed.'
+          a: 'The local agent is a small desktop application installed on the computer with the smart card reader. It reads the AKD card, establishes a VPN connection and forwards requests to CEZIH. Installation takes under 5 minutes - and we usually set it up remotely during onboarding.'
         },
         {
           q: 'What do I need to prepare before getting started?',
-          a: 'Four things: (1) your institution code - issued by HZZO, all registered institutions have one, (2) healthcare worker code - a 7-digit number from HZJZ, (3) physician MBO number - a 9-digit number every doctor knows, and (4) an AKD card with a USB reader for CEZIH access. For document signing, you can use the same card or a Certilia mobile certificate. We help you through the entire activation process.'
+          a: 'Four things: your institution code (from HZZO), the healthcare worker code (7 digits from HZJZ), the physician MBO number (9 digits) and an AKD card with a USB reader. For signing you use the same card or Certilia. We guide you through the entire activation.'
         },
         {
           q: 'I already have software - why would I switch?',
-          a: 'If your current system already has CEZIH certification, cloud access, and mobile work - stay where you are. But if you still have to be in the practice to see a patient record, if updates depend on an IT person, or if you cannot send an e-Finding without switching between two systems - ask yourself: how much does that costs you in time every week? Request a demo and you will see the difference in 15 minutes.'
+          a: 'If your current system already has CEZIH certification, cloud access and mobile work - stay where you are. If you are tied to one computer or switch systems for every e-Finding, request a demo: you will see the difference in 15 minutes.'
         },
         {
           q: 'Which specialties is the system designed for?',
-          a: 'All of them. One system for every private healthcare institution - from dentistry to physical therapy, dermatology, gynecology, ophthalmology, and general medicine. The program is agile: you can keep your own documentation workflow and simply attach the documents you create in the program. No specialty restrictions.'
+          a: 'All of them: dentistry, general medicine, physical therapy, dermatology, gynecology and more. You keep your own documentation workflow and simply attach the documents you create to the patient record.'
         },
         {
           q: 'Can I migrate data from my existing system?',
-          a: 'Yes. We support migration from most existing systems. The process includes data analysis, mapping and test migration before going to production.'
+          a: 'Yes. We support migration from most existing systems. The process: data analysis, test migration, your review, production. Patients, histories and treatment records transfer without loss.'
         },
         {
           q: 'How long does setup take?',
-          a: 'Basic setup takes 1-2 business days. With data migration and staff training, complete onboarding typically takes 5-10 business days depending on institution size.'
+          a: 'Registration and first entry take 5 minutes, basic configuration 1-2 business days. With full data migration and staff training: 5-10 business days. That is the fastest path to compliance before the 1 January 2027 deadline.'
         },
         {
           q: 'Is the system GDPR compliant?',
-          a: 'Absolutely. The system is designed with GDPR from the ground up: data encryption, access control, audit trails, right to erasure and data export. Data is stored in EU data centers.'
+          a: 'Yes, GDPR compliance is built in from the ground up: encryption at rest and in transit, role-based access control and full audit trails. Data is stored on servers in the European Union (Nuremberg, Germany), with a daily backup.'
         },
         {
           q: 'What happens after the free trial?',
-          a: 'After 14 days you can choose a paid plan or simply stop using the system - no obligations. Your data remains available for export for 30 days after trial expiration.'
+          a: 'After 14 days you can choose a paid plan or simply stop using the system - no obligations. Your data remains available for export for 30 days.'
         },
         {
           q: 'Can I cancel anytime?',
-          a: 'Yes - cancel anytime. No long-term contracts, no penalties, no "why are you leaving" calls. Your data remains available for export for 30 days after cancellation.'
+          a: 'Yes - cancel anytime. No long-term contracts, no penalties. Your data remains available for export for 30 days after cancellation.'
         },
         {
-          q: 'Is HM Digital Medical a CMS for polyclinics and practices?',
-          a: 'Yes. HM Digital Medical is a Clinic Management System (CMS) for polyclinics and practices: patient records, scheduling, documents, e-Prescriptions, e-Referrals and e-Findings, and CEZIH integration - all in one cloud system, with no installation or local server.'
+          q: 'Is HM Medical a CMS for polyclinics and practices?',
+          a: 'Yes. HM Medical is a Clinic Management System (CMS): patient records, scheduling, documents and CEZIH e-services in one cloud system, with no installation or local server.'
+        },
+        {
+          q: 'Are the CEZIH e-services included in the price?',
+          a: 'Yes. All CEZIH e-services (e-Finding, MBO, insurance verification, AKD card) are included in every plan - nothing is charged separately.'
+        },
+        {
+          q: 'Do we have to set anything up ourselves?',
+          a: 'No. We set up the system remotely and free of charge: data migration, staff training and CEZIH activation included. The only thing you need is your own health worker ID card for CEZIH login - software cannot replace it.'
         }
       ]
     },
