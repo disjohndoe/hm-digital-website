@@ -193,6 +193,33 @@ const SUCCESS_URL = 'https://hmdigital.hr/en/success';
     </div>
   </section>
 
+  <!-- 4b. Paper invoices and email submission -->
+  <section class="py-16 lg:py-24 bg-slate-50" id="papirnati-racuni">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.paper.title}</h2>
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">{m.paper.subtitle}</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-10">
+        {m.paper.items.map((item) => (
+          <Card padding="lg">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">{item.title}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+          </Card>
+        ))}
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <p class="text-slate-700 leading-relaxed bg-white border-l-4 border-primary-500 p-4 mb-6">{m.paper.note}</p>
+        <p class="text-center text-slate-600">
+          {m.paper.guideTeaser}{' '}
+          <a href="/en/how-to-speed-up-invoice-entry/" class="text-primary-700 underline hover:text-primary-800 font-medium">
+            {m.paper.guideLabel}
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- 5. Before / After -->
   <section class="py-16 lg:py-24 bg-slate-50">
     <div class="container-custom">
@@ -268,6 +295,77 @@ const SUCCESS_URL = 'https://hmdigital.hr/en/success';
             ))}
           </tbody>
         </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6c. Cost calculator -->
+  <section class="py-16 lg:py-24 bg-slate-50" id="kalkulator">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{m.calc.title}</h2>
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">{m.calc.subtitle}</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <Card padding="lg">
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between items-baseline mb-2">
+                <label for="calc-clients" class="text-sm font-medium text-slate-700">{m.calc.clientsLabel}</label>
+                <span id="calc-clients-val" class="text-sm font-bold text-primary-700">40</span>
+              </div>
+              <input type="range" id="calc-clients" min="1" max="200" step="1" value="40" class="w-full accent-primary-600" />
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline mb-2">
+                <label for="calc-invoices" class="text-sm font-medium text-slate-700">{m.calc.invoicesLabel}</label>
+                <span id="calc-invoices-val" class="text-sm font-bold text-primary-700">8</span>
+              </div>
+              <input type="range" id="calc-invoices" min="1" max="50" step="1" value="8" class="w-full accent-primary-600" />
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline mb-2">
+                <label for="calc-minutes" class="text-sm font-medium text-slate-700">{m.calc.minutesLabel}</label>
+                <span id="calc-minutes-val" class="text-sm font-bold text-primary-700">5</span>
+              </div>
+              <input type="range" id="calc-minutes" min="1" max="20" step="1" value="5" class="w-full accent-primary-600" />
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline mb-2">
+                <label for="calc-rate" class="text-sm font-medium text-slate-700">{m.calc.rateLabel}</label>
+                <span id="calc-rate-val" class="text-sm font-bold text-primary-700">15</span>
+              </div>
+              <input type="range" id="calc-rate" min="5" max="60" step="1" value="15" class="w-full accent-primary-600" />
+            </div>
+          </div>
+        </Card>
+        <Card padding="lg" class="bg-white">
+          <h3 class="text-lg font-semibold text-slate-900 mb-4">{m.calc.resultTitle}</h3>
+          <dl class="space-y-3 text-sm">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-600">{m.calc.manualHoursLabel}</dt>
+              <dd id="calc-manual-hours" class="font-semibold text-slate-900">0</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-600">{m.calc.manualCostLabel}</dt>
+              <dd id="calc-manual-cost" class="font-semibold text-slate-900">0</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-600">{m.calc.kontoCostLabel}</dt>
+              <dd id="calc-konto-cost" class="font-semibold text-slate-900">0</dd>
+            </div>
+          </dl>
+          <div class="mt-6 p-4 rounded-lg bg-primary-50 border border-primary-200 text-center">
+            <p class="text-xs uppercase tracking-wider font-semibold text-primary-700 mb-1">{m.calc.savedLabel}</p>
+            <p id="calc-saved" class="text-3xl font-extrabold text-primary-700">0</p>
+            <p id="calc-hours-saved" class="text-sm text-slate-600 mt-1">0</p>
+          </div>
+          <p class="text-xs text-slate-500 mt-4 leading-relaxed">{m.calc.reviewNote}</p>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">{m.calc.note}</p>
+          <div class="mt-6 text-center">
+            <Button href="#demo-form" variant="primary">{m.calc.ctaLabel}</Button>
+          </div>
+        </Card>
       </div>
     </div>
   </section>
@@ -406,5 +504,62 @@ const SUCCESS_URL = 'https://hmdigital.hr/en/success';
     </div>
   </section>
 
+  <script is:inline>
+    (function () {
+      var inputs = {
+        clients: document.getElementById('calc-clients'),
+        invoices: document.getElementById('calc-invoices'),
+        minutes: document.getElementById('calc-minutes'),
+        rate: document.getElementById('calc-rate')
+      };
+      var out = {
+        clientsVal: document.getElementById('calc-clients-val'),
+        invoicesVal: document.getElementById('calc-invoices-val'),
+        minutesVal: document.getElementById('calc-minutes-val'),
+        rateVal: document.getElementById('calc-rate-val'),
+        manualHours: document.getElementById('calc-manual-hours'),
+        manualCost: document.getElementById('calc-manual-cost'),
+        kontoCost: document.getElementById('calc-konto-cost'),
+        saved: document.getElementById('calc-saved'),
+        hoursSaved: document.getElementById('calc-hours-saved')
+      };
+      if (!inputs.clients || !out.saved) return;
+
+      function fmt(n, dec) {
+        return n.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+      }
+
+      function recalc() {
+        var c = parseInt(inputs.clients.value, 10);
+        var i = parseInt(inputs.invoices.value, 10);
+        var min = parseInt(inputs.minutes.value, 10);
+        var rate = parseInt(inputs.rate.value, 10);
+
+        out.clientsVal.textContent = String(c);
+        out.invoicesVal.textContent = String(i);
+        out.minutesVal.textContent = String(min);
+        out.rateVal.textContent = String(rate);
+
+        var total = c * i;
+        var manualHours = (total * min) / 60;
+        var manualCost = manualHours * rate;
+        var reviewHours = total / 60; // ~1 minute of review per invoice
+        var kontoCost = Math.max(c * 10, 50) + reviewHours * rate;
+        var saved = manualCost - kontoCost;
+        var hoursSaved = manualHours - reviewHours;
+
+        out.manualHours.textContent = fmt(manualHours, 1);
+        out.manualCost.textContent = fmt(Math.round(manualCost), 0) + ' EUR';
+        out.kontoCost.textContent = fmt(Math.round(kontoCost), 0) + ' EUR';
+        out.saved.textContent = (saved > 0 ? fmt(Math.round(saved), 0) : '0') + ' EUR';
+        out.hoursSaved.textContent = hoursSaved > 0 ? fmt(hoursSaved, 1) : '0';
+      }
+
+      Object.keys(inputs).forEach(function (k) {
+        inputs[k].addEventListener('input', recalc);
+      });
+      recalc();
+    })();
+  </script>
   <script is:inline src="/js/form-security.js"></script>
 </Layout>

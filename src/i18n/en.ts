@@ -778,6 +778,18 @@ export const en = {
       step2: { title: 'You review and confirm', desc: 'The app has already read the OIB, amount and line items. You just review, correct if needed, and confirm.' },
       step3: { title: 'Export to your program', desc: 'One click and the data is in Synesis, PANTHEON, Minimax, Luceed or SAP - in a format your program already understands.' }
     },
+    paper: {
+      title: 'Paper invoices and submission by email',
+      subtitle: 'The mobile app is the fastest route, but not the only one. Every client gets the channel that suits them - and all invoices land in one place.',
+      items: [
+        { title: 'Client snaps a photo', desc: 'The free app: a photo of the invoice in a second, data read immediately, no emails or attachments.' },
+        { title: 'Submission by email', desc: 'A client without a smartphone (or without an appetite for apps) sends the invoice by email - it lands in the same inbox as the photos, not in a separate folder everyone forgets.' },
+        { title: 'You photograph for the client', desc: 'A paper invoice brought into the office takes you a few seconds to snap - same process, same automatic handling, same export.' }
+      ],
+      note: 'Digitizing paper invoices means your archive is no longer a shelf in the office: every invoice - paper or digital - ends up as a searchable record in the app, ready for export into your program.',
+      guideTeaser: 'More ways to speed up incoming invoice entry, without changing programs:',
+      guideLabel: 'Read the guide'
+    },
     beforeAfter: {
       title: 'Ana, an accountant with 40 clients',
       beforeLabel: 'Before',
@@ -816,6 +828,23 @@ export const en = {
         { label: 'Automatic client reminders', model: 'No', suite: 'Depends on the program', konto: 'Yes, until the invoice arrives' },
         { label: 'Monthly cost', model: 'Your working hours', suite: 'Depends on the program and package', konto: '10 EUR per active client' }
       ]
+    },
+    calc: {
+      title: 'What does typing invoices really cost you?',
+      subtitle: 'Move the sliders to your numbers. The starting values are illustrative - adjust them to your practice.',
+      clientsLabel: 'Active clients',
+      invoicesLabel: 'Invoices per client per month',
+      minutesLabel: 'Minutes of manual entry per invoice',
+      rateLabel: 'Hourly rate (EUR/h)',
+      resultTitle: 'Result',
+      manualHoursLabel: 'Hours of manual entry per month',
+      manualCostLabel: 'Cost of manual entry (EUR/mo)',
+      kontoCostLabel: 'With KontoMatrix (EUR/mo)',
+      reviewNote: 'With KontoMatrix invoices are reviewed and confirmed, roughly 1 minute per invoice, and that time is included in this figure.',
+      savedLabel: 'Monthly saving (EUR/mo)',
+      hoursSavedLabel: 'Hours you stop spending on typing',
+      note: 'KontoMatrix costs 10 EUR per month per active client (50 EUR monthly minimum per office). The calculator is a rough estimate, not an offer.',
+      ctaLabel: 'Show me this in a demo'
     },
     pricing: {
       title: 'A clear price, no surprises',
@@ -1780,8 +1809,8 @@ export const en = {
           a: 'Technically yes, but it is not wise. The slowest step is administrative (the HZZO code), and if everyone starts at the last minute, bottlenecks will appear. Signing itself uses your AKD card, which requires no separate process. Start preparing now.'
         },
         {
-          q: 'Do the fines of up to €13,200 still apply?',
-          a: 'Yes. Fines of up to €13,200 per breach (Art. 36 of the Health Data and Information Act, NN 14/2019) remain in force for institutions that do not comply by the 1 January 2027 deadline.'
+          q: 'Do the fines still apply?',
+          a: 'Yes. After the deadline expires (1 January 2027), monetary fines prescribed by the Health Data and Information Act (NN 14/2019) apply to institutions that have not complied by then.'
         }
       ]
     },
@@ -1800,11 +1829,292 @@ export const en = {
         { label: 'Croatian Medical Chamber (HLK) - "Connecting private healthcare providers to CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
         { label: 'Večernji list, July 2026 - "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
         { label: 'zdravljeija.hr, 14 Jul 2026 - "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'Novi list, 13 Aug 2026 - the deadline was extended twice: from January to July 2026, then to 1 January 2027', url: 'https://www.novilist.hr/novosti/hrvatska/nalazi-privatnika-od-1-sijecnja-u-cezih-u-podaci-pretraga-nedostupni-jos-pola-godine' },
         { label: 'HZZO - from 1 July 2026, CEZIH access only via the new ID card', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
         { label: 'CEZIH - official list of certified application manufacturers (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Glas Slavonije, 20 Jan 2026 - historical context of the original deadline ("by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
         { label: 'Government of Croatia / Ministry of Health, June 2025 - announcement of CEZIH expansion to the private sector', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
         { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' }
+      ]
+    }
+  },
+
+  unosGuide: {
+    meta: {
+      title: 'How to Speed Up Incoming Invoice Entry (Without Changing Programs) | HM Digital',
+      h1: 'How to speed up incoming invoice entry - without changing programs',
+      description: 'A practical guide for accounting offices: 7 steps for faster entry today, plus a comparison of manual entry, in-program OCR and a standalone app.',
+      datePublished: '2026-09-26',
+      dateModified: '2026-09-26',
+      dateModifiedDisplay: 'Updated: 26 September 2026.',
+      authorName: 'Hrvoje Matošević'
+    },
+    breadcrumb: { home: 'Home', current: 'How to speed up invoice entry' },
+    hero: {
+      eyebrow: 'GUIDE FOR ACCOUNTING OFFICES · SEPTEMBER 2026',
+      title: 'How to speed up incoming invoice entry - without changing programs',
+      lead: 'Incoming invoices arrive from every direction: email, Viber, photos in text messages, paper from a client bag. And then someone in your office retypes all of it into the program. This guide is for accounting offices that do not want to change their accounting program - they just want invoices to reach it faster.',
+      promise: 'The advice works with any program: Synesis, PANTHEON, Minimax, Luceed or any other',
+      ctaPrimary: 'Jump to the 7 steps',
+      ctaSecondary: 'Compare entry methods'
+    },
+    toc: {
+      title: 'Contents',
+      items: [
+        { href: '#sazetak', label: 'Summary' },
+        { href: '#zasto-spor', label: 'Why entry is slow' },
+        { href: '#tri-nacina', label: 'Three entry methods' },
+        { href: '#sedam-koraka', label: '7 steps today' },
+        { href: '#kada-automatizirati', label: 'When to automate' },
+        { href: '#e-racuni', label: 'e-Invoices and Fiscalization 2.0' },
+        { href: '#faq', label: 'FAQ' }
+      ]
+    },
+    tldr: {
+      title: 'Summary for the impatient',
+      points: [
+        'The biggest speed-up does not come from typing faster, but from typing less: fix how invoices are collected first, then how they are entered.',
+        'One submission channel and an „submit it now" rule save more time than any tool - and cost nothing.',
+        'You do not need to replace Minimax, PANTHEON, Synesis or Luceed: entry can be sped up by a solution that works alongside your program and exports into it.',
+        'OCR (computers reading invoices) today reliably recognizes the OIB, amount, date and line items - typing disappears, review and confirmation stay.',
+        'B2B e-Invoices are mandatory for VAT registrants from 1 January 2026 - an office that fixes invoice intake now is partly ready for that too.'
+      ]
+    },
+    whySlow: {
+      title: 'Why incoming invoice entry is slow',
+      body1: 'Every invoice in your office passes through three bottlenecks. The first is scatter: invoices arrive by email, Viber, as a photo in a text, by post, or on paper a client brings in. It is not rare for half the time to go to searching, not entering.',
+      body2: 'The second is manual retyping: OIB, amount, date, VAT rate, line items. The same fields, over and over, with the constant risk that one wrong digit breaks a form that then comes back for correction.',
+      body3: 'The third is waiting: invoices that did not arrive on time mean chasing clients by phone and entering everything in a rush at month end, when every minute is more expensive.',
+      mythsTitle: 'What does NOT fix the problem',
+      myths: [
+        { title: 'A new accounting program', desc: 'If the pain is collecting and entering incoming invoices, a new program does not heal it - it just moves it into a costlier environment and a month of migration.' },
+        { title: 'A faster accountant', desc: 'Typing does not scale with human effort. Ten percent faster entry on 300 invoices a month is still 300 manually typed invoices.' },
+        { title: '„We will scan it eventually"', desc: 'The share of paper invoices is falling, but it does not vanish overnight. Meanwhile the archive piles up and client habits harden.' }
+      ]
+    },
+    threeWays: {
+      title: 'Three ways an invoice reaches your program',
+      intro: 'Before the steps, one important comparison. You can get an invoice into your program in three ways, and they are not mutually exclusive - most offices combine manual entry for small invoices with automation for the rest.',
+      headers: { feature: 'Criterion', manual: 'Manual entry', suite: 'In-program OCR', app: 'Standalone app alongside your program' },
+      rows: [
+        { feature: 'Who enters the data', manual: 'You, typing', suite: 'OCR in that program, you confirm', app: 'OCR reads, you confirm' },
+        { feature: 'Works with multiple programs', manual: 'No - you enter into each separately', suite: 'No - only inside that program', app: 'Yes - export to several programs or CSV/XML' },
+        { feature: "Clients' paper invoices", manual: 'You type them', suite: 'Depends on the program', app: 'Client or you snap a photo' },
+        { feature: 'Automatic client reminders', manual: 'No', suite: 'Rarely', app: 'Yes, typically built in' },
+        { feature: 'Additional monthly cost', manual: 'Your working hours', suite: 'Depends on program and package', app: 'Usually per active client' }
+      ],
+      honesty: 'A fair note: some all-in-one programs have their own invoice scanning modules - they work, but only inside that program. If your office runs clients in different programs, or is thinking about switching, a module that works in only one of them is not a solution.'
+    },
+    steps: {
+      title: '7 steps for faster entry - today, without buying anything',
+      intro: 'These are steps you can adopt tomorrow morning. None of them costs anything; together they beat any single tool.',
+      items: [
+        { n: '1', title: 'One submission channel for all clients', desc: 'Set one email address (or one app) through which all clients submit invoices - and nothing else. Every „exception" over the old channel sends you back to searching mailboxes and chats.' },
+        { n: '2', title: 'The „immediately" rule', desc: 'An invoice is submitted the moment it exists, not on the last day of the month. That is easier for the client (the invoice is at hand) and it means a steady flow instead of a month-end spike.' },
+        { n: '3', title: 'A fixed weekly closing cycle', desc: 'For example, Tuesday and Friday mornings for everything that arrived. Short, predictable cycles instead of being interrupted all day.' },
+        { n: '4', title: 'Templates for recurring invoices', desc: 'Phone, rent, licenses, fuel - the same vendors every month, the same fields. If your program has templates or item copying, use them consistently.' },
+        { n: '5', title: 'Check the OIB at intake', desc: 'Verify the OIB before entry, not after posting. One wrong OIB means a form correction and an explanation to the client - the most expensive error per minute, and the easiest to avoid.' },
+        { n: '6', title: 'Review exceptions, not everything', desc: 'Once you have templates or automatic reading, review new vendors and unusual amounts in detail - routine invoices just get confirmed.' },
+        { n: '7', title: 'Measure your entry for one week', desc: 'Invoice count times minutes per invoice, times working days. Without that number you do not know whether you need a tool, or whether the tool helped. The cost calculator on our product page does the math for you.' }
+      ]
+    },
+    whenAutomate: {
+      title: 'When automating entry makes sense',
+      intro: 'Automation does not pay off for every office. The thresholds below are rules of thumb, not law:',
+      signals: [
+        '25-30 or more active clients per month',
+        'Several hundred incoming invoices per month',
+        'An employee whose workday is largely typing other people invoices',
+        'Month-end rushes and overtime',
+        'Recurring correction cycles (wrong OIB, wrong VAT rate)'
+      ],
+      body: 'If you recognize yourself in two or more points, the time saved covers the price of a tool many times over. If not - steps 1-5 above are enough, and they are free.',
+      calcTeaser: 'What typing really costs you: try the cost-per-client calculator.',
+      calcLabel: 'Open the calculator'
+    },
+    ereg: {
+      title: 'e-Invoices and Fiscalization 2.0: what changes at intake',
+      body1: 'The new Fiscalization Act (Narodne novine 89/2025, in Croatian) has been in force since 1 September 2025. From 1 January 2026 VAT registrants exchange e-Invoices in domestic B2B trade, and from 1 January 2027 the obligation extends to those outside the VAT system.',
+      body2: 'For an accounting office this has one practical consequence: incoming invoices increasingly arrive as e-Invoices - structured data, not a PDF to retype. An office that unifies invoice intake now already has that part of the transition solved.',
+      note: 'A structured e-Invoice does not need OCR to „read" it: its fields (OIB, amounts, line items, VAT) arrive as data. The move from retyping to confirming becomes natural.'
+    },
+    faq: {
+      title: 'Frequently asked questions',
+      items: [
+        { q: 'Can I speed up entry without changing my program?', a: 'Yes, on three levels: organizing collection (free, steps 1-5), an OCR module if your program offers one (but it works only inside it), and a standalone entry app that works alongside any program and exports data into it.' },
+        { q: 'From how many invoices a month is automation worth it?', a: 'There is no hard line, but a rule of thumb: if you process several hundred invoices a month, or the hourly cost of the person typing multiplied by hours spent exceeds the price of a tool, automation pays off. The calculator on our product page runs the numbers on yours.' },
+        { q: 'Is OCR reliable for Croatian invoices?', a: 'Modern OCR reliably recognizes the OIB, amount, date and line items of an invoice, including VAT rates. Still, best practice is for the accountant to review and confirm every invoice before posting - automation replaces typing, not responsibility.' },
+        { q: 'What about paper invoices?', a: 'They still exist. That is why any serious intake flow has a channel for them: the client photographs the invoice with a phone or sends it by email, and paper brought into the office is photographed by the staff. All channels end in one place.' },
+        { q: 'How does this work with e-Invoices?', a: 'From 1 January 2026 VAT registrants exchange e-Invoices, and from 1 January 2027 the obligation extends beyond VAT. An e-Invoice is structured data, so it does not need OCR - its fields are taken over directly.' },
+        { q: 'How much does a standalone invoice entry app cost?', a: 'Our KontoMatrix is charged at 10 EUR per month per active client (the one actually sending invoices that month), with a 50 EUR monthly minimum per office and no long-term contract.' }
+      ]
+    },
+    cta: {
+      title: 'Stop typing other people invoices',
+      body: 'KontoMatrix is a standalone app for collecting and entering invoices that works alongside the program you already use: clients snap invoices, the app reads the data, you confirm and export.',
+      primaryLabel: 'See KontoMatrix',
+      primaryHref: '/en/invoice-capture/',
+      secondaryLabel: 'Cost-per-client calculator',
+      secondaryHref: '/en/invoice-capture/#kalkulator'
+    },
+    sources: {
+      title: 'Sources',
+      disclaimer: 'This guide is informational and is not tax or legal advice. For binding information consult the Tax Administration and the applicable regulations.',
+      items: [
+        { label: 'FINA - e-Invoices (official pages, Croatian)', url: 'https://www.fina.hr' },
+        { label: 'Narodne novine - central registry of Croatian legislation (Fiscalization Act, NN 89/2025)', url: 'https://narodne-novine.nn.hr/' }
+      ]
+    }
+  },
+
+  cezihChoose: {
+    meta: {
+      title: 'How to Choose CEZIH Software 2026 - a Guide for Practices | HM Digital',
+      h1: 'How to choose CEZIH software 2026: a practical guide for practices and clinics',
+      description: 'How to choose CEZIH software 2026: checking the official list of certified solutions, 7 criteria, cloud or on-premise, pricing questions and a vendor meeting checklist.',
+      datePublished: '2026-09-26',
+      dateModified: '2026-09-26',
+      dateModifiedDisplay: 'Updated: 26 September 2026.',
+      authorName: 'Hrvoje Matošević'
+    },
+    breadcrumb: { home: 'Home', current: 'How to choose CEZIH software' },
+    hero: {
+      eyebrow: 'CHOOSING SOFTWARE · CEZIH · 2026',
+      title: 'How to choose CEZIH software 2026: a practical guide for practices and clinics',
+      lead: 'The obligation to connect private practices and clinics to CEZIH has a final deadline of 1 January 2027. The official list of certified solutions currently holds 22 of them (as of September 2026) - this guide helps you pick the right one for your practice, in order of importance.',
+      promise: 'Independent criteria - the decision is yours',
+      ctaPrimary: 'Jump to the 7 criteria',
+      ctaSecondary: 'Meeting checklist'
+    },
+    toc: {
+      title: 'Contents',
+      items: [
+        { href: '#sazetak', label: 'Summary' },
+        { href: '#obveza', label: 'What CEZIH requires' },
+        { href: '#popis', label: 'Step 1: the official list' },
+        { href: '#kriteriji', label: '7 criteria' },
+        { href: '#cloud-lokalno', label: 'Cloud or on-premise' },
+        { href: '#cijena', label: 'Price' },
+        { href: '#pogreske', label: 'Common mistakes' },
+        { href: '#checklist', label: 'Question checklist' },
+        { href: '#faq', label: 'FAQ' }
+      ]
+    },
+    tldr: {
+      title: 'Summary for the impatient',
+      points: [
+        'The first non-negotiable criterion: the software must be on the official CEZIH list of certified solutions. Without certification there is no legally valid data exchange through it.',
+        'The final deadline for private practices is 1 January 2027 - but the slowest step is administrative (the institution code from HZZO), so start on time.',
+        'The biggest strategic decision: cloud or on-premise. Cloud removes the server, installation and IT maintenance.',
+        'Ask for the total first-year cost: license + implementation + migration + support. A monthly rate alone is not a price.',
+        'Before signing, test the software on your own workflow: your most common query, your patient, your schedule.'
+      ]
+    },
+    obveza: {
+      title: 'What CEZIH requires - in brief',
+      body1: 'CEZIH is the central system for exchanging health data. The Health Data and Information Act (NN 14/2019, in Croatian) obliges private healthcare providers - contracted and non-contracted - to connect through certified software. The final deadline for private providers is 1 January 2027, and after the deadline statutory fines apply.',
+      body2: 'Since 1 July 2026 access to CEZIH is possible only with the new authorized healthcare worker ID card (the old HZZO smart cards expired on 30 June 2026) - that is a change in how you sign in, not a shift of the connection deadline.',
+      linkText: 'For details on the obligation, deadlines and procedure see the',
+      linkLabel: 'CEZIH guide'
+    },
+    registry: {
+      title: 'Step 1: check certification on the official list',
+      intro: 'CEZIH publishes the list of certified application manufacturers - the only authoritative source on which software may be used for data exchange. The list currently holds 22 solutions (as of September 2026) and is actively expanding.',
+      body: 'The list includes large domestic names (IN2, Ericsson Nikola Tesla, MCS Grupa) and smaller specialized solutions (VegaSoft, DACOM, Adriasoft and others). The size of the vendor is not the criterion - certification is.',
+      verify: 'How to check: open the list at cezih.hr and search for the manufacturer or product name offered to you. If it is not on the list, it is not certified - whatever the presentation says.',
+      ourNote: 'HM Digital (product G500) is on the official list. Verify that claim too - exactly like that.'
+    },
+    criteria: {
+      title: '7 criteria for choosing CEZIH software',
+      intro: 'Certification opens the door; these criteria decide which one you walk through:',
+      items: [
+        { n: '1', title: 'Certification on the official list', desc: 'The condition without which there is no conversation. Without certification there is no legally valid data exchange with CEZIH.' },
+        { n: '2', title: 'Cloud or on-premise', desc: 'On-premise means a server in the practice, installation and maintenance. Cloud means you work from any browser and maintenance is on the vendor.' },
+        { n: '3', title: 'Modules you actually use', desc: 'e-Prescription, e-Referral, e-Finding, e-Booking - by specialty and workflow. Do not pay for modules you will not use; do not miss the ones you will.' },
+        { n: '4', title: 'Sign-in and signing', desc: 'Since 1 July 2026 the authorized healthcare worker ID card is used for access and signing. Check how the software supports signing (card reader, Certilia for remote work).' },
+        { n: '5', title: 'The whole price, not just the license', desc: 'License, implementation, data migration, training, support. Ask for the total first-year cost in writing.' },
+        { n: '6', title: 'Implementation and migration', desc: 'How many days it takes, who does the work, whether the practice must pause, and what happens to existing patient records.' },
+        { n: '7', title: 'Support', desc: 'Support hours, response time, and whether support is included in the license or billed separately. You will feel this the first time something breaks.' }
+      ]
+    },
+    cloudVsLocal: {
+      title: 'Cloud or on-premise: the biggest strategic decision',
+      intro: 'Both approaches can be certified. The difference is who carries the maintenance burden:',
+      headers: { feature: 'Criterion', local: 'On-premise', cloud: 'Cloud' },
+      rows: [
+        { feature: 'Initial investment', local: 'Server or hardware, installation', cloud: 'Usually none (a browser)' },
+        { feature: 'Maintenance and updates', local: 'Yours or an external service', cloud: 'Vendor, automatic' },
+        { feature: 'Working outside the practice', local: 'Hard or via VPN', cloud: 'From any browser' },
+        { feature: 'Backups', local: 'Your responsibility', cloud: 'Usually built in' },
+        { feature: 'Multiple practices (clinic)', local: 'More complex to connect', cloud: 'Naturally collaborative' }
+      ],
+      note: 'On-premise makes sense where the internet is unreliable or institution rules require it. For solo practices and clinics without their own IT staff, cloud is usually simpler and cheaper over two to three years.'
+    },
+    price: {
+      title: 'What CEZIH software costs - and how to ask about price',
+      body1: 'Market prices vary: some vendors publish prices publicly, others only on request, and the final figure depends on modules and user count. Instead of comparing monthly rates, ask one question: „What is my total cost for the first year?"',
+      body2: 'As an example of transparent pricing: our Solo package (one practice, all CEZIH modules) is 79 EUR per month and the Clinic package (multiple practices) is 199 EUR per month, with a 14-day trial.',
+      questionsTitle: 'Pricing questions you need to ask:',
+      questions: [
+        'Is the price per user, per practice or per institution?',
+        'What exactly is included in implementation and migration?',
+        'Is there an annual price increase, and by what rule?',
+        'What do extra users or practices cost later?',
+        'What does exit cost: exporting my data in a standard format?'
+      ]
+    },
+    mistakes: {
+      title: '5 most common mistakes when choosing',
+      items: [
+        { title: 'Buying without checking the list', desc: 'A presentation can call anything „CEZIH compatible" - only the official list at cezih.hr is authoritative.' },
+        { title: 'Deciding on license price alone', desc: 'A cheap license with costly implementation, migration and hourly-billed support ends up more expensive.' },
+        { title: 'Testing on someone else example', desc: 'A demo with an „ideal patient" does not show how the software behaves on your most common query and your schedule.' },
+        { title: 'Ignoring migration', desc: 'Existing records, documents and data must come across. Ask exactly what, how and how long.' },
+        { title: 'Signing without checking support terms', desc: 'Support hours, response time and price live in the contract - not in the presentation.' }
+      ]
+    },
+    checklist: {
+      title: 'Checklist: 10 questions for the first vendor meeting',
+      items: [
+        'Are you on the official CEZIH list of certified solutions - can I verify that today?',
+        'Which CEZIH modules do you support (e-Prescription, e-Referral, e-Finding, e-Booking) and are they all included in the price?',
+        'How exactly do sign-in and signing work (ID card, reader, Certilia)?',
+        'How long does implementation take and who does it?',
+        'What happens to my existing data and how long does migration take?',
+        'What is the total cost of the first year, all in?',
+        'What is support like: hours, response time, is it included?',
+        'Does the software run in the cloud or on-premise, and what if the internet drops?',
+        'Can I test on my own example before signing?',
+        'What does exit look like: in which format do you export my data?'
+      ]
+    },
+    faq: {
+      title: 'Frequently asked questions',
+      items: [
+        { q: 'What is the deadline for connecting a private practice?', a: 'The final deadline for full connection of private providers is 1 January 2027. The slowest step is usually administrative - the HZZO institution code for non-contracted providers - so start there.' },
+        { q: 'Do I have to move to cloud software?', a: 'No. Both on-premise and cloud solutions are certified. Cloud usually means less maintenance and easier work outside the practice; on-premise gives more control with your own server maintenance.' },
+        { q: 'What if my current program is not certified?', a: 'Check whether its manufacturer is in the certification process - the list at cezih.hr is actively expanding. But the deadline binds you, not them: if certification does not arrive in time, plan B is software that is on the list, with data migration.' },
+        { q: 'Is certification a permanent guarantee?', a: 'The list is updated, so check the latest state at cezih.hr before deciding. Certification proves the solution passed the procedure for data exchange with CEZIH - a verifiable fact, unlike marketing badges.' },
+        { q: 'How much does CEZIH software cost in total?', a: 'It depends on modules, user count and the model (cloud or on-premise). Ask for the total first-year cost in writing. For comparison: our Solo package is 79 EUR per month, Clinic is 199 EUR per month.' }
+      ]
+    },
+    cta: {
+      title: 'HM Medical: one of 22 certified solutions',
+      body: 'Cloud software for private practices and clinics with a certified CEZIH integration: e-Finding from one interface. Check us on the official list - then write to us.',
+      primaryLabel: 'See HM Medical',
+      primaryHref: '/en/medical-software/',
+      secondaryLabel: 'Full CEZIH guide',
+      secondaryHref: '/en/cezih-guide/'
+    },
+    sources: {
+      title: 'Sources',
+      disclaimer: 'This guide is informational and is not legal advice. The state of official pages can change - check the sources before deciding.',
+      items: [
+        { label: 'CEZIH - official list of certified application manufacturers', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
+        { label: 'Croatian Medical Chamber - connecting private providers to CEZIH', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Novi list - deadline extended twice, to 1 January 2027 (Croatian)', url: 'https://www.novilist.hr/novosti/hrvatska/nalazi-privatnika-od-1-sijecnja-u-cezih-u-podaci-pretraga-nedostupni-jos-pola-godine' },
+        { label: 'HM Digital - CEZIH guide (deadlines, fines, procedure)', url: 'https://hmdigital.hr/en/cezih-guide/' }
       ]
     }
   }

@@ -778,6 +778,18 @@ export const hr = {
       step2: { title: 'Pregledate i potvrdite', desc: 'Aplikacija je već pročitala OIB, iznos i stavke. Vi samo pregledate, po potrebi ispravite i potvrdite.' },
       step3: { title: 'Izvoz u vaš program', desc: 'Jedan klik i podaci su u Synesis, PANTHEON, Minimax, Luceed ili SAP - u formatu koji vaš program već poznaje.' }
     },
+    paper: {
+      title: 'Papirnati računi i predaja e-poštom',
+      subtitle: 'Mobilna aplikacija je najbrži put, ali nije jedini. Svaki klijent ima kanal koji njemu odgovara - a svi računi završavaju na jednom mjestu.',
+      items: [
+        { title: 'Klijent slika račun mobitelom', desc: 'Besplatna aplikacija: fotografija računa u sekundi, podaci pročitani odmah, bez e-maila i privitaka.' },
+        { title: 'Predaja e-poštom', desc: 'Klijent bez pametnog telefona (ili bez volje za aplikacijom) šalje račun e-mailom - poruka stiže u isti prijamni spremnik kao i fotografije, ne u zasebnu mapu koja se zaboravi.' },
+        { title: 'Vi fotografirate za klijenta', desc: 'Papirnati račun donesen u ured slika vi u nekoliko sekundi - isti postupak, ista automatska obrada, isti izvoz.' }
+      ],
+      note: 'Digitalizacija papirnatih računa znači da arhiva više nije polica u uredu: svaki račun - papirnati ili digitalni - završava kao pretraživ zapis u aplikaciji, spreman za izvoz u vaš program.',
+      guideTeaser: 'Više načina da ubrzate unos primljenih računa, bez zamjene programa:',
+      guideLabel: 'Pročitajte vodič'
+    },
     beforeAfter: {
       title: 'Ana, računovođa s 40 klijenata',
       beforeLabel: 'Prije',
@@ -816,6 +828,23 @@ export const hr = {
         { label: 'Automatski podsjetnici klijentima', model: 'Ne', suite: 'Ovisi o programu', konto: 'Da, dok račun ne stigne' },
         { label: 'Mjesečna cijena', model: 'Vaše radno vrijeme', suite: 'Ovisno o programu i paketu', konto: '10 EUR po aktivnom klijentu' }
       ]
+    },
+    calc: {
+      title: 'Koliko vas tipkanje računa stvarno košta?',
+      subtitle: 'Pomaknite klizače na svoje brojeve. Polazne vrijednosti su ilustrativne - prilagodite ih svojoj praksi.',
+      clientsLabel: 'Aktivnih klijenata',
+      invoicesLabel: 'Računa po klijentu mjesečno',
+      minutesLabel: 'Minuta ručnog unosa po računu',
+      rateLabel: 'Satnica rada (EUR/h)',
+      resultTitle: 'Rezultat',
+      manualHoursLabel: 'Sati ručnog unosa mjesečno',
+      manualCostLabel: 'Trošak ručnog unosa (EUR/mj)',
+      kontoCostLabel: 'Uz KontoMatrix (EUR/mj)',
+      reviewNote: 'Uz KontoMatrix se računi pregledavaju i potvrđuju, okvirno 1 minuta po računu, pa je u tu stavku uključeno i to vrijeme.',
+      savedLabel: 'Mjesečna ušteda (EUR/mj)',
+      hoursSavedLabel: 'Sati koje više ne provodite tipkajući',
+      note: 'KontoMatrix se naplaćuje 10 EUR mjesečno po aktivnom klijentu (mjesečni minimum 50 EUR po uredu). Kalkulator je okvirna procjena, ne ponuda.',
+      ctaLabel: 'Prikažite mi to na prezentaciji'
     },
     pricing: {
       title: 'Jasna cijena, bez iznenađenja',
@@ -1766,8 +1795,8 @@ export const hr = {
           a: 'Tehnički možete, ali nije pametno. Najsporiji je administrativni korak (šifra HZZO-a), a ako svi krenu u zadnji tren, pojavit će se gužve. Za samo potpisivanje koristi se vaša AKD kartica, što ne zahtijeva poseban postupak. Pokrenite pripreme sada.'
         },
         {
-          q: 'Vrijede li i dalje kazne do €13.200?',
-          a: 'Da. Kazne do €13.200 po prekršaju (čl. 36 Zakona o podacima i informacijama u zdravstvu, NN 14/2019) ostaju u primjeni za ustanove koje se do roka 1. siječnja 2027. ne usklade.'
+          q: 'Vrijede li i dalje kazne?',
+          a: 'Da. Nakon isteka roka (1. siječnja 2027.) primjenjuju se novčane kazne propisane Zakonom o podacima i informacijama u zdravstvu (NN 14/2019) za ustanove koje se do tada ne usklade.'
         }
       ]
     },
@@ -1786,11 +1815,292 @@ export const hr = {
         { label: 'Hrvatska liječnička komora - "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
         { label: 'Večernji list, srpanj 2026 - "...prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
         { label: 'zdravljeija.hr, 14.07.2026 - "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'Novi list, 13.08.2026 - rok produljen dvaput: sa siječnja na srpanj 2026., zatim na 1. siječnja 2027.', url: 'https://www.novilist.hr/novosti/hrvatska/nalazi-privatnika-od-1-sijecnja-u-cezih-u-podaci-pretraga-nedostupni-jos-pola-godine' },
         { label: 'HZZO - od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
         { label: 'CEZIH - službeni popis certificiranih proizvođača aplikacija (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Glas Slavonije, 20.01.2026. - povijesni kontekst prvotnog roka ("do svibnja")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
         { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. - najava širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
         { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' }
+      ]
+    }
+  },
+
+  unosGuide: {
+    meta: {
+      title: 'Kako Ubrzati Unos Primljenih Računa (Bez Zamjene Programa) | HM Digital',
+      h1: 'Kako ubrzati unos primljenih računa - bez zamjene programa',
+      description: 'Praktični vodič za računovodstvene urede: 7 koraka za brži unos odmah, usporedba ručnog unosa, OCR-a u programu i samostalne aplikacije - bez mijenjanja programa.',
+      datePublished: '2026-09-26',
+      dateModified: '2026-09-26',
+      dateModifiedDisplay: 'Ažurirano: 26. rujna 2026.',
+      authorName: 'Hrvoje Matošević'
+    },
+    breadcrumb: { home: 'Početna', current: 'Kako ubrzati unos primljenih računa' },
+    hero: {
+      eyebrow: 'VODIČ ZA RAČUNOVODSTVENE UREDE · RUJAN 2026',
+      title: 'Kako ubrzati unos primljenih računa - bez zamjene programa',
+      lead: 'Primljeni računi stižu iz svih smjerova: e-pošta, Viber, fotografije u SMS-u, papir iz torbice klijenta. A onda netko u vašem uredu sve to pretipkava u program. Ovaj vodič je za računovodstvene urede koje ne žele mijenjati računovodstveni program - samo žele da računi u njega dolaze brže.',
+      promise: 'Savjeti rade uz svaki program: Synesis, PANTHEON, Minimax, Luceed ili bilo koji drugi',
+      ctaPrimary: 'Skočite na 7 koraka',
+      ctaSecondary: 'Usporedba načina unosa'
+    },
+    toc: {
+      title: 'Sadržaj',
+      items: [
+        { href: '#sazetak', label: 'Sažetak' },
+        { href: '#zasto-spor', label: 'Zašto je unos spor' },
+        { href: '#tri-nacina', label: 'Tri načina unosa' },
+        { href: '#sedam-koraka', label: '7 koraka odmah' },
+        { href: '#kada-automatizirati', label: 'Kada automatizirati' },
+        { href: '#e-racuni', label: 'e-Računi i Fiskalizacija 2.0' },
+        { href: '#faq', label: 'Česta pitanja' }
+      ]
+    },
+    tldr: {
+      title: 'Sažetak za nervozne',
+      points: [
+        'Najveće ubrzanje unosa ne dolazi od bržeg tipkanja, nego od manje tipkanja: prvo sredite prikupljanje računa, zatim način unosa.',
+        'Jedan kanal predaje i pravilo „račun se predaje odmah" skraćuju više vremena nego bilo koji alat - i ne koštaju ništa.',
+        'Ne morate mijenjati Minimax, PANTHEON, Synesis niti Luceed: unos se može ubrzati rješenjem koje radi uz postojeći program i izvozi u njega.',
+        'OCR (čitanje računa računalom) danas pouzdano prepoznaje OIB, iznos, datum i stavke - tipkanje nestaje, pregled i potvrda ostaju.',
+        'e-Računi između poduzeća obvezni su za PDV obveznike od 1. siječnja 2026. - tko sredi prijam računa sada, dijelom je pripremljen i za to.'
+      ]
+    },
+    whySlow: {
+      title: 'Zašto je unos primljenih računa spor',
+      body1: 'Svaki račun u vašem uredu prolazi kroz tri uska grla. Prvo je raspršenost: računi stižu e-poštom, Viberom, kao fotografija u SMS-u, poštom ili u papirnatom obliku koji klijent donese u ured. Nije rijetkost da se pola vremena potroši na traženje, a ne na unos.',
+      body2: 'Drugo je ručno pretipkavanje: OIB, iznos, datum, PDV stopa, stavke. Uvijek ista polja, uvijek iznova, uz stalni rizik da jedna kriva znamenka pokvari obrazac koji se onda vraća na ispravak.',
+      body3: 'Treće je čekanje: računi koji nisu stigli na vrijeme znače telefonsko ganjanje klijenata i unos požurno, na kraju mjeseca, kad je svaka minuta skuplja.',
+      mythsTitle: 'Što NE rješava problem',
+      myths: [
+        { title: 'Novi računovodstveni program', desc: 'Ako je bol u prikupljanju i unosu primljenih računa, novi program tu bol ne liječi - samo ju seli u skuplje okruženje i mjesec dana migracije.' },
+        { title: 'Brži računovođa', desc: 'Tipkanje se ne skalira ljudskim trudom. Deset posto brži unos kod 300 računa mjesečno i dalje je 300 ručno unesenih računa.' },
+        { title: '„Skenirat ćemo kad-tad"', desc: 'Udio papirnatih računa pada, ali ne nestaje preko noći. U međuvremenu se arhiva gomila, a navike klijenata krute.' }
+      ]
+    },
+    threeWays: {
+      title: 'Tri načina da račun dođe u program',
+      intro: 'Prije koraka, bitna usporedba. Račun u program možete dovesti na tri načina i oni se ne isključuju - većina ureda kombinira ručni unos za sitne račune i automatizaciju za ostalo.',
+      headers: { feature: 'Kriterij', manual: 'Ručni unos', suite: 'OCR u programu', app: 'Samostalna aplikacija uz program' },
+      rows: [
+        { feature: 'Tko unosi podatke', manual: 'Vi, tipkajući', suite: 'OCR u tom programu, vi potvrđujete', app: 'OCR čita, vi potvrđujete' },
+        { feature: 'Radi li uz više programa', manual: 'Ne - unosite u svaki program posebno', suite: 'Ne - samo unutar tog programa', app: 'Da - izvoz u više programa ili CSV/XML' },
+        { feature: 'Papirnati računi klijenata', manual: 'Vi ih tipkate', suite: 'Ovisi o programu', app: 'Klijent ili vi ih slikate mobitelom' },
+        { feature: 'Automatski podsjetnici klijentima', manual: 'Ne', suite: 'Rijetko', app: 'Da, tipično ugrađeno' },
+        { feature: 'Dodatni mjesečni trošak', manual: 'Vaše radno vrijeme', suite: 'Ovisi o programu i paketu', app: 'U pravilu po aktivnom klijentu' }
+      ],
+      honesty: 'Poštena napomena: i neki cijeloviti programi imaju vlastite module za skeniranje računa - oni rade, ali samo unutar tog programa. Ako vaš ured vodi klijente u različitim programima, ili razmišljate o promjeni programa, modul koji radi samo u jednom od njih nije rješenje.'
+    },
+    steps: {
+      title: '7 koraka za brži unos - odmah, bez ikakve kupnje',
+      intro: 'Ovo su koraci koje možete uvesti sutra ujutro. Nijedan ne košta ništa; zajedno donose više od bilo kojeg pojedinog alata.',
+      items: [
+        { n: '1', title: 'Jedan kanal predaje za sve klijente', desc: 'Odredite jednu e-mail adresu (ili jednu aplikaciju) na koju svi klijenti predaju račune - i ništa drugo. Svaki „izuzetak" po starom kanalu vraća vas na traženje po mailovima i porukama.' },
+        { n: '2', title: 'Pravilo „odmah"', desc: 'Račun se predaje čim nastane, ne zadnji dan u mjesecu. Klijentu je to lakše (račun mu je pri ruci), a vama znači ravnomjerni umjesto krajomjesečnog špica.' },
+        { n: '3', title: 'Fiksni tjedni ciklus zatvaranja', desc: 'Npr. utorkom i petkom ujutro obrada svega što je stiglo. Kratki, predvidivi ciklusi umjesto cijelodnevnog prekidanja s drugim poslom.' },
+        { n: '4', title: 'Predlošci za ponavljajuće račune', desc: 'Telefonski, stanarina, licence, gorivo - isti dobavljači svaki mjesec, ista polja. Ako vaš program ima predloške ili kopiranje stavki, koristite ih dosljedno.' },
+        { n: '5', title: 'Provjera OIB-a na ulazu', desc: 'OIB provjerite prije unosa, ne nakon knjiženja. Jedan pogrešan OIB znači ispravak obrasca i objašnjavanje klijentu - najskuplja pogreška po minuti, a najlakše izbjegljiva.' },
+        { n: '6', title: 'Pregledavajte iznimke, ne sve redom', desc: 'Kad jednom imate predloške ili automatsko čitanje, detaljno pregledavajte nove dobavljače i neobične iznose - uobičajene račune samo potvrdite.' },
+        { n: '7', title: 'Izmjerite svoj unos jedan tjedan', desc: 'Broj računa puta minute po računu, puta radnih dana. Bez tog broja ne znate ni trebate li alat, ni je li alat pomogao. Kalkulator troška po klijentu na našoj stranici proizvoda računa to umjesto vas.' }
+      ]
+    },
+    whenAutomate: {
+      title: 'Kada ima smisla automatizirati unos',
+      intro: 'Automatizacija se ne isplati svakom uredu. Granične vrijednosti su pravilo palca, ne zakon:',
+      signals: [
+        '25-30 ili više aktivnih klijenata mjesečno',
+        'Nekoliko stotina primljenih računa mjesečno',
+        'Zaposlenik čiji je dio radnog dana uglavnom tipkanje tuđih računa',
+        'Krajem mjeseca se radi požurno i preko radnog vremena',
+        'Ponavljajući ciklusi ispravaka (krivi OIB, kriva PDV stopa)'
+      ],
+      body: 'Ako se prepoznajete u dvije ili više točaka, ušteda vremena višestruko pokriva cijenu alata. Ako se ne prepoznajete - koraci 1-5 gore su vam dovoljni i besplatni su.',
+      calcTeaser: 'Koliko vas tipkanje stvarno košta, izračunajte u kalkulatoru troška po klijentu.',
+      calcLabel: 'Otvorite kalkulator'
+    },
+    ereg: {
+      title: 'e-Računi i Fiskalizacija 2.0: što se mijenja u prijemu',
+      body1: 'Novi Zakon o fiskalizaciji (Narodne novine 89/2025) na snazi je od 1. rujna 2025. Od 1. siječnja 2026. obveznici u sustavu PDV-a međusobno razmjenjuju e-Račune u tuzemnom prometu, a od 1. siječnja 2027. obveza se proširuje i na one izvan sustava PDV-a.',
+      body2: 'Za računovodstveni ured to ima jednu praktičnu posljedicu: primljeni računi sve češće stižu kao e-Račun - strukturiran podatak, a ne PDF koji treba pretipkati. Tko već sada sredi jedinstveni prijam i unos računa, taj dio prijelaza ima riješen unaprijed.',
+      note: 'Strukturiran e-Račun ne treba „čitati" OCR-om: njegova polja (OIB, iznosi, stavke, PDV) dolaze kao podaci. Prijelaz s pretipkavanja na potvrđivanje time postaje prirodan.'
+    },
+    faq: {
+      title: 'Česta pitanja',
+      items: [
+        { q: 'Mogu li ubrzati unos a da ne mijenjam program?', a: 'Da, na tri razine: organizacija prikupljanja (besplatno, koraci 1-5), OCR modul ako ga vaš program nudi (ali on radi samo unutar njega) i samostalna aplikacija za unos koja radi uz bilo koji program i izvozi podatke u njega.' },
+        { q: 'Od koliko računa mjesečno isplati se automatizacija?', a: 'Nema čvrste granice, ali pravilo palca: ako mjesečno obradite nekoliko stotina računa ili vam satnica zaposlenika koji tipka, pomnožena s utrošenim satima, premašuje cijenu alata - automatizacija se isplati. Kalkulator na našoj stranici proizvoda računa to na vašim brojevima.' },
+        { q: 'Je li OCR pouzdan za hrvatske račune?', a: 'Suvremeni OCR pouzdano prepoznaje OIB, iznos, datum i stavke računa, uključujući PDV stope. Ipak, najbolja praksa je da računovođa svaki račun pregleda i potvrdi prije knjiženja - automatizacija zamjenjuje tipkanje, ne odgovornost.' },
+        { q: 'Što je s papirnatim računima?', a: 'Postoje i dalje. Zato svaki ozbiljan tijek predaje računa ima i kanal za njih: klijent fotografira račun mobitelom ili ga pošalje e-poštom, a papir donesen u ured fotografira osoblje ureda. Svi kanali završavaju na jednom mjestu.' },
+        { q: 'Kako ovo radi s e-Računima?', a: 'Od 1. siječnja 2026. PDV obveznici međusobno razmjenjuju e-Račune, a od 1. siječnja 2027. obveza se širi izvan PDV-a. e-Račun je strukturiran podatak pa ga nije potrebno čitati OCR-om - njegova polja se preuzimaju izravno.' },
+        { q: 'Koliko košta samostalna aplikacija za unos računa?', a: 'Naš KontoMatrix naplaćuje se 10 EUR mjesečno po aktivnom klijentu (onome koji taj mjesec stvarno šalje račune), uz mjesečni minimum 50 EUR po uredu, bez dugoročnog ugovora.' }
+      ]
+    },
+    cta: {
+      title: 'Prestanite tipkati tuđe račune',
+      body: 'KontoMatrix je samostalna aplikacija za prikupljanje i unos računa koja radi uz program koji već koristite: klijenti slikaju račune, aplikacija pročita podatke, vi potvrđujete i izvozite.',
+      primaryLabel: 'Pogledajte KontoMatrix',
+      primaryHref: '/unos-racuna/',
+      secondaryLabel: 'Kalkulator troška po klijentu',
+      secondaryHref: '/unos-racuna/#kalkulator'
+    },
+    sources: {
+      title: 'Izvori',
+      disclaimer: 'Ovaj vodič je informativan i ne predstavlja porezni ni pravni savjet. Za obvezujuće informacije konzultirajte Poreznu upravu i nadležne propise.',
+      items: [
+        { label: 'FINA - e-Računi (službene stranice)', url: 'https://www.fina.hr' },
+        { label: 'Narodne novine - središnji registar propisa (Zakon o fiskalizaciji, NN 89/2025)', url: 'https://narodne-novine.nn.hr/' }
+      ]
+    }
+  },
+
+  cezihChoose: {
+    meta: {
+      title: 'Kako Odabrati CEZIH Softver 2026 - Vodič za Ordinacije | HM Digital',
+      h1: 'Kako odabrati CEZIH softver 2026: praktični vodič za ordinacije i poliklinike',
+      description: 'Kako odabrati CEZIH softver 2026: provjera na službenom popisu ovjerenih rješenja, 7 kriterija, cloud ili lokalni server, pitanja o cijeni i checklist za sastanak s dobavljačem.',
+      datePublished: '2026-09-26',
+      dateModified: '2026-09-26',
+      dateModifiedDisplay: 'Ažurirano: 26. rujna 2026.',
+      authorName: 'Hrvoje Matošević'
+    },
+    breadcrumb: { home: 'Početna', current: 'Kako odabrati CEZIH softver' },
+    hero: {
+      eyebrow: 'ODABIR SOFTVERA · CEZIH · 2026',
+      title: 'Kako odabrati CEZIH softver 2026: praktični vodič za ordinacije i poliklinike',
+      lead: 'Obveza povezivanja privatnih ordinacija i poliklinika na CEZIH ima krajnji rok 1. siječnja 2027. Na službenom popisu ovjerenih rješenja trenutno ih je 22 (stanje: rujan 2026.) - ovaj vodič pomaže vam odabrati pravi za vašu ordinaciju, redom po važnosti.',
+      promise: 'Neovisni kriteriji - odluka je vaša',
+      ctaPrimary: 'Skočite na 7 kriterija',
+      ctaSecondary: 'Checklist za sastanak'
+    },
+    toc: {
+      title: 'Sadržaj',
+      items: [
+        { href: '#sazetak', label: 'Sažetak' },
+        { href: '#obveza', label: 'Što CEZIH obvezuje' },
+        { href: '#popis', label: 'Korak 1: službeni popis' },
+        { href: '#kriteriji', label: '7 kriterija' },
+        { href: '#cloud-lokalno', label: 'Cloud ili lokalno' },
+        { href: '#cijena', label: 'Cijena' },
+        { href: '#pogreske', label: 'Česte pogreške' },
+        { href: '#checklist', label: 'Checklist pitanja' },
+        { href: '#faq', label: 'Česta pitanja' }
+      ]
+    },
+    tldr: {
+      title: 'Sažetak za nervozne',
+      points: [
+        'Prvi i nepregovarljivi kriterij: softver mora biti na službenom CEZIH popisu ovjerenih rješenja. Bez ovjere kroz njega nije moguća zakonski valjana razmjena podataka.',
+        'Krajnji rok za privatne ordinacije je 1. siječnja 2027. - ali najsporiji korak je administrativni (šifra zdravstvene ustanove kod HZZO-a), pa krenite na vrijeme.',
+        'Najveća strateška odluka: cloud ili lokalna instalacija. Cloud uklanja server, instalaciju i IT održavanje.',
+        'Tražite ukupnu cijenu prve godine: licenca, implementacija, migracija, podrška. Samo mjesečna stopa nije cijena.',
+        'Prije potpisa testirajte softver na svom tijeku rada: svoj najčešći upit, svog pacijenta, svoj raspored.'
+      ]
+    },
+    obveza: {
+      title: 'Što CEZIH obvezuje - u kratkim crtama',
+      body1: 'CEZIH je središnji sustav za razmjenu zdravstvenih podataka. Zakon o podacima i informacijama u zdravstvu (NN 14/2019) obvezuje privatne pružatelje zdravstvenih usluga - ugovorne i neugovorne - da se povežu na njega putem ovjerenog softvera. Krajnji rok za potpuno povezivanje privatnika je 1. siječnja 2027., a nakon roka primjenjuju se zakonom propisane novčane kazne.',
+      body2: 'Od 1. srpnja 2026. pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika (stare HZZO pametne kartice istekle su 30. lipnja 2026.) - to je promjena načina prijave, ne pomak roka za povezivanje.',
+      linkText: 'Detaljno o obvezi, rokovima i postupku pročitajte u',
+      linkLabel: 'CEZIH vodiču'
+    },
+    registry: {
+      title: 'Korak 1: provjerite ovjeru na službenom popisu',
+      intro: 'CEZIH objavljuje popis certificiranih proizvođača aplikacija - to je jedini mjerodavni izvor o tome koji smijete rabiti za razmjenu podataka. Na popisu je trenutno 22 rješenja (stanje: rujan 2026.), a popis se aktivno proširuje.',
+      body: 'Na popisu su i velika domaća imena (IN2, Ericsson Nikola Tesla, MCS Grupa) i specijalizirana manja rješenja (VegaSoft, DACOM, Adriasoft i drugi). Veličina proizvođača nije kriterij - ovjera jest.',
+      verify: 'Kako provjeriti: otvorite popis na cezih.hr i potražite naziv proizvođača ili proizvoda koji vam nudi softver. Ako ga nema na popisu, nije ovjeren - bez obzira na to što piše u prezentaciji.',
+      ourNote: 'HM Digital (proizvod G500) nalazi se na službenom popisu. I tu tvrdnju provjerite - upravo tako.'
+    },
+    criteria: {
+      title: '7 kriterija za odabir CEZIH softvera',
+      intro: 'Ovjera otvara vrata, a ovi kriteriji odlučuju kroz koja ćete ući:',
+      items: [
+        { n: '1', title: 'Ovjera na službenom popisu', desc: 'Uvjet bez kojeg nema razgovora. Bez ovjere nema zakonski valjane razmjene podataka s CEZIH-om.' },
+        { n: '2', title: 'Cloud ili lokalna instalacija', desc: 'Lokalno znači server u ordinaciji, instalaciju i održavanje. Cloud znači da radite iz svakog preglednika, a održavanje je na proizvođaču.' },
+        { n: '3', title: 'Moduli koje stvarno rabite', desc: 'e-Recept, e-Uputnica, e-Nalaz, eNaručivanje - po specijalnosti i načinu rada. Ne plaćajte module koje nećete koristiti, ne propustite one koje hoćete.' },
+        { n: '4', title: 'Način prijave i potpisa', desc: 'Od 1. srpnja 2026. za pristup i potpis rabi se iskaznica ovlaštenog zdravstvenog radnika. Provjerite kako softver podržava potpisivanje (čitač kartice, Certilia za udaljeni rad).' },
+        { n: '5', title: 'Cijela cijena, ne samo licenca', desc: 'Licenca, implementacija, migracija podataka, obuka, podrška. Tražite ukupan trošak prve godine u pisanom obliku.' },
+        { n: '6', title: 'Implementacija i migracija', desc: 'Koliko dana traje, tko je izvodi, treba li prekid rada ordinacije i što se događa s postojećim kartonima pacijenata.' },
+        { n: '7', title: 'Podrška', desc: 'Radno vrijeme podrške, vrijeme odaziva i je li podrška u cijeni licence ili se naplaćuje posebno. Ovo ćete osjetiti prvi put kad nešto zapne.' }
+      ]
+    },
+    cloudVsLocal: {
+      title: 'Cloud ili lokalni server: najveća strateška odluka',
+      intro: 'Oba pristupa mogu biti ovjerena. Razlika je u tome tko nosi teret održavanja:',
+      headers: { feature: 'Kriterij', local: 'Lokalna instalacija', cloud: 'Cloud' },
+      rows: [
+        { feature: 'Početna investicija', local: 'Server ili računalo, instalacija', cloud: 'U pravilu nema (preglednik)' },
+        { feature: 'Održavanje i ažuriranja', local: 'Vaše ili vanjski servis', cloud: 'Proizvođač, automatski' },
+        { feature: 'Rad izvan ordinacije', local: 'Teško ili uz VPN', cloud: 'Iz svakog preglednika' },
+        { feature: 'Rezervne kopije', local: 'Vaša odgovornost', cloud: 'U pravilu ugrađeno' },
+        { feature: 'Više ordinacija (poliklinika)', local: 'Složenije povezivanje', cloud: 'Prirodno zajednički rad' }
+      ],
+      note: 'Lokalna instalacija ima smisla gdje je internet nepouzdan ili gdje pravila ustanove to zahtijevaju. Za solo ordinacije i poliklinike bez vlastitog IT osoblja cloud je u pravilu jednostavniji i jeftiniji na dvije-tri godine.'
+    },
+    price: {
+      title: 'Koliko košta CEZIH softver - i kako pitati za cijenu',
+      body1: 'Cijene na tržištu su različite: neki proizvođači objavljuju cijene javno, drugi tek na upit, a konačni iznos ovisi o modulima i broju korisnika. Umjesto uspoređivanja mjesečnih stopa, pitajte jedno pitanje: „Koliki je moj ukupni trošak prve godine?"',
+      body2: 'Kao primjer transparentnog oblikovanja cijene: naš paket Solo (jedna ordinacija, svi CEZIH moduli) iznosi 79 EUR mjesečno, a paket Poliklinika (više ordinacija) 199 EUR mjesečno, uz probni period od 14 dana.',
+      questionsTitle: 'Pitanja o cijeni koja trebate postaviti:',
+      questions: [
+        'Je li cijena po korisniku, po ordinaciji ili po ustanovi?',
+        'Što sve ulazi u cijenu implementacije i migracije?',
+        'Postoji li godišnje podizanje cijene i po kojem pravilu?',
+        'Koliki je trošak dodatnih korisnika ili ordinacija kasnije?',
+        'Koliko košta izlazak: izvoz podataka u standardnom formatu?'
+      ]
+    },
+    mistakes: {
+      title: '5 najčešćih pogrešaka pri odabiru',
+      items: [
+        { title: 'Kupnja bez provjere na popisu', desc: 'Prezentacija može zvati sve „CEZIH kompatibilnim" - mjerodavan je samo službeni popis na cezih.hr.' },
+        { title: 'Odluka samo po cijeni licence', desc: 'Jeftina licenca uz skupu implementaciju, migraciju i podršku koja se naplaćuje po satu na kraju je skuplja.' },
+        { title: 'Testiranje na tuđem primjeru', desc: 'Demo s „idealnim pacijentom" ne pokazuje kako se softver ponaša s vašim najčešćim upitom i vašim rasporedom.' },
+        { title: 'Zanemarena migracija', desc: 'Postojeći kartoni, dokumenti i podaci moraju preći. Pitajte točno što, kako i koliko traje.' },
+        { title: 'Potpis bez provjere uvjeta podrške', desc: 'Radno vrijeme, vrijeme odaziva i cijena podrške stoje u ugovoru - ne u prezentaciji.' }
+      ]
+    },
+    checklist: {
+      title: 'Checklist: 10 pitanja za prvi sastanak s dobavljačem',
+      items: [
+        'Jeste li na službenom CEZIH popisu ovjerenih rješenja - mogu li to provjeriti danas?',
+        'Koje CEZIH module podržavate (e-Recept, e-Uputnica, e-Nalaz, eNaručivanje) i jesu li svi u cijeni?',
+        'Kako točno radi prijava i potpisivanje (iskaznica, čitač, Certilia)?',
+        'Koliko traje implementacija i tko je izvodi?',
+        'Što se događa s mojim postojećim podacima i koliko traje migracija?',
+        'Koliki je ukupni trošak prve godine, sveukupno?',
+        'Kakva je podrška: radno vrijeme, vrijeme odaziva, je li u cijeni?',
+        'Radi li softver u cloudu ili lokalno i što ako internet padne?',
+        'Mogu li testirati na svom primjeru prije potpisa?',
+        'Kako izgleda izlazak: u kojem formatu izvozite moje podatke?'
+      ]
+    },
+    faq: {
+      title: 'Česta pitanja',
+      items: [
+        { q: 'Koji je rok za povezivanje privatne ordinacije?', a: 'Krajnji rok za potpuno povezivanje privatnih pružatelja je 1. siječnja 2027. Najsporiji korak je obično administrativni - šifra zdravstvene ustanove kod HZZO-a za neugovorne - pa ga pokrenite prvi.' },
+        { q: 'Moram li prijeći na cloud softver?', a: 'Ne. Ovjerena su i lokalna i cloud rješenja. Cloud u pravilu znači manje održavanja i lakši rad izvan ordinacije; lokalna instalacija daje veću kontrolu uz vlastito održavanje servera.' },
+        { q: 'Što ako moj sadašnji program nije ovjeren?', a: 'Provjerite je li njegov proizvođač u postupku ovjere - popis na cezih.hr aktivno se proširuje. Ali rok vrijedi za vas, ne za njega: ako ovjera ne stigne na vrijeme, plan B je softver koji jest na popisu, uz migraciju podataka.' },
+        { q: 'Je li ovjera trajna garancija?', a: 'Popis se ažurira pa provjerite najnovije stanje na cezih.hr prije odluke. Ovjera je dokaz da je rješenje prošlo postupak provjere za razmjenu podataka s CEZIH-om - to je provjerljiva činjenica, za razliku od marketinških natpisa.' },
+        { q: 'Koliko ukupno košta CEZIH softver?', a: 'Ovisi o modulima, broju korisnika i modelu (cloud ili lokalno). Tražite ukupni trošak prve godine u pisanom obliku. Radi usporedbe: naš paket Solo je 79 EUR mjesečno, Poliklinika 199 EUR mjesečno.' }
+      ]
+    },
+    cta: {
+      title: 'HM Medical: jedno od 22 ovjerena rješenja',
+      body: 'Cloud softver za privatne ordinacije i poliklinike s ovjerenom CEZIH integracijom: e-Nalaz iz jednog sučelja. Provjerite nas na službenom popisu - i onda nam pišite.',
+      primaryLabel: 'Pogledajte HM Medical',
+      primaryHref: '/medicinski-softver/',
+      secondaryLabel: 'Cjeloviti CEZIH vodič',
+      secondaryHref: '/cezih-vodic/'
+    },
+    sources: {
+      title: 'Izvori',
+      disclaimer: 'Ovaj vodič je informativan i ne predstavlja pravni savjet. Stanje na službenim stranicama može se promijeniti - prije odluke provjerite izvore.',
+      items: [
+        { label: 'CEZIH - službeni popis certificiranih proizvođača aplikacija', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
+        { label: 'Hrvatska liječnička komora - povezivanje privatnih pružatelja na CEZIH', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Novi list - rok produljen dvaput, do 1. siječnja 2027.', url: 'https://www.novilist.hr/novosti/hrvatska/nalazi-privatnika-od-1-sijecnja-u-cezih-u-podaci-pretraga-nedostupni-jos-pola-godine' },
+        { label: 'HM Digital - CEZIH vodič (rokovi, kazne, postupak)', url: 'https://hmdigital.hr/cezih-vodic/' }
       ]
     }
   }

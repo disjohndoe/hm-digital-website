@@ -19,6 +19,8 @@ export const routes = {
   "/medicinski-softver": { hr: "/medicinski-softver", en: "/en/medical-software" },
   "/unos-racuna": { hr: "/unos-racuna", en: "/en/invoice-capture" },
   "/cezih-vodic": { hr: "/cezih-vodic", en: "/en/cezih-guide" },
+  "/kako-ubrzati-unos-primljenih-racuna": { hr: "/kako-ubrzati-unos-primljenih-racuna", en: "/en/how-to-speed-up-invoice-entry" },
+  "/kako-odabrati-cezih-softver": { hr: "/kako-odabrati-cezih-softver", en: "/en/how-to-choose-cezih-software" },
   "/cezih-rok-za-privatne-ordinacije": { hr: "/cezih-rok-za-privatne-ordinacije", en: "/en/cezih-deadline-private-practices" },
   "/pravila-privatnosti": { hr: "/pravila-privatnosti", en: "/en/privacy-policy" },
   "/kolacici": { hr: "/kolacici", en: "/en/cookie-policy" },
