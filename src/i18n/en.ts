@@ -308,7 +308,6 @@ export const en = {
     tagline: 'Custom software development, automation and digitalization',
     company: 'Company',
     solutions: 'Solutions',
-    digitizationLink: 'Document digitization',
     medicalLink: 'CEZIH Software for Practices and Polyclinics',
     kontomatrixLink: 'KontoMatrix - invoice capture and scanning',
     cezihGuide: 'CEZIH Guide',
@@ -945,7 +944,7 @@ export const en = {
       },
       dental: {
         title: 'Tailored to your specialty',
-        desc: 'Configure the system to your specialty\'s needs - general medicine, dentistry, physical therapy, dermatology and more. Flexible templates for every practice type.'
+        desc: 'Whether you run a dental, general medicine, physical therapy, or dermatology practice - the program is agile: if you already create documentation in your own workflow, you do not have to change it. Simply attach the documents you create to the patient record in the program.'
       }
     },
     features: {
@@ -1145,7 +1144,7 @@ export const en = {
         },
         {
           q: 'Is there CEZIH software for dentists?',
-          a: 'Yes - HM Digital supports dental practices with templates, code lists, and workflows tailored to dental practice. The system includes full CEZIH integration (e-Findings, e-Referrals, e-Prescriptions), patient records and scheduling. The same applies to general medicine, physical therapy, dermatology and other specialties.'
+          a: 'Yes - HM Digital supports dental practices. The system includes full CEZIH integration (e-Findings, e-Referrals, e-Prescriptions), patient records and scheduling. The program is agile: if you create documentation in your own workflow, you keep it - you simply attach the created documents in the program. The same applies to general medicine, physical therapy, dermatology and other specialties.'
         },
         {
           q: 'What is CEZIH and how does it work?',
@@ -1173,7 +1172,7 @@ export const en = {
         },
         {
           q: 'Which specialties is the system designed for?',
-          a: 'All of them. One system for every private healthcare institution - from dentistry to physical therapy, dermatology, gynecology, ophthalmology, and general medicine. Each practice customizes its own procedure catalog, record types, and appointment settings. No specialty restrictions.'
+          a: 'All of them. One system for every private healthcare institution - from dentistry to physical therapy, dermatology, gynecology, ophthalmology, and general medicine. The program is agile: you can keep your own documentation workflow and simply attach the documents you create in the program. No specialty restrictions.'
         },
         {
           q: 'Can I migrate data from my existing system?',
@@ -1249,14 +1248,16 @@ export const en = {
       title: 'CEZIH for Private Practices in Croatia: 2027 Deadline Guide',
       description: 'CEZIH deadline for private practices extended to 1 Jan 2027. Fines up to €13,200, what data must be exchanged, and the fastest path to compliance.',
       datePublished: '2026-05-10',
-      dateModified: '2026-07-27'
+      dateModified: '2026-09-26',
+      authorName: 'Hrvoje Matošević',
+      dateModifiedDisplay: 'Updated: 26 September 2026'
     },
     breadcrumb: {
       home: 'Home',
       current: 'CEZIH Guide'
     },
     hero: {
-      eyebrow: 'Updated · July 2026 · Deadline extended',
+      eyebrow: 'Updated · September 2026 · Deadline extended',
       title: 'CEZIH for Private Practices in Croatia: Deadline Extended to 1 January 2027',
       subheadline: 'A guide for private practices, polyclinics, and private hospitals preparing to connect to CEZIH by the new deadline, 1 January 2027.',
       certBadge: 'HM Digital - officially certified CEZIH application manufacturer (HZZO)',
@@ -1481,7 +1482,7 @@ export const en = {
           n: '4',
           phase: 'Week 2',
           title: 'Onboarding and software configuration',
-          desc: 'The vendor configures the practice, users, code lists, and templates. With cloud solutions this typically takes 1-2 days.'
+          desc: 'The vendor configures the practice, users, and code lists. With cloud solutions this typically takes 1-2 days.'
         },
         {
           n: '5',
@@ -1523,7 +1524,7 @@ export const en = {
         {
           n: '4',
           title: 'Specialization for your practice type',
-          desc: 'Dentistry, family medicine, physiatry - templates and workflows must match your specialty.'
+          desc: 'Dentistry, family medicine, physiatry - check how much the program forces a change in how you create documentation, and how much it lets you keep your own workflow.'
         },
         {
           n: '5',
@@ -1649,14 +1650,16 @@ export const en = {
       title: 'CEZIH Deadline for Private Practices: Confirmed 1 Jan 2027',
       description: 'Has the deadline to connect to CEZIH moved? Yes - the final deadline is 1 Jan 2027. Source-checked fact (HLK, Večernji) plus the 1 Jul 2026 ID-card note.',
       datePublished: '2026-07-27',
-      dateModified: '2026-07-27'
+      dateModified: '2026-09-26',
+      authorName: 'Hrvoje Matošević',
+      dateModifiedDisplay: 'Updated: 26 September 2026'
     },
     breadcrumb: {
       home: 'Home',
       current: 'CEZIH deadline for private practices'
     },
     hero: {
-      eyebrow: 'July 2026 · Fact check',
+      eyebrow: 'September 2026 · Fact check',
       title: 'CEZIH Deadline for Private Practices: Confirmed - 1 January 2027',
       subheadline: 'Yes, the deadline has been extended - the obligation has not been abolished. All key facts and sources in one place, no guessing.',
       certBadge: 'HM Digital - officially certified CEZIH application manufacturer (HZZO)',

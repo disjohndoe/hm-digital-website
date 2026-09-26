@@ -60,17 +60,24 @@ export function getRouteKeyFromPathname(pathname: string): RouteKey {
   return match ?? "/";
 }
 
+// All page URLs are directory URLs: canonicals and the sitemap use the
+// trailing-slash form, so internal links must carry it too (otherwise each
+// link costs a redirect hop on GitHub Pages).
+function withTrailingSlash(path: string): string {
+  return path.endsWith("/") ? path : `${path}/`;
+}
+
 // Convert current URL to target locale (preserves query + hash)
 export function toLocaleUrl(current: URL, target: Locale): string {
   const key = getRouteKeyFromPathname(current.pathname);
-  const targetPath = routes[key][target];
+  const targetPath = withTrailingSlash(routes[key][target]);
   return `${targetPath}${current.search}${current.hash}`;
 }
 
 // Keep existing function for backward compatibility
 export function getPathForLocale(path: string, locale: Locale): string {
   const key = getRouteKeyFromPathname(path);
-  return routes[key][locale];
+  return withTrailingSlash(routes[key][locale]);
 }
 
 // Keep other existing functions

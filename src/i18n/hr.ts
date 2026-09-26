@@ -308,7 +308,6 @@ export const hr = {
     tagline: 'Razvoj softvera po mjeri, automatizacija i digitalizacija',
     company: 'Tvrtka',
     solutions: 'Rješenja',
-    digitizationLink: 'Digitalizacija dokumenata',
     medicalLink: 'CEZIH softver za ordinacije i poliklinike',
     kontomatrixLink: 'KontoMatrix - unos i skeniranje računa',
     cezihGuide: 'CEZIH vodič',
@@ -945,7 +944,7 @@ export const hr = {
       },
       dental: {
         title: 'Napravljen za vašu specijalnost',
-        desc: 'Bilo da ste stomatolog, fizijatar, dermatolog ili internist - predlošci, radni tokovi i šifrarnici prilagođeni su vašoj djelatnosti. Ne prilagođavate se vi softveru, softver se prilagođava vama.'
+        desc: 'Bilo da ste stomatolog, fizijatar, dermatolog ili internist - program je agilan: ako dokumentaciju već izrađujete svojim postupkom, ne morate ga mijenjati. Izrađene dokumente jednostavno prikačite uz karton pacijenta u programu.'
       }
     },
     features: {
@@ -1131,7 +1130,7 @@ export const hr = {
         },
         {
           q: 'Postoji li CEZIH softver za stomatologe?',
-          a: 'Da - HM Digital podržava stomatološke ordinacije s predlošcima, šifrarnicima i radnim tokovima prilagođenima stomatološkoj praksi. Sustav uključuje punu CEZIH integraciju (e-Nalaz, e-Uputnica, e-Recept), evidenciju pacijenata i naručivanje. Isto vrijedi za opću medicinu, fizikalnu terapiju, dermatologiju i druge specijalnosti.'
+          a: 'Da - HM Digital podržava stomatološke ordinacije. Sustav uključuje punu CEZIH integraciju (e-Nalaz, e-Uputnica, e-Recept), evidenciju pacijenata i naručivanje. Program je agilan: ako dokumentaciju izrađujete svojim postupkom, ne morate ga mijenjati - izrađene dokumente jednostavno prikačite u program. Isto vrijedi za opću medicinu, fizikalnu terapiju, dermatologiju i druge specijalnosti.'
         },
         {
           q: 'Što je CEZIH i kako funkcionira?',
@@ -1159,7 +1158,7 @@ export const hr = {
         },
         {
           q: 'Za koje specijalnosti je sustav namijenjen?',
-          a: 'Za sve. Jedan sustav za sve privatne zdravstvene ustanove - od stomatologije do fizikalne terapije, dermatologije, ginekologije, oftalmologije i opće medicine. Svaka ordinacija sama prilagođava katalog postupaka, vrste nalaza i termine svojoj djelatnosti. Nema ograničenja po specijalnosti.'
+          a: 'Za sve. Jedan sustav za sve privatne zdravstvene ustanove - od stomatologije do fizikalne terapije, dermatologije, ginekologije, oftalmologije i opće medicine. Program je agilan: svoj način izrade dokumentacije možete zadržati, a izrađene dokumente jednostavno prikačite u program. Nema ograničenja po specijalnosti.'
         },
         {
           q: 'Mogu li prebaciti podatke iz starog sustava?',
@@ -1235,14 +1234,16 @@ export const hr = {
       title: 'CEZIH za privatne ordinacije: rok 1. siječnja 2027 (vodič)',
       description: 'CEZIH rok za privatne ordinacije produljen je na 1.1.2027. Kazne do €13.200, što se razmjenjuje i kako se uskladiti. Vodič za ordinacije i poliklinike.',
       datePublished: '2026-05-10',
-      dateModified: '2026-07-27'
+      dateModified: '2026-09-26',
+      authorName: 'Hrvoje Matošević',
+      dateModifiedDisplay: 'Ažurirano: 26. rujna 2026.'
     },
     breadcrumb: {
       home: 'Naslovnica',
       current: 'CEZIH vodič'
     },
     hero: {
-      eyebrow: 'Ažurirano · srpanj 2026 · Rok produljen',
+      eyebrow: 'Ažurirano · rujan 2026 · Rok produljen',
       title: 'CEZIH za privatne ordinacije: rok produljen na 1. siječnja 2027',
       subheadline: 'Vodič za privatne ordinacije, poliklinike i privatne bolnice koje se pripremaju za povezivanje na CEZIH do novog roka, 1. siječnja 2027.',
       certBadge: 'HM Digital - službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
@@ -1467,7 +1468,7 @@ export const hr = {
           n: '4',
           phase: 'Tjedan 2',
           title: 'Onboarding i konfiguracija softvera',
-          desc: 'Dobavljač konfigurira ordinaciju, korisnike, šifrarnike i predloške. Kod cloud rješenja ovaj korak traje 1-2 dana.'
+          desc: 'Dobavljač konfigurira ordinaciju, korisnike i šifrarnike. Kod cloud rješenja ovaj korak traje 1-2 dana.'
         },
         {
           n: '5',
@@ -1509,7 +1510,7 @@ export const hr = {
         {
           n: '4',
           title: 'Specijalizacija za vaš tip ordinacije',
-          desc: 'Stomatologija, obiteljska medicina, fizijatrija - predlošci i radni tokovi trebaju biti prilagođeni vašoj struci.'
+          desc: 'Stomatologija, obiteljska medicina, fizijatrija - provjerite koliko program zahtijeva promjenu vašeg načina izrade dokumentacije, a koliko vam dopušta da vlastiti postupak zadržite.'
         },
         {
           n: '5',
@@ -1635,14 +1636,16 @@ export const hr = {
       title: 'CEZIH rok za privatne ordinacije: potvrđeno 1. siječnja 2027.',
       description: 'Je li rok za spajanje privatnih ustanova na CEZIH pomaknut? Da - krajnji rok je 1.1.2027. Provjera s izvorima (HLK, Večernji) i 1.7.2026. iskaznica.',
       datePublished: '2026-07-27',
-      dateModified: '2026-07-27'
+      dateModified: '2026-09-26',
+      authorName: 'Hrvoje Matošević',
+      dateModifiedDisplay: 'Ažurirano: 26. rujna 2026.'
     },
     breadcrumb: {
       home: 'Naslovnica',
       current: 'CEZIH rok za privatne ordinacije'
     },
     hero: {
-      eyebrow: 'Srpanj 2026 · Provjera informacija',
+      eyebrow: 'Rujan 2026 · Provjera informacija',
       title: 'CEZIH rok za privatne ordinacije: potvrđeno 1. siječnja 2027.',
       subheadline: 'Da, rok je produljen - obveza nije ukinuta. Sve ključne činjenice i izvore na jednom mjestu, bez nagađanja.',
       certBadge: 'HM Digital - službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
