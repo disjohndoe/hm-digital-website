@@ -2,6 +2,23 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
+
+// GitHub Pages has no redirects, so the conventional /sitemap.xml URL (which
+// otherwise 404s, report item 7.3.1) gets a copy of the generated index.
+function sitemapXmlAlias() {
+  return {
+    name: 'sitemap-xml-alias',
+    hooks: {
+      'astro:build:done': ({ dir }) => {
+        const distDir = fileURLToPath(dir);
+        writeFileSync(join(distDir, 'sitemap.xml'), readFileSync(join(distDir, 'sitemap-index.xml')));
+      }
+    }
+  };
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,7 +44,8 @@ export default defineConfig({
         item.lastmod = new Date().toISOString();
         return item;
       },
-    })
+    }),
+    sitemapXmlAlias()
   ],
   i18n: {
     defaultLocale: 'hr',
