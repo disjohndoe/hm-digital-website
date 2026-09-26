@@ -899,7 +899,7 @@ export const en = {
       badge: 'Officially certified CEZIH application manufacturer',
       title: 'HM Digital is on the official CEZIH list of certified manufacturers',
       body: 'Our software for private practices and polyclinics is officially certified and appears on the CEZIH list of application manufacturers maintained by HZZO and the Ministry of Health - in the category Software solutions for private/institutions (G500). This means the solution has passed an official readiness review and meets the technical prerequisites for data exchange with CEZIH.',
-      verifyLabel: 'Verify us on the official CEZIH list →',
+      verifyLabel: 'Verify us on the official CEZIH list',
       verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       pointsTitle: 'What this means for your practice',
       points: [

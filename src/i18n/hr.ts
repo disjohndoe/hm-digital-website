@@ -899,7 +899,7 @@ export const hr = {
       badge: 'Službeno certificirani proizvođač CEZIH aplikacija',
       title: 'HM Digital nalazi se na službenom CEZIH popisu certificiranih proizvođača',
       body: 'Naš softver za privatne ordinacije i poliklinike službeno je certificiran i nalazi se na popisu proizvođača CEZIH aplikacija koji vode HZZO i Ministarstvo zdravstva - u kategoriji Programska rješenja za privatne/ ustanove (G500). To znači da je rješenje prošlo službenu provjeru spremnosti i ispunjava tehničke preduvjete za razmjenu podataka s CEZIH-om.',
-      verifyLabel: 'Provjerite nas na službenom CEZIH popisu →',
+      verifyLabel: 'Provjerite nas na službenom CEZIH popisu',
       verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       pointsTitle: 'Što to znači za vašu ordinaciju',
       points: [
