@@ -27,24 +27,6 @@ const m = t.medicalLanding;
       "description": m.hero.subtitle,
       "url": "https://hmdigital.hr/en/medical-software",
       "inLanguage": "en",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": m.pricing.solo.name,
-          "price": "79",
-          "priceCurrency": "EUR",
-          "priceSpecification": { "@type": "UnitPriceSpecification", "unitText": "MONTH" },
-          "description": m.pricing.solo.desc
-        },
-        {
-          "@type": "Offer",
-          "name": m.pricing.poliklinika.name,
-          "price": "199",
-          "priceCurrency": "EUR",
-          "priceSpecification": { "@type": "UnitPriceSpecification", "unitText": "MONTH" },
-          "description": m.pricing.poliklinika.desc
-        }
-      ],
       "provider": {
         "@type": "Organization",
         "name": "HM Digital",
@@ -427,9 +409,6 @@ const m = t.medicalLanding;
             ))}
           </tbody>
         </table>
-        {m.comparison.note && (
-          <p class="mt-4 text-xs text-slate-500 leading-relaxed">{m.comparison.note}</p>
-        )}
       </div>
     </div>
     <!-- Mid-page CTA after comparison -->

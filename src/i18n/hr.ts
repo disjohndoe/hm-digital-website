@@ -909,7 +909,7 @@ export const hr = {
   medicalLanding: {
     meta: {
       title: 'Program za Ordinacije i Poliklinike sa CEZIH Integracijom | HM Digital',
-      description: 'Cloud program za ordinacije i poliklinike sa CEZIH integracijom. e-Nalaz, MBO. Od 79 EUR/mj. Rok 1.1.2027. Besplatan probni period od 14 dana.'
+      description: 'Cloud program za ordinacije i poliklinike sa CEZIH integracijom. e-Nalaz, MBO. Rok 1.1.2027. Besplatan probni period od 14 dana.'
     },
     urgencyBar: {
       before: 'CEZIH povezivanje je zakonska obveza - rok za privatne ordinacije: 1. siječnja 2027.',
@@ -1038,8 +1038,7 @@ export const hr = {
         cezihG500: 'CEZIH certifikacija',
         dental: 'Prilagodba specijalizaciji',
         smartCard: 'AKD + Certilia',
-        noContract: 'Bez dugoročnog ugovora',
-        priceFrom: 'Cijena od'
+        noContract: 'Bez dugoročnog ugovora'
       },
       legacy: {
         cloudAccess: false,
@@ -1047,8 +1046,7 @@ export const hr = {
         cezihG500: true,
         dental: true,
         smartCard: true,
-        noContract: false,
-        priceFrom: 'na upit'
+        noContract: false
       },
       cloudAlt: {
         cloudAccess: true,
@@ -1056,8 +1054,7 @@ export const hr = {
         cezihG500: false,
         dental: false,
         smartCard: false,
-        noContract: true,
-        priceFrom: 'od ~€40/mj'
+        noContract: true
       },
       hmDigital: {
         cloudAccess: true,
@@ -1065,13 +1062,11 @@ export const hr = {
         cezihG500: true,
         dental: true,
         smartCard: true,
-        noContract: true,
-        priceFrom: '€79/mj'
-      },
-      note: 'Cijene prema javno objavljenim cjenicima 26.9.2026.: Cliniko od 45 USD (oko 40 EUR)/mj i SimplePractice od 49 USD (oko 43 EUR)/mj; domaći BigDot od 290 EUR/mj. Certificirani desktop proizvođači (AdriaSoft, IN-CON, Dacom, MCS i drugi) ne objavljuju cijene javno - licenca i održavanje se nude pojedinačno, u pravilu uz lokalni server i IT podršku.'
+        noContract: true
+      }
     },
     pricing: {
-      title: 'Transparentne cijene - bez skrivenih troškova',
+      title: 'Paketi prilagođeni ordinaciji - bez skrivenih troškova',
       subtitle: 'Počnite s 14 dana besplatno. Daljinska implementacija je besplatna i uključena u cijenu. Bez dugoročnih ugovora.',
       cautionNote: 'Jedina stvar koju morate osigurati sami: vlastita iskaznica ovlaštenog zdravstvenog radnika za prijavu u CEZIH. Mi vodimo kroz ostalo.',
       residencyNote: 'Podaci se čuvaju na poslužiteljima u Europskoj uniji (Nürnberg, Njemačka), uz dnevnu sigurnosnu kopiju.',
@@ -1082,7 +1077,7 @@ export const hr = {
       onboardingDetails: 'Što dobivam?',
       solo: {
         name: 'Solo',
-        price: '€79',
+        price: 'Na upit',
         desc: 'Za samostalne ordinacije',
         users: '1-2 korisnika',
         cta: 'Zatražite demo',
@@ -1101,7 +1096,7 @@ export const hr = {
       },
       poliklinika: {
         name: 'Poliklinika',
-        price: '€199',
+        price: 'Na upit',
         desc: 'Za poliklinike s više ordinacija',
         users: '3-5 korisnika',
         highlighted: true,
@@ -1162,7 +1157,7 @@ export const hr = {
     },
     ordinacije: {
       title: 'Program za ordinacije - od solo prakse do tima',
-      body1: 'Tražite program za ordinacije koji ne morate instalirati ni održavati? HM Medical je software za ordinacije i poliklinike koji radi u cloudu: prijava iz preglednika, sigurno pohranjeni podaci, bez servera u ordinaciji. Solo praksa kreće u paketu Solo (79 EUR/mj), a timovi i poliklinike u paketu Poliklinika (199 EUR/mj).',
+      body1: 'Tražite program za ordinacije koji ne morate instalirati ni održavati? HM Medical je software za ordinacije i poliklinike koji radi u cloudu: prijava iz preglednika, sigurno pohranjeni podaci, bez servera u ordinaciji. Solo praksa kreće u paketu Solo, a timovi i poliklinike u paketu Poliklinika.',
       body2: 'Svaki paket uključuje CEZIH integraciju, e-Nalaz te besplatan probni period od 14 dana (bez kartice i bez obveze). Prije isteka probnog perioda zajedno procjenjujemo je li ovo pravi program za vašu ordinaciju.'
     },
     stats: {
@@ -1174,11 +1169,11 @@ export const hr = {
       items: [
         {
           q: 'Kako odabrati pravi medicinski softver s CEZIH integracijom?',
-          a: 'Softver mora biti na službenom CEZIH popisu proizvođača aplikacija (G500), ne samo "kompatibilan". Za ordinacije s 1-5 liječnika ključni su još cloud pristup s mobitela, jednostavnost i cijena. HM Digital ispunjava sve navedeno: cloud s punom CEZIH integracijom od €79/mj, bez servera i informatičara.'
+          a: 'Softver mora biti na službenom CEZIH popisu proizvođača aplikacija (G500), ne samo "kompatibilan". Za ordinacije s 1-5 liječnika ključni su još cloud pristup s mobitela, jednostavnost i cijena. HM Digital ispunjava sve navedeno: cloud s punom CEZIH integracijom, bez servera i informatičara.'
         },
         {
           q: 'Koliko košta CEZIH softver za ordinacije?',
-          a: 'Certificirani desktop proizvođači u Hrvatskoj ne objavljuju cijene javno - licencu i godišnje održavanje plaćate po ponudi, uz to često i lokalni server te IT podršku. HM Digital ima javni cjenik: €79/mj za solo ordinacije i €199/mj za poliklinike, s onboardingom i CEZIH aktivacijom u cijeni. Besplatni demo dostupan je bez obveze.'
+          a: 'Cijene certificiranih rješenja u Hrvatskoj u pravilu se ne objavljuju javno - formiraju se po ordinaciji, o modulima i broju korisnika, pa je tako i s HM Digitalom. Zatražite ukupni trošak prve godine u pisanom obliku (licenca, implementacija, server, podrška). Besplatni demo dostupan je bez obveze.'
         },
         {
           q: 'Postoji li CEZIH softver za stomatologe?',
@@ -1575,7 +1570,7 @@ export const hr = {
         {
           n: '5',
           title: 'Cijena prilagođena ordinaciji (ne bolnici)',
-          desc: 'Pretplate od ~€79-€199 mjesečno trebale bi biti dovoljne za solo ordinaciju ili manju polikliniku. Bolnički sustavi nisu adekvatni.'
+          desc: 'Za solo ordinaciju ili manju polikliniku zatražite ponudu s ukupnim troškom prve godine. Bolnički sustavi nisu adekvatni.'
         },
         {
           n: '6',
@@ -2041,7 +2036,7 @@ export const hr = {
     price: {
       title: 'Koliko košta CEZIH softver - i kako pitati za cijenu',
       body1: 'Cijene na tržištu su različite: neki proizvođači objavljuju cijene javno, drugi tek na upit, a konačni iznos ovisi o modulima i broju korisnika. Umjesto uspoređivanja mjesečnih stopa, pitajte jedno pitanje: „Koliki je moj ukupni trošak prve godine?"',
-      body2: 'Kao primjer transparentnog oblikovanja cijene: naš paket Solo (jedna ordinacija, svi CEZIH moduli) iznosi 79 EUR mjesečno, a paket Poliklinika (više ordinacija) 199 EUR mjesečno, uz probni period od 14 dana.',
+      body2: 'I mi u HM Digitalu formiramo cijenu po ordinaciji - prema broju korisnika i modulima - pa i od nas uvijek zatražite, i dobit ćete, ukupni trošak prve godine u pisanom obliku, uz probni period od 14 dana.',
       questionsTitle: 'Pitanja o cijeni koja trebate postaviti:',
       questions: [
         'Je li cijena po korisniku, po ordinaciji ili po ustanovi?',
@@ -2083,7 +2078,7 @@ export const hr = {
         { q: 'Moram li prijeći na cloud softver?', a: 'Ne. Ovjerena su i lokalna i cloud rješenja. Cloud u pravilu znači manje održavanja i lakši rad izvan ordinacije; lokalna instalacija daje veću kontrolu uz vlastito održavanje servera.' },
         { q: 'Što ako moj sadašnji program nije ovjeren?', a: 'Provjerite je li njegov proizvođač u postupku ovjere - popis na cezih.hr aktivno se proširuje. Ali rok vrijedi za vas, ne za njega: ako ovjera ne stigne na vrijeme, plan B je softver koji jest na popisu, uz migraciju podataka.' },
         { q: 'Je li ovjera trajna garancija?', a: 'Popis se ažurira pa provjerite najnovije stanje na cezih.hr prije odluke. Ovjera je dokaz da je rješenje prošlo postupak provjere za razmjenu podataka s CEZIH-om - to je provjerljiva činjenica, za razliku od marketinških natpisa.' },
-        { q: 'Koliko ukupno košta CEZIH softver?', a: 'Ovisi o modulima, broju korisnika i modelu (cloud ili lokalno). Tražite ukupni trošak prve godine u pisanom obliku. Radi usporedbe: naš paket Solo je 79 EUR mjesečno, Poliklinika 199 EUR mjesečno.' }
+        { q: 'Koliko ukupno košta CEZIH softver?', a: 'Ovisi o modulima, broju korisnika i modelu (cloud ili lokalno). Tražite ukupni trošak prve godine u pisanom obliku.' }
       ]
     },
     cta: {

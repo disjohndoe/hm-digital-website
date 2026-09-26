@@ -909,7 +909,7 @@ export const en = {
   medicalLanding: {
     meta: {
       title: 'CEZIH Practice Management Software - Cloud | HM Digital',
-      description: 'Cloud practice management software with CEZIH integration. e-Findings. From 79 EUR/mo. Deadline 1 Jan 2027. 14-day free trial.'
+      description: 'Cloud practice management software with CEZIH integration. e-Findings. Deadline 1 Jan 2027. 14-day free trial.'
     },
     urgencyBar: {
       before: 'Connecting to CEZIH is a legal obligation - deadline for private practices: 1 January 2027.',
@@ -1038,8 +1038,7 @@ export const en = {
         cezihG500: 'CEZIH certification',
         dental: 'Specialty adaptation',
         smartCard: 'AKD + Certilia',
-        noContract: 'No long-term contract',
-        priceFrom: 'Price from'
+        noContract: 'No long-term contract'
       },
       legacy: {
         cloudAccess: false,
@@ -1047,8 +1046,7 @@ export const en = {
         cezihG500: true,
         dental: true,
         smartCard: true,
-        noContract: false,
-        priceFrom: 'on request'
+        noContract: false
       },
       cloudAlt: {
         cloudAccess: true,
@@ -1056,8 +1054,7 @@ export const en = {
         cezihG500: false,
         dental: false,
         smartCard: false,
-        noContract: true,
-        priceFrom: 'from ~€40/mo'
+        noContract: true
       },
       hmDigital: {
         cloudAccess: true,
@@ -1065,13 +1062,11 @@ export const en = {
         cezihG500: true,
         dental: true,
         smartCard: true,
-        noContract: true,
-        priceFrom: '€79/mo'
-      },
-      note: 'Prices from public pricing pages on 26 Sep 2026: Cliniko from $45 (approx. €40)/mo and SimplePractice from $49 (approx. €43)/mo; Croatian BigDot from €290/mo. Certified desktop vendors (AdriaSoft, IN-CON, Dacom, MCS and others) do not publish prices - license and maintenance are quoted individually, usually with a local server and IT support.'
+        noContract: true
+      }
     },
     pricing: {
-      title: 'CEZIH Software Pricing for Practices',
+      title: 'Plans tailored to your practice - no hidden costs',
       subtitle: 'Start with 14 days free. Remote implementation is free and included in the price. No long-term contracts.',
       cautionNote: 'The only thing you must arrange yourself: your own authorized health worker ID card for CEZIH login. We guide you through everything else.',
       residencyNote: 'Data is stored on servers in the European Union (Nuremberg, Germany), with a daily backup.',
@@ -1096,7 +1091,7 @@ export const en = {
       },
       solo: {
         name: 'Solo',
-        price: '€79',
+        price: 'On request',
         desc: 'For individual practices',
         users: '1-2 users',
         cta: 'Request a demo',
@@ -1115,7 +1110,7 @@ export const en = {
       },
       poliklinika: {
         name: 'Polyclinic',
-        price: '€199',
+        price: 'On request',
         desc: 'For polyclinics with multiple offices',
         users: '3-5 users',
         highlighted: true,
@@ -1176,7 +1171,7 @@ export const en = {
     },
     ordinacije: {
       title: 'Practice software - from solo practice to a team',
-      body1: 'Looking for practice software you never have to install or maintain? HM Medical is software for practices and polyclinics that runs in the cloud: sign in from a browser, data stored securely, no server in your practice. A solo practice starts in the Solo plan (79 EUR/mo), teams and polyclinics in the Poliklinika plan (199 EUR/mo).',
+      body1: 'Looking for practice software you never have to install or maintain? HM Medical is software for practices and polyclinics that runs in the cloud: sign in from a browser, data stored securely, no server in your practice. A solo practice starts in the Solo plan, teams and polyclinics in the Poliklinika plan.',
       body2: 'Every plan includes CEZIH integration, e-Findings, plus a 14-day free trial (no card, no obligation). Before the trial ends, we assess together whether this is the right program for your practice.'
     },
     stats: {
@@ -1188,11 +1183,11 @@ export const en = {
       items: [
         {
           q: 'Which CEZIH software is best for private practices?',
-          a: 'The software must be on the official CEZIH list of application manufacturers (G500), not merely "compatible". For practices with 1-5 doctors the other key criteria are: cloud access from mobile, ease of use and price. HM Digital meets all of them: a cloud system with full CEZIH integration from €79/mo, with no server or IT person.'
+          a: 'The software must be on the official CEZIH list of application manufacturers (G500), not merely "compatible". For practices with 1-5 doctors the other key criteria are: cloud access from mobile, ease of use and price. HM Digital meets all of them: a cloud system with full CEZIH integration, with no server or IT person.'
         },
         {
           q: 'How much does CEZIH software cost?',
-          a: 'Certified desktop vendors in Croatia do not publish prices - you pay a quoted license and annual maintenance, often plus a local server and IT support. HM Digital has a public price list: €79/mo for solo practices and €199/mo for polyclinics, with onboarding and CEZIH activation included. A free demo is available with no obligation.'
+          a: 'Prices of certified solutions in Croatia are generally not published - they are quoted per practice, based on modules and user count, and the same applies to HM Digital. Ask for the total first-year cost in writing (license, implementation, server, support). A free demo is available with no obligation.'
         },
         {
           q: 'Is there CEZIH software for dentists?',
@@ -1589,7 +1584,7 @@ export const en = {
         {
           n: '5',
           title: 'Pricing fit for a practice (not a hospital)',
-          desc: 'Subscriptions of ~€79-€199 per month should be enough for a solo practice or smaller polyclinic. Hospital systems are not appropriate.'
+          desc: 'For a solo practice or smaller polyclinic, ask for a quote with the total first-year cost. Hospital systems are not appropriate.'
         },
         {
           n: '6',
@@ -2055,7 +2050,7 @@ export const en = {
     price: {
       title: 'What CEZIH software costs - and how to ask about price',
       body1: 'Market prices vary: some vendors publish prices publicly, others only on request, and the final figure depends on modules and user count. Instead of comparing monthly rates, ask one question: „What is my total cost for the first year?"',
-      body2: 'As an example of transparent pricing: our Solo package (one practice, all CEZIH modules) is 79 EUR per month and the Clinic package (multiple practices) is 199 EUR per month, with a 14-day trial.',
+      body2: 'We at HM Digital also quote per practice - based on user count and modules - so ask us for, and you will get, the total first-year cost in writing, along with a 14-day trial.',
       questionsTitle: 'Pricing questions you need to ask:',
       questions: [
         'Is the price per user, per practice or per institution?',
@@ -2097,7 +2092,7 @@ export const en = {
         { q: 'Do I have to move to cloud software?', a: 'No. Both on-premise and cloud solutions are certified. Cloud usually means less maintenance and easier work outside the practice; on-premise gives more control with your own server maintenance.' },
         { q: 'What if my current program is not certified?', a: 'Check whether its manufacturer is in the certification process - the list at cezih.hr is actively expanding. But the deadline binds you, not them: if certification does not arrive in time, plan B is software that is on the list, with data migration.' },
         { q: 'Is certification a permanent guarantee?', a: 'The list is updated, so check the latest state at cezih.hr before deciding. Certification proves the solution passed the procedure for data exchange with CEZIH - a verifiable fact, unlike marketing badges.' },
-        { q: 'How much does CEZIH software cost in total?', a: 'It depends on modules, user count and the model (cloud or on-premise). Ask for the total first-year cost in writing. For comparison: our Solo package is 79 EUR per month, Clinic is 199 EUR per month.' }
+        { q: 'How much does CEZIH software cost in total?', a: 'It depends on modules, user count and the model (cloud or on-premise). Ask for the total first-year cost in writing.' }
       ]
     },
     cta: {
