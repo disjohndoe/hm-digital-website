@@ -760,15 +760,15 @@ export const hr = {
       title: 'Tri stvari koje više nećete morati raditi',
       subtitle: 'Cijela ideja u jednoj rečenici: vaši klijenti slikaju, aplikacija čita, vi potvrđujete.',
       card1: {
-        title: 'Klijenti šalju sami',
+        title: 'Nećete trčati za klijentima',
         desc: 'Slobodna mobilna aplikacija za vaše klijente. Slikaju račun u sekundi, a automatski podsjetnik pazi da stigne na vrijeme. Više nema ganjanja - ni mailova, ni Vibera, ni „pošaljem kasnije".'
       },
       card2: {
-        title: 'Bez tipkanja',
+        title: 'Nećete tipkati račune',
         desc: 'Aplikacija pročita OIB, iznos, datum i stavke računa umjesto vas. Vi samo pregledate i potvrdite. Šest sati rada dnevno postaje dva.'
       },
       card3: {
-        title: 'Radi uz vaš program',
+        title: 'Nećete mijenjati svoj program',
         desc: 'Synesis, PANTHEON, Minimax, Luceed ili SAP - ne mijenjate program koji već koristite. OIB validacija, PDV stope 25/13/5/0 %, FINA e-računi i GDPR ugrađeni su od početka.'
       }
     },

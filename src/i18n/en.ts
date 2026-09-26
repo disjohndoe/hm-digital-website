@@ -760,15 +760,15 @@ export const en = {
       title: 'Three things you will never have to do again',
       subtitle: 'The whole idea in one sentence: your clients photograph, the app reads, you confirm.',
       card1: {
-        title: 'Clients send them themselves',
+        title: 'You won\'t chase clients',
         desc: 'A free mobile app for your clients. They snap the invoice in a second, and an automatic reminder makes sure it arrives on time. No more chasing - no emails, no Viber, no "I\'ll send it later".'
       },
       card2: {
-        title: 'No typing',
+        title: 'You won\'t type invoices',
         desc: 'The app reads the OIB, amount, date and line items for you. You just review and confirm. Six hours of work a day becomes two.'
       },
       card3: {
-        title: 'Works with your program',
+        title: 'You won\'t change your program',
         desc: 'Synesis, PANTHEON, Minimax, Luceed or SAP - you don\'t change the program you already use. OIB validation, VAT rates 25/13/5/0 %, FINA e-invoices and GDPR are built in from the start.'
       }
     },
