@@ -7,7 +7,11 @@ export const hr = {
     pricing: 'Cjenik',
     projects: 'Projekti',
     freeAssessment: 'Besplatna procjena',
-    contact: 'Kontakt'
+    contact: 'Kontakt',
+    products: 'Proizvodi',
+    medical: 'HM Medical',
+    kontomatrix: 'KontoMatrix',
+    mainNav: 'Glavna navigacija'
   },
   hero: {
     title: 'Razvoj aplikacija po mjeri - web, webshop, mobilne aplikacije, ERP sustava, automatizacija i digitalizacija',
@@ -307,14 +311,18 @@ export const hr = {
   footer: {
     tagline: 'Razvoj softvera po mjeri, automatizacija i digitalizacija',
     company: 'Tvrtka',
-    solutions: 'Rješenja',
+    solutions: 'Rješenja i vodiči',
     medicalLink: 'CEZIH softver za ordinacije i poliklinike',
     kontomatrixLink: 'KontoMatrix - unos i skeniranje računa',
     cezihGuide: 'CEZIH vodič',
     cezihDeadline: 'CEZIH rok 2027 - provjera',
+    chooseCezihSoftware: 'Kako odabrati CEZIH softver',
+    invoiceEntryGuide: 'Kako ubrzati unos računa',
+    fiscalization: 'Fiskalizacija i e-računi',
     privacyPolicy: 'Pravila privatnosti',
     cookiePolicy: 'Kolačići',
-    rights: 'Sva prava pridržana'
+    rights: 'Sva prava pridržana',
+    footerLabel: 'Podnožje'
   },
   secondaryOffer: {
     title: 'Digitalizacija dokumenata',

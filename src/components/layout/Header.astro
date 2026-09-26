@@ -1,7 +1,6 @@
 ---
 import { getLocaleFromPath, getPathForLocale, getTranslations } from '../../i18n/ui';
 import LanguageSwitcher from '../ui/LanguageSwitcher.astro';
-import Button from '../ui/Button.astro';
 
 interface Props {
   currentPath: string;
@@ -12,10 +11,16 @@ const locale = getLocaleFromPath(currentPath);
 const homePath = getPathForLocale('/', locale);
 const t = getTranslations(locale);
 
+const productItems = [
+  { key: 'medical', href: getPathForLocale('/medicinski-softver', locale) },
+  { key: 'kontomatrix', href: getPathForLocale('/unos-racuna', locale) }
+];
+
 const navItems = [
-  { key: 'home', href: getPathForLocale('/', locale) },
+  { key: 'home', href: homePath },
   { key: 'about', href: getPathForLocale('/o-nama', locale) },
   { key: 'services', href: getPathForLocale('/usluge', locale) },
+  { key: 'products', href: '#' },
   { key: 'industries', href: getPathForLocale('/industrije', locale) },
   { key: 'pricing', href: getPathForLocale('/cjenik', locale) },
   { key: 'projects', href: getPathForLocale('/projekti', locale) },
@@ -28,6 +33,8 @@ function isActive(href: string, current: string): boolean {
   const normalizedHref = href.replace(/^\/en/, '') || '/';
   return normalizedCurrent === normalizedHref || normalizedCurrent.startsWith(normalizedHref + '/');
 }
+
+const productsActive = productItems.some((p) => isActive(p.href, currentPath));
 ---
 
 <script>
@@ -68,10 +75,41 @@ function isActive(href: string, current: string): boolean {
     }
   });
 
+  // Close product dropdown when clicking outside or pressing Escape
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('[data-products-dd].dd-open').forEach((dd) => {
+      if (!dd.contains(e.target as Node)) {
+        (dd as HTMLElement).classList.remove('dd-open');
+        dd.querySelector('button')?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('[data-products-dd].dd-open').forEach((dd) => {
+        (dd as HTMLElement).classList.remove('dd-open');
+        const btn = dd.querySelector('button');
+        btn?.setAttribute('aria-expanded', 'false');
+        btn?.blur();
+      });
+    }
+  });
+
   // Expose functions globally for onclick attributes
   (window as any).toggleMenu = toggleMenu;
   (window as any).closeMenu = closeMenu;
 </script>
+
+<style>
+  [data-products-dd].dd-open [data-products-panel] {
+    opacity: 1;
+    visibility: visible;
+  }
+  [data-products-dd].dd-open > button > svg {
+    transform: rotate(180deg);
+  }
+</style>
 
 <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-700">
   <div class="container-custom">
@@ -83,23 +121,64 @@ function isActive(href: string, current: string): boolean {
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-6 lg:gap-8">
-        {navItems.map(item => (
-          <a
-            href={item.href}
-            class={`text-base font-medium transition-colors ${
-              isActive(item.href, currentPath)
-                ? 'text-primary-200'
-                : 'text-white hover:text-primary-200'
-            }`}
-          >
-            {t.nav[item.key as keyof typeof t.nav]}
-          </a>
-        ))}
+      <nav aria-label={t.nav.mainNav} class="hidden xl:flex items-center gap-6">
+        {navItems.map((item) => {
+          if (item.key === 'products') {
+            return (
+              <div class="relative group" data-products-dd>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  onclick="const dd=this.closest('[data-products-dd]'); const open=dd.classList.toggle('dd-open'); this.setAttribute('aria-expanded', String(open));"
+                  class={`flex items-center gap-1 text-base font-medium transition-colors cursor-pointer ${
+                    productsActive ? 'text-primary-200' : 'text-white hover:text-primary-200'
+                  }`}
+                >
+                  {t.nav.products}
+                  <svg class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div
+                  data-products-panel
+                  class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible transition-opacity duration-150 group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible"
+                >
+                  <div class="bg-white rounded-lg shadow-lg border border-slate-200 py-2 min-w-56">
+                    {productItems.map((p) => (
+                      <a
+                        href={p.href}
+                        class={`block px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-colors ${
+                          isActive(p.href, currentPath)
+                            ? 'bg-primary-50 text-primary-700'
+                            : 'text-slate-700 hover:bg-primary-50 hover:text-primary-700'
+                        }`}
+                      >
+                        {t.nav[p.key as keyof typeof t.nav]}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          }
+          return (
+            <a
+              href={item.href}
+              class={`text-base font-medium transition-colors ${
+                isActive(item.href, currentPath)
+                  ? 'text-primary-200'
+                  : 'text-white hover:text-primary-200'
+              }`}
+            >
+              {t.nav[item.key as keyof typeof t.nav]}
+            </a>
+          );
+        })}
       </nav>
 
       <!-- Desktop Right side -->
-      <div class="hidden md:flex items-center">
+      <div class="hidden xl:flex items-center">
         <LanguageSwitcher currentPath={currentPath} />
       </div>
 
@@ -107,7 +186,7 @@ function isActive(href: string, current: string): boolean {
       <button
         id="hamburger-button"
         onclick="toggleMenu()"
-        class="md:hidden p-2 text-white hover:text-primary-200 transition-colors"
+        class="xl:hidden p-2 text-white hover:text-primary-200 transition-colors"
         aria-label="Toggle menu"
       >
         <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,35 +200,64 @@ function isActive(href: string, current: string): boolean {
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 absolute w-full">
-    <nav class="container-custom py-4">
+  <div id="mobile-menu" class="hidden xl:hidden bg-slate-800 border-t border-slate-700 absolute w-full">
+    <nav aria-label={t.nav.mainNav} class="container-custom py-4">
       <ul class="flex flex-col gap-2">
-        {navItems.map(item => (
-          <li>
-            <a
-              href={item.href}
-              onclick="closeMenu()"
-              class={`block py-3 px-4 rounded-lg text-sm font-medium transition-colors ${
-                isActive(item.href, currentPath)
-                  ? 'bg-primary-900/30 text-primary-200'
-                  : 'text-white hover:bg-slate-700'
-              }`}
-            >
-              {t.nav[item.key as keyof typeof t.nav]}
-            </a>
-          </li>
-        ))}
+        {navItems.map((item) => {
+          if (item.key === 'products') {
+            return (
+              <li>
+                <details class="group/det">
+                  <summary
+                    class={`flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden py-3 px-4 rounded-lg text-sm font-medium transition-colors ${
+                      productsActive
+                        ? 'bg-primary-900/30 text-primary-200'
+                        : 'text-white hover:bg-slate-700'
+                    }`}
+                  >
+                    {t.nav.products}
+                    <svg class="w-4 h-4 transition-transform group-open/det:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div class="mt-1 ml-4 pl-4 border-l border-slate-600 flex flex-col gap-1">
+                    {productItems.map((p) => (
+                      <a
+                        href={p.href}
+                        onclick="closeMenu()"
+                        class={`block py-2.5 px-4 rounded-lg text-sm font-medium transition-colors ${
+                          isActive(p.href, currentPath)
+                            ? 'text-primary-200'
+                            : 'text-slate-300 hover:text-white hover:bg-slate-700'
+                        }`}
+                      >
+                        {t.nav[p.key as keyof typeof t.nav]}
+                      </a>
+                    ))}
+                  </div>
+                </details>
+              </li>
+            );
+          }
+          return (
+            <li>
+              <a
+                href={item.href}
+                onclick="closeMenu()"
+                class={`block py-3 px-4 rounded-lg text-sm font-medium transition-colors ${
+                  isActive(item.href, currentPath)
+                    ? 'bg-primary-900/30 text-primary-200'
+                    : 'text-white hover:bg-slate-700'
+                }`}
+              >
+                {t.nav[item.key as keyof typeof t.nav]}
+              </a>
+            </li>
+          );
+        })}
       </ul>
       <div class="mt-4 pt-4 border-t border-slate-700 flex items-center justify-between gap-4">
         <LanguageSwitcher currentPath={currentPath} />
-        <Button
-          href={getPathForLocale('/kontakt', locale)}
-          variant="primary"
-          size="sm"
-          onclick="closeMenu()"
-        >
-          {t.nav.contact}
-        </Button>
       </div>
     </nav>
   </div>

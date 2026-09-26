@@ -7,7 +7,11 @@ export const en = {
     pricing: 'Pricing',
     projects: 'Projects',
     freeAssessment: 'Free assessment',
-    contact: 'Contact'
+    contact: 'Contact',
+    products: 'Products',
+    medical: 'HM Medical',
+    kontomatrix: 'KontoMatrix',
+    mainNav: 'Main navigation'
   },
   hero: {
     title: 'Custom Application Development - Web, Webshops, Mobile Apps, ERP, Automation & Digitization',
@@ -307,14 +311,18 @@ export const en = {
   footer: {
     tagline: 'Custom software development, automation and digitalization',
     company: 'Company',
-    solutions: 'Solutions',
+    solutions: 'Solutions and Guides',
     medicalLink: 'CEZIH Software for Practices and Polyclinics',
     kontomatrixLink: 'KontoMatrix - invoice capture and scanning',
     cezihGuide: 'CEZIH Guide',
     cezihDeadline: 'CEZIH 2027 Deadline - Fact Check',
+    chooseCezihSoftware: 'How to Choose CEZIH Software',
+    invoiceEntryGuide: 'Speed Up Invoice Entry',
+    fiscalization: 'Fiscalization and e-Invoices',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
-    rights: 'All rights reserved'
+    rights: 'All rights reserved',
+    footerLabel: 'Footer'
   },
   secondaryOffer: {
     title: 'Document digitization',
