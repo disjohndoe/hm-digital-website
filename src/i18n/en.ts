@@ -730,12 +730,12 @@ export const en = {
     meta: {
       title: 'KontoMatrix - Invoice Capture for Accounting Firms | HM Digital',
       h1: 'Automatic invoice capture and scanning for accounting firms',
-      description: 'Clients snap a photo of each invoice on their phone, KontoMatrix reads the OIB, amount, date and line items, and you export to Minimax, PANTHEON, Synesis or Luceed in one click. From 10 EUR per client per month.'
+      description: 'Clients (or you for them) snap a photo of each invoice on their phone, KontoMatrix reads the OIB, amount, date and line items, and you export to Minimax, PANTHEON, Synesis or Luceed in one click. From 10 EUR per client per month.'
     },
     hero: {
       badge: 'KONTOMATRIX · ACCOUNTING FIRMS · CROATIA',
       tagline: 'Stop chasing clients for invoices.',
-      subtitle: 'Your clients photograph invoices on their phone, the app KontoMatrix reads them for you, and you just review and confirm. Six hours of typing a day becomes two - and the data lands straight in the program you already use.',
+      subtitle: 'Your clients (or you for them) photograph invoices on their phone, the app KontoMatrix reads them for you, and you just review and confirm. Six hours of typing a day becomes two - and the data lands straight in the program you already use.',
       ctaPrimary: 'Request a 10-minute demo',
       ctaSecondary: 'How does it work?',
       trustRow: 'GDPR · FINA e-invoices · EU hosting · OIB validation'
@@ -758,10 +758,10 @@ export const en = {
     },
     pillars: {
       title: 'Three things you will never have to do again',
-      subtitle: 'The whole idea in one sentence: your clients photograph, the app reads, you confirm.',
+      subtitle: 'The whole idea in one sentence: your clients (or you for them) photograph, the app reads, you confirm.',
       card1: {
         title: 'You won\'t chase clients',
-        desc: 'A free mobile app for your clients. They snap the invoice in a second, and an automatic reminder makes sure it arrives on time. No more chasing - no emails, no Viber, no "I\'ll send it later".'
+        desc: 'A free mobile app for your clients. They snap the invoice in a second, or you snap it for them. An automatic reminder makes sure it arrives on time. No more chasing - no emails, no Viber, no "I\'ll send it later".'
       },
       card2: {
         title: 'You won\'t type invoices',
@@ -774,7 +774,7 @@ export const en = {
     },
     howItWorks: {
       title: 'How it looks in practice',
-      step1: { title: 'Client photographs the invoice', desc: 'A free app on their phone. One photo and the invoice is with you - no email, no attachments.' },
+      step1: { title: 'Client (or you for the client) photographs the invoice', desc: 'A free app on their phone. One photo and the invoice is with you - no email, no attachments.' },
       step2: { title: 'You review and confirm', desc: 'The app has already read the OIB, amount and line items. You just review, correct if needed, and confirm.' },
       step3: { title: 'Export to your program', desc: 'One click and the data is in Synesis, PANTHEON, Minimax, Luceed or SAP - in a format your program already understands.' }
     },
@@ -811,7 +811,7 @@ export const en = {
       colKonto: 'KontoMatrix',
       rows: [
         { label: 'Works with multiple programs', model: 'No - you re-enter into each one', suite: 'No - only inside that program', konto: 'Yes: Synesis, PANTHEON, Minimax, Luceed, SAP (+ CSV/XML)' },
-        { label: "Clients' paper invoices", model: 'You type them in', suite: 'You scan into that program', konto: 'Client snaps a photo with the free app' },
+        { label: "Clients' paper invoices", model: 'You type them in', suite: 'You scan into that program', konto: 'Client (or you) snaps a photo with the free app' },
         { label: 'OIB, amount, date, line items', model: 'Manual typing', suite: 'OCR reads them', konto: 'OCR reads them, you just confirm' },
         { label: 'Automatic client reminders', model: 'No', suite: 'Depends on the program', konto: 'Yes, until the invoice arrives' },
         { label: 'Monthly cost', model: 'Your working hours', suite: 'Depends on the program and package', konto: '10 EUR per active client' }

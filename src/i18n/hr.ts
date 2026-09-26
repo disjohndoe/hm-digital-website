@@ -730,12 +730,12 @@ export const hr = {
     meta: {
       title: 'KontoMatrix - Unos i Skeniranje Računa za Urede | HM Digital',
       h1: 'Automatski unos i skeniranje računa za računovodstvene urede',
-      description: 'Klijenti slikaju račune mobitelom, aplikacija KontoMatrix pročita OIB, iznos, datum i stavke (PDV 25/13/5/0), a vi jednim klikom izvozite u Minimax, PANTHEON, Synesis ili Luceed. Od 10 EUR po klijentu mjesečno.'
+      description: 'Klijenti (ili vi za njih) slikaju račune mobitelom, aplikacija KontoMatrix pročita OIB, iznos, datum i stavke (PDV 25/13/5/0), a vi jednim klikom izvozite u Minimax, PANTHEON, Synesis ili Luceed. Od 10 EUR po klijentu mjesečno.'
     },
     hero: {
       badge: 'KONTOMATRIX · RAČUNOVODSTVENI UREDI · HRVATSKA',
       tagline: 'Prestanite ganjati klijente za račune.',
-      subtitle: 'Vaši klijenti slikaju račune mobitelom, aplikacija KontoMatrix ih pročita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva - a podaci završavaju ravno u programu koji već koristite.',
+      subtitle: 'Vaši klijenti (ili vi za njih) slikaju račune mobitelom, aplikacija KontoMatrix ih pročita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva - a podaci završavaju ravno u programu koji već koristite.',
       ctaPrimary: 'Zatražite prezentaciju od 10 minuta',
       ctaSecondary: 'Kako to radi?',
       trustRow: 'GDPR · FINA e-računi · EU hosting · OIB validacija'
@@ -758,10 +758,10 @@ export const hr = {
     },
     pillars: {
       title: 'Tri stvari koje više nećete morati raditi',
-      subtitle: 'Cijela ideja u jednoj rečenici: vaši klijenti slikaju, aplikacija čita, vi potvrđujete.',
+      subtitle: 'Cijela ideja u jednoj rečenici: vaši klijenti (ili vi za njih) slikaju, aplikacija čita, vi potvrđujete.',
       card1: {
         title: 'Nećete trčati za klijentima',
-        desc: 'Slobodna mobilna aplikacija za vaše klijente. Slikaju račun u sekundi, a automatski podsjetnik pazi da stigne na vrijeme. Više nema ganjanja - ni mailova, ni Vibera, ni „pošaljem kasnije".'
+        desc: 'Slobodna mobilna aplikacija za vaše klijente. Slikaju račun u sekundi, a možete ga slikati i vi za njih. Automatski podsjetnik pazi da stigne na vrijeme. Više nema ganjanja - ni mailova, ni Vibera, ni „pošaljem kasnije".'
       },
       card2: {
         title: 'Nećete tipkati račune',
@@ -774,7 +774,7 @@ export const hr = {
     },
     howItWorks: {
       title: 'Kako to izgleda u praksi',
-      step1: { title: 'Klijent slika račun', desc: 'Besplatna aplikacija na mobitelu. Jedna fotografija i račun je kod vas - bez e-maila, bez privitaka.' },
+      step1: { title: 'Klijent (ili vi za klijenta) slika račun', desc: 'Besplatna aplikacija na mobitelu. Jedna fotografija i račun je kod vas - bez e-maila, bez privitaka.' },
       step2: { title: 'Pregledate i potvrdite', desc: 'Aplikacija je već pročitala OIB, iznos i stavke. Vi samo pregledate, po potrebi ispravite i potvrdite.' },
       step3: { title: 'Izvoz u vaš program', desc: 'Jedan klik i podaci su u Synesis, PANTHEON, Minimax, Luceed ili SAP - u formatu koji vaš program već poznaje.' }
     },
@@ -811,7 +811,7 @@ export const hr = {
       colKonto: 'KontoMatrix',
       rows: [
         { label: 'Radi li uz više programa', model: 'Ne - unosite u svaki posebno', suite: 'Ne - samo unutar tog programa', konto: 'Da: Synesis, PANTHEON, Minimax, Luceed, SAP (+ CSV/XML)' },
-        { label: 'Papirnati računi klijenata', model: 'Vi ih tipkate', suite: 'Vi ih skenirate u taj program', konto: 'Klijent ih slika mobitelom (besplatna aplikacija)' },
+        { label: 'Papirnati računi klijenata', model: 'Vi ih tipkate', suite: 'Vi ih skenirate u taj program', konto: 'Klijent (ili vi) ih slika mobitelom (besplatna aplikacija)' },
         { label: 'OIB, iznos, datum, stavke', model: 'Ručni unos', suite: 'OCR čita', konto: 'OCR čita, vi samo potvrdite' },
         { label: 'Automatski podsjetnici klijentima', model: 'Ne', suite: 'Ovisi o programu', konto: 'Da, dok račun ne stigne' },
         { label: 'Mjesečna cijena', model: 'Vaše radno vrijeme', suite: 'Ovisno o programu i paketu', konto: '10 EUR po aktivnom klijentu' }
