@@ -18,9 +18,9 @@ export const hr = {
   },
   valueProp: {
     tagline: 'Gradimo rješenja koja osvajaju pažnju i donose rezultate',
-    reliability: 'Naš fokus je pouzdanost, sigurnost i lakoća korištenja – jer vaše poslovanje zaslužuje moderno digitalno rješenje.',
+    reliability: 'Naš fokus je pouzdanost, sigurnost i lakoća korištenja - jer vaše poslovanje zaslužuje moderno digitalno rješenje.',
     automation: 'Automatiziramo dosadne i dugotrajne procese',
-    automationDesc: 'Naša rješenja ubrzavaju ponavljajuće zadatke, smanjuju ljudske pogreške i oslobađaju vrijeme za ono što je zaista važno – strateško razmišljanje i rast.',
+    automationDesc: 'Naša rješenja ubrzavaju ponavljajuće zadatke, smanjuju ljudske pogreške i oslobađaju vrijeme za ono što je zaista važno - strateško razmišljanje i rast.',
     services: {
       title: 'Što radimo',
       items: {
@@ -167,43 +167,43 @@ export const hr = {
     bulkScanning: {
       service: 'Masovno skeniranje dokumenata (labavi listovi, A4/A3)',
       unit: 'po stranici',
-      price: '0,05 € – 0,10 €',
+      price: '0,05 € - 0,10 €',
       note: 'Za velike volumene (stotine ili tisuće stranica). Donja granica za >10k stranica u standardnom stanju; gornja za manje serije ili ako je potrebno dodatno rukovanje. Uključuje osnovni PDF izlaz.'
     },
     smallBatch: {
       service: 'Skeniranje malih serija (<100 stranica)',
       unit: 'po stranici (min. naknada 10 €)',
-      price: '0,10 € – 0,20 €',
-      note: 'Primjenjuje se na manje poslove – npr. skeniranje 20 stranica može biti 0,15 € po stranici. Minimalna naknada 10 € za pokriće vremena postavljanja.'
+      price: '0,10 € - 0,20 €',
+      note: 'Primjenjuje se na manje poslove - npr. skeniranje 20 stranica može biti 0,15 € po stranici. Minimalna naknada 10 € za pokriće vremena postavljanja.'
     },
     bookNonDestructive: {
-      service: 'Skeniranje knjiga – ne-destruktivno (A3 ili manje)',
+      service: 'Skeniranje knjiga - ne-destruktivno (A3 ili manje)',
       unit: 'po stranici',
-      price: '0,30 € – 0,60 €',
+      price: '0,30 € - 0,60 €',
       note: 'Korištenje nadstrešnog skenera, pažljivo rukovanje stranicama. Cijena ovisi o ukupnom broju stranica i krhkosti. (~0,30 € za jednostavnije knjige u bulk-u, do 0,60 € za vrlo osjetljive ili niskovolumne projekte). Fizička knjiga ostaje netaknuta.'
     },
     ocr: {
       service: 'OCR prepoznavanje teksta (pretraživi PDF)',
       unit: 'dodatak po stranici',
-      price: '0,03 € – 0,08 €',
+      price: '0,03 € - 0,08 €',
       note: 'Dodaje se ako nije uključeno. Može se izuzeti za velike poslove ili naplaćivati na donjoj granici (~0,03 €) ako je tekst lagan. Viša granica ako su složeni layouti ili jezici.'
     },
     indexing: {
       service: 'Indeksiranje i unos metapodataka',
       unit: 'po dokumentu ili po satu',
-      price: '0,20 € – 0,50 € po stranici ili ~15 €/sat',
+      price: '0,20 € - 0,50 € po stranici ili ~15 €/sat',
       note: 'Detaljno indeksiranje uključuje imenovanje datoteka prema vašoj shemi, kategorizaciju po tipovima dokumenata, dodavanje metapodataka (datum, broj dokumenta, predmet) i stvaranje pretražive strukture za jednostavno pronalaženje.'
     },
     archiveOrganization: {
       service: 'Organizacija fizičkog arhiva (prije ili poslije skeniranja)',
       unit: 'po arhivskoj kutiji (ili metru)',
-      price: '5 € – 10 € po kutiji',
+      price: '5 € - 10 € po kutiji',
       note: 'Sortiranje, uklanjanje spajalica, ponovno arhiviranje dokumenata. Može se procijeniti ~5 € po standardnom vezu ili kutiji ako je umjereno organizirano, više ako su papiri vrlo neorganizirani (20 % nadoplata za nesortirane dokumente). Alternativno 30-40 €/sat za sortiranje arhiva na licu mjesta.'
     },
     onSiteScanning: {
       service: 'Skeniranje na licu mjesta',
       unit: 'po danu + po stranici',
-      price: '50 – 250 € po danu + standardne cijene po stranici',
+      price: '50 - 250 € po danu + standardne cijene po stranici',
       note: 'Naknada za postavljanje/putovanje po danu na licu mjesta (pokriva prijevoz, postavljanje opreme i vrijeme mirovanja) plus normalne cijene po stranici (s mogućom premijom ako okolina usporava rad). Cijene variraju ovisno o udaljenosti.'
     },
     dmsSetup: {
@@ -215,7 +215,7 @@ export const hr = {
     cloudHosting: {
       service: 'Postavljanje digitalnog arhiva u cloud-u',
       unit: 'po GB po mjesecu',
-      price: '~6 € – 10 €',
+      price: '~6 € - 10 €',
       note: 'Nudimo ovu uslugu u sklopu našeg digitalnog ureda (digitalni-ured.hr).'
     },
     basicTraining: {
@@ -291,7 +291,7 @@ export const hr = {
       timelines: {
         asap: 'Što prije',
         month: 'Do 1 mjesec',
-        months: '1–3 mjeseca',
+        months: '1-3 mjeseca',
         flexible: 'Fleksibilno'
       },
       submit: 'Zatražite besplatnu procjenu'
@@ -310,8 +310,9 @@ export const hr = {
     solutions: 'Rješenja',
     digitizationLink: 'Digitalizacija dokumenata',
     medicalLink: 'CEZIH softver za ordinacije i poliklinike',
+    kontomatrixLink: 'KontoMatrix - unos i skeniranje računa',
     cezihGuide: 'CEZIH vodič',
-    cezihDeadline: 'CEZIH rok 2027 — provjera',
+    cezihDeadline: 'CEZIH rok 2027 - provjera',
     privacyPolicy: 'Pravila privatnosti',
     cookiePolicy: 'Kolačići',
     rights: 'Sva prava pridržana'
@@ -330,7 +331,7 @@ export const hr = {
     hero: {
       tagline: 'Vaš IT partner za provedbu EU projekata',
       title: 'Pouzdana tehnička provedba nakon odobrenja EU sredstava',
-      subtitle: 'Razvijamo softverska rješenja, DMS sustave i integracije koje zadovoljavaju zahtjeve EU natječaja — od tehničke specifikacije do produkcije.',
+      subtitle: 'Razvijamo softverska rješenja, DMS sustave i integracije koje zadovoljavaju zahtjeve EU natječaja - od tehničke specifikacije do produkcije.',
       ctaAssessment: 'Besplatna procjena projekta',
       ctaServices: 'Pogledajte usluge'
     },
@@ -344,11 +345,11 @@ export const hr = {
         },
         delivery: {
           title: 'Isporuka po specifikaciji',
-          desc: 'Razvijamo prema tehničkoj dokumentaciji natječaja — funkcionalnosti, rokovi i izvještavanje po pravilima EU fondova.'
+          desc: 'Razvijamo prema tehničkoj dokumentaciji natječaja - funkcionalnosti, rokovi i izvještavanje po pravilima EU fondova.'
         },
         technology: {
           title: 'Provjerene tehnologije',
-          desc: 'Python, Django, FastAPI, React, PostgreSQL — moderni stack koji osigurava skalabilnost i dugoročno održavanje.'
+          desc: 'Python, Django, FastAPI, React, PostgreSQL - moderni stack koji osigurava skalabilnost i dugoročno održavanje.'
         },
         transparency: {
           title: 'Transparentna komunikacija',
@@ -358,7 +359,7 @@ export const hr = {
     },
     services: {
       title: 'Usluge za EU projekte',
-      subtitle: 'Sve što trebate za tehničku provedbu — od aplikacija po mjeri do dokumentacije',
+      subtitle: 'Sve što trebate za tehničku provedbu - od aplikacija po mjeri do dokumentacije',
       items: {
         customSoftware: {
           title: 'Softver po mjeri',
@@ -366,7 +367,7 @@ export const hr = {
         },
         dmsOcr: {
           title: 'DMS i OCR sustavi',
-          desc: 'Sustavi za upravljanje dokumentima s OCR prepoznavanjem — digitalizacija arhive, pretraživi PDF-ovi i automatska klasifikacija.'
+          desc: 'Sustavi za upravljanje dokumentima s OCR prepoznavanjem - digitalizacija arhive, pretraživi PDF-ovi i automatska klasifikacija.'
         },
         integrations: {
           title: 'Integracije sustava',
@@ -382,7 +383,7 @@ export const hr = {
         },
         consulting: {
           title: 'IT savjetovanje',
-          desc: 'Pomoć pri definiranju tehničkog dijela natječaja — arhitektura, procjena troškova, plan isporuke i timeline.'
+          desc: 'Pomoć pri definiranju tehničkog dijela natječaja - arhitektura, procjena troškova, plan isporuke i timeline.'
         }
       }
     },
@@ -392,13 +393,13 @@ export const hr = {
       viewAll: 'Pogledajte sve projekte',
       items: {
         project1: {
-          title: 'Digitalni ured — platforma za automatizaciju',
+          title: 'Digitalni ured - platforma za automatizaciju',
           description: 'Interno razvijena platforma za upravljanje dokumentima, automatizaciju procesa i izvještavanje. Uključuje OCR, pretraživi arhiv i integraciju s postojećim sustavima.',
           tech: 'Python, FastAPI, PostgreSQL, React, OCR'
         },
         project2: {
           title: 'ERP sustav za proizvodnju',
-          description: 'Prilagođeni sustav za praćenje proizvodnje, upravljanje zalihama, radne naloge i izvještavanje — razvijen prema specifičnim zahtjevima klijenta.',
+          description: 'Prilagođeni sustav za praćenje proizvodnje, upravljanje zalihama, radne naloge i izvještavanje - razvijen prema specifičnim zahtjevima klijenta.',
           tech: 'Python, Django, PostgreSQL, React, REST API'
         }
       }
@@ -414,14 +415,14 @@ export const hr = {
     },
     cta: {
       title: 'Razgovarajmo o vašem EU projektu',
-      subtitle: 'Javite nam se za besplatnu procjenu i tehničku konzultaciju — bez obaveza.',
+      subtitle: 'Javite nam se za besplatnu procjenu i tehničku konzultaciju - bez obaveza.',
       button: 'Zatražite besplatnu procjenu',
       secondaryButton: 'Kontaktirajte nas'
     }
   },
   demoDigitalOffice: {
     meta: {
-      title: 'Digitalni ured — Demo | HM Digital',
+      title: 'Digitalni ured - Demo | HM Digital',
       description: 'Interaktivni demo platforme za računovodstvo, AI/OCR obradu i automatizaciju poslovnih procesa za hrvatske tvrtke.'
     },
     hero: {
@@ -443,11 +444,11 @@ export const hr = {
       kpi4: { label: 'Obrada dokumenata', value: '12.847', trend: '+320', icon: 'box' },
       notificationsTitle: 'Obavijesti',
       n1Title: 'Dospjela faktura',
-      n1Desc: 'FAK-2026-0140 — Adriatic Cargo d.o.o. — 6.750,00 EUR',
+      n1Desc: 'FAK-2026-0140 - Adriatic Cargo d.o.o. - 6.750,00 EUR',
       n2Title: 'PDV rok se približava',
       n2Desc: 'Rok za predaju PDV obrasca: 20. ožujka 2026.',
       n3Title: 'Plaćanje primljeno',
-      n3Desc: 'TechnoServis d.o.o. — 4.550,00 EUR zaprimljeno',
+      n3Desc: 'TechnoServis d.o.o. - 4.550,00 EUR zaprimljeno',
       n4Title: 'Novi dokument klasificiran',
       n4Desc: 'AI je automatski kategorizirao ugovor (pouzdanost: 98,2%)',
       n5Title: 'Obračun plaća',
@@ -471,8 +472,8 @@ export const hr = {
       quickAction2: 'Dodaj klijenta',
       quickAction3: 'Upload dokumenta',
       quickAction4: 'Generiraj izvještaj',
-      toastMessage: 'Demo akcija — u produkciji bi se otvorila prava funkcionalnost',
-      calendarTitle: 'Kalendar — Ožujak 2026',
+      toastMessage: 'Demo akcija - u produkciji bi se otvorila prava funkcionalnost',
+      calendarTitle: 'Kalendar - Ožujak 2026',
       calendarDeadlines: {
         vatDeadline: 'Rok za PDV obrazac',
         taxDeadline: 'Porezna prijava',
@@ -564,8 +565,8 @@ export const hr = {
         a2: 'Svi podaci su verificirani: OIB izdavatelja (12345678901) i kupca (98765432109) su valjani, IBAN format je ispravan, iznosi se podudaraju. Nije pronađena nijedna nepodudarnost.'
       },
       chatCanned: {
-        canned1: 'Analiziram strukturu troškova za Q1 2026. — rashodi pokazuju rast od 3,2% u odnosu na prethodni kvartal, uglavnom zbog povećanja troškova materijala.',
-        canned2: 'Na temelju vaših faktura, preporučujem optimizaciju rokova plaćanja — 4 dobavljača nude popust za rano plaćanje (2% / 10 dana).'
+        canned1: 'Analiziram strukturu troškova za Q1 2026. - rashodi pokazuju rast od 3,2% u odnosu na prethodni kvartal, uglavnom zbog povećanja troškova materijala.',
+        canned2: 'Na temelju vaših faktura, preporučujem optimizaciju rokova plaćanja - 4 dobavljača nude popust za rano plaćanje (2% / 10 dana).'
       },
       classificationTitle: 'Klasifikacija dokumenata',
       classificationTypes: {
@@ -580,7 +581,7 @@ export const hr = {
     },
     automation: {
       title: 'Automatizacija radnog tijeka',
-      subtitle: 'Cjelovit automatizirani pipeline za obradu dokumenata — od zaprimanja do arhiviranja',
+      subtitle: 'Cjelovit automatizirani pipeline za obradu dokumenata - od zaprimanja do arhiviranja',
       steps: {
         step1: { title: 'Zaprimanje', desc: 'Dokument stiže putem emaila, uploada ili skeniranja', time: '~0.5s' },
         step2: { title: 'OCR obrada', desc: 'Automatsko prepoznavanje teksta i strukture', time: '~1.2s' },
@@ -610,7 +611,7 @@ export const hr = {
   },
   demoErp: {
     meta: {
-      title: 'ERP za proizvodnju — Demo | HM Digital',
+      title: 'ERP za proizvodnju - Demo | HM Digital',
       description: 'Interaktivni demo ERP sustava za upravljanje proizvodnjom, zalihama, radnim nalozima i izvještavanjem.'
     },
     hero: {
@@ -647,11 +648,11 @@ export const hr = {
       days: 'Pon,Uto,Sri,Čet,Pet,Sub,Ned',
       activityTitle: 'Aktivnosti',
       activities: {
-        a1: 'Linija 3 — serija #4821 završena',
-        a2: 'RN-1004 — rok istječe danas',
-        a3: 'Vijak M8x30 — zaliha ispod minimuma',
-        a4: 'QC provjera — serija #4820 odobrena',
-        a5: 'Preventivno održavanje — Stroj M-07'
+        a1: 'Linija 3 - serija #4821 završena',
+        a2: 'RN-1004 - rok istječe danas',
+        a3: 'Vijak M8x30 - zaliha ispod minimuma',
+        a4: 'QC provjera - serija #4820 odobrena',
+        a5: 'Preventivno održavanje - Stroj M-07'
       },
       orderStatusTitle: 'Status naloga'
     },
@@ -728,13 +729,14 @@ export const hr = {
   },
   accountingLanding: {
     meta: {
-      title: 'Računovođe — Računovodstveni program za hrvatske urede | HM Digital',
-      description: 'Prestanite ganjati klijente za račune. Klijenti slikaju mobitelom, aplikacija čita umjesto vas, a vi samo pregledate i potvrdite. Radi uz Synesis, PANTHEON, Minimax, Luceed i SAP.'
+      title: 'KontoMatrix - Unos i Skeniranje Računa za Urede | HM Digital',
+      h1: 'Automatski unos i skeniranje računa za računovodstvene urede',
+      description: 'Klijenti slikaju račune mobitelom, aplikacija KontoMatrix pročita OIB, iznos, datum i stavke (PDV 25/13/5/0), a vi jednim klikom izvozite u Minimax, PANTHEON, Synesis ili Luceed. Od 10 EUR po klijentu mjesečno.'
     },
     hero: {
-      badge: 'RAČUNOVODSTVENI UREDI · HRVATSKA · EUR',
+      badge: 'KONTOMATRIX · RAČUNOVODSTVENI UREDI · HRVATSKA',
       tagline: 'Prestanite ganjati klijente za račune.',
-      subtitle: 'Vaši klijenti slikaju račune mobitelom, aplikacija ih čita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva — a podaci završavaju ravno u programu koji već koristite.',
+      subtitle: 'Vaši klijenti slikaju račune mobitelom, aplikacija KontoMatrix ih pročita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva - a podaci završavaju ravno u programu koji već koristite.',
       ctaPrimary: 'Zatražite prezentaciju od 10 minuta',
       ctaSecondary: 'Kako to radi?',
       trustRow: 'GDPR · FINA e-računi · EU hosting · OIB validacija'
@@ -744,11 +746,11 @@ export const hr = {
       subtitle: 'Niste postali računovođa da biste tipkali tuđe račune. Ipak, većina dana ode na to.',
       card1: {
         title: 'Stalno ganjate klijente',
-        desc: 'Mailovi, Viber, pozivi — treći put ovaj mjesec molite istog klijenta za račune koji su već trebali biti tu. Izgubljen PDF u SMS-u, mutna fotografija na WhatsAppu, račun koji „pošaljem kasnije".'
+        desc: 'Mailovi, Viber, pozivi - treći put ovaj mjesec molite istog klijenta za račune koji su već trebali biti tu. Izgubljen PDF u SMS-u, mutna fotografija na WhatsAppu, račun koji „pošaljem kasnije".'
       },
       card2: {
         title: 'Sate tipkate iste podatke',
-        desc: 'OIB, iznos, datum, PDV stopa — iz papira ili e-maila u ERP. Polako, dosadno, podložno pogrešci. Jedna kriva znamenka i porezni je obrazac netočan.'
+        desc: 'OIB, iznos, datum, PDV stopa - iz papira ili e-maila u ERP. Polako, dosadno, podložno pogrešci. Jedna kriva znamenka i porezni je obrazac netočan.'
       },
       card3: {
         title: 'Računi su raspršeni posvuda',
@@ -760,7 +762,7 @@ export const hr = {
       subtitle: 'Cijela ideja u jednoj rečenici: vaši klijenti slikaju, aplikacija čita, vi potvrđujete.',
       card1: {
         title: 'Klijenti šalju sami',
-        desc: 'Slobodna mobilna aplikacija za vaše klijente. Slikaju račun u sekundi, a automatski podsjetnik pazi da stigne na vrijeme. Više nema ganjanja — ni mailova, ni Vibera, ni „pošaljem kasnije".'
+        desc: 'Slobodna mobilna aplikacija za vaše klijente. Slikaju račun u sekundi, a automatski podsjetnik pazi da stigne na vrijeme. Više nema ganjanja - ni mailova, ni Vibera, ni „pošaljem kasnije".'
       },
       card2: {
         title: 'Bez tipkanja',
@@ -768,39 +770,53 @@ export const hr = {
       },
       card3: {
         title: 'Radi uz vaš program',
-        desc: 'Synesis, PANTHEON, Minimax, Luceed ili SAP — ne mijenjate program koji već koristite. OIB validacija, PDV stope 25/13/5/0 %, FINA e-računi i GDPR ugrađeni su od početka.'
+        desc: 'Synesis, PANTHEON, Minimax, Luceed ili SAP - ne mijenjate program koji već koristite. OIB validacija, PDV stope 25/13/5/0 %, FINA e-računi i GDPR ugrađeni su od početka.'
       }
     },
     howItWorks: {
       title: 'Kako to izgleda u praksi',
-      step1: { title: 'Klijent slika račun', desc: 'Besplatna aplikacija na mobitelu. Jedna fotografija i račun je kod vas — bez e-maila, bez privitaka.' },
+      step1: { title: 'Klijent slika račun', desc: 'Besplatna aplikacija na mobitelu. Jedna fotografija i račun je kod vas - bez e-maila, bez privitaka.' },
       step2: { title: 'Pregledate i potvrdite', desc: 'Aplikacija je već pročitala OIB, iznos i stavke. Vi samo pregledate, po potrebi ispravite i potvrdite.' },
-      step3: { title: 'Izvoz u vaš program', desc: 'Jedan klik i podaci su u Synesis, PANTHEON, Minimax, Luceed ili SAP — u formatu koji vaš program već poznaje.' }
+      step3: { title: 'Izvoz u vaš program', desc: 'Jedan klik i podaci su u Synesis, PANTHEON, Minimax, Luceed ili SAP - u formatu koji vaš program već poznaje.' }
     },
     beforeAfter: {
       title: 'Ana, računovođa s 40 klijenata',
       beforeLabel: 'Prije',
       afterLabel: 'Sada',
       before: [
-        '7:30 — 14 mailova i 3 Vibera s računima (i bez njih)',
-        '8:00–14:00 — tipkanje OIB-ova i iznosa u ERP',
+        '7:30 - 14 mailova i 3 Vibera s računima (i bez njih)',
+        '8:00-14:00 - tipkanje OIB-ova i iznosa u ERP',
         'Ponovno traženje računa koji je nestalo u SMS-u',
         'Otkrivanje krive PDV stope nakon što je sve već upisano',
-        '16:00 — ide se kući. Sutra isto.'
+        '16:00 - ide se kući. Sutra isto.'
       ],
       after: [
-        '7:30 — otvorite aplikaciju, svi računi već tu, pročitani',
-        '8:00 — pregledate predložene podatke, potvrdite',
+        '7:30 - otvorite aplikaciju, svi računi već tu, pročitani',
+        '8:00 - pregledate predložene podatke, potvrdite',
         'Automatski podsjetnici ganjaju klijente umjesto vas',
-        'Do 10:00 — izvoz u Synesis gotov',
+        'Do 10:00 - izvoz u Synesis gotov',
         'Ostatak dana za savjetodavni rad i kavu s klijentima'
       ]
     },
     erp: {
       title: 'Već radi s programom koji koristite',
-      subtitle: 'Izvoz jednim klikom, u formatu koji vaš program razumije. Za sve ostalo — CSV i XML.',
+      subtitle: 'Izvoz jednim klikom, u formatu koji vaš program razumije. Za sve ostalo - CSV i XML.',
       items: ['Synesis', 'PANTHEON', 'Minimax', 'Luceed', 'SAP'],
       fallback: '+ CSV i XML za bilo koji drugi program'
+    },
+    comparison: {
+      title: 'Usporedba: ručni unos, OCR u programu ili KontoMatrix',
+      subtitle: 'Tri načina da računi dođu u vaš program - i što svaki od njih stvarno košta.',
+      colModel: 'Ručni unos',
+      colSuite: 'OCR ugrađen u program',
+      colKonto: 'KontoMatrix',
+      rows: [
+        { label: 'Radi li uz više programa', model: 'Ne - unosite u svaki posebno', suite: 'Ne - samo unutar tog programa', konto: 'Da: Synesis, PANTHEON, Minimax, Luceed, SAP (+ CSV/XML)' },
+        { label: 'Papirnati računi klijenata', model: 'Vi ih tipkate', suite: 'Vi ih skenirate u taj program', konto: 'Klijent ih slika mobitelom (besplatna aplikacija)' },
+        { label: 'OIB, iznos, datum, stavke', model: 'Ručni unos', suite: 'OCR čita', konto: 'OCR čita, vi samo potvrdite' },
+        { label: 'Automatski podsjetnici klijentima', model: 'Ne', suite: 'Ovisi o programu', konto: 'Da, dok račun ne stigne' },
+        { label: 'Mjesečna cijena', model: 'Vaše radno vrijeme', suite: 'Ovisno o programu i paketu', konto: '10 EUR po aktivnom klijentu' }
+      ]
     },
     pricing: {
       title: 'Jasna cijena, bez iznenađenja',
@@ -813,9 +829,13 @@ export const hr = {
       title: 'Česta pitanja',
       items: [
         { q: 'Moram li mijenjati program koji već koristim?', a: 'Ne. Aplikacija izvozi podatke u Synesis, PANTHEON, Minimax, Luceed ili SAP. Za sve ostalo izvoz je u CSV ili XML formatu. Ostajete u programu koji poznajete.' },
+        { q: 'Je li KontoMatrix računovodstveni program?', a: 'Ne, i to je poenta. KontoMatrix je samostalna aplikacija za prikupljanje i unos računa koja radi uz vaš postojeći program - ne natječe se s Minimaxom, PANTHEON-om ni Synesisom, nego ih nadopunjuje. Vi ostajete u programu koji poznajete, a prestajete tipkati tuđe račune.' },
+        { q: 'Što aplikacija automatski pročita s računa?', a: 'Prepoznaje OIB, iznos, datum i stavke računa, uključujući PDV stope 25/13/5/0 %. Vi podatke samo pregledate, po potrebi ispravite i potvrdite prije izvoza.' },
+        { q: 'Što ako klijent ne pošalje račune na vrijeme?', a: 'Automatski podsjetnici ganjaju klijente umjesto vas sve dok računi ne stignu. Više nema trećeg maila istom klijentu u istom mjesecu.' },
         { q: 'Što ako moj klijent nema pametni telefon?', a: 'Nije problem. Račun može poslati i e-mailom, ili donijeti papirnati račun koji vi fotografirate. Mobilna aplikacija je samo najbrži put, nije obavezna.' },
-        { q: 'Je li OIB mojih klijenata zaštićen?', a: 'Da. Svi podaci nalaze se na poslužiteljima u Europskoj uniji, šifrirani, s usklađenošću prema FINA i ZKI. GDPR članci 15, 17 i 21 ugrađeni su u sustav — uključujući pravo na pristup, brisanje i prijenos podataka.' },
-        { q: 'Koliko traje ugradnja za moj ured?', a: 'Obično jedan radni dan. Pokažemo vam na prezentaciji od 10 minuta kako točno to izgleda za vaš ured i vaš program — bez obveze.' }
+        { q: 'Koliko košta?', a: '10 EUR mjesečno po aktivnom klijentu - plaćate samo klijente koji taj mjesec stvarno šalju račune. Mjesečni minimum je 50 EUR po uredu, bez dugoročnog ugovora ni skrivenih troškova.' },
+        { q: 'Je li OIB mojih klijenata zaštićen?', a: 'Da. Svi podaci nalaze se na poslužiteljima u Europskoj uniji, šifrirani, s usklađenošću prema FINA i ZKI. GDPR članci 15, 17 i 21 ugrađeni su u sustav - uključujući pravo na pristup, brisanje i prijenos podataka.' },
+        { q: 'Koliko traje ugradnja za moj ured?', a: 'Obično jedan radni dan. Pokažemo vam na prezentaciji od 10 minuta kako točno to izgleda za vaš ured i vaš program - bez obveze.' }
       ]
     },
     cta: {
@@ -858,20 +878,20 @@ export const hr = {
 
   medicalLanding: {
     meta: {
-      title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud | HM Digital',
-      description: 'CEZIH softver za ordinacije i poliklinike u cloudu. Rok 1.1.2027., kazne do €13.200. e-Nalaz, e-Recept, e-Uputnica, od €79/mj. Zatražite demo!'
+      title: 'Program za Ordinacije i Poliklinike sa CEZIH Integracijom | HM Digital',
+      description: 'Cloud program za ordinacije i poliklinike sa CEZIH integracijom. e-Recept, e-Uputnica, e-Nalaz, MBO. Od 79 EUR/mj. Rok 1.1.2027. Besplatan probni period od 14 dana.'
     },
     urgencyBar: {
-      before: 'Zakon NN 14/2019, čl. 28 — krajnji rok za CEZIH: 1. siječnja 2027. · Kazne do €13.200',
-      after: 'CEZIH je obavezan — krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija'
+      before: 'Zakon NN 14/2019, čl. 28 - krajnji rok za CEZIH: 1. siječnja 2027. · Kazne do €13.200',
+      after: 'CEZIH je obavezan - krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija'
     },
     hero: {
       badge: 'CEZIH PRIVATNE PRAKSE · CLOUD · ZDRAVSTVO',
       certBadge: 'Službeno certificirano od strane HZZO-a',
       certBadgeLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
-      title: 'CEZIH Softver za Ordinacije i Poliklinike — Cloud Medicinski Program',
+      title: 'Medicinski softver za ordinacije i poliklinike - CEZIH integracija u cloudu',
       tagline: 'CEZIH riješen. Cloud uključen. Cijena za ordinaciju, ne za bolnicu.',
-      subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez kompromisa. Sve što privatna ordinacija treba za CEZIH — i ništa što ne treba.',
+      subtitle: 'Pristupite kartonima s mobitela. Šaljite e-Nalaz u 30 sekundi. Bez servera, bez informatičara, bez kompromisa. Sve što privatna ordinacija treba za CEZIH - i ništa što ne treba.',
       ctaCompare: 'Usporedite nas s alternativama',
       ctaTrial: 'Zatražite besplatni demo',
       ctaFeatures: 'Pogledajte što sve dobivate'
@@ -879,64 +899,64 @@ export const hr = {
     cert: {
       badge: 'Službeno certificirani proizvođač CEZIH aplikacija',
       title: 'HM Digital nalazi se na službenom CEZIH popisu certificiranih proizvođača',
-      body: 'Naš softver za privatne ordinacije i poliklinike službeno je certificiran i nalazi se na popisu proizvođača CEZIH aplikacija koji vode HZZO i Ministarstvo zdravstva — u kategoriji Programska rješenja za privatne/ ustanove (G500). To znači da je rješenje prošlo službenu provjeru spremnosti i ispunjava tehničke preduvjete za razmjenu podataka s CEZIH-om.',
+      body: 'Naš softver za privatne ordinacije i poliklinike službeno je certificiran i nalazi se na popisu proizvođača CEZIH aplikacija koji vode HZZO i Ministarstvo zdravstva - u kategoriji Programska rješenja za privatne/ ustanove (G500). To znači da je rješenje prošlo službenu provjeru spremnosti i ispunjava tehničke preduvjete za razmjenu podataka s CEZIH-om.',
       verifyLabel: 'Provjerite nas na službenom CEZIH popisu →',
       verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       pointsTitle: 'Što to znači za vašu ordinaciju',
       points: [
-        'Nije samo "CEZIH-kompatibilno" — rješenje je službeno certificirano, s pravnom težinom.',
+        'Nije samo "CEZIH-kompatibilno" - rješenje je službeno certificirano, s pravnom težinom.',
         'Ispunjava zakonsku obvezu iz Zakona o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28).',
-        'Prošlo je službenu tehničku provjeru prema CEZIH standardima — ne improvizacija.',
+        'Prošlo je službenu tehničku provjeru prema CEZIH standardima - ne improvizacija.',
         'Možete neovisno provjeriti naš status na službenoj CEZIH stranici.'
       ]
     },
     problem: {
       title: 'Tri razloga zašto vaša ordinacija još uvijek nije u skladu sa zakonom',
-      subtitle: 'Ne zato što niste pokušali — nego zato što tržište nije imalo što vam ponuditi. Do sad.',
+      subtitle: 'Ne zato što niste pokušali - nego zato što tržište nije imalo što vam ponuditi. Do sad.',
       deadline: {
         title: 'Zakonski okvir i rokovi',
-        desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu — a sankcije se primjenjuju i osobno na nositelje ordinacija.'
+        desc: 'Zakon NN 14/2019 (čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH. Članak 36 propisuje kazne do €13.200 za pravnu osobu - a sankcije se primjenjuju i osobno na nositelje ordinacija.'
       },
       legacy: {
-        title: 'Vaš softver radi — ali radi protiv vas',
-        desc: 'Većina certificiranih sustava vas veže za jedno računalo u ordinaciji. Ne možete provjeriti karton od kuće, ne možete pogledati raspored s mobitela, a za svako ažuriranje trebate informatičara. Jedini cloud vendor na tržištu građen je za bolnice s IT odjelom, ne za ordinaciju s 2 zaposlena. Vi trebate nešto između — a toga do sad nije bilo.'
+        title: 'Vaš softver radi - ali radi protiv vas',
+        desc: 'Većina certificiranih sustava vas veže za jedno računalo u ordinaciji. Ne možete provjeriti karton od kuće, ne možete pogledati raspored s mobitela, a za svako ažuriranje trebate informatičara. Jedini cloud vendor na tržištu građen je za bolnice s IT odjelom, ne za ordinaciju s 2 zaposlena. Vi trebate nešto između - a toga do sad nije bilo.'
       },
       cloudNoCezih: {
         title: 'Cloud platforme bez CEZIH certifikacije',
-        desc: 'Neke moderne cloud platforme nude lijep dizajn — ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
+        desc: 'Neke moderne cloud platforme nude lijep dizajn - ali bez CEZIH certifikacije. Korištenje platformi koje nisu dio CEZIH-a za razmjenu zdravstvenih podataka izravna je povreda zakona (čl. 28, st. 3).'
       }
     },
     bridge: {
       title: 'Niste postali liječnik da biste rješavali IT probleme.',
-      desc: 'Krajnji rok za povezivanje na CEZIH je 1. siječnja 2027. (produljen), a kazne do €13.200 (čl. 35–37 Zakona NN 14/2019) primjenjuju se nakon roka. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini — dok vi radite ono u čemu ste stručni.',
+      desc: 'Krajnji rok za povezivanje na CEZIH je 1. siječnja 2027. (produljen), a kazne do €13.200 (čl. 35-37 Zakona NN 14/2019) primjenjuju se nakon roka. Većina privatnih ordinacija i dalje traži rješenje koje nije ni preskupo, ni zastarjelo, ni nezakonito. Napravili smo sustav koji rješava CEZIH u pozadini - dok vi radite ono u čemu ste stručni.',
       costOfInaction: 'Kazna od €13.200 = 14 godina korištenja našeg softvera po €79/mj.',
       guideLink: 'Spremate se za CEZIH? Pročitajte vodič: rok produljen na 1. siječnja 2027. →',
       deadlineLink: 'Potvrđen novi rok? Provjerite činjenice o CEZIH roku 1. siječnja 2027. →'
     },
     solution: {
-      title: 'Cloud, CEZIH i cijena — konačno usklađeni',
+      title: 'Cloud, CEZIH i cijena - konačno usklađeni',
       cloudUx: {
         title: 'Cloud koji radi za vas',
-        desc: 'Otvorite sustav s mobitela između dva pacijenta. Provjerite raspored od kuće. Jednom postavite čitač na jedno računalo u ordinaciji — a pristupajte sustavu odakle god trebate. Uvijek ažurno, uvijek sigurnosno kopirano.'
+        desc: 'Otvorite sustav s mobitela između dva pacijenta. Provjerite raspored od kuće. Jednom postavite čitač na jedno računalo u ordinaciji - a pristupajte sustavu odakle god trebate. Uvijek ažurno, uvijek sigurnosno kopirano.'
       },
       cezihG500: {
-        title: 'CEZIH — riješen, ne kompliciran',
-        desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja — sve iz istog sučelja. AKD kartica za pristup, a za potpisivanje koristite karticu ili Certilia mobilni certifikat. Bez ručnog prebacivanja između sustava.'
+        title: 'CEZIH - riješen, ne kompliciran',
+        desc: 'e-Nalaz, e-Uputnica, e-Recept, eNaručivanje, provjera osiguranja - sve iz istog sučelja. AKD kartica za pristup, a za potpisivanje koristite karticu ili Certilia mobilni certifikat. Bez ručnog prebacivanja između sustava.'
       },
       dental: {
         title: 'Napravljen za vašu specijalnost',
-        desc: 'Bilo da ste stomatolog, fizijatar, dermatolog ili internist — predlošci, radni tokovi i šifrarnici prilagođeni su vašoj djelatnosti. Ne prilagođavate se vi softveru, softver se prilagođava vama.'
+        desc: 'Bilo da ste stomatolog, fizijatar, dermatolog ili internist - predlošci, radni tokovi i šifrarnici prilagođeni su vašoj djelatnosti. Ne prilagođavate se vi softveru, softver se prilagođava vama.'
       }
     },
     features: {
-      title: 'Sve što vaša ordinacija treba — na jednom mjestu',
+      title: 'Sve što vaša ordinacija treba - na jednom mjestu',
       patients: {
         title: 'Evidencija pacijenata',
-        desc: 'Osobni podaci, anamneza, dijagnoze, povijest posjeta — sve na jednom mjestu. GDPR usklađeno od temelja: enkripcija, kontrola pristupa, revizijski tragovi.'
+        desc: 'Osobni podaci, anamneza, dijagnoze, povijest posjeta - sve na jednom mjestu. GDPR usklađeno od temelja: enkripcija, kontrola pristupa, revizijski tragovi.'
       },
       scheduling: {
         title: 'Naručivanje i kalendar',
-        desc: 'Pregled slobodnih termina, brzo zakazivanje i organizacija rasporeda za cijeli tim — sve na jednom mjestu.'
+        desc: 'Pregled slobodnih termina, brzo zakazivanje i organizacija rasporeda za cijeli tim - sve na jednom mjestu.'
       },
       dentalChart: {
         title: 'Medicinski karton',
@@ -944,15 +964,15 @@ export const hr = {
       },
       cezihModules: {
         title: 'e-Nalaz, e-Uputnica, e-Recept',
-        desc: 'Generirajte CEZIH dokumente direktno iz pregleda — bez prebacivanja na drugi sustav. Nalaz, uputnica ili recept gotov je za 30 sekundi.'
+        desc: 'Generirajte CEZIH dokumente direktno iz pregleda - bez prebacivanja na drugi sustav. Nalaz, uputnica ili recept gotov je za 30 sekundi.'
       },
       smartCard: {
         title: 'AKD kartica + Certilia potpisivanje',
-        desc: 'AKD kartica za pristup CEZIH-u, a za potpisivanje dokumenata birate: kartica s USB čitačem ili Certilia mobilni certifikat. Vi kliknete "pošalji" — tehnički detalji su naš posao.'
+        desc: 'AKD kartica za pristup CEZIH-u, a za potpisivanje dokumenata birate: kartica s USB čitačem ili Certilia mobilni certifikat. Vi kliknete "pošalji" - tehnički detalji su naš posao.'
       },
       cloudAccess: {
         title: 'Radite odakle god trebate',
-        desc: 'Kartoni, raspored i dokumentacija — pristup s bilo kojeg uređaja, 24/7. Jednom postavite čitač kartica u ordinaciji, a CEZIH integracija radi automatski u pozadini dok vi radite s mobitela, tableta ili laptopa.'
+        desc: 'Kartoni, raspored i dokumentacija - pristup s bilo kojeg uređaja, 24/7. Jednom postavite čitač kartica u ordinaciji, a CEZIH integracija radi automatski u pozadini dok vi radite s mobitela, tableta ili laptopa.'
       }
     },
     comparison: {
@@ -1001,7 +1021,7 @@ export const hr = {
       }
     },
     pricing: {
-      title: 'Transparentne cijene — bez skrivenih troškova',
+      title: 'Transparentne cijene - bez skrivenih troškova',
       subtitle: 'Počnite s 14 dana besplatno. Bez dugoročnih ugovora. Otkažite bilo kad.',
       perMonth: '/mj',
       features: 'Uključeno',
@@ -1061,27 +1081,37 @@ export const hr = {
         slaNote: '* SLA ovisi o dostupnosti CEZIH sustava'
       },
       onboardingPackage: {
-        title: 'Profesionalna implementacija — ključ u ruke',
-        subtitle: 'Kompletna online implementacija uključena u onboarding cijenu. Vi radite svoj posao — mi postavljamo sustav.',
+        title: 'Profesionalna implementacija - ključ u ruke',
+        subtitle: 'Kompletna online implementacija uključena u onboarding cijenu. Vi radite svoj posao - mi postavljamo sustav.',
         badge: 'Uključeno u onboarding',
         items: [
-          { title: 'Postavljanje sustava', desc: 'Konfiguracija ordinacije, korisničkih računa, radnih tokova i šifrarnika — sve kroz video poziv i remote pristup' },
-          { title: 'Migracija podataka', desc: 'Prijenos pacijenata, anamneza i dokumentacije iz starog sustava — bez gubitka podataka' },
-          { title: 'Obuka osoblja', desc: 'Video obuka za svakog korisnika — snimke dostupne za kasniji pregled' },
-          { title: 'CEZIH aktivacija', desc: 'Remote instalacija local agenta, AKD kartica test, postavljanje Certilia certifikata za potpisivanje, VPN konfiguracija — sve do prvog uspješnog nalaza' },
+          { title: 'Postavljanje sustava', desc: 'Konfiguracija ordinacije, korisničkih računa, radnih tokova i šifrarnika - sve kroz video poziv i remote pristup' },
+          { title: 'Migracija podataka', desc: 'Prijenos pacijenata, anamneza i dokumentacije iz starog sustava - bez gubitka podataka' },
+          { title: 'Obuka osoblja', desc: 'Video obuka za svakog korisnika - snimke dostupne za kasniji pregled' },
+          { title: 'CEZIH aktivacija', desc: 'Remote instalacija local agenta, AKD kartica test, postavljanje Certilia certifikata za potpisivanje, VPN konfiguracija - sve do prvog uspješnog nalaza' },
           { title: '30 dana premium podrška', desc: 'Prioritetna podrška telefonom i emailom prvih 30 dana nakon pokretanja' }
         ],
         onSite: {
           title: 'Želite da dođemo osobno?',
-          desc: 'Implementacija na lokaciji — postavljanje, obuka i CEZIH aktivacija licem u lice.',
+          desc: 'Implementacija na lokaciji - postavljanje, obuka i CEZIH aktivacija licem u lice.',
           zones: [
             { name: 'Slavonija i okolica', price: 'Po dogovoru' },
             { name: 'Zagreb i središnja HR', price: 'Po dogovoru' },
             { name: 'Dalmacija i Istra', price: 'Po dogovoru' }
           ],
-          note: 'Cijena po dogovoru — ovisno o lokaciji, veličini ordinacije i opsegu implementacije. Uključuje putne troškove, dnevnicu i hands-on implementaciju na lokaciji.'
+          note: 'Cijena po dogovoru - ovisno o lokaciji, veličini ordinacije i opsegu implementacije. Uključuje putne troškove, dnevnicu i hands-on implementaciju na lokaciji.'
         }
       }
+    },
+    cms: {
+      title: 'CMS za poliklinike i ordinacije (Clinic Management System)',
+      body1: 'CMS za poliklinike i ordinacije (Clinic Management System) je softver za upravljanje cijelom ordinacijom ili poliklinikom na jednom mjestu: pacijentski karton i dokumenti, naručivanje i raspored, e-Recept, e-Uputnica i e-Nalaz, provjera osiguranja i poslovanje ordinacije. Umjesto posebnog programa za svaki posao i tablica oko njih, sve vodi jedan sustav.',
+      body2: 'HM Digital Medical je upravo to: CMS za poliklinike i ordinacije u cloudu, s ovjerenom CEZIH integracijom. Sve što ordinacija ili poliklinika svakodnevno radi - od prijema pacijenta do e-Nalaza i e-Uputnice - događa se u jednom sučelju, a podaci su dostupni sa svakog računala. Za poliklinike s više ordinacija isti CMS povezuje sve liječnike i upravu.'
+    },
+    ordinacije: {
+      title: 'Program za ordinacije - od solo prakse do tima',
+      body1: 'Tražite program za ordinacije koji ne morate instalirati ni održavati? HM Digital Medical je software za ordinacije i poliklinike koji radi u cloudu: prijava iz preglednika, sigurno pohranjeni podaci, bez servera u ordinaciji. Solo praksa kreće u paketu Solo (79 EUR/mj), a timovi i poliklinike u paketu Poliklinika (199 EUR/mj).',
+      body2: 'Svaki paket uključuje CEZIH integraciju, e-Recept, e-Uputnicu i e-Nalaz te besplatan probni period od 14 dana (bez kartice i bez obveze). Prije isteka probnog perioda zajedno procjenjujemo je li ovo pravi program za vašu ordinaciju.'
     },
     stats: {
       clinics: { value: '2.171', label: 'ordinacija u RH' },
@@ -1093,7 +1123,7 @@ export const hr = {
       items: [
         {
           q: 'Kako odabrati pravi medicinski softver s CEZIH integracijom?',
-          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. HM Digital je jedan od tih službeno certificiranih vendora — nalazimo se na službenom CEZIH popisu proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500). Za privatne ordinacije s 1-5 liječnika ključni kriteriji su: cloud pristup s mobitela, službena CEZIH certifikacija (ne samo "kompatibilnost"), jednostavnost korištenja i pristupačna cijena. HM Digital ispunjava sve: cloud medicinski program s punom CEZIH integracijom — od €79/mj, bez potrebe za serverom ili informatičarom.'
+          a: 'Na hrvatskom tržištu postoji 12 certificiranih CEZIH vendora, ali većina je desktop sustava bez cloud pristupa. HM Digital je jedan od tih službeno certificiranih vendora - nalazimo se na službenom CEZIH popisu proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500). Za privatne ordinacije s 1-5 liječnika ključni kriteriji su: cloud pristup s mobitela, službena CEZIH certifikacija (ne samo "kompatibilnost"), jednostavnost korištenja i pristupačna cijena. HM Digital ispunjava sve: cloud medicinski program s punom CEZIH integracijom - od €79/mj, bez potrebe za serverom ili informatičarom.'
         },
         {
           q: 'Koliko košta CEZIH softver za ordinacije?',
@@ -1101,11 +1131,11 @@ export const hr = {
         },
         {
           q: 'Postoji li CEZIH softver za stomatologe?',
-          a: 'Da — HM Digital podržava stomatološke ordinacije s predlošcima, šifrarnicima i radnim tokovima prilagođenima stomatološkoj praksi. Sustav uključuje punu CEZIH integraciju (e-Nalaz, e-Uputnica, e-Recept), evidenciju pacijenata i naručivanje. Isto vrijedi za opću medicinu, fizikalnu terapiju, dermatologiju i druge specijalnosti.'
+          a: 'Da - HM Digital podržava stomatološke ordinacije s predlošcima, šifrarnicima i radnim tokovima prilagođenima stomatološkoj praksi. Sustav uključuje punu CEZIH integraciju (e-Nalaz, e-Uputnica, e-Recept), evidenciju pacijenata i naručivanje. Isto vrijedi za opću medicinu, fizikalnu terapiju, dermatologiju i druge specijalnosti.'
         },
         {
           q: 'Što je CEZIH i kako funkcionira?',
-          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH — krajnji rok za povezivanje privatnih ustanova je 1. siječnja 2027. (produljen). Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
+          a: 'CEZIH je nacionalni sustav za sigurnu razmjenu medicinske dokumentacije, recepata, uputnica i nalaza. Zakon o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28) obvezuje sve pružatelje zdravstvene zaštite na uključivanje u CEZIH - krajnji rok za povezivanje privatnih ustanova je 1. siječnja 2027. (produljen). Članak 36 propisuje kazne do €13.200 za pravnu osobu. Ukratko: nije stvar izbora, nego zakona.'
         },
         {
           q: 'Koji su zakonski zahtjevi za CEZIH integraciju?',
@@ -1113,31 +1143,31 @@ export const hr = {
         },
         {
           q: 'Trebam li AKD iskaznicu?',
-          a: 'Da, AKD kartica je obavezna za pristup CEZIH-u — bez nje se nije moguće spojiti. Za potpisivanje dokumenata (e-Nalaz, e-Recept, e-Uputnica) možete koristiti istu AKD karticu s USB čitačem ili Certilia mobilni certifikat na mobitelu. Naš local agent čita karticu s vašeg računala i sve radi automatski.'
+          a: 'Da, AKD kartica je obavezna za pristup CEZIH-u - bez nje se nije moguće spojiti. Za potpisivanje dokumenata (e-Nalaz, e-Recept, e-Uputnica) možete koristiti istu AKD karticu s USB čitačem ili Certilia mobilni certifikat na mobitelu. Naš local agent čita karticu s vašeg računala i sve radi automatski.'
         },
         {
           q: 'Što je local agent i moram li ga sam instalirati?',
-          a: 'Local agent je mala aplikacija na vašem računalu koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta. Sve ostalo radi u cloudu. Nema složene konfiguracije — agent se sam poveže s vašim računom.'
+          a: 'Local agent je mala aplikacija na vašem računalu koja čita AKD karticu i komunicira s CEZIH-om. Instalacija traje manje od 5 minuta. Sve ostalo radi u cloudu. Nema složene konfiguracije - agent se sam poveže s vašim računom.'
         },
         {
           q: 'Što trebam pripremiti za početak?',
-          a: 'Četiri stvari: (1) šifru ustanove — dobivate je od HZZO-a, imaju je sve registrirane ustanove, (2) šifru zdravstvenog djelatnika — 7-znamenkasti broj od HZJZ-a, (3) MBO liječnika — 9-znamenkasti broj koji svaki liječnik zna, i (4) AKD karticu s USB čitačem za CEZIH pristup. Za potpisivanje možete koristiti istu karticu ili Certilia mobilni certifikat. Pomažemo vam s cijelim procesom aktivacije.'
+          a: 'Četiri stvari: (1) šifru ustanove - dobivate je od HZZO-a, imaju je sve registrirane ustanove, (2) šifru zdravstvenog djelatnika - 7-znamenkasti broj od HZJZ-a, (3) MBO liječnika - 9-znamenkasti broj koji svaki liječnik zna, i (4) AKD karticu s USB čitačem za CEZIH pristup. Za potpisivanje možete koristiti istu karticu ili Certilia mobilni certifikat. Pomažemo vam s cijelim procesom aktivacije.'
         },
         {
-          q: 'Imam već softver — zašto bih mijenjao?',
-          a: 'Ako vaš sustav već ima CEZIH certifikaciju, cloud pristup i mobilni rad — ostanite gdje jeste. Ali ako još uvijek morate biti u ordinaciji da vidite karton pacijenta, ako ažuriranja ovise o informatičaru, ako ne možete poslati e-Nalaz bez prebacivanja između dva sustava — pitajte se: koliko vas to košta u vremenu svaki tjedan? Zatražite demo i vidjet ćete razliku u 15 minuta.'
+          q: 'Imam već softver - zašto bih mijenjao?',
+          a: 'Ako vaš sustav već ima CEZIH certifikaciju, cloud pristup i mobilni rad - ostanite gdje jeste. Ali ako još uvijek morate biti u ordinaciji da vidite karton pacijenta, ako ažuriranja ovise o informatičaru, ako ne možete poslati e-Nalaz bez prebacivanja između dva sustava - pitajte se: koliko vas to košta u vremenu svaki tjedan? Zatražite demo i vidjet ćete razliku u 15 minuta.'
         },
         {
           q: 'Za koje specijalnosti je sustav namijenjen?',
-          a: 'Za sve. Jedan sustav za sve privatne zdravstvene ustanove — od stomatologije do fizikalne terapije, dermatologije, ginekologije, oftalmologije i opće medicine. Svaka ordinacija sama prilagođava katalog postupaka, vrste nalaza i termine svojoj djelatnosti. Nema ograničenja po specijalnosti.'
+          a: 'Za sve. Jedan sustav za sve privatne zdravstvene ustanove - od stomatologije do fizikalne terapije, dermatologije, ginekologije, oftalmologije i opće medicine. Svaka ordinacija sama prilagođava katalog postupaka, vrste nalaza i termine svojoj djelatnosti. Nema ograničenja po specijalnosti.'
         },
         {
           q: 'Mogu li prebaciti podatke iz starog sustava?',
-          a: 'Da — podržavamo migraciju iz većine hrvatskih medicinskih sustava. Proces: analiza vaših podataka → testna migracija → vaša provjera → puštanje u produkciju. Vaši pacijenti, anamneze i povijest liječenja se prenose bez gubitka.'
+          a: 'Da - podržavamo migraciju iz većine hrvatskih medicinskih sustava. Proces: analiza vaših podataka → testna migracija → vaša provjera → puštanje u produkciju. Vaši pacijenti, anamneze i povijest liječenja se prenose bez gubitka.'
         },
         {
           q: 'Koliko traje dok počnem raditi?',
-          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana — što je trenutno najbrži put do usklađenosti prije roka 1. siječnja 2027.'
+          a: 'Registracija i prvi unos: 5 minuta. Osnovna konfiguracija: 1-2 radna dana. S punom migracijom podataka i obukom osoblja: 5-10 radnih dana - što je trenutno najbrži put do usklađenosti prije roka 1. siječnja 2027.'
         },
         {
           q: 'Jesu li podaci sigurni?',
@@ -1145,16 +1175,20 @@ export const hr = {
         },
         {
           q: 'Imate li besplatni probni period?',
-          a: 'Da — 14 dana besplatnog korištenja bez kartice i bez obveze. Nakon isteka možete odabrati plaćeni plan ili jednostavno prestati koristiti sustav. Vaši podaci ostaju dostupni za izvoz 30 dana.'
+          a: 'Da - 14 dana besplatnog korištenja bez kartice i bez obveze. Nakon isteka možete odabrati plaćeni plan ili jednostavno prestati koristiti sustav. Vaši podaci ostaju dostupni za izvoz 30 dana.'
         },
         {
           q: 'Što ako želim otkazati?',
-          a: 'Otkažete bilo kad — bez dugoročnih ugovora, bez penala, bez poziva "zašto odlazite". Vaši podaci ostaju dostupni za izvoz 30 dana nakon otkazivanja.'
+          a: 'Otkažete bilo kad - bez dugoročnih ugovora, bez penala, bez poziva "zašto odlazite". Vaši podaci ostaju dostupni za izvoz 30 dana nakon otkazivanja.'
+        },
+        {
+          q: 'Je li HM Digital Medical CMS za poliklinike i ordinacije?',
+          a: 'Da. HM Digital Medical je CMS (Clinic Management System) za poliklinike i ordinacije: pacijentski karton, naručivanje, dokumenti, e-Recept, e-Uputnica i e-Nalaz te CEZIH integracija - sve u jednom cloud sustavu, bez instalacije i lokalnog servera.'
         }
       ]
     },
     cta: {
-      title: 'Zatražite demo — besplatno i bez obveze',
+      title: 'Zatražite demo - besplatno i bez obveze',
       subtitle: 'Pokazat ćemo vam sustav uživo. 15 minuta, bez prodajnog pritiska.',
       form: {
         name: 'Ime i prezime',
@@ -1211,10 +1245,10 @@ export const hr = {
       eyebrow: 'Ažurirano · srpanj 2026 · Rok produljen',
       title: 'CEZIH za privatne ordinacije: rok produljen na 1. siječnja 2027',
       subheadline: 'Vodič za privatne ordinacije, poliklinike i privatne bolnice koje se pripremaju za povezivanje na CEZIH do novog roka, 1. siječnja 2027.',
-      certBadge: 'HM Digital — službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
+      certBadge: 'HM Digital - službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
       certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'Cilj: 14 dana od "nismo ni krenuli" do produkcijske razmjene nalaza u CEZIH-u.',
-      lead: 'Rok za povezivanje privatnih zdravstvenih ustanova na Centralni zdravstveni informacijski sustav (CEZIH) produljen je na 1. siječnja 2027. — obveza nije ukinuta, samo je krajnji rok pomaknut. Ovaj vodič objašnjava što obveza zapravo znači, koje kazne primjenjuju za one koji se ne usklade na vrijeme, i koji je najbrži put do usklađenosti.',
+      lead: 'Rok za povezivanje privatnih zdravstvenih ustanova na Centralni zdravstveni informacijski sustav (CEZIH) produljen je na 1. siječnja 2027. - obveza nije ukinuta, samo je krajnji rok pomaknut. Ovaj vodič objašnjava što obveza zapravo znači, koje kazne primjenjuju za one koji se ne usklade na vrijeme, i koji je najbrži put do usklađenosti.',
       ctaPrimary: 'Najbrži put do usklađenosti',
       ctaSecondary: 'Pročitajte FAQ'
     },
@@ -1243,11 +1277,11 @@ export const hr = {
         },
         {
           title: 'Imam stari softver bez CEZIH integracije',
-          desc: 'Stari softver bez CEZIH-a ne ispunjava zakonsku obvezu. Trebate prelazak na ovjereno rješenje — najbrže preko cloud opcije koja ne traži novu opremu u ordinaciji.'
+          desc: 'Stari softver bez CEZIH-a ne ispunjava zakonsku obvezu. Trebate prelazak na ovjereno rješenje - najbrže preko cloud opcije koja ne traži novu opremu u ordinaciji.'
         },
         {
           title: 'Neugovorni privatnik bez šifre HZZO-a',
-          desc: 'Šifra zdravstvene ustanove (tiskanica "Dodjela šifre neugovorni") je preduvjet. Pokrenite zahtjev odmah — pošaljite ga na sifriranje.neugovorni@hzzo.hr s rješenjem Ministarstva zdravstva.'
+          desc: 'Šifra zdravstvene ustanove (tiskanica "Dodjela šifre neugovorni") je preduvjet. Pokrenite zahtjev odmah - pošaljite ga na sifriranje.neugovorni@hzzo.hr s rješenjem Ministarstva zdravstva.'
         },
         {
           title: 'Poliklinika ili ordinacija na više lokacija',
@@ -1258,26 +1292,26 @@ export const hr = {
     tldr: {
       title: 'U 60 sekundi',
       points: [
-        'Rok za povezivanje na CEZIH produljen je na 1. siječnja 2027. — i za neugovorne pružatelje, i za ugovorne pružatelje (za usluge koje pružaju privatno). Obveza nije ukinuta.',
-        'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) — i osobno za nositelje ordinacija — primjenjuju se nakon isteka roka.',
+        'Rok za povezivanje na CEZIH produljen je na 1. siječnja 2027. - i za neugovorne pružatelje, i za ugovorne pružatelje (za usluge koje pružaju privatno). Obveza nije ukinuta.',
+        'Kazne do €13.200 po prekršaju, prema Zakonu o podacima i informacijama u zdravstvu (NN 14/2019, čl. 28 i 36) - i osobno za nositelje ordinacija - primjenjuju se nakon isteka roka.',
         'Razmjenjuju se ambulantni izvještaji, specijalistički nalazi i otpusna pisma.',
         'Najbrži put do usklađenosti = cloud rješenje. Bez instalacije, bez servera, bez čekanja na informatičara.',
-        'Prvi korak ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet). Za potpisivanje u CEZIH-u koristi se vaša AKD/HZZO kartica — ona je obavezna (mora biti u čitaču na uredskom računalu). Certilia je opcionalan dodatak za udaljeni rad s drugog uređaja nakon što je kartica aktivna, ali ne zamjenjuje karticu.'
+        'Prvi korak ako još niste u sustavu: ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet). Za potpisivanje u CEZIH-u koristi se vaša AKD/HZZO kartica - ona je obavezna (mora biti u čitaču na uredskom računalu). Certilia je opcionalan dodatak za udaljeni rad s drugog uređaja nakon što je kartica aktivna, ali ne zamjenjuje karticu.'
       ]
     },
     afterDeadline: {
-      title: 'Rok produljen na 1. siječnja 2027. — obveza ostaje.',
-      body: 'Prvotni operativni rok za povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH bio je prvih mjeseci 2026. godine (prema obavijestima CEZIH-a i izvještavanju medija iz siječnja 2026., spominjao se rok "do svibnja"). Budući da je taj rok većini privatnih ordinacija bio prekratak, krajnji rok za potpuno povezivanje svih privatnih pružatelja — kako ugovornih s HZZO-om, tako i neugovornih — produljen je na 1. siječnja 2027. godine. Tako izričito navodi Hrvatska liječnička komora (HLK), a potvrđuju ga i izvještaji iz srpnja 2026. ("većini je to bio prekratak rok pa je produljen do 1. siječnja 2027").',
-      bodyExtra: 'Važno: ovo nije ukidanje obveze. Pravna osnova (Zakon o podacima i informacijama u zdravstvu, NN 14/2019) i dalje vrijedi, a kazne do €13.200 ostaju u primjeni za ustanove koje se do novog roka ne usklade. Napomena: popis ovjerenih programskih rješenja na cezih.hr aktivno se proširuje — provjerite najnoviji status prije odabira softvera.',
+      title: 'Rok produljen na 1. siječnja 2027. - obveza ostaje.',
+      body: 'Prvotni operativni rok za povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH bio je prvih mjeseci 2026. godine (prema obavijestima CEZIH-a i izvještavanju medija iz siječnja 2026., spominjao se rok "do svibnja"). Budući da je taj rok većini privatnih ordinacija bio prekratak, krajnji rok za potpuno povezivanje svih privatnih pružatelja - kako ugovornih s HZZO-om, tako i neugovornih - produljen je na 1. siječnja 2027. godine. Tako izričito navodi Hrvatska liječnička komora (HLK), a potvrđuju ga i izvještaji iz srpnja 2026. ("većini je to bio prekratak rok pa je produljen do 1. siječnja 2027").',
+      bodyExtra: 'Važno: ovo nije ukidanje obveze. Pravna osnova (Zakon o podacima i informacijama u zdravstvu, NN 14/2019) i dalje vrijedi, a kazne do €13.200 ostaju u primjeni za ustanove koje se do novog roka ne usklade. Napomena: popis ovjerenih programskih rješenja na cezih.hr aktivno se proširuje - provjerite najnoviji status prije odabira softvera.',
       crossLinkText: 'Detaljnu provjeru pomaka roka, popis izvora i napomenu o tome kako HLK i mediji objašnjavaju rok pogledajte na našoj posebnoj stranici:',
       crossLinkHref: '/cezih-rok-za-privatne-ordinacije/',
-      crossLinkLabel: 'CEZIH rok za privatne ordinacije — potvrda i izvori',
+      crossLinkLabel: 'CEZIH rok za privatne ordinacije - potvrda i izvori',
       whoTitle: 'Koga obveza obuhvaća',
       whoItems: [
-        'Neugovorni pružatelji (privatne ordinacije, poliklinike i bolnice bez ugovora s HZZO-om) — moraju započeti razmjenu putem CEZIH-a',
-        'Ugovorni pružatelji (oni koji već koriste CEZIH za HZZO usluge) — moraju započeti razmjenu i za usluge koje pružaju privatno',
-        'Sve specijalnosti — obiteljska medicina, stomatologija, specijalisti, dijagnostika, privatne bolnice',
-        'Sve veličine ustanova — od solo ordinacije do poliklinike s više lokacija'
+        'Neugovorni pružatelji (privatne ordinacije, poliklinike i bolnice bez ugovora s HZZO-om) - moraju započeti razmjenu putem CEZIH-a',
+        'Ugovorni pružatelji (oni koji već koriste CEZIH za HZZO usluge) - moraju započeti razmjenu i za usluge koje pružaju privatno',
+        'Sve specijalnosti - obiteljska medicina, stomatologija, specijalisti, dijagnostika, privatne bolnice',
+        'Sve veličine ustanova - od solo ordinacije do poliklinike s više lokacija'
       ]
     },
     penalties: {
@@ -1285,7 +1319,7 @@ export const hr = {
       intro: 'Pravna osnova obveze je Zakon o podacima i informacijama u zdravstvu (NN 14/2019). Članak 28. propisuje obvezu uključivanja u CEZIH; članak 36. propisuje kazne za nepostupanje.',
       fineAmount: 'do €13.200 po utvrđenom prekršaju',
       fineCitation: 'prema čl. 36 Zakona o podacima i informacijama u zdravstvu (NN 14/2019)',
-      fineNote: 'Sankcije se primjenjuju i osobno na nositelje ordinacija — ne samo na pravnu osobu.',
+      fineNote: 'Sankcije se primjenjuju i osobno na nositelje ordinacija - ne samo na pravnu osobu.',
       consequencesTitle: 'Praktične posljedice za ordinaciju',
       consequences: [
         'Novčana kazna u prekršajnom postupku',
@@ -1313,7 +1347,7 @@ export const hr = {
         }
       ],
       whyTitle: 'Zašto je razmjena propisana',
-      why: 'Cilj je da se svi nalazi i terapije pacijenta nalaze na jednom mjestu — što smanjuje rizik od grešaka, dupliranja terapija ili pretraga, a ključno je u hitnim situacijama kad pacijenta zbrinjava liječnik koji nije njegov primarni.',
+      why: 'Cilj je da se svi nalazi i terapije pacijenta nalaze na jednom mjestu - što smanjuje rizik od grešaka, dupliranja terapija ili pretraga, a ključno je u hitnim situacijama kad pacijenta zbrinjava liječnik koji nije njegov primarni.',
       table: {
         title: 'Konkretni primjeri po vrsti dokumenta',
         headers: { type: 'Vrsta dokumenta', examples: 'Konkretni primjeri' },
@@ -1327,17 +1361,17 @@ export const hr = {
     definition: {
       title: 'Što je CEZIH (i tko ga vodi)',
       body1: 'CEZIH (Centralni zdravstveni informacijski sustav Republike Hrvatske) je središnji informatički sustav koji povezuje pružatelje zdravstvene zaštite, HZZO i ostale dionike u zdravstvu. Sustavom upravlja Hrvatski zavod za zdravstveno osiguranje (HZZO), a regulatorni okvir donosi Ministarstvo zdravstva.',
-      body2: 'Kroz CEZIH se izdaju i razmjenjuju eRecepti, eUputnice, eNalazi, kao i druga zdravstvena dokumentacija. Sustav je u javnom zdravstvu u funkciji više od desetljeća — prema istraživanju Black Book Research (2026), godišnje se kroz CEZIH izdaje preko 15 milijuna eUputnica i preko 60 milijuna recepata i nalaza.',
+      body2: 'Kroz CEZIH se izdaju i razmjenjuju eRecepti, eUputnice, eNalazi, kao i druga zdravstvena dokumentacija. Sustav je u javnom zdravstvu u funkciji više od desetljeća - prema istraživanju Black Book Research (2026), godišnje se kroz CEZIH izdaje preko 15 milijuna eUputnica i preko 60 milijuna recepata i nalaza.',
       sourceLinkText: 'Službena stranica CEZIH-a',
       sourceLinkUrl: 'https://www.cezih.hr/'
     },
     modules: {
       title: 'CEZIH moduli za privatnike: eRecept, eUputnica, eNalaz',
-      intro: 'Privatna ordinacija najčešće koristi tri osnovna modula CEZIH-a. Moderan medicinski softver integrira ih u jedno sučelje — bez prebacivanja između portala.',
+      intro: 'Privatna ordinacija najčešće koristi tri osnovna modula CEZIH-a. Moderan medicinski softver integrira ih u jedno sučelje - bez prebacivanja između portala.',
       items: [
         {
           title: 'eRecept',
-          desc: 'Elektroničko izdavanje recepata izravno iz medicinskog softvera. Pacijent recept podiže u bilo kojoj ljekarni preko OIB-a ili e-iskaznice — bez papirnatog primjerka.'
+          desc: 'Elektroničko izdavanje recepata izravno iz medicinskog softvera. Pacijent recept podiže u bilo kojoj ljekarni preko OIB-a ili e-iskaznice - bez papirnatog primjerka.'
         },
         {
           title: 'eUputnica',
@@ -1355,7 +1389,7 @@ export const hr = {
       accessTitle: 'Što sve treba za pristup CEZIH-u',
       accessItems: [
         'Windows računalo (najmanje jedno u ordinaciji)',
-        'Kvalificirani certifikat — AKD pametna kartica ili nova iskaznica ovlaštenog zdravstvenog radnika (od 1. srpnja 2026. stare HZZO pametne kartice više ne vrijede za pristup CEZIH-u) + čitač',
+        'Kvalificirani certifikat - AKD pametna kartica ili nova iskaznica ovlaštenog zdravstvenog radnika (od 1. srpnja 2026. stare HZZO pametne kartice više ne vrijede za pristup CEZIH-u) + čitač',
         'VPN pristup prema HZZO mreži',
         'Lokalni agent dobavljača softvera (komponenta koja posreduje između softvera i CEZIH protokola)'
       ],
@@ -1363,40 +1397,40 @@ export const hr = {
       cardTitle: 'AKD pametna kartica',
       cardDesc: 'Klasično potpisivanje karticom u čitaču. Svaka CEZIH akcija (eRecept, eUputnica, eNalaz) potpisuje se izravno karticom.',
       certiliaTitle: 'Certilia (mobilni udaljeni potpis)',
-      certiliaDesc: 'Nakon što je veza uspostavljena na uredskom računalu (kartica + čitač + VPN + agent rade), CEZIH akcije možete potpisivati putem Certilia mobilne aplikacije — bez fizičkog dodirivanja kartice za svaki potpis. Korisno kad ste u drugom dijelu ordinacije, na drugoj lokaciji ili kod kuće.',
+      certiliaDesc: 'Nakon što je veza uspostavljena na uredskom računalu (kartica + čitač + VPN + agent rade), CEZIH akcije možete potpisivati putem Certilia mobilne aplikacije - bez fizičkog dodirivanja kartice za svaki potpis. Korisno kad ste u drugom dijelu ordinacije, na drugoj lokaciji ili kod kuće.',
       bothModesNote: 'Naš softver podržava oba načina rada: potpisivanje karticom i Certilia mobilni udaljeni potpis. Birate što vam odgovara po situaciji.',
       tipTitle: 'Najčešći problemi pri prijavi',
       tipItems: [
-        'Sustav ne prepoznaje karticu — najčešći uzrok je zastarjela srednja aplikacija (middleware) ili nepravilno spojen čitač.',
-        'VPN nije aktivan — bez VPN-a nema pristupa, neovisno o kartici.',
-        'Lokalni agent ne radi — provjerite je li servis pokrenut na uredskom računalu.',
-        'Istek certifikata — kvalificirani certifikati vrijede ograničeno, treba ih obnoviti prije isteka.',
-        'Pogrešan PIN — više neispravnih unosa može blokirati karticu.'
+        'Sustav ne prepoznaje karticu - najčešći uzrok je zastarjela srednja aplikacija (middleware) ili nepravilno spojen čitač.',
+        'VPN nije aktivan - bez VPN-a nema pristupa, neovisno o kartici.',
+        'Lokalni agent ne radi - provjerite je li servis pokrenut na uredskom računalu.',
+        'Istek certifikata - kvalificirani certifikati vrijede ograničeno, treba ih obnoviti prije isteka.',
+        'Pogrešan PIN - više neispravnih unosa može blokirati karticu.'
       ]
     },
     cloudVsLocal: {
       title: 'Kako se spojiti na CEZIH bez vlastitog servera (cloud vs lokalno)',
-      intro: 'CEZIH razmjena podataka tehnički još uvijek zahtijeva uredsko Windows računalo s karticom, čitačem, VPN-om i lokalnim agentom dobavljača — bez obzira na to je li softver "u oblaku" ili "lokalan". Razlika između cloud i klasičnog rješenja nije u tome zaobilazi li se taj sklop, nego gdje žive vaši podaci, kako se aplikacija ažurira i kako pristupate sustavu izvan glavnog uredskog računala.',
-      cloudTitle: 'Cloud — bez vlastitog servera, bržu usklađenost',
+      intro: 'CEZIH razmjena podataka tehnički još uvijek zahtijeva uredsko Windows računalo s karticom, čitačem, VPN-om i lokalnim agentom dobavljača - bez obzira na to je li softver "u oblaku" ili "lokalan". Razlika između cloud i klasičnog rješenja nije u tome zaobilazi li se taj sklop, nego gdje žive vaši podaci, kako se aplikacija ažurira i kako pristupate sustavu izvan glavnog uredskog računala.',
+      cloudTitle: 'Cloud - bez vlastitog servera, bržu usklađenost',
       cloudPros: [
-        'Bez vlastitog servera u ordinaciji — aplikacija i podaci su u oblaku dobavljača',
+        'Bez vlastitog servera u ordinaciji - aplikacija i podaci su u oblaku dobavljača',
         'Automatska ažuriranja (CEZIH protokoli se mijenjaju, cloud se ažurira centralno)',
         'Nakon što je uredsko računalo s čitačem i VPN-om aktivno, dodatne uređaje (laptop, mobitel) možete koristiti za pregled i unos između pacijenata',
         'Sigurnosne kopije i kontrola pristupa uključene u uslugu',
         'Niži ulazni trošak (mjesečna pretplata umjesto licence + servera)'
       ],
-      localTitle: 'Lokalno (legacy) — vlastiti server, sporije ažuriranje',
+      localTitle: 'Lokalno (legacy) - vlastiti server, sporije ažuriranje',
       localCons: [
         'Vlastiti server u ordinaciji + održavanje',
         'Trebate informatičara za ažuriranja i sigurnosne kopije',
-        'Vezani ste za jedno radno računalo — bez praktičnog pristupa drugima',
+        'Vezani ste za jedno radno računalo - bez praktičnog pristupa drugima',
         'Veći inicijalni trošak (licence, server, instalacija)'
       ],
-      callout: 'Važna napomena: i cloud i lokalna rješenja zahtijevaju jedno Windows računalo u ordinaciji s karticom, čitačem, VPN-om i agentom — to je HZZO uvjet, ne ograničenje softvera. Cloud uklanja vlastiti server i otvara dodatne uređaje za rad nakon što je veza uspostavljena.'
+      callout: 'Važna napomena: i cloud i lokalna rješenja zahtijevaju jedno Windows računalo u ordinaciji s karticom, čitačem, VPN-om i agentom - to je HZZO uvjet, ne ograničenje softvera. Cloud uklanja vlastiti server i otvara dodatne uređaje za rad nakon što je veza uspostavljena.'
     },
     comparison: {
       title: 'Stari softver bez CEZIH-a vs CEZIH-ovjeren cloud',
-      intro: 'Brzi vizualni pregled — što dobivate prelaskom sa zastarjelog softvera bez CEZIH integracije na ovjereno cloud rješenje.',
+      intro: 'Brzi vizualni pregled - što dobivate prelaskom sa zastarjelog softvera bez CEZIH integracije na ovjereno cloud rješenje.',
       headers: { feature: 'Što dobivate', legacy: 'Stari softver bez CEZIH-a', cloud: 'CEZIH-ovjeren cloud softver' },
       rows: [
         { feature: 'Zakonska CEZIH usklađenost', legacy: false, cloud: true },
@@ -1409,37 +1443,37 @@ export const hr = {
     },
     fastTrack: {
       title: 'Najbrži put do usklađenosti za nepripremljene ordinacije',
-      intro: 'Ako vaša ordinacija još nije priključena, ovo je redoslijed koraka koji u praksi traje 1–2 tjedna — uz uvjet da se administrativni dio ne odgađa. Najsporiji je korak 1 (administracija prema HZZO-u), pa ga pokrenite odmah.',
+      intro: 'Ako vaša ordinacija još nije priključena, ovo je redoslijed koraka koji u praksi traje 1-2 tjedna - uz uvjet da se administrativni dio ne odgađa. Najsporiji je korak 1 (administracija prema HZZO-u), pa ga pokrenite odmah.',
       steps: [
         {
           n: '1',
           phase: 'Tjedan 1',
           title: 'Ishodite šifru zdravstvene ustanove od HZZO-a',
-          desc: 'Šifra zdravstvene ustanove je preduvjet za spajanje na CEZIH za neugovorne pružatelje. Ispunite tiskanicu "Dodjela šifre neugovorni", ovjerite je (digitalnim) potpisom i pečatom ovlaštene osobe te dostavite zahtjev — uz obavezno priloženo rješenje Ministarstva zdravstva — elektroničkom poštom na sifriranje.neugovorni@hzzo.hr.'
+          desc: 'Šifra zdravstvene ustanove je preduvjet za spajanje na CEZIH za neugovorne pružatelje. Ispunite tiskanicu "Dodjela šifre neugovorni", ovjerite je (digitalnim) potpisom i pečatom ovlaštene osobe te dostavite zahtjev - uz obavezno priloženo rješenje Ministarstva zdravstva - elektroničkom poštom na sifriranje.neugovorni@hzzo.hr.'
         },
         {
           n: '2',
           phase: 'Tjedan 1',
           title: 'Pripremite AKD karticu za pristup i potpis (Certilia opcionalno)',
-          desc: 'Za pristup CEZIH-u i potpisivanje dokumenata koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — kartica je obavezna i mora biti u čitaču na uredskom računalu. Certilia je opcionalan dodatak koji omogućuje udaljeni rad i potpisivanje s drugog uređaja (mobitel, laptop) nakon što je kartica već aktivna; nije obvezna, ali ne zamjenjuje karticu.'
+          desc: 'Za pristup CEZIH-u i potpisivanje dokumenata koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) - kartica je obavezna i mora biti u čitaču na uredskom računalu. Certilia je opcionalan dodatak koji omogućuje udaljeni rad i potpisivanje s drugog uređaja (mobitel, laptop) nakon što je kartica već aktivna; nije obvezna, ali ne zamjenjuje karticu.'
         },
         {
           n: '3',
           phase: 'Tjedan 1',
           title: 'Odaberite CEZIH-ovjereno (ili u procesu certifikacije) rješenje',
-          desc: 'Provjerite popis ovjerenih programskih rješenja na cezih.hr — taj se popis aktivno proširuje za neugovorne pružatelje. Cloud rješenja imaju prednost jer eliminiraju instalaciju i lokalni server.'
+          desc: 'Provjerite popis ovjerenih programskih rješenja na cezih.hr - taj se popis aktivno proširuje za neugovorne pružatelje. Cloud rješenja imaju prednost jer eliminiraju instalaciju i lokalni server.'
         },
         {
           n: '4',
           phase: 'Tjedan 2',
           title: 'Onboarding i konfiguracija softvera',
-          desc: 'Dobavljač konfigurira ordinaciju, korisnike, šifrarnike i predloške. Kod cloud rješenja ovaj korak traje 1–2 dana.'
+          desc: 'Dobavljač konfigurira ordinaciju, korisnike, šifrarnike i predloške. Kod cloud rješenja ovaj korak traje 1-2 dana.'
         },
         {
           n: '5',
           phase: 'Tjedan 2',
           title: 'Testna i produkcijska razmjena + edukacija',
-          desc: 'Verifikacija da eRecept, eUputnica i eNalaz ispravno odlaze u CEZIH; prelazak na produkcijsku razmjenu i kratka obuka tima (1–2 sata).'
+          desc: 'Verifikacija da eRecept, eUputnica i eNalaz ispravno odlaze u CEZIH; prelazak na produkcijsku razmjenu i kratka obuka tima (1-2 sata).'
         }
       ],
       cta: 'Trebate hitnu usklađenost? Pogledajte naš cloud CEZIH softver',
@@ -1447,7 +1481,7 @@ export const hr = {
     },
     midCta: {
       title: 'Trebate da za vas odradimo tehnički dio?',
-      desc: 'VPN, certifikati, AKD kartica, CEZIH modul — preuzmemo cijeli proces. Cloud onboarding traje danima, ne tjednima.',
+      desc: 'VPN, certifikati, AKD kartica, CEZIH modul - preuzmemo cijeli proces. Cloud onboarding traje danima, ne tjednima.',
       primaryLabel: 'Zatražite besplatnu konzultaciju',
       primaryHref: '/kontakt',
       outlineLabel: 'Pogledajte cloud CEZIH softver',
@@ -1460,7 +1494,7 @@ export const hr = {
         {
           n: '1',
           title: 'CEZIH ovjera (ili u procesu certifikacije)',
-          desc: 'Softver mora biti na službenom popisu CEZIH-ovjerenih rješenja na cezih.hr. HM Digital se nalazi na tom popisu (kategorija Programska rješenja za privatne/ ustanove, G500). Popis se aktivno proširuje za neugovorne pružatelje — provjerite najnoviji status prije potpisivanja.'
+          desc: 'Softver mora biti na službenom popisu CEZIH-ovjerenih rješenja na cezih.hr. HM Digital se nalazi na tom popisu (kategorija Programska rješenja za privatne/ ustanove, G500). Popis se aktivno proširuje za neugovorne pružatelje - provjerite najnoviji status prije potpisivanja.'
         },
         {
           n: '2',
@@ -1470,17 +1504,17 @@ export const hr = {
         {
           n: '3',
           title: 'Brzina onboardinga',
-          desc: 'Pitajte izričito: "Koliko traje od potpisa do produkcije?" Cilj — dani, ne tjedni.'
+          desc: 'Pitajte izričito: "Koliko traje od potpisa do produkcije?" Cilj - dani, ne tjedni.'
         },
         {
           n: '4',
           title: 'Specijalizacija za vaš tip ordinacije',
-          desc: 'Stomatologija, obiteljska medicina, fizijatrija — predlošci i radni tokovi trebaju biti prilagođeni vašoj struci.'
+          desc: 'Stomatologija, obiteljska medicina, fizijatrija - predlošci i radni tokovi trebaju biti prilagođeni vašoj struci.'
         },
         {
           n: '5',
           title: 'Cijena prilagođena ordinaciji (ne bolnici)',
-          desc: 'Pretplate od ~€79–€199 mjesečno trebale bi biti dovoljne za solo ordinaciju ili manju polikliniku. Bolnički sustavi nisu adekvatni.'
+          desc: 'Pretplate od ~€79-€199 mjesečno trebale bi biti dovoljne za solo ordinaciju ili manju polikliniku. Bolnički sustavi nisu adekvatni.'
         },
         {
           n: '6',
@@ -1497,7 +1531,7 @@ export const hr = {
       questions: [
         'Koliko traje od potpisa ugovora do produkcijske razmjene s CEZIH-om?',
         'Kako se migriraju postojeći podaci iz mog trenutnog softvera?',
-        'Koja je razina podrške i SLA — telefon, email, vrijeme odgovora?',
+        'Koja je razina podrške i SLA - telefon, email, vrijeme odgovora?',
         'Postoji li ugovorna vezanost ili izlazna klauzula? Mjesečno otkazivo?',
         'Mogu li svoje podatke izvesti u standardiziranom formatu ako jednom otkažem?'
       ]
@@ -1507,15 +1541,15 @@ export const hr = {
       items: [
         {
           q: 'Što ako moja ordinacija još nije priključena na CEZIH?',
-          a: 'Niste sami — značajan dio privatnih ordinacija je u istoj situaciji. Najbrži put do usklađenosti je odabir cloud CEZIH-ovjerenog softvera koji ne zahtijeva instalaciju ili server u ordinaciji. Prije svega ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet za spajanje). Za potpisivanje u CEZIH-u koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — kartica je obavezna i mora biti u čitaču na uredskom računalu. Onboarding samog softvera kod modernih cloud rješenja traje nekoliko dana.'
+          a: 'Niste sami - značajan dio privatnih ordinacija je u istoj situaciji. Najbrži put do usklađenosti je odabir cloud CEZIH-ovjerenog softvera koji ne zahtijeva instalaciju ili server u ordinaciji. Prije svega ishodite šifru zdravstvene ustanove kod HZZO-a (preduvjet za spajanje). Za potpisivanje u CEZIH-u koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) - kartica je obavezna i mora biti u čitaču na uredskom računalu. Onboarding samog softvera kod modernih cloud rješenja traje nekoliko dana.'
         },
         {
           q: 'Trebam li posebnu šifru od HZZO-a prije spajanja na CEZIH?',
-          a: 'Da. Prema objašnjenjima CEZIH-a i HZZO-a, neugovorni pružatelji zdravstvene zaštite (oni bez ugovora s HZZO-om) moraju ishoditi šifru zdravstvene ustanove od HZZO-a kao preduvjet za spajanje na CEZIH. Zahtjev se podnosi tiskanicom "Dodjela šifre neugovorni", ovjerenom digitalnim potpisom i/ili pečatom, na adresu sifriranje.neugovorni@hzzo.hr — uz obavezno priloženo rješenje Ministarstva zdravstva.'
+          a: 'Da. Prema objašnjenjima CEZIH-a i HZZO-a, neugovorni pružatelji zdravstvene zaštite (oni bez ugovora s HZZO-om) moraju ishoditi šifru zdravstvene ustanove od HZZO-a kao preduvjet za spajanje na CEZIH. Zahtjev se podnosi tiskanicom "Dodjela šifre neugovorni", ovjerenom digitalnim potpisom i/ili pečatom, na adresu sifriranje.neugovorni@hzzo.hr - uz obavezno priloženo rješenje Ministarstva zdravstva.'
         },
         {
           q: 'Hoće li me HZZO inspekcija sigurno kazniti?',
-          a: 'Nadzor i prekršajni postupci se ne pokreću automatski, ali pravna osnova za kazne postoji i primjenjuje se nakon isteka (produljenog) roka od 1. siječnja 2027. Što duže ostanete neusklađeni nakon roka, veća je vjerojatnost nadzora — osobito ako pacijenti ili druge ustanove prijave nedostatak razmjene podataka.'
+          a: 'Nadzor i prekršajni postupci se ne pokreću automatski, ali pravna osnova za kazne postoji i primjenjuje se nakon isteka (produljenog) roka od 1. siječnja 2027. Što duže ostanete neusklađeni nakon roka, veća je vjerojatnost nadzora - osobito ako pacijenti ili druge ustanove prijave nedostatak razmjene podataka.'
         },
         {
           q: 'Kolika je točno kazna?',
@@ -1527,45 +1561,53 @@ export const hr = {
         },
         {
           q: 'Što ako koristim stari softver koji nema CEZIH integraciju?',
-          a: 'Stari softver bez CEZIH integracije ne ispunjava zakonsku obvezu — bez obzira što vam dosad nije stvarao probleme. Prelazak na CEZIH-ovjereno rješenje je nužan. Cloud rješenja olakšavaju migraciju jer ne trebate novu opremu u ordinaciji.'
+          a: 'Stari softver bez CEZIH integracije ne ispunjava zakonsku obvezu - bez obzira što vam dosad nije stvarao probleme. Prelazak na CEZIH-ovjereno rješenje je nužan. Cloud rješenja olakšavaju migraciju jer ne trebate novu opremu u ordinaciji.'
         },
         {
           q: 'Koliko traje cijeli proces priključenja?',
-          a: 'Kod cloud CEZIH-ovjerenog softvera, od potpisa ugovora do produkcijske razmjene može proteći samo nekoliko radnih dana — ako već imate Certilia / AKD certifikat. Ako certifikat tek ishodite, dodajte 1–2 tjedna na taj korak.'
+          a: 'Kod cloud CEZIH-ovjerenog softvera, od potpisa ugovora do produkcijske razmjene može proteći samo nekoliko radnih dana - ako već imate Certilia / AKD certifikat. Ako certifikat tek ishodite, dodajte 1-2 tjedna na taj korak.'
         },
         {
           q: 'Što je razlika između CEZIH-ovjerenog i CEZIH-kompatibilnog softvera?',
-          a: '"Ovjeren" znači da je rješenje prošlo službenu provjeru spremnosti i nalazi se na popisu odobrenih programskih rješenja na cezih.hr. "Kompatibilan" je marketinški pojam bez pravne težine. Za zakonsku usklađenost potreban je ovjeren softver. HM Digital se nalazi na službenom CEZIH popisu certificiranih proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500) — možete nas neovisno provjeriti na cezih.hr.'
+          a: '"Ovjeren" znači da je rješenje prošlo službenu provjeru spremnosti i nalazi se na popisu odobrenih programskih rješenja na cezih.hr. "Kompatibilan" je marketinški pojam bez pravne težine. Za zakonsku usklađenost potreban je ovjeren softver. HM Digital se nalazi na službenom CEZIH popisu certificiranih proizvođača aplikacija (kategorija Programska rješenja za privatne/ ustanove, G500) - možete nas neovisno provjeriti na cezih.hr.'
         },
         {
           q: 'Trebam li čitač pametnih kartica i VPN?',
-          a: 'Da. HZZO za CEZIH razmjenu podataka traži najmanje jedno Windows računalo u ordinaciji s AKD karticom, čitačem, VPN-om i lokalnim agentom dobavljača softvera. Certilia (mobilni udaljeni potpis) ne zaobilazi taj uvjet — ona dolazi do izražaja tek kad je veza uspostavljena: nakon toga sve CEZIH akcije možete potpisivati putem Certilia mobilne aplikacije, bez fizičkog korištenja kartice za svaki potpis. Naš softver podržava oba načina potpisivanja (kartica + Certilia mobilni).'
+          a: 'Da. HZZO za CEZIH razmjenu podataka traži najmanje jedno Windows računalo u ordinaciji s AKD karticom, čitačem, VPN-om i lokalnim agentom dobavljača softvera. Certilia (mobilni udaljeni potpis) ne zaobilazi taj uvjet - ona dolazi do izražaja tek kad je veza uspostavljena: nakon toga sve CEZIH akcije možete potpisivati putem Certilia mobilne aplikacije, bez fizičkog korištenja kartice za svaki potpis. Naš softver podržava oba načina potpisivanja (kartica + Certilia mobilni).'
         },
         {
           q: 'Što se sve šalje u CEZIH? Hoće li moji podaci biti dostupni svima?',
-          a: 'U CEZIH se šalju ambulantni izvještaji, specijalistički nalazi i otpusna pisma. Pristup je strogo reguliran — drugi liječnici vide samo dokumente za pacijente koje aktivno zbrinjavaju, a sustav vodi revizijske tragove svakog pristupa.'
+          a: 'U CEZIH se šalju ambulantni izvještaji, specijalistički nalazi i otpusna pisma. Pristup je strogo reguliran - drugi liječnici vide samo dokumente za pacijente koje aktivno zbrinjavaju, a sustav vodi revizijske tragove svakog pristupa.'
         },
         {
           q: 'Mogu li otkazati cloud softver ako se predomislim?',
-          a: 'Kod kvalitetnih cloud rješenja — da, na mjesečnoj razini i bez kazni. Tražite izričito "bez dugoročnog vezanja" prije potpisa. Vaši podaci moraju ostati izvozivi (export u standardiziranom formatu) za prelazak na drugog dobavljača.'
+          a: 'Kod kvalitetnih cloud rješenja - da, na mjesečnoj razini i bez kazni. Tražite izričito "bez dugoročnog vezanja" prije potpisa. Vaši podaci moraju ostati izvozivi (export u standardiziranom formatu) za prelazak na drugog dobavljača.'
         },
         {
-          q: 'Radim samo privatno, nemam ugovor s HZZO-om — moram li u CEZIH?',
-          a: 'Da. Prema objašnjenjima CEZIH-a i HZZO-a, CEZIH obveza vrijedi i za neugovorne pružatelje zdravstvene zaštite — one koji rade isključivo privatno, bez ugovora s HZZO-om. Prvi korak za vas je ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet — putem tiskanice "Dodjela šifre neugovorni" i emaila sifriranje.neugovorni@hzzo.hr, uz priloženo rješenje Ministarstva zdravstva). Tek nakon dodjele šifre možete započeti tehničko spajanje na CEZIH.'
+          q: 'Radim samo privatno, nemam ugovor s HZZO-om - moram li u CEZIH?',
+          a: 'Da. Prema objašnjenjima CEZIH-a i HZZO-a, CEZIH obveza vrijedi i za neugovorne pružatelje zdravstvene zaštite - one koji rade isključivo privatno, bez ugovora s HZZO-om. Prvi korak za vas je ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet - putem tiskanice "Dodjela šifre neugovorni" i emaila sifriranje.neugovorni@hzzo.hr, uz priloženo rješenje Ministarstva zdravstva). Tek nakon dodjele šifre možete započeti tehničko spajanje na CEZIH.'
         },
         {
-          q: 'Imam ordinacije na dvije lokacije — trebam li dva sustava ili više certifikata?',
+          q: 'Imam ordinacije na dvije lokacije - trebam li dva sustava ili više certifikata?',
           a: 'Trebate jedan softver koji podržava više lokacija (cloud rješenja to rade prirodno) i jedan kvalificirani certifikat po osobi koja potpisuje. Tehnički, na svakoj lokaciji gdje se odvija razmjena prema CEZIH-u potrebno je najmanje jedno Windows računalo s AKD karticom, čitačem, VPN-om i lokalnim agentom. Certilia mobilni potpis omogućuje da nakon uspostavljene veze potpisujete s bilo koje lokacije.'
         },
         {
           q: 'Što ako inspektor stigne dok sam već potpisao ugovor s dobavljačem, ali još nisam u produkciji?',
-          a: 'Dokumentirajte sve — ugovor s dobavljačem, popunjene tiskanice prema HZZO-u, status izdavanja certifikata, planirani datum produkcije. Iako pokrenuti proces ne uklanja sam prekršaj, u prekršajnim postupcima se ocjenjuje i stupanj nemara i poduzete radnje za usklađivanje. Što više dokaza imate o tome da je proces aktivno u tijeku, to je vjerojatnije blaže postupanje. Najsigurnija strategija je ipak izbjeći inspekciju ubrzanjem produkcije — kod cloud rješenja to su dani, ne tjedni.'
+          a: 'Dokumentirajte sve - ugovor s dobavljačem, popunjene tiskanice prema HZZO-u, status izdavanja certifikata, planirani datum produkcije. Iako pokrenuti proces ne uklanja sam prekršaj, u prekršajnim postupcima se ocjenjuje i stupanj nemara i poduzete radnje za usklađivanje. Što više dokaza imate o tome da je proces aktivno u tijeku, to je vjerojatnije blaže postupanje. Najsigurnija strategija je ipak izbjeći inspekciju ubrzanjem produkcije - kod cloud rješenja to su dani, ne tjedni.'
+        },
+        {
+          q: 'Kako se povezati na CEZIH? Treba li VPN?',
+          a: 'Za pristup CEZIH-u potreban je kvalificirani certifikat - AKD kartica je obavezna, bez nje se nije moguće spojiti. Za potpisivanje dokumenata koristi se ista kartica s USB čitačem ili Certilia mobilni certifikat. Tehnička strana povezivanja (VPN konfiguracija i lokalni agent) dio je aktivacije koju ovjereni pružatelji rješenja odrade umjesto vas, obično remote.'
+        },
+        {
+          q: 'Koji certifikati i šifre su potrebni za CEZIH?',
+          a: 'Četiri stvari: (1) šifra ustanove - dobiva se od HZZO-a i imaju je sve registrirane ustanove, (2) šifra zdravstvenog djelatnika - 7-znamenkasti broj od HZJZ-a, (3) MBO liječnika - 9-znamenkasti broj, i (4) AKD kartica s USB čitačem za CEZIH pristup. Za potpisivanje se može koristiti ista kartica ili Certilia mobilni certifikat.'
         }
       ]
     },
     cta: {
       title: 'Sljedeći korak: usklađenost u danima, ne tjednima',
-      body: 'Ako tražite najbrži put do CEZIH usklađenosti — bez instalacije, bez servera, bez čekanja informatičara — pogledajte naš cloud CEZIH softver. Specijaliziran je za privatne ordinacije i poliklinike, s onboardingom koji traje danima, ne tjednima.',
+      body: 'Ako tražite najbrži put do CEZIH usklađenosti - bez instalacije, bez servera, bez čekanja informatičara - pogledajte naš cloud CEZIH softver. Specijaliziran je za privatne ordinacije i poliklinike, s onboardingom koji traje danima, ne tjednima.',
       ctaPrimary: 'Pogledajte cloud CEZIH softver',
       ctaPrimaryHref: '/medicinski-softver',
       ctaSecondary: 'Zatražite besplatnu konzultaciju',
@@ -1575,23 +1617,23 @@ export const hr = {
       title: 'Izvori i dodatna literatura',
       disclaimer: 'Sadržaj je informativni i ne predstavlja pravni savjet. Za konkretne pravne procjene konzultirajte odvjetnika ili nadležno tijelo.',
       items: [
-        { label: 'Hrvatska liječnička komora — "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH" (krajnji rok 1. siječnja 2027.)', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
-        { label: 'Večernji list, srpanj 2026 — "...bio prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
-        { label: 'zdravljeija.hr, 14.07.2026 — "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
-        { label: 'HZZO — od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom (HZZO pametne kartice istekle 30.6.2026.)', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
-        { label: 'CEZIH — službeni popis certificiranih proizvođača aplikacija (HM Digital, kategorija G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Hrvatska liječnička komora - "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH" (krajnji rok 1. siječnja 2027.)', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, srpanj 2026 - "...bio prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14.07.2026 - "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO - od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom (HZZO pametne kartice istekle 30.6.2026.)', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH - službeni popis certificiranih proizvođača aplikacija (HM Digital, kategorija G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
-        { label: 'Službena stranica CEZIH-a — obavijesti, koncept sustava i upute', url: 'https://www.cezih.hr/' },
+        { label: 'Službena stranica CEZIH-a - obavijesti, koncept sustava i upute', url: 'https://www.cezih.hr/' },
         { label: 'Što sve treba za spajanje na CEZIH (službeni PDF)', url: 'http://www.cezih.hr/aplikacije/Sto_sve_treba.pdf' },
-        { label: 'Glas Slavonije, 20.01.2026 — povijesni kontekst prvotnog roka ("...do svibnja moraju ući u CEZIH")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
-        { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. — povijesni kontekst najave širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
+        { label: 'Glas Slavonije, 20.01.2026 - povijesni kontekst prvotnog roka ("...do svibnja moraju ući u CEZIH")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. - povijesni kontekst najave širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
       ]
     }
   },
   cezihDeadline: {
     meta: {
       title: 'CEZIH rok za privatne ordinacije: potvrđeno 1. siječnja 2027.',
-      description: 'Je li rok za spajanje privatnih ustanova na CEZIH pomaknut? Da — krajnji rok je 1.1.2027. Provjera s izvorima (HLK, Večernji) i 1.7.2026. iskaznica.',
+      description: 'Je li rok za spajanje privatnih ustanova na CEZIH pomaknut? Da - krajnji rok je 1.1.2027. Provjera s izvorima (HLK, Večernji) i 1.7.2026. iskaznica.',
       datePublished: '2026-07-27',
       dateModified: '2026-07-27'
     },
@@ -1602,11 +1644,11 @@ export const hr = {
     hero: {
       eyebrow: 'Srpanj 2026 · Provjera informacija',
       title: 'CEZIH rok za privatne ordinacije: potvrđeno 1. siječnja 2027.',
-      subheadline: 'Da, rok je produljen — obveza nije ukinuta. Sve ključne činjenice i izvore na jednom mjestu, bez nagađanja.',
-      certBadge: 'HM Digital — službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
+      subheadline: 'Da, rok je produljen - obveza nije ukinuta. Sve ključne činjenice i izvore na jednom mjestu, bez nagađanja.',
+      certBadge: 'HM Digital - službeno certificirani proizvođač CEZIH aplikacija (HZZO)',
       certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'Kratko, provjerljivo pojašnjenje: koliki je rok, koga obuhvaća i što ne treba miješati s njim.',
-      lead: 'Krajnji rok za spajanje svih privatnih pružatelja zdravstvene zaštite na CEZIH — i ugovornih i neugovornih s HZZO-om — jest 1. siječnja 2027. To izričito navodi Hrvatska liječnička komora (HLK), a potvrđuju ga i izvještaji iz srpnja 2026.',
+      lead: 'Krajnji rok za spajanje svih privatnih pružatelja zdravstvene zaštite na CEZIH - i ugovornih i neugovornih s HZZO-om - jest 1. siječnja 2027. To izričito navodi Hrvatska liječnička komora (HLK), a potvrđuju ga i izvještaji iz srpnja 2026.',
       ctaPrimary: 'Što sad napraviti?',
       ctaSecondary: 'Pročitajte izvore'
     },
@@ -1615,32 +1657,32 @@ export const hr = {
       lead: 'Rok je produljen, ne ukinut.',
       points: [
         { label: 'Novi krajnji rok', value: '1. siječnja 2027.' },
-        { label: 'Koga obuhvaća', value: 'Svi privatni pružatelji — ugovorni i neugovorni s HZZO-om' },
-        { label: 'Obveza', value: 'Nije ukinuta — Zakon o podacima i informacijama u zdravstvu (NN 14/2019) i dalje vrijedi' },
+        { label: 'Koga obuhvaća', value: 'Svi privatni pružatelji - ugovorni i neugovorni s HZZO-om' },
+        { label: 'Obveza', value: 'Nije ukinuta - Zakon o podacima i informacijama u zdravstvu (NN 14/2019) i dalje vrijedi' },
         { label: 'Kazne', value: 'Do €13.200 po prekršaju (čl. 36) ostaju u primjeni nakon roka' }
       ],
-      note: 'Odvojeno: od 1. srpnja 2026. pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika (stare HZZO pametne kartice istekle su 30. lipnja 2026.). To je promjena načina prijave, NE pomak roka za povezivanje — više o tome niže.'
+      note: 'Odvojeno: od 1. srpnja 2026. pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika (stare HZZO pametne kartice istekle su 30. lipnja 2026.). To je promjena načina prijave, NE pomak roka za povezivanje - više o tome niže.'
     },
     pomakRoka: {
       title: 'Je li rok zaista pomaknut?',
-      answer: 'Da. Prvotni operativni rok za povezivanje privatnih pružatelja bio je u prvim mjesecima 2026. godine — u izvještavanju medija iz siječnja 2026. spominjao se rok "do svibnja". Budući da je većini privatnih ordinacija taj rok bio prekratak, krajnji rok za potpuno povezivanje produljen je na 1. siječnja 2027. godine.',
+      answer: 'Da. Prvotni operativni rok za povezivanje privatnih pružatelja bio je u prvim mjesecima 2026. godine - u izvještavanju medija iz siječnja 2026. spominjao se rok "do svibnja". Budući da je većini privatnih ordinacija taj rok bio prekratak, krajnji rok za potpuno povezivanje produljen je na 1. siječnja 2027. godine.',
       timelineTitle: 'Kako se rok kretao',
       timeline: [
         { date: 'lipanj 2025.', text: 'Ministarstvo zdravstva najavljuje uključivanje privatnih ustanova u CEZIH (tadašnji plan: "do kraja godine").' },
-        { date: 'siječanj 2026.', text: 'Mediji navode operativni rok "do svibnja" uz kazne do €13.200 — obveza postaje aktualna.' },
+        { date: 'siječanj 2026.', text: 'Mediji navode operativni rok "do svibnja" uz kazne do €13.200 - obveza postaje aktualna.' },
         { date: 'svibanj 2026.', text: 'Prvotni rok iskorišten za započinjanje spajanja i razmjene, ali mnogim privatnicima prekratak za potpunu usklađenost.' },
         { date: 'srpanj 2026.', text: 'Krajnji rok za povezivanje svih privatnih pružatelja potvrđen kao 1. siječnja 2027. (HLK, Večernji, zdravljeija).' }
       ],
       caveatTitle: 'Napomena o izvoru',
-      caveat: 'HLK 1. siječnja 2027. navodi kao rok uz pozivanje na "tumačenje Ministarstva zdravstva", bez objavljenog broja Pravilnika koji taj datum izričito propisuje. Stupanj obveze ne ovisi o toj napomeni — pravna osnova (NN 14/2019) je jasna — ali prije donošenja konkretnih odluka preporučujemo provjeru na službenim stranicama CEZIH-a i Ministarstva zdravstva.'
+      caveat: 'HLK 1. siječnja 2027. navodi kao rok uz pozivanje na "tumačenje Ministarstva zdravstva", bez objavljenog broja Pravilnika koji taj datum izričito propisuje. Stupanj obveze ne ovisi o toj napomeni - pravna osnova (NN 14/2019) je jasna - ali prije donošenja konkretnih odluka preporučujemo provjeru na službenim stranicama CEZIH-a i Ministarstva zdravstva.'
     },
     tkoObuhvacen: {
       title: 'Koga točno obveza obuhvaća',
       items: [
-        'Neugovorni privatnici (ordinacije, poliklinike, privatne bolnice bez ugovora s HZZO-om) — moraju se povezati na CEZIH.',
-        'Ugovorni privatnici (već koriste CEZIH za HZZO usluge) — moraju započeti razmjenu i za usluge koje pružaju privatno.',
+        'Neugovorni privatnici (ordinacije, poliklinike, privatne bolnice bez ugovora s HZZO-om) - moraju se povezati na CEZIH.',
+        'Ugovorni privatnici (već koriste CEZIH za HZZO usluge) - moraju započeti razmjenu i za usluge koje pružaju privatno.',
         'Sve specijalnosti: obiteljska medicina, stomatologija, specijalisti, dijagnostika, privatne bolnice.',
-        'Sve veličine — od solo ordinacije do poliklinike s više lokacija.',
+        'Sve veličine - od solo ordinacije do poliklinike s više lokacija.',
         'Prvi korak za neugovorne: ishođenje šifre zdravstvene ustanove kod HZZO-a (preduvjet).'
       ]
     },
@@ -1648,17 +1690,17 @@ export const hr = {
       title: 'Pazite: 1. srpnja 2026. NIJE rok za povezivanje',
       body: 'Česta je zabuna pomiješati dvije različite stvari:',
       items: [
-        { term: 'Rok za povezivanje', desc: '1. siječnja 2027. — krajnji rok da privatna ustanova uspostavi sigurnu razmjenu podataka s CEZIH-om putem svog programskog rješenja.' },
-        { term: 'Rok za novu iskaznicu', desc: '1. srpnja 2026. — od tog dana pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika; stare HZZO pametne kartice istekle su 30. lipnja 2026. Ovo je promjena načina prijave, ne pomak roka za spajanje.' }
+        { term: 'Rok za povezivanje', desc: '1. siječnja 2027. - krajnji rok da privatna ustanova uspostavi sigurnu razmjenu podataka s CEZIH-om putem svog programskog rješenja.' },
+        { term: 'Rok za novu iskaznicu', desc: '1. srpnja 2026. - od tog dana pristup CEZIH-u moguć je isključivo novom iskaznicom ovlaštenog zdravstvenog radnika; stare HZZO pametne kartice istekle su 30. lipnja 2026. Ovo je promjena načina prijave, ne pomak roka za spajanje.' }
       ],
-      sourceNote: 'Izvor: HZZO — od 1. srpnja 2026. ulaz u CEZIH samo s novom iskaznicom ovlaštenog zdravstvenog radnika.'
+      sourceNote: 'Izvor: HZZO - od 1. srpnja 2026. ulaz u CEZIH samo s novom iskaznicom ovlaštenog zdravstvenog radnika.'
     },
     stoSad: {
       title: 'Što sad napraviti?',
-      intro: 'Ako vaša ordinacija još nije priključena, imate vremena — ali nemojte čekati zadnji tren. Najsporiji je administrativni korak (šifra HZZO-a), pa ga pokrenite odmah. Za potpisivanje u CEZIH-u koristi se vaša AKD kartica — Certilia je opcionalna:',
+      intro: 'Ako vaša ordinacija još nije priključena, imate vremena - ali nemojte čekati zadnji tren. Najsporiji je administrativni korak (šifra HZZO-a), pa ga pokrenite odmah. Za potpisivanje u CEZIH-u koristi se vaša AKD kartica - Certilia je opcionalna:',
       steps: [
         { n: '1', title: 'Ishodite šifru zdravstvene ustanove od HZZO-a', desc: 'Za neugovorne pružatelje ovo je preduvjet. Tiskanica "Dodjela šifre neugovorni" + rješenje Ministarstva zdravstva → sifriranje.neugovorni@hzzo.hr.' },
-        { n: '2', title: 'Pripremite AKD karticu za pristup i potpis (Certilia opcionalno)', desc: 'Za pristup CEZIH-u i potpisivanje koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) — obavezna je i mora biti u čitaču na uredskom računalu. Certilia je opcionalan dodatak za udaljeni rad s drugog uređaja nakon što je kartica aktivna; ne zamjenjuje karticu.' },
+        { n: '2', title: 'Pripremite AKD karticu za pristup i potpis (Certilia opcionalno)', desc: 'Za pristup CEZIH-u i potpisivanje koristi se vaša AKD kartica (HZZO pametna kartica, odnosno od 1.7.2026. nova iskaznica ovlaštenog zdravstvenog radnika) - obavezna je i mora biti u čitaču na uredskom računalu. Certilia je opcionalan dodatak za udaljeni rad s drugog uređaja nakon što je kartica aktivna; ne zamjenjuje karticu.' },
         { n: '3', title: 'Odaberite CEZIH-ovjereno softversko rješenje', desc: 'Provjerite popis ovjerenih rješenja na cezih.hr. Cloud rješenja skraćuju onboarding na dane.' }
       ],
       ctaText: 'Za detaljan vodič kroz cijeli proces (moduli, kazne, kako odabrati softver, FAQ):',
@@ -1673,14 +1715,14 @@ export const hr = {
       items: [
         {
           q: 'Je li CEZIH obveza za privatnike ukinuta?',
-          a: 'Ne. Obveza povezivanja na CEZIH nije ukinuta — produljen je samo krajnji rok, na 1. siječnja 2027. Pravna osnova (Zakon o podacima i informacijama u zdravstvu, NN 14/2019) i dalje vrijedi.'
+          a: 'Ne. Obveza povezivanja na CEZIH nije ukinuta - produljen je samo krajnji rok, na 1. siječnja 2027. Pravna osnova (Zakon o podacima i informacijama u zdravstvu, NN 14/2019) i dalje vrijedi.'
         },
         {
           q: 'Je li rok zaista pomaknut na 1. siječnja 2027.?',
           a: 'Da. Krajnji rok za spajanje svih privatnih pružatelja (ugovornih i neugovornih) jest 1. siječnja 2027., kako izričito navodi Hrvatska liječnička komora, a potvrđuju izvještaji iz srpnja 2026. ("prekratak rok pa je produljen").'
         },
         {
-          q: 'Čuo/la sam da je rok bio 1. lipnja 2026. — je li to točno?',
+          q: 'Čuo/la sam da je rok bio 1. lipnja 2026. - je li to točno?',
           a: 'Ne baš. Stvarni prvotni operativni rok bio je "početkom svibnja 2026." (svibanj, ne lipanj), prema izvještavanju medija iz siječnja 2026. i obavijestima CEZIH-a. Taj je rok naknadno produljen na 1. siječnja 2027.'
         },
         {
@@ -1699,7 +1741,7 @@ export const hr = {
     },
     cta: {
       title: 'Spremni za povezivanje na CEZIH?',
-      body: 'Cjeloviti vodič kroz obvezu, kazne, module i odabir softvera — ili izravno naš cloud CEZIH softver za privatne ordinacije.',
+      body: 'Cjeloviti vodič kroz obvezu, kazne, module i odabir softvera - ili izravno naš cloud CEZIH softver za privatne ordinacije.',
       primaryLabel: 'Cjeloviti CEZIH vodič',
       primaryHref: '/cezih-vodic/',
       secondaryLabel: 'Cloud CEZIH softver',
@@ -1709,13 +1751,13 @@ export const hr = {
       title: 'Izvori',
       disclaimer: 'Ova stranica provjerava javno dostupne tvrdnje o roku za CEZIH. Sadržaj je informativan i ne predstavlja pravni savjet. Za pravno obvezujuće informacije konzultirajte nadležna tijela.',
       items: [
-        { label: 'Hrvatska liječnička komora — "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
-        { label: 'Večernji list, srpanj 2026 — "...prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
-        { label: 'zdravljeija.hr, 14.07.2026 — "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
-        { label: 'HZZO — od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
-        { label: 'CEZIH — službeni popis certificiranih proizvođača aplikacija (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
-        { label: 'Glas Slavonije, 20.01.2026. — povijesni kontekst prvotnog roka ("do svibnja")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
-        { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. — najava širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
+        { label: 'Hrvatska liječnička komora - "Povezivanje privatnih pružatelja zdravstvene zaštite na CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, srpanj 2026 - "...prekratak rok pa je produljen do 1. siječnja 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14.07.2026 - "Privatne zdravstvene ustanove imaju rok do 1. siječnja 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO - od 1. srpnja 2026. ulaz u CEZIH samo novom iskaznicom', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH - službeni popis certificiranih proizvođača aplikacija (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Glas Slavonije, 20.01.2026. - povijesni kontekst prvotnog roka ("do svibnja")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Vlada RH / Ministarstvo zdravstva, lipanj 2025. - najava širenja CEZIH-a na privatni sektor', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
         { label: 'Zakon o podacima i informacijama u zdravstvu (NN 14/2019)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' }
       ]
     }

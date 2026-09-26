@@ -13,7 +13,7 @@ const t = getTranslations(locale);
 ---
 
 <Layout
-  title="HM Digital - Software Development | Web Apps, ERP, E-commerce, Automation & Digitization"
+  title="HM Digital | Software Development and CEZIH Solutions for Healthcare and Accounting"
   description="Professional software development services. We build web applications, e-commerce platforms, ERP systems, and automation solutions. 10+ years of experience. Get a free quote!"
   canonical="/en/"
 >
@@ -86,7 +86,7 @@ const t = getTranslations(locale);
           <div class="flex-1">
             <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full mb-3">CEZIH · Cloud · Healthcare</span>
             <h3 class="text-xl font-semibold text-slate-900 mb-3">CEZIH Software for Practices & Polyclinics</h3>
-            <p class="text-slate-600 mb-4">Medical software with CEZIH integration — e-Findings, e-Prescriptions, e-Referrals from the cloud. For private practices and polyclinics.</p>
+            <p class="text-slate-600 mb-4">Medical software with CEZIH integration - e-Findings, e-Prescriptions, e-Referrals from the cloud. For private practices and polyclinics.</p>
           </div>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Cloud</span>
@@ -100,6 +100,23 @@ const t = getTranslations(locale);
           </Button>
         </div>
 
+        <!-- KontoMatrix Invoice Capture -->
+        <div class="bg-white rounded-xl shadow-sm border border-primary-200 p-8 h-full flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <div class="flex-1">
+            <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full mb-3">KontoMatrix · Cloud · Accounting</span>
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">KontoMatrix - Invoice Capture for Accounting Firms</h3>
+            <p class="text-slate-600 mb-4">Clients snap photos of invoices on their phone, the app reads the data for you, and export to Minimax, PANTHEON or Synesis is one click.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Cloud</span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">OCR</span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">ERP</span>
+          </div>
+          <Button href={getPathForLocale('/unos-racuna', locale)} variant="outline" size="sm" class="w-full sm:w-auto">
+            {t.projects.learnMore}
+          </Button>
+        </div>
+
         <ProjectCard
           title={t.projects.digitalniUred.title}
           description={t.projects.digitalniUred.description}
@@ -108,7 +125,7 @@ const t = getTranslations(locale);
           locale={locale}
         />
 
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 flex flex-col justify-center items-center text-center">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 flex flex-col justify-center items-center text-center lg:col-span-3">
           <h3 class="text-xl font-semibold text-slate-900 mb-3">
             {t.projects.moreProjects}
           </h3>

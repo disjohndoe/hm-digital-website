@@ -69,11 +69,11 @@ export interface ActivityEntry {
 }
 
 export const activityFeed: ActivityEntry[] = [
-  { time: '14:32', message: 'Linija 3 — serija #4821 završena', type: 'production' },
-  { time: '14:15', message: 'RN-1004 — rok istječe danas', type: 'orders' },
-  { time: '13:58', message: 'Vijak M8x30 — zaliha ispod minimuma', type: 'inventory' },
-  { time: '13:40', message: 'QC provjera — serija #4820 odobrena', type: 'quality' },
-  { time: '13:22', message: 'Preventivno održavanje — Stroj M-07', type: 'system' },
+  { time: '14:32', message: 'Linija 3 - serija #4821 završena', type: 'production' },
+  { time: '14:15', message: 'RN-1004 - rok istječe danas', type: 'orders' },
+  { time: '13:58', message: 'Vijak M8x30 - zaliha ispod minimuma', type: 'inventory' },
+  { time: '13:40', message: 'QC provjera - serija #4820 odobrena', type: 'quality' },
+  { time: '13:22', message: 'Preventivno održavanje - Stroj M-07', type: 'system' },
 ];
 
 export const orderStatusBreakdown = {

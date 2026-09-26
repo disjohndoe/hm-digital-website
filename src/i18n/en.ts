@@ -18,7 +18,7 @@ export const en = {
   },
   valueProp: {
     tagline: 'We build solutions that stand out and deliver results',
-    reliability: 'Our focus is on reliability, security, and ease of use – because your business deserves a modern digital solution.',
+    reliability: 'Our focus is on reliability, security, and ease of use - because your business deserves a modern digital solution.',
     automation: 'We automate tedious, time-consuming processes',
     automationDesc: 'Our solutions accelerate repetitive tasks, reduce human error, and free up your time so you can focus on what truly matters-strategic thinking and growth.',
     services: {
@@ -167,43 +167,43 @@ export const en = {
     bulkScanning: {
       service: 'Bulk Document Scanning (loose sheets, A4/A3)',
       unit: 'per page',
-      price: '€0.05 – €0.10',
+      price: '€0.05 - €0.10',
       note: 'For large volumes (hundreds or thousands of pages). Lower end for >10k pages in standard condition; higher end for smaller batches or if handling required. Includes basic PDF output.'
     },
     smallBatch: {
       service: 'Small Batch Scanning (<100 pages)',
       unit: 'per page (min fee €10)',
-      price: '€0.10 – €0.20',
-      note: 'Applies to small jobs – e.g. scanning 20 pages might be €0.15 each. Minimum charge €10 to cover setup time.'
+      price: '€0.10 - €0.20',
+      note: 'Applies to small jobs - e.g. scanning 20 pages might be €0.15 each. Minimum charge €10 to cover setup time.'
     },
     bookNonDestructive: {
-      service: 'Book Scanning – Non-Destructive (A3 or smaller)',
+      service: 'Book Scanning - Non-Destructive (A3 or smaller)',
       unit: 'per page',
-      price: '€0.30 – €0.60',
+      price: '€0.30 - €0.60',
       note: 'Using overhead scanner, careful page handling. Price depends on total pages and fragility. (~€0.30 for simpler books in bulk, up to €0.60 for very delicate or low-volume projects). Physical book remains intact.'
     },
     ocr: {
       service: 'OCR Text Recognition (searchable PDF)',
       unit: 'add-on per page',
-      price: '€0.03 – €0.08',
+      price: '€0.03 - €0.08',
       note: 'Added on if not included. Can be waived for large jobs or charged at lower end (~€0.03) if text is easy. Higher end if complex layouts or languages.'
     },
     indexing: {
       service: 'Indexing & Metadata Entry',
       unit: 'per document or per hour',
-      price: '€0.20 – €0.50 per page or ~€15/hour',
+      price: '€0.20 - €0.50 per page or ~€15/hour',
       note: 'Detailed indexing includes naming files according to your scheme, categorizing by document types, adding metadata (date, document number, subject) and creating a searchable structure for easy retrieval.'
     },
     archiveOrganization: {
       service: 'Physical Archive Organization (pre-scan or post-scan)',
       unit: 'per archive box (or meter)',
-      price: '€5 – €10 per box',
-      note: 'Sorting, removing staples, refiling documents. Can estimate ~€5 per standard binder or box if moderately organized, more if papers are very disordered (20% surcharge for unsorted docs). Alternatively €30–€40/hour for on-site archive sorting.'
+      price: '€5 - €10 per box',
+      note: 'Sorting, removing staples, refiling documents. Can estimate ~€5 per standard binder or box if moderately organized, more if papers are very disordered (20% surcharge for unsorted docs). Alternatively €30-€40/hour for on-site archive sorting.'
     },
     onSiteScanning: {
       service: 'On-Site Scanning Service',
       unit: 'per day + per page',
-      price: '€50–€250 per day + std. page rates',
+      price: '€50-€250 per day + std. page rates',
       note: 'Charge a setup/travel fee per day on-site (covers transport, equipment setup and idle time) plus the normal per-page rates (with possible premium if environment slows work). Prices vary by distance.'
     },
     dmsSetup: {
@@ -215,7 +215,7 @@ export const en = {
     cloudHosting: {
       service: 'Digital Archive Hosting (optional cloud service)',
       unit: 'per GB per month',
-      price: '~€6 – €10',
+      price: '~€6 - €10',
       note: 'If you offer cloud storage of scanned files, a reference point is Fina\'s €6.64/GB/month. You might charge a similar flat rate that includes backup and access. Alternatively, offer to set up files on client\'s own cloud at no charge beyond scanning.'
     },
     basicTraining: {
@@ -291,7 +291,7 @@ export const en = {
       timelines: {
         asap: 'ASAP',
         month: 'Up to 1 month',
-        months: '1–3 months',
+        months: '1-3 months',
         flexible: 'Flexible'
       },
       submit: 'Request a free assessment'
@@ -310,8 +310,9 @@ export const en = {
     solutions: 'Solutions',
     digitizationLink: 'Document digitization',
     medicalLink: 'CEZIH Software for Practices and Polyclinics',
+    kontomatrixLink: 'KontoMatrix - invoice capture and scanning',
     cezihGuide: 'CEZIH Guide',
-    cezihDeadline: 'CEZIH 2027 Deadline — Fact Check',
+    cezihDeadline: 'CEZIH 2027 Deadline - Fact Check',
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
     rights: 'All rights reserved'
@@ -330,7 +331,7 @@ export const en = {
     hero: {
       tagline: 'Your IT partner for EU project implementation',
       title: 'Reliable technical delivery after EU funding approval',
-      subtitle: 'We build custom software, DMS systems, and integrations that meet EU tender requirements — from technical specification to production.',
+      subtitle: 'We build custom software, DMS systems, and integrations that meet EU tender requirements - from technical specification to production.',
       ctaAssessment: 'Free project assessment',
       ctaServices: 'View services'
     },
@@ -344,11 +345,11 @@ export const en = {
         },
         delivery: {
           title: 'Delivery to specification',
-          desc: 'We develop according to tender documentation — features, deadlines, and reporting per EU fund rules.'
+          desc: 'We develop according to tender documentation - features, deadlines, and reporting per EU fund rules.'
         },
         technology: {
           title: 'Proven technologies',
-          desc: 'Python, Django, FastAPI, React, PostgreSQL — a modern stack ensuring scalability and long-term maintainability.'
+          desc: 'Python, Django, FastAPI, React, PostgreSQL - a modern stack ensuring scalability and long-term maintainability.'
         },
         transparency: {
           title: 'Transparent communication',
@@ -358,7 +359,7 @@ export const en = {
     },
     services: {
       title: 'Services for EU projects',
-      subtitle: 'Everything you need for technical implementation — from custom apps to documentation',
+      subtitle: 'Everything you need for technical implementation - from custom apps to documentation',
       items: {
         customSoftware: {
           title: 'Custom software',
@@ -366,7 +367,7 @@ export const en = {
         },
         dmsOcr: {
           title: 'DMS & OCR systems',
-          desc: 'Document management systems with OCR recognition — archive digitization, searchable PDFs, and automatic classification.'
+          desc: 'Document management systems with OCR recognition - archive digitization, searchable PDFs, and automatic classification.'
         },
         integrations: {
           title: 'System integrations',
@@ -382,7 +383,7 @@ export const en = {
         },
         consulting: {
           title: 'IT consulting',
-          desc: 'Help defining the technical part of tenders — architecture, cost estimation, delivery plan, and timeline.'
+          desc: 'Help defining the technical part of tenders - architecture, cost estimation, delivery plan, and timeline.'
         }
       }
     },
@@ -392,13 +393,13 @@ export const en = {
       viewAll: 'View all projects',
       items: {
         project1: {
-          title: 'Digital Office — automation platform',
+          title: 'Digital Office - automation platform',
           description: 'Internally developed platform for document management, process automation, and reporting. Includes OCR, searchable archive, and integration with existing systems.',
           tech: 'Python, FastAPI, PostgreSQL, React, OCR'
         },
         project2: {
           title: 'Manufacturing ERP system',
-          description: 'Custom system for production tracking, inventory management, work orders, and reporting — built to client-specific requirements.',
+          description: 'Custom system for production tracking, inventory management, work orders, and reporting - built to client-specific requirements.',
           tech: 'Python, Django, PostgreSQL, React, REST API'
         }
       }
@@ -414,14 +415,14 @@ export const en = {
     },
     cta: {
       title: "Let's discuss your EU project",
-      subtitle: 'Reach out for a free assessment and technical consultation — no strings attached.',
+      subtitle: 'Reach out for a free assessment and technical consultation - no strings attached.',
       button: 'Request a free assessment',
       secondaryButton: 'Contact us'
     }
   },
   demoDigitalOffice: {
     meta: {
-      title: 'Digital Office — Demo | HM Digital',
+      title: 'Digital Office - Demo | HM Digital',
       description: 'Interactive demo of accounting, AI/OCR processing, and business automation platform for Croatian SMEs.'
     },
     hero: {
@@ -443,11 +444,11 @@ export const en = {
       kpi4: { label: 'Docs processed', value: '12,847', trend: '+320', icon: 'box' },
       notificationsTitle: 'Notifications',
       n1Title: 'Overdue invoice',
-      n1Desc: 'FAK-2026-0140 — Adriatic Cargo d.o.o. — 6,750.00 EUR',
+      n1Desc: 'FAK-2026-0140 - Adriatic Cargo d.o.o. - 6,750.00 EUR',
       n2Title: 'VAT deadline approaching',
       n2Desc: 'VAT form submission due: March 20, 2026',
       n3Title: 'Payment received',
-      n3Desc: 'TechnoServis d.o.o. — 4,550.00 EUR received',
+      n3Desc: 'TechnoServis d.o.o. - 4,550.00 EUR received',
       n4Title: 'New document classified',
       n4Desc: 'AI automatically categorized contract (confidence: 98.2%)',
       n5Title: 'Payroll reminder',
@@ -471,8 +472,8 @@ export const en = {
       quickAction2: 'Add Client',
       quickAction3: 'Upload Document',
       quickAction4: 'Generate Report',
-      toastMessage: 'Demo action — in production this would open the actual feature',
-      calendarTitle: 'Calendar — March 2026',
+      toastMessage: 'Demo action - in production this would open the actual feature',
+      calendarTitle: 'Calendar - March 2026',
       calendarDeadlines: {
         vatDeadline: 'VAT form deadline',
         taxDeadline: 'Tax filing',
@@ -564,8 +565,8 @@ export const en = {
         a2: 'All data verified: Issuer Tax ID (12345678901) and buyer Tax ID (98765432109) are valid, IBAN format is correct, amounts match. No discrepancies found.'
       },
       chatCanned: {
-        canned1: 'Analyzing expense structure for Q1 2026 — expenses show a 3.2% increase compared to the previous quarter, mainly due to rising material costs.',
-        canned2: 'Based on your invoices, I recommend optimizing payment terms — 4 suppliers offer early payment discounts (2% / 10 days).'
+        canned1: 'Analyzing expense structure for Q1 2026 - expenses show a 3.2% increase compared to the previous quarter, mainly due to rising material costs.',
+        canned2: 'Based on your invoices, I recommend optimizing payment terms - 4 suppliers offer early payment discounts (2% / 10 days).'
       },
       classificationTitle: 'Document Classification',
       classificationTypes: {
@@ -580,7 +581,7 @@ export const en = {
     },
     automation: {
       title: 'Workflow Automation',
-      subtitle: 'Complete automated pipeline for document processing — from reception to archiving',
+      subtitle: 'Complete automated pipeline for document processing - from reception to archiving',
       steps: {
         step1: { title: 'Reception', desc: 'Document arrives via email, upload, or scanning', time: '~0.5s' },
         step2: { title: 'OCR Processing', desc: 'Automatic text and structure recognition', time: '~1.2s' },
@@ -610,7 +611,7 @@ export const en = {
   },
   demoErp: {
     meta: {
-      title: 'Manufacturing ERP — Demo | HM Digital',
+      title: 'Manufacturing ERP - Demo | HM Digital',
       description: 'Interactive demo of the ERP system for production management, inventory tracking, work orders, and reporting.'
     },
     hero: {
@@ -647,11 +648,11 @@ export const en = {
       days: 'Mon,Tue,Wed,Thu,Fri,Sat,Sun',
       activityTitle: 'Activity',
       activities: {
-        a1: 'Line 3 — batch #4821 completed',
-        a2: 'WO-1004 — deadline expires today',
-        a3: 'Bolt M8x30 — stock below minimum',
-        a4: 'QC check — batch #4820 approved',
-        a5: 'Preventive maintenance — Machine M-07'
+        a1: 'Line 3 - batch #4821 completed',
+        a2: 'WO-1004 - deadline expires today',
+        a3: 'Bolt M8x30 - stock below minimum',
+        a4: 'QC check - batch #4820 approved',
+        a5: 'Preventive maintenance - Machine M-07'
       },
       orderStatusTitle: 'Order Status'
     },
@@ -728,13 +729,14 @@ export const en = {
   },
   accountingLanding: {
     meta: {
-      title: 'Računovođe — Accounting Software for Croatian Firms | HM Digital',
-      description: 'Stop chasing clients for invoices. Clients snap a photo on their phone, the app reads it for you, you just review and confirm. Works with Synesis, PANTHEON, Minimax, Luceed and SAP.'
+      title: 'KontoMatrix - Invoice Capture for Accounting Firms | HM Digital',
+      h1: 'Automatic invoice capture and scanning for accounting firms',
+      description: 'Clients snap a photo of each invoice on their phone, KontoMatrix reads the OIB, amount, date and line items, and you export to Minimax, PANTHEON, Synesis or Luceed in one click. From 10 EUR per client per month.'
     },
     hero: {
-      badge: 'ACCOUNTING FIRMS · CROATIA · EUR',
+      badge: 'KONTOMATRIX · ACCOUNTING FIRMS · CROATIA',
       tagline: 'Stop chasing clients for invoices.',
-      subtitle: 'Your clients photograph invoices on their phone, the app reads them for you, and you just review and confirm. Six hours of typing a day becomes two — and the data lands straight in the program you already use.',
+      subtitle: 'Your clients photograph invoices on their phone, the app KontoMatrix reads them for you, and you just review and confirm. Six hours of typing a day becomes two - and the data lands straight in the program you already use.',
       ctaPrimary: 'Request a 10-minute demo',
       ctaSecondary: 'How does it work?',
       trustRow: 'GDPR · FINA e-invoices · EU hosting · OIB validation'
@@ -744,11 +746,11 @@ export const en = {
       subtitle: "You didn't become an accountant to type up other people's invoices. Yet most of the day goes to exactly that.",
       card1: {
         title: 'You chase clients constantly',
-        desc: 'Emails, Viber, calls — for the third time this month you are asking the same client for invoices that should already be with you. A lost PDF in a text, a blurry photo on WhatsApp, an invoice "I\'ll send later".'
+        desc: 'Emails, Viber, calls - for the third time this month you are asking the same client for invoices that should already be with you. A lost PDF in a text, a blurry photo on WhatsApp, an invoice "I\'ll send later".'
       },
       card2: {
         title: 'You type the same data for hours',
-        desc: 'OIB, amount, date, VAT rate — from paper or email into your ERP. Slow, tedious, error-prone. One wrong digit and the tax return is incorrect.'
+        desc: 'OIB, amount, date, VAT rate - from paper or email into your ERP. Slow, tedious, error-prone. One wrong digit and the tax return is incorrect.'
       },
       card3: {
         title: 'Invoices are scattered everywhere',
@@ -760,7 +762,7 @@ export const en = {
       subtitle: 'The whole idea in one sentence: your clients photograph, the app reads, you confirm.',
       card1: {
         title: 'Clients send them themselves',
-        desc: 'A free mobile app for your clients. They snap the invoice in a second, and an automatic reminder makes sure it arrives on time. No more chasing — no emails, no Viber, no "I\'ll send it later".'
+        desc: 'A free mobile app for your clients. They snap the invoice in a second, and an automatic reminder makes sure it arrives on time. No more chasing - no emails, no Viber, no "I\'ll send it later".'
       },
       card2: {
         title: 'No typing',
@@ -768,39 +770,53 @@ export const en = {
       },
       card3: {
         title: 'Works with your program',
-        desc: 'Synesis, PANTHEON, Minimax, Luceed or SAP — you don\'t change the program you already use. OIB validation, VAT rates 25/13/5/0 %, FINA e-invoices and GDPR are built in from the start.'
+        desc: 'Synesis, PANTHEON, Minimax, Luceed or SAP - you don\'t change the program you already use. OIB validation, VAT rates 25/13/5/0 %, FINA e-invoices and GDPR are built in from the start.'
       }
     },
     howItWorks: {
       title: 'How it looks in practice',
-      step1: { title: 'Client photographs the invoice', desc: 'A free app on their phone. One photo and the invoice is with you — no email, no attachments.' },
+      step1: { title: 'Client photographs the invoice', desc: 'A free app on their phone. One photo and the invoice is with you - no email, no attachments.' },
       step2: { title: 'You review and confirm', desc: 'The app has already read the OIB, amount and line items. You just review, correct if needed, and confirm.' },
-      step3: { title: 'Export to your program', desc: 'One click and the data is in Synesis, PANTHEON, Minimax, Luceed or SAP — in a format your program already understands.' }
+      step3: { title: 'Export to your program', desc: 'One click and the data is in Synesis, PANTHEON, Minimax, Luceed or SAP - in a format your program already understands.' }
     },
     beforeAfter: {
       title: 'Ana, an accountant with 40 clients',
       beforeLabel: 'Before',
       afterLabel: 'Now',
       before: [
-        '7:30 — 14 emails and 3 Vibers with invoices (and without them)',
-        '8:00–14:00 — typing OIBs and amounts into the ERP',
+        '7:30 - 14 emails and 3 Vibers with invoices (and without them)',
+        '8:00-14:00 - typing OIBs and amounts into the ERP',
         'Chasing the invoice that vanished in a text',
         'Catching the wrong VAT rate after everything was already entered',
-        '16:00 — heading home. Same again tomorrow.'
+        '16:00 - heading home. Same again tomorrow.'
       ],
       after: [
-        '7:30 — you open the app, every invoice already there, read',
-        '8:00 — you review the suggested data and confirm',
+        '7:30 - you open the app, every invoice already there, read',
+        '8:00 - you review the suggested data and confirm',
         'Automatic reminders chase clients instead of you',
-        'By 10:00 — the Synesis export is done',
+        'By 10:00 - the Synesis export is done',
         'The rest of the day for advisory work and coffee with clients'
       ]
     },
     erp: {
       title: 'It already works with the program you use',
-      subtitle: 'One-click export, in a format your program understands. For anything else — CSV and XML.',
+      subtitle: 'One-click export, in a format your program understands. For anything else - CSV and XML.',
       items: ['Synesis', 'PANTHEON', 'Minimax', 'Luceed', 'SAP'],
       fallback: '+ CSV and XML for any other program'
+    },
+    comparison: {
+      title: 'Comparison: manual entry, in-program OCR, or KontoMatrix',
+      subtitle: 'Three ways invoices reach your program - and what each one really costs.',
+      colModel: 'Manual entry',
+      colSuite: 'In-program OCR',
+      colKonto: 'KontoMatrix',
+      rows: [
+        { label: 'Works with multiple programs', model: 'No - you re-enter into each one', suite: 'No - only inside that program', konto: 'Yes: Synesis, PANTHEON, Minimax, Luceed, SAP (+ CSV/XML)' },
+        { label: "Clients' paper invoices", model: 'You type them in', suite: 'You scan into that program', konto: 'Client snaps a photo with the free app' },
+        { label: 'OIB, amount, date, line items', model: 'Manual typing', suite: 'OCR reads them', konto: 'OCR reads them, you just confirm' },
+        { label: 'Automatic client reminders', model: 'No', suite: 'Depends on the program', konto: 'Yes, until the invoice arrives' },
+        { label: 'Monthly cost', model: 'Your working hours', suite: 'Depends on the program and package', konto: '10 EUR per active client' }
+      ]
     },
     pricing: {
       title: 'A clear price, no surprises',
@@ -813,9 +829,13 @@ export const en = {
       title: 'Frequently asked questions',
       items: [
         { q: 'Do I have to switch the program I already use?', a: 'No. The app exports data to Synesis, PANTHEON, Minimax, Luceed or SAP. For anything else, the export is in CSV or XML. You stay in the program you know.' },
-        { q: 'What if my client doesn\'t have a smartphone?', a: 'No problem. The client can also send the invoice by email, or bring a paper invoice that you photograph. The mobile app is just the fastest path — it isn\'t required.' },
-        { q: 'Is my clients\' OIB protected?', a: 'Yes. All data is held on servers in the European Union, encrypted, with FINA and ZKI compliance. GDPR articles 15, 17 and 21 are built into the system — including the right to access, erasure and data portability.' },
-        { q: 'How long does setup take for my office?', a: 'Usually one working day. We\'ll show you in a 10-minute demo exactly what it looks like for your office and your program — no obligation.' }
+        { q: 'Is KontoMatrix accounting software?', a: 'No, and that is the point. KontoMatrix is a standalone invoice intake app that works alongside your existing program - it does not compete with Minimax, PANTHEON or Synesis, it complements them. You stay in the program you know and stop typing up other people\'s invoices.' },
+        { q: 'What does the app read from an invoice automatically?', a: 'It recognizes the OIB, amount, date and line items, including VAT rates 25/13/5/0 %. You just review, correct if needed, and confirm before export.' },
+        { q: 'What if a client doesn\'t send invoices on time?', a: 'Automatic reminders chase your clients until the invoices arrive. No more third email to the same client in the same month.' },
+        { q: 'What if my client doesn\'t have a smartphone?', a: 'No problem. The client can also send the invoice by email, or bring a paper invoice that you photograph. The mobile app is just the fastest path - it isn\'t required.' },
+        { q: 'How much does it cost?', a: '10 EUR per month per active client - you only pay for clients who actually send invoices that month. The monthly minimum is 50 EUR per office, with no long-term contract or hidden costs.' },
+        { q: 'Is my clients\' OIB protected?', a: 'Yes. All data is held on servers in the European Union, encrypted, with FINA and ZKI compliance. GDPR articles 15, 17 and 21 are built into the system - including the right to access, erasure and data portability.' },
+        { q: 'How long does setup take for my office?', a: 'Usually one working day. We\'ll show you in a 10-minute demo exactly what it looks like for your office and your program - no obligation.' }
       ]
     },
     cta: {
@@ -858,20 +878,20 @@ export const en = {
 
   medicalLanding: {
     meta: {
-      title: 'CEZIH Cloud Software for Practices & Polyclinics | HM Digital',
-      description: 'Cloud CEZIH software for practices and polyclinics. Deadline 1 Jan 2027, fines up to €13,200. e-Findings, e-Prescriptions, e-Referrals, from €79/mo.'
+      title: 'CEZIH Practice Management Software - Cloud | HM Digital',
+      description: 'Cloud practice management software with CEZIH integration. e-Prescriptions, e-Referrals, e-Findings. From 79 EUR/mo. Deadline 1 Jan 2027. 14-day free trial.'
     },
     urgencyBar: {
-      before: 'Law NN 14/2019, Art. 28 — final CEZIH deadline: 1 January 2027 · Fines up to €13,200',
-      after: 'CEZIH is mandatory — final deadline 1 January 2027, fines up to €13,200, including personal liability for practice owners'
+      before: 'Law NN 14/2019, Art. 28 - final CEZIH deadline: 1 January 2027 · Fines up to €13,200',
+      after: 'CEZIH is mandatory - final deadline 1 January 2027, fines up to €13,200, including personal liability for practice owners'
     },
     hero: {
       badge: 'CEZIH PRIVATE PRACTICES · Cloud · Healthcare',
       certBadge: 'Officially certified by HZZO',
       certBadgeLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
-      title: 'Cloud CEZIH Software for Practices and Polyclinics',
+      title: 'Medical software for practices and polyclinics - CEZIH integration in the cloud',
       tagline: 'CEZIH solved. Cloud included. Priced for clinics, not hospitals.',
-      subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no compromise. Everything a private practice needs for CEZIH — and nothing it doesn\'t.',
+      subtitle: 'Access patient records from your phone. Send an e-Finding in 30 seconds. No server, no IT person, no compromise. Everything a private practice needs for CEZIH - and nothing it doesn\'t.',
       ctaCompare: 'Compare us to alternatives',
       ctaTrial: 'Request a free demo',
       ctaFeatures: 'See what you get'
@@ -879,45 +899,45 @@ export const en = {
     cert: {
       badge: 'Officially certified CEZIH application manufacturer',
       title: 'HM Digital is on the official CEZIH list of certified manufacturers',
-      body: 'Our software for private practices and polyclinics is officially certified and appears on the CEZIH list of application manufacturers maintained by HZZO and the Ministry of Health — in the category Software solutions for private/institutions (G500). This means the solution has passed an official readiness review and meets the technical prerequisites for data exchange with CEZIH.',
+      body: 'Our software for private practices and polyclinics is officially certified and appears on the CEZIH list of application manufacturers maintained by HZZO and the Ministry of Health - in the category Software solutions for private/institutions (G500). This means the solution has passed an official readiness review and meets the technical prerequisites for data exchange with CEZIH.',
       verifyLabel: 'Verify us on the official CEZIH list →',
       verifyUrl: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       pointsTitle: 'What this means for your practice',
       points: [
-        'It is not merely "CEZIH-compatible" — the solution is officially certified, with legal weight.',
+        'It is not merely "CEZIH-compatible" - the solution is officially certified, with legal weight.',
         'It satisfies the legal obligation under the Health Data and Information Act (NN 14/2019, Art. 28).',
-        'It passed an official technical review against CEZIH standards — not an improvisation.',
+        'It passed an official technical review against CEZIH standards - not an improvisation.',
         'You can independently verify our status on the official CEZIH website.'
       ]
     },
     problem: {
       title: 'Three reasons your practice still isn\'t compliant',
-      subtitle: 'Not because you haven\'t tried — but because the market had nothing to offer you. Until now.',
+      subtitle: 'Not because you haven\'t tried - but because the market had nothing to offer you. Until now.',
       deadline: {
         title: 'Legal framework and timeline',
         desc: 'Law NN 14/2019 mandates CEZIH integration. Regulation NN 150/2024 specifies technical requirements. Fines: up to €13,200 per violation for legal entities (Art. 35), up to €4,000 for responsible persons (Art. 37).'
       },
       legacy: {
-        title: 'Your current software works — but it works against you',
-        desc: 'Most certified systems tie you to a single computer in your office. You can\'t check a patient record from home, can\'t view tomorrow\'s schedule from your phone, and every update needs an IT person. The only cloud vendor on the market is built for hospitals with IT departments, not for a practice with 2 staff. You need something in between — and until now, it didn\'t exist.'
+        title: 'Your current software works - but it works against you',
+        desc: 'Most certified systems tie you to a single computer in your office. You can\'t check a patient record from home, can\'t view tomorrow\'s schedule from your phone, and every update needs an IT person. The only cloud vendor on the market is built for hospitals with IT departments, not for a practice with 2 staff. You need something in between - and until now, it didn\'t exist.'
       },
       cloudNoCezih: {
         title: 'Cloud platforms without CEZIH certification',
-        desc: 'Some modern cloud platforms offer great design — but no CEZIH certification. Using non-CEZIH platforms for health data exchange is a direct violation of the law (Art. 28, para. 3).'
+        desc: 'Some modern cloud platforms offer great design - but no CEZIH certification. Using non-CEZIH platforms for health data exchange is a direct violation of the law (Art. 28, para. 3).'
       }
     },
     bridge: {
       title: 'You didn\'t become a doctor to deal with IT problems.',
-      desc: 'The final deadline to connect to CEZIH is 1 January 2027 (extended), and fines up to €13,200 (Art. 35–37, Law NN 14/2019) apply after the deadline. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background — while you do what you do best.',
+      desc: 'The final deadline to connect to CEZIH is 1 January 2027 (extended), and fines up to €13,200 (Art. 35-37, Law NN 14/2019) apply after the deadline. Most private practices are still searching for a solution that isn\'t too expensive, outdated, or non-compliant. We built a system that handles CEZIH in the background - while you do what you do best.',
       costOfInaction: 'A single €13,200 fine = 14 years of our software at €79/mo.',
       guideLink: 'Preparing for CEZIH? Read the guide: deadline extended to 1 January 2027 →',
       deadlineLink: 'New deadline confirmed? Check the facts on the CEZIH 1 January 2027 deadline →'
     },
     solution: {
-      title: 'Everything you need — in one place',
+      title: 'Everything you need - in one place',
       cloudUx: {
         title: 'Modern cloud UX',
-        desc: 'Access the system from any device — computer, tablet or phone. Set up the card reader once on one workstation, then work from wherever you need. Automatic updates and backups.'
+        desc: 'Access the system from any device - computer, tablet or phone. Set up the card reader once on one workstation, then work from wherever you need. Automatic updates and backups.'
       },
       cezihG500: {
         title: 'Full CEZIH integration',
@@ -925,7 +945,7 @@ export const en = {
       },
       dental: {
         title: 'Tailored to your specialty',
-        desc: 'Configure the system to your specialty\'s needs — general medicine, dentistry, physical therapy, dermatology and more. Flexible templates for every practice type.'
+        desc: 'Configure the system to your specialty\'s needs - general medicine, dentistry, physical therapy, dermatology and more. Flexible templates for every practice type.'
       }
     },
     features: {
@@ -952,11 +972,11 @@ export const en = {
       },
       cloudAccess: {
         title: 'Access from any device',
-        desc: 'Records, scheduling and documentation — access from any device, 24/7. Set up the card reader once in your office, and CEZIH integration runs automatically in the background while you work from your phone, tablet or laptop.'
+        desc: 'Records, scheduling and documentation - access from any device, 24/7. Set up the card reader once in your office, and CEZIH integration runs automatically in the background while you work from your phone, tablet or laptop.'
       }
     },
     comparison: {
-      title: 'CEZIH Software Comparison — Cloud vs Desktop',
+      title: 'CEZIH Software Comparison - Cloud vs Desktop',
       headers: {
         feature: 'Feature',
         legacy: 'Desktop systems',
@@ -1075,27 +1095,37 @@ export const en = {
         slaNote: '* SLA depends on CEZIH system availability'
       },
       onboardingPackage: {
-        title: 'Professional onboarding — turnkey setup',
-        subtitle: 'Complete online setup included in onboarding price. You focus on patients — we set up the system.',
+        title: 'Professional onboarding - turnkey setup',
+        subtitle: 'Complete online setup included in onboarding price. You focus on patients - we set up the system.',
         badge: 'Included in onboarding',
         items: [
-          { title: 'System setup', desc: 'Configuration of practice, user accounts, workflows and code lists — all via video call and remote access' },
-          { title: 'Data migration', desc: 'Transfer patients, histories and documentation from your old system — no data loss' },
-          { title: 'Staff training', desc: 'Video training for each user — recordings available for later review' },
-          { title: 'CEZIH activation', desc: 'Remote installation of local agent, AKD card test, Certilia certificate setup for signing, VPN configuration — all the way to first successful finding' },
+          { title: 'System setup', desc: 'Configuration of practice, user accounts, workflows and code lists - all via video call and remote access' },
+          { title: 'Data migration', desc: 'Transfer patients, histories and documentation from your old system - no data loss' },
+          { title: 'Staff training', desc: 'Video training for each user - recordings available for later review' },
+          { title: 'CEZIH activation', desc: 'Remote installation of local agent, AKD card test, Certilia certificate setup for signing, VPN configuration - all the way to first successful finding' },
           { title: '30-day premium support', desc: 'Priority phone and email support for the first 30 days after launch' }
         ],
         onSite: {
           title: 'Want us to come in person?',
-          desc: 'On-site implementation — setup, training and CEZIH activation face to face.',
+          desc: 'On-site implementation - setup, training and CEZIH activation face to face.',
           zones: [
             { name: 'Slavonia & surroundings', price: 'Custom quote' },
             { name: 'Zagreb & central HR', price: 'Custom quote' },
             { name: 'Dalmatia & Istria', price: 'Custom quote' }
           ],
-          note: 'Custom quote — depending on location, practice size and scope of implementation. Includes travel costs, per diem and hands-on on-site implementation.'
+          note: 'Custom quote - depending on location, practice size and scope of implementation. Includes travel costs, per diem and hands-on on-site implementation.'
         }
       }
+    },
+    cms: {
+      title: 'CMS for Polyclinics and Practices (Clinic Management System)',
+      body1: 'A CMS for polyclinics and practices (Clinic Management System) is software that runs the entire practice from one place: patient records and documents, scheduling, e-Prescriptions, e-Referrals and e-Findings, insurance checks and practice finances. Instead of a separate program for every task and spreadsheets around them, one system runs everything.',
+      body2: 'HM Digital Medical is exactly that: a cloud CMS for polyclinics and practices with certified CEZIH integration. Everything a practice does daily - from patient check-in to e-Findings and e-Referrals - happens in one interface, with data available from any computer. For polyclinics with multiple practices, the same CMS connects all doctors and management.'
+    },
+    ordinacije: {
+      title: 'Practice software - from solo practice to a team',
+      body1: 'Looking for practice software you never have to install or maintain? HM Digital Medical is software for practices and polyclinics that runs in the cloud: sign in from a browser, data stored securely, no server in your practice. A solo practice starts in the Solo plan (79 EUR/mo), teams and polyclinics in the Poliklinika plan (199 EUR/mo).',
+      body2: 'Every plan includes CEZIH integration, e-Prescriptions, e-Referrals and e-Findings, plus a 14-day free trial (no card, no obligation). Before the trial ends, we assess together whether this is the right program for your practice.'
     },
     stats: {
       clinics: { value: '2,171', label: 'practices in Croatia' },
@@ -1107,7 +1137,7 @@ export const en = {
       items: [
         {
           q: 'Which CEZIH software is best for private practices?',
-          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. HM Digital is one of those officially certified vendors — we appear on the official CEZIH list of application manufacturers (category Software solutions for private/institutions, G500). For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, official CEZIH certification (not just "compatibility"), ease of use, and affordable pricing. HM Digital meets all of them: a cloud CEZIH software built specifically for private practices — from €79/mo, with full CEZIH integration and no need for a server or IT support.'
+          a: 'There are 12 certified CEZIH vendors in Croatia, but most are desktop systems without cloud access. HM Digital is one of those officially certified vendors - we appear on the official CEZIH list of application manufacturers (category Software solutions for private/institutions, G500). For small private practices with 1-5 doctors, the key criteria are: cloud access from mobile, official CEZIH certification (not just "compatibility"), ease of use, and affordable pricing. HM Digital meets all of them: a cloud CEZIH software built specifically for private practices - from €79/mo, with full CEZIH integration and no need for a server or IT support.'
         },
         {
           q: 'How much does CEZIH software cost?',
@@ -1115,35 +1145,35 @@ export const en = {
         },
         {
           q: 'Is there CEZIH software for dentists?',
-          a: 'Yes — HM Digital supports dental practices with templates, code lists, and workflows tailored to dental practice. The system includes full CEZIH integration (e-Findings, e-Referrals, e-Prescriptions), patient records and scheduling. The same applies to general medicine, physical therapy, dermatology and other specialties.'
+          a: 'Yes - HM Digital supports dental practices with templates, code lists, and workflows tailored to dental practice. The system includes full CEZIH integration (e-Findings, e-Referrals, e-Prescriptions), patient records and scheduling. The same applies to general medicine, physical therapy, dermatology and other specialties.'
         },
         {
           q: 'What is CEZIH and how does it work?',
-          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions — practices, polyclinics and hospitals — to connect. Regulation NN 150/2024 defines technical requirements. The final deadline for private institutions to connect is 1 January 2027 (extended); fines apply after that date.'
+          a: 'CEZIH (Central Health Information System of Croatia) is the national system for health data exchange. The Law on Data and Information in Healthcare (NN 14/2019, Art. 28) mandates all healthcare institutions - practices, polyclinics and hospitals - to connect. Regulation NN 150/2024 defines technical requirements. The final deadline for private institutions to connect is 1 January 2027 (extended); fines apply after that date.'
         },
         {
           q: 'What are the legal requirements for CEZIH integration?',
-          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The final deadline for all private healthcare institutions to connect is 1 January 2027 (extended) — after that date the penalty regime is fully active.'
+          a: 'Law NN 14/2019 in Articles 35-37 prescribes fines: up to €13,200 for legal entities per violation and up to €4,000 for responsible persons. The final deadline for all private healthcare institutions to connect is 1 January 2027 (extended) - after that date the penalty regime is fully active.'
         },
         {
           q: 'Do I need an AKD card?',
-          a: 'Yes. The AKD card is mandatory for CEZIH access — you cannot connect without it. For signing documents (e-Findings, e-Prescriptions, e-Referrals), you can use the same AKD card with a USB reader or a Certilia mobile certificate on your phone. Our local agent reads the card from your computer and handles everything automatically.'
+          a: 'Yes. The AKD card is mandatory for CEZIH access - you cannot connect without it. For signing documents (e-Findings, e-Prescriptions, e-Referrals), you can use the same AKD card with a USB reader or a Certilia mobile certificate on your phone. Our local agent reads the card from your computer and handles everything automatically.'
         },
         {
           q: 'How does the local agent work?',
-          a: 'The local agent is a small desktop application installed on the computer with the smart card reader. It reads the AKD card, establishes a VPN connection and forwards SOAP requests to CEZIH. Your cloud system communicates with the agent — no complex network configuration needed.'
+          a: 'The local agent is a small desktop application installed on the computer with the smart card reader. It reads the AKD card, establishes a VPN connection and forwards SOAP requests to CEZIH. Your cloud system communicates with the agent - no complex network configuration needed.'
         },
         {
           q: 'What do I need to prepare before getting started?',
-          a: 'Four things: (1) your institution code — issued by HZZO, all registered institutions have one, (2) healthcare worker code — a 7-digit number from HZJZ, (3) physician MBO number — a 9-digit number every doctor knows, and (4) an AKD card with a USB reader for CEZIH access. For document signing, you can use the same card or a Certilia mobile certificate. We help you through the entire activation process.'
+          a: 'Four things: (1) your institution code - issued by HZZO, all registered institutions have one, (2) healthcare worker code - a 7-digit number from HZJZ, (3) physician MBO number - a 9-digit number every doctor knows, and (4) an AKD card with a USB reader for CEZIH access. For document signing, you can use the same card or a Certilia mobile certificate. We help you through the entire activation process.'
         },
         {
-          q: 'I already have software — why would I switch?',
-          a: 'If your current system already has CEZIH certification, cloud access, and mobile work — stay where you are. But if you still have to be in the practice to see a patient record, if updates depend on an IT person, or if you cannot send an e-Finding without switching between two systems — ask yourself: how much does that costs you in time every week? Request a demo and you will see the difference in 15 minutes.'
+          q: 'I already have software - why would I switch?',
+          a: 'If your current system already has CEZIH certification, cloud access, and mobile work - stay where you are. But if you still have to be in the practice to see a patient record, if updates depend on an IT person, or if you cannot send an e-Finding without switching between two systems - ask yourself: how much does that costs you in time every week? Request a demo and you will see the difference in 15 minutes.'
         },
         {
           q: 'Which specialties is the system designed for?',
-          a: 'All of them. One system for every private healthcare institution — from dentistry to physical therapy, dermatology, gynecology, ophthalmology, and general medicine. Each practice customizes its own procedure catalog, record types, and appointment settings. No specialty restrictions.'
+          a: 'All of them. One system for every private healthcare institution - from dentistry to physical therapy, dermatology, gynecology, ophthalmology, and general medicine. Each practice customizes its own procedure catalog, record types, and appointment settings. No specialty restrictions.'
         },
         {
           q: 'Can I migrate data from my existing system?',
@@ -1159,16 +1189,20 @@ export const en = {
         },
         {
           q: 'What happens after the free trial?',
-          a: 'After 14 days you can choose a paid plan or simply stop using the system — no obligations. Your data remains available for export for 30 days after trial expiration.'
+          a: 'After 14 days you can choose a paid plan or simply stop using the system - no obligations. Your data remains available for export for 30 days after trial expiration.'
         },
         {
           q: 'Can I cancel anytime?',
-          a: 'Yes — cancel anytime. No long-term contracts, no penalties, no "why are you leaving" calls. Your data remains available for export for 30 days after cancellation.'
+          a: 'Yes - cancel anytime. No long-term contracts, no penalties, no "why are you leaving" calls. Your data remains available for export for 30 days after cancellation.'
+        },
+        {
+          q: 'Is HM Digital Medical a CMS for polyclinics and practices?',
+          a: 'Yes. HM Digital Medical is a Clinic Management System (CMS) for polyclinics and practices: patient records, scheduling, documents, e-Prescriptions, e-Referrals and e-Findings, and CEZIH integration - all in one cloud system, with no installation or local server.'
         }
       ]
     },
     cta: {
-      title: 'Request a demo — free, no obligation',
+      title: 'Request a demo - free, no obligation',
       subtitle: 'We\'ll show you the system live. 15 minutes, no sales pressure.',
       form: {
         name: 'Full name',
@@ -1225,10 +1259,10 @@ export const en = {
       eyebrow: 'Updated · July 2026 · Deadline extended',
       title: 'CEZIH for Private Practices in Croatia: Deadline Extended to 1 January 2027',
       subheadline: 'A guide for private practices, polyclinics, and private hospitals preparing to connect to CEZIH by the new deadline, 1 January 2027.',
-      certBadge: 'HM Digital — officially certified CEZIH application manufacturer (HZZO)',
+      certBadge: 'HM Digital - officially certified CEZIH application manufacturer (HZZO)',
       certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'Goal: 14 days from "we haven\'t even started" to production data exchange with CEZIH.',
-      lead: 'The deadline for private healthcare institutions to connect to the Central Health Information System (CEZIH) has been extended to 1 January 2027. — the obligation has not been abolished, only the final deadline has moved. This guide explains what the obligation actually means, what penalties apply to those who do not comply in time, and the fastest path to compliance.',
+      lead: 'The deadline for private healthcare institutions to connect to the Central Health Information System (CEZIH) has been extended to 1 January 2027. - the obligation has not been abolished, only the final deadline has moved. This guide explains what the obligation actually means, what penalties apply to those who do not comply in time, and the fastest path to compliance.',
       ctaPrimary: 'Fastest path to compliance',
       ctaSecondary: 'Read the FAQ'
     },
@@ -1257,11 +1291,11 @@ export const en = {
         },
         {
           title: 'I have legacy software without CEZIH integration',
-          desc: 'Legacy software without CEZIH does not meet the legal obligation. You need to switch to a certified solution — fastest via the cloud option, which requires no new on-site equipment.'
+          desc: 'Legacy software without CEZIH does not meet the legal obligation. You need to switch to a certified solution - fastest via the cloud option, which requires no new on-site equipment.'
         },
         {
           title: 'Non-contractual private provider without an HZZO code',
-          desc: 'A healthcare institution code (the "Dodjela šifre neugovorni" form) is a prerequisite. File the request immediately — send it to sifriranje.neugovorni@hzzo.hr along with the Ministry of Health decision.'
+          desc: 'A healthcare institution code (the "Dodjela šifre neugovorni" form) is a prerequisite. File the request immediately - send it to sifriranje.neugovorni@hzzo.hr along with the Ministry of Health decision.'
         },
         {
           title: 'Polyclinic or practice on multiple locations',
@@ -1272,26 +1306,26 @@ export const en = {
     tldr: {
       title: 'In 60 seconds',
       points: [
-        'The deadline to connect to CEZIH has been extended to 1 January 2027 — for both non-contractual providers and contractual providers (for the services they deliver privately). The obligation has not been abolished.',
-        'Fines up to €13,200 per breach, under the Health Data and Information Act (NN 14/2019, Articles 28 and 36) — and personal liability for practice owners — apply after the deadline passes.',
+        'The deadline to connect to CEZIH has been extended to 1 January 2027 - for both non-contractual providers and contractual providers (for the services they deliver privately). The obligation has not been abolished.',
+        'Fines up to €13,200 per breach, under the Health Data and Information Act (NN 14/2019, Articles 28 and 36) - and personal liability for practice owners - apply after the deadline passes.',
         'Required exchange: ambulatory exam reports, specialist findings, hospital discharge letters.',
         'Fastest path to compliance: a cloud solution. No installation, no server, no waiting on IT.',
-        'First step if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite). Signing in CEZIH uses your AKD/HZZO card — it is mandatory (must be in the reader on the office computer). Certilia is an optional add-on for remote work from another device after the card is active, but it does not replace the card.'
+        'First step if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite). Signing in CEZIH uses your AKD/HZZO card - it is mandatory (must be in the reader on the office computer). Certilia is an optional add-on for remote work from another device after the card is active, but it does not replace the card.'
       ]
     },
     afterDeadline: {
-      title: 'Deadline extended to 1 January 2027 — the obligation remains.',
-      body: 'The original operational deadline for private healthcare providers to connect to CEZIH fell in the first months of 2026 (CEZIH notices and January 2026 press coverage cited a "by May" deadline). Because that window was too short for most private practices, the final deadline for full connection of all private providers — both HZZO-contracted and non-contracted — has been extended to 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting ("the deadline was too short for most, so it was extended to 1 January 2027").',
-      bodyExtra: 'Important: this is not an abolition of the obligation. The legal basis (Health Data and Information Act, NN 14/2019) remains in force, and fines of up to €13,200 continue to apply to institutions that do not comply by the new deadline. Note: the list of certified software solutions on cezih.hr is actively being expanded — verify the latest status before choosing software.',
+      title: 'Deadline extended to 1 January 2027 - the obligation remains.',
+      body: 'The original operational deadline for private healthcare providers to connect to CEZIH fell in the first months of 2026 (CEZIH notices and January 2026 press coverage cited a "by May" deadline). Because that window was too short for most private practices, the final deadline for full connection of all private providers - both HZZO-contracted and non-contracted - has been extended to 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting ("the deadline was too short for most, so it was extended to 1 January 2027").',
+      bodyExtra: 'Important: this is not an abolition of the obligation. The legal basis (Health Data and Information Act, NN 14/2019) remains in force, and fines of up to €13,200 continue to apply to institutions that do not comply by the new deadline. Note: the list of certified software solutions on cezih.hr is actively being expanded - verify the latest status before choosing software.',
       crossLinkText: 'For a detailed verification of the deadline change, the source list, and a note on how HLK and the press explain the deadline, see our dedicated page:',
       crossLinkHref: '/en/cezih-deadline-private-practices/',
-      crossLinkLabel: 'CEZIH deadline for private practices — confirmation and sources',
+      crossLinkLabel: 'CEZIH deadline for private practices - confirmation and sources',
       whoTitle: 'Who is covered',
       whoItems: [
-        'Non-contractual providers (private practices, polyclinics, and hospitals without an HZZO contract) — must begin CEZIH data exchange',
-        'Contractual providers (those already using CEZIH for HZZO services) — must also begin exchange for services they deliver privately',
-        'All specialties — family medicine, dentistry, specialists, diagnostics, private hospitals',
-        'All sizes — from solo practices to multi-location polyclinics'
+        'Non-contractual providers (private practices, polyclinics, and hospitals without an HZZO contract) - must begin CEZIH data exchange',
+        'Contractual providers (those already using CEZIH for HZZO services) - must also begin exchange for services they deliver privately',
+        'All specialties - family medicine, dentistry, specialists, diagnostics, private hospitals',
+        'All sizes - from solo practices to multi-location polyclinics'
       ]
     },
     penalties: {
@@ -1299,7 +1333,7 @@ export const en = {
       intro: 'The legal basis is the Health Data and Information Act (NN 14/2019). Article 28 establishes the obligation to integrate with CEZIH; Article 36 sets the penalties for non-compliance.',
       fineAmount: 'up to €13,200 per established breach',
       fineCitation: 'under Article 36 of the Health Data and Information Act (NN 14/2019)',
-      fineNote: 'Sanctions also apply personally to practice owners — not only to the legal entity.',
+      fineNote: 'Sanctions also apply personally to practice owners - not only to the legal entity.',
       consequencesTitle: 'Practical consequences for a practice',
       consequences: [
         'Monetary fine in misdemeanor proceedings',
@@ -1327,7 +1361,7 @@ export const en = {
         }
       ],
       whyTitle: 'Why the exchange is mandated',
-      why: 'The goal is to keep all of a patient\'s findings and treatments in one place — reducing the risk of errors, duplicated treatments, or duplicated tests, and critically supporting emergency care when a patient is treated by a doctor other than their primary physician.',
+      why: 'The goal is to keep all of a patient\'s findings and treatments in one place - reducing the risk of errors, duplicated treatments, or duplicated tests, and critically supporting emergency care when a patient is treated by a doctor other than their primary physician.',
       table: {
         title: 'Concrete examples by document type',
         headers: { type: 'Document type', examples: 'Concrete examples' },
@@ -1341,17 +1375,17 @@ export const en = {
     definition: {
       title: 'What is CEZIH (and who runs it)',
       body1: 'CEZIH (the Central Health Information System of the Republic of Croatia) is the central IT system that connects healthcare providers, the Croatian Health Insurance Fund (HZZO), and other stakeholders in healthcare. The system is operated by HZZO; the regulatory framework is set by the Ministry of Health.',
-      body2: 'CEZIH is the channel for issuing and exchanging ePrescriptions, eReferrals, eFindings, and other medical documentation. The system has been operating in public healthcare for over a decade — per Black Book Research (2026), more than 15 million eReferrals and over 60 million prescriptions and findings are issued through CEZIH each year.',
+      body2: 'CEZIH is the channel for issuing and exchanging ePrescriptions, eReferrals, eFindings, and other medical documentation. The system has been operating in public healthcare for over a decade - per Black Book Research (2026), more than 15 million eReferrals and over 60 million prescriptions and findings are issued through CEZIH each year.',
       sourceLinkText: 'Official CEZIH website',
       sourceLinkUrl: 'https://www.cezih.hr/'
     },
     modules: {
       title: 'CEZIH modules for private practices: ePrescription, eReferral, eFinding',
-      intro: 'A private practice typically uses three core CEZIH modules. Modern medical software integrates all of them in a single interface — no switching between portals.',
+      intro: 'A private practice typically uses three core CEZIH modules. Modern medical software integrates all of them in a single interface - no switching between portals.',
       items: [
         {
           title: 'ePrescription',
-          desc: 'Electronic prescription issuance directly from the medical software. The patient picks up the prescription at any pharmacy using their OIB or e-ID — no paper copy needed.'
+          desc: 'Electronic prescription issuance directly from the medical software. The patient picks up the prescription at any pharmacy using their OIB or e-ID - no paper copy needed.'
         },
         {
           title: 'eReferral',
@@ -1369,7 +1403,7 @@ export const en = {
       accessTitle: 'What is required to access CEZIH',
       accessItems: [
         'A Windows computer (at least one in the practice)',
-        'A qualified certificate — an AKD smart card or the new official healthcare-worker ID card (from 1 July 2026 the old HZZO smart cards no longer grant access to CEZIH) + a reader',
+        'A qualified certificate - an AKD smart card or the new official healthcare-worker ID card (from 1 July 2026 the old HZZO smart cards no longer grant access to CEZIH) + a reader',
         'VPN access into the HZZO network',
         'The software vendor\'s local agent (the component that bridges the application and CEZIH protocols)'
       ],
@@ -1377,40 +1411,40 @@ export const en = {
       cardTitle: 'AKD smart card',
       cardDesc: 'Classic card-based signing in the reader. Each CEZIH action (ePrescription, eReferral, eFinding) is signed directly with the card.',
       certiliaTitle: 'Certilia (mobile / remote signing)',
-      certiliaDesc: 'Once the session is established on the office computer (card + reader + VPN + agent are running), you can sign CEZIH actions via the Certilia mobile app — without physically touching the card for every signature. Useful when you are in another room of the practice, at another location, or working from home.',
+      certiliaDesc: 'Once the session is established on the office computer (card + reader + VPN + agent are running), you can sign CEZIH actions via the Certilia mobile app - without physically touching the card for every signature. Useful when you are in another room of the practice, at another location, or working from home.',
       bothModesNote: 'Our software supports both modes: card-based signing and Certilia mobile remote signing. Pick whichever fits the situation.',
       tipTitle: 'Common login issues',
       tipItems: [
-        'The system does not recognize the card — most often caused by outdated middleware or an improperly connected reader.',
-        'VPN is not active — without VPN there is no access, regardless of the card.',
-        'The local agent is not running — verify the service is started on the office computer.',
-        'Expired certificate — qualified certificates have a limited validity period and must be renewed before they expire.',
-        'Wrong PIN — multiple incorrect attempts can lock the card.'
+        'The system does not recognize the card - most often caused by outdated middleware or an improperly connected reader.',
+        'VPN is not active - without VPN there is no access, regardless of the card.',
+        'The local agent is not running - verify the service is started on the office computer.',
+        'Expired certificate - qualified certificates have a limited validity period and must be renewed before they expire.',
+        'Wrong PIN - multiple incorrect attempts can lock the card.'
       ]
     },
     cloudVsLocal: {
       title: 'How to connect to CEZIH without your own server (cloud vs local)',
-      intro: 'CEZIH data exchange technically still requires an office Windows computer with a card, reader, VPN, and the software vendor\'s local agent — regardless of whether the application itself is "cloud" or "local". The cloud-vs-local choice is not about bypassing that setup; it is about where your data lives, how the application is updated, and how you reach the system from devices other than the main office computer.',
-      cloudTitle: 'Cloud — no on-prem server, faster to compliance',
+      intro: 'CEZIH data exchange technically still requires an office Windows computer with a card, reader, VPN, and the software vendor\'s local agent - regardless of whether the application itself is "cloud" or "local". The cloud-vs-local choice is not about bypassing that setup; it is about where your data lives, how the application is updated, and how you reach the system from devices other than the main office computer.',
+      cloudTitle: 'Cloud - no on-prem server, faster to compliance',
       cloudPros: [
-        'No on-prem server — application and data live in the vendor\'s cloud',
+        'No on-prem server - application and data live in the vendor\'s cloud',
         'Automatic updates (CEZIH protocols change; the cloud is updated centrally)',
         'Once the office computer with reader + VPN is active, additional devices (laptop, phone) can be used for review and entry between patients',
         'Backups and access control included in the service',
         'Lower entry cost (monthly subscription vs. license + server)'
       ],
-      localTitle: 'Local (legacy) — on-prem server, slower updates',
+      localTitle: 'Local (legacy) - on-prem server, slower updates',
       localCons: [
         'Your own server in the practice + maintenance',
         'IT support needed for updates and backups',
-        'Tied to a single workstation — no practical access from other devices',
+        'Tied to a single workstation - no practical access from other devices',
         'Higher upfront cost (licenses, server, installation)'
       ],
-      callout: 'Important: both cloud and local solutions require one Windows computer in the practice with card, reader, VPN, and agent — that is an HZZO requirement, not a software limitation. Cloud removes the on-prem server and opens up additional devices for work once the session is established.'
+      callout: 'Important: both cloud and local solutions require one Windows computer in the practice with card, reader, VPN, and agent - that is an HZZO requirement, not a software limitation. Cloud removes the on-prem server and opens up additional devices for work once the session is established.'
     },
     comparison: {
       title: 'Legacy software (no CEZIH) vs CEZIH-certified cloud',
-      intro: 'A quick at-a-glance view — what you gain by switching from outdated software without CEZIH integration to a certified cloud solution.',
+      intro: 'A quick at-a-glance view - what you gain by switching from outdated software without CEZIH integration to a certified cloud solution.',
       headers: { feature: 'What you gain', legacy: 'Legacy software (no CEZIH)', cloud: 'CEZIH-certified cloud software' },
       rows: [
         { feature: 'Legal CEZIH compliance', legacy: false, cloud: true },
@@ -1423,37 +1457,37 @@ export const en = {
     },
     fastTrack: {
       title: 'The fastest compliance path for unprepared practices',
-      intro: 'If your practice is not yet connected, here is the order of steps that, in practice, takes 1–2 weeks — assuming the administrative work is not delayed. Step 1 (HZZO administration) is the slowest, so start it immediately.',
+      intro: 'If your practice is not yet connected, here is the order of steps that, in practice, takes 1-2 weeks - assuming the administrative work is not delayed. Step 1 (HZZO administration) is the slowest, so start it immediately.',
       steps: [
         {
           n: '1',
           phase: 'Week 1',
           title: 'Obtain a healthcare institution code from HZZO',
-          desc: 'A healthcare institution code (šifra zdravstvene ustanove) is a prerequisite for CEZIH connection for non-contractual providers. Fill out the "Dodjela šifre neugovorni" form, sign it (digitally) and stamp it with the authorized representative\'s seal, then submit the request — with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached — by email to sifriranje.neugovorni@hzzo.hr.'
+          desc: 'A healthcare institution code (šifra zdravstvene ustanove) is a prerequisite for CEZIH connection for non-contractual providers. Fill out the "Dodjela šifre neugovorni" form, sign it (digitally) and stamp it with the authorized representative\'s seal, then submit the request - with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached - by email to sifriranje.neugovorni@hzzo.hr.'
         },
         {
           n: '2',
           phase: 'Week 1',
           title: 'Prepare your AKD card for access and signing (Certilia optional)',
-          desc: 'Access to CEZIH and signing of documents uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) — the card is mandatory and must be in the reader on the office computer. Certilia is an optional add-on that lets you work and sign from another device (phone, laptop) after the card is already active; it is not required, and it does not replace the card.'
+          desc: 'Access to CEZIH and signing of documents uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) - the card is mandatory and must be in the reader on the office computer. Certilia is an optional add-on that lets you work and sign from another device (phone, laptop) after the card is already active; it is not required, and it does not replace the card.'
         },
         {
           n: '3',
           phase: 'Week 1',
           title: 'Choose CEZIH-certified (or in-certification) software',
-          desc: 'Check the list of certified solutions on cezih.hr — that list is actively being expanded for non-contractual providers. Cloud solutions have an advantage because they remove installation and on-premise server requirements.'
+          desc: 'Check the list of certified solutions on cezih.hr - that list is actively being expanded for non-contractual providers. Cloud solutions have an advantage because they remove installation and on-premise server requirements.'
         },
         {
           n: '4',
           phase: 'Week 2',
           title: 'Onboarding and software configuration',
-          desc: 'The vendor configures the practice, users, code lists, and templates. With cloud solutions this typically takes 1–2 days.'
+          desc: 'The vendor configures the practice, users, code lists, and templates. With cloud solutions this typically takes 1-2 days.'
         },
         {
           n: '5',
           phase: 'Week 2',
           title: 'Test and production exchange + training',
-          desc: 'Verification that ePrescriptions, eReferrals, and eFindings are correctly delivered to CEZIH; switch to production exchange and a short team training session (1–2 hours).'
+          desc: 'Verification that ePrescriptions, eReferrals, and eFindings are correctly delivered to CEZIH; switch to production exchange and a short team training session (1-2 hours).'
         }
       ],
       cta: 'Need urgent compliance? See our cloud CEZIH software',
@@ -1461,7 +1495,7 @@ export const en = {
     },
     midCta: {
       title: 'Want us to handle the technical side for you?',
-      desc: 'VPN, certificates, AKD card, CEZIH module — we take care of the whole process. Cloud onboarding takes days, not weeks.',
+      desc: 'VPN, certificates, AKD card, CEZIH module - we take care of the whole process. Cloud onboarding takes days, not weeks.',
       primaryLabel: 'Request a free consultation',
       primaryHref: '/en/contact',
       outlineLabel: 'See the cloud CEZIH software',
@@ -1474,7 +1508,7 @@ export const en = {
         {
           n: '1',
           title: 'CEZIH certification (or in-process)',
-          desc: 'The software must appear on the official list of CEZIH-certified solutions on cezih.hr. HM Digital is on that list (category Software solutions for private/institutions, G500). The list is actively being expanded for non-contractual providers — verify the latest status before signing.'
+          desc: 'The software must appear on the official list of CEZIH-certified solutions on cezih.hr. HM Digital is on that list (category Software solutions for private/institutions, G500). The list is actively being expanded for non-contractual providers - verify the latest status before signing.'
         },
         {
           n: '2',
@@ -1484,17 +1518,17 @@ export const en = {
         {
           n: '3',
           title: 'Onboarding speed',
-          desc: 'Ask explicitly: "How long from contract signature to production?" Target — days, not weeks.'
+          desc: 'Ask explicitly: "How long from contract signature to production?" Target - days, not weeks.'
         },
         {
           n: '4',
           title: 'Specialization for your practice type',
-          desc: 'Dentistry, family medicine, physiatry — templates and workflows must match your specialty.'
+          desc: 'Dentistry, family medicine, physiatry - templates and workflows must match your specialty.'
         },
         {
           n: '5',
           title: 'Pricing fit for a practice (not a hospital)',
-          desc: 'Subscriptions of ~€79–€199 per month should be enough for a solo practice or smaller polyclinic. Hospital systems are not appropriate.'
+          desc: 'Subscriptions of ~€79-€199 per month should be enough for a solo practice or smaller polyclinic. Hospital systems are not appropriate.'
         },
         {
           n: '6',
@@ -1511,7 +1545,7 @@ export const en = {
       questions: [
         'How long from contract signature to production data exchange with CEZIH?',
         'How are existing data migrated from my current software?',
-        'What is the support level and SLA — phone, email, response time?',
+        'What is the support level and SLA - phone, email, response time?',
         'Is there contractual lock-in or an exit clause? Monthly cancellable?',
         'Can I export my data in a standardized format if I ever cancel?'
       ]
@@ -1521,15 +1555,15 @@ export const en = {
       items: [
         {
           q: 'What if my practice is not yet connected to CEZIH?',
-          a: 'You are not alone — a significant share of private practices is in the same position. The fastest path to compliance is a CEZIH-certified cloud solution that requires no installation or on-premise server. Before that, obtain a healthcare institution code from HZZO (a prerequisite for connection). Signing in CEZIH uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) — the card is mandatory and must be in the reader on the office computer. Software onboarding with modern cloud solutions takes a few days.'
+          a: 'You are not alone - a significant share of private practices is in the same position. The fastest path to compliance is a CEZIH-certified cloud solution that requires no installation or on-premise server. Before that, obtain a healthcare institution code from HZZO (a prerequisite for connection). Signing in CEZIH uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) - the card is mandatory and must be in the reader on the office computer. Software onboarding with modern cloud solutions takes a few days.'
         },
         {
           q: 'Do I need a special code from HZZO before connecting to CEZIH?',
-          a: 'Yes. Per CEZIH and HZZO guidance, non-contractual healthcare providers (those without an HZZO contract) must obtain a healthcare institution code (šifra zdravstvene ustanove) from HZZO as a prerequisite for CEZIH connection. The request is filed via the "Dodjela šifre neugovorni" form, signed (digitally) and stamped, and submitted to sifriranje.neugovorni@hzzo.hr — with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached.'
+          a: 'Yes. Per CEZIH and HZZO guidance, non-contractual healthcare providers (those without an HZZO contract) must obtain a healthcare institution code (šifra zdravstvene ustanove) from HZZO as a prerequisite for CEZIH connection. The request is filed via the "Dodjela šifre neugovorni" form, signed (digitally) and stamped, and submitted to sifriranje.neugovorni@hzzo.hr - with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached.'
         },
         {
           q: 'Will HZZO inspectors definitely fine me?',
-          a: 'Inspections and misdemeanor proceedings are not triggered automatically, but the legal basis for fines exists and applies after the (extended) 1 January 2027 deadline passes. The longer you remain non-compliant after the deadline, the higher the probability of an inspection — especially if patients or other institutions report the absence of data exchange.'
+          a: 'Inspections and misdemeanor proceedings are not triggered automatically, but the legal basis for fines exists and applies after the (extended) 1 January 2027 deadline passes. The longer you remain non-compliant after the deadline, the higher the probability of an inspection - especially if patients or other institutions report the absence of data exchange.'
         },
         {
           q: 'How large is the fine, exactly?',
@@ -1541,45 +1575,53 @@ export const en = {
         },
         {
           q: 'What if I use legacy software without CEZIH integration?',
-          a: 'Legacy software without CEZIH integration does not meet the legal obligation — regardless of whether it has worked for you so far. Switching to a CEZIH-certified solution is required. Cloud solutions ease migration because no new on-site equipment is needed.'
+          a: 'Legacy software without CEZIH integration does not meet the legal obligation - regardless of whether it has worked for you so far. Switching to a CEZIH-certified solution is required. Cloud solutions ease migration because no new on-site equipment is needed.'
         },
         {
           q: 'How long does the full onboarding take?',
-          a: 'With CEZIH-certified cloud software, only a few business days can pass from contract signature to production data exchange — assuming you already have a Certilia / AKD certificate. If you are still obtaining the certificate, add 1–2 weeks for that step.'
+          a: 'With CEZIH-certified cloud software, only a few business days can pass from contract signature to production data exchange - assuming you already have a Certilia / AKD certificate. If you are still obtaining the certificate, add 1-2 weeks for that step.'
         },
         {
           q: 'What is the difference between CEZIH-certified and CEZIH-compatible software?',
-          a: '"Certified" means the solution has passed an official readiness review and appears on the list of approved software solutions on cezih.hr. "Compatible" is a marketing term with no legal weight. Legal compliance requires certified software. HM Digital appears on the official CEZIH list of certified application manufacturers (category Software solutions for private/institutions, G500) — you can verify us independently on cezih.hr.'
+          a: '"Certified" means the solution has passed an official readiness review and appears on the list of approved software solutions on cezih.hr. "Compatible" is a marketing term with no legal weight. Legal compliance requires certified software. HM Digital appears on the official CEZIH list of certified application manufacturers (category Software solutions for private/institutions, G500) - you can verify us independently on cezih.hr.'
         },
         {
           q: 'Do I need a smart card reader and VPN?',
-          a: 'Yes. For CEZIH data exchange, HZZO requires at least one Windows computer in the practice with an AKD card, a reader, VPN access, and the software vendor\'s local agent. Certilia (mobile remote signing) does not bypass that requirement — it kicks in only after the session has been established. Once it has, every CEZIH action can be signed via the Certilia mobile app, without physically using the card for every signature. Our software supports both signing modes (card + Certilia mobile).'
+          a: 'Yes. For CEZIH data exchange, HZZO requires at least one Windows computer in the practice with an AKD card, a reader, VPN access, and the software vendor\'s local agent. Certilia (mobile remote signing) does not bypass that requirement - it kicks in only after the session has been established. Once it has, every CEZIH action can be signed via the Certilia mobile app, without physically using the card for every signature. Our software supports both signing modes (card + Certilia mobile).'
         },
         {
           q: 'What is sent to CEZIH? Will my data be visible to everyone?',
-          a: 'Ambulatory reports, specialist findings, and discharge letters are sent to CEZIH. Access is strictly regulated — other physicians only see documents for patients they are actively treating, and the system maintains audit trails of every access.'
+          a: 'Ambulatory reports, specialist findings, and discharge letters are sent to CEZIH. Access is strictly regulated - other physicians only see documents for patients they are actively treating, and the system maintains audit trails of every access.'
         },
         {
           q: 'Can I cancel a cloud solution if I change my mind?',
-          a: 'With quality cloud solutions — yes, on a monthly basis and without penalties. Insist explicitly on "no long-term lock-in" before signing. Your data must remain exportable (in a standardized format) for migration to another vendor.'
+          a: 'With quality cloud solutions - yes, on a monthly basis and without penalties. Insist explicitly on "no long-term lock-in" before signing. Your data must remain exportable (in a standardized format) for migration to another vendor.'
         },
         {
-          q: 'I work only privately and have no HZZO contract — do I have to join CEZIH?',
-          a: 'Yes. Per CEZIH and HZZO guidance, the CEZIH obligation also covers non-contractual healthcare providers — those who work exclusively privately, without an HZZO contract. The first step for you is obtaining a healthcare institution code (šifra zdravstvene ustanove) from HZZO — a prerequisite, filed via the "Dodjela šifre neugovorni" form and emailed to sifriranje.neugovorni@hzzo.hr, with the Ministry of Health decision attached. Only after the code is issued can you start the technical CEZIH connection.'
+          q: 'I work only privately and have no HZZO contract - do I have to join CEZIH?',
+          a: 'Yes. Per CEZIH and HZZO guidance, the CEZIH obligation also covers non-contractual healthcare providers - those who work exclusively privately, without an HZZO contract. The first step for you is obtaining a healthcare institution code (šifra zdravstvene ustanove) from HZZO - a prerequisite, filed via the "Dodjela šifre neugovorni" form and emailed to sifriranje.neugovorni@hzzo.hr, with the Ministry of Health decision attached. Only after the code is issued can you start the technical CEZIH connection.'
         },
         {
-          q: 'I have practices on two locations — do I need two systems or multiple certificates?',
+          q: 'I have practices on two locations - do I need two systems or multiple certificates?',
           a: 'You need a single software that supports multiple locations (cloud solutions handle this natively) and one qualified certificate per signing person. Technically, every location where CEZIH exchange happens requires at least one Windows computer with an AKD card, a reader, VPN access, and the local agent. Certilia mobile signing lets you sign from any location once the session has been established.'
         },
         {
           q: 'What if an inspector arrives while I have already signed a vendor contract but I am not yet in production?',
-          a: 'Document everything — the vendor contract, the HZZO forms you have submitted, the certificate issuance status, the planned production date. Although a process in progress does not undo the breach itself, misdemeanor proceedings weigh both the degree of negligence and the steps taken toward compliance. The more evidence you have that the process is actively underway, the higher the chance of leniency. The safest strategy is still to avoid an inspection by accelerating production — with cloud solutions, that is days, not weeks.'
+          a: 'Document everything - the vendor contract, the HZZO forms you have submitted, the certificate issuance status, the planned production date. Although a process in progress does not undo the breach itself, misdemeanor proceedings weigh both the degree of negligence and the steps taken toward compliance. The more evidence you have that the process is actively underway, the higher the chance of leniency. The safest strategy is still to avoid an inspection by accelerating production - with cloud solutions, that is days, not weeks.'
+        },
+        {
+          q: 'How do I connect to CEZIH? Do I need a VPN?',
+          a: 'Access to CEZIH requires a qualified certificate - the AKD card is mandatory, you cannot connect without it. Documents are signed with the same card and a USB reader, or with the Certilia mobile certificate. The technical side of connecting (VPN configuration and the local agent) is part of the activation that certified solution providers handle for you, usually remotely.'
+        },
+        {
+          q: 'Which certificates and codes are required for CEZIH?',
+          a: 'Four things: (1) the institution code from HZZO, which every registered institution has, (2) the healthcare professional code - a 7-digit number from HZJZ, (3) the physician MBO - a 9-digit number, and (4) an AKD card with a USB reader for CEZIH access. For signing, you can use the same card or the Certilia mobile certificate.'
         }
       ]
     },
     cta: {
       title: 'Next step: compliance in days, not weeks',
-      body: 'If you are looking for the fastest path to CEZIH compliance — without installation, without a server, without waiting on IT — see our cloud CEZIH software. It is purpose-built for private practices and polyclinics, with onboarding that takes days, not weeks.',
+      body: 'If you are looking for the fastest path to CEZIH compliance - without installation, without a server, without waiting on IT - see our cloud CEZIH software. It is purpose-built for private practices and polyclinics, with onboarding that takes days, not weeks.',
       ctaPrimary: 'See the cloud CEZIH software',
       ctaPrimaryHref: '/en/medical-software',
       ctaSecondary: 'Request a free consultation',
@@ -1589,23 +1631,23 @@ export const en = {
       title: 'Sources and further reading',
       disclaimer: 'This content is informational and does not constitute legal advice. For specific legal assessments, consult a qualified attorney or the relevant authority.',
       items: [
-        { label: 'Croatian Medical Chamber (HLK) — "Connecting private healthcare providers to CEZIH" (final deadline 1 January 2027)', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
-        { label: 'Večernji list, July 2026 — "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
-        { label: 'zdravljeija.hr, 14 Jul 2026 — "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
-        { label: 'HZZO — from 1 July 2026 CEZIH access only via the new ID card (old HZZO smart cards expired 30 Jun 2026)', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
-        { label: 'CEZIH — official list of certified application manufacturers (HM Digital, category G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Croatian Medical Chamber (HLK) - "Connecting private healthcare providers to CEZIH" (final deadline 1 January 2027)', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, July 2026 - "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14 Jul 2026 - "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO - from 1 July 2026 CEZIH access only via the new ID card (old HZZO smart cards expired 30 Jun 2026)', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH - official list of certified application manufacturers (HM Digital, category G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
         { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' },
-        { label: 'Official CEZIH website — notices, system concept, and instructions', url: 'https://www.cezih.hr/' },
+        { label: 'Official CEZIH website - notices, system concept, and instructions', url: 'https://www.cezih.hr/' },
         { label: 'What is required to connect to CEZIH (official PDF, Croatian)', url: 'http://www.cezih.hr/aplikacije/Sto_sve_treba.pdf' },
-        { label: 'Glas Slavonije, 20 Jan 2026 — historical context of the original deadline ("...must join CEZIH by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
-        { label: 'Government of Croatia / Ministry of Health, June 2025 — historical context of the CEZIH private-sector expansion announcement', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
+        { label: 'Glas Slavonije, 20 Jan 2026 - historical context of the original deadline ("...must join CEZIH by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Government of Croatia / Ministry of Health, June 2025 - historical context of the CEZIH private-sector expansion announcement', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' }
       ]
     }
   },
   cezihDeadline: {
     meta: {
       title: 'CEZIH Deadline for Private Practices: Confirmed 1 Jan 2027',
-      description: 'Has the deadline to connect to CEZIH moved? Yes — the final deadline is 1 Jan 2027. Source-checked fact (HLK, Večernji) plus the 1 Jul 2026 ID-card note.',
+      description: 'Has the deadline to connect to CEZIH moved? Yes - the final deadline is 1 Jan 2027. Source-checked fact (HLK, Večernji) plus the 1 Jul 2026 ID-card note.',
       datePublished: '2026-07-27',
       dateModified: '2026-07-27'
     },
@@ -1615,12 +1657,12 @@ export const en = {
     },
     hero: {
       eyebrow: 'July 2026 · Fact check',
-      title: 'CEZIH Deadline for Private Practices: Confirmed — 1 January 2027',
-      subheadline: 'Yes, the deadline has been extended — the obligation has not been abolished. All key facts and sources in one place, no guessing.',
-      certBadge: 'HM Digital — officially certified CEZIH application manufacturer (HZZO)',
+      title: 'CEZIH Deadline for Private Practices: Confirmed - 1 January 2027',
+      subheadline: 'Yes, the deadline has been extended - the obligation has not been abolished. All key facts and sources in one place, no guessing.',
+      certBadge: 'HM Digital - officially certified CEZIH application manufacturer (HZZO)',
       certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'A short, verifiable clarification: what the deadline is, who it covers, and what not to confuse it with.',
-      lead: 'The final deadline for all private healthcare providers to connect to CEZIH — both HZZO-contracted and non-contracted — is 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting.',
+      lead: 'The final deadline for all private healthcare providers to connect to CEZIH - both HZZO-contracted and non-contracted - is 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting.',
       ctaPrimary: 'What to do now',
       ctaSecondary: 'See the sources'
     },
@@ -1629,32 +1671,32 @@ export const en = {
       lead: 'The deadline has been extended, not abolished.',
       points: [
         { label: 'New final deadline', value: '1 January 2027' },
-        { label: 'Who it covers', value: 'All private providers — both HZZO-contracted and non-contracted' },
-        { label: 'The obligation', value: 'Has not been abolished — the Health Data and Information Act (NN 14/2019) remains in force' },
+        { label: 'Who it covers', value: 'All private providers - both HZZO-contracted and non-contracted' },
+        { label: 'The obligation', value: 'Has not been abolished - the Health Data and Information Act (NN 14/2019) remains in force' },
         { label: 'Fines', value: 'Up to €13,200 per breach (Art. 36) continue to apply after the deadline' }
       ],
-      note: 'Separately: from 1 July 2026, CEZIH access is possible only with the new official healthcare-worker ID card (old HZZO smart cards expired 30 June 2026). That is an authentication change, NOT a shift of the connection deadline — more on that below.'
+      note: 'Separately: from 1 July 2026, CEZIH access is possible only with the new official healthcare-worker ID card (old HZZO smart cards expired 30 June 2026). That is an authentication change, NOT a shift of the connection deadline - more on that below.'
     },
     pomakRoka: {
       title: 'Has the deadline really been moved?',
-      answer: 'Yes. The original operational deadline for private providers to connect fell in the first months of 2026 — January 2026 press coverage cited a "by May" deadline. Because that window was too short for most private practices, the final deadline for full connection was extended to 1 January 2027.',
+      answer: 'Yes. The original operational deadline for private providers to connect fell in the first months of 2026 - January 2026 press coverage cited a "by May" deadline. Because that window was too short for most private practices, the final deadline for full connection was extended to 1 January 2027.',
       timelineTitle: 'How the deadline moved',
       timeline: [
         { date: 'June 2025', text: 'The Ministry of Health announces the inclusion of private institutions in CEZIH (the plan then: "by the end of the year").' },
-        { date: 'January 2026', text: 'Press cites an operational "by May" deadline with fines up to €13,200 — the obligation becomes active.' },
+        { date: 'January 2026', text: 'Press cites an operational "by May" deadline with fines up to €13,200 - the obligation becomes active.' },
         { date: 'May 2026', text: 'The original deadline is used to start connecting and exchanging, but proves too short for many private providers to fully comply.' },
         { date: 'July 2026', text: 'The final deadline for all private providers to connect is confirmed as 1 January 2027 (HLK, Večernji, zdravljeija).' }
       ],
       caveatTitle: 'A note on the source',
-      caveat: 'HLK states 1 January 2027 as the deadline, citing "the Ministry of Health\'s interpretation," without publishing a specific Rulebook (Pravilnik) number that prescribes the date. The obligation itself does not depend on that caveat — the legal basis (NN 14/2019) is clear — but before making concrete decisions we recommend verifying on the official CEZIH and Ministry of Health websites.'
+      caveat: 'HLK states 1 January 2027 as the deadline, citing "the Ministry of Health\'s interpretation," without publishing a specific Rulebook (Pravilnik) number that prescribes the date. The obligation itself does not depend on that caveat - the legal basis (NN 14/2019) is clear - but before making concrete decisions we recommend verifying on the official CEZIH and Ministry of Health websites.'
     },
     tkoObuhvacen: {
       title: 'Who exactly the obligation covers',
       items: [
-        'Non-contracted private providers (practices, polyclinics, private hospitals without an HZZO contract) — must connect to CEZIH.',
-        'Contracted private providers (already using CEZIH for HZZO services) — must also begin exchange for services they deliver privately.',
+        'Non-contracted private providers (practices, polyclinics, private hospitals without an HZZO contract) - must connect to CEZIH.',
+        'Contracted private providers (already using CEZIH for HZZO services) - must also begin exchange for services they deliver privately.',
         'All specialties: family medicine, dentistry, specialists, diagnostics, private hospitals.',
-        'All sizes — from solo practices to multi-location polyclinics.',
+        'All sizes - from solo practices to multi-location polyclinics.',
         'First step for non-contracted providers: obtaining a healthcare institution code from HZZO (a prerequisite).'
       ]
     },
@@ -1662,17 +1704,17 @@ export const en = {
       title: 'Careful: 1 July 2026 is NOT the connection deadline',
       body: 'A common mistake is to confuse two different things:',
       items: [
-        { term: 'Connection deadline', desc: '1 January 2027 — the final deadline for a private institution to establish secure data exchange with CEZIH via its software solution.' },
-        { term: 'New ID card deadline', desc: '1 July 2026 — from that day, CEZIH access is possible only with the new official healthcare-worker ID card; old HZZO smart cards expired 30 June 2026. This is an authentication change, not a shift of the connection deadline.' }
+        { term: 'Connection deadline', desc: '1 January 2027 - the final deadline for a private institution to establish secure data exchange with CEZIH via its software solution.' },
+        { term: 'New ID card deadline', desc: '1 July 2026 - from that day, CEZIH access is possible only with the new official healthcare-worker ID card; old HZZO smart cards expired 30 June 2026. This is an authentication change, not a shift of the connection deadline.' }
       ],
-      sourceNote: 'Source: HZZO — from 1 July 2026, CEZIH access is only possible with the new healthcare-worker ID card.'
+      sourceNote: 'Source: HZZO - from 1 July 2026, CEZIH access is only possible with the new healthcare-worker ID card.'
     },
     stoSad: {
       title: 'What to do now',
-      intro: 'If your practice is not yet connected, you have time — but do not wait until the last moment. The slowest step is administrative (the HZZO code), so start it now. Signing in CEZIH uses your AKD card — Certilia is optional:',
+      intro: 'If your practice is not yet connected, you have time - but do not wait until the last moment. The slowest step is administrative (the HZZO code), so start it now. Signing in CEZIH uses your AKD card - Certilia is optional:',
       steps: [
         { n: '1', title: 'Obtain a healthcare institution code from HZZO', desc: 'For non-contracted providers this is a prerequisite. "Dodjela šifre neugovorni" form + the Ministry of Health decision → sifriranje.neugovorni@hzzo.hr.' },
-        { n: '2', title: 'Prepare your AKD card for access and signing (Certilia optional)', desc: 'Access to CEZIH and signing uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) — it is mandatory and must be in the reader on the office computer. Certilia is an optional add-on for remote work from another device after the card is active; it does not replace the card.' },
+        { n: '2', title: 'Prepare your AKD card for access and signing (Certilia optional)', desc: 'Access to CEZIH and signing uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) - it is mandatory and must be in the reader on the office computer. Certilia is an optional add-on for remote work from another device after the card is active; it does not replace the card.' },
         { n: '3', title: 'Choose a CEZIH-certified software solution', desc: 'Check the list of certified solutions on cezih.hr. Cloud solutions cut onboarding to days.' }
       ],
       ctaText: 'For a detailed walkthrough of the entire process (modules, fines, how to choose software, FAQ):',
@@ -1687,14 +1729,14 @@ export const en = {
       items: [
         {
           q: 'Has the CEZIH obligation for private providers been abolished?',
-          a: 'No. The obligation to connect to CEZIH has not been abolished — only the final deadline has been extended, to 1 January 2027. The legal basis (Health Data and Information Act, NN 14/2019) remains in force.'
+          a: 'No. The obligation to connect to CEZIH has not been abolished - only the final deadline has been extended, to 1 January 2027. The legal basis (Health Data and Information Act, NN 14/2019) remains in force.'
         },
         {
           q: 'Has the deadline really moved to 1 January 2027?',
           a: 'Yes. The final deadline for all private providers (contracted and non-contracted) to connect is 1 January 2027, as stated explicitly by the Croatian Medical Chamber and confirmed by July 2026 reporting ("the deadline was too short, so it was extended").'
         },
         {
-          q: 'I heard the deadline was 1 June 2026 — is that accurate?',
+          q: 'I heard the deadline was 1 June 2026 - is that accurate?',
           a: 'Not quite. The actual original operational deadline was "early May 2026" (May, not June), per January 2026 press coverage and CEZIH notices. That deadline was subsequently extended to 1 January 2027.'
         },
         {
@@ -1713,7 +1755,7 @@ export const en = {
     },
     cta: {
       title: 'Ready to connect to CEZIH?',
-      body: 'The full guide to the obligation, fines, modules, and software selection — or directly our cloud CEZIH software for private practices.',
+      body: 'The full guide to the obligation, fines, modules, and software selection - or directly our cloud CEZIH software for private practices.',
       primaryLabel: 'Full CEZIH guide',
       primaryHref: '/en/cezih-guide/',
       secondaryLabel: 'Cloud CEZIH software',
@@ -1723,13 +1765,13 @@ export const en = {
       title: 'Sources',
       disclaimer: 'This page fact-checks publicly available claims about the CEZIH deadline. The content is informational and does not constitute legal advice. For legally binding information, consult the relevant authorities.',
       items: [
-        { label: 'Croatian Medical Chamber (HLK) — "Connecting private healthcare providers to CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
-        { label: 'Večernji list, July 2026 — "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
-        { label: 'zdravljeija.hr, 14 Jul 2026 — "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
-        { label: 'HZZO — from 1 July 2026, CEZIH access only via the new ID card', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
-        { label: 'CEZIH — official list of certified application manufacturers (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
-        { label: 'Glas Slavonije, 20 Jan 2026 — historical context of the original deadline ("by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
-        { label: 'Government of Croatia / Ministry of Health, June 2025 — announcement of CEZIH expansion to the private sector', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
+        { label: 'Croatian Medical Chamber (HLK) - "Connecting private healthcare providers to CEZIH"', url: 'https://www.hlk.hr/povezivanje-privatnih-pruzatelja-zdravstvene-zastite-na-cezih.aspx' },
+        { label: 'Večernji list, July 2026 - "...the deadline was too short, so it was extended to 1 January 2027."', url: 'https://www.vecernji.hr/vijesti/nalaze-privatnika-preko-cezih-a-vidjet-ce-izabrani-lijecnik-i-hitna-uvodi-se-i-nova-vrsta-recepta-1977312' },
+        { label: 'zdravljeija.hr, 14 Jul 2026 - "Private healthcare institutions have until 1 January 2027."', url: 'https://zdravljeija.hr/novosti/2026/07/14/sto-donosi-integracija-privatnika-u-cezih-laksi-put-do-nalaza-i-veca-kontrola-nad-vlastitim-podacima-586764' },
+        { label: 'HZZO - from 1 July 2026, CEZIH access only via the new ID card', url: 'https://hzzo.hr/novosti/hzzo/od-1-srpnja-2026-ulaz-u-cezih-samo-s-novom-iskaznicom-ovlastenog-zdravstvenog' },
+        { label: 'CEZIH - official list of certified application manufacturers (HM Digital, G500)', url: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html' },
+        { label: 'Glas Slavonije, 20 Jan 2026 - historical context of the original deadline ("by May")', url: 'https://www.glas-slavonije.hr/novosti/hrvatska/2026/01/20/i-privatnici-do-svibnja-moraju-uci-u-cezih-prijete-kazne-i-do-13-200-eura-741708/' },
+        { label: 'Government of Croatia / Ministry of Health, June 2025 - announcement of CEZIH expansion to the private sector', url: 'https://vlada.gov.hr/hrstic-cezih-se-siri-na-privatni-sektor/44610' },
         { label: 'Health Data and Information Act (NN 14/2019, Croatian)', url: 'https://narodne-novine.nn.hr/clanci/sluzbeni/2019_02_14_287.html' }
       ]
     }

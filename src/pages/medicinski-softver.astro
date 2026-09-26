@@ -21,7 +21,7 @@ const m = t.medicalLanding;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "HM Digital — CEZIH Softver za Ordinacije i Poliklinike",
+      "name": "HM Digital - CEZIH Softver za Ordinacije i Poliklinike",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web",
       "description": m.hero.subtitle,
@@ -81,7 +81,7 @@ const m = t.medicalLanding;
     })} />
   </Fragment>
 
-  <!-- 1. Urgency Bar — server-rendered fallback for SEO, JS-enhanced with countdown -->
+  <!-- 1. Urgency Bar - server-rendered fallback for SEO, JS-enhanced with countdown -->
   <div id="urgency-bar" class="bg-red-600 text-white text-sm text-center py-2 font-medium">
     <div class="container-custom">
       <span id="urgency-text">{m.urgencyBar.before.replace('{days}', '')}</span>
@@ -97,9 +97,9 @@ const m = t.medicalLanding;
       var el = document.getElementById('urgency-text');
       if (!el) return;
       if (days > 0) {
-        el.textContent = 'Zakon NN 14/2019, čl. 28 — do krajnjeg roka za CEZIH ostalo: ' + days + ' dana · Kazne do €13.200';
+        el.textContent = 'Zakon NN 14/2019, čl. 28 - do krajnjeg roka za CEZIH ostalo: ' + days + ' dana · Kazne do €13.200';
       } else {
-        el.textContent = 'CEZIH je obavezan — krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija';
+        el.textContent = 'CEZIH je obavezan - krajnji rok 1. siječnja 2027., kazne do €13.200, i osobno za nositelje ordinacija';
       }
     })();
   </script>
@@ -314,6 +314,17 @@ const m = t.medicalLanding;
     </div>
   </section>
 
+  <!-- 6b. CMS za poliklinike i ordinacije -->
+  <section class="py-16 lg:py-24 bg-slate-50" id="cms">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">{m.cms.title}</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">{m.cms.body1}</p>
+        <p class="text-lg text-slate-600 leading-relaxed">{m.cms.body2}</p>
+      </div>
+    </div>
+  </section>
+
   <!-- 7. Comparison Table -->
   <section class="py-16 lg:py-24 bg-white" id="usporedba">
     <div class="container-custom">
@@ -385,6 +396,17 @@ const m = t.medicalLanding;
 
   <!-- 8. Pricing Table -->
   <MedicalPricingTable t={t} />
+
+  <!-- 8b. Program za ordinacije -->
+  <section class="py-16 lg:py-24 bg-white" id="program-za-ordinacije">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">{m.ordinacije.title}</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">{m.ordinacije.body1}</p>
+        <p class="text-lg text-slate-600 leading-relaxed">{m.ordinacije.body2}</p>
+      </div>
+    </div>
+  </section>
 
   <!-- 9. Stats -->
   <section class="py-10 lg:py-14 bg-slate-900">

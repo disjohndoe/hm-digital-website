@@ -71,7 +71,7 @@ const deadlineColorMap: Record<string, string> = {
       return (
         <div class="flex items-center gap-2 text-xs text-slate-600">
           <span class:list={['w-2 h-2 rounded-full shrink-0', deadlineColorMap[dl.color]]} />
-          <span>{dl.day}. — {labelVal}</span>
+          <span>{dl.day}. - {labelVal}</span>
         </div>
       );
     })}

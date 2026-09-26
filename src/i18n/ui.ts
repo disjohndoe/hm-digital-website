@@ -17,7 +17,7 @@ export const routes = {
   "/demo/digitalni-ured": { hr: "/demo/digitalni-ured", en: "/en/demo/digital-office" },
   "/demo/erp": { hr: "/demo/erp", en: "/en/demo/erp" },
   "/medicinski-softver": { hr: "/medicinski-softver", en: "/en/medical-software" },
-  "/racunovodstveni-program": { hr: "/racunovodstveni-program", en: "/en/accounting-software" },
+  "/unos-racuna": { hr: "/unos-racuna", en: "/en/invoice-capture" },
   "/cezih-vodic": { hr: "/cezih-vodic", en: "/en/cezih-guide" },
   "/cezih-rok-za-privatne-ordinacije": { hr: "/cezih-rok-za-privatne-ordinacije", en: "/en/cezih-deadline-private-practices" },
   "/pravila-privatnosti": { hr: "/pravila-privatnosti", en: "/en/privacy-policy" },

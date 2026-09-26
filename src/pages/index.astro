@@ -13,7 +13,7 @@ const t = getTranslations(locale);
 ---
 
 <Layout
-  title="HM Digital - Softverski razvoj Hrvatska | Web aplikacije, ERP, Webshopovi, Automatizacija i Digitalizacija"
+  title="HM Digital | Softverski razvoj i CEZIH rješenja za zdravstvo i računovodstvo"
   description="Profesionalni softverski razvoj za hrvatsko tržište. Izrađujemo web aplikacije, webshopove, ERP sustave, Fiskalizaciju 2.0 i automatizaciju. 10+ godina iskustva. Zatražite ponudu!"
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
@@ -85,7 +85,7 @@ const t = getTranslations(locale);
           <div class="flex-1">
             <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full mb-3">CEZIH · Cloud · Zdravstvo</span>
             <h3 class="text-xl font-semibold text-slate-900 mb-3">CEZIH softver za ordinacije i poliklinike</h3>
-            <p class="text-slate-600 mb-4">Medicinski softver s CEZIH integracijom — e-Nalaz, e-Recept, e-Uputnica iz clouda. Za privatne ordinacije i poliklinike.</p>
+            <p class="text-slate-600 mb-4">Medicinski softver s CEZIH integracijom - e-Nalaz, e-Recept, e-Uputnica iz clouda. Za privatne ordinacije i poliklinike.</p>
           </div>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Cloud</span>
@@ -99,6 +99,23 @@ const t = getTranslations(locale);
           </Button>
         </div>
 
+        <!-- KontoMatrix Invoice Capture -->
+        <div class="bg-white rounded-xl shadow-sm border border-primary-200 p-8 h-full flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <div class="flex-1">
+            <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full mb-3">KontoMatrix · Cloud · Računovodstvo</span>
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">KontoMatrix - unos i skeniranje računa za urede</h3>
+            <p class="text-slate-600 mb-4">Klijenti slikaju račune mobitelom, aplikacija čita podatke umjesto vas, a izvoz u Minimax, PANTHEON ili Synesis ide jednim klikom.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Cloud</span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">OCR</span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">ERP</span>
+          </div>
+          <Button href={getPathForLocale('/unos-racuna', locale)} variant="outline" size="sm" class="w-full sm:w-auto">
+            {t.projects.learnMore}
+          </Button>
+        </div>
+
         <ProjectCard
           title={t.projects.digitalniUred.title}
           description={t.projects.digitalniUred.description}
@@ -107,7 +124,7 @@ const t = getTranslations(locale);
           locale={locale}
         />
 
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 flex flex-col justify-center items-center text-center">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 flex flex-col justify-center items-center text-center lg:col-span-3">
           <h3 class="text-xl font-semibold text-slate-900 mb-3">
             {t.projects.moreProjects}
           </h3>

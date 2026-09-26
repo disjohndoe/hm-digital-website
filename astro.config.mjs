@@ -19,7 +19,9 @@ export default defineConfig({
         !page.includes('/za-vas') && !page.includes('/en/for-you') &&
         !page.includes('/demo/') &&
         !page.includes('/medical/pravila-privatnosti') &&
-        !page.includes('/medical/uvjeti-koristenja'),
+        !page.includes('/medical/uvjeti-koristenja') &&
+        !page.includes('racunovodstveni-program') &&
+        !page.includes('accounting-software'),
       serialize(item) {
         // Stamp every URL with the build time so Google has a crawl-prioritization signal
         item.lastmod = new Date().toISOString();

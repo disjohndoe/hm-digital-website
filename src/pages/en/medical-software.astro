@@ -21,7 +21,7 @@ const m = t.medicalLanding;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "HM Digital — Cloud CEZIH Software for Practices and Polyclinics",
+      "name": "HM Digital - Cloud CEZIH Software for Practices and Polyclinics",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web",
       "description": m.hero.subtitle,
@@ -81,7 +81,7 @@ const m = t.medicalLanding;
     })} />
   </Fragment>
 
-  <!-- 1. Urgency Bar — server-rendered fallback for SEO, JS-enhanced with countdown -->
+  <!-- 1. Urgency Bar - server-rendered fallback for SEO, JS-enhanced with countdown -->
   <div id="urgency-bar" class="bg-red-600 text-white text-sm text-center py-2 font-medium">
     <div class="container-custom">
       <span id="urgency-text">{m.urgencyBar.before.replace('{days}', '')}</span>
@@ -97,9 +97,9 @@ const m = t.medicalLanding;
       var el = document.getElementById('urgency-text');
       if (!el) return;
       if (days > 0) {
-        el.textContent = 'Law NN 14/2019, Art. 28 — final CEZIH deadline in: ' + days + ' days · Fines up to €13,200';
+        el.textContent = 'Law NN 14/2019, Art. 28 - final CEZIH deadline in: ' + days + ' days · Fines up to €13,200';
       } else {
-        el.textContent = 'CEZIH is mandatory — final deadline 1 January 2027, fines up to €13,200, including personal liability for practice owners';
+        el.textContent = 'CEZIH is mandatory - final deadline 1 January 2027, fines up to €13,200, including personal liability for practice owners';
       }
     })();
   </script>
@@ -314,6 +314,17 @@ const m = t.medicalLanding;
     </div>
   </section>
 
+  <!-- 6b. CMS for polyclinics and practices -->
+  <section class="py-16 lg:py-24 bg-slate-50" id="cms">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">{m.cms.title}</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">{m.cms.body1}</p>
+        <p class="text-lg text-slate-600 leading-relaxed">{m.cms.body2}</p>
+      </div>
+    </div>
+  </section>
+
   <!-- 7. Comparison Table -->
   <section class="py-16 lg:py-24 bg-white" id="usporedba">
     <div class="container-custom">
@@ -385,6 +396,17 @@ const m = t.medicalLanding;
 
   <!-- 8. Pricing Table -->
   <MedicalPricingTable t={t} />
+
+  <!-- 8b. Practice software -->
+  <section class="py-16 lg:py-24 bg-white" id="practice-software">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">{m.ordinacije.title}</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">{m.ordinacije.body1}</p>
+        <p class="text-lg text-slate-600 leading-relaxed">{m.ordinacije.body2}</p>
+      </div>
+    </div>
+  </section>
 
   <!-- 9. Stats -->
   <section class="py-10 lg:py-14 bg-slate-900">

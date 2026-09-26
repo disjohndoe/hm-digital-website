@@ -108,6 +108,14 @@ const currentYear = new Date().getFullYear();
           </li>
           <li>
             <a
+              href={getPathForLocale('/unos-racuna', locale)}
+              class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
+            >
+              {t.footer.kontomatrixLink}
+            </a>
+          </li>
+          <li>
+            <a
               href={getPathForLocale('/cezih-vodic', locale)}
               class="text-slate-400 hover:text-white transition-colors text-sm"
             >
