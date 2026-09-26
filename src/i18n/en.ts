@@ -1048,7 +1048,7 @@ export const en = {
         dental: true,
         smartCard: true,
         noContract: false,
-        priceFrom: '~€100/mo'
+        priceFrom: 'on request'
       },
       cloudAlt: {
         cloudAccess: true,
@@ -1057,7 +1057,7 @@ export const en = {
         dental: false,
         smartCard: false,
         noContract: true,
-        priceFrom: '~€50/mo'
+        priceFrom: 'from ~€40/mo'
       },
       hmDigital: {
         cloudAccess: true,
@@ -1067,7 +1067,8 @@ export const en = {
         smartCard: true,
         noContract: true,
         priceFrom: '€79/mo'
-      }
+      },
+      note: 'Prices from public pricing pages on 26 Sep 2026: Cliniko from $45 (approx. €40)/mo and SimplePractice from $49 (approx. €43)/mo; Croatian BigDot from €290/mo. Certified desktop vendors (AdriaSoft, IN-CON, Dacom, MCS and others) do not publish prices - license and maintenance are quoted individually, usually with a local server and IT support.'
     },
     pricing: {
       title: 'CEZIH Software Pricing for Practices',
@@ -1191,7 +1192,7 @@ export const en = {
         },
         {
           q: 'How much does CEZIH software cost?',
-          a: 'Desktop systems cost around €100/mo plus server and IT support costs; enterprise cloud solutions are even more expensive. HM Digital costs €79/mo for solo practices and €199/mo for polyclinics, with onboarding and CEZIH activation included. A free demo is available with no obligation.'
+          a: 'Certified desktop vendors in Croatia do not publish prices - you pay a quoted license and annual maintenance, often plus a local server and IT support. HM Digital has a public price list: €79/mo for solo practices and €199/mo for polyclinics, with onboarding and CEZIH activation included. A free demo is available with no obligation.'
         },
         {
           q: 'Is there CEZIH software for dentists?',

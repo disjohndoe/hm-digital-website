@@ -427,6 +427,9 @@ const m = t.medicalLanding;
             ))}
           </tbody>
         </table>
+        {m.comparison.note && (
+          <p class="mt-4 text-xs text-slate-500 leading-relaxed">{m.comparison.note}</p>
+        )}
       </div>
     </div>
     <!-- Mid-page CTA after comparison -->

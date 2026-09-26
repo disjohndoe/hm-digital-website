@@ -1048,7 +1048,7 @@ export const hr = {
         dental: true,
         smartCard: true,
         noContract: false,
-        priceFrom: '~€100/mj'
+        priceFrom: 'na upit'
       },
       cloudAlt: {
         cloudAccess: true,
@@ -1057,7 +1057,7 @@ export const hr = {
         dental: false,
         smartCard: false,
         noContract: true,
-        priceFrom: '~€50/mj'
+        priceFrom: 'od ~€40/mj'
       },
       hmDigital: {
         cloudAccess: true,
@@ -1067,7 +1067,8 @@ export const hr = {
         smartCard: true,
         noContract: true,
         priceFrom: '€79/mj'
-      }
+      },
+      note: 'Cijene prema javno objavljenim cjenicima 26.9.2026.: Cliniko od 45 USD (oko 40 EUR)/mj i SimplePractice od 49 USD (oko 43 EUR)/mj; domaći BigDot od 290 EUR/mj. Certificirani desktop proizvođači (AdriaSoft, IN-CON, Dacom, MCS i drugi) ne objavljuju cijene javno - licenca i održavanje se nude pojedinačno, u pravilu uz lokalni server i IT podršku.'
     },
     pricing: {
       title: 'Transparentne cijene - bez skrivenih troškova',
@@ -1177,7 +1178,7 @@ export const hr = {
         },
         {
           q: 'Koliko košta CEZIH softver za ordinacije?',
-          a: 'Desktop sustavi koštaju oko €100/mj uz troškove servera i IT podrške, a enterprise rješenja su još skuplja. HM Digital košta €79/mj za solo ordinacije i €199/mj za poliklinike, s onboardingom i CEZIH aktivacijom u cijeni. Besplatni demo dostupan je bez obveze.'
+          a: 'Certificirani desktop proizvođači u Hrvatskoj ne objavljuju cijene javno - licencu i godišnje održavanje plaćate po ponudi, uz to često i lokalni server te IT podršku. HM Digital ima javni cjenik: €79/mj za solo ordinacije i €199/mj za poliklinike, s onboardingom i CEZIH aktivacijom u cijeni. Besplatni demo dostupan je bez obveze.'
         },
         {
           q: 'Postoji li CEZIH softver za stomatologe?',
