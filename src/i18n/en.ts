@@ -312,7 +312,7 @@ export const en = {
     tagline: 'Custom software development, automation and digitalization',
     company: 'Company',
     solutions: 'Solutions and Guides',
-    medicalLink: 'CEZIH Software for Practices and Polyclinics',
+    medicalLink: 'HM Medical - CEZIH Software for Practices and Polyclinics',
     kontomatrixLink: 'KontoMatrix - invoice capture and scanning',
     cezihGuide: 'CEZIH Guide',
     cezihDeadline: 'CEZIH 2027 Deadline - Fact Check',

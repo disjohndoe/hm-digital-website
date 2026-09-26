@@ -312,7 +312,7 @@ export const hr = {
     tagline: 'Razvoj softvera po mjeri, automatizacija i digitalizacija',
     company: 'Tvrtka',
     solutions: 'Rješenja i vodiči',
-    medicalLink: 'CEZIH softver za ordinacije i poliklinike',
+    medicalLink: 'HM Medical - CEZIH softver za ordinacije i poliklinike',
     kontomatrixLink: 'KontoMatrix - unos i skeniranje računa',
     cezihGuide: 'CEZIH vodič',
     cezihDeadline: 'CEZIH rok 2027 - provjera',
