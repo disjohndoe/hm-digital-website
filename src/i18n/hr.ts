@@ -853,7 +853,7 @@ export const hr = {
       perClient: '10 EUR mjesečno po aktivnom klijentu',
       minimum: 'Minimum 50 EUR mjesečno po uredu',
       note: 'Plaćate samo za klijente koji stvarno šalju račune. Bez skrivenih troškova, bez dugoročnog ugovora.',
-      roi: '10 EUR po klijentu je manje od 15 minuta vašeg rada.'
+      roi: '10 EUR po klijentu je manje od 45 minuta vašeg rada.'
     },
     faq: {
       title: 'Česta pitanja',

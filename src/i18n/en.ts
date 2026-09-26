@@ -853,7 +853,7 @@ export const en = {
       perClient: '10 EUR per month per active client',
       minimum: 'Minimum 50 EUR per month per office',
       note: 'You only pay for clients who actually send invoices. No hidden costs, no long-term contract.',
-      roi: '10 EUR per client is less than 15 minutes of your work.'
+      roi: '10 EUR per client is less than 45 minutes of your work.'
     },
     faq: {
       title: 'Frequently asked questions',
