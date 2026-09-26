@@ -1275,7 +1275,7 @@ export const en = {
   cezihGuide: {
     meta: {
       title: 'CEZIH for Private Practices in Croatia: 2027 Deadline Guide',
-      description: 'CEZIH deadline for private practices extended to 1 Jan 2027. Fines up to €13,200, what data must be exchanged, and the fastest path to compliance.',
+      description: 'CEZIH deadline for private practices extended to 1 Jan 2027. What data must be exchanged, what is required for access, and how to comply. A source-checked guide.',
       datePublished: '2026-05-10',
       dateModified: '2026-09-26',
       authorName: 'Hrvoje Matošević',
@@ -1289,7 +1289,7 @@ export const en = {
       eyebrow: 'Updated · September 2026 · Deadline extended',
       title: 'CEZIH for Private Practices in Croatia: Deadline Extended to 1 January 2027',
       subheadline: 'A guide for private practices, polyclinics, and private hospitals preparing to connect to CEZIH by the new deadline, 1 January 2027.',
-      certBadge: 'HM Digital - officially certified CEZIH application manufacturer (HZZO)',
+      certBadge: 'HM Digital - officially certified CEZIH application manufacturer (G500)',
       certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'Goal: 14 days from "we haven\'t even started" to production data exchange with CEZIH.',
       lead: 'The deadline for private healthcare institutions to connect to the Central Health Information System (CEZIH) has been extended to 1 January 2027. - the obligation has not been abolished, only the final deadline has moved. This guide explains what the obligation actually means, what penalties apply to those who do not comply in time, and the fastest path to compliance.',
@@ -1337,16 +1337,16 @@ export const en = {
       title: 'In 60 seconds',
       points: [
         'The deadline to connect to CEZIH has been extended to 1 January 2027 - for both non-contractual providers and contractual providers (for the services they deliver privately). The obligation has not been abolished.',
-        'Fines up to €13,200 per breach, under the Health Data and Information Act (NN 14/2019, Articles 28 and 36) - and personal liability for practice owners - apply after the deadline passes.',
+        'After the deadline expires, fines prescribed by the Health Data and Information Act (NN 14/2019) apply.',
         'Required exchange: ambulatory exam reports, specialist findings, hospital discharge letters.',
         'Fastest path to compliance: a cloud solution. No installation, no server, no waiting on IT.',
-        'First step if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite). Signing in CEZIH uses your AKD/HZZO card - it is mandatory (must be in the reader on the office computer). Certilia is an optional add-on for remote work from another device after the card is active, but it does not replace the card.'
+        'First step if not yet connected: obtain a healthcare institution code from HZZO (a prerequisite). Access and signing use the AKD card - it is mandatory and must be in the reader on the office computer. Certilia is an optional add-on for remote signing; it does not replace the card.'
       ]
     },
     afterDeadline: {
       title: 'Deadline extended to 1 January 2027 - the obligation remains.',
-      body: 'The original operational deadline for private healthcare providers to connect to CEZIH fell in the first months of 2026 (CEZIH notices and January 2026 press coverage cited a "by May" deadline). Because that window was too short for most private practices, the final deadline for full connection of all private providers - both HZZO-contracted and non-contracted - has been extended to 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting ("the deadline was too short for most, so it was extended to 1 January 2027").',
-      bodyExtra: 'Important: this is not an abolition of the obligation. The legal basis (Health Data and Information Act, NN 14/2019) remains in force, and fines of up to €13,200 continue to apply to institutions that do not comply by the new deadline. Note: the list of certified software solutions on cezih.hr is actively being expanded - verify the latest status before choosing software.',
+      body: 'The original operational deadline for private providers to connect fell in the first months of 2026 (January 2026 press coverage cited a "by May" deadline). Because that window was too short for most private practices, the final deadline for full connection of all private providers - both HZZO-contracted and non-contracted - has been extended to 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting.',
+      bodyExtra: 'Important: this is not an abolition of the obligation. The legal basis (Health Data and Information Act, NN 14/2019) remains in force, and fines prescribed by law apply after the deadline. Note: the list of certified software solutions on cezih.hr is actively being expanded - verify the latest status before choosing software.',
       crossLinkText: 'For a detailed verification of the deadline change, the source list, and a note on how HLK and the press explain the deadline, see our dedicated page:',
       crossLinkHref: '/en/cezih-deadline-private-practices/',
       crossLinkLabel: 'CEZIH deadline for private practices - confirmation and sources',
@@ -1360,10 +1360,10 @@ export const en = {
     },
     penalties: {
       title: 'CEZIH non-compliance penalties',
-      intro: 'The legal basis is the Health Data and Information Act (NN 14/2019). Article 28 establishes the obligation to integrate with CEZIH; Article 36 sets the penalties for non-compliance.',
-      fineAmount: 'up to €13,200 per established breach',
-      fineCitation: 'under Article 36 of the Health Data and Information Act (NN 14/2019)',
-      fineNote: 'Sanctions also apply personally to practice owners - not only to the legal entity.',
+      intro: 'The legal basis is the Health Data and Information Act (NN 14/2019, Art. 28): all healthcare providers must connect to CEZIH. The deadline for private providers was set by the Ministry of Health: 1 January 2027. After the deadline, fines prescribed by law apply for violations.',
+      fineAmount: 'A monetary fine for violation',
+      fineCitation: 'prescribed by the Health Data and Information Act (NN 14/2019)',
+      fineNote: 'It applies to institutions that have not complied by the deadline.',
       consequencesTitle: 'Practical consequences for a practice',
       consequences: [
         'Monetary fine in misdemeanor proceedings',
@@ -1371,7 +1371,7 @@ export const en = {
         'Possible difficulties when renewing HZZO contracts',
         'Reputational risk with patients who expect a modern, connected healthcare system'
       ],
-      callout: 'Math: a single €13,200 fine equals 14 years of using a modern cloud CEZIH solution at €79/month. Technical compliance is consistently cheaper than non-compliance.'
+      callout: 'Compliance is technically fast: a cloud solution without a server is set up in days. Deadline: 1 January 2027 (as announced by the Ministry of Health).'
     },
     exchangeRequired: {
       title: 'What exactly must be exchanged with CEZIH',
@@ -1405,7 +1405,7 @@ export const en = {
     definition: {
       title: 'What is CEZIH (and who runs it)',
       body1: 'CEZIH (the Central Health Information System of the Republic of Croatia) is the central IT system that connects healthcare providers, the Croatian Health Insurance Fund (HZZO), and other stakeholders in healthcare. The system is operated by HZZO; the regulatory framework is set by the Ministry of Health.',
-      body2: 'CEZIH is the channel for issuing and exchanging ePrescriptions, eReferrals, eFindings, and other medical documentation. The system has been operating in public healthcare for over a decade - per Black Book Research (2026), more than 15 million eReferrals and over 60 million prescriptions and findings are issued through CEZIH each year.',
+      body2: 'CEZIH is the channel for issuing and exchanging ePrescriptions, eReferrals, eFindings, and other medical documentation. The system has been operating in public healthcare for over a decade, and the private sector is joining right now.',
       sourceLinkText: 'Official CEZIH website',
       sourceLinkUrl: 'https://www.cezih.hr/'
     },
@@ -1429,7 +1429,7 @@ export const en = {
     },
     certilia: {
       title: 'Authentication and signing: AKD card + Certilia',
-      intro: 'HZZO still requires a strict technical setup for CEZIH data exchange: a Windows computer, a qualified certificate (an AKD smart card or the new official healthcare-worker ID card), VPN access, and the software vendor\'s local agent. At least one machine in the practice must satisfy all of these requirements to establish a CEZIH session.',
+      intro: 'CEZIH data exchange requires a strict technical setup: a Windows computer, a qualified certificate (an AKD card or the new official healthcare-worker ID card), VPN access, and the software vendor\'s local agent. At least one machine in the practice must satisfy all of these requirements.',
       accessTitle: 'What is required to access CEZIH',
       accessItems: [
         'A Windows computer (at least one in the practice)',
@@ -1454,7 +1454,7 @@ export const en = {
     },
     cloudVsLocal: {
       title: 'How to connect to CEZIH without your own server (cloud vs local)',
-      intro: 'CEZIH data exchange technically still requires an office Windows computer with a card, reader, VPN, and the software vendor\'s local agent - regardless of whether the application itself is "cloud" or "local". The cloud-vs-local choice is not about bypassing that setup; it is about where your data lives, how the application is updated, and how you reach the system from devices other than the main office computer.',
+      intro: 'CEZIH data exchange technically requires an office Windows computer with a card, reader, VPN, and the vendor\'s local agent - regardless of whether the application itself is "cloud" or "local". The difference is where your data lives, how the application is updated, and how you reach the system from other devices.',
       cloudTitle: 'Cloud - no on-prem server, faster to compliance',
       cloudPros: [
         'No on-prem server - application and data live in the vendor\'s cloud',
@@ -1482,7 +1482,7 @@ export const en = {
         { feature: 'Automatic CEZIH protocol updates', legacy: false, cloud: true },
         { feature: 'Onboarding in days (not weeks)', legacy: false, cloud: true },
         { feature: 'Work and sign from another device (laptop / phone) between patients', legacy: false, cloud: true },
-        { feature: 'Eliminates the up-to-€13,200 fine risk', legacy: false, cloud: true }
+        { feature: 'Compliance with the 1 Jan 2027 deadline', legacy: false, cloud: true }
       ]
     },
     fastTrack: {
@@ -1493,13 +1493,13 @@ export const en = {
           n: '1',
           phase: 'Week 1',
           title: 'Obtain a healthcare institution code from HZZO',
-          desc: 'A healthcare institution code (šifra zdravstvene ustanove) is a prerequisite for CEZIH connection for non-contractual providers. Fill out the "Dodjela šifre neugovorni" form, sign it (digitally) and stamp it with the authorized representative\'s seal, then submit the request - with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached - by email to sifriranje.neugovorni@hzzo.hr.'
+          desc: 'A healthcare institution code (šifra zdravstvene ustanove) is a prerequisite for non-contractual providers. Fill out the "Dodjela šifre neugovorni" form, sign it digitally and send it to sifriranje.neugovorni@hzzo.hr with the Ministry of Health decision attached.'
         },
         {
           n: '2',
           phase: 'Week 1',
           title: 'Prepare your AKD card for access and signing (Certilia optional)',
-          desc: 'Access to CEZIH and signing of documents uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) - the card is mandatory and must be in the reader on the office computer. Certilia is an optional add-on that lets you work and sign from another device (phone, laptop) after the card is already active; it is not required, and it does not replace the card.'
+          desc: 'Access and signing use the AKD card (from 1 Jul 2026 the new healthcare-worker ID card) - it is mandatory and must be in the reader on the office computer. Certilia is an optional add-on for remote signing from another device; it does not replace the card.'
         },
         {
           n: '3',
@@ -1517,7 +1517,7 @@ export const en = {
           n: '5',
           phase: 'Week 2',
           title: 'Test and production exchange + training',
-          desc: 'Verification that ePrescriptions, eReferrals, and eFindings are correctly delivered to CEZIH; switch to production exchange and a short team training session (1-2 hours).'
+          desc: 'Verification that ePrescriptions and eFindings are correctly delivered to CEZIH; switch to production exchange and a short team training session (1-2 hours).'
         }
       ],
       cta: 'Need urgent compliance? See our cloud CEZIH software',
@@ -1585,19 +1585,19 @@ export const en = {
       items: [
         {
           q: 'What if my practice is not yet connected to CEZIH?',
-          a: 'You are not alone - a significant share of private practices is in the same position. The fastest path to compliance is a CEZIH-certified cloud solution that requires no installation or on-premise server. Before that, obtain a healthcare institution code from HZZO (a prerequisite for connection). Signing in CEZIH uses your AKD card (the HZZO smart card, or from 1 Jul 2026 the new healthcare-worker ID card) - the card is mandatory and must be in the reader on the office computer. Software onboarding with modern cloud solutions takes a few days.'
+          a: 'You are not alone - a significant share of private practices is in the same position. First, obtain a healthcare institution code from HZZO (a prerequisite for connection). The fastest path to compliance is a CEZIH-certified cloud solution: onboarding takes a few days, and signing uses your AKD card (or from 1 Jul 2026 the new healthcare-worker ID card).'
         },
         {
           q: 'Do I need a special code from HZZO before connecting to CEZIH?',
-          a: 'Yes. Per CEZIH and HZZO guidance, non-contractual healthcare providers (those without an HZZO contract) must obtain a healthcare institution code (šifra zdravstvene ustanove) from HZZO as a prerequisite for CEZIH connection. The request is filed via the "Dodjela šifre neugovorni" form, signed (digitally) and stamped, and submitted to sifriranje.neugovorni@hzzo.hr - with the Ministry of Health decision (rješenje Ministarstva zdravstva) attached.'
+          a: 'Yes. Non-contractual providers (those without an HZZO contract) must obtain a healthcare institution code (šifra zdravstvene ustanove) as a prerequisite. The request is filed via the "Dodjela šifre neugovorni" form, signed digitally, to sifriranje.neugovorni@hzzo.hr - with the Ministry of Health decision attached.'
         },
         {
           q: 'Will HZZO inspectors definitely fine me?',
           a: 'Inspections and misdemeanor proceedings are not triggered automatically, but the legal basis for fines exists and applies after the (extended) 1 January 2027 deadline passes. The longer you remain non-compliant after the deadline, the higher the probability of an inspection - especially if patients or other institutions report the absence of data exchange.'
         },
         {
-          q: 'How large is the fine, exactly?',
-          a: 'Under Article 36 of the Health Data and Information Act (NN 14/2019), fines go up to €13,200 per established breach for the legal entity. Sanctions also apply personally to the practice owner.'
+          q: 'How large is the fine if I do not comply?',
+          a: 'The amount of the fine for a violation is prescribed by the Health Data and Information Act (NN 14/2019), and it applies after the deadline expires (1 January 2027) for institutions that have not complied by then. The best protection is compliance: with cloud solutions the technical part takes days.'
         },
         {
           q: 'Can I keep operating privately without CEZIH if I have no HZZO contract?',
@@ -1613,11 +1613,11 @@ export const en = {
         },
         {
           q: 'What is the difference between CEZIH-certified and CEZIH-compatible software?',
-          a: '"Certified" means the solution has passed an official readiness review and appears on the list of approved software solutions on cezih.hr. "Compatible" is a marketing term with no legal weight. Legal compliance requires certified software. HM Digital appears on the official CEZIH list of certified application manufacturers (category Software solutions for private/institutions, G500) - you can verify us independently on cezih.hr.'
+          a: '"Certified" means the solution has passed an official readiness review and appears on the list of approved software solutions on cezih.hr. "Compatible" is a marketing term with no legal weight. HM Digital is on the official list of certified application manufacturers (G500) - you can verify us independently.'
         },
         {
           q: 'Do I need a smart card reader and VPN?',
-          a: 'Yes. For CEZIH data exchange, HZZO requires at least one Windows computer in the practice with an AKD card, a reader, VPN access, and the software vendor\'s local agent. Certilia (mobile remote signing) does not bypass that requirement - it kicks in only after the session has been established. Once it has, every CEZIH action can be signed via the Certilia mobile app, without physically using the card for every signature. Our software supports both signing modes (card + Certilia mobile).'
+          a: 'Yes. For CEZIH data exchange, HZZO requires at least one Windows computer in the practice with an AKD card, a reader, VPN access, and the vendor\'s local agent. Certilia does not bypass that: it enables signing from your phone, but only once the session is established. Our software supports both signing modes.'
         },
         {
           q: 'What is sent to CEZIH? Will my data be visible to everyone?',
@@ -1629,15 +1629,15 @@ export const en = {
         },
         {
           q: 'I work only privately and have no HZZO contract - do I have to join CEZIH?',
-          a: 'Yes. Per CEZIH and HZZO guidance, the CEZIH obligation also covers non-contractual healthcare providers - those who work exclusively privately, without an HZZO contract. The first step for you is obtaining a healthcare institution code (šifra zdravstvene ustanove) from HZZO - a prerequisite, filed via the "Dodjela šifre neugovorni" form and emailed to sifriranje.neugovorni@hzzo.hr, with the Ministry of Health decision attached. Only after the code is issued can you start the technical CEZIH connection.'
+          a: 'Yes. The obligation also covers non-contractual providers - those who work exclusively privately, without an HZZO contract. First step: obtain a healthcare institution code from HZZO ("Dodjela šifre neugovorni" form + the Ministry of Health decision, to sifriranje.neugovorni@hzzo.hr). Only after the code is issued can the technical connection start.'
         },
         {
           q: 'I have practices on two locations - do I need two systems or multiple certificates?',
-          a: 'You need a single software that supports multiple locations (cloud solutions handle this natively) and one qualified certificate per signing person. Technically, every location where CEZIH exchange happens requires at least one Windows computer with an AKD card, a reader, VPN access, and the local agent. Certilia mobile signing lets you sign from any location once the session has been established.'
+          a: 'You need a single software that supports multiple locations (cloud solutions handle this natively) and one qualified certificate per signing person. Every location where exchange happens requires at least one Windows computer with card, reader, VPN and agent. Certilia lets you sign from any location once the session is established.'
         },
         {
           q: 'What if an inspector arrives while I have already signed a vendor contract but I am not yet in production?',
-          a: 'Document everything - the vendor contract, the HZZO forms you have submitted, the certificate issuance status, the planned production date. Although a process in progress does not undo the breach itself, misdemeanor proceedings weigh both the degree of negligence and the steps taken toward compliance. The more evidence you have that the process is actively underway, the higher the chance of leniency. The safest strategy is still to avoid an inspection by accelerating production - with cloud solutions, that is days, not weeks.'
+          a: 'Document everything: the vendor contract, the HZZO forms you have submitted, the certificate status and the planned production date. Misdemeanor proceedings weigh both negligence and the steps taken toward compliance, so a documented process helps. The safest strategy remains accelerating production - with cloud solutions that is days, not weeks.'
         },
         {
           q: 'How do I connect to CEZIH? Do I need a VPN?',
@@ -1691,7 +1691,7 @@ export const en = {
       eyebrow: 'September 2026 · Fact check',
       title: 'CEZIH Deadline for Private Practices: Confirmed - 1 January 2027',
       subheadline: 'Yes, the deadline has been extended - the obligation has not been abolished. All key facts and sources in one place, no guessing.',
-      certBadge: 'HM Digital - officially certified CEZIH application manufacturer (HZZO)',
+      certBadge: 'HM Digital - officially certified CEZIH application manufacturer (G500)',
       certLink: 'http://www.cezih.hr/certificirani_proizvodjaci_aplikacija.html',
       promise: 'A short, verifiable clarification: what the deadline is, who it covers, and what not to confuse it with.',
       lead: 'The final deadline for all private healthcare providers to connect to CEZIH - both HZZO-contracted and non-contracted - is 1 January 2027. This is stated explicitly by the Croatian Medical Chamber (HLK) and confirmed by July 2026 reporting.',
@@ -1705,7 +1705,7 @@ export const en = {
         { label: 'New final deadline', value: '1 January 2027' },
         { label: 'Who it covers', value: 'All private providers - both HZZO-contracted and non-contracted' },
         { label: 'The obligation', value: 'Has not been abolished - the Health Data and Information Act (NN 14/2019) remains in force' },
-        { label: 'Fines', value: 'Up to €13,200 per breach (Art. 36) continue to apply after the deadline' }
+        { label: 'Fines', value: 'After the deadline, fines prescribed by the Act (NN 14/2019) apply' }
       ],
       note: 'Separately: from 1 July 2026, CEZIH access is possible only with the new official healthcare-worker ID card (old HZZO smart cards expired 30 June 2026). That is an authentication change, NOT a shift of the connection deadline - more on that below.'
     },
@@ -1715,7 +1715,7 @@ export const en = {
       timelineTitle: 'How the deadline moved',
       timeline: [
         { date: 'June 2025', text: 'The Ministry of Health announces the inclusion of private institutions in CEZIH (the plan then: "by the end of the year").' },
-        { date: 'January 2026', text: 'Press cites an operational "by May" deadline with fines up to €13,200 - the obligation becomes active.' },
+        { date: 'January 2026', text: 'Press cites an operational "by May" deadline with announced fines - the obligation becomes active.' },
         { date: 'May 2026', text: 'The original deadline is used to start connecting and exchanging, but proves too short for many private providers to fully comply.' },
         { date: 'July 2026', text: 'The final deadline for all private providers to connect is confirmed as 1 January 2027 (HLK, Večernji, zdravljeija).' }
       ],
