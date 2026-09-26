@@ -735,7 +735,7 @@ export const hr = {
     hero: {
       badge: 'KONTOMATRIX · RAČUNOVODSTVENI UREDI · HRVATSKA',
       tagline: 'Prestanite ganjati klijente za račune.',
-      subtitle: 'Vaši klijenti (ili vi za njih) slikaju račune mobitelom, aplikacija KontoMatrix ih pročita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva - a podaci završavaju ravno u programu koji već koristite.',
+      subtitle: 'Vaši klijenti (ili vi za njih) slikaju račune mobitelom, aplikacija KontoMatrix ih pročita umjesto vas, a vi samo pregledate i potvrdite podatke. Šest sati tipkanja dnevno postaje dva - a podaci završavaju ravno u računovodstvenom softveru koji već koristite.',
       ctaPrimary: 'Zatražite prezentaciju od 10 minuta',
       ctaSecondary: 'Kako to radi?',
       trustRow: 'GDPR · FINA e-računi · EU hosting · OIB validacija'
@@ -769,7 +769,7 @@ export const hr = {
       },
       card3: {
         title: 'Nećete mijenjati svoj program',
-        desc: 'Synesis, PANTHEON, Minimax, Luceed ili SAP - ne mijenjate program koji već koristite. OIB validacija, PDV stope 25/13/5/0 %, FINA e-računi i GDPR ugrađeni su od početka.'
+        desc: 'Synesis, PANTHEON, Minimax, Luceed ili SAP - ne mijenjate računovodstveni softver koji već koristite. OIB validacija, PDV stope 25/13/5/0 %, FINA e-računi i GDPR ugrađeni su od početka.'
       }
     },
     howItWorks: {

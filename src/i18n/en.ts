@@ -735,7 +735,7 @@ export const en = {
     hero: {
       badge: 'KONTOMATRIX · ACCOUNTING FIRMS · CROATIA',
       tagline: 'Stop chasing clients for invoices.',
-      subtitle: 'Your clients (or you for them) photograph invoices on their phone, the app KontoMatrix reads them for you, and you just review and confirm. Six hours of typing a day becomes two - and the data lands straight in the program you already use.',
+      subtitle: 'Your clients (or you for them) photograph invoices on their phone, the app KontoMatrix reads them for you, and you just review and confirm. Six hours of typing a day becomes two - and the data lands straight in the accounting software you already use.',
       ctaPrimary: 'Request a 10-minute demo',
       ctaSecondary: 'How does it work?',
       trustRow: 'GDPR · FINA e-invoices · EU hosting · OIB validation'
@@ -769,7 +769,7 @@ export const en = {
       },
       card3: {
         title: 'You won\'t change your program',
-        desc: 'Synesis, PANTHEON, Minimax, Luceed or SAP - you don\'t change the program you already use. OIB validation, VAT rates 25/13/5/0 %, FINA e-invoices and GDPR are built in from the start.'
+        desc: 'Synesis, PANTHEON, Minimax, Luceed or SAP - you don\'t change the accounting software you already use. OIB validation, VAT rates 25/13/5/0 %, FINA e-invoices and GDPR are built in from the start.'
       }
     },
     howItWorks: {
