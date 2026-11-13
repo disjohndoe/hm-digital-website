@@ -2403,8 +2403,8 @@ export const hr = {
       primaryHref: '/kontakt',
       secondaryLabel: 'Službeni izvori',
       secondaryHref: '#izvori',
-      medicalLabel: 'Pogledajte HM Medical',
-      medicalHref: '/medicinski-softver/'
+      productLabel: 'Pogledajte KontoMatrix',
+      productHref: '/unos-racuna/'
     },
     sources: {
       title: 'Izvori',

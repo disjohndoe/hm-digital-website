@@ -2417,8 +2417,8 @@ export const en = {
       primaryHref: '/en/contact',
       secondaryLabel: 'Official sources',
       secondaryHref: '#izvori',
-      medicalLabel: 'See HM Medical',
-      medicalHref: '/en/medical-software/'
+      productLabel: 'See KontoMatrix',
+      productHref: '/en/invoice-capture/'
     },
     sources: {
       title: 'Sources',
