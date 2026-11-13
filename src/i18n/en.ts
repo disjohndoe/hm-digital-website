@@ -43,7 +43,8 @@ export const en = {
     title: 'About',
     subtitle: 'Reliable delivery, clear communication, and solutions that stay stable in production and are easy to maintain.',
     whoWeAreTitle: 'Who we are?',
-    whoWeAreDesc: 'HM Digital is a young, new company from Mašići, a small village near Nova Gradiška in Slavonia. Although we recently started operations, that doesn\'t mean we lack experience - quite the opposite!',
+    whoWeAreDesc: 'HM Digital is a Croatian software company backed by more than 10 years of experience in building business software: from custom applications and integrations, to software for accounting offices, to document digitization. Our largest project is HM Medical, a cloud solution for private medical practices, officially certified on the CEZIH list (G500).',
+    whoWeAreDesc2: 'We are proud of our direct approach to clients: when you work with us, you work directly with our development engineers, not with call centers.',
     experience: 'Experience',
     experienceYears: '10+ years',
     projectsCount: '50+ projects',
@@ -64,7 +65,18 @@ export const en = {
     innovationDesc: 'We use modern, proven technologies and introduce AI when it creates real business value.',
     partnershipTitle: 'Partnership',
     partnershipDesc: 'We build long-term relationships through transparency, realistic expectations, and dependable delivery from the first version to ongoing improvements.',
-    digitizationAddon: 'Alongside software development, we also offer document digitization with OCR and integration of digital archives into your systems and workflows.'
+    digitizationAddon: 'Alongside software development, we also offer document digitization with OCR and integration of digital archives into your systems and workflows.',
+    trust: {
+      trustTitle: 'Why practices trust us',
+      trustItem1Title: 'Officially CEZIH certified (G500)',
+      trustItem1Desc: 'HM Medical is on the official list of certified CEZIH application vendors. Verify us yourself.',
+      trustItem2Title: 'First production migration',
+      trustItem2Desc: 'For a practice in Zagreb we migrated 2,400+ patients and 2,500+ records, with history going back to 2008, entirely remotely.',
+      trustItem3Title: 'Support without call centers',
+      trustItem3Desc: 'When you call, you talk to the engineer who wrote the software. We usually answer the phone right away and do our best to respond to urgent matters outside working hours as well.',
+      trustLinkLabel: 'Read the full story →',
+      trustLinkHref: '/en/medical-software/#reference'
+    }
   },
   services: {
     title: 'Services',
@@ -1129,8 +1141,7 @@ export const en = {
           'Multi-user management',
           'Advanced reporting',
           'Priority support',
-          'Onboarding included',
-          'Data migration'
+          'Onboarding included'
         ]
       },
       poliklinikaPro: {
@@ -1151,14 +1162,13 @@ export const en = {
       },
       onboardingPackage: {
         title: 'Professional onboarding - turnkey setup',
-        subtitle: 'We set everything up for you - remotely and free of charge. Implementation, data migration, training and CEZIH activation are included in the price, with no hidden costs.',
+        subtitle: 'We set everything up for you - free and remote. Implementation, training and CEZIH activation are included in the price.',
         badge: 'Included in the price',
         items: [
           { title: 'System setup', desc: 'Configuration of practice, user accounts, workflows and code lists - all via video call and remote access' },
-          { title: 'Data migration', desc: 'Transfer patients, histories and documentation from your old system - no data loss' },
           { title: 'Staff training', desc: 'Video training for each user - recordings available for later review' },
           { title: 'CEZIH activation', desc: 'Remote installation of local agent, AKD card test, Certilia certificate setup for signing, VPN configuration - all the way to first successful finding' },
-          { title: '30-day premium support', desc: 'Priority phone and email support for the first 30 days after launch' }
+          { title: '30-day premium support', desc: 'Priority phone and email support for the first 30 days after launch. Support directly from our development engineers, by phone and email. We usually answer the phone right away and do our best to respond to urgent matters outside working hours as well.' }
         ],
         onSite: {
           title: 'Want us to come in person?',
@@ -1185,6 +1195,16 @@ export const en = {
     stats: {
       cert: { value: 'Certified', label: 'on the official CEZIH list (G500)' },
       deadline: { value: '1 Jan 2027', label: 'deadline to connect to CEZIH' }
+    },
+    caseStudy: {
+      caseStudyTitle: 'A practice in Zagreb: 18 years of history moved to the cloud, without a single on-site visit',
+      caseStudyIntro: 'A private practice in Zagreb switched to HM Medical from a legacy system holding more than 2,400 patients and 2,500 records, with history going back to 2008.',
+      caseStudyBullet1: 'We analysed the export from the old system and ran a test migration first, which the practice reviewed and approved',
+      caseStudyBullet2: 'The entire archive was then imported in a single day, without interrupting daily work',
+      caseStudyBullet3: 'The system was set up remotely: the practice lost no working hours to installation, and we never travelled on site',
+      caseStudyBullet4: 'Today the practice runs patients, documents and visits in HM Medical every day',
+      caseStudyBullet5: 'When they reported an issue with editing foreign patients data, we fixed it remotely and shipped the fix without a visit',
+      caseStudyClosing: 'We can perform the same migration for your practice: analysis of your old system, a test transfer, your review, and only then the production import.'
     },
     faq: {
       title: 'Frequently asked questions about CEZIH software',
@@ -1232,6 +1252,10 @@ export const en = {
         {
           q: 'Can I migrate data from my existing system?',
           a: 'Yes. We support migration from most existing systems. The process: data analysis, test migration, your review, production. Patients, histories and treatment records transfer without loss.'
+        },
+        {
+          q: 'Is anyone already using your software?',
+          a: 'Yes. The first practice in production is a private practice in Zagreb for which we remotely migrated 2,400+ patients and 2,500+ records from their old system. Read the story above.'
         },
         {
           q: 'How long does setup take?',
@@ -2392,7 +2416,9 @@ export const en = {
       primaryLabel: 'Contact us',
       primaryHref: '/en/contact',
       secondaryLabel: 'Official sources',
-      secondaryHref: '#izvori'
+      secondaryHref: '#izvori',
+      medicalLabel: 'See HM Medical',
+      medicalHref: '/en/medical-software/'
     },
     sources: {
       title: 'Sources',

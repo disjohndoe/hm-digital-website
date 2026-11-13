@@ -43,7 +43,8 @@ export const hr = {
     title: 'O nama',
     subtitle: 'Pouzdana isporuka, jasna komunikacija i rješenja koja su stabilna u produkciji i jednostavna za održavanje.',
     whoWeAreTitle: 'Tko smo mi?',
-    whoWeAreDesc: 'HM Digital je mlada, nova firma iz Mašića, malog sela pokraj Nove Gradiške u Slavoniji. Iako smo nedavno započeli s poslovanjem to ne znači da nam nedostaje iskustva, upravo naprotiv!',
+    whoWeAreDesc: 'HM Digital je hrvatska softverska kuća iza koje stoji više od 10 godina iskustva u razvoju poslovnih softverskih rješenja: od custom aplikacija i integracija, preko softvera za računovodstvene urede, do digitalizacije dokumenata. Naš najveći projekt je HM Medical, cloud softver za privatne ordinacije, službeno certificiran na CEZIH popisu (G500).',
+    whoWeAreDesc2: 'Ponosni smo na direktan pristup klijentu: kada surađujete s nama, surađujete izravno s razvojnim inženjerima, ne s call centrima.',
     experience: 'Iskustvo',
     experienceYears: '10+ godina',
     projectsCount: '50+ projekata',
@@ -64,7 +65,18 @@ export const hr = {
     innovationDesc: 'Koristimo moderne, provjerene tehnologije i uvodimo AI kada donosi stvarnu poslovnu vrijednost.',
     partnershipTitle: 'Partnerstvo',
     partnershipDesc: 'Gradimo dugoročne odnose kroz transparentnost, realna očekivanja i pouzdanu isporuku od prve verzije do daljnjeg razvoja.',
-    digitizationAddon: 'Uz razvoj softvera, nudimo i digitalizaciju dokumenata s OCR-om te integraciju digitalne arhive u vaše sustave i procese.'
+    digitizationAddon: 'Uz razvoj softvera, nudimo i digitalizaciju dokumenata s OCR-om te integraciju digitalne arhive u vaše sustave i procese.',
+    trust: {
+      trustTitle: 'Zašto nam ordinacije vjeruju',
+      trustItem1Title: 'Službeno CEZIH certificirani (G500)',
+      trustItem1Desc: 'HM Medical je na službenom popisu certificiranih proizvođača CEZIH aplikacija. Provjerite nas sami.',
+      trustItem2Title: 'Prva migracija u produkciji',
+      trustItem2Desc: 'Ordinaciji iz Zagreba preselili smo 2.400+ pacijenata i 2.500+ nalaza, s poviješću od 2008. godine, u cijelosti daljinski.',
+      trustItem3Title: 'Podrška bez call centra',
+      trustItem3Desc: 'Kad nas nazovete, razgovarate s inženjerom koji je softver i napisao. Na telefon se u pravilu javljamo odmah, a hitnim situacijama nastojimo odgovoriti i izvan radnog vremena.',
+      trustLinkLabel: 'Pročitajte cijelu priču →',
+      trustLinkHref: '/medicinski-softver/#reference'
+    }
   },
   services: {
     title: 'Usluge',
@@ -1115,8 +1127,7 @@ export const hr = {
           'Višekorisničko upravljanje',
           'Napredni izvještaji',
           'Prioritetna podrška',
-          'Onboarding uključen',
-          'Migracija podataka'
+          'Onboarding uključen'
         ]
       },
       poliklinikaPro: {
@@ -1137,14 +1148,13 @@ export const hr = {
       },
       onboardingPackage: {
         title: 'Profesionalna implementacija - ključ u ruke',
-        subtitle: 'Postavljamo sve umjesto vas - besplatno i daljinski. Implementacija, migracija podataka, obuka i aktivacija CEZIH-a uključeni su u cijenu, bez skrivenih troškova.',
+        subtitle: 'Postavljamo sve umjesto vas - besplatno i daljinski. Implementacija, obuka i aktivacija CEZIH-a uključeni su u cijenu.',
         badge: 'Uključeno u cijenu',
         items: [
           { title: 'Postavljanje sustava', desc: 'Konfiguracija ordinacije, korisničkih računa, radnih tokova i šifrarnika - sve kroz video poziv i remote pristup' },
-          { title: 'Migracija podataka', desc: 'Prijenos pacijenata, anamneza i dokumentacije iz starog sustava - bez gubitka podataka' },
           { title: 'Obuka osoblja', desc: 'Video obuka za svakog korisnika - snimke dostupne za kasniji pregled' },
           { title: 'CEZIH aktivacija', desc: 'Remote instalacija local agenta, AKD kartica test, postavljanje Certilia certifikata za potpisivanje, VPN konfiguracija - sve do prvog uspješnog nalaza' },
-          { title: '30 dana premium podrška', desc: 'Prioritetna podrška telefonom i emailom prvih 30 dana nakon pokretanja' }
+          { title: '30 dana premium podrška', desc: 'Prioritetna podrška telefonom i emailom prvih 30 dana nakon pokretanja. Podrška izravno od razvojnih inženjera, telefonom i emailom. Na telefon se u pravilu javljamo odmah, a hitnim situacijama nastojimo odgovoriti i izvan radnog vremena.' }
         ],
         onSite: {
           title: 'Želite da dođemo osobno?',
@@ -1171,6 +1181,16 @@ export const hr = {
     stats: {
       cert: { value: 'Certificirano', label: 'na službenom CEZIH popisu (G500)' },
       deadline: { value: '1.1.2027.', label: 'rok za povezivanje na CEZIH' }
+    },
+    caseStudy: {
+      caseStudyTitle: 'Ordinacija iz Zagreba: 18 godina povijesti preseljeno u cloud, bez ijednog dolaska u ordinaciju',
+      caseStudyIntro: 'Privatna ordinacija iz Zagreba prešla je na HM Medical iz starog sustava u kojem je bilo više od 2.400 pacijenata i 2.500 nalaza, s poviješću od 2008. godine.',
+      caseStudyBullet1: 'Analizirali smo izvoz iz starog sustava i prvo izveli testnu migraciju koju je ordinacija pregledala i potvrdila',
+      caseStudyBullet2: 'Cijeli arhiv potom je uvezen u novi sustav u jednom danu, bez prekida svakodnevnog rada',
+      caseStudyBullet3: 'Sustav je postavljen daljinski: ordinacija nije izgubila niti jedan radni sat zbog instalacije, a mi nismo nijednom došli na lice mjesta',
+      caseStudyBullet4: 'Danas ordinacija svakodnevno vodi pacijente, dokumente i posjete u HM Medicalu',
+      caseStudyBullet5: 'Kad su prijavili problem s uređivanjem podataka pacijenata stranaca, riješili smo ga daljinski i izdali ispravak bez dolaska',
+      caseStudyClosing: 'Istu migraciju možemo izvesti i za vašu ordinaciju: analiza starog sustava, testni prijenos, vaša provjera, tek onda produkcijski prijenos.'
     },
     faq: {
       title: 'Česta pitanja o CEZIH integraciji',
@@ -1218,6 +1238,10 @@ export const hr = {
         {
           q: 'Mogu li prebaciti podatke iz starog sustava?',
           a: 'Da - migriramo iz većine hrvatskih medicinskih sustava. Proces: analiza podataka, testna migracija, vaša provjera, produkcija. Pacijenti, anamneze i povijest liječenja prenose se bez gubitka.'
+        },
+        {
+          q: 'Koristi li netko već vaš softver?',
+          a: 'Da. Prva ordinacija u produkciji je privatna ordinacija iz Zagreba kojoj smo daljinski preselili 2.400+ pacijenata i 2.500+ nalaza iz starog sustava. Pročitajte priču gore.'
         },
         {
           q: 'Koliko traje dok počnem raditi?',
@@ -2378,7 +2402,9 @@ export const hr = {
       primaryLabel: 'Kontaktirajte nas',
       primaryHref: '/kontakt',
       secondaryLabel: 'Službeni izvori',
-      secondaryHref: '#izvori'
+      secondaryHref: '#izvori',
+      medicalLabel: 'Pogledajte HM Medical',
+      medicalHref: '/medicinski-softver/'
     },
     sources: {
       title: 'Izvori',

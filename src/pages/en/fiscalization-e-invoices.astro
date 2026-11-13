@@ -328,12 +328,15 @@ const pageUrl = `${siteUrl}/en/fiscalization-e-invoices/`;
     <div class="container-custom max-w-3xl text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">{g.cta.title}</h2>
       <p class="text-lg text-primary-100 leading-relaxed mb-8">{g.cta.body}</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
         <Button href={g.cta.primaryHref} variant="primary" size="lg" class="!bg-white !text-primary-700 hover:!bg-primary-50">
           {g.cta.primaryLabel}
         </Button>
         <Button href={g.cta.secondaryHref} variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
           {g.cta.secondaryLabel}
+        </Button>
+        <Button href={g.cta.medicalHref} variant="outline" size="lg" class="!border-white !text-white hover:!bg-white/10">
+          {g.cta.medicalLabel}
         </Button>
       </div>
     </div>
