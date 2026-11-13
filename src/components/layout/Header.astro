@@ -315,14 +315,25 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
       }
 
       var t;
-      window.addEventListener('resize', function () {
+      function schedule() {
         clearTimeout(t);
         t = setTimeout(update, 100);
-      });
-      if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(function () { update(); });
       }
-      update();
+      window.addEventListener('resize', schedule);
+      // ResizeObserver catches viewport changes even where no resize event fires
+      if (window.ResizeObserver) {
+        var ro = new ResizeObserver(schedule);
+        ro.observe(document.documentElement);
+        ro.observe(row);
+      }
+      if (md.addEventListener) {
+        md.addEventListener('change', schedule);
+        xl.addEventListener('change', schedule);
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(schedule);
+      }
+      schedule();
     })();
   </script>
 </header>
