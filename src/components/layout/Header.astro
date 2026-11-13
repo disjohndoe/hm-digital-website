@@ -333,6 +333,9 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
       if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(schedule);
       }
+      // correct immediately when the tab becomes visible again (background tabs throttle timers)
+      document.addEventListener('visibilitychange', schedule);
+      window.__headerUpdate = update;
       schedule();
     })();
   </script>
