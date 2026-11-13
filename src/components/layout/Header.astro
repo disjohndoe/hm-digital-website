@@ -323,8 +323,8 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
           apply(true, false);
           if (fits()) return;
         }
-        var wantPhone = md.matches;
-        apply(false, wantPhone);
+        // compact: full number on tablets, icon-only on phones
+        apply(false, true);
         if (!fits()) apply(false, false);
       }
 
