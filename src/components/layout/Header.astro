@@ -113,7 +113,7 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
 
 <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-700">
   <div class="container-custom xl:max-w-[1600px]!">
-    <div class="header-row flex items-center justify-between py-4">
+    <div class="header-row relative flex items-center justify-between py-4">
       <!-- Logo -->
       <a href={homePath} class="flex items-center gap-2 z-50 relative">
         <img src="/logo.svg" alt="HM Digital logo" class="w-10 h-10" />
@@ -295,6 +295,18 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
         side.style.display = desktop ? 'flex' : 'none';
         burger.style.display = desktop ? 'none' : 'flex';
         phone.style.display = showPhone ? 'flex' : 'none';
+        if (desktop) {
+          phone.style.position = '';
+          phone.style.left = '';
+          phone.style.top = '';
+          phone.style.transform = '';
+        } else {
+          // compact mode: pin the phone to the exact horizontal center of the row
+          phone.style.position = 'absolute';
+          phone.style.left = '50%';
+          phone.style.top = '50%';
+          phone.style.transform = 'translate(-50%, -50%)';
+        }
         if (desktop && typeof window.closeMenu === 'function') window.closeMenu();
       }
 
