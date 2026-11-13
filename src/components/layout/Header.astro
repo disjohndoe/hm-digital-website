@@ -113,7 +113,7 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
 
 <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-700">
   <div class="container-custom xl:max-w-[1600px]!">
-    <div class="flex items-center justify-between py-4">
+    <div class="header-row flex items-center justify-between py-4">
       <!-- Logo -->
       <a href={homePath} class="flex items-center gap-2 z-50 relative">
         <img src="/logo.svg" alt="HM Digital logo" class="w-10 h-10" />
@@ -121,7 +121,7 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
       </a>
 
       <!-- Desktop Navigation -->
-      <nav aria-label={t.nav.mainNav} class="hidden xl:flex items-center gap-6">
+      <nav aria-label={t.nav.mainNav} class="desktop-nav hidden xl:flex items-center gap-6">
         {navItems.map((item) => {
           if (item.key === 'products') {
             return (
@@ -178,7 +178,7 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
       </nav>
 
       <!-- Desktop Right side -->
-      <div class="hidden xl:flex items-center gap-6">
+      <div class="desktop-side hidden xl:flex items-center gap-6">
         <a
           href={`${getPathForLocale('/medicinski-softver', locale)}#demo-form`}
           class="whitespace-nowrap text-base font-medium text-white transition-colors hover:text-primary-200"
@@ -188,8 +188,8 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
         <LanguageSwitcher currentPath={currentPath} />
       </div>
 
-      <!-- Phone (tablets, plus desktops 1500px and wider where the widened header row fits it) -->
-      <a href="tel:+385977120800" class="hidden md:flex items-center gap-2 whitespace-nowrap text-sm font-medium text-white transition-colors hover:text-primary-200 xl:max-[1499px]:hidden">
+      <!-- Phone (visibility is measured by the script below: tablets, plus desktop widths with room) -->
+      <a href="tel:+385977120800" class="header-phone hidden md:flex items-center gap-2 whitespace-nowrap text-sm font-medium text-white transition-colors hover:text-primary-200">
         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
@@ -200,7 +200,7 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
       <button
         id="hamburger-button"
         onclick="toggleMenu()"
-        class="xl:hidden p-2 text-white hover:text-primary-200 transition-colors"
+        class="header-burger xl:hidden p-2 text-white hover:text-primary-200 transition-colors"
         aria-label="Toggle menu"
       >
         <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,4 +275,54 @@ const productsActive = productItems.some((p) => isActive(p.href, currentPath));
       </div>
     </nav>
   </div>
+
+  <script is:inline>
+    (function () {
+      var header = document.querySelector('header');
+      if (!header) return;
+      var row = header.querySelector('.header-row');
+      var nav = header.querySelector('.desktop-nav');
+      var side = header.querySelector('.desktop-side');
+      var phone = header.querySelector('.header-phone');
+      var burger = header.querySelector('.header-burger');
+      if (!row || !nav || !side || !phone || !burger) return;
+
+      var md = window.matchMedia('(min-width: 768px)');
+      var xl = window.matchMedia('(min-width: 1280px)');
+
+      function apply(desktop, showPhone) {
+        nav.style.display = desktop ? 'flex' : 'none';
+        side.style.display = desktop ? 'flex' : 'none';
+        burger.style.display = desktop ? 'none' : 'flex';
+        phone.style.display = showPhone ? 'flex' : 'none';
+        if (desktop && typeof window.closeMenu === 'function') window.closeMenu();
+      }
+
+      function fits() {
+        return row.scrollWidth <= row.clientWidth + 1;
+      }
+
+      function update() {
+        if (xl.matches) {
+          apply(true, true);
+          if (fits()) return;
+          apply(true, false);
+          if (fits()) return;
+        }
+        var wantPhone = md.matches;
+        apply(false, wantPhone);
+        if (!fits()) apply(false, false);
+      }
+
+      var t;
+      window.addEventListener('resize', function () {
+        clearTimeout(t);
+        t = setTimeout(update, 100);
+      });
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function () { update(); });
+      }
+      update();
+    })();
+  </script>
 </header>
